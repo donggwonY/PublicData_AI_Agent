@@ -1,0 +1,17 @@
+{
+  "염동권": {
+    "focus": "엔지니어링: Streamlit 화면·서버, 데이터 저장소 계약, 분석 결과 통합, 배포·운영",
+    "track": "engineering",
+    "starter_task": "E-01"
+  },
+  "김세은": {
+    "focus": "데이터 분석: 소스·품질·지표 정의, 탐색 분석, 생존분석과 결과 예측 실험",
+    "track": "data-survival",
+    "starter_task": "D-01"
+  },
+  "김선경": {
+    "focus": "데이터 분석: 보조 데이터 결합·지역/시간 분석, 머신러닝 실험, AI 도구 평가",
+    "track": "data-ml-agent",
+    "starter_task": "A-01"
+  }
+}
