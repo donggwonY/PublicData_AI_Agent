@@ -2,7 +2,8 @@
 
 이 저장소는 대구 상권 생애주기 AI 에이전트의 협업 허브입니다. 아직 앱 코드가 없으므로, 없는 파일이나 실행 명령을 가정하지 마세요.
 
-- 작업 전에 `.mentee/profile.json`의 이름·트랙·첫 작업 ID와 `docs/MENTEE_PLAYBOOK.md`, `docs/WORKBOARD.md`를 확인합니다. 프로필이 없으면 Codex에서는 `$mentee-init`, Claude Code에서는 `/mentee-init`을 안내합니다. 담당 초점은 우선순위이지 다른 영역의 작업 금지가 아닙니다.
+- 코드·데이터 분석 등 프로젝트 개발을 시작할 때는 먼저 Codex의 `$pull` 또는 Claude Code의 `/pull` 스킬로 원격 `main`을 확인하고, fast-forward가 가능하면 반영합니다. 로컬 변경·분기 때문에 중단되면 내용을 보존한 채 원인을 확인합니다. 단순 설명 요청이나 오프라인 작업에서는 최신 상태를 확인하지 못했다는 점을 밝힙니다.
+- 동기화 뒤 `.mentee/profile.json`의 이름·트랙·첫 작업 ID와 `docs/MENTEE_PLAYBOOK.md`, `docs/WORKBOARD.md`를 확인합니다. 프로필이 없으면 Codex에서는 `$mentee-init`, Claude Code에서는 `/mentee-init`을 안내합니다. 담당 초점은 우선순위이지 다른 영역의 작업 금지가 아닙니다.
 - 학생이 다음 일을 모르면 작업판과 실제 파일을 대조해 그 학생에게 맞는 **추천 작업 1개와 대안 1~2개**, 이유·첫 단계·완료 증거를 제시합니다. `mentee-init` 직후에도 이 안내를 바로 제공합니다. 학생이 고른 문제를 존중하고 가설·근거를 스스로 말하게 돕되, 환경 설정과 반복 작업은 대신 처리합니다. 진척을 지어내지 말고 산출물에 근거해 작업판을 갱신합니다.
 - 서비스 구조나 데이터 이전을 변경할 때는 `docs/IMPLEMENTATION_DESIGN.md`, 역할·Git 흐름을 변경할 때는 `docs/TEAM_WORKFLOW.md`를 읽고 함께 갱신합니다.
 - 분석 수치는 출처·기준일·정의·표본 수를 확인합니다. LLM이 만든 숫자를 분석 결과로 취급하지 말고, 검증된 Python 도구나 DB 조회 결과에 근거하게 합니다.

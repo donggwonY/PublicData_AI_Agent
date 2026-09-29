@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from mentee_setup import read_existing_token, save_token  # noqa: E402
 from link_skills import link_skills  # noqa: E402
 from commit_push import prepare, push, sync  # noqa: E402
+from pull_main import pull_main  # noqa: E402
 from secret_guard import is_secret_path  # noqa: E402
 
 SOURCE_ROOT = Path(__file__).resolve().parents[1]
@@ -117,6 +118,58 @@ class LocalToolsTest(unittest.TestCase):
         for name in (".env", "backend/.env.prod", ".mentee/profile.json", ".streamlit/secrets.toml"):
             self.assertTrue(is_secret_path(name), name)
         self.assertFalse(is_secret_path(".env.example"))
+
+    def test_pull_main_fast_forward_and_preserve_local_work(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            remote, seed, student = base / "remote.git", base / "seed", base / "student"
+
+            def git(root: Path, *args: str) -> str:
+                return subprocess.run(["git", *args], cwd=root, check=True, capture_output=True, text=True).stdout.strip()
+
+            subprocess.run(["git", "init", "--bare", str(remote)], check=True, capture_output=True)
+            seed.mkdir()
+            git(seed, "init", "-b", "main")
+            git(seed, "config", "user.name", "Seed")
+            git(seed, "config", "user.email", "seed@example.com")
+            (seed / "README.md").write_text("first\n", encoding="utf-8")
+            git(seed, "add", "README.md")
+            git(seed, "commit", "-m", "initial")
+            git(seed, "remote", "add", "origin", str(remote))
+            git(seed, "push", "origin", "main")
+            subprocess.run(["git", "--git-dir", str(remote), "symbolic-ref", "HEAD", "refs/heads/main"], check=True)
+            subprocess.run(["git", "clone", str(remote), str(student)], check=True, capture_output=True)
+            git(student, "config", "user.name", "Student")
+            git(student, "config", "user.email", "student@example.com")
+
+            (seed / "README.md").write_text("second\n", encoding="utf-8")
+            git(seed, "add", "README.md")
+            git(seed, "commit", "-m", "remote update")
+            git(seed, "push", "origin", "main")
+            self.assertEqual(pull_main(student, str(remote)), "updated")
+            self.assertEqual((student / "README.md").read_text(encoding="utf-8"), "second\n")
+            self.assertEqual(pull_main(student, str(remote)), "current")
+
+            (student / "local.txt").write_text("student\n", encoding="utf-8")
+            git(student, "add", "local.txt")
+            git(student, "commit", "-m", "local work")
+            local_head = git(student, "rev-parse", "HEAD")
+            self.assertEqual(pull_main(student, str(remote)), "ahead")
+
+            (student / "README.md").write_text("uncommitted\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "작업 파일"):
+                pull_main(student, str(remote))
+            self.assertEqual((student / "README.md").read_text(encoding="utf-8"), "uncommitted\n")
+            git(student, "restore", "README.md")
+
+            (seed / "README.md").write_text("third\n", encoding="utf-8")
+            git(seed, "add", "README.md")
+            git(seed, "commit", "-m", "another remote update")
+            git(seed, "push", "origin", "main")
+            with self.assertRaisesRegex(ValueError, "fast-forward"):
+                pull_main(student, str(remote))
+            self.assertEqual(git(student, "rev-parse", "HEAD"), local_head)
+            self.assertEqual((student / "local.txt").read_text(encoding="utf-8"), "student\n")
 
     def test_main_fast_forward_rebase_and_conflict_resolution(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
