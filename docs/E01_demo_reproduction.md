@@ -54,6 +54,25 @@ Windows에서는 `PYTHONIOENCODING=utf-8` 설정이 필요할 수 있다 (`run_b
 
 계산 단계(1/8~8/8)에서 실패하면 파일을 쓰기 전이라 이전 parquet가 그대로 남는다. 저장 단계에서 실패할 때만 R1·R2가 생긴다.
 
+### 위험 요소 현재 상태 (2026-10-01)
+
+R6~R8은 6절과 7절에서 확인한 위험이다.
+
+| # | 위험 | 상태 | 근거 |
+| --- | --- | --- | --- |
+| R1 | 저장 도중 실패 시 parquet 섞임 | 미해결 | 선택지 A·B·C 정리(5절), E-02에서 판단 |
+| R2 | 쓰는 도중 중단 시 깨진 parquet | 미해결 | R1과 같음 |
+| R3 | 배치 실패를 알 수 없음 | 일부 해결 | `run_batch.ps1`이 종료 코드를 로그에 남기고 그 코드로 종료. 알림은 없음 |
+| R4 | 보조 데이터 갱신 시점 미기록 | 미해결 | — |
+| R5 | README 수치가 실제와 다름 | 일부 해결 | 도구 수 표기 1곳 수정. 기준일 2026-09-08 표기와 "Tool 8종" 나머지 표기는 그대로 |
+| R6 | 재배포마다 최신 버전 설치 | 해결 (직접 지정 8개) | [PR #10](https://github.com/donggwonY/daegu_lifecycle_agent/pull/10) 병합, 배포 로그 확인. 전이 의존성 51개는 미고정 |
+| R7 | 환경마다 Python 버전 다름 | 해결 | 팀 기준 3.12. README가 `py -3.12 -m venv .venv`로 안내. devcontainer는 3.11 그대로 |
+| R8 | 로컬이 배포와 다른 패키지로 실행 | 해결 | [PR #11](https://github.com/donggwonY/daegu_lifecycle_agent/pull/11): README·`run_batch.ps1`·실행 설정이 `.venv`만 사용, `requirements-dev.txt` 고정. `.venv`에서 배치를 임시 폴더로 돌려 커밋된 `data/processed`와 parquet 13개·`meta.json` 내용 일치 확인 |
+
+PR #11은 2026-10-01 09:45 UTC에 병합됐다 (`main` 1932844). 배포 파일은 바뀌지 않아 Reboot는 하지 않았다.
+
+R8 한계: 각 PC에서 `.venv`를 만들어 쓰는 것은 README 안내에 따른다. 시스템 `python`으로 직접 실행하는 것을 막는 장치는 `run_batch.ps1`에만 있다. 같은 내용이어도 pyarrow 버전이 다르면 parquet 파일 바이트가 달라져 Git에는 변경으로 잡힌다.
+
 ## 5. 개선 선택지 (R1·R2)
 
 원리는 모두 같다: **새 결과를 다른 곳에 전부 쓰고, 검증한 뒤, 한 번에 바꾼다.**

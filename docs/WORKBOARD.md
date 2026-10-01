@@ -31,3 +31,4 @@
 - 2026-10-01 · 염동권 · 데모 저장소에 웹 패키지 8개 `==` 고정을 [PR #10](https://github.com/donggwonY/daegu_lifecycle_agent/pull/10)으로 올림(브랜치 `chore/pin-requirements`, 커밋 273a1fe). 병합·Reboot·배포 로그 확인은 소유자 작업. 다음: 병합 후 로그 확인, 코드 이전 여부 판단.
 - 2026-10-01 · 염동권 · PR #10 병합(f553901) 후 Reboot. 배포 로그에서 고정 버전 8개 설치와 pyarrow 교체 메시지 소멸을 확인(R6 해결, R8 배포 측 해소). 다음: 코드 이전 여부 판단.
 - 2026-10-01 · 염동권 · 코드 이전 선택지 A(분리 유지)·B(허브로 이전)·C(역할 분리)와 근거를 E-01 초안 9절에 정리하고 결정은 보류. 남은 E-01 항목: 이전 여부 결정(관리자 확인), Gemini 할당량 확인.
+- 2026-10-01 · 염동권 · 로컬 실행을 배포와 같은 환경으로 맞추는 [PR #11](https://github.com/donggwonY/daegu_lifecycle_agent/pull/11) 생성: README·`run_batch.ps1`·실행 설정이 Python 3.12 `.venv`만 사용, `requirements-dev.txt` 고정. `.venv`에서 배치 결과가 커밋된 `data/processed`와 내용 일치함을 확인. 위험 요소 R1~R8 현재 상태 표를 E-01 초안 4절에 추가. PR #11 병합 완료(`main` 1932844). 다음: 코드 이전 여부 결정(관리자 확인), Gemini 할당량 확인.
