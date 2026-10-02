@@ -1,6 +1,8 @@
 # E-01 데모 실행·구조·배포 흐름 재현
 
-담당: 염동권 · 상태: 진행 중 · 대상: [daegu_lifecycle_agent](https://github.com/donggwonY/daegu_lifecycle_agent) `origin/main` (5d3e1cd, 로컬 `feat/service-expansion-ready` 8d86945와 내용 동일)
+담당: 염동권 · 상태: 진행 중 · 대상: [daegu_lifecycle_agent](https://github.com/donggwonY/daegu_lifecycle_agent) `origin/main` (조사 시작 5d3e1cd → PR #10·#11 병합 후 1932844)
+
+**데모를 내 PC에서 실행해 보려면 [10절 로컬 재현 절차](#10-로컬-재현-절차-팀원용)부터 본다.**
 
 이 문서는 참고 구현이 **어디서 계산되고, 무엇을 로드하며, 어떻게 배포되는지**를 실제 코드와 실행 결과로 확인한 기록이다. "확인"은 코드를 읽거나 직접 실행한 항목, "미검증"은 README 등 문서만 근거인 항목이다.
 
@@ -32,9 +34,9 @@ data/processed/*.parquet 13개 + meta.json                          ← Git 커�
 | Tool 점검 | `python -m tests.smoke_test` | ALL PASSED, API 키 불필요 |
 | 웹 UI | `streamlit run app.py` (2026-10-01) | 동작. 사이드바 기준일 2026-09-23 표시, 대시보드(대구 전체)·자리 이력(“대구 중구 동성로5길 83” → 1층 레코드 6건) 정상, 브라우저·서버 오류 없음. AI 상담 탭은 키가 없어 방문자 키 입력란만 확인 |
 | 데이터 로드 | `T.store()` 단독 측정 | 로드 0.78초(모듈 import 0.81초 별도), 메모리의 DataFrame 합계 약 165MB, `data/processed` 디스크 34MB |
-| 배치 재계산 | `python -m pipeline.build`, `python -m pipeline.external` | 미검증 (원본 CSV는 로컬에 있음) |
+| 배치 재계산 | `python -m pipeline.build`, `python -m pipeline.external` (2026-10-01, Python 3.12 `.venv`) | 임시 폴더로 실행해 커밋된 `data/processed`와 parquet 13개·`meta.json` 내용 일치. 인허가 배치 약 19초, 보조 배치 약 4초 |
 
-Windows에서는 `PYTHONIOENCODING=utf-8` 설정이 필요할 수 있다 (`run_batch.ps1`도 설정함).
+이 표는 처음 조사할 때의 기록이다(시스템 Python 3.13). 이후 기준 환경을 Python 3.12 `.venv`로 바꿨고, 지금 따라 할 절차는 10절에 있다.
 
 ## 3. 데이터 로딩 방식 (확인)
 
@@ -271,3 +273,118 @@ anthropic==1.11.0
 | 단점 | E-03 결과 연결 경로 없음 | 운영 위험, 역할 경계 흐려짐 | 염동권이 반영 병목이 될 수 있음 |
 
 에이전트 의견은 C(비용이 작고 B로 바꾸는 길도 남음)이나, **염동권 판단으로 결정을 보류**했다. 결정 시 함께 정할 것: 데모 저장소에 다른 멘티 협업자 권한을 줄지 여부. 결정은 관리자 확인 후 [구현 설계](IMPLEMENTATION_DESIGN.md)의 "결정 보류"에 반영한다.
+
+## 10. 로컬 재현 절차 (팀원용)
+
+데모 앱을 내 PC에서 띄우고 테스트를 돌리는 순서다. 2026-10-02에 **새 폴더에 처음부터 클론해** Windows 11에서 그대로 실행해 확인했다(`main` 1932844). macOS·Linux 명령은 시험하지 못해 "미검증"으로 표시했다.
+
+데모 저장소는 공개 저장소라 권한 없이 클론할 수 있다. 가공된 데이터(`data/processed`)가 저장소에 들어 있어서 **원본 CSV 없이도 앱과 테스트가 돈다.** 원본 CSV가 필요한 것은 배치 재계산(10-5)뿐이다.
+
+### 10-1. 준비물
+
+| 준비물 | 확인 방법 | 없으면 |
+| --- | --- | --- |
+| Git | `git --version` | [git-scm.com](https://git-scm.com/)에서 설치 |
+| Python **3.12** | `py -3.12 --version` → `Python 3.12.x` | `winget install Python.Python.3.12` 또는 [python.org](https://www.python.org/downloads/)에서 3.12 설치. 다른 버전(3.13 등)이 이미 있어도 함께 설치된다 |
+| 디스크 여유 | 1GB 이상 권장 | 클론 약 65MB + 가상환경 약 490MB (측정값) |
+
+배포 환경이 Python 3.12라서 3.12로 맞춘다(R7). 3.13 등 다른 버전으로도 실행은 될 수 있지만 결과가 배포와 같다고 보장할 수 없다.
+
+### 10-2. 클론과 가상환경 (최초 1회)
+
+PowerShell에서 실행한다. **경로가 짧은 폴더**에서 한다(예: `C:\work`). 경로가 길면 설치 중 `[WinError 206] 파일 이름이나 확장명이 너무 깁니다` 오류가 난다(확인).
+
+```powershell
+cd C:\work                      # 원하는 짧은 경로
+git clone https://github.com/donggwonY/daegu_lifecycle_agent.git
+cd daegu_lifecycle_agent
+py -3.12 -m venv .venv          # 가상환경 생성 (약 10초)
+.venv\Scripts\Activate.ps1      # 가상환경 켜기. 프롬프트 앞에 (.venv) 가 붙는다
+pip install -r requirements-dev.txt   # 약 2~3분
+python --version                # Python 3.12.x 인지 확인
+```
+
+- `Activate.ps1`이 "스크립트를 실행할 수 없습니다"로 막히면(미검증: 이 PC에서는 막히지 않았다) 켜지 않고 `.venv\Scripts\python.exe -m pip install -r requirements-dev.txt`처럼 가상환경의 Python을 직접 부른다. 아래 명령도 `python` 자리에 `.venv\Scripts\python.exe`를 쓰면 된다(확인).
+- macOS·Linux(미검증): `python3.12 -m venv .venv` → `source .venv/bin/activate` → 이후 명령은 같다.
+- 웹 화면만 볼 거면 `requirements.txt`만 설치해도 된다. `requirements-dev.txt`는 배치(pyproj)와 MCP 서버(mcp)를 더한다.
+
+### 10-3. 테스트로 설치 확인
+
+터미널을 새로 열었으면 먼저 `.venv\Scripts\Activate.ps1`로 가상환경을 켠다.
+
+```powershell
+python -m unittest tests.test_core_units   # 기대: "Ran 14 tests ... OK"
+python -m tests.smoke_test                  # 기대: 마지막 줄 "ALL PASSED 0"
+```
+
+`smoke_test` 출력의 `[ERR]` 3줄(삼덕동, 없는구, 없는주소)은 잘못된 입력에 오류를 제대로 돌려주는지 보는 검사라 정상이다. API 키는 필요 없다.
+
+### 10-4. 앱 실행
+
+```powershell
+streamlit run app.py
+```
+
+브라우저에서 `http://localhost:8501`이 열린다. 끝낼 때는 터미널에서 `Ctrl+C`.
+
+아래 값이 보이면 배포본과 같은 데이터로 뜬 것이다(2026-10-02 기준. 데이터를 갱신하면 달라진다).
+
+| 위치 | 기대값 |
+| --- | --- |
+| 사이드바 누적 인허가 / 폐업 / 영업 중 | 197,356 / 138,307 / 59,049 |
+| 사이드바 아래 | 기준일 2026-09-23 · 배치 2026-09-29 21:16:54 |
+| 대시보드 탭, 지역 "대구 전체" | 상권 사이클 "쇠퇴 진입기", 중앙생존기간 5.2년 |
+| 자리 이력 조회 탭에 `대구 중구 동성로5길 83` 입력 | "대구광역시 중구 동성로5길 83 1층", 인허가 레코드 6 |
+
+**AI 상담 탭**은 Gemini API 키가 있어야 답한다. 대시보드와 자리 이력 조회는 키 없이 동작한다.
+
+- 키는 [Google AI Studio](https://aistudio.google.com/apikey)에서 본인 계정으로 발급받아 사이드바 입력란에 넣는다. 이 방식은 키가 그 브라우저 세션에만 남는다.
+- 매번 입력하기 번거로우면 `.streamlit\secrets.toml.example`을 `.streamlit\secrets.toml`로 복사해 값을 채운다. 이 파일은 Git에서 제외돼 있다.
+- 키를 코드, 커밋, 채팅, 이 저장소 문서에 붙여넣지 않는다. 배포 앱의 운영자 키는 공유하지 않는다.
+
+### 10-5. 배치 재계산 (선택, 원본 CSV 필요)
+
+분석이나 화면 확인만 할 때는 필요 없다. 원본 CSV는 용량과 재배포 조건 때문에 Git에 없으므로, 필요하면 염동권에게 파일을 받아 아래 위치에 둔다. 원본 CSV는 커밋하지 않는다(`.gitignore`로 제외됨).
+
+| 폴더 | 파일 |
+| --- | --- |
+| `data\raw\` (인허가 7종) | `식품_일반음식점_대구광역시.csv`, `식품_휴게음식점_대구광역시.csv`, `식품_제과점영업_대구광역시.csv`, `생활_미용업_대구광역시.csv`, `생활_세탁업_대구광역시.csv`, `문화_노래연습장업_대구광역시.csv`, `기타_담배소매업_대구광역시.csv` |
+| `data\external\` (보조 7종) | 상가(상권)정보 대구 2026-06, 주민등록 인구(행정동) 2026-08-31, 대구교통공사 역별 일별 시간별 승하차·월별 승차·월별 하차 2026-07-31, 전국주차장정보표준데이터, 전통시장 |
+
+```powershell
+python -m pipeline.build       # 인허가 배치, 약 20초 → data\processed
+python -m pipeline.external    # 보조 데이터 배치, 약 5초
+```
+
+- 원본 CSV가 없으면 `data\raw 에 인허가 CSV 가 없습니다.`로 끝나고 기존 `data\processed`는 그대로 남는다(확인).
+- 배치는 `data\processed`를 **바로 덮어쓴다.** 저장 도중 실패하면 파일이 섞일 수 있다(R1). 실행 후 `git status`로 무엇이 바뀌었는지 보고, 의도하지 않았으면 `git checkout -- data/processed`로 되돌린다.
+- 데이터 내용이 같아도 parquet 파일은 Git에 "변경됨"으로 잡힐 수 있다(pyarrow 버전에 따라 파일 바이트가 달라짐).
+- `data\processed`를 커밋해 `main`에 올리면 배포 데이터가 바뀐다. 배포 변경은 염동권과 확인한다.
+
+### 10-6. 자주 막히는 곳
+
+| 증상 | 원인 | 해결 |
+| --- | --- | --- |
+| `[WinError 206] 파일 이름이나 확장명이 너무 깁니다` | 폴더 경로가 김 | `C:\work`처럼 짧은 경로에 다시 클론 (확인) |
+| `py -3.12`가 "not found" | Python 3.12 미설치 | 10-1대로 설치 후 새 터미널 |
+| `python --version`이 3.12가 아님 | 가상환경이 꺼져 있음 | `.venv\Scripts\Activate.ps1` 다시 실행 |
+| 한글이 깨져 보이거나 `UnicodeEncodeError` | 터미널 인코딩 | `$env:PYTHONIOENCODING = "utf-8"` 실행 후 다시 (이 PC에서는 설정 없이도 통과) |
+| `data/processed 에 배치 산출물이 없습니다` | `data\processed`가 지워졌거나 비어 있음 | `git checkout -- data/processed` |
+| `ModuleNotFoundError: No module named 'tests'` 또는 `'core'` | 저장소 폴더 밖에서 실행 (미검증) | `daegu_lifecycle_agent` 폴더로 이동해 실행 |
+| 포트 8501이 이미 사용 중 | 다른 Streamlit이 떠 있음 | `streamlit run app.py --server.port 8502` |
+
+### 10-7. 검증 기록
+
+2026-10-02, Windows 11, 새 폴더 클론(`main` 1932844), Python 3.12.10:
+
+| 단계 | 결과 |
+| --- | --- |
+| `git clone` | 7초 |
+| `py -3.12 -m venv .venv` | 9초 |
+| `Activate.ps1` 후 `pip install -r requirements-dev.txt` | 종료 코드 0, 139초 |
+| `python -m unittest tests.test_core_units` | OK (14개) |
+| `python -m tests.smoke_test` | ALL PASSED (`PYTHONIOENCODING` 설정 유무 모두) |
+| `streamlit run app.py` | 서버 상태 확인 응답 `ok`. 화면 값은 같은 버전 조합의 `.venv`로 2026-10-01에 확인(7-3절) |
+| `python -m pipeline.build` (원본 CSV 없음) | 안내 메시지와 함께 종료, `data\processed` 변경 없음 |
+
+확인하지 못한 것: PowerShell 실행 정책이 기본값(Restricted)인 PC에서의 `Activate.ps1`, macOS·Linux, 팀원이 받은 원본 CSV로 돌린 배치.
