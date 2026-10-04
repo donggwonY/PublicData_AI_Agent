@@ -1,0 +1,141 @@
+{
+  "queried_at_utc": "2026-10-04T06:04:44.319735+00:00",
+  "snapshot_reference_date": "2026-09-23",
+  "snapshot_sha256": "ff294387ab1f70485302b93affde368ace12e39fe78716431f7c3fe0876ac3ee",
+  "query": {
+    "pageNo": "1",
+    "numOfRows": "100",
+    "returnType": "JSON",
+    "cond[OPN_ATMY_GRP_CD::EQ]": "3410000",
+    "cond[DAT_UPDT_PNT::GTE]": "20261003000000",
+    "cond[DAT_UPDT_PNT::LT]": "20261004000000"
+  },
+  "api_total": 6,
+  "classification_counts": {
+    "absent_from_snapshot": 2,
+    "matched_changed": 4
+  },
+  "compared_fields": [
+    "name",
+    "road_addr_raw",
+    "jibun_addr_raw",
+    "ld",
+    "cd",
+    "closed"
+  ],
+  "observations": [
+    {
+      "key": [
+        "3410000",
+        "3410000-101-2026-00346",
+        "일반음식점"
+      ],
+      "classification": "absent_from_snapshot",
+      "license_date": "2026-10-02",
+      "api_status": "영업/정상",
+      "license_after_snapshot_reference": true,
+      "update_kind": "I",
+      "changes": []
+    },
+    {
+      "key": [
+        "3410000",
+        "3410000-101-2026-00345",
+        "일반음식점"
+      ],
+      "classification": "absent_from_snapshot",
+      "license_date": "2026-10-02",
+      "api_status": "영업/정상",
+      "license_after_snapshot_reference": true,
+      "update_kind": "I",
+      "changes": []
+    },
+    {
+      "key": [
+        "3410000",
+        "3410000-101-2026-00161",
+        "일반음식점"
+      ],
+      "classification": "matched_changed",
+      "license_date": "2026-05-04",
+      "api_status": "폐업",
+      "license_after_snapshot_reference": false,
+      "update_kind": "U",
+      "changes": [
+        {
+          "field": "cd",
+          "before": "",
+          "after": "2026-10-02"
+        },
+        {
+          "field": "closed",
+          "before": false,
+          "after": true
+        }
+      ]
+    },
+    {
+      "key": [
+        "3410000",
+        "3410000-101-2019-00286",
+        "일반음식점"
+      ],
+      "classification": "matched_changed",
+      "license_date": "2019-12-24",
+      "api_status": "영업/정상",
+      "license_after_snapshot_reference": false,
+      "update_kind": "U",
+      "changes": [
+        {
+          "field": "name",
+          "before": "헤기",
+          "after": "막창짚 교동본점"
+        }
+      ]
+    },
+    {
+      "key": [
+        "3410000",
+        "3410000-101-2019-00140",
+        "일반음식점"
+      ],
+      "classification": "matched_changed",
+      "license_date": "2019-06-21",
+      "api_status": "영업/정상",
+      "license_after_snapshot_reference": false,
+      "update_kind": "U",
+      "changes": [
+        {
+          "field": "name",
+          "before": "바다와",
+          "after": "야키토리 기슈"
+        }
+      ]
+    },
+    {
+      "key": [
+        "3410000",
+        "3410000-101-2015-00125",
+        "일반음식점"
+      ],
+      "classification": "matched_changed",
+      "license_date": "2015-07-01",
+      "api_status": "영업/정상",
+      "license_after_snapshot_reference": false,
+      "update_kind": "U",
+      "changes": [
+        {
+          "field": "name",
+          "before": "활력",
+          "after": "대구종로술집 활력"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Missing from cleaned snapshot does not prove a newly created license.",
+    "Only six normalized fields compared; source update timestamps were not preserved in stores.",
+    "API snapshot can change between executions; this is not a stored historical API response.",
+    "No source or production data modified."
+  ]
+}

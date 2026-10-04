@@ -1,0 +1,38 @@
+{
+  "snapshot_reference_date": "2026-09-23",
+  "checks": [
+    {
+      "join": "stores.uid → units.uid",
+      "unmatched": 0,
+      "denominator": 197356,
+      "unmatched_pct": 0.0
+    },
+    {
+      "join": "transitions.uid → units.uid",
+      "unmatched": 0,
+      "denominator": 22945,
+      "unmatched_pct": 0.0
+    },
+    {
+      "join": "stores.(gu,dong) → legal_admin_map",
+      "unmatched": 1776,
+      "denominator": 197356,
+      "unmatched_pct": 0.9
+    },
+    {
+      "join": "stores → mapping → area_context",
+      "unmatched": 1776,
+      "denominator": 197356,
+      "unmatched_pct": 0.9
+    },
+    {
+      "join": "mapped stores → area_context",
+      "unmatched": 0,
+      "denominator": 195580,
+      "unmatched_pct": 0.0
+    }
+  ],
+  "missing_gu_or_dong": 142,
+  "mapped_to_nonunanimous_admin": 108328,
+  "context_matched_but_population_missing": 0
+}

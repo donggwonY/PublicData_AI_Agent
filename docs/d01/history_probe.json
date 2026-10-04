@@ -1,0 +1,102 @@
+{
+  "queried_at_utc": "2026-10-04T06:23:02.975252+00:00",
+  "key": [
+    "3410000",
+    "3410000-101-2026-00161",
+    "일반음식점"
+  ],
+  "baseline_reference_date": "2026-09-23",
+  "baseline_closed": false,
+  "queries": [
+    {
+      "requested_base_date": "20260923",
+      "operation": "history",
+      "search_total": 1,
+      "matching_key_count": 1,
+      "matched_rows": [
+        {
+          "BASE_DATE": null,
+          "SALS_STTS_NM": "영업/정상",
+          "CLSBIZ_YMD": null,
+          "LCPMT_YMD": "2026-05-04",
+          "DAT_UPDT_PNT": "2026-05-05 22:18:00",
+          "LAST_MDFCN_PNT": "2026-05-04 14:50:33",
+          "DAT_UPDT_SE": "I"
+        }
+      ]
+    },
+    {
+      "requested_base_date": "20261001",
+      "operation": "history",
+      "search_total": 1,
+      "matching_key_count": 1,
+      "matched_rows": [
+        {
+          "BASE_DATE": null,
+          "SALS_STTS_NM": "영업/정상",
+          "CLSBIZ_YMD": null,
+          "LCPMT_YMD": "2026-05-04",
+          "DAT_UPDT_PNT": "2026-05-05 22:18:00",
+          "LAST_MDFCN_PNT": "2026-05-04 14:50:33",
+          "DAT_UPDT_SE": "I"
+        }
+      ]
+    },
+    {
+      "requested_base_date": "20261002",
+      "operation": "history",
+      "search_total": 1,
+      "matching_key_count": 1,
+      "matched_rows": [
+        {
+          "BASE_DATE": null,
+          "SALS_STTS_NM": "폐업",
+          "CLSBIZ_YMD": "2026-10-02",
+          "LCPMT_YMD": "2026-05-04",
+          "DAT_UPDT_PNT": "2026-10-03 22:17:50",
+          "LAST_MDFCN_PNT": "2026-10-02 10:57:41",
+          "DAT_UPDT_SE": "U"
+        }
+      ]
+    },
+    {
+      "requested_base_date": "20261003",
+      "operation": "history",
+      "search_total": 1,
+      "matching_key_count": 1,
+      "matched_rows": [
+        {
+          "BASE_DATE": null,
+          "SALS_STTS_NM": "폐업",
+          "CLSBIZ_YMD": "2026-10-02",
+          "LCPMT_YMD": "2026-05-04",
+          "DAT_UPDT_PNT": "2026-10-03 22:17:50",
+          "LAST_MDFCN_PNT": "2026-10-02 10:57:41",
+          "DAT_UPDT_SE": "U"
+        }
+      ]
+    },
+    {
+      "requested_base_date": null,
+      "operation": "info",
+      "search_total": 1,
+      "matching_key_count": 1,
+      "matched_rows": [
+        {
+          "BASE_DATE": null,
+          "SALS_STTS_NM": "폐업",
+          "CLSBIZ_YMD": "2026-10-02",
+          "LCPMT_YMD": "2026-05-04",
+          "DAT_UPDT_PNT": "2026-10-03 22:17:50",
+          "LAST_MDFCN_PNT": "2026-10-02 10:57:41",
+          "DAT_UPDT_SE": "U"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "One license only; not a boundary contract proof.",
+    "Name filter could miss renamed historical records; no match does not prove deletion.",
+    "No source data or production state updated."
+  ]
+}

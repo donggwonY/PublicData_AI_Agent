@@ -1,0 +1,29 @@
+{
+  "source": "https://github.com/donggwonY/daegu_lifecycle_agent",
+  "commit": "193284406299ff28a9d9541cf3d17a908fd13847",
+  "reference_date": "2026-09-23",
+  "built_at": "2026-09-29 21:16:54",
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "pyarrow": "24.0.0"
+  },
+  "sha256": {
+    "area_context.parquet": "c18f7dfa2ce6e1e9696290eb3bbe91ddb86c54c0541da43c16edf87f613367ac",
+    "area_cycle.parquet": "ece3001488b0857e8f93fb7e463774d7ff871f43bc7c39ccbf900100bd50079c",
+    "area_year.parquet": "c4f9b1228563b2839108801913ecb0d54d591778828d7c3f45b6c847b7d4bcb4",
+    "legal_admin_map.parquet": "b8ea8ebf7765237996015339dfe3e2ad3f39d62914a010dd0515b354f60ed270",
+    "market.parquet": "9e29c489bed48fe1a2ad90eb33b37673ce38181396ecc4e13f510307bf60caed",
+    "meta.json": "24ffcc382435436c3e0e6073267b1670d3674c1381f8b0f0755fdf26ed2bd83c",
+    "parking.parquet": "9db1cc8aa766ec1a060f811f944223f1df25a628ec090088bae8b167c260cebe",
+    "poi.parquet": "779b3214613977fe6846769c330438c018371e64167be5b02adb2e0c2b58663d",
+    "station_traffic.parquet": "a36e9a3707da0b074da644eaa202e3bccacc1dff92f6ed855e7ae103019a3f17",
+    "stores.parquet": "ff294387ab1f70485302b93affde368ace12e39fe78716431f7c3fe0876ac3ee",
+    "survival.parquet": "f6c8f446e958c5f44c47ee48a4064b7118c49d3b668da974fe9aadf4574169de",
+    "transitions.parquet": "143e842416842bd61339ff4a1db26ad0f629c264600f2ecbd44e6d5324f2a6ba",
+    "units.parquet": "d0b49c3e81aaeacdc19c2400920973dbe0cab7d30503dbe7e37296b91629d1f9",
+    "vacancy_area.parquet": "7eac83166015a79cc550d7f9940e2e76ae8d97648993347b207beca233603b09"
+  },
+  "raw_csv_count": 0,
+  "external_csv_count": 0
+}

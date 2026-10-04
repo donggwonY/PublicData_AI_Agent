@@ -1,0 +1,23 @@
+{
+  "column_coverage": {
+    "transitions": 14,
+    "area_year": 8,
+    "area_cycle": 16,
+    "survival": 13,
+    "vacancy_area": 7,
+    "poi": 12,
+    "area_context": 44,
+    "legal_admin_map": 5,
+    "parking": 7,
+    "market": 8,
+    "station_traffic": 10
+  },
+  "tables": 11,
+  "columns": 144,
+  "namgu_unmatched": 409,
+  "reasons": {
+    "법정동 키에는 없고 현재 행정동명과 일치": 407,
+    "동 파싱 결측": 2
+  },
+  "raw_data_modified": false
+}

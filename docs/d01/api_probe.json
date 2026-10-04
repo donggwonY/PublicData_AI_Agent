@@ -1,0 +1,65 @@
+{
+  "queried_at_utc": "2026-10-04T05:40:08.127668+00:00",
+  "endpoint": "https://apis.data.go.kr/1741000/general_restaurants/info",
+  "filter": {
+    "ROAD_NM_ADDR contains": "대구광역시"
+  },
+  "http_status": 200,
+  "result_code": "0",
+  "page": 1,
+  "total_count_reported": 66518,
+  "sample_rows": 5,
+  "required_fields_present": true,
+  "fields": [
+    "BIZPLC_SURRND_SE_NM",
+    "BLDG_PSN_SE_NM",
+    "BPLC_NM",
+    "BZSTAT_SE_NM",
+    "CLSBIZ_YMD",
+    "CRD_INFO_X",
+    "CRD_INFO_Y",
+    "DAT_UPDT_PNT",
+    "DAT_UPDT_SE",
+    "DTL_SALS_STTS_CD",
+    "DTL_SALS_STTS_NM",
+    "FCLT_TOTAL_SCL",
+    "FCTRY_OFJB_EMP_CNT",
+    "FCTRY_PRODWK_EMP_CNT",
+    "FCTRY_SLSPOS_EMP_CNT",
+    "FML_PRCTR_CNT",
+    "GRD_SE_NM",
+    "GRNAMT",
+    "HDOFC_EMP_CNT",
+    "HPG",
+    "LAST_MDFCN_PNT",
+    "LCPMT_YMD",
+    "LCTN_AREA",
+    "LCTN_ZIP",
+    "LOTNO_ADDR",
+    "MLT_UTZTN_BSNSSP_YN",
+    "ML_PRCTR_CNT",
+    "MNG_NO",
+    "MRNT_AMOUNT",
+    "OPN_ATMY_GRP_CD",
+    "ROAD_NM_ADDR",
+    "ROAD_NM_ZIP",
+    "SALS_STTS_CD",
+    "SALS_STTS_NM",
+    "SNTTN_BZSTAT_NM",
+    "TELNO",
+    "TRDTN_BSNSSP_DSGN_NO",
+    "TRDTN_BSNSSP_PRINC_FD",
+    "WTRSPPL_FCLT_SE_NM"
+  ],
+  "org_codes": [
+    "3470000",
+    "3480000"
+  ],
+  "status_counts": {
+    "영업/정상": 5
+  },
+  "update_times": [
+    "2026-10-03 22:17:50"
+  ],
+  "limitations": "First 5 road-address matches only; not all Daegu, no population estimate or incremental completeness verification."
+}

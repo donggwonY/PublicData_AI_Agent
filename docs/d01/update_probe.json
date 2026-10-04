@@ -1,0 +1,92 @@
+{
+  "queried_at_utc": "2026-10-04T05:58:42.861480+00:00",
+  "endpoint": "https://apis.data.go.kr/1741000/general_restaurants/info",
+  "org_code": "3410000",
+  "region_note": "Existing snapshot mostly maps this code to 중구; issuing authority need not equal address district.",
+  "calls": [
+    {
+      "label": "page1",
+      "page": 1,
+      "start_inclusive": "20261003000000",
+      "end_exclusive": "20261004000000",
+      "total_reported": 6,
+      "received": 5,
+      "region_matches": true,
+      "date_matches": true,
+      "missing_keys": 0,
+      "update_times": [
+        "2026-10-03 22:17:50"
+      ]
+    },
+    {
+      "label": "page2",
+      "page": 2,
+      "start_inclusive": "20261003000000",
+      "end_exclusive": "20261004000000",
+      "total_reported": 6,
+      "received": 1,
+      "region_matches": true,
+      "date_matches": true,
+      "missing_keys": 0,
+      "update_times": [
+        "2026-10-03 22:17:50"
+      ]
+    },
+    {
+      "label": "page1_repeat",
+      "page": 1,
+      "start_inclusive": "20261003000000",
+      "end_exclusive": "20261004000000",
+      "total_reported": 6,
+      "received": 5,
+      "region_matches": true,
+      "date_matches": true,
+      "missing_keys": 0,
+      "update_times": [
+        "2026-10-03 22:17:50"
+      ]
+    },
+    {
+      "label": "exclude_boundary",
+      "page": 1,
+      "start_inclusive": "20261003000000",
+      "end_exclusive": "20261003221750",
+      "total_reported": 0,
+      "received": 0,
+      "region_matches": true,
+      "date_matches": true,
+      "missing_keys": 0,
+      "update_times": []
+    },
+    {
+      "label": "include_boundary",
+      "page": 1,
+      "start_inclusive": "20261003221750",
+      "end_exclusive": "20261004000000",
+      "total_reported": 6,
+      "received": 5,
+      "region_matches": true,
+      "date_matches": true,
+      "missing_keys": 0,
+      "update_times": [
+        "2026-10-03 22:17:50"
+      ]
+    }
+  ],
+  "page_overlap_keys": 0,
+  "page1_internal_duplicates": 0,
+  "page2_internal_duplicates": 0,
+  "repeat_same_keys": true,
+  "repeat_same_payloads": true,
+  "unique_before_replay": 6,
+  "unique_after_replay": 6,
+  "boundary_partition_total_matches": true,
+  "sample_contains_boundary": true,
+  "limitations": [
+    "Coverage is only against API-reported count for this region/time; source completeness is not established.",
+    "No stable ordering guarantee established.",
+    "No deletion or historical correction behavior tested.",
+    "DAT_UPDT_PNT may reflect bulk publication, not business-level change; not established."
+  ],
+  "reported_count_covered": true
+}

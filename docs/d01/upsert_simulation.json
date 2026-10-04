@@ -1,0 +1,46 @@
+{
+  "scope": "In-memory six-field projection only; not raw-data ingestion or production transaction.",
+  "before_rows": 9616,
+  "after_first_rows": 9618,
+  "after_second_rows": 9618,
+  "first_apply": {
+    "inserted": 2,
+    "updated": 4,
+    "unchanged": 0
+  },
+  "second_apply": {
+    "inserted": 0,
+    "updated": 0,
+    "unchanged": 6
+  },
+  "same_after_replay": true,
+  "same_after_reversed_batch": true,
+  "input_unchanged": true,
+  "failure_cases": {
+    "missing_key": {
+      "rejected": true,
+      "original_unchanged": true
+    },
+    "duplicate_key": {
+      "rejected": true,
+      "original_unchanged": true
+    },
+    "closed_without_date": {
+      "rejected": true,
+      "original_unchanged": true
+    }
+  },
+  "before_sha256": "d681a84470b84c71906c7d7e9229338e1126def3ddbe6d02884942bf93e240be",
+  "after_sha256": "7674ab54123dbdf412d02eb99482b685f30dadefbf5b4b1403877aa67f2ef591",
+  "queried_at_utc": "2026-10-04T06:08:24.043409+00:00",
+  "snapshot_sha256": "ff294387ab1f70485302b93affde368ace12e39fe78716431f7c3fe0876ac3ee",
+  "query": {
+    "pageNo": "1",
+    "numOfRows": "100",
+    "returnType": "JSON",
+    "cond[OPN_ATMY_GRP_CD::EQ]": "3410000",
+    "cond[DAT_UPDT_PNT::GTE]": "20261003000000",
+    "cond[DAT_UPDT_PNT::LT]": "20261004000000"
+  },
+  "source_file_unchanged": true
+}
