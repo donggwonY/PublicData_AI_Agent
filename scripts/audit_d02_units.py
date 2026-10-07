@@ -69,7 +69,7 @@ def main():
               '- 구·동·업종·개업연도 EDA와 작은 집단·관측 기간·누락률을 정리한다.',
               '- 학생의 해석, 정의별 민감도 표, 사용 금지 조건과 키·기준일 전달 문서를 마무리한다.', '',
               '재현: `python scripts/audit_d02_units.py` (pandas·numpy·pyarrow 필요).', '']
-    (output / 'unit_sensitivity.md').write_text('\n'.join(line.rstrip() for line in lines), encoding='utf-8')
+    (output / 'unit_sensitivity.md').write_text('\n'.join(line.rstrip() for line in '\n'.join(lines).splitlines()) + '\n', encoding='utf-8')
     print(json.dumps(payload, ensure_ascii=False, indent=2))
 
 if __name__ == '__main__':
