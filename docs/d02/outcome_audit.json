@@ -1,0 +1,104 @@
+{
+  "reference_date": "2026-09-23",
+  "counts": {
+    "stores": 197356,
+    "closed": 138307,
+    "active": 59049,
+    "closed_missing_date": 0,
+    "active_with_close_date": 0,
+    "same_day_closures": 175,
+    "vacancy_denominator": 46124,
+    "vacancy_candidates": 5473,
+    "vacant_under_90_in_denominator": 449,
+    "live_missing_gu": 2,
+    "live_missing_gu_or_dong": 21,
+    "survival_rows_reproduced": 501,
+    "vacancy_rows_reproduced": 297
+  },
+  "vacancy_sensitivity": [
+    {
+      "min_days": 30,
+      "denominator": 46124,
+      "candidates": 5825,
+      "pct": 12.63
+    },
+    {
+      "min_days": 60,
+      "denominator": 46124,
+      "candidates": 5682,
+      "pct": 12.32
+    },
+    {
+      "min_days": 90,
+      "denominator": 46124,
+      "candidates": 5473,
+      "pct": 11.87
+    },
+    {
+      "min_days": 180,
+      "denominator": 46124,
+      "candidates": 5093,
+      "pct": 11.04
+    }
+  ],
+  "cohort_sensitivity": [
+    {
+      "start_year": 2000,
+      "n": 167947,
+      "closed": 113937,
+      "censored_active": 54010,
+      "median_survival_years": 5.2,
+      "survival_1y_pct": 87.4,
+      "survival_3y_pct": 65.7,
+      "survival_5y_pct": 51.6,
+      "at_risk_1y": 142754,
+      "at_risk_3y": 100316,
+      "at_risk_5y": 72384
+    },
+    {
+      "start_year": 2010,
+      "n": 99401,
+      "closed": 56706,
+      "censored_active": 42695,
+      "median_survival_years": 5.2,
+      "survival_1y_pct": 85.8,
+      "survival_3y_pct": 64.9,
+      "survival_5y_pct": 51.4,
+      "at_risk_1y": 81330,
+      "at_risk_3y": 54483,
+      "at_risk_5y": 36769
+    },
+    {
+      "start_year": 2015,
+      "n": 73813,
+      "closed": 37772,
+      "censored_active": 36041,
+      "median_survival_years": 5.0,
+      "survival_1y_pct": 85.0,
+      "survival_3y_pct": 64.0,
+      "survival_5y_pct": 50.4,
+      "at_risk_1y": 58747,
+      "at_risk_3y": 37247,
+      "at_risk_5y": 22926
+    },
+    {
+      "start_year": 2020,
+      "n": 41746,
+      "closed": 17241,
+      "censored_active": 24505,
+      "median_survival_years": 4.5,
+      "survival_1y_pct": 82.4,
+      "survival_3y_pct": 61.0,
+      "survival_5y_pct": 46.8,
+      "at_risk_1y": 30443,
+      "at_risk_3y": 15602,
+      "at_risk_5y": 5646
+    }
+  ],
+  "source_hashes": {
+    "pipeline/build.py": "9e5d4a233499978b73da843811210a7527c7ad1c67767758b676bfa45b6eb47e",
+    "core/survival.py": "a0ad68e4d8f3cbe39817e8a00b7e5f72715d42c45a0ad72d8a1ef1f7d44407db",
+    "config.py": "dd311c43dba957ec029cbb9e4d0e869c0a9cc882d545392b18c1381cc2149601"
+  },
+  "checks": "input hashes; full survival/vacancy table comparison; derived duration/vacant/candidate identities; 3 KM checks; inclusive vacancy boundary"
+}

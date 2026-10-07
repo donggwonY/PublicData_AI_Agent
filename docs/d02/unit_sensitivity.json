@@ -1,0 +1,110 @@
+{
+  "reference_date": "2026-09-23",
+  "source_commit": "193284406299ff28a9d9541cf3d17a908fd13847",
+  "build_sha256": "9e5d4a233499978b73da843811210a7527c7ad1c67767758b676bfa45b6eb47e",
+  "input_hashes_verified": 14,
+  "unit_count": 76363,
+  "baseline_checks_passed": 3,
+  "sensitivity": [
+    {
+      "tolerance_days": 0,
+      "single_units": 51923,
+      "multi_units": 24440,
+      "changed_from_60": 404,
+      "single_but_multiple_active": 0
+    },
+    {
+      "tolerance_days": 30,
+      "single_units": 52174,
+      "multi_units": 24189,
+      "changed_from_60": 99,
+      "single_but_multiple_active": 14
+    },
+    {
+      "tolerance_days": 60,
+      "single_units": 52273,
+      "multi_units": 24090,
+      "changed_from_60": 0,
+      "single_but_multiple_active": 31
+    },
+    {
+      "tolerance_days": 90,
+      "single_units": 52366,
+      "multi_units": 23997,
+      "changed_from_60": 93,
+      "single_but_multiple_active": 56
+    }
+  ],
+  "regions": [
+    {
+      "gu": "군위군",
+      "units": 983,
+      "changed": 4,
+      "single60": 774,
+      "changed_pct": 0.41
+    },
+    {
+      "gu": "남구",
+      "units": 6550,
+      "changed": 27,
+      "single60": 4650,
+      "changed_pct": 0.41
+    },
+    {
+      "gu": "달서구",
+      "units": 14241,
+      "changed": 60,
+      "single60": 9493,
+      "changed_pct": 0.42
+    },
+    {
+      "gu": "달성군",
+      "units": 5574,
+      "changed": 16,
+      "single60": 3661,
+      "changed_pct": 0.29
+    },
+    {
+      "gu": "동구",
+      "units": 9730,
+      "changed": 75,
+      "single60": 6513,
+      "changed_pct": 0.77
+    },
+    {
+      "gu": "북구",
+      "units": 11458,
+      "changed": 48,
+      "single60": 7393,
+      "changed_pct": 0.42
+    },
+    {
+      "gu": "서구",
+      "units": 6992,
+      "changed": 35,
+      "single60": 4739,
+      "changed_pct": 0.5
+    },
+    {
+      "gu": "수성구",
+      "units": 11971,
+      "changed": 56,
+      "single60": 8061,
+      "changed_pct": 0.47
+    },
+    {
+      "gu": "중구",
+      "units": 8854,
+      "changed": 56,
+      "single60": 6979,
+      "changed_pct": 0.63
+    },
+    {
+      "gu": null,
+      "units": 10,
+      "changed": 0,
+      "single60": 10,
+      "changed_pct": 0.0
+    }
+  ]
+}

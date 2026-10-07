@@ -1,0 +1,42 @@
+{
+  "reference_date": "2026-09-23",
+  "input_hashes_verified": 14,
+  "build_sha256": "9e5d4a233499978b73da843811210a7527c7ad1c67767758b676bfa45b6eb47e",
+  "counts": {
+    "multi_to_single": 377,
+    "single_to_multi": 27,
+    "reverse_with_same_day_record": 27,
+    "single_with_multiple_active": 31,
+    "active_records_in_these_units": 62,
+    "flagged_now_multi_when_active_end_preserved": 31,
+    "all_single_to_multi_when_active_end_preserved": 31,
+    "reverse_now_multi_with_minimum_one_day_only": 27
+  },
+  "synthetic_cases": [
+    {
+      "case": "same_day_close",
+      "days0": 0,
+      "days60": 1
+    },
+    {
+      "case": "same_day_with_existing",
+      "days0": 1,
+      "days60": 2
+    },
+    {
+      "case": "closed_overlap_60",
+      "days0": 2,
+      "days60": 1
+    },
+    {
+      "case": "closed_overlap_61",
+      "days0": 2,
+      "days60": 2
+    },
+    {
+      "case": "two_active_recent",
+      "days0": 2,
+      "days60": 1
+    }
+  ]
+}

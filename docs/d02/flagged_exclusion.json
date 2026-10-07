@@ -1,0 +1,23 @@
+{
+  "reference_date": "2026-09-23",
+  "input_hashes_verified": 14,
+  "scope": "Excludes all permit histories belonging to the 31 flagged uids; no source edits. Descriptive vacancy sensitivity only; not all downstream analyses.",
+  "results": [
+    {
+      "case": "include",
+      "units": 76363,
+      "stores": 197356,
+      "vacancy_denominator": 46124,
+      "vacancy_candidates": 5473,
+      "vacancy_candidate_pct": 11.8658
+    },
+    {
+      "case": "exclude",
+      "units": 76332,
+      "stores": 197265,
+      "vacancy_denominator": 46093,
+      "vacancy_candidates": 5473,
+      "vacancy_candidate_pct": 11.8738
+    }
+  ]
+}
