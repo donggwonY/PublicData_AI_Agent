@@ -1,0 +1,5 @@
+# 로컬 전용: 야간 배치(좌표 변환) + MCP 서버
+# requirements.txt 와 같은 이유로 고정. 이 버전으로 Python 3.12 에서 배치를 돌려 data/processed 와 같은 결과를 확인했다.
+-r requirements.txt
+pyproj==3.8.0
+mcp==2.2.0

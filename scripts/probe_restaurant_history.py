@@ -10,7 +10,7 @@ from probe_restaurants import ROOT, ENDPOINT
 
 
 def main():
-    source=ROOT.parent/'daegu_lifecycle_agent/data/processed/stores.parquet'
+    source=ROOT/'service/data/processed/stores.parquet'
     manifest=json.loads((ROOT/'docs/d01/manifest.json').read_text(encoding='utf-8'))
     if hashlib.sha256(source.read_bytes()).hexdigest()!=manifest['sha256']['stores.parquet']:
         raise ValueError('snapshot changed')

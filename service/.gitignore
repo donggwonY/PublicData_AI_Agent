@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+logs/
+
+# 원본 CSV 는 배포에 필요 없음 — 배치 산출물 data/processed 만 커밋
+# (인허가 40MB + 보조 데이터 75MB. 둘 다 공공데이터포털에서 받을 수 있는 공개 데이터다)
+data/raw/
+data/external/
+
+# 비밀값
+.streamlit/secrets.toml
+.env

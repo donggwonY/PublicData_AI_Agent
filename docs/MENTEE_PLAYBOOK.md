@@ -4,8 +4,8 @@
 
 ## 먼저 확인할 사실
 
-- 협업 저장소 `PublicData_AI_Agent`에는 현재 앱 코드가 없고 설계·멘티 지침이 있다. 데모 코드는 별도 [daegu_lifecycle_agent](https://github.com/donggwonY/daegu_lifecycle_agent)에 있다. 접근 가능한 데모 체크아웃이 없으면 읽기 전용으로 확인할 수 있지만, 코드 이동이나 운영 DB 변경은 결정된 것처럼 가정하지 않는다.
-- 참고 구현 저장소에서는 `pipeline/build.py`, `pipeline/external.py`의 배치 계산 → `data/processed/*.parquet` → `core/tools.py`의 조회·계산 함수 → Streamlit 상담 또는 MCP 연결로 이어진다. 주소/자리 이력 조회, Kaplan–Meier 생존곡선, 상권 단계, 업종 전이 등의 **통계·규칙 기반 분석이 이미 존재**한다. LLM이 모든 숫자를 계산하는 구조는 아니다. 현재 확인한 코드에는 학습·평가된 예측 모델이 없다. 함수 목록과 개수는 작업 시점의 `core/tools.py`에서 다시 확인한다.
+- 서비스 코드는 이 저장소의 `service/`에 있다(2026-10-11에 [daegu_lifecycle_agent](https://github.com/donggwonY/daegu_lifecycle_agent) `main` 1932844에서 이전). 아래에서 "데모"·"참고 구현"은 이 `service/` 코드를 가리키고 파일 경로는 `service/` 기준이다. 공개 앱은 `deploy` 브랜치에서 배포하므로 `main` 푸시가 서비스를 바꾸지는 않는다. 운영 DB 변경은 결정된 것처럼 가정하지 않는다.
+- 참고 구현에서는 `pipeline/build.py`, `pipeline/external.py`의 배치 계산 → `data/processed/*.parquet` → `core/tools.py`의 조회·계산 함수 → Streamlit 상담 또는 MCP 연결로 이어진다. 주소/자리 이력 조회, Kaplan–Meier 생존곡선, 상권 단계, 업종 전이 등의 **통계·규칙 기반 분석이 이미 존재**한다. LLM이 모든 숫자를 계산하는 구조는 아니다. 현재 확인한 코드에는 학습·평가된 예측 모델이 없다. 함수 목록과 개수는 작업 시점의 `core/tools.py`에서 다시 확인한다.
 - 데모의 `meta.json`과 Parquet는 한 시점의 스냅샷이다. 예를 들어 확인 당시 `reference_date`는 2026-09-08이었으나 새 체크아웃에서는 반드시 다시 읽는다. 원본 인허가 CSV와 일부 보조 CSV는 로컬에 없을 수 있다. 없는 원본으로 배치를 성공한 척하거나 공개 출처와 이용 조건을 확인하지 않은 데이터를 새로 합치지 않는다.
 - 목표는 `LLM + MCP` 자체가 아니라 **재현 가능한 데이터 분석 → 필요할 때 검증된 통계/ML 결과 → 근거를 설명하는 상담**이다. Supabase 이전은 향후 작업이며, 분석 실험은 우선 현재 Parquet에서도 할 수 있다.
 

@@ -1,6 +1,14 @@
 # PublicData AI Agent — 멘티 협업 허브
 
-이 저장소는 대구 상권 생애주기 AI 에이전트를 발표 가능한 프로젝트로 발전시키기 위한 **공통 설계와 개발 지침**을 담습니다. 현재 이 저장소에는 웹앱 소스가 없습니다. 기존 구현은 [daegu_lifecycle_agent](https://github.com/donggwonY/daegu_lifecycle_agent)에 있으며, 코드 이전 여부와 시점은 별도로 결정합니다.
+이 저장소는 대구 상권 생애주기 AI 에이전트를 발표 가능한 프로젝트로 발전시키기 위한 **공통 설계·개발 지침과 서비스 코드**를 담습니다. 웹앱·배치·가공 데이터는 [`service/`](service/)에 있습니다. 2026-10-11에 [daegu_lifecycle_agent](https://github.com/donggwonY/daegu_lifecycle_agent) `main`(1932844)의 내용을 그대로 옮겨 왔고, 그 이전 커밋 이력은 원래 저장소에 남아 있습니다.
+
+| 위치 | 내용 |
+| --- | --- |
+| `service/` | Streamlit 앱(`app.py`), 분석 함수(`core/`), 배치(`pipeline/`), 가공 데이터(`data/processed/`), 앱 테스트(`tests/`). 실행 방법은 [service/README.md](service/README.md) |
+| `scripts/`, `tests/` | 멘티용 Git 도구와 분석·검증 스크립트, 그 테스트 |
+| `docs/` | 설계, 작업 흐름, 작업판, 작업별 산출물 |
+
+`main`은 작업 브랜치이고 공개 앱은 `deploy` 브랜치에서 배포합니다. `main`에 푸시해도 공개 앱은 바뀌지 않습니다. 절차는 [팀 역할과 작업 흐름](docs/TEAM_WORKFLOW.md)에 있습니다.
 
 - [구현 설계와 결정 사항](docs/IMPLEMENTATION_DESIGN.md)
 - [팀 역할과 작업 흐름](docs/TEAM_WORKFLOW.md)
@@ -25,4 +33,4 @@
 
 새 스킬은 `.agents/skills/<skill-name>/SKILL.md` 한 곳에 작성하고 `python3 scripts/link_skills.py`를 실행하세요. 이 명령이 `.codex/skills/<skill-name>`과 `.claude/skills/<skill-name>`에 원본 폴더를 가리키는 상대 심볼릭 링크를 만듭니다. 따라서 Codex와 Claude Code가 같은 `SKILL.md`를 읽습니다. 링크와 원본을 함께 커밋하고, 두 경로에 별도 본문을 작성하지 마세요. Windows에서는 심볼릭 링크를 실제 링크로 체크아웃하도록 개발자 모드와 Git의 `core.symlinks` 설정을 확인해야 합니다.
 
-앱 코드가 이 저장소로 이전되면 실행·테스트 명령, 데이터 스키마, 배포 책임을 문서에 추가하세요.
+앱 실행·테스트 명령은 `service/README.md`, 배포 책임과 `deploy` 브랜치 절차는 `docs/TEAM_WORKFLOW.md`, 데이터 스키마는 `docs/d01/`에서 관리합니다.

@@ -49,7 +49,7 @@ def main():
     for r in rows:
         if not all(row_key(r)) or str(r['OPN_ATMY_GRP_CD']) != '3410000': raise ValueError('bad key/region')
         if not datetime(2026,10,3) <= parse_time(r['DAT_UPDT_PNT']) < datetime(2026,10,4): raise ValueError('bad date')
-    source = ROOT.parent / 'daegu_lifecycle_agent/data/processed/stores.parquet'
+    source = ROOT / 'service/data/processed/stores.parquet'
     manifest = json.loads((ROOT / 'docs/d01/manifest.json').read_text(encoding='utf-8'))
     sha = hashlib.sha256(source.read_bytes()).hexdigest()
     if sha != manifest['sha256']['stores.parquet']: raise ValueError('snapshot changed')

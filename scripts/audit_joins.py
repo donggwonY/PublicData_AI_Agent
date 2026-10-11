@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    source = ROOT.parent / 'daegu_lifecycle_agent/data/processed'
+    source = ROOT / 'service/data/processed'
     manifest = json.loads((ROOT/'docs/d01/manifest.json').read_text(encoding='utf-8'))
     frames = {}
     for name in ('stores','units','transitions','legal_admin_map','area_context'):

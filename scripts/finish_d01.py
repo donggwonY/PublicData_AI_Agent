@@ -97,7 +97,7 @@ add('market','parking','원천 주차장보유여부 문자열.')
 
 
 def main():
-    src=ROOT.parent/'daegu_lifecycle_agent/data/processed'
+    src=ROOT/'service/data/processed'
     manifest=json.loads((ROOT/'docs/d01/manifest.json').read_text(encoding='utf-8'))
     frames={}
     for name in TABLES:
