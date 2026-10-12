@@ -1,6 +1,6 @@
 # E-01 데모 실행·구조·배포 흐름 재현
 
-담당: 염동권 · 상태: 진행 중 · 대상: [daegu_lifecycle_agent](https://github.com/donggwonY/daegu_lifecycle_agent) `origin/main` (조사 시작 5d3e1cd → PR #10·#11 병합 후 1932844). 2026-10-11에 이 코드를 이 저장소의 `service/`로 옮겼다(9절)
+담당: 염동권 · 상태: 완료(2026-10-12) · 대상: [daegu_lifecycle_agent](https://github.com/donggwonY/daegu_lifecycle_agent) `origin/main` (조사 시작 5d3e1cd → PR #10·#11 병합 후 1932844). 2026-10-11에 이 코드를 이 저장소의 `service/`로 옮겼다(9절)
 
 **데모를 내 PC에서 실행해 보려면 [10절 로컬 재현 절차](#10-로컬-재현-절차-팀원용)부터 본다.**
 
@@ -250,7 +250,9 @@ anthropic==1.11.0
 - [x] R6 적용: [daegu_lifecycle_agent PR #10](https://github.com/donggwonY/daegu_lifecycle_agent/pull/10) 병합(2026-10-01 03:15 UTC, `main` f553901) → 03:17 UTC Reboot. 배포 로그에서 고정 8개가 모두 지정 버전으로 설치되고 "Detected pyarrow 25.0.1 … Replacing" 메시지가 사라진 것을 확인. 나머지 의존 패키지 51개는 아직 고정하지 않음
 - [x] 의존성·비밀값 목록: 6절 (2026-10-01)
 - [x] 코드 이전 여부: B(허브로 이전)로 결정, `service/`로 이전 (2026-10-11, 9절)
-- [ ] 배포 전환: Streamlit Cloud 앱을 이 저장소 `deploy` 브랜치·`service/app.py`로 새로 만들고 화면·로그 확인 (소유자 작업, 9-1절)
+- [x] 배포 전환: 새 앱 pubdai.streamlit.app을 이 저장소 `deploy` 브랜치·`service/app.py`로 만들고 로그·화면 확인 (2026-10-11, 9-1절)
+- [x] 공식 주소 결정: pubdai.streamlit.app. 기존 앱은 유지, 원래 저장소 README에 이전 안내 (2026-10-12)
+- [ ] 전이 의존성 고정 여부(R6 남은 부분): 10일 사이 8개 패키지가 바뀐 것을 확인
 
 ## 9. 코드 이전 여부 (2026-10-11 결정: 허브로 이전)
 
@@ -286,7 +288,22 @@ anthropic==1.11.0
 | 테스트 | `service/`에 새로 만든 Python 3.12.10 `.venv`에서 단위 14개·smoke ALL PASSED·MCP 응답·앱 서버 기동 확인. 루트 `tests/`는 20개 중 18개 통과(실패 2개는 이전부터 있던 Windows 파일 권한 검사) |
 | 비밀값 검사 | `service/` 파일 44개 검사, 해당 없음 |
 
-배포 전환(미완료): 공개 앱은 아직 원래 저장소 `main`에서 서비스 중이다. 소유자가 Streamlit Cloud에서 새 앱을 만든다 — 저장소 `donggwonY/PublicData_AI_Agent`, 브랜치 `deploy`, 메인 파일 `service/app.py`, Python 3.12, Secrets `LLM_PROVIDER`·`GEMINI_API_KEY`. 확인할 것: ① 로그의 고정 버전 8개 ② 사이드바 기준일 2026-09-23과 누적 197,356 ③ 주황 테마 적용 여부(`.streamlit/config.toml`이 `service/` 안에 있어 하위 폴더 배포에서 읽히는지 미검증) ④ `service/requirements.txt`를 찾는지(미검증). 새 앱 확인 후 기존 앱 처리와 원래 저장소 안내문 추가를 정한다.
+배포 전환 결과(2026-10-11): 새 앱 [pubdai.streamlit.app](https://pubdai.streamlit.app)을 이 저장소 `deploy`(4e60b70)·`service/app.py`로 만들어 확인했다.
+
+| 확인 항목 | 결과 |
+| --- | --- |
+| 시작 로그 | `branch: 'deploy'`, `main module: 'service/app.py'`, Python 3.12.15 |
+| 의존성 파일 | `service/requirements.txt`에서 설치(로그에 경로 표시) → 하위 폴더의 requirements를 읽음 |
+| 고정 8개 | pandas 3.0.6, pyarrow 24.0.0, numpy 2.5.3, streamlit 1.64.0, plotly 7.1.0, pydeck 0.9.3, google-genai 2.26.0, anthropic 1.11.0 모두 일치. pyarrow 교체 메시지 없음 |
+| 화면 | 누적 197,356 / 폐업 138,307 / 영업 중 59,049, 기준일 2026-09-23 · 배치 2026-09-29 21:16:54, 대시보드(쇠퇴 진입기·5.2년) 정상. 기존 앱·로컬과 같음 |
+| AI 상담 | "AI 상담 사용 가능 (Google Gemini)", 세션 남은 질문 20회 → Secrets 적용됨. 질문은 보내지 않음 |
+| 테마 | 탭 강조색이 로컬 실행 화면과 같은 주황 계열로 보임(화면 비교, 색상값 측정은 하지 않음) |
+
+고정하지 않은 전이 의존성은 10일 사이에 실제로 바뀌었다(2026-10-01 로그 대비): google-auth 2.59.1→2.61.0, pydantic 2.13.5→2.14.0, pydantic-core 2.46.5→2.50.0, narwhals 2.26.0→2.27.1, httptools 0.8.0→0.9.0, pycparser 3.0→3.11, markupsafe 3.0.3→3.0.4, rpds-py 2026.6.3→2026.9.1. Python도 3.12.14→3.12.15. 이번에는 문제없이 동작했지만 R6의 남은 부분(전이 의존성 51개 미고정)이 실제 변동을 일으킨다는 근거다.
+
+결정(2026-10-12, 염동권): **pubdai.streamlit.app을 공식 주소로 쓴다.** 기존 앱 daegulifecycleagent.streamlit.app은 원래 저장소 `main`에 연결된 채 유지하고(이전 시점 스냅샷, 이후 변경 미반영), 원래 저장소 README 맨 위에 이전 안내를 넣는다.
+
+전환 전 계획(참고): 공개 앱은 원래 저장소 `main`에서 서비스 중이었다. 소유자가 Streamlit Cloud에서 새 앱을 만든다 — 저장소 `donggwonY/PublicData_AI_Agent`, 브랜치 `deploy`, 메인 파일 `service/app.py`, Python 3.12, Secrets `LLM_PROVIDER`·`GEMINI_API_KEY`. 확인할 것: ① 로그의 고정 버전 8개 ② 사이드바 기준일 2026-09-23과 누적 197,356 ③ 주황 테마 적용 여부(`.streamlit/config.toml`이 `service/` 안에 있어 하위 폴더 배포에서 읽히는지 미검증) ④ `service/requirements.txt`를 찾는지(미검증). 새 앱 확인 후 기존 앱 처리와 원래 저장소 안내문 추가를 정한다.
 
 미정: `service/.devcontainer`는 저장소 루트에 있어야 동작하므로 지금은 쓰이지 않는다. D-01 보고서 스크립트가 출처로 원래 저장소 주소와 커밋을 적는 부분은 김세은 확인이 필요하다.
 

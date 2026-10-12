@@ -1,6 +1,6 @@
 # 상권 생애주기 추론 AI 에이전트 (대구)
 
-### ▶ [웹앱 바로가기 — daegulifecycleagent.streamlit.app](https://daegulifecycleagent.streamlit.app)
+### ▶ [웹앱 바로가기 — pubdai.streamlit.app](https://pubdai.streamlit.app)
 
 대구에서 창업하려는 사람에게 **그 자리의 과거를 데이터로 확인시켜주는** 대화형 AI 에이전트.
 행정안전부 지방행정 인허가 데이터(대구 7개 업종 197,356건)를 주소로 묶고 시간순으로 정렬해

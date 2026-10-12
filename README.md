@@ -8,6 +8,8 @@
 | `scripts/`, `tests/` | 멘티용 Git 도구와 분석·검증 스크립트, 그 테스트 |
 | `docs/` | 설계, 작업 흐름, 작업판, 작업별 산출물 |
 
+공개 앱: **[pubdai.streamlit.app](https://pubdai.streamlit.app)**
+
 `main`은 작업 브랜치이고 공개 앱은 `deploy` 브랜치에서 배포합니다. `main`에 푸시해도 공개 앱은 바뀌지 않습니다. 절차는 [팀 역할과 작업 흐름](docs/TEAM_WORKFLOW.md)에 있습니다.
 
 - [구현 설계와 결정 사항](docs/IMPLEMENTATION_DESIGN.md)
