@@ -1,0 +1,32 @@
+{
+  "source": "https://www.openstreetmap.org/api/0.6/map?bbox=128.623,35.874,128.633,35.881",
+  "retrieved_date": "2026-10-12",
+  "license": "ODbL; OpenStreetMap contributors",
+  "sha256": {
+    "dongdaegu_osm_roads.json": "6ff1f0ba51fd12cd7dabcb528c253bfd908235478c380d142b098752e8ee6053",
+    "dongdaegu_osm.osm": "cbe6bc09380f82f0c0cf990bfb431b1593574eb623aa85bbfd887a82d597c598"
+  },
+  "landmarks": [
+    {
+      "name": "신세계백화점 대구점",
+      "osm_way": "404517246"
+    },
+    {
+      "name": "동대구터미널",
+      "osm_way": "468581498"
+    },
+    {
+      "name": "신세계백화점 파미에타운",
+      "osm_way": "472262363"
+    },
+    {
+      "name": "아펠리체",
+      "osm_way": "1219331357"
+    },
+    {
+      "name": "대구 메리어트 호텔",
+      "osm_way": "1219331371"
+    }
+  ],
+  "note": "OSM background labels are not independent confirmation of current business operation."
+}

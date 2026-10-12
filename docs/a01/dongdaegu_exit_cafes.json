@@ -1,0 +1,100 @@
+{
+  "station": "동대구역",
+  "input_hashes": {
+    "station_locations.json": "17e19f27237c2d8a83dd65098fef5450c9897de351003b02b6480f9fa071b003",
+    "poi.parquet": "779b3214613977fe6846769c330438c018371e64167be5b02adb2e0c2b58663d"
+  },
+  "exit_points": [
+    {
+      "exit": "1",
+      "latitude": 35.87762,
+      "longitude": 128.6272
+    },
+    {
+      "exit": "2",
+      "latitude": 35.87713,
+      "longitude": 128.6275
+    },
+    {
+      "exit": "3",
+      "latitude": 35.87803,
+      "longitude": 128.6277
+    }
+  ],
+  "results": [
+    {
+      "radius_m": 300,
+      "union_count": 42,
+      "union_deduplicated": 41,
+      "exact_ties": 0,
+      "multiple_exit_buffers": 38,
+      "exits": [
+        {
+          "exit": "1",
+          "buffer_count": 34,
+          "buffer_deduplicated": 34,
+          "nearest_count": 3,
+          "nearest_deduplicated": 3,
+          "nearest_gap_at_most_10m": 1
+        },
+        {
+          "exit": "2",
+          "buffer_count": 39,
+          "buffer_deduplicated": 38,
+          "nearest_count": 21,
+          "nearest_deduplicated": 20,
+          "nearest_gap_at_most_10m": 0
+        },
+        {
+          "exit": "3",
+          "buffer_count": 40,
+          "buffer_deduplicated": 39,
+          "nearest_count": 18,
+          "nearest_deduplicated": 18,
+          "nearest_gap_at_most_10m": 0
+        }
+      ]
+    },
+    {
+      "radius_m": 500,
+      "union_count": 72,
+      "union_deduplicated": 70,
+      "exact_ties": 0,
+      "multiple_exit_buffers": 64,
+      "exits": [
+        {
+          "exit": "1",
+          "buffer_count": 66,
+          "buffer_deduplicated": 64,
+          "nearest_count": 11,
+          "nearest_deduplicated": 10,
+          "nearest_gap_at_most_10m": 6
+        },
+        {
+          "exit": "2",
+          "buffer_count": 62,
+          "buffer_deduplicated": 60,
+          "nearest_count": 38,
+          "nearest_deduplicated": 37,
+          "nearest_gap_at_most_10m": 0
+        },
+        {
+          "exit": "3",
+          "buffer_count": 65,
+          "buffer_deduplicated": 63,
+          "nearest_count": 23,
+          "nearest_deduplicated": 23,
+          "nearest_gap_at_most_10m": 0
+        }
+      ]
+    }
+  ],
+  "definition": "cat_s exact 카페; spherical straight-line distance; nearest allocation within union; exact ties excluded and reported separately",
+  "limitations": [
+    "보유 공식 자료의 1·2·3번 출구만 비교",
+    "출구 자료 2024-08-26, 상가 설정 기준 202606; 현재 영업 확인 아님",
+    "동일행 제거는 고유 점포 확인이 아님",
+    "최근접 출구는 실제 보행 동선·출입구·고객 유입을 뜻하지 않음",
+    "거리 차이 10m 이하는 임의의 민감도 지표이며 좌표 정확도 보증이 아님"
+  ]
+}

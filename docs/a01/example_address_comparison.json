@@ -1,0 +1,33 @@
+{
+  "selection": "For each exit 2 and 3, select the nearest cafe among records assigned to that exit; no commercial suitability selection.",
+  "radius_m": 300,
+  "input_hashes": {
+    "station_locations.json": "17e19f27237c2d8a83dd65098fef5450c9897de351003b02b6480f9fa071b003",
+    "poi.parquet": "779b3214613977fe6846769c330438c018371e64167be5b02adb2e0c2b58663d"
+  },
+  "results": [
+    {
+      "exit": "2",
+      "address": "대구광역시 동구 동부로22길 9",
+      "reference_cafe": "더리터동대구역아펠리체점",
+      "latitude": 35.8761377902678,
+      "longitude": 128.62771293419,
+      "distance_to_exit_m": 112.0,
+      "cafe_records_300m_deduplicated": 38,
+      "same_address_records": 1,
+      "other_address_records": 37
+    },
+    {
+      "exit": "3",
+      "address": "대구광역시 동구 동부로 149",
+      "reference_cafe": "공차",
+      "latitude": 35.8779380698095,
+      "longitude": 128.62918919585,
+      "distance_to_exit_m": 134.6,
+      "cafe_records_300m_deduplicated": 43,
+      "same_address_records": 11,
+      "other_address_records": 32
+    }
+  ],
+  "limits": "Existing cafe coordinates are illustrative centers, not vacant properties. Exact-row deduplication is not unique-shop verification. Straight-line distance, no access or sales inference. POI configured vintage 202606."
+}

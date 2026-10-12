@@ -1,0 +1,3265 @@
+{
+  "checked_date": "2026-10-12",
+  "method": "official exit points; no synthetic center or automatic coordinate repair",
+  "coordinate_datum_status": "not explicit in source; degree coordinates plausible, not survey validation",
+  "radius_status": "student selected 300m primary; 500m sensitivity; joins in poi_join.json",
+  "matched_exit_station_line_groups": 90,
+  "traffic_rows": 94,
+  "no_usable_exit_station": [
+    "대구한의대병원",
+    "부호",
+    "수성구민운동장",
+    "하양"
+  ],
+  "unmatched_exit_names": [
+    "수성운동장"
+  ],
+  "cluster_review": [],
+  "aliases": [
+    {
+      "old": "어린이회관",
+      "new": "어린이세상",
+      "source": "https://council.daegu.go.kr/kr/activity/question?flag=&keyword=&mem_sch=&page=6&q_tag=C532CA2D96135ECDBFF84FDA61DA5259&reform=view&search_code=&sess_sch=&th_sch=9",
+      "status": "official rename confirmed; traffic and exit file both retain old name"
+    },
+    {
+      "old": "대공원",
+      "new": "수성알파시티",
+      "source": "https://info.daegu.go.kr/newshome/mtnmain.php?mtnkey=articleview&aid=264644",
+      "status": "identity supported by official proposal and subsequent official coordinates; effective date unverified"
+    }
+  ],
+  "source_hashes": {
+    "kric213.xlsx": "c0325e61f4311f50c57b78cc80bff1290156ab7f85caef437e5b8da8e46027c5",
+    "station_traffic.parquet": "a36e9a3707da0b074da644eaa202e3bccacc1dff92f6ed855e7ae103019a3f17",
+    "exits_line1.csv": "53b75307397aa278df4656715577fec4145f22b0fc26fc6d6385d28322eafec6",
+    "exits_line2.csv": "b2930c398c54cb97d1a48b391eed14b6008d7d81137692939dad9d294047f7f8",
+    "exits_line3.csv": "7395f3f8a3649af730ee95181f4ebd45bebb63bbcf7e24345dd640be8d758ff9"
+  },
+  "evidence_hashes": {
+    "child_rename.txt": "de30c3c88dff94bca158fb55b091c967749235011c98eba322d16e43dccf069b",
+    "alpha_rename.txt": "d60097d913289e7ad1402b24570ef75f6aa163598aba3cf4f3ba632ecbe70cd9"
+  },
+  "exit_sources": [
+    {
+      "line": 1,
+      "page": "https://www.data.go.kr/data/15133918/fileData.do",
+      "download_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003003022&fileDetailSn=1&insertDataPrcus=N",
+      "bytes": 4856,
+      "sha256": "53b75307397aa278df4656715577fec4145f22b0fc26fc6d6385d28322eafec6",
+      "retrieved_date": "2026-10-12"
+    },
+    {
+      "line": 2,
+      "page": "https://www.data.go.kr/data/15133920/fileData.do",
+      "download_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003046570&fileDetailSn=1&insertDataPrcus=N",
+      "bytes": 5502,
+      "sha256": "b2930c398c54cb97d1a48b391eed14b6008d7d81137692939dad9d294047f7f8",
+      "retrieved_date": "2026-10-12"
+    },
+    {
+      "line": 3,
+      "page": "https://www.data.go.kr/data/15133922/fileData.do",
+      "download_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003003032&fileDetailSn=1&insertDataPrcus=N",
+      "bytes": 2417,
+      "sha256": "7395f3f8a3649af730ee95181f4ebd45bebb63bbcf7e24345dd640be8d758ff9",
+      "retrieved_date": "2026-10-12"
+    }
+  ],
+  "diagnoses": [
+    {
+      "station": "현충로",
+      "original_latitude": 35.50272,
+      "original_longitude": 128.3453,
+      "action": "exclude_original_center_use_official_exit_points_for_exploration",
+      "nearest_exit_original_m": 43159.7,
+      "dms_candidate_latitude": 35.84088888888889,
+      "dms_candidate_longitude": 128.58138888888888,
+      "dms_candidate_nearest_exit_m": 20.4,
+      "diagnosis": "packed DMS hypothesis, not an authorized source correction"
+    },
+    {
+      "station": "율하",
+      "original_latitude": 35.52104772,
+      "original_longitude": 128.41349332,
+      "action": "exclude_original_center_use_official_exit_points_for_exploration",
+      "nearest_exit_original_m": 46184.0,
+      "dms_candidate_latitude": 35.869577,
+      "dms_candidate_longitude": 128.693037,
+      "dms_candidate_nearest_exit_m": 20.6,
+      "diagnosis": "packed DMS hypothesis, not an authorized source correction"
+    },
+    {
+      "station": "용산",
+      "original_latitude": 35.8142587,
+      "original_longitude": 128.5407738,
+      "action": "exclude_original_center_use_official_exit_points_for_exploration",
+      "nearest_exit_original_m": 3955.4,
+      "diagnosis": "cause unknown; source center not adopted"
+    },
+    {
+      "station": "만촌",
+      "original_latitude": 35.85,
+      "original_longitude": 128.64,
+      "action": "exclude_original_center_use_official_exit_points_for_exploration",
+      "nearest_exit_original_m": 1049.0,
+      "diagnosis": "cause unknown; source center not adopted"
+    },
+    {
+      "station": "담티",
+      "original_latitude": 35.85,
+      "original_longitude": 128.65,
+      "action": "exclude_original_center_use_official_exit_points_for_exploration",
+      "nearest_exit_original_m": 620.3,
+      "diagnosis": "cause unknown; source center not adopted"
+    }
+  ],
+  "station_exit_groups": [
+    {
+      "traffic_station": "각산",
+      "line": 1,
+      "source_station": "각산",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 54.5,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86812,
+          "longitude": 128.7242
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86788,
+          "longitude": 128.7243
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86806,
+          "longitude": 128.7248
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86828,
+          "longitude": 128.7246
+        }
+      ]
+    },
+    {
+      "traffic_station": "교대",
+      "line": 1,
+      "source_station": "교대",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 61.7,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85075,
+          "longitude": 128.5904
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85075,
+          "longitude": 128.5908
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85118,
+          "longitude": 128.5908
+        },
+        {
+          "exit": "4",
+          "latitude": 35.8512,
+          "longitude": 128.5904
+        }
+      ]
+    },
+    {
+      "traffic_station": "대곡",
+      "line": 1,
+      "source_station": "대곡",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 66.3,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.80951,
+          "longitude": 128.5122
+        },
+        {
+          "exit": "2",
+          "latitude": 35.80922,
+          "longitude": 128.5123
+        },
+        {
+          "exit": "3",
+          "latitude": 35.80946,
+          "longitude": 128.5129
+        },
+        {
+          "exit": "4",
+          "latitude": 35.80972,
+          "longitude": 128.5127
+        }
+      ]
+    },
+    {
+      "traffic_station": "대구역",
+      "line": 1,
+      "source_station": "대구역",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 81.5,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.87638,
+          "longitude": 128.5969
+        },
+        {
+          "exit": "2",
+          "latitude": 35.87627,
+          "longitude": 128.5968
+        },
+        {
+          "exit": "3",
+          "latitude": 35.87634,
+          "longitude": 128.5977
+        },
+        {
+          "exit": "4",
+          "latitude": 35.87643,
+          "longitude": 128.5975
+        }
+      ]
+    },
+    {
+      "traffic_station": "대명",
+      "line": 1,
+      "source_station": "대명",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 63.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.83945,
+          "longitude": 128.5649
+        },
+        {
+          "exit": "2",
+          "latitude": 35.83913,
+          "longitude": 128.565
+        },
+        {
+          "exit": "3",
+          "latitude": 35.83916,
+          "longitude": 128.5655
+        },
+        {
+          "exit": "4",
+          "latitude": 35.83947,
+          "longitude": 128.5655
+        }
+      ]
+    },
+    {
+      "traffic_station": "동구청",
+      "line": 1,
+      "source_station": "동구청",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 61.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.88424,
+          "longitude": 128.6319
+        },
+        {
+          "exit": "2",
+          "latitude": 35.88413,
+          "longitude": 128.6321
+        },
+        {
+          "exit": "3",
+          "latitude": 35.88451,
+          "longitude": 128.6325
+        },
+        {
+          "exit": "4",
+          "latitude": 35.88465,
+          "longitude": 128.6322
+        }
+      ]
+    },
+    {
+      "traffic_station": "동대구역",
+      "line": 1,
+      "source_station": "동대구역",
+      "traffic_match": true,
+      "exit_count": 3,
+      "exit_cluster_diameter_m": 101.7,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.87762,
+          "longitude": 128.6272
+        },
+        {
+          "exit": "2",
+          "latitude": 35.87713,
+          "longitude": 128.6275
+        },
+        {
+          "exit": "3",
+          "latitude": 35.87803,
+          "longitude": 128.6277
+        }
+      ]
+    },
+    {
+      "traffic_station": "동촌",
+      "line": 1,
+      "source_station": "동촌",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 56.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.88634,
+          "longitude": 128.6505
+        },
+        {
+          "exit": "2",
+          "latitude": 35.88606,
+          "longitude": 128.6501
+        },
+        {
+          "exit": "3",
+          "latitude": 35.88594,
+          "longitude": 128.6503
+        },
+        {
+          "exit": "4",
+          "latitude": 35.88619,
+          "longitude": 128.6507
+        }
+      ]
+    },
+    {
+      "traffic_station": "명덕1",
+      "line": 1,
+      "source_station": "명덕1",
+      "traffic_match": true,
+      "exit_count": 7,
+      "exit_cluster_diameter_m": 119.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85734,
+          "longitude": 128.5906
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85726,
+          "longitude": 128.5905
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85675,
+          "longitude": 128.5904
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85666,
+          "longitude": 128.5904
+        },
+        {
+          "exit": "5",
+          "latitude": 35.85717,
+          "longitude": 128.5911
+        },
+        {
+          "exit": "6",
+          "latitude": 35.85752,
+          "longitude": 128.5912
+        },
+        {
+          "exit": "7",
+          "latitude": 35.85762,
+          "longitude": 128.5908
+        }
+      ]
+    },
+    {
+      "traffic_station": "반야월",
+      "line": 1,
+      "source_station": "반야월",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 72.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86611,
+          "longitude": 128.7133
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86585,
+          "longitude": 128.7132
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86584,
+          "longitude": 128.714
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86611,
+          "longitude": 128.7139
+        }
+      ]
+    },
+    {
+      "traffic_station": "반월당1",
+      "line": 1,
+      "source_station": "반월당1",
+      "traffic_match": true,
+      "exit_count": 23,
+      "exit_cluster_diameter_m": 500.2,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86367,
+          "longitude": 128.5931
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86366,
+          "longitude": 128.5935
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86474,
+          "longitude": 128.5935
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86503,
+          "longitude": 128.5938
+        },
+        {
+          "exit": "5",
+          "latitude": 35.86514,
+          "longitude": 128.5944
+        },
+        {
+          "exit": "6",
+          "latitude": 35.86508,
+          "longitude": 128.5947
+        },
+        {
+          "exit": "7",
+          "latitude": 35.86501,
+          "longitude": 128.5951
+        },
+        {
+          "exit": "8",
+          "latitude": 35.86495,
+          "longitude": 128.5954
+        },
+        {
+          "exit": "9",
+          "latitude": 35.86483,
+          "longitude": 128.5961
+        },
+        {
+          "exit": "10",
+          "latitude": 35.86517,
+          "longitude": 128.5963
+        },
+        {
+          "exit": "11",
+          "latitude": 35.86533,
+          "longitude": 128.5954
+        },
+        {
+          "exit": "12",
+          "latitude": 35.86554,
+          "longitude": 128.5942
+        },
+        {
+          "exit": "13",
+          "latitude": 35.86593,
+          "longitude": 128.5937
+        },
+        {
+          "exit": "14",
+          "latitude": 35.8661,
+          "longitude": 128.5931
+        },
+        {
+          "exit": "15",
+          "latitude": 35.86627,
+          "longitude": 128.5922
+        },
+        {
+          "exit": "16",
+          "latitude": 35.86602,
+          "longitude": 128.5922
+        },
+        {
+          "exit": "17",
+          "latitude": 35.86599,
+          "longitude": 128.5916
+        },
+        {
+          "exit": "18",
+          "latitude": 35.86618,
+          "longitude": 128.5909
+        },
+        {
+          "exit": "19",
+          "latitude": 35.86578,
+          "longitude": 128.5908
+        },
+        {
+          "exit": "20",
+          "latitude": 35.86565,
+          "longitude": 128.5916
+        },
+        {
+          "exit": "21",
+          "latitude": 35.86547,
+          "longitude": 128.5926
+        },
+        {
+          "exit": "22",
+          "latitude": 35.86532,
+          "longitude": 128.5928
+        },
+        {
+          "exit": "23",
+          "latitude": 35.86478,
+          "longitude": 128.5932
+        }
+      ]
+    },
+    {
+      "traffic_station": "방촌",
+      "line": 1,
+      "source_station": "방촌",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 59.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.87992,
+          "longitude": 128.6698
+        },
+        {
+          "exit": "2",
+          "latitude": 35.87966,
+          "longitude": 128.6697
+        },
+        {
+          "exit": "3",
+          "latitude": 35.8795,
+          "longitude": 128.6702
+        },
+        {
+          "exit": "4",
+          "latitude": 35.87976,
+          "longitude": 128.6703
+        }
+      ]
+    },
+    {
+      "traffic_station": "상인",
+      "line": 1,
+      "source_station": "상인",
+      "traffic_match": true,
+      "exit_count": 8,
+      "exit_cluster_diameter_m": 112.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.81922,
+          "longitude": 128.5373
+        },
+        {
+          "exit": "2",
+          "latitude": 35.81904,
+          "longitude": 128.5375
+        },
+        {
+          "exit": "3",
+          "latitude": 35.81876,
+          "longitude": 128.5377
+        },
+        {
+          "exit": "4",
+          "latitude": 35.81867,
+          "longitude": 128.5379
+        },
+        {
+          "exit": "5",
+          "latitude": 35.81867,
+          "longitude": 128.5383
+        },
+        {
+          "exit": "6",
+          "latitude": 35.81898,
+          "longitude": 128.5385
+        },
+        {
+          "exit": "7",
+          "latitude": 35.81919,
+          "longitude": 128.5379
+        },
+        {
+          "exit": "8",
+          "latitude": 35.81945,
+          "longitude": 128.5375
+        }
+      ]
+    },
+    {
+      "traffic_station": "서부정류장",
+      "line": 1,
+      "source_station": "서부정류장",
+      "traffic_match": true,
+      "exit_count": 3,
+      "exit_cluster_diameter_m": 70.4,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.83733,
+          "longitude": 128.5568
+        },
+        {
+          "exit": "2",
+          "latitude": 35.83711,
+          "longitude": 128.5569
+        },
+        {
+          "exit": "3",
+          "latitude": 35.83705,
+          "longitude": 128.5575
+        }
+      ]
+    },
+    {
+      "traffic_station": "설화명곡",
+      "line": 1,
+      "source_station": "설화명곡",
+      "traffic_match": true,
+      "exit_count": 8,
+      "exit_cluster_diameter_m": 169.6,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.79898,
+          "longitude": 128.4888
+        },
+        {
+          "exit": "2",
+          "latitude": 35.79848,
+          "longitude": 128.4888
+        },
+        {
+          "exit": "3",
+          "latitude": 35.79833,
+          "longitude": 128.489
+        },
+        {
+          "exit": "4",
+          "latitude": 35.79831,
+          "longitude": 128.4896
+        },
+        {
+          "exit": "5",
+          "latitude": 35.79868,
+          "longitude": 128.4901
+        },
+        {
+          "exit": "6",
+          "latitude": 35.79925,
+          "longitude": 128.4904
+        },
+        {
+          "exit": "7",
+          "latitude": 35.7994,
+          "longitude": 128.4903
+        },
+        {
+          "exit": "8",
+          "latitude": 35.79912,
+          "longitude": 128.4891
+        }
+      ]
+    },
+    {
+      "traffic_station": "송현",
+      "line": 1,
+      "source_station": "송현",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 100.3,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.8308,
+          "longitude": 128.5513
+        },
+        {
+          "exit": "2",
+          "latitude": 35.83064,
+          "longitude": 128.5516
+        },
+        {
+          "exit": "3",
+          "latitude": 35.83133,
+          "longitude": 128.5522
+        },
+        {
+          "exit": "4",
+          "latitude": 35.8315,
+          "longitude": 128.5519
+        }
+      ]
+    },
+    {
+      "traffic_station": "신기",
+      "line": 1,
+      "source_station": "신기",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 61.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86684,
+          "longitude": 128.7022
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86653,
+          "longitude": 128.7021
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86647,
+          "longitude": 128.7027
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86677,
+          "longitude": 128.7027
+        }
+      ]
+    },
+    {
+      "traffic_station": "신천",
+      "line": 1,
+      "source_station": "신천",
+      "traffic_match": true,
+      "exit_count": 8,
+      "exit_cluster_diameter_m": 100.2,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.875,
+          "longitude": 128.6172
+        },
+        {
+          "exit": "2",
+          "latitude": 35.87464,
+          "longitude": 128.6171
+        },
+        {
+          "exit": "3",
+          "latitude": 35.87443,
+          "longitude": 128.6172
+        },
+        {
+          "exit": "4",
+          "latitude": 35.87423,
+          "longitude": 128.6176
+        },
+        {
+          "exit": "5",
+          "latitude": 35.8743,
+          "longitude": 128.6179
+        },
+        {
+          "exit": "6",
+          "latitude": 35.87461,
+          "longitude": 128.618
+        },
+        {
+          "exit": "7",
+          "latitude": 35.87485,
+          "longitude": 128.618
+        },
+        {
+          "exit": "8",
+          "latitude": 35.87508,
+          "longitude": 128.6175
+        }
+      ]
+    },
+    {
+      "traffic_station": "아양교",
+      "line": 1,
+      "source_station": "아양교",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 54.3,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.88721,
+          "longitude": 128.6396
+        },
+        {
+          "exit": "2",
+          "latitude": 35.88701,
+          "longitude": 128.6398
+        },
+        {
+          "exit": "3",
+          "latitude": 35.88716,
+          "longitude": 128.6402
+        },
+        {
+          "exit": "4",
+          "latitude": 35.88741,
+          "longitude": 128.6401
+        }
+      ]
+    },
+    {
+      "traffic_station": "안심",
+      "line": 1,
+      "source_station": "안심",
+      "traffic_match": true,
+      "exit_count": 5,
+      "exit_cluster_diameter_m": 117.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.87136,
+          "longitude": 128.7334
+        },
+        {
+          "exit": "2",
+          "latitude": 35.87131,
+          "longitude": 128.7331
+        },
+        {
+          "exit": "3",
+          "latitude": 35.8711,
+          "longitude": 128.7338
+        },
+        {
+          "exit": "4",
+          "latitude": 35.8713,
+          "longitude": 128.7344
+        },
+        {
+          "exit": "5",
+          "latitude": 35.87155,
+          "longitude": 128.7343
+        }
+      ]
+    },
+    {
+      "traffic_station": "안지랑",
+      "line": 1,
+      "source_station": "안지랑",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 77.7,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.83939,
+          "longitude": 128.5739
+        },
+        {
+          "exit": "2",
+          "latitude": 35.83908,
+          "longitude": 128.5738
+        },
+        {
+          "exit": "3",
+          "latitude": 35.83902,
+          "longitude": 128.5746
+        },
+        {
+          "exit": "4",
+          "latitude": 35.83934,
+          "longitude": 128.5746
+        }
+      ]
+    },
+    {
+      "traffic_station": "영대병원",
+      "line": 1,
+      "source_station": "영대병원",
+      "traffic_match": true,
+      "exit_count": 3,
+      "exit_cluster_diameter_m": 61.3,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.84444,
+          "longitude": 128.5883
+        },
+        {
+          "exit": "2",
+          "latitude": 35.84434,
+          "longitude": 128.5887
+        },
+        {
+          "exit": "3",
+          "latitude": 35.8447,
+          "longitude": 128.5889
+        }
+      ]
+    },
+    {
+      "traffic_station": "용계",
+      "line": 1,
+      "source_station": "용계",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 65.7,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.8765,
+          "longitude": 128.6812
+        },
+        {
+          "exit": "2",
+          "latitude": 35.87625,
+          "longitude": 128.6811
+        },
+        {
+          "exit": "3",
+          "latitude": 35.87607,
+          "longitude": 128.6817
+        },
+        {
+          "exit": "4",
+          "latitude": 35.87631,
+          "longitude": 128.6818
+        }
+      ]
+    },
+    {
+      "traffic_station": "월배",
+      "line": 1,
+      "source_station": "월배",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 63.2,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.81612,
+          "longitude": 128.5299
+        },
+        {
+          "exit": "2",
+          "latitude": 35.81594,
+          "longitude": 128.5302
+        },
+        {
+          "exit": "3",
+          "latitude": 35.81615,
+          "longitude": 128.5306
+        },
+        {
+          "exit": "4",
+          "latitude": 35.81639,
+          "longitude": 128.5305
+        }
+      ]
+    },
+    {
+      "traffic_station": "월촌",
+      "line": 1,
+      "source_station": "월촌",
+      "traffic_match": true,
+      "exit_count": 8,
+      "exit_cluster_diameter_m": 75.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.82381,
+          "longitude": 128.5451
+        },
+        {
+          "exit": "2",
+          "latitude": 35.82353,
+          "longitude": 128.5451
+        },
+        {
+          "exit": "3",
+          "latitude": 35.82336,
+          "longitude": 128.5454
+        },
+        {
+          "exit": "4",
+          "latitude": 35.82341,
+          "longitude": 128.5457
+        },
+        {
+          "exit": "5",
+          "latitude": 35.82354,
+          "longitude": 128.5458
+        },
+        {
+          "exit": "6",
+          "latitude": 35.82383,
+          "longitude": 128.5458
+        },
+        {
+          "exit": "7",
+          "latitude": 35.824,
+          "longitude": 128.5455
+        },
+        {
+          "exit": "8",
+          "latitude": 35.82395,
+          "longitude": 128.5452
+        }
+      ]
+    },
+    {
+      "traffic_station": "율하",
+      "line": 1,
+      "source_station": "율하",
+      "traffic_match": true,
+      "exit_count": 5,
+      "exit_cluster_diameter_m": 137.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.87042,
+          "longitude": 128.6923
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86961,
+          "longitude": 128.692
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86919,
+          "longitude": 128.6924
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86936,
+          "longitude": 128.693
+        },
+        {
+          "exit": "5",
+          "latitude": 35.86976,
+          "longitude": 128.693
+        }
+      ]
+    },
+    {
+      "traffic_station": "중앙로",
+      "line": 1,
+      "source_station": "중앙로",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 240.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86987,
+          "longitude": 128.5937
+        },
+        {
+          "exit": "2",
+          "latitude": 35.87002,
+          "longitude": 128.5939
+        },
+        {
+          "exit": "3",
+          "latitude": 35.87198,
+          "longitude": 128.5943
+        },
+        {
+          "exit": "4",
+          "latitude": 35.87195,
+          "longitude": 128.5941
+        }
+      ]
+    },
+    {
+      "traffic_station": "진천",
+      "line": 1,
+      "source_station": "진천",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 73.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.81388,
+          "longitude": 128.5223
+        },
+        {
+          "exit": "2",
+          "latitude": 35.81362,
+          "longitude": 128.5223
+        },
+        {
+          "exit": "3",
+          "latitude": 35.81376,
+          "longitude": 128.5231
+        },
+        {
+          "exit": "4",
+          "latitude": 35.81401,
+          "longitude": 128.5229
+        }
+      ]
+    },
+    {
+      "traffic_station": "칠성시장",
+      "line": 1,
+      "source_station": "칠성시장",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 180.4,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.87645,
+          "longitude": 128.6042
+        },
+        {
+          "exit": "2",
+          "latitude": 35.87599,
+          "longitude": 128.6045
+        },
+        {
+          "exit": "3",
+          "latitude": 35.87574,
+          "longitude": 128.606
+        },
+        {
+          "exit": "4",
+          "latitude": 35.87605,
+          "longitude": 128.606
+        }
+      ]
+    },
+    {
+      "traffic_station": "해안",
+      "line": 1,
+      "source_station": "해안",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 59.5,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.88377,
+          "longitude": 128.6591
+        },
+        {
+          "exit": "2",
+          "latitude": 35.88351,
+          "longitude": 128.659
+        },
+        {
+          "exit": "3",
+          "latitude": 35.88342,
+          "longitude": 128.6596
+        },
+        {
+          "exit": "4",
+          "latitude": 35.88369,
+          "longitude": 128.6596
+        }
+      ]
+    },
+    {
+      "traffic_station": "현충로",
+      "line": 1,
+      "source_station": "현충로",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 72.4,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.84066,
+          "longitude": 128.5805
+        },
+        {
+          "exit": "2",
+          "latitude": 35.84044,
+          "longitude": 128.5808
+        },
+        {
+          "exit": "3",
+          "latitude": 35.84072,
+          "longitude": 128.5813
+        },
+        {
+          "exit": "4",
+          "latitude": 35.84097,
+          "longitude": 128.5811
+        }
+      ]
+    },
+    {
+      "traffic_station": "화원",
+      "line": 1,
+      "source_station": "화원",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 113.2,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.80432,
+          "longitude": 128.5
+        },
+        {
+          "exit": "2",
+          "latitude": 35.80389,
+          "longitude": 128.4998
+        },
+        {
+          "exit": "3",
+          "latitude": 35.80434,
+          "longitude": 128.5008
+        },
+        {
+          "exit": "4",
+          "latitude": 35.8046,
+          "longitude": 128.5007
+        }
+      ]
+    },
+    {
+      "traffic_station": "감삼",
+      "line": 2,
+      "source_station": "감삼",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 99.3,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85432,
+          "longitude": 128.5475
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85395,
+          "longitude": 128.5477
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85427,
+          "longitude": 128.5486
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85463,
+          "longitude": 128.5484
+        }
+      ]
+    },
+    {
+      "traffic_station": "강창",
+      "line": 2,
+      "source_station": "강창",
+      "traffic_match": true,
+      "exit_count": 6,
+      "exit_cluster_diameter_m": 206.5,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85333,
+          "longitude": 128.4775
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85293,
+          "longitude": 128.4777
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85261,
+          "longitude": 128.4782
+        },
+        {
+          "exit": "4",
+          "latitude": 35.8529,
+          "longitude": 128.4785
+        },
+        {
+          "exit": "5",
+          "latitude": 35.85281,
+          "longitude": 128.4797
+        },
+        {
+          "exit": "6",
+          "latitude": 35.85321,
+          "longitude": 128.4797
+        }
+      ]
+    },
+    {
+      "traffic_station": "경대병원",
+      "line": 2,
+      "source_station": "경대병원",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 105.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.8635,
+          "longitude": 128.6022
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86313,
+          "longitude": 128.6021
+        },
+        {
+          "exit": "3",
+          "latitude": 35.8629,
+          "longitude": 128.6031
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86329,
+          "longitude": 128.6032
+        }
+      ]
+    },
+    {
+      "traffic_station": "계명대",
+      "line": 2,
+      "source_station": "계명대",
+      "traffic_match": true,
+      "exit_count": 7,
+      "exit_cluster_diameter_m": 201.4,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85185,
+          "longitude": 128.491
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85131,
+          "longitude": 128.4909
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85106,
+          "longitude": 128.4916
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85104,
+          "longitude": 128.4923
+        },
+        {
+          "exit": "5",
+          "latitude": 35.85163,
+          "longitude": 128.4931
+        },
+        {
+          "exit": "6",
+          "latitude": 35.8519,
+          "longitude": 128.4923
+        },
+        {
+          "exit": "7",
+          "latitude": 35.85205,
+          "longitude": 128.4918
+        }
+      ]
+    },
+    {
+      "traffic_station": "고산",
+      "line": 2,
+      "source_station": "고산",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 77.2,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.84316,
+          "longitude": 128.6929
+        },
+        {
+          "exit": "2",
+          "latitude": 35.84277,
+          "longitude": 128.693
+        },
+        {
+          "exit": "3",
+          "latitude": 35.84276,
+          "longitude": 128.6936
+        },
+        {
+          "exit": "4",
+          "latitude": 35.84316,
+          "longitude": 128.6937
+        }
+      ]
+    },
+    {
+      "traffic_station": "내당",
+      "line": 2,
+      "source_station": "내당",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 91.9,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86023,
+          "longitude": 128.5642
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85989,
+          "longitude": 128.5644
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86007,
+          "longitude": 128.5652
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86046,
+          "longitude": 128.565
+        }
+      ]
+    },
+    {
+      "traffic_station": "다사",
+      "line": 2,
+      "source_station": "다사",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 83.4,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86547,
+          "longitude": 128.458
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86531,
+          "longitude": 128.4578
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86476,
+          "longitude": 128.4583
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86492,
+          "longitude": 128.4585
+        }
+      ]
+    },
+    {
+      "traffic_station": "담티",
+      "line": 2,
+      "source_station": "담티",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 90.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85517,
+          "longitude": 128.6537
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85485,
+          "longitude": 128.6534
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85448,
+          "longitude": 128.6542
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85484,
+          "longitude": 128.6544
+        }
+      ]
+    },
+    {
+      "traffic_station": "대공원",
+      "line": 2,
+      "source_station": "수성알파시티",
+      "traffic_match": true,
+      "exit_count": 5,
+      "exit_cluster_diameter_m": 129.3,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.84298,
+          "longitude": 128.6799
+        },
+        {
+          "exit": "2",
+          "latitude": 35.84257,
+          "longitude": 128.6793
+        },
+        {
+          "exit": "3",
+          "latitude": 35.84196,
+          "longitude": 128.6795
+        },
+        {
+          "exit": "4",
+          "latitude": 35.84182,
+          "longitude": 128.68
+        },
+        {
+          "exit": "5",
+          "latitude": 35.84222,
+          "longitude": 128.6806
+        }
+      ]
+    },
+    {
+      "traffic_station": "대구은행",
+      "line": 2,
+      "source_station": "대구은행",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 82.5,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86,
+          "longitude": 128.6138
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85961,
+          "longitude": 128.6137
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85957,
+          "longitude": 128.6145
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85997,
+          "longitude": 128.6145
+        }
+      ]
+    },
+    {
+      "traffic_station": "대실",
+      "line": 2,
+      "source_station": "대실",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 106.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85772,
+          "longitude": 128.4655
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85744,
+          "longitude": 128.4652
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85687,
+          "longitude": 128.4659
+        },
+        {
+          "exit": "4",
+          "latitude": 35.8571,
+          "longitude": 128.4663
+        }
+      ]
+    },
+    {
+      "traffic_station": "두류",
+      "line": 2,
+      "source_station": "두류",
+      "traffic_match": true,
+      "exit_count": 20,
+      "exit_cluster_diameter_m": 443.2,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85756,
+          "longitude": 128.556
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85739,
+          "longitude": 128.5555
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85704,
+          "longitude": 128.5546
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85689,
+          "longitude": 128.5542
+        },
+        {
+          "exit": "5",
+          "latitude": 35.85674,
+          "longitude": 128.5538
+        },
+        {
+          "exit": "6",
+          "latitude": 35.85663,
+          "longitude": 128.5535
+        },
+        {
+          "exit": "7",
+          "latitude": 35.8564,
+          "longitude": 128.5541
+        },
+        {
+          "exit": "8",
+          "latitude": 35.85656,
+          "longitude": 128.5545
+        },
+        {
+          "exit": "9",
+          "latitude": 35.85691,
+          "longitude": 128.5554
+        },
+        {
+          "exit": "10",
+          "latitude": 35.85712,
+          "longitude": 128.5559
+        },
+        {
+          "exit": "11",
+          "latitude": 35.85732,
+          "longitude": 128.5564
+        },
+        {
+          "exit": "12",
+          "latitude": 35.85734,
+          "longitude": 128.5568
+        },
+        {
+          "exit": "13",
+          "latitude": 35.85744,
+          "longitude": 128.557
+        },
+        {
+          "exit": "14",
+          "latitude": 35.85733,
+          "longitude": 128.5574
+        },
+        {
+          "exit": "15",
+          "latitude": 35.85754,
+          "longitude": 128.5581
+        },
+        {
+          "exit": "16",
+          "latitude": 35.8578,
+          "longitude": 128.5582
+        },
+        {
+          "exit": "17",
+          "latitude": 35.85841,
+          "longitude": 128.5579
+        },
+        {
+          "exit": "18",
+          "latitude": 35.85856,
+          "longitude": 128.5575
+        },
+        {
+          "exit": "19",
+          "latitude": 35.85831,
+          "longitude": 128.5569
+        },
+        {
+          "exit": "20",
+          "latitude": 35.85796,
+          "longitude": 128.5567
+        }
+      ]
+    },
+    {
+      "traffic_station": "만촌",
+      "line": 2,
+      "source_station": "만촌",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 92.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85908,
+          "longitude": 128.6445
+        },
+        {
+          "exit": "2",
+          "latitude": 35.8587,
+          "longitude": 128.6445
+        },
+        {
+          "exit": "3",
+          "latitude": 35.8587,
+          "longitude": 128.6454
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85909,
+          "longitude": 128.6454
+        }
+      ]
+    },
+    {
+      "traffic_station": "문양",
+      "line": 2,
+      "source_station": "문양",
+      "traffic_match": true,
+      "exit_count": 2,
+      "exit_cluster_diameter_m": 53.9,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86383,
+          "longitude": 128.4371
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86419,
+          "longitude": 128.4375
+        }
+      ]
+    },
+    {
+      "traffic_station": "반고개",
+      "line": 2,
+      "source_station": "반고개",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 84.4,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86237,
+          "longitude": 128.5723
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86198,
+          "longitude": 128.5724
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86216,
+          "longitude": 128.5732
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86254,
+          "longitude": 128.573
+        }
+      ]
+    },
+    {
+      "traffic_station": "반월당2",
+      "line": 2,
+      "source_station": "반월당2",
+      "traffic_match": true,
+      "exit_count": 23,
+      "exit_cluster_diameter_m": 500.2,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86367,
+          "longitude": 128.5931
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86366,
+          "longitude": 128.5935
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86474,
+          "longitude": 128.5935
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86503,
+          "longitude": 128.5938
+        },
+        {
+          "exit": "5",
+          "latitude": 35.86514,
+          "longitude": 128.5944
+        },
+        {
+          "exit": "6",
+          "latitude": 35.86508,
+          "longitude": 128.5947
+        },
+        {
+          "exit": "7",
+          "latitude": 35.86501,
+          "longitude": 128.5951
+        },
+        {
+          "exit": "8",
+          "latitude": 35.86495,
+          "longitude": 128.5954
+        },
+        {
+          "exit": "9",
+          "latitude": 35.86483,
+          "longitude": 128.5961
+        },
+        {
+          "exit": "10",
+          "latitude": 35.86517,
+          "longitude": 128.5963
+        },
+        {
+          "exit": "11",
+          "latitude": 35.86533,
+          "longitude": 128.5954
+        },
+        {
+          "exit": "12",
+          "latitude": 35.86554,
+          "longitude": 128.5942
+        },
+        {
+          "exit": "13",
+          "latitude": 35.86593,
+          "longitude": 128.5937
+        },
+        {
+          "exit": "14",
+          "latitude": 35.8661,
+          "longitude": 128.5931
+        },
+        {
+          "exit": "15",
+          "latitude": 35.86627,
+          "longitude": 128.5922
+        },
+        {
+          "exit": "16",
+          "latitude": 35.86602,
+          "longitude": 128.5922
+        },
+        {
+          "exit": "17",
+          "latitude": 35.86599,
+          "longitude": 128.5916
+        },
+        {
+          "exit": "18",
+          "latitude": 35.86618,
+          "longitude": 128.5909
+        },
+        {
+          "exit": "19",
+          "latitude": 35.86578,
+          "longitude": 128.5908
+        },
+        {
+          "exit": "20",
+          "latitude": 35.86565,
+          "longitude": 128.5916
+        },
+        {
+          "exit": "21",
+          "latitude": 35.86547,
+          "longitude": 128.5926
+        },
+        {
+          "exit": "22",
+          "latitude": 35.86532,
+          "longitude": 128.5928
+        },
+        {
+          "exit": "23",
+          "latitude": 35.86478,
+          "longitude": 128.5932
+        }
+      ]
+    },
+    {
+      "traffic_station": "범어",
+      "line": 2,
+      "source_station": "범어",
+      "traffic_match": true,
+      "exit_count": 11,
+      "exit_cluster_diameter_m": 432.6,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85943,
+          "longitude": 128.6245
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85901,
+          "longitude": 128.6244
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85881,
+          "longitude": 128.625
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85954,
+          "longitude": 128.6251
+        },
+        {
+          "exit": "5",
+          "latitude": 35.85882,
+          "longitude": 128.6256
+        },
+        {
+          "exit": "6",
+          "latitude": 35.8586,
+          "longitude": 128.6272
+        },
+        {
+          "exit": "7",
+          "latitude": 35.85874,
+          "longitude": 128.6279
+        },
+        {
+          "exit": "8",
+          "latitude": 35.85905,
+          "longitude": 128.6292
+        },
+        {
+          "exit": "9",
+          "latitude": 35.85908,
+          "longitude": 128.6287
+        },
+        {
+          "exit": "10",
+          "latitude": 35.85913,
+          "longitude": 128.628
+        },
+        {
+          "exit": "11",
+          "latitude": 35.85938,
+          "longitude": 128.6269
+        }
+      ]
+    },
+    {
+      "traffic_station": "사월",
+      "line": 2,
+      "source_station": "사월",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 99.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.83731,
+          "longitude": 128.7151
+        },
+        {
+          "exit": "2",
+          "latitude": 35.83691,
+          "longitude": 128.7151
+        },
+        {
+          "exit": "3",
+          "latitude": 35.8367,
+          "longitude": 128.7159
+        },
+        {
+          "exit": "4",
+          "latitude": 35.83708,
+          "longitude": 128.7161
+        }
+      ]
+    },
+    {
+      "traffic_station": "성서산업단지",
+      "line": 2,
+      "source_station": "성서산업단지",
+      "traffic_match": true,
+      "exit_count": 8,
+      "exit_cluster_diameter_m": 136.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85198,
+          "longitude": 128.5066
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85155,
+          "longitude": 128.5067
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85124,
+          "longitude": 128.5071
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85119,
+          "longitude": 128.5074
+        },
+        {
+          "exit": "5",
+          "latitude": 35.85142,
+          "longitude": 128.5079
+        },
+        {
+          "exit": "6",
+          "latitude": 35.85191,
+          "longitude": 128.5076
+        },
+        {
+          "exit": "7",
+          "latitude": 35.85223,
+          "longitude": 128.5074
+        },
+        {
+          "exit": "8",
+          "latitude": 35.85237,
+          "longitude": 128.507
+        }
+      ]
+    },
+    {
+      "traffic_station": "수성구청",
+      "line": 2,
+      "source_station": "수성구청",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 84.7,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85903,
+          "longitude": 128.6354
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85862,
+          "longitude": 128.6354
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85863,
+          "longitude": 128.6361
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85902,
+          "longitude": 128.6362
+        }
+      ]
+    },
+    {
+      "traffic_station": "신매",
+      "line": 2,
+      "source_station": "신매",
+      "traffic_match": true,
+      "exit_count": 7,
+      "exit_cluster_diameter_m": 100.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.84113,
+          "longitude": 128.7047
+        },
+        {
+          "exit": "2",
+          "latitude": 35.84076,
+          "longitude": 128.7045
+        },
+        {
+          "exit": "3",
+          "latitude": 35.84044,
+          "longitude": 128.7047
+        },
+        {
+          "exit": "4",
+          "latitude": 35.84036,
+          "longitude": 128.705
+        },
+        {
+          "exit": "5",
+          "latitude": 35.84057,
+          "longitude": 128.7053
+        },
+        {
+          "exit": "6",
+          "latitude": 35.84096,
+          "longitude": 128.7054
+        },
+        {
+          "exit": "7",
+          "latitude": 35.84126,
+          "longitude": 128.705
+        }
+      ]
+    },
+    {
+      "traffic_station": "연호",
+      "line": 2,
+      "source_station": "연호",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 81.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.8469,
+          "longitude": 128.6715
+        },
+        {
+          "exit": "2",
+          "latitude": 35.84659,
+          "longitude": 128.6712
+        },
+        {
+          "exit": "3",
+          "latitude": 35.84626,
+          "longitude": 128.6719
+        },
+        {
+          "exit": "4",
+          "latitude": 35.84659,
+          "longitude": 128.6721
+        }
+      ]
+    },
+    {
+      "traffic_station": "영남대",
+      "line": 2,
+      "source_station": "영남대",
+      "traffic_match": true,
+      "exit_count": 5,
+      "exit_cluster_diameter_m": 119.6,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.83631,
+          "longitude": 128.7525
+        },
+        {
+          "exit": "2",
+          "latitude": 35.83591,
+          "longitude": 128.7525
+        },
+        {
+          "exit": "3",
+          "latitude": 35.83593,
+          "longitude": 128.7535
+        },
+        {
+          "exit": "4",
+          "latitude": 35.83644,
+          "longitude": 128.7536
+        },
+        {
+          "exit": "5",
+          "latitude": 35.8367,
+          "longitude": 128.7534
+        }
+      ]
+    },
+    {
+      "traffic_station": "용산",
+      "line": 2,
+      "source_station": "용산",
+      "traffic_match": true,
+      "exit_count": 6,
+      "exit_cluster_diameter_m": 170.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.84918,
+          "longitude": 128.5281
+        },
+        {
+          "exit": "2",
+          "latitude": 35.84879,
+          "longitude": 128.5282
+        },
+        {
+          "exit": "3",
+          "latitude": 35.84848,
+          "longitude": 128.5288
+        },
+        {
+          "exit": "4",
+          "latitude": 35.84895,
+          "longitude": 128.5293
+        },
+        {
+          "exit": "5",
+          "latitude": 35.84933,
+          "longitude": 128.5292
+        },
+        {
+          "exit": "6",
+          "latitude": 35.84999,
+          "longitude": 128.5285
+        }
+      ]
+    },
+    {
+      "traffic_station": "이곡",
+      "line": 2,
+      "source_station": "이곡",
+      "traffic_match": true,
+      "exit_count": 6,
+      "exit_cluster_diameter_m": 107.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85088,
+          "longitude": 128.5151
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85045,
+          "longitude": 128.5153
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85036,
+          "longitude": 128.5161
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85075,
+          "longitude": 128.5162
+        },
+        {
+          "exit": "5",
+          "latitude": 35.85095,
+          "longitude": 128.5159
+        },
+        {
+          "exit": "6",
+          "latitude": 35.85096,
+          "longitude": 128.5156
+        }
+      ]
+    },
+    {
+      "traffic_station": "임당",
+      "line": 2,
+      "source_station": "임당",
+      "traffic_match": true,
+      "exit_count": 8,
+      "exit_cluster_diameter_m": 110.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.83429,
+          "longitude": 128.7406
+        },
+        {
+          "exit": "2",
+          "latitude": 35.83393,
+          "longitude": 128.7406
+        },
+        {
+          "exit": "3",
+          "latitude": 35.83366,
+          "longitude": 128.7409
+        },
+        {
+          "exit": "4",
+          "latitude": 35.83367,
+          "longitude": 128.7413
+        },
+        {
+          "exit": "5",
+          "latitude": 35.83394,
+          "longitude": 128.7417
+        },
+        {
+          "exit": "6",
+          "latitude": 35.83429,
+          "longitude": 128.7416
+        },
+        {
+          "exit": "7",
+          "latitude": 35.83462,
+          "longitude": 128.7412
+        },
+        {
+          "exit": "8",
+          "latitude": 35.83457,
+          "longitude": 128.7409
+        }
+      ]
+    },
+    {
+      "traffic_station": "정평",
+      "line": 2,
+      "source_station": "정평",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 97.7,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.83437,
+          "longitude": 128.7278
+        },
+        {
+          "exit": "2",
+          "latitude": 35.834,
+          "longitude": 128.7277
+        },
+        {
+          "exit": "3",
+          "latitude": 35.83388,
+          "longitude": 128.7287
+        },
+        {
+          "exit": "4",
+          "latitude": 35.83425,
+          "longitude": 128.7287
+        }
+      ]
+    },
+    {
+      "traffic_station": "죽전",
+      "line": 2,
+      "source_station": "죽전",
+      "traffic_match": true,
+      "exit_count": 6,
+      "exit_cluster_diameter_m": 169.2,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85056,
+          "longitude": 128.5369
+        },
+        {
+          "exit": "2",
+          "latitude": 35.84951,
+          "longitude": 128.5369
+        },
+        {
+          "exit": "3",
+          "latitude": 35.84976,
+          "longitude": 128.5375
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85034,
+          "longitude": 128.5383
+        },
+        {
+          "exit": "5",
+          "latitude": 35.85068,
+          "longitude": 128.5381
+        },
+        {
+          "exit": "6",
+          "latitude": 35.85085,
+          "longitude": 128.5375
+        }
+      ]
+    },
+    {
+      "traffic_station": "청라언덕2",
+      "line": 2,
+      "source_station": "청라언덕2",
+      "traffic_match": true,
+      "exit_count": 9,
+      "exit_cluster_diameter_m": 171.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86495,
+          "longitude": 128.5819
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86454,
+          "longitude": 128.5819
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86423,
+          "longitude": 128.5822
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86376,
+          "longitude": 128.5822
+        },
+        {
+          "exit": "5",
+          "latitude": 35.86379,
+          "longitude": 128.5825
+        },
+        {
+          "exit": "6",
+          "latitude": 35.86423,
+          "longitude": 128.5825
+        },
+        {
+          "exit": "7",
+          "latitude": 35.86441,
+          "longitude": 128.5825
+        },
+        {
+          "exit": "8",
+          "latitude": 35.86481,
+          "longitude": 128.5828
+        },
+        {
+          "exit": "9",
+          "latitude": 35.86522,
+          "longitude": 128.5828
+        }
+      ]
+    },
+    {
+      "traffic_station": "건들바위",
+      "line": 3,
+      "source_station": "건들바위",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 63.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85557,
+          "longitude": 128.5992
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85533,
+          "longitude": 128.5992
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85528,
+          "longitude": 128.5998
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85553,
+          "longitude": 128.5998
+        }
+      ]
+    },
+    {
+      "traffic_station": "공단",
+      "line": 3,
+      "source_station": "공단",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.89196,
+          "longitude": 128.5536
+        }
+      ]
+    },
+    {
+      "traffic_station": "구암",
+      "line": 3,
+      "source_station": "구암",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.92552,
+          "longitude": 128.5502
+        }
+      ]
+    },
+    {
+      "traffic_station": "남산",
+      "line": 3,
+      "source_station": "남산",
+      "traffic_match": true,
+      "exit_count": 2,
+      "exit_cluster_diameter_m": 17.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85675,
+          "longitude": 128.5835
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85662,
+          "longitude": 128.5834
+        }
+      ]
+    },
+    {
+      "traffic_station": "달성공원",
+      "line": 3,
+      "source_station": "달성공원",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 63.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.87599,
+          "longitude": 128.5822
+        },
+        {
+          "exit": "2",
+          "latitude": 35.87598,
+          "longitude": 128.582
+        },
+        {
+          "exit": "3",
+          "latitude": 35.87544,
+          "longitude": 128.582
+        },
+        {
+          "exit": "4",
+          "latitude": 35.87544,
+          "longitude": 128.5822
+        }
+      ]
+    },
+    {
+      "traffic_station": "대봉교",
+      "line": 3,
+      "source_station": "대봉교",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 83.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85516,
+          "longitude": 128.6057
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85493,
+          "longitude": 128.6056
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85487,
+          "longitude": 128.6065
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85512,
+          "longitude": 128.6065
+        }
+      ]
+    },
+    {
+      "traffic_station": "동천",
+      "line": 3,
+      "source_station": "동천",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.93745,
+          "longitude": 128.5564
+        }
+      ]
+    },
+    {
+      "traffic_station": "만평",
+      "line": 3,
+      "source_station": "만평",
+      "traffic_match": true,
+      "exit_count": 2,
+      "exit_cluster_diameter_m": 36.9,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.88991,
+          "longitude": 128.5615
+        },
+        {
+          "exit": "2",
+          "latitude": 35.88962,
+          "longitude": 128.5613
+        }
+      ]
+    },
+    {
+      "traffic_station": "매천",
+      "line": 3,
+      "source_station": "매천",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.91306,
+          "longitude": 128.5433
+        }
+      ]
+    },
+    {
+      "traffic_station": "매천시장",
+      "line": 3,
+      "source_station": "매천시장",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.90404,
+          "longitude": 128.5456
+        }
+      ]
+    },
+    {
+      "traffic_station": "명덕3",
+      "line": 3,
+      "source_station": "명덕3",
+      "traffic_match": true,
+      "exit_count": 7,
+      "exit_cluster_diameter_m": 119.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85734,
+          "longitude": 128.5906
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85726,
+          "longitude": 128.5905
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85675,
+          "longitude": 128.5904
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85666,
+          "longitude": 128.5904
+        },
+        {
+          "exit": "5",
+          "latitude": 35.85717,
+          "longitude": 128.5911
+        },
+        {
+          "exit": "6",
+          "latitude": 35.85752,
+          "longitude": 128.5912
+        },
+        {
+          "exit": "7",
+          "latitude": 35.85762,
+          "longitude": 128.5908
+        }
+      ]
+    },
+    {
+      "traffic_station": "범물",
+      "line": 3,
+      "source_station": "범물",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 45.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.8211,
+          "longitude": 128.64
+        },
+        {
+          "exit": "2",
+          "latitude": 35.82092,
+          "longitude": 128.6398
+        },
+        {
+          "exit": "3",
+          "latitude": 35.82071,
+          "longitude": 128.6401
+        },
+        {
+          "exit": "4",
+          "latitude": 35.8209,
+          "longitude": 128.6403
+        }
+      ]
+    },
+    {
+      "traffic_station": "북구청",
+      "line": 3,
+      "source_station": "북구청",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 61.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.88399,
+          "longitude": 128.5817
+        },
+        {
+          "exit": "2",
+          "latitude": 35.88405,
+          "longitude": 128.5813
+        },
+        {
+          "exit": "3",
+          "latitude": 35.88361,
+          "longitude": 128.5812
+        },
+        {
+          "exit": "4",
+          "latitude": 35.88354,
+          "longitude": 128.5815
+        }
+      ]
+    },
+    {
+      "traffic_station": "서문시장",
+      "line": 3,
+      "source_station": "서문시장",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 49.2,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86981,
+          "longitude": 128.5823
+        },
+        {
+          "exit": "2",
+          "latitude": 35.8698,
+          "longitude": 128.5821
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86941,
+          "longitude": 128.5821
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86943,
+          "longitude": 128.5824
+        }
+      ]
+    },
+    {
+      "traffic_station": "수성못",
+      "line": 3,
+      "source_station": "수성못",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.83179,
+          "longitude": 128.6233
+        }
+      ]
+    },
+    {
+      "traffic_station": "수성시장",
+      "line": 3,
+      "source_station": "수성시장",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 61.9,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85446,
+          "longitude": 128.616
+        },
+        {
+          "exit": "2",
+          "latitude": 35.85423,
+          "longitude": 128.616
+        },
+        {
+          "exit": "3",
+          "latitude": 35.85419,
+          "longitude": 128.6166
+        },
+        {
+          "exit": "4",
+          "latitude": 35.85442,
+          "longitude": 128.6166
+        }
+      ]
+    },
+    {
+      "traffic_station": "수성운동장",
+      "line": 3,
+      "source_station": "수성운동장",
+      "traffic_match": false,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.85245,
+          "longitude": 128.6252
+        }
+      ]
+    },
+    {
+      "traffic_station": "어린이회관",
+      "line": 3,
+      "source_station": "어린이회관",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.84563,
+          "longitude": 128.6245
+        }
+      ]
+    },
+    {
+      "traffic_station": "용지",
+      "line": 3,
+      "source_station": "용지",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 64.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.81847,
+          "longitude": 128.6465
+        },
+        {
+          "exit": "2",
+          "latitude": 35.81809,
+          "longitude": 128.6466
+        },
+        {
+          "exit": "3",
+          "latitude": 35.81815,
+          "longitude": 128.6471
+        },
+        {
+          "exit": "4",
+          "latitude": 35.81854,
+          "longitude": 128.647
+        }
+      ]
+    },
+    {
+      "traffic_station": "원대",
+      "line": 3,
+      "source_station": "원대",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.88778,
+          "longitude": 128.5744
+        }
+      ]
+    },
+    {
+      "traffic_station": "지산",
+      "line": 3,
+      "source_station": "지산",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.82541,
+          "longitude": 128.6316
+        }
+      ]
+    },
+    {
+      "traffic_station": "청라언덕3",
+      "line": 3,
+      "source_station": "청라언덕3",
+      "traffic_match": true,
+      "exit_count": 9,
+      "exit_cluster_diameter_m": 171.1,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.86495,
+          "longitude": 128.5819
+        },
+        {
+          "exit": "2",
+          "latitude": 35.86454,
+          "longitude": 128.5819
+        },
+        {
+          "exit": "3",
+          "latitude": 35.86423,
+          "longitude": 128.5822
+        },
+        {
+          "exit": "4",
+          "latitude": 35.86376,
+          "longitude": 128.5822
+        },
+        {
+          "exit": "5",
+          "latitude": 35.86379,
+          "longitude": 128.5825
+        },
+        {
+          "exit": "6",
+          "latitude": 35.86423,
+          "longitude": 128.5825
+        },
+        {
+          "exit": "7",
+          "latitude": 35.86441,
+          "longitude": 128.5825
+        },
+        {
+          "exit": "8",
+          "latitude": 35.86481,
+          "longitude": 128.5828
+        },
+        {
+          "exit": "9",
+          "latitude": 35.86522,
+          "longitude": 128.5828
+        }
+      ]
+    },
+    {
+      "traffic_station": "칠곡경대병원",
+      "line": 3,
+      "source_station": "칠곡경대병원",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 67.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.95847,
+          "longitude": 128.56
+        },
+        {
+          "exit": "2",
+          "latitude": 35.95849,
+          "longitude": 128.5598
+        },
+        {
+          "exit": "3",
+          "latitude": 35.95793,
+          "longitude": 128.5597
+        },
+        {
+          "exit": "4",
+          "latitude": 35.95791,
+          "longitude": 128.56
+        }
+      ]
+    },
+    {
+      "traffic_station": "칠곡운암",
+      "line": 3,
+      "source_station": "칠곡운암",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.93182,
+          "longitude": 128.5547
+        }
+      ]
+    },
+    {
+      "traffic_station": "태전",
+      "line": 3,
+      "source_station": "태전",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.91933,
+          "longitude": 128.5473
+        }
+      ]
+    },
+    {
+      "traffic_station": "팔거",
+      "line": 3,
+      "source_station": "팔거",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 67.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.94453,
+          "longitude": 128.5586
+        },
+        {
+          "exit": "2",
+          "latitude": 35.94457,
+          "longitude": 128.5583
+        },
+        {
+          "exit": "3",
+          "latitude": 35.94403,
+          "longitude": 128.5582
+        },
+        {
+          "exit": "4",
+          "latitude": 35.94399,
+          "longitude": 128.5585
+        }
+      ]
+    },
+    {
+      "traffic_station": "팔달",
+      "line": 3,
+      "source_station": "팔달",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.89758,
+          "longitude": 128.5471
+        }
+      ]
+    },
+    {
+      "traffic_station": "팔달시장",
+      "line": 3,
+      "source_station": "팔달시장",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.88877,
+          "longitude": 128.5679
+        }
+      ]
+    },
+    {
+      "traffic_station": "학정",
+      "line": 3,
+      "source_station": "학정",
+      "traffic_match": true,
+      "exit_count": 4,
+      "exit_cluster_diameter_m": 61.8,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.95203,
+          "longitude": 128.5594
+        },
+        {
+          "exit": "2",
+          "latitude": 35.95205,
+          "longitude": 128.5591
+        },
+        {
+          "exit": "3",
+          "latitude": 35.95153,
+          "longitude": 128.5591
+        },
+        {
+          "exit": "4",
+          "latitude": 35.95152,
+          "longitude": 128.5593
+        }
+      ]
+    },
+    {
+      "traffic_station": "황금",
+      "line": 3,
+      "source_station": "황금",
+      "traffic_match": true,
+      "exit_count": 1,
+      "exit_cluster_diameter_m": 0.0,
+      "review_cluster": false,
+      "points": [
+        {
+          "exit": "1",
+          "latitude": 35.83961,
+          "longitude": 128.624
+        }
+      ]
+    }
+  ]
+}

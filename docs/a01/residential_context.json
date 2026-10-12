@@ -1,0 +1,5593 @@
+{
+  "checked_date": "2026-10-12",
+  "purpose": "exploratory context check, not residential land-use validation",
+  "mapping": "dominant administrative area among buffered POI rows; not station polygon containment",
+  "input_hashes": {
+    "time_slots.json": "72279565c887d2ab2745a6a401c89065f1ccdeda5b9145ee4b58f7d5dc645c22",
+    "station_locations.json": "17e19f27237c2d8a83dd65098fef5450c9897de351003b02b6480f9fa071b003",
+    "poi.parquet": "779b3214613977fe6846769c330438c018371e64167be5b02adb2e0c2b58663d",
+    "area_context.parquet": "c18f7dfa2ce6e1e9696290eb3bbe91ddb86c54c0541da43c16edf87f613367ac"
+  },
+  "station_rows": [
+    {
+      "station": "각산",
+      "radius_m": 300,
+      "nearby_poi_rows": 386,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심3동",
+      "dominant_share_pct": 80.31088082901555,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 19884,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 15.4%(시 평균 5.9%) · 15~29세 16.6%(시 평균 14.2%)",
+      "evening_pct": 27.7,
+      "quick_pct": 7.5129533679,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심3동",
+          "poi_rows": 310
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "안심4동",
+          "poi_rows": 76
+        }
+      ]
+    },
+    {
+      "station": "각산",
+      "radius_m": 500,
+      "nearby_poi_rows": 642,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심3동",
+      "dominant_share_pct": 61.21495327102804,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 19884,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 15.4%(시 평균 5.9%) · 15~29세 16.6%(시 평균 14.2%)",
+      "evening_pct": 27.7,
+      "quick_pct": 5.4517133956,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심3동",
+          "poi_rows": 393
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "안심4동",
+          "poi_rows": 249
+        }
+      ]
+    },
+    {
+      "station": "감삼",
+      "radius_m": 300,
+      "nearby_poi_rows": 764,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "두류3동",
+      "dominant_share_pct": 31.544502617801047,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 8926,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 18.1%(시 평균 11.9%) · 음식 비중 39.6%",
+      "evening_pct": 23.6,
+      "quick_pct": 4.057591623,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "두류3동",
+          "poi_rows": 241
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "감삼동",
+          "poi_rows": 240
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "죽전동",
+          "poi_rows": 167
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당4동",
+          "poi_rows": 116
+        }
+      ]
+    },
+    {
+      "station": "감삼",
+      "radius_m": 500,
+      "nearby_poi_rows": 1434,
+      "missing_area_rows": 0,
+      "area_count": 6,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "두류3동",
+      "dominant_share_pct": 33.40306834030684,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 8926,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 18.1%(시 평균 11.9%) · 음식 비중 39.6%",
+      "evening_pct": 23.6,
+      "quick_pct": 2.9288702929,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "두류3동",
+          "poi_rows": 479
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "감삼동",
+          "poi_rows": 356
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당4동",
+          "poi_rows": 314
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "죽전동",
+          "poi_rows": 233
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "상중이동",
+          "poi_rows": 48
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "성당동",
+          "poi_rows": 4
+        }
+      ]
+    },
+    {
+      "station": "강창",
+      "radius_m": 300,
+      "nearby_poi_rows": 200,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "신당동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 27830,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 39.4% · 소매 25.9% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 14.9,
+      "quick_pct": 4.5,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "신당동",
+          "poi_rows": 200
+        }
+      ]
+    },
+    {
+      "station": "강창",
+      "radius_m": 500,
+      "nearby_poi_rows": 320,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "신당동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 27830,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 39.4% · 소매 25.9% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 14.9,
+      "quick_pct": 6.25,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "신당동",
+          "poi_rows": 320
+        }
+      ]
+    },
+    {
+      "station": "건들바위",
+      "radius_m": 300,
+      "nearby_poi_rows": 317,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "대봉2동",
+      "dominant_share_pct": 46.37223974763407,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 5943,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 29.7%(시 평균 15.8%)",
+      "evening_pct": 25.7,
+      "quick_pct": 2.2082018927,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "대봉2동",
+          "poi_rows": 147
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "이천동",
+          "poi_rows": 131
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "대봉1동",
+          "poi_rows": 39
+        }
+      ]
+    },
+    {
+      "station": "건들바위",
+      "radius_m": 500,
+      "nearby_poi_rows": 772,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "대봉2동",
+      "dominant_share_pct": 34.97409326424871,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 5943,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 29.7%(시 평균 15.8%)",
+      "evening_pct": 25.7,
+      "quick_pct": 1.8134715026,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "대봉2동",
+          "poi_rows": 270
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "이천동",
+          "poi_rows": 249
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "대봉1동",
+          "poi_rows": 246
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "남산1동",
+          "poi_rows": 7
+        }
+      ]
+    },
+    {
+      "station": "경대병원",
+      "radius_m": 300,
+      "nearby_poi_rows": 758,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "삼덕동",
+      "dominant_share_pct": 51.97889182058047,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 7449,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 23.0%(시 평균 11.9%) · 음식 비중 39.6%",
+      "evening_pct": 17.4,
+      "quick_pct": 3.562005277,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "삼덕동",
+          "poi_rows": 394
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "대봉1동",
+          "poi_rows": 267
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내1동",
+          "poi_rows": 97
+        }
+      ]
+    },
+    {
+      "station": "경대병원",
+      "radius_m": 500,
+      "nearby_poi_rows": 2044,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "삼덕동",
+      "dominant_share_pct": 47.211350293542075,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 7449,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 23.0%(시 평균 11.9%) · 음식 비중 39.6%",
+      "evening_pct": 17.4,
+      "quick_pct": 3.1311154599,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "삼덕동",
+          "poi_rows": 965
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "대봉1동",
+          "poi_rows": 580
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내1동",
+          "poi_rows": 402
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "대봉2동",
+          "poi_rows": 84
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "동인동",
+          "poi_rows": 13
+        }
+      ]
+    },
+    {
+      "station": "계명대",
+      "radius_m": 300,
+      "nearby_poi_rows": 271,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "신당동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 27830,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 39.4% · 소매 25.9% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 18.8,
+      "quick_pct": 2.9520295203,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "신당동",
+          "poi_rows": 271
+        }
+      ]
+    },
+    {
+      "station": "계명대",
+      "radius_m": 500,
+      "nearby_poi_rows": 747,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "신당동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 27830,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 39.4% · 소매 25.9% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 18.8,
+      "quick_pct": 3.0789825971,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "신당동",
+          "poi_rows": 747
+        }
+      ]
+    },
+    {
+      "station": "고산",
+      "radius_m": 300,
+      "nearby_poi_rows": 268,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "고산2동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 25478,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 23.9%(시 평균 15.8%)",
+      "evening_pct": 30.4,
+      "quick_pct": 5.223880597,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "고산2동",
+          "poi_rows": 268
+        }
+      ]
+    },
+    {
+      "station": "고산",
+      "radius_m": 500,
+      "nearby_poi_rows": 505,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "고산2동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 25478,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 23.9%(시 평균 15.8%)",
+      "evening_pct": 30.4,
+      "quick_pct": 4.5544554455,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "고산2동",
+          "poi_rows": 505
+        }
+      ]
+    },
+    {
+      "station": "공단",
+      "radius_m": 300,
+      "nearby_poi_rows": 81,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "서구",
+      "dominant_admin_dong": "비산7동",
+      "dominant_share_pct": 53.086419753086425,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 9324,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 19.3%(시 평균 11.9%) · 음식 비중 39.4%",
+      "evening_pct": 11.6,
+      "quick_pct": 1.2345679012,
+      "area_distribution": [
+        {
+          "gu": "서구",
+          "admin_dong": "비산7동",
+          "poi_rows": 43
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "노원동",
+          "poi_rows": 38
+        }
+      ]
+    },
+    {
+      "station": "공단",
+      "radius_m": 500,
+      "nearby_poi_rows": 172,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "서구",
+      "dominant_admin_dong": "비산7동",
+      "dominant_share_pct": 62.2093023255814,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 9324,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 19.3%(시 평균 11.9%) · 음식 비중 39.4%",
+      "evening_pct": 11.6,
+      "quick_pct": 0.5813953488,
+      "area_distribution": [
+        {
+          "gu": "서구",
+          "admin_dong": "비산7동",
+          "poi_rows": 107
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "노원동",
+          "poi_rows": 65
+        }
+      ]
+    },
+    {
+      "station": "교대",
+      "radius_m": 300,
+      "nearby_poi_rows": 323,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명2동",
+      "dominant_share_pct": 99.07120743034056,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 15249,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.8% · 소매 23.0% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 22.1,
+      "quick_pct": 4.6439628483,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명2동",
+          "poi_rows": 320
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "봉덕1동",
+          "poi_rows": 2
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명5동",
+          "poi_rows": 1
+        }
+      ]
+    },
+    {
+      "station": "교대",
+      "radius_m": 500,
+      "nearby_poi_rows": 729,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명2동",
+      "dominant_share_pct": 77.50342935528121,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 15249,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.8% · 소매 23.0% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 22.1,
+      "quick_pct": 6.3100137174,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명2동",
+          "poi_rows": 565
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "봉덕1동",
+          "poi_rows": 97
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명5동",
+          "poi_rows": 48
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "이천동",
+          "poi_rows": 18
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명9동",
+          "poi_rows": 1
+        }
+      ]
+    },
+    {
+      "station": "구암",
+      "radius_m": 300,
+      "nearby_poi_rows": 211,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "태전2동",
+      "dominant_share_pct": 56.39810426540285,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 21552,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 18.2%(시 평균 15.1%) · 음식 비중 30.6%",
+      "evening_pct": 22.4,
+      "quick_pct": 4.7393364929,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "태전2동",
+          "poi_rows": 119
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "구암동",
+          "poi_rows": 75
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "태전1동",
+          "poi_rows": 17
+        }
+      ]
+    },
+    {
+      "station": "구암",
+      "radius_m": 500,
+      "nearby_poi_rows": 669,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "태전2동",
+      "dominant_share_pct": 44.843049327354265,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 21552,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 18.2%(시 평균 15.1%) · 음식 비중 30.6%",
+      "evening_pct": 22.4,
+      "quick_pct": 3.1390134529,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "태전2동",
+          "poi_rows": 300
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "구암동",
+          "poi_rows": 203
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "태전1동",
+          "poi_rows": 166
+        }
+      ]
+    },
+    {
+      "station": "남산",
+      "radius_m": 300,
+      "nearby_poi_rows": 456,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명3동",
+      "dominant_share_pct": 52.41228070175439,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 12297,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 34.7% · 소매 23.1% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 21.5,
+      "quick_pct": 5.701754386,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명3동",
+          "poi_rows": 239
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "남산3동",
+          "poi_rows": 112
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명2동",
+          "poi_rows": 62
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "남산4동",
+          "poi_rows": 43
+        }
+      ]
+    },
+    {
+      "station": "남산",
+      "radius_m": 500,
+      "nearby_poi_rows": 944,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명3동",
+      "dominant_share_pct": 44.49152542372881,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 12297,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 34.7% · 소매 23.1% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 21.5,
+      "quick_pct": 4.1313559322,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명3동",
+          "poi_rows": 420
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "남산3동",
+          "poi_rows": 198
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명2동",
+          "poi_rows": 177
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "남산4동",
+          "poi_rows": 110
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "남산1동",
+          "poi_rows": 39
+        }
+      ]
+    },
+    {
+      "station": "내당",
+      "radius_m": 300,
+      "nearby_poi_rows": 443,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "두류1.2동",
+      "dominant_share_pct": 54.401805869074494,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 15672,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 26.3%(시 평균 15.8%)",
+      "evening_pct": 25.9,
+      "quick_pct": 2.934537246,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "두류1.2동",
+          "poi_rows": 241
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당1동",
+          "poi_rows": 194
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당2.3동",
+          "poi_rows": 8
+        }
+      ]
+    },
+    {
+      "station": "내당",
+      "radius_m": 500,
+      "nearby_poi_rows": 740,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "두류1.2동",
+      "dominant_share_pct": 54.054054054054056,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 15672,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 26.3%(시 평균 15.8%)",
+      "evening_pct": 25.9,
+      "quick_pct": 2.027027027,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "두류1.2동",
+          "poi_rows": 400
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당1동",
+          "poi_rows": 276
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당2.3동",
+          "poi_rows": 64
+        }
+      ]
+    },
+    {
+      "station": "다사",
+      "radius_m": 300,
+      "nearby_poi_rows": 130,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달성군",
+      "dominant_admin_dong": "다사읍",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 51458,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 9.2%(시 평균 5.9%) · 15~29세 15.0%(시 평균 14.2%)",
+      "evening_pct": 28.6,
+      "quick_pct": 5.3846153846,
+      "area_distribution": [
+        {
+          "gu": "달성군",
+          "admin_dong": "다사읍",
+          "poi_rows": 130
+        }
+      ]
+    },
+    {
+      "station": "다사",
+      "radius_m": 500,
+      "nearby_poi_rows": 235,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달성군",
+      "dominant_admin_dong": "다사읍",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 51458,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 9.2%(시 평균 5.9%) · 15~29세 15.0%(시 평균 14.2%)",
+      "evening_pct": 28.6,
+      "quick_pct": 5.9574468085,
+      "area_distribution": [
+        {
+          "gu": "달성군",
+          "admin_dong": "다사읍",
+          "poi_rows": 235
+        }
+      ]
+    },
+    {
+      "station": "달성공원",
+      "radius_m": 300,
+      "nearby_poi_rows": 205,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "성내3동",
+      "dominant_share_pct": 86.82926829268293,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 13680,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 24.3% · 소매 28.4% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 21.1,
+      "quick_pct": 3.4146341463,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "성내3동",
+          "poi_rows": 178
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "대신동",
+          "poi_rows": 24
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산2.3동",
+          "poi_rows": 3
+        }
+      ]
+    },
+    {
+      "station": "달성공원",
+      "radius_m": 500,
+      "nearby_poi_rows": 599,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "성내3동",
+      "dominant_share_pct": 61.602671118530886,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 13680,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 24.3% · 소매 28.4% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 21.1,
+      "quick_pct": 2.8380634391,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "성내3동",
+          "poi_rows": 369
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "고성동",
+          "poi_rows": 96
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "대신동",
+          "poi_rows": 79
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산2.3동",
+          "poi_rows": 48
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "원대동",
+          "poi_rows": 7
+        }
+      ]
+    },
+    {
+      "station": "담티",
+      "radius_m": 300,
+      "nearby_poi_rows": 205,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "만촌3동",
+      "dominant_share_pct": 96.58536585365853,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 20532,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 14.6%(시 평균 5.9%) · 15~29세 18.1%(시 평균 14.2%)",
+      "evening_pct": 24.1,
+      "quick_pct": 4.8780487805,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "만촌3동",
+          "poi_rows": 198
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "만촌2동",
+          "poi_rows": 7
+        }
+      ]
+    },
+    {
+      "station": "담티",
+      "radius_m": 500,
+      "nearby_poi_rows": 413,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "만촌3동",
+      "dominant_share_pct": 95.15738498789347,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 20532,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 14.6%(시 평균 5.9%) · 15~29세 18.1%(시 평균 14.2%)",
+      "evening_pct": 24.1,
+      "quick_pct": 4.6004842615,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "만촌3동",
+          "poi_rows": 393
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "만촌2동",
+          "poi_rows": 20
+        }
+      ]
+    },
+    {
+      "station": "대곡",
+      "radius_m": 300,
+      "nearby_poi_rows": 272,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "진천동",
+      "dominant_share_pct": 68.38235294117648,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 49166,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.7% · 소매 21.6% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 26.1,
+      "quick_pct": 5.8823529412,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "진천동",
+          "poi_rows": 186
+        },
+        {
+          "gu": "달성군",
+          "admin_dong": "화원읍",
+          "poi_rows": 69
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "유천동",
+          "poi_rows": 17
+        }
+      ]
+    },
+    {
+      "station": "대곡",
+      "radius_m": 500,
+      "nearby_poi_rows": 429,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "진천동",
+      "dominant_share_pct": 62.7039627039627,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 49166,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.7% · 소매 21.6% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 26.1,
+      "quick_pct": 3.9627039627,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "진천동",
+          "poi_rows": 269
+        },
+        {
+          "gu": "달성군",
+          "admin_dong": "화원읍",
+          "poi_rows": 92
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "유천동",
+          "poi_rows": 68
+        }
+      ]
+    },
+    {
+      "station": "대공원",
+      "radius_m": 300,
+      "nearby_poi_rows": 22,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "고산2동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 25478,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 23.9%(시 평균 15.8%)",
+      "evening_pct": 38.9,
+      "quick_pct": 9.0909090909,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "고산2동",
+          "poi_rows": 22
+        }
+      ]
+    },
+    {
+      "station": "대공원",
+      "radius_m": 500,
+      "nearby_poi_rows": 55,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "고산2동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 25478,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 23.9%(시 평균 15.8%)",
+      "evening_pct": 38.9,
+      "quick_pct": 5.4545454545,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "고산2동",
+          "poi_rows": 55
+        }
+      ]
+    },
+    {
+      "station": "대구역",
+      "radius_m": 300,
+      "nearby_poi_rows": 695,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "칠성동",
+      "dominant_share_pct": 52.0863309352518,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 23907,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 8곳 · 소매 비중 47.2%(시 평균 25.8%)",
+      "evening_pct": 19.6,
+      "quick_pct": 2.5899280576,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "칠성동",
+          "poi_rows": 362
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내1동",
+          "poi_rows": 320
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내2동",
+          "poi_rows": 13
+        }
+      ]
+    },
+    {
+      "station": "대구역",
+      "radius_m": 500,
+      "nearby_poi_rows": 1862,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "성내1동",
+      "dominant_share_pct": 57.94844253490869,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 5538,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 2곳 · 소매 비중 35.9%(시 평균 25.8%)",
+      "evening_pct": 19.6,
+      "quick_pct": 2.5778732546,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "성내1동",
+          "poi_rows": 1079
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "칠성동",
+          "poi_rows": 613
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내2동",
+          "poi_rows": 167
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "동인동",
+          "poi_rows": 3
+        }
+      ]
+    },
+    {
+      "station": "대구은행",
+      "radius_m": 300,
+      "nearby_poi_rows": 514,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "수성1가동",
+      "dominant_share_pct": 49.221789883268485,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 16922,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 11.6%(시 평균 5.9%) · 15~29세 15.1%(시 평균 14.2%)",
+      "evening_pct": 24.4,
+      "quick_pct": 5.2529182879,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "수성1가동",
+          "poi_rows": 253
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성4가동",
+          "poi_rows": 231
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성2.3가동",
+          "poi_rows": 29
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어1동",
+          "poi_rows": 1
+        }
+      ]
+    },
+    {
+      "station": "대구은행",
+      "radius_m": 500,
+      "nearby_poi_rows": 1077,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "수성4가동",
+      "dominant_share_pct": 47.168059424326835,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 12800,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 10.0%(시 평균 5.9%) · 15~29세 15.5%(시 평균 14.2%)",
+      "evening_pct": 24.4,
+      "quick_pct": 4.2711234912,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "수성4가동",
+          "poi_rows": 508
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성1가동",
+          "poi_rows": 378
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성2.3가동",
+          "poi_rows": 190
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어1동",
+          "poi_rows": 1
+        }
+      ]
+    },
+    {
+      "station": "대명",
+      "radius_m": 300,
+      "nearby_poi_rows": 453,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명6동",
+      "dominant_share_pct": 58.27814569536424,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 10271,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 17.3%(시 평균 15.1%) · 음식 비중 22.9%",
+      "evening_pct": 24.5,
+      "quick_pct": 2.8697571744,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명6동",
+          "poi_rows": 264
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명10동",
+          "poi_rows": 189
+        }
+      ]
+    },
+    {
+      "station": "대명",
+      "radius_m": 500,
+      "nearby_poi_rows": 816,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명6동",
+      "dominant_share_pct": 47.67156862745098,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 10271,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 17.3%(시 평균 15.1%) · 음식 비중 22.9%",
+      "evening_pct": 24.5,
+      "quick_pct": 2.818627451,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명6동",
+          "poi_rows": 389
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명10동",
+          "poi_rows": 357
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명11동",
+          "poi_rows": 51
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명4동",
+          "poi_rows": 19
+        }
+      ]
+    },
+    {
+      "station": "대봉교",
+      "radius_m": 300,
+      "nearby_poi_rows": 569,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "대봉1동",
+      "dominant_share_pct": 76.44991212653778,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 7652,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 24.1%(시 평균 15.8%)",
+      "evening_pct": 20.5,
+      "quick_pct": 2.1089630931,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "대봉1동",
+          "poi_rows": 435
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "이천동",
+          "poi_rows": 132
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성1가동",
+          "poi_rows": 2
+        }
+      ]
+    },
+    {
+      "station": "대봉교",
+      "radius_m": 500,
+      "nearby_poi_rows": 1008,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "대봉1동",
+      "dominant_share_pct": 57.04365079365079,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 7652,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 24.1%(시 평균 15.8%)",
+      "evening_pct": 20.5,
+      "quick_pct": 2.9761904762,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "대봉1동",
+          "poi_rows": 575
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "이천동",
+          "poi_rows": 205
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성1가동",
+          "poi_rows": 164
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "대봉2동",
+          "poi_rows": 64
+        }
+      ]
+    },
+    {
+      "station": "대실",
+      "radius_m": 300,
+      "nearby_poi_rows": 597,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달성군",
+      "dominant_admin_dong": "다사읍",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 51458,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 9.2%(시 평균 5.9%) · 15~29세 15.0%(시 평균 14.2%)",
+      "evening_pct": 28.2,
+      "quick_pct": 6.0301507538,
+      "area_distribution": [
+        {
+          "gu": "달성군",
+          "admin_dong": "다사읍",
+          "poi_rows": 597
+        }
+      ]
+    },
+    {
+      "station": "대실",
+      "radius_m": 500,
+      "nearby_poi_rows": 724,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달성군",
+      "dominant_admin_dong": "다사읍",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 51458,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 9.2%(시 평균 5.9%) · 15~29세 15.0%(시 평균 14.2%)",
+      "evening_pct": 28.2,
+      "quick_pct": 5.3867403315,
+      "area_distribution": [
+        {
+          "gu": "달성군",
+          "admin_dong": "다사읍",
+          "poi_rows": 724
+        }
+      ]
+    },
+    {
+      "station": "동구청",
+      "radius_m": 300,
+      "nearby_poi_rows": 365,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "신암4동",
+      "dominant_share_pct": 58.35616438356165,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 18410,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 23.9%(시 평균 11.9%) · 음식 비중 38.6%",
+      "evening_pct": 25.3,
+      "quick_pct": 3.5616438356,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "신암4동",
+          "poi_rows": 213
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암5동",
+          "poi_rows": 84
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "효목1동",
+          "poi_rows": 68
+        }
+      ]
+    },
+    {
+      "station": "동구청",
+      "radius_m": 500,
+      "nearby_poi_rows": 637,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "신암4동",
+      "dominant_share_pct": 44.740973312401884,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 18410,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 23.9%(시 평균 11.9%) · 음식 비중 38.6%",
+      "evening_pct": 25.3,
+      "quick_pct": 3.7676609105,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "신암4동",
+          "poi_rows": 285
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암5동",
+          "poi_rows": 227
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "효목1동",
+          "poi_rows": 125
+        }
+      ]
+    },
+    {
+      "station": "동대구역",
+      "radius_m": 300,
+      "nearby_poi_rows": 732,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "신천4동",
+      "dominant_share_pct": 89.75409836065575,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 13095,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 28.4%(시 평균 11.9%) · 음식 비중 33.4%",
+      "evening_pct": 22.2,
+      "quick_pct": 5.6010928962,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "신천4동",
+          "poi_rows": 657
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암4동",
+          "poi_rows": 36
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신천3동",
+          "poi_rows": 31
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암3동",
+          "poi_rows": 6
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "효목2동",
+          "poi_rows": 2
+        }
+      ]
+    },
+    {
+      "station": "동대구역",
+      "radius_m": 500,
+      "nearby_poi_rows": 1294,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "신천4동",
+      "dominant_share_pct": 72.25656877897991,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 13095,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 28.4%(시 평균 11.9%) · 음식 비중 33.4%",
+      "evening_pct": 22.2,
+      "quick_pct": 4.0958268934,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "신천4동",
+          "poi_rows": 935
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신천3동",
+          "poi_rows": 149
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암4동",
+          "poi_rows": 119
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암3동",
+          "poi_rows": 46
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "효목2동",
+          "poi_rows": 45
+        }
+      ]
+    },
+    {
+      "station": "동천",
+      "radius_m": 300,
+      "nearby_poi_rows": 431,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "동천동",
+      "dominant_share_pct": 76.10208816705337,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 24591,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 21.0%(시 평균 11.9%) · 음식 비중 38.3%",
+      "evening_pct": 28.7,
+      "quick_pct": 5.1044083527,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "동천동",
+          "poi_rows": 328
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "읍내동",
+          "poi_rows": 103
+        }
+      ]
+    },
+    {
+      "station": "동천",
+      "radius_m": 500,
+      "nearby_poi_rows": 582,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "동천동",
+      "dominant_share_pct": 73.19587628865979,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 24591,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 21.0%(시 평균 11.9%) · 음식 비중 38.3%",
+      "evening_pct": 28.7,
+      "quick_pct": 5.8419243986,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "동천동",
+          "poi_rows": 426
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "읍내동",
+          "poi_rows": 156
+        }
+      ]
+    },
+    {
+      "station": "동촌",
+      "radius_m": 300,
+      "nearby_poi_rows": 108,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "동촌동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 13783,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.2% · 소매 21.7% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 21.9,
+      "quick_pct": 1.8518518519,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "동촌동",
+          "poi_rows": 108
+        }
+      ]
+    },
+    {
+      "station": "동촌",
+      "radius_m": 500,
+      "nearby_poi_rows": 298,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "동촌동",
+      "dominant_share_pct": 87.58389261744966,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 13783,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.2% · 소매 21.7% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 21.9,
+      "quick_pct": 2.0134228188,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "동촌동",
+          "poi_rows": 261
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "효목1동",
+          "poi_rows": 37
+        }
+      ]
+    },
+    {
+      "station": "두류",
+      "radius_m": 300,
+      "nearby_poi_rows": 944,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "두류3동",
+      "dominant_share_pct": 50.105932203389834,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 8926,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 18.1%(시 평균 11.9%) · 음식 비중 39.6%",
+      "evening_pct": 25.5,
+      "quick_pct": 2.2245762712,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "두류3동",
+          "poi_rows": 473
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당4동",
+          "poi_rows": 222
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "두류1.2동",
+          "poi_rows": 164
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당1동",
+          "poi_rows": 85
+        }
+      ]
+    },
+    {
+      "station": "두류",
+      "radius_m": 500,
+      "nearby_poi_rows": 1661,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "두류3동",
+      "dominant_share_pct": 40.7585791691752,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 8926,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 18.1%(시 평균 11.9%) · 음식 비중 39.6%",
+      "evening_pct": 25.5,
+      "quick_pct": 2.6490066225,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "두류3동",
+          "poi_rows": 677
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당4동",
+          "poi_rows": 438
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "두류1.2동",
+          "poi_rows": 287
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당1동",
+          "poi_rows": 259
+        }
+      ]
+    },
+    {
+      "station": "만촌",
+      "radius_m": 300,
+      "nearby_poi_rows": 449,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "만촌3동",
+      "dominant_share_pct": 45.43429844097995,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 20532,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 14.6%(시 평균 5.9%) · 15~29세 18.1%(시 평균 14.2%)",
+      "evening_pct": 26.7,
+      "quick_pct": 4.4543429844,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "만촌3동",
+          "poi_rows": 204
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "만촌2동",
+          "poi_rows": 172
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어4동",
+          "poi_rows": 73
+        }
+      ]
+    },
+    {
+      "station": "만촌",
+      "radius_m": 500,
+      "nearby_poi_rows": 882,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "만촌3동",
+      "dominant_share_pct": 32.6530612244898,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 20532,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 14.6%(시 평균 5.9%) · 15~29세 18.1%(시 평균 14.2%)",
+      "evening_pct": 26.7,
+      "quick_pct": 4.6485260771,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "만촌3동",
+          "poi_rows": 288
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "만촌2동",
+          "poi_rows": 276
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어4동",
+          "poi_rows": 255
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어2동",
+          "poi_rows": 63
+        }
+      ]
+    },
+    {
+      "station": "만평",
+      "radius_m": 300,
+      "nearby_poi_rows": 228,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "서구",
+      "dominant_admin_dong": "비산7동",
+      "dominant_share_pct": 61.40350877192983,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 9324,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 19.3%(시 평균 11.9%) · 음식 비중 39.4%",
+      "evening_pct": 17.6,
+      "quick_pct": 1.3157894737,
+      "area_distribution": [
+        {
+          "gu": "서구",
+          "admin_dong": "비산7동",
+          "poi_rows": 140
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "노원동",
+          "poi_rows": 61
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산5동",
+          "poi_rows": 27
+        }
+      ]
+    },
+    {
+      "station": "만평",
+      "radius_m": 500,
+      "nearby_poi_rows": 654,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "서구",
+      "dominant_admin_dong": "비산7동",
+      "dominant_share_pct": 52.59938837920489,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 9324,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 19.3%(시 평균 11.9%) · 음식 비중 39.4%",
+      "evening_pct": 17.6,
+      "quick_pct": 2.1406727829,
+      "area_distribution": [
+        {
+          "gu": "서구",
+          "admin_dong": "비산7동",
+          "poi_rows": 344
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "노원동",
+          "poi_rows": 158
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산5동",
+          "poi_rows": 152
+        }
+      ]
+    },
+    {
+      "station": "매천",
+      "radius_m": 300,
+      "nearby_poi_rows": 63,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "태전2동",
+      "dominant_share_pct": 71.42857142857143,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 21552,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 18.2%(시 평균 15.1%) · 음식 비중 30.6%",
+      "evening_pct": 27.7,
+      "quick_pct": 4.7619047619,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "태전2동",
+          "poi_rows": 45
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "관문동",
+          "poi_rows": 13
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "태전1동",
+          "poi_rows": 5
+        }
+      ]
+    },
+    {
+      "station": "매천",
+      "radius_m": 500,
+      "nearby_poi_rows": 248,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "태전2동",
+      "dominant_share_pct": 79.03225806451613,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 21552,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 18.2%(시 평균 15.1%) · 음식 비중 30.6%",
+      "evening_pct": 27.7,
+      "quick_pct": 7.2580645161,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "태전2동",
+          "poi_rows": 196
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "관문동",
+          "poi_rows": 38
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "태전1동",
+          "poi_rows": 14
+        }
+      ]
+    },
+    {
+      "station": "매천시장",
+      "radius_m": 300,
+      "nearby_poi_rows": 30,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "관문동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 31924,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 32.1% · 소매 26.6% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 26.7,
+      "quick_pct": 10.0,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "관문동",
+          "poi_rows": 30
+        }
+      ]
+    },
+    {
+      "station": "매천시장",
+      "radius_m": 500,
+      "nearby_poi_rows": 142,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "관문동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 31924,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 32.1% · 소매 26.6% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 26.7,
+      "quick_pct": 4.9295774648,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "관문동",
+          "poi_rows": 142
+        }
+      ]
+    },
+    {
+      "station": "문양",
+      "radius_m": 300,
+      "nearby_poi_rows": 25,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달성군",
+      "dominant_admin_dong": "다사읍",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 51458,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 9.2%(시 평균 5.9%) · 15~29세 15.0%(시 평균 14.2%)",
+      "evening_pct": 11.0,
+      "quick_pct": 4.0,
+      "area_distribution": [
+        {
+          "gu": "달성군",
+          "admin_dong": "다사읍",
+          "poi_rows": 25
+        }
+      ]
+    },
+    {
+      "station": "문양",
+      "radius_m": 500,
+      "nearby_poi_rows": 28,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달성군",
+      "dominant_admin_dong": "다사읍",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 51458,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 9.2%(시 평균 5.9%) · 15~29세 15.0%(시 평균 14.2%)",
+      "evening_pct": 11.0,
+      "quick_pct": 3.5714285714,
+      "area_distribution": [
+        {
+          "gu": "달성군",
+          "admin_dong": "다사읍",
+          "poi_rows": 28
+        }
+      ]
+    },
+    {
+      "station": "반고개",
+      "radius_m": 300,
+      "nearby_poi_rows": 409,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "서구",
+      "dominant_admin_dong": "내당2.3동",
+      "dominant_share_pct": 48.655256723716384,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 8107,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 1곳 · 소매 비중 34.3%(시 평균 25.8%)",
+      "evening_pct": 26.6,
+      "quick_pct": 2.2004889976,
+      "area_distribution": [
+        {
+          "gu": "서구",
+          "admin_dong": "내당2.3동",
+          "poi_rows": 199
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "두류1.2동",
+          "poi_rows": 158
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "남산4동",
+          "poi_rows": 38
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "대신동",
+          "poi_rows": 14
+        }
+      ]
+    },
+    {
+      "station": "반고개",
+      "radius_m": 500,
+      "nearby_poi_rows": 782,
+      "missing_area_rows": 0,
+      "area_count": 6,
+      "dominant_gu": "서구",
+      "dominant_admin_dong": "내당2.3동",
+      "dominant_share_pct": 37.212276214833764,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 8107,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 1곳 · 소매 비중 34.3%(시 평균 25.8%)",
+      "evening_pct": 26.6,
+      "quick_pct": 3.1969309463,
+      "area_distribution": [
+        {
+          "gu": "서구",
+          "admin_dong": "내당2.3동",
+          "poi_rows": 291
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "두류1.2동",
+          "poi_rows": 235
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "남산4동",
+          "poi_rows": 127
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "대신동",
+          "poi_rows": 77
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명3동",
+          "poi_rows": 51
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당1동",
+          "poi_rows": 1
+        }
+      ]
+    },
+    {
+      "station": "반야월",
+      "radius_m": 300,
+      "nearby_poi_rows": 105,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심4동",
+      "dominant_share_pct": 89.52380952380953,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 26286,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 24.4%(시 평균 15.1%) · 음식 비중 26.5%",
+      "evening_pct": 24.1,
+      "quick_pct": 4.7619047619,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심4동",
+          "poi_rows": 94
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "안심3동",
+          "poi_rows": 11
+        }
+      ]
+    },
+    {
+      "station": "반야월",
+      "radius_m": 500,
+      "nearby_poi_rows": 249,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심4동",
+      "dominant_share_pct": 93.57429718875501,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 26286,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 24.4%(시 평균 15.1%) · 음식 비중 26.5%",
+      "evening_pct": 24.1,
+      "quick_pct": 4.8192771084,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심4동",
+          "poi_rows": 233
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "안심3동",
+          "poi_rows": 11
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "안심1동",
+          "poi_rows": 5
+        }
+      ]
+    },
+    {
+      "station": "방촌",
+      "radius_m": 300,
+      "nearby_poi_rows": 240,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "해안동",
+      "dominant_share_pct": 56.666666666666664,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 12875,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 20.2%(시 평균 15.1%) · 음식 비중 29.7%",
+      "evening_pct": 24.2,
+      "quick_pct": 1.6666666667,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "해안동",
+          "poi_rows": 136
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "방촌동",
+          "poi_rows": 104
+        }
+      ]
+    },
+    {
+      "station": "방촌",
+      "radius_m": 500,
+      "nearby_poi_rows": 569,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "방촌동",
+      "dominant_share_pct": 56.59050966608085,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 16700,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 34.0% · 소매 24.7% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 24.2,
+      "quick_pct": 2.6362038664,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "방촌동",
+          "poi_rows": 322
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "해안동",
+          "poi_rows": 243
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "안심2동",
+          "poi_rows": 4
+        }
+      ]
+    },
+    {
+      "station": "범물",
+      "radius_m": 300,
+      "nearby_poi_rows": 623,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "지산1동",
+      "dominant_share_pct": 39.48635634028893,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 18605,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 18.6%(시 평균 15.1%) · 음식 비중 31.0%",
+      "evening_pct": 25.9,
+      "quick_pct": 4.6548956661,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "지산1동",
+          "poi_rows": 246
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범물1동",
+          "poi_rows": 218
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범물2동",
+          "poi_rows": 126
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "지산2동",
+          "poi_rows": 33
+        }
+      ]
+    },
+    {
+      "station": "범물",
+      "radius_m": 500,
+      "nearby_poi_rows": 995,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "지산1동",
+      "dominant_share_pct": 37.98994974874372,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 18605,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 18.6%(시 평균 15.1%) · 음식 비중 31.0%",
+      "evening_pct": 25.9,
+      "quick_pct": 3.6180904523,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "지산1동",
+          "poi_rows": 378
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범물1동",
+          "poi_rows": 232
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범물2동",
+          "poi_rows": 221
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "지산2동",
+          "poi_rows": 164
+        }
+      ]
+    },
+    {
+      "station": "범어",
+      "radius_m": 300,
+      "nearby_poi_rows": 938,
+      "missing_area_rows": 0,
+      "area_count": 6,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "범어1동",
+      "dominant_share_pct": 43.28358208955223,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 22730,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 11.2%(시 평균 5.9%) · 15~29세 15.0%(시 평균 14.2%)",
+      "evening_pct": 21.2,
+      "quick_pct": 3.9445628998,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "범어1동",
+          "poi_rows": 406
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어3동",
+          "poi_rows": 280
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어2동",
+          "poi_rows": 198
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성4가동",
+          "poi_rows": 38
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성2.3가동",
+          "poi_rows": 11
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어4동",
+          "poi_rows": 5
+        }
+      ]
+    },
+    {
+      "station": "범어",
+      "radius_m": 500,
+      "nearby_poi_rows": 1738,
+      "missing_area_rows": 0,
+      "area_count": 6,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "범어3동",
+      "dominant_share_pct": 34.177215189873415,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 17014,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 9.3%(시 평균 5.9%) · 15~29세 15.6%(시 평균 14.2%)",
+      "evening_pct": 21.2,
+      "quick_pct": 3.7399309551,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "범어3동",
+          "poi_rows": 594
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어1동",
+          "poi_rows": 499
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어2동",
+          "poi_rows": 300
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어4동",
+          "poi_rows": 169
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성4가동",
+          "poi_rows": 99
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성2.3가동",
+          "poi_rows": 77
+        }
+      ]
+    },
+    {
+      "station": "북구청",
+      "radius_m": 300,
+      "nearby_poi_rows": 368,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "고성동",
+      "dominant_share_pct": 52.9891304347826,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14592,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 50.0% · 소매 15.1% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 23.7,
+      "quick_pct": 2.7173913043,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "고성동",
+          "poi_rows": 195
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "원대동",
+          "poi_rows": 104
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "노원동",
+          "poi_rows": 64
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "침산3동",
+          "poi_rows": 5
+        }
+      ]
+    },
+    {
+      "station": "북구청",
+      "radius_m": 500,
+      "nearby_poi_rows": 866,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "고성동",
+      "dominant_share_pct": 43.302540415704385,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14592,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 50.0% · 소매 15.1% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 23.7,
+      "quick_pct": 3.3487297921,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "고성동",
+          "poi_rows": 375
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "원대동",
+          "poi_rows": 227
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "노원동",
+          "poi_rows": 143
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "칠성동",
+          "poi_rows": 107
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "침산3동",
+          "poi_rows": 14
+        }
+      ]
+    },
+    {
+      "station": "상인",
+      "radius_m": 300,
+      "nearby_poi_rows": 699,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "상인1동",
+      "dominant_share_pct": 58.941344778254646,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 31859,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 13.1%(시 평균 5.9%) · 15~29세 16.6%(시 평균 14.2%)",
+      "evening_pct": 27.3,
+      "quick_pct": 5.7224606581,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "상인1동",
+          "poi_rows": 412
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "상인2동",
+          "poi_rows": 287
+        }
+      ]
+    },
+    {
+      "station": "상인",
+      "radius_m": 500,
+      "nearby_poi_rows": 1022,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "상인2동",
+      "dominant_share_pct": 50.68493150684932,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 16964,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 41.5% · 소매 20.8% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 27.3,
+      "quick_pct": 4.8923679061,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "상인2동",
+          "poi_rows": 518
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "상인1동",
+          "poi_rows": 502
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "진천동",
+          "poi_rows": 2
+        }
+      ]
+    },
+    {
+      "station": "서문시장",
+      "radius_m": 300,
+      "nearby_poi_rows": 2544,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "대신동",
+      "dominant_share_pct": 93.98584905660378,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 7230,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 8곳 · 소매 비중 85.0%(시 평균 25.8%)",
+      "evening_pct": 6.9,
+      "quick_pct": 1.4544025157,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "대신동",
+          "poi_rows": 2391
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내2동",
+          "poi_rows": 86
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내3동",
+          "poi_rows": 45
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당2.3동",
+          "poi_rows": 13
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산2.3동",
+          "poi_rows": 9
+        }
+      ]
+    },
+    {
+      "station": "서문시장",
+      "radius_m": 500,
+      "nearby_poi_rows": 3202,
+      "missing_area_rows": 0,
+      "area_count": 6,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "대신동",
+      "dominant_share_pct": 79.48157401623985,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 7230,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 8곳 · 소매 비중 85.0%(시 평균 25.8%)",
+      "evening_pct": 6.9,
+      "quick_pct": 1.5302935665,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "대신동",
+          "poi_rows": 2545
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내2동",
+          "poi_rows": 362
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내3동",
+          "poi_rows": 185
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "내당2.3동",
+          "poi_rows": 50
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산2.3동",
+          "poi_rows": 40
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산4동",
+          "poi_rows": 20
+        }
+      ]
+    },
+    {
+      "station": "서부정류장",
+      "radius_m": 300,
+      "nearby_poi_rows": 643,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명11동",
+      "dominant_share_pct": 53.499222395023324,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 7113,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 2곳 · 소매 비중 44.8%(시 평균 25.8%)",
+      "evening_pct": 20.0,
+      "quick_pct": 4.199066874,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명11동",
+          "poi_rows": 344
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "성당동",
+          "poi_rows": 126
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "송현2동",
+          "poi_rows": 125
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명10동",
+          "poi_rows": 48
+        }
+      ]
+    },
+    {
+      "station": "서부정류장",
+      "radius_m": 500,
+      "nearby_poi_rows": 1180,
+      "missing_area_rows": 0,
+      "area_count": 6,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명11동",
+      "dominant_share_pct": 40.59322033898305,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 7113,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 2곳 · 소매 비중 44.8%(시 평균 25.8%)",
+      "evening_pct": 20.0,
+      "quick_pct": 3.2203389831,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명11동",
+          "poi_rows": 479
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "성당동",
+          "poi_rows": 277
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "송현2동",
+          "poi_rows": 236
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명10동",
+          "poi_rows": 115
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명6동",
+          "poi_rows": 41
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "송현1동",
+          "poi_rows": 32
+        }
+      ]
+    },
+    {
+      "station": "설화명곡",
+      "radius_m": 300,
+      "nearby_poi_rows": 201,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달성군",
+      "dominant_admin_dong": "화원읍",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 45281,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 17.9%(시 평균 15.1%) · 음식 비중 31.5%",
+      "evening_pct": 23.4,
+      "quick_pct": 3.4825870647,
+      "area_distribution": [
+        {
+          "gu": "달성군",
+          "admin_dong": "화원읍",
+          "poi_rows": 201
+        }
+      ]
+    },
+    {
+      "station": "설화명곡",
+      "radius_m": 500,
+      "nearby_poi_rows": 332,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달성군",
+      "dominant_admin_dong": "화원읍",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 45281,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 17.9%(시 평균 15.1%) · 음식 비중 31.5%",
+      "evening_pct": 23.4,
+      "quick_pct": 3.6144578313,
+      "area_distribution": [
+        {
+          "gu": "달성군",
+          "admin_dong": "화원읍",
+          "poi_rows": 332
+        }
+      ]
+    },
+    {
+      "station": "성서산업단지",
+      "radius_m": 300,
+      "nearby_poi_rows": 461,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "이곡2동",
+      "dominant_share_pct": 64.20824295010846,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14032,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 26.4%(시 평균 11.9%) · 음식 비중 42.3%",
+      "evening_pct": 22.9,
+      "quick_pct": 1.5184381779,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "이곡2동",
+          "poi_rows": 296
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "이곡1동",
+          "poi_rows": 165
+        }
+      ]
+    },
+    {
+      "station": "성서산업단지",
+      "radius_m": 500,
+      "nearby_poi_rows": 1093,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "이곡2동",
+      "dominant_share_pct": 52.97346752058555,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14032,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 26.4%(시 평균 11.9%) · 음식 비중 42.3%",
+      "evening_pct": 22.9,
+      "quick_pct": 2.5617566331,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "이곡2동",
+          "poi_rows": 579
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "이곡1동",
+          "poi_rows": 514
+        }
+      ]
+    },
+    {
+      "station": "송현",
+      "radius_m": 300,
+      "nearby_poi_rows": 487,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "송현2동",
+      "dominant_share_pct": 62.217659137576995,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 17635,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 33.3% · 소매 25.1% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 24.0,
+      "quick_pct": 2.4640657084,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "송현2동",
+          "poi_rows": 303
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "송현1동",
+          "poi_rows": 184
+        }
+      ]
+    },
+    {
+      "station": "송현",
+      "radius_m": 500,
+      "nearby_poi_rows": 979,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "송현2동",
+      "dominant_share_pct": 61.79775280898876,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 17635,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 33.3% · 소매 25.1% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 24.0,
+      "quick_pct": 2.6557711951,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "송현2동",
+          "poi_rows": 605
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "송현1동",
+          "poi_rows": 367
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명11동",
+          "poi_rows": 7
+        }
+      ]
+    },
+    {
+      "station": "수성구청",
+      "radius_m": 300,
+      "nearby_poi_rows": 934,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "범어4동",
+      "dominant_share_pct": 67.6659528907923,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 18388,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 28.8%(시 평균 5.9%) · 15~29세 17.7%(시 평균 14.2%)",
+      "evening_pct": 25.4,
+      "quick_pct": 5.9957173448,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "범어4동",
+          "poi_rows": 632
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어2동",
+          "poi_rows": 302
+        }
+      ]
+    },
+    {
+      "station": "수성구청",
+      "radius_m": 500,
+      "nearby_poi_rows": 1457,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "범어4동",
+      "dominant_share_pct": 64.65339739190117,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 18388,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 28.8%(시 평균 5.9%) · 15~29세 17.7%(시 평균 14.2%)",
+      "evening_pct": 25.4,
+      "quick_pct": 5.0789293068,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "범어4동",
+          "poi_rows": 942
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어2동",
+          "poi_rows": 451
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "만촌2동",
+          "poi_rows": 57
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어1동",
+          "poi_rows": 7
+        }
+      ]
+    },
+    {
+      "station": "수성못",
+      "radius_m": 300,
+      "nearby_poi_rows": 399,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "두산동",
+      "dominant_share_pct": 75.93984962406014,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14799,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 25.5%(시 평균 11.9%) · 음식 비중 44.5%",
+      "evening_pct": 26.2,
+      "quick_pct": 2.0050125313,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "두산동",
+          "poi_rows": 303
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "지산1동",
+          "poi_rows": 96
+        }
+      ]
+    },
+    {
+      "station": "수성못",
+      "radius_m": 500,
+      "nearby_poi_rows": 855,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "두산동",
+      "dominant_share_pct": 69.82456140350877,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14799,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 25.5%(시 평균 11.9%) · 음식 비중 44.5%",
+      "evening_pct": 26.2,
+      "quick_pct": 2.6900584795,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "두산동",
+          "poi_rows": 597
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "지산1동",
+          "poi_rows": 258
+        }
+      ]
+    },
+    {
+      "station": "수성시장",
+      "radius_m": 300,
+      "nearby_poi_rows": 499,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "수성2.3가동",
+      "dominant_share_pct": 88.77755511022045,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 10138,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 11.5%(시 평균 5.9%) · 15~29세 17.1%(시 평균 14.2%)",
+      "evening_pct": 20.4,
+      "quick_pct": 3.4068136273,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "수성2.3가동",
+          "poi_rows": 443
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성1가동",
+          "poi_rows": 56
+        }
+      ]
+    },
+    {
+      "station": "수성시장",
+      "radius_m": 500,
+      "nearby_poi_rows": 950,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "수성2.3가동",
+      "dominant_share_pct": 65.36842105263158,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 10138,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 11.5%(시 평균 5.9%) · 15~29세 17.1%(시 평균 14.2%)",
+      "evening_pct": 20.4,
+      "quick_pct": 3.5789473684,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "수성2.3가동",
+          "poi_rows": 621
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "수성1가동",
+          "poi_rows": 252
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어1동",
+          "poi_rows": 40
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "중동",
+          "poi_rows": 21
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "황금2동",
+          "poi_rows": 16
+        }
+      ]
+    },
+    {
+      "station": "신기",
+      "radius_m": 300,
+      "nearby_poi_rows": 117,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심1동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 37124,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 33.6% · 소매 26.3% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 23.7,
+      "quick_pct": 1.7094017094,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심1동",
+          "poi_rows": 117
+        }
+      ]
+    },
+    {
+      "station": "신기",
+      "radius_m": 500,
+      "nearby_poi_rows": 519,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심1동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 37124,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 33.6% · 소매 26.3% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 23.7,
+      "quick_pct": 3.4682080925,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심1동",
+          "poi_rows": 519
+        }
+      ]
+    },
+    {
+      "station": "신매",
+      "radius_m": 300,
+      "nearby_poi_rows": 514,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "고산3동",
+      "dominant_share_pct": 51.75097276264592,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 29123,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 10.9%(시 평균 5.9%) · 15~29세 17.1%(시 평균 14.2%)",
+      "evening_pct": 29.9,
+      "quick_pct": 6.2256809339,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "고산3동",
+          "poi_rows": 266
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "고산1동",
+          "poi_rows": 235
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "고산2동",
+          "poi_rows": 13
+        }
+      ]
+    },
+    {
+      "station": "신매",
+      "radius_m": 500,
+      "nearby_poi_rows": 1059,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "고산3동",
+      "dominant_share_pct": 52.21907459867799,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 29123,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 10.9%(시 평균 5.9%) · 15~29세 17.1%(시 평균 14.2%)",
+      "evening_pct": 29.9,
+      "quick_pct": 6.0434372049,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "고산3동",
+          "poi_rows": 553
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "고산1동",
+          "poi_rows": 406
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "고산2동",
+          "poi_rows": 100
+        }
+      ]
+    },
+    {
+      "station": "신천",
+      "radius_m": 300,
+      "nearby_poi_rows": 429,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "신천3동",
+      "dominant_share_pct": 51.981351981351985,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14952,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 36.1%(시 평균 15.8%)",
+      "evening_pct": 25.2,
+      "quick_pct": 3.2634032634,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "신천3동",
+          "poi_rows": 223
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신천1.2동",
+          "poi_rows": 185
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암3동",
+          "poi_rows": 15
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암2동",
+          "poi_rows": 6
+        }
+      ]
+    },
+    {
+      "station": "신천",
+      "radius_m": 500,
+      "nearby_poi_rows": 710,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "신천3동",
+      "dominant_share_pct": 48.732394366197184,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14952,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 36.1%(시 평균 15.8%)",
+      "evening_pct": 25.2,
+      "quick_pct": 2.9577464789,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "신천3동",
+          "poi_rows": 346
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신천1.2동",
+          "poi_rows": 270
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암3동",
+          "poi_rows": 51
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암2동",
+          "poi_rows": 43
+        }
+      ]
+    },
+    {
+      "station": "아양교",
+      "radius_m": 300,
+      "nearby_poi_rows": 201,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "효목1동",
+      "dominant_share_pct": 83.08457711442786,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 11467,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "관광·숙박상권",
+      "rule_basis": "숙박 비중 3.2%(시 평균 1.0%)",
+      "evening_pct": 23.0,
+      "quick_pct": 3.9800995025,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "효목1동",
+          "poi_rows": 167
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암5동",
+          "poi_rows": 34
+        }
+      ]
+    },
+    {
+      "station": "아양교",
+      "radius_m": 500,
+      "nearby_poi_rows": 444,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "효목1동",
+      "dominant_share_pct": 67.56756756756756,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 11467,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "관광·숙박상권",
+      "rule_basis": "숙박 비중 3.2%(시 평균 1.0%)",
+      "evening_pct": 23.0,
+      "quick_pct": 4.0540540541,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "효목1동",
+          "poi_rows": 300
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암5동",
+          "poi_rows": 88
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "동촌동",
+          "poi_rows": 43
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "지저동",
+          "poi_rows": 13
+        }
+      ]
+    },
+    {
+      "station": "안심",
+      "radius_m": 300,
+      "nearby_poi_rows": 174,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심3동",
+      "dominant_share_pct": 90.22988505747126,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 19884,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 15.4%(시 평균 5.9%) · 15~29세 16.6%(시 평균 14.2%)",
+      "evening_pct": 21.2,
+      "quick_pct": 3.4482758621,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심3동",
+          "poi_rows": 157
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "안심4동",
+          "poi_rows": 17
+        }
+      ]
+    },
+    {
+      "station": "안심",
+      "radius_m": 500,
+      "nearby_poi_rows": 336,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심3동",
+      "dominant_share_pct": 76.48809523809523,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 19884,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 15.4%(시 평균 5.9%) · 15~29세 16.6%(시 평균 14.2%)",
+      "evening_pct": 21.2,
+      "quick_pct": 2.380952381,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심3동",
+          "poi_rows": 257
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "안심4동",
+          "poi_rows": 79
+        }
+      ]
+    },
+    {
+      "station": "안지랑",
+      "radius_m": 300,
+      "nearby_poi_rows": 545,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명10동",
+      "dominant_share_pct": 39.633027522935784,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 7805,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 19.0%(시 평균 11.9%) · 음식 비중 32.5%",
+      "evening_pct": 24.6,
+      "quick_pct": 3.4862385321,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명10동",
+          "poi_rows": 216
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명9동",
+          "poi_rows": 211
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명1동",
+          "poi_rows": 113
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명6동",
+          "poi_rows": 5
+        }
+      ]
+    },
+    {
+      "station": "안지랑",
+      "radius_m": 500,
+      "nearby_poi_rows": 947,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명9동",
+      "dominant_share_pct": 39.17634635691658,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 13111,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 33.5% · 소매 22.0% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 24.6,
+      "quick_pct": 2.6399155227,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명9동",
+          "poi_rows": 371
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명10동",
+          "poi_rows": 292
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명1동",
+          "poi_rows": 243
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명6동",
+          "poi_rows": 41
+        }
+      ]
+    },
+    {
+      "station": "어린이회관",
+      "radius_m": 300,
+      "nearby_poi_rows": 235,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "황금2동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 11754,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 30.5%(시 평균 11.9%) · 음식 비중 32.1%",
+      "evening_pct": 22.9,
+      "quick_pct": 1.7021276596,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "황금2동",
+          "poi_rows": 235
+        }
+      ]
+    },
+    {
+      "station": "어린이회관",
+      "radius_m": 500,
+      "nearby_poi_rows": 592,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "황금2동",
+      "dominant_share_pct": 94.08783783783784,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 11754,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 30.5%(시 평균 11.9%) · 음식 비중 32.1%",
+      "evening_pct": 22.9,
+      "quick_pct": 1.3513513514,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "황금2동",
+          "poi_rows": 557
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범어1동",
+          "poi_rows": 35
+        }
+      ]
+    },
+    {
+      "station": "연호",
+      "radius_m": 300,
+      "nearby_poi_rows": 25,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "고산2동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 25478,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 23.9%(시 평균 15.8%)",
+      "evening_pct": 21.2,
+      "quick_pct": 0.0,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "고산2동",
+          "poi_rows": 25
+        }
+      ]
+    },
+    {
+      "station": "연호",
+      "radius_m": 500,
+      "nearby_poi_rows": 34,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "고산2동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 25478,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "오피스상권",
+      "rule_basis": "과학·기술+부동산+임대 비중 23.9%(시 평균 15.8%)",
+      "evening_pct": 21.2,
+      "quick_pct": 0.0,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "고산2동",
+          "poi_rows": 34
+        }
+      ]
+    },
+    {
+      "station": "영대병원",
+      "radius_m": 300,
+      "nearby_poi_rows": 477,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명5동",
+      "dominant_share_pct": 82.80922431865828,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 8992,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 37.6% · 소매 20.3% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 18.2,
+      "quick_pct": 6.0796645702,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명5동",
+          "poi_rows": 395
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "봉덕3동",
+          "poi_rows": 44
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "봉덕1동",
+          "poi_rows": 37
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명9동",
+          "poi_rows": 1
+        }
+      ]
+    },
+    {
+      "station": "영대병원",
+      "radius_m": 500,
+      "nearby_poi_rows": 695,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명5동",
+      "dominant_share_pct": 61.726618705035975,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 8992,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 37.6% · 소매 20.3% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 18.2,
+      "quick_pct": 5.3237410072,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명5동",
+          "poi_rows": 429
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "봉덕1동",
+          "poi_rows": 139
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "봉덕3동",
+          "poi_rows": 119
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명2동",
+          "poi_rows": 7
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명9동",
+          "poi_rows": 1
+        }
+      ]
+    },
+    {
+      "station": "용계",
+      "radius_m": 300,
+      "nearby_poi_rows": 77,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심2동",
+      "dominant_share_pct": 92.20779220779221,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 16987,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 17.8%(시 평균 15.1%) · 음식 비중 24.1%",
+      "evening_pct": 23.1,
+      "quick_pct": 0.0,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심2동",
+          "poi_rows": 71
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "해안동",
+          "poi_rows": 6
+        }
+      ]
+    },
+    {
+      "station": "용계",
+      "radius_m": 500,
+      "nearby_poi_rows": 147,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심2동",
+      "dominant_share_pct": 87.07482993197279,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 16987,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 17.8%(시 평균 15.1%) · 음식 비중 24.1%",
+      "evening_pct": 23.1,
+      "quick_pct": 0.6802721088,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심2동",
+          "poi_rows": 128
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "해안동",
+          "poi_rows": 19
+        }
+      ]
+    },
+    {
+      "station": "용산",
+      "radius_m": 300,
+      "nearby_poi_rows": 310,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "용산1동",
+      "dominant_share_pct": 72.25806451612902,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 27731,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 30.8% · 소매 26.4% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 26.0,
+      "quick_pct": 5.8064516129,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "용산1동",
+          "poi_rows": 224
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "감삼동",
+          "poi_rows": 47
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "장기동",
+          "poi_rows": 39
+        }
+      ]
+    },
+    {
+      "station": "용산",
+      "radius_m": 500,
+      "nearby_poi_rows": 621,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "용산1동",
+      "dominant_share_pct": 55.23349436392915,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 27731,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 30.8% · 소매 26.4% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 26.0,
+      "quick_pct": 5.152979066,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "용산1동",
+          "poi_rows": 343
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "감삼동",
+          "poi_rows": 126
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "장기동",
+          "poi_rows": 92
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "죽전동",
+          "poi_rows": 60
+        }
+      ]
+    },
+    {
+      "station": "용지",
+      "radius_m": 300,
+      "nearby_poi_rows": 216,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "범물1동",
+      "dominant_share_pct": 50.0,
+      "tied_dominant_areas": 2,
+      "context_matched": true,
+      "area_population": 9655,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 29.7% · 소매 37.8% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 21.7,
+      "quick_pct": 2.7777777778,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "범물1동",
+          "poi_rows": 108
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범물2동",
+          "poi_rows": 108
+        }
+      ]
+    },
+    {
+      "station": "용지",
+      "radius_m": 500,
+      "nearby_poi_rows": 370,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "범물2동",
+      "dominant_share_pct": 52.702702702702695,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 15530,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 10.1%(시 평균 5.9%) · 15~29세 14.6%(시 평균 14.2%)",
+      "evening_pct": 21.7,
+      "quick_pct": 5.1351351351,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "범물2동",
+          "poi_rows": 195
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "범물1동",
+          "poi_rows": 175
+        }
+      ]
+    },
+    {
+      "station": "원대",
+      "radius_m": 300,
+      "nearby_poi_rows": 220,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "노원동",
+      "dominant_share_pct": 50.45454545454545,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 10938,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 36.7% · 소매 25.7% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 22.8,
+      "quick_pct": 2.7272727273,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "노원동",
+          "poi_rows": 111
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "원대동",
+          "poi_rows": 91
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산5동",
+          "poi_rows": 18
+        }
+      ]
+    },
+    {
+      "station": "원대",
+      "radius_m": 500,
+      "nearby_poi_rows": 599,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "노원동",
+      "dominant_share_pct": 44.90818030050083,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 10938,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 36.7% · 소매 25.7% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 22.8,
+      "quick_pct": 2.1702838063,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "노원동",
+          "poi_rows": 269
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "원대동",
+          "poi_rows": 226
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산5동",
+          "poi_rows": 104
+        }
+      ]
+    },
+    {
+      "station": "월배",
+      "radius_m": 300,
+      "nearby_poi_rows": 385,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "진천동",
+      "dominant_share_pct": 52.72727272727272,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 49166,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.7% · 소매 21.6% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 26.1,
+      "quick_pct": 2.5974025974,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "진천동",
+          "poi_rows": 203
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "상인2동",
+          "poi_rows": 148
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "상인1동",
+          "poi_rows": 34
+        }
+      ]
+    },
+    {
+      "station": "월배",
+      "radius_m": 500,
+      "nearby_poi_rows": 1103,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "진천동",
+      "dominant_share_pct": 53.943789664551225,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 49166,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.7% · 소매 21.6% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 26.1,
+      "quick_pct": 3.445149592,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "진천동",
+          "poi_rows": 595
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "상인2동",
+          "poi_rows": 310
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "상인1동",
+          "poi_rows": 128
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "월성1동",
+          "poi_rows": 70
+        }
+      ]
+    },
+    {
+      "station": "월촌",
+      "radius_m": 300,
+      "nearby_poi_rows": 354,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "송현1동",
+      "dominant_share_pct": 54.80225988700565,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 15862,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 22.7%(시 평균 15.1%) · 음식 비중 24.4%",
+      "evening_pct": 26.6,
+      "quick_pct": 3.6723163842,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "송현1동",
+          "poi_rows": 194
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "송현2동",
+          "poi_rows": 112
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "상인1동",
+          "poi_rows": 48
+        }
+      ]
+    },
+    {
+      "station": "월촌",
+      "radius_m": 500,
+      "nearby_poi_rows": 606,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "송현1동",
+      "dominant_share_pct": 53.79537953795379,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 15862,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 22.7%(시 평균 15.1%) · 음식 비중 24.4%",
+      "evening_pct": 26.6,
+      "quick_pct": 3.4653465347,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "송현1동",
+          "poi_rows": 326
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "송현2동",
+          "poi_rows": 204
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "상인1동",
+          "poi_rows": 76
+        }
+      ]
+    },
+    {
+      "station": "율하",
+      "radius_m": 300,
+      "nearby_poi_rows": 347,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심1동",
+      "dominant_share_pct": 95.38904899135446,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 37124,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 33.6% · 소매 26.3% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 26.1,
+      "quick_pct": 4.6109510086,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심1동",
+          "poi_rows": 331
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "안심2동",
+          "poi_rows": 16
+        }
+      ]
+    },
+    {
+      "station": "율하",
+      "radius_m": 500,
+      "nearby_poi_rows": 664,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "안심1동",
+      "dominant_share_pct": 85.99397590361446,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 37124,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 33.6% · 소매 26.3% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 26.1,
+      "quick_pct": 3.0120481928,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "안심1동",
+          "poi_rows": 571
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "안심2동",
+          "poi_rows": 93
+        }
+      ]
+    },
+    {
+      "station": "이곡",
+      "radius_m": 300,
+      "nearby_poi_rows": 202,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "이곡1동",
+      "dominant_share_pct": 43.56435643564357,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 19612,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 17.4%(시 평균 15.1%) · 음식 비중 31.2%",
+      "evening_pct": 27.2,
+      "quick_pct": 2.4752475248,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "이곡1동",
+          "poi_rows": 88
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "장기동",
+          "poi_rows": 79
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "용산2동",
+          "poi_rows": 35
+        }
+      ]
+    },
+    {
+      "station": "이곡",
+      "radius_m": 500,
+      "nearby_poi_rows": 323,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "이곡1동",
+      "dominant_share_pct": 50.464396284829725,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 19612,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 17.4%(시 평균 15.1%) · 음식 비중 31.2%",
+      "evening_pct": 27.2,
+      "quick_pct": 1.8575851393,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "이곡1동",
+          "poi_rows": 163
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "장기동",
+          "poi_rows": 96
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "용산2동",
+          "poi_rows": 64
+        }
+      ]
+    },
+    {
+      "station": "죽전",
+      "radius_m": 300,
+      "nearby_poi_rows": 689,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "죽전동",
+      "dominant_share_pct": 52.39477503628447,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14360,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 22.1%(시 평균 15.1%) · 음식 비중 26.8%",
+      "evening_pct": 28.9,
+      "quick_pct": 2.9027576197,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "죽전동",
+          "poi_rows": 361
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "감삼동",
+          "poi_rows": 324
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "용산1동",
+          "poi_rows": 4
+        }
+      ]
+    },
+    {
+      "station": "죽전",
+      "radius_m": 500,
+      "nearby_poi_rows": 1304,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "감삼동",
+      "dominant_share_pct": 53.144171779141104,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 31140,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 33.4% · 소매 21.3% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 28.9,
+      "quick_pct": 2.7607361963,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "감삼동",
+          "poi_rows": 693
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "죽전동",
+          "poi_rows": 537
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "용산1동",
+          "poi_rows": 74
+        }
+      ]
+    },
+    {
+      "station": "중앙로",
+      "radius_m": 300,
+      "nearby_poi_rows": 2306,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "성내1동",
+      "dominant_share_pct": 59.62705984388552,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 5538,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 2곳 · 소매 비중 35.9%(시 평균 25.8%)",
+      "evening_pct": 19.8,
+      "quick_pct": 3.0355594102,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "성내1동",
+          "poi_rows": 1375
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내2동",
+          "poi_rows": 900
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "삼덕동",
+          "poi_rows": 31
+        }
+      ]
+    },
+    {
+      "station": "중앙로",
+      "radius_m": 500,
+      "nearby_poi_rows": 4877,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "중구",
+      "dominant_admin_dong": "성내1동",
+      "dominant_share_pct": 50.64588886610621,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 5538,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 2곳 · 소매 비중 35.9%(시 평균 25.8%)",
+      "evening_pct": 19.8,
+      "quick_pct": 3.0961656756,
+      "area_distribution": [
+        {
+          "gu": "중구",
+          "admin_dong": "성내1동",
+          "poi_rows": 2470
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내2동",
+          "poi_rows": 1869
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "삼덕동",
+          "poi_rows": 294
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "칠성동",
+          "poi_rows": 244
+        }
+      ]
+    },
+    {
+      "station": "지산",
+      "radius_m": 300,
+      "nearby_poi_rows": 249,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "지산1동",
+      "dominant_share_pct": 75.1004016064257,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 18605,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 18.6%(시 평균 15.1%) · 음식 비중 31.0%",
+      "evening_pct": 28.7,
+      "quick_pct": 2.8112449799,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "지산1동",
+          "poi_rows": 187
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "지산2동",
+          "poi_rows": 62
+        }
+      ]
+    },
+    {
+      "station": "지산",
+      "radius_m": 500,
+      "nearby_poi_rows": 688,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "지산2동",
+      "dominant_share_pct": 57.84883720930233,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 18120,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 18.8%(시 평균 15.1%) · 음식 비중 24.5%",
+      "evening_pct": 28.7,
+      "quick_pct": 3.7790697674,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "지산2동",
+          "poi_rows": 398
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "지산1동",
+          "poi_rows": 282
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "두산동",
+          "poi_rows": 8
+        }
+      ]
+    },
+    {
+      "station": "진천",
+      "radius_m": 300,
+      "nearby_poi_rows": 479,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "진천동",
+      "dominant_share_pct": 83.29853862212944,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 49166,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.7% · 소매 21.6% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 27.0,
+      "quick_pct": 6.0542797495,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "진천동",
+          "poi_rows": 399
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "유천동",
+          "poi_rows": 73
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "월성1동",
+          "poi_rows": 7
+        }
+      ]
+    },
+    {
+      "station": "진천",
+      "radius_m": 500,
+      "nearby_poi_rows": 1139,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "달서구",
+      "dominant_admin_dong": "진천동",
+      "dominant_share_pct": 78.57769973661107,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 49166,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.7% · 소매 21.6% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 27.0,
+      "quick_pct": 4.9165935031,
+      "area_distribution": [
+        {
+          "gu": "달서구",
+          "admin_dong": "진천동",
+          "poi_rows": 895
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "유천동",
+          "poi_rows": 167
+        },
+        {
+          "gu": "달서구",
+          "admin_dong": "월성1동",
+          "poi_rows": 77
+        }
+      ]
+    },
+    {
+      "station": "칠곡경대병원",
+      "radius_m": 300,
+      "nearby_poi_rows": 16,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "국우동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 29097,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 8.9%(시 평균 5.9%) · 15~29세 18.6%(시 평균 14.2%)",
+      "evening_pct": 11.2,
+      "quick_pct": 0.0,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "국우동",
+          "poi_rows": 16
+        }
+      ]
+    },
+    {
+      "station": "칠곡경대병원",
+      "radius_m": 500,
+      "nearby_poi_rows": 19,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "국우동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 29097,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "대학·학원가",
+      "rule_basis": "교육 비중 8.9%(시 평균 5.9%) · 15~29세 18.6%(시 평균 14.2%)",
+      "evening_pct": 11.2,
+      "quick_pct": 0.0,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "국우동",
+          "poi_rows": 19
+        }
+      ]
+    },
+    {
+      "station": "칠곡운암",
+      "radius_m": 300,
+      "nearby_poi_rows": 229,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "구암동",
+      "dominant_share_pct": 39.737991266375545,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 30182,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 37.7% · 소매 21.0% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 28.0,
+      "quick_pct": 5.2401746725,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "구암동",
+          "poi_rows": 91
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "동천동",
+          "poi_rows": 68
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "읍내동",
+          "poi_rows": 57
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "태전2동",
+          "poi_rows": 13
+        }
+      ]
+    },
+    {
+      "station": "칠곡운암",
+      "radius_m": 500,
+      "nearby_poi_rows": 584,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "읍내동",
+      "dominant_share_pct": 32.02054794520548,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 24548,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 32.5% · 소매 28.2% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 28.0,
+      "quick_pct": 4.6232876712,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "읍내동",
+          "poi_rows": 187
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "구암동",
+          "poi_rows": 176
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "동천동",
+          "poi_rows": 137
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "태전2동",
+          "poi_rows": 84
+        }
+      ]
+    },
+    {
+      "station": "칠성시장",
+      "radius_m": 300,
+      "nearby_poi_rows": 371,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "칠성동",
+      "dominant_share_pct": 74.66307277628033,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 23907,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 8곳 · 소매 비중 47.2%(시 평균 25.8%)",
+      "evening_pct": 17.1,
+      "quick_pct": 1.8867924528,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "칠성동",
+          "poi_rows": 277
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "대현동",
+          "poi_rows": 56
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암2동",
+          "poi_rows": 25
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "동인동",
+          "poi_rows": 13
+        }
+      ]
+    },
+    {
+      "station": "칠성시장",
+      "radius_m": 500,
+      "nearby_poi_rows": 816,
+      "missing_area_rows": 0,
+      "area_count": 5,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "칠성동",
+      "dominant_share_pct": 46.93627450980392,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 23907,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "시장상권",
+      "rule_basis": "전통시장 8곳 · 소매 비중 47.2%(시 평균 25.8%)",
+      "evening_pct": 17.1,
+      "quick_pct": 2.6960784314,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "칠성동",
+          "poi_rows": 383
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "동인동",
+          "poi_rows": 179
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "대현동",
+          "poi_rows": 114
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "신암2동",
+          "poi_rows": 112
+        },
+        {
+          "gu": "중구",
+          "admin_dong": "성내1동",
+          "poi_rows": 28
+        }
+      ]
+    },
+    {
+      "station": "태전",
+      "radius_m": 300,
+      "nearby_poi_rows": 215,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "태전2동",
+      "dominant_share_pct": 57.20930232558139,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 21552,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 18.2%(시 평균 15.1%) · 음식 비중 30.6%",
+      "evening_pct": 27.1,
+      "quick_pct": 1.8604651163,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "태전2동",
+          "poi_rows": 123
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "태전1동",
+          "poi_rows": 92
+        }
+      ]
+    },
+    {
+      "station": "태전",
+      "radius_m": 500,
+      "nearby_poi_rows": 546,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "태전2동",
+      "dominant_share_pct": 56.776556776556774,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 21552,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 18.2%(시 평균 15.1%) · 음식 비중 30.6%",
+      "evening_pct": 27.1,
+      "quick_pct": 2.1978021978,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "태전2동",
+          "poi_rows": 310
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "태전1동",
+          "poi_rows": 236
+        }
+      ]
+    },
+    {
+      "station": "팔거",
+      "radius_m": 300,
+      "nearby_poi_rows": 601,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "동천동",
+      "dominant_share_pct": 96.67221297836939,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 24591,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 21.0%(시 평균 11.9%) · 음식 비중 38.3%",
+      "evening_pct": 27.9,
+      "quick_pct": 3.4941763727,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "동천동",
+          "poi_rows": 581
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "국우동",
+          "poi_rows": 20
+        }
+      ]
+    },
+    {
+      "station": "팔거",
+      "radius_m": 500,
+      "nearby_poi_rows": 1029,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "동천동",
+      "dominant_share_pct": 90.37900874635568,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 24591,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 21.0%(시 평균 11.9%) · 음식 비중 38.3%",
+      "evening_pct": 27.9,
+      "quick_pct": 4.6647230321,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "동천동",
+          "poi_rows": 930
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "읍내동",
+          "poi_rows": 77
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "국우동",
+          "poi_rows": 22
+        }
+      ]
+    },
+    {
+      "station": "팔달",
+      "radius_m": 300,
+      "nearby_poi_rows": 37,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "관문동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 31924,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 32.1% · 소매 26.6% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 25.5,
+      "quick_pct": 2.7027027027,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "관문동",
+          "poi_rows": 37
+        }
+      ]
+    },
+    {
+      "station": "팔달",
+      "radius_m": 500,
+      "nearby_poi_rows": 57,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "관문동",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 31924,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 32.1% · 소매 26.6% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 25.5,
+      "quick_pct": 1.7543859649,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "관문동",
+          "poi_rows": 57
+        }
+      ]
+    },
+    {
+      "station": "팔달시장",
+      "radius_m": 300,
+      "nearby_poi_rows": 412,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "노원동",
+      "dominant_share_pct": 52.18446601941748,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 10938,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 36.7% · 소매 25.7% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 17.3,
+      "quick_pct": 3.8834951456,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "노원동",
+          "poi_rows": 215
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산5동",
+          "poi_rows": 168
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "원대동",
+          "poi_rows": 29
+        }
+      ]
+    },
+    {
+      "station": "팔달시장",
+      "radius_m": 500,
+      "nearby_poi_rows": 773,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "노원동",
+      "dominant_share_pct": 45.66623544631307,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 10938,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 36.7% · 소매 25.7% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 17.3,
+      "quick_pct": 3.1047865459,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "노원동",
+          "poi_rows": 353
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산5동",
+          "poi_rows": 281
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "비산7동",
+          "poi_rows": 93
+        },
+        {
+          "gu": "서구",
+          "admin_dong": "원대동",
+          "poi_rows": 46
+        }
+      ]
+    },
+    {
+      "station": "학정",
+      "radius_m": 300,
+      "nearby_poi_rows": 3,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "읍내동",
+      "dominant_share_pct": 66.66666666666666,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 24548,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 32.5% · 소매 28.2% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 19.4,
+      "quick_pct": 0.0,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "읍내동",
+          "poi_rows": 2
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "국우동",
+          "poi_rows": 1
+        }
+      ]
+    },
+    {
+      "station": "학정",
+      "radius_m": 500,
+      "nearby_poi_rows": 88,
+      "missing_area_rows": 0,
+      "area_count": 2,
+      "dominant_gu": "북구",
+      "dominant_admin_dong": "읍내동",
+      "dominant_share_pct": 77.27272727272727,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 24548,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 32.5% · 소매 28.2% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 19.4,
+      "quick_pct": 1.1363636364,
+      "area_distribution": [
+        {
+          "gu": "북구",
+          "admin_dong": "읍내동",
+          "poi_rows": 68
+        },
+        {
+          "gu": "북구",
+          "admin_dong": "국우동",
+          "poi_rows": 20
+        }
+      ]
+    },
+    {
+      "station": "해안",
+      "radius_m": 300,
+      "nearby_poi_rows": 162,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "동촌동",
+      "dominant_share_pct": 36.41975308641975,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 13783,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 35.2% · 소매 21.7% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 23.7,
+      "quick_pct": 3.7037037037,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "동촌동",
+          "poi_rows": 59
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "해안동",
+          "poi_rows": 54
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "방촌동",
+          "poi_rows": 49
+        }
+      ]
+    },
+    {
+      "station": "해안",
+      "radius_m": 500,
+      "nearby_poi_rows": 384,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "동구",
+      "dominant_admin_dong": "방촌동",
+      "dominant_share_pct": 43.22916666666667,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 16700,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 34.0% · 소매 24.7% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 23.7,
+      "quick_pct": 4.4270833333,
+      "area_distribution": [
+        {
+          "gu": "동구",
+          "admin_dong": "방촌동",
+          "poi_rows": 166
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "해안동",
+          "poi_rows": 116
+        },
+        {
+          "gu": "동구",
+          "admin_dong": "동촌동",
+          "poi_rows": 102
+        }
+      ]
+    },
+    {
+      "station": "현충로",
+      "radius_m": 300,
+      "nearby_poi_rows": 308,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명9동",
+      "dominant_share_pct": 49.67532467532468,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 13111,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 33.5% · 소매 22.0% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 24.3,
+      "quick_pct": 1.2987012987,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명9동",
+          "poi_rows": 153
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명5동",
+          "poi_rows": 85
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명1동",
+          "poi_rows": 70
+        }
+      ]
+    },
+    {
+      "station": "현충로",
+      "radius_m": 500,
+      "nearby_poi_rows": 701,
+      "missing_area_rows": 0,
+      "area_count": 4,
+      "dominant_gu": "남구",
+      "dominant_admin_dong": "대명9동",
+      "dominant_share_pct": 49.78601997146933,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 13111,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "혼합상권",
+      "rule_basis": "음식 33.5% · 소매 22.0% 모두 시 평균(32.1% / 25.8%)에 가까움",
+      "evening_pct": 24.3,
+      "quick_pct": 2.2824536377,
+      "area_distribution": [
+        {
+          "gu": "남구",
+          "admin_dong": "대명9동",
+          "poi_rows": 349
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명1동",
+          "poi_rows": 191
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명5동",
+          "poi_rows": 135
+        },
+        {
+          "gu": "남구",
+          "admin_dong": "대명10동",
+          "poi_rows": 26
+        }
+      ]
+    },
+    {
+      "station": "화원",
+      "radius_m": 300,
+      "nearby_poi_rows": 384,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달성군",
+      "dominant_admin_dong": "화원읍",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 45281,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 17.9%(시 평균 15.1%) · 음식 비중 31.5%",
+      "evening_pct": 22.3,
+      "quick_pct": 3.90625,
+      "area_distribution": [
+        {
+          "gu": "달성군",
+          "admin_dong": "화원읍",
+          "poi_rows": 384
+        }
+      ]
+    },
+    {
+      "station": "화원",
+      "radius_m": 500,
+      "nearby_poi_rows": 657,
+      "missing_area_rows": 0,
+      "area_count": 1,
+      "dominant_gu": "달성군",
+      "dominant_admin_dong": "화원읍",
+      "dominant_share_pct": 100.0,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 45281,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "주거상권",
+      "rule_basis": "수리·개인서비스+보건 비중 17.9%(시 평균 15.1%) · 음식 비중 31.5%",
+      "evening_pct": 22.3,
+      "quick_pct": 3.196347032,
+      "area_distribution": [
+        {
+          "gu": "달성군",
+          "admin_dong": "화원읍",
+          "poi_rows": 657
+        }
+      ]
+    },
+    {
+      "station": "황금",
+      "radius_m": 300,
+      "nearby_poi_rows": 436,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "두산동",
+      "dominant_share_pct": 42.88990825688073,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14799,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 25.5%(시 평균 11.9%) · 음식 비중 44.5%",
+      "evening_pct": 25.6,
+      "quick_pct": 4.8165137615,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "두산동",
+          "poi_rows": 187
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "황금2동",
+          "poi_rows": 156
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "지산1동",
+          "poi_rows": 93
+        }
+      ]
+    },
+    {
+      "station": "황금",
+      "radius_m": 500,
+      "nearby_poi_rows": 929,
+      "missing_area_rows": 0,
+      "area_count": 3,
+      "dominant_gu": "수성구",
+      "dominant_admin_dong": "두산동",
+      "dominant_share_pct": 41.1194833153929,
+      "tied_dominant_areas": 1,
+      "context_matched": true,
+      "area_population": 14799,
+      "population_reference": "2026-08-31",
+      "rule_market_type": "유흥상권",
+      "rule_basis": "음식 중 주점 비중 25.5%(시 평균 11.9%) · 음식 비중 44.5%",
+      "evening_pct": 25.6,
+      "quick_pct": 3.8751345533,
+      "area_distribution": [
+        {
+          "gu": "수성구",
+          "admin_dong": "두산동",
+          "poi_rows": 382
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "황금2동",
+          "poi_rows": 300
+        },
+        {
+          "gu": "수성구",
+          "admin_dong": "지산1동",
+          "poi_rows": 247
+        }
+      ]
+    }
+  ],
+  "summaries": [
+    {
+      "radius_m": 300,
+      "dominant_share_cutoff_strict_pct": 50,
+      "n": 66,
+      "unique_admin_areas": 49,
+      "evening_median_pct": 23.7,
+      "evening_population_spearman": 0.4056946605041442,
+      "groups": [
+        {
+          "group": "low_or_equal",
+          "n": 34,
+          "rule_residential_n": 4,
+          "rule_residential_pct": 11.764705882352942,
+          "median_area_population": 13907.5
+        },
+        {
+          "group": "high",
+          "n": 32,
+          "rule_residential_n": 8,
+          "rule_residential_pct": 25.0,
+          "median_area_population": 23071.5
+        }
+      ]
+    },
+    {
+      "radius_m": 300,
+      "dominant_share_cutoff_strict_pct": 80,
+      "n": 31,
+      "unique_admin_areas": 22,
+      "evening_median_pct": 23.0,
+      "evening_population_spearman": 0.37344798395060996,
+      "groups": [
+        {
+          "group": "low_or_equal",
+          "n": 16,
+          "rule_residential_n": 1,
+          "rule_residential_pct": 6.25,
+          "median_area_population": 14516.0
+        },
+        {
+          "group": "high",
+          "n": 15,
+          "rule_residential_n": 3,
+          "rule_residential_pct": 20.0,
+          "median_area_population": 31924.0
+        }
+      ]
+    },
+    {
+      "radius_m": 500,
+      "dominant_share_cutoff_strict_pct": 50,
+      "n": 56,
+      "unique_admin_areas": 41,
+      "evening_median_pct": 24.05,
+      "evening_population_spearman": 0.4268763981103807,
+      "groups": [
+        {
+          "group": "low_or_equal",
+          "n": 28,
+          "rule_residential_n": 3,
+          "rule_residential_pct": 10.714285714285714,
+          "median_area_population": 14640.5
+        },
+        {
+          "group": "high",
+          "n": 28,
+          "rule_residential_n": 6,
+          "rule_residential_pct": 21.428571428571427,
+          "median_area_population": 25034.5
+        }
+      ]
+    },
+    {
+      "radius_m": 500,
+      "dominant_share_cutoff_strict_pct": 80,
+      "n": 21,
+      "unique_admin_areas": 13,
+      "evening_median_pct": 23.7,
+      "evening_population_spearman": 0.05021225643821875,
+      "groups": [
+        {
+          "group": "low_or_equal",
+          "n": 11,
+          "rule_residential_n": 3,
+          "rule_residential_pct": 27.272727272727273,
+          "median_area_population": 27830.0
+        },
+        {
+          "group": "high",
+          "n": 10,
+          "rule_residential_n": 1,
+          "rule_residential_pct": 10.0,
+          "median_area_population": 29105.0
+        }
+      ]
+    }
+  ],
+  "missing_context_rows": 0,
+  "limits": [
+    "population is entire administrative area, not 300m residents or density",
+    "market_type depends on food composition; not independent evidence for quick-food hypothesis",
+    "multiple stations can share same area; no independent-observation inference",
+    "dominant area is POI-count proxy, not measured residential land use"
+  ]
+}

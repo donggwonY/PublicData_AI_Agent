@@ -1,0 +1,59 @@
+<div id="dg-cafe-map">
+  <h3>동대구역 출구 주변 카페 · 300m</h3>
+  <div class="text-small">동일행 제거 41건 · 최근접 배정: <span style="color:var(--viz-series-1)">●</span> 1번 · <span style="color:var(--viz-series-2)">●</span> 2번 · <span style="color:var(--viz-series-3)">●</span> 3번 · 북쪽 ↑</div>
+  <div class="map-area"></div>
+  <div class="text-small">점 위 숫자 = 같은 좌표의 카페 기록 수 · 연결선 = 선택 카페와 최근접 출구의 직선거리</div>
+  <label class="form-label">카페 위치 선택<select class="form-select"></select></label>
+  <div class="detail" aria-live="polite"></div>
+  <div class="text-small">상가 설정 2026.06 · 출구 2024.08.26 · 직선거리 · 현재 영업 미확인</div>
+  <div class="text-small">도로·건물: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> (2026.10.12 조회) · 원: 각 출구 반경 300m</div>
+</div>
+<style>
+#dg-cafe-map .map-area{position:relative;width:100%}
+#dg-cafe-map svg{display:block;width:100%;overflow:hidden}
+#dg-cafe-map svg text{fill:var(--foreground);font-size:12px}
+#dg-cafe-map .detail{margin:12px 0;min-height:48px;overflow-wrap:anywhere}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(() => {
+const data=__MAP_DATA__;
+const root=document.getElementById('dg-cafe-map'),area=root.querySelector('.map-area'),select=root.querySelector('select'),detail=root.querySelector('.detail');
+const colors={'1':'var(--viz-series-1)','2':'var(--viz-series-2)','3':'var(--viz-series-3)'};
+let selected=Number(window.openai?.widgetState?.modelContent?.locationIndex ?? 20);
+if(!data.groups[selected])selected=0;
+data.groups.forEach((g,i)=>{const o=document.createElement('option');o.value=i;o.textContent=g.items[0].address.replace('대구광역시 동구 ','')+` · ${g.items.length}건`;select.append(o)});
+function show(i,save=false){selected=i;select.value=String(i);const g=data.groups[i];detail.textContent=g.items.map(x=>`${x.name}${x.branch?' '+x.branch:''} · ${x.address} · 최근접 ${x.exit}번 (${x.distance}m)`).join(' / ');draw();if(save)window.openai?.setWidgetState({modelContent:{locationIndex:i,address:g.items[0].address},privateContent:null}).catch(()=>{});}
+function draw(){
+ area.replaceChildren();const w=area.clientWidth||600,h=Math.max(370,Math.min(550,w*.85));
+ const svg=d3.select(area).append('svg').attr('viewBox',`0 0 ${w} ${h}`).attr('role','img').attr('aria-label','동대구역 1·2·3번 출구와 카페 위치 지도. 아래 선택 메뉴로 카페 이름과 주소 확인 가능.');
+ const circles=data.exits.map(p=>d3.geoCircle().center([p.longitude,p.latitude]).radius(300/6371008.8*180/Math.PI)());
+ const bounds={type:'FeatureCollection',features:circles.map(geometry=>({type:'Feature',geometry}))};
+ const projection=d3.geoMercator().fitExtent([[22,35],[w-22,h-25]],bounds),path=d3.geoPath(projection);
+ svg.append('defs').append('clipPath').attr('id','dg-clip').append('rect').attr('width',w).attr('height',h);
+ const layer=svg.append('g').attr('clip-path','url(#dg-clip)');
+ data.landmarks.forEach(b=>{if(d3.geoArea(b.geometry)>2*Math.PI)b.geometry.coordinates[0].reverse();layer.append('path').attr('d',path(b.geometry)).attr('fill','var(--muted)').attr('stroke','var(--border)').attr('stroke-width',1);});
+ layer.selectAll('path.road').data(data.roads).join('path').attr('d',d=>path(d.geometry)).attr('fill','none').attr('stroke','var(--border)').attr('stroke-width',d=>['primary','secondary','tertiary'].includes(d.kind)?3:1.2);
+ circles.forEach((c,i)=>layer.append('path').attr('d',path(c)).attr('fill',colors[data.exits[i].exit]).attr('fill-opacity',.035).attr('stroke',colors[data.exits[i].exit]).attr('stroke-opacity',.5).attr('stroke-dasharray','4 4'));
+ const current=data.groups[selected],exit=data.exits.find(p=>p.exit===current.items[0].exit),a=projection(current.coordinates),b=projection([exit.longitude,exit.latitude]);
+ layer.append('path').attr('d',`M${a[0]},${a[1]}L${b[0]},${b[1]}`).attr('fill','none').attr('stroke','var(--foreground)').attr('stroke-width',1.5).attr('stroke-dasharray','5 3');
+ data.groups.forEach((g,i)=>{const [x,y]=projection(g.coordinates);const mark=layer.append('g').attr('transform',`translate(${x},${y})`);mark.append('circle').attr('r',i===selected?11:7).attr('fill',colors[g.items[0].exit]).attr('stroke',i===selected?'var(--foreground)':'var(--background)').attr('stroke-width',2);if(g.items.length>1)mark.append('text').attr('y',-12).attr('text-anchor','middle').text(g.items.length);});
+ data.exits.forEach(p=>{const [x,y]=projection([p.longitude,p.latitude]);layer.append('rect').attr('x',x-5).attr('y',y-5).attr('width',10).attr('height',10).attr('fill','var(--foreground)');layer.append('text').attr('x',x+(p.exit==='1'?-32:9)).attr('y',y+(p.exit==='1'?-10:p.exit==='2'?16:-10)).text(`${p.exit}번`);});
+ svg.append('text').attr('x',12).attr('y',20).text('● 카페  ■ 출구');
+ const occupied=[];
+ layer.selectAll('text').each(function(){const r=this.getBBox(),m=this.getCTM(),parent=svg.node().getCTM();const dx=(m.e-parent.e)/parent.a,dy=(m.f-parent.f)/parent.d;occupied.push({x:r.x+dx-3,y:r.y+dy-3,width:r.width+6,height:r.height+6});});
+ data.groups.forEach(g=>{const p=projection(g.coordinates);occupied.push({x:p[0]-10,y:p[1]-10,width:20,height:20});});
+ const intersects=(r,s)=>r.x<s.x+s.width&&r.x+r.width>s.x&&r.y<s.y+s.height&&r.y+r.height>s.y;
+ function label(text,p,offsets,leader=false){for(const [dx,dy] of offsets){const t=layer.append('text').attr('x',p[0]+dx).attr('y',p[1]+dy).attr('text-anchor','middle').attr('paint-order','stroke').attr('stroke','var(--background)').attr('stroke-width',3).text(text);const r=t.node().getBBox(),box={x:r.x-3,y:r.y-3,width:r.width+6,height:r.height+6};if(box.x<8||box.x+box.width>w-8||box.y<30||box.y+box.height>h-40||occupied.some(s=>intersects(box,s))){t.remove();continue;}occupied.push(box);if(leader)layer.append('line').attr('x1',p[0]).attr('y1',p[1]).attr('x2',p[0]+dx).attr('y2',p[1]+dy-6).attr('stroke','var(--border)');return true;}return false;}
+ label(`직선 ${current.items[0].distance}m`,[(a[0]+b[0])/2,(a[1]+b[1])/2],[[0,-14],[0,24],[-40,-20],[40,24]]);
+ data.landmarks.forEach(x=>{const p=path.centroid(x.geometry);if(p[0]<0||p[0]>w||p[1]<0||p[1]>h)return;const offsets=[[0,-18],[0,20],[0,-38],[0,40],[-55,-30],[55,35],[-65,0],[65,0]];const extra=[];for(let y=50;y<h-45;y+=24)for(let xx=90;xx<w-70;xx+=50)extra.push([xx-p[0],y-p[1]]);extra.sort((a,b)=>Math.hypot(...a)-Math.hypot(...b));label(x.name,p,offsets.concat(extra),true);});
+ const named=new Map();data.roads.filter(r=>r.name).forEach(r=>{const visible=r.geometry.coordinates.map(projection).filter(p=>p[0]>30&&p[0]<w-30&&p[1]>40&&p[1]<h-45);const p=visible.length?visible[Math.floor(visible.length/2)]:path.centroid(r.geometry);if(p[0]>30&&p[0]<w-30&&p[1]>40&&p[1]<h-45){const len=d3.geoLength(r.geometry);if(!named.has(r.name)||named.get(r.name).len<len)named.set(r.name,{p,len});}});
+ [...named.entries()].sort((a,b)=>(['동대구로','동부로'].includes(b[0])-['동대구로','동부로'].includes(a[0]))||b[1].len-a[1].len).slice(0,w<450?4:7).forEach(([name,r])=>label(name,r.p,[[0,-7],[0,18],[20,-20],[-20,22]]));
+ const origin=projection.invert([20,h-20]),end=[origin[0]+100/(6371008.8*Math.cos(origin[1]*Math.PI/180))*180/Math.PI,origin[1]],length=projection(end)[0]-20;
+ svg.append('path').attr('d',`M20,${h-26}v6h${length}v-6`).attr('fill','none').attr('stroke','var(--foreground)').attr('stroke-width',1.5);svg.append('text').attr('x',20).attr('y',h-31).text('100m');
+ svg.on('click',event=>{const [x,y]=d3.pointer(event);let best=0,dist=Infinity;data.groups.forEach((g,i)=>{const p=projection(g.coordinates),d=Math.hypot(p[0]-x,p[1]-y);if(d<dist){dist=d;best=i}});if(dist<30)show(best,true)});
+}
+select.addEventListener('change',()=>show(Number(select.value),true));new ResizeObserver(draw).observe(area);show(selected);
+window.addEventListener('openai:set_globals',e=>{const i=e.detail?.globals?.widgetState?.modelContent?.locationIndex;if(Number.isInteger(i)&&data.groups[i])show(i)});
+})();
+</script>
