@@ -1,5 +1,5 @@
 """Compare cafe records around the three available Dongdaegu exits."""
-import hashlib
+from snapshot_hashes import snapshot_sha256, verify_snapshot_hash
 import json
 from pathlib import Path
 import numpy as np
@@ -13,8 +13,9 @@ OUT = ROOT / 'docs/a01'
 def main():
     fixture = json.loads((OUT / 'consultation_case.json').read_text(encoding='utf-8'))
     paths = [OUT / 'station_locations.json', ROOT / 'service/data/processed/poi.parquet']
-    hashes = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
-    assert all(fixture['input_hashes'][k] == v for k, v in hashes.items())
+    hashes = {p.name: snapshot_sha256(p) for p in paths}
+    for p in paths:
+        verify_snapshot_hash(p, fixture['input_hashes'][p.name])
     locations = json.loads(paths[0].read_text(encoding='utf-8'))
     points = next(g['points'] for g in locations['station_exit_groups'] if g['traffic_station'] == '동대구역')
     cafes = pd.read_parquet(paths[1]).query('cat_s == "카페"')

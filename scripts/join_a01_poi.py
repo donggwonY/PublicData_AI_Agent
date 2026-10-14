@@ -1,6 +1,6 @@
 """Exploratory official-exit/POI joins at 300m and 500m, without service edits."""
+from snapshot_hashes import snapshot_sha256
 from pathlib import Path
-import hashlib
 import json
 import numpy as np
 import pandas as pd
@@ -21,7 +21,7 @@ def main():
     locations = json.loads((OUT/'station_locations.json').read_text(encoding='utf-8'))
     manifest = json.loads((ROOT/'docs/d01/manifest.json').read_text(encoding='utf-8'))
     paths = [ROOT/'service/data/processed'/n for n in ('poi.parquet','station_traffic.parquet')]
-    hashes = {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
+    hashes = {p.name:snapshot_sha256(p) for p in paths}
     assert all(hashes[n]==manifest['sha256'][n] for n in hashes), 'Source snapshot changed'
     poi = pd.read_parquet(paths[0])
     traffic = pd.read_parquet(paths[1]).set_index('station')
@@ -75,7 +75,7 @@ def main():
             'poi_rows':len(poi),'poi_exact_duplicate_excess':int((~unique).sum()),
             'station_groups':len(grouped),'outside_daegu_excluded':sorted(OUTSIDE),
             'missing_exit_stations':locations['no_usable_exit_station'],
-            'input_hashes':{**hashes,'station_locations.json':hashlib.sha256((OUT/'station_locations.json').read_bytes()).hexdigest()},
+            'input_hashes':{**hashes,'station_locations.json':snapshot_sha256(OUT/'station_locations.json')},
             'category_definition_status':'student selected all POI rows denominator; cafe and specified quick-food categories; hypothesis report separate',
             'overlap':overlap,'station_results':results}
     (OUT/'poi_join.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

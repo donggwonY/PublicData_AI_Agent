@@ -1,8 +1,9 @@
 """Read a demo snapshot without modifying it; emit a reproducible D-01 inventory."""
 from __future__ import annotations
 
+from snapshot_hashes import snapshot_sha256
+
 import argparse
-import hashlib
 import json
 import platform
 import subprocess
@@ -56,7 +57,7 @@ def main():
         "source": "https://github.com/donggwonY/daegu_lifecycle_agent",
         "commit": revision, "reference_date": meta["reference_date"], "built_at": meta["built_at"],
         "versions": {"python": platform.python_version(), "pandas": pd.__version__, "pyarrow": pyarrow.__version__},
-        "sha256": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(source.iterdir()) if p.is_file()},
+        "sha256": {p.name: snapshot_sha256(p) for p in sorted(source.iterdir()) if p.is_file()},
         "raw_csv_count": len(list((root / "data/raw").rglob("*.csv"))),
         "external_csv_count": len(list((root / "data/external").rglob("*.csv"))),
     }

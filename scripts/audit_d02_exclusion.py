@@ -1,5 +1,5 @@
 """Reproduce the 31 flagged-unit exclusion sensitivity; never edit input data."""
-import hashlib
+from snapshot_hashes import verify_snapshot_hash
 import json
 import pandas as pd
 from audit_d02_units import ROOT, DEMO
@@ -9,7 +9,7 @@ def main():
     data=DEMO/'data/processed'
     manifest=json.loads((ROOT/'docs/d01/manifest.json').read_text(encoding='utf-8'))
     for name,digest in manifest['sha256'].items():
-        assert hashlib.sha256((data/name).read_bytes()).hexdigest()==digest,name
+        verify_snapshot_hash(data/name, digest)
     u=pd.read_parquet(data/'units.parquet');s=pd.read_parquet(data/'stores.parquet')
     flagged=u.is_single_unit & u.n_active.gt(1)
     assert int(flagged.sum())==31

@@ -1,0 +1,10 @@
+# Keep repository text checkouts consistent even with core.autocrlf=true.
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+
+# Snapshot and image bytes must never undergo newline conversion.
+*.parquet -text
+*.xlsx -text
+*.png -text

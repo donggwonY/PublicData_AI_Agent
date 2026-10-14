@@ -1,4 +1,5 @@
 """Inspect administrative-area context without equating rule labels with land use."""
+from snapshot_hashes import snapshot_sha256, verify_snapshot_hash
 from pathlib import Path
 import hashlib
 import json
@@ -19,7 +20,7 @@ def main():
     paths=[ROOT/'service/data/processed'/n for n in ['poi.parquet','area_context.parquet']]
     for p in paths:
         assert hashlib.sha256(p.read_bytes()).hexdigest()==manifest['sha256'][p.name]
-    assert hashlib.sha256((OUT/'hypothesis.json').read_bytes()).hexdigest()==t['input_hashes']['hypothesis.json']
+    verify_snapshot_hash(OUT/'hypothesis.json', t['input_hashes']['hypothesis.json'])
     poi=pd.read_parquet(paths[0]);context=pd.read_parquet(paths[1])
     assert not context.duplicated(['gu','admin_dong']).any()
     ctx=context.set_index(['gu','admin_dong'])
@@ -75,7 +76,7 @@ def main():
                               'groups':groups})
     result={'checked_date':'2026-10-12','purpose':'exploratory context check, not residential land-use validation',
             'mapping':'dominant administrative area among buffered POI rows; not station polygon containment',
-            'input_hashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [time_path,loc_path,*paths]},
+            'input_hashes':{p.name:snapshot_sha256(p) for p in [time_path,loc_path,*paths]},
             'station_rows':out,'summaries':summaries,
             'missing_context_rows':int((~d.context_matched).sum()),
             'limits':['population is entire administrative area, not 300m residents or density',

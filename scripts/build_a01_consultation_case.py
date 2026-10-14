@@ -1,4 +1,5 @@
 """Build one evidence-backed consultation fixture, not a deployed AI feature."""
+from snapshot_hashes import snapshot_sha256, verify_snapshot_hash
 from pathlib import Path
 import hashlib
 import json
@@ -14,7 +15,7 @@ def main():
     source=OUT/'poi_join.json';loc=OUT/'station_locations.json'
     data=json.loads(source.read_text(encoding='utf-8'))
     locations=json.loads(loc.read_text(encoding='utf-8'))
-    assert hashlib.sha256(loc.read_bytes()).hexdigest()==data['input_hashes'][loc.name]
+    verify_snapshot_hash(loc, data['input_hashes'][loc.name])
     poi_path=ROOT/'service/data/processed/poi.parquet'
     assert hashlib.sha256(poi_path.read_bytes()).hexdigest()==data['input_hashes'][poi_path.name]
     poi=pd.read_parquet(poi_path)
@@ -49,7 +50,7 @@ def main():
              'sources':{'poi':{'provider':'소상공인시장진흥공단 상가(상권)정보','configured_vintage':'202606','raw_observation_date_verified':False},
                         'exits':next(s for s in data['input_hashes'] if s=='station_locations.json'),
                         'exit_portal':'https://www.data.go.kr/data/15133918/fileData.do'},
-             'input_hashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [source,loc,poi_path]},
+             'input_hashes':{p.name:snapshot_sha256(p) for p in [source,loc,poi_path]},
              'live_tool_evaluation':{'performed':False,'reason':'new station-exit neighborhood tool is not implemented'},
              'handoff':{'existing_tools':['find_nearby','get_unit_history','get_station_traffic'],
                         'gap':'find_nearby requires a supported address and uses one center; no station-exit union endpoint exists',

@@ -1,7 +1,7 @@
 """Descriptive test of the student's cafe/quick-food composition hypothesis."""
+from snapshot_hashes import snapshot_sha256
 from pathlib import Path
 import json
-import hashlib
 import os
 import numpy as np
 import pandas as pd
@@ -63,7 +63,7 @@ def main():
     result={'checked_date':'2026-10-12','hypothesis':'역 이용량이 많을수록 주변 전체 상가 중 카페·간편식 비중이 높다',
             'denominator':'POI rows in union of exit buffers, all shop categories',
             'cafe_categories':['카페'],'quick_categories':QUICK,
-            'input_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+            'input_sha256':snapshot_sha256(source),
             'primary_excluded_stations':['정평','임당','영남대','사월'],
             'missing_exit_stations':data['missing_exit_stations'],
             'primary_small_denominators':primary[primary.denominator<30][['station','denominator']].to_dict('records'),

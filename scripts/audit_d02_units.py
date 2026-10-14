@@ -1,6 +1,6 @@
 """Read-only D-02 concurrency sensitivity using the demo's actual function."""
+from snapshot_hashes import snapshot_sha256, verify_snapshot_hash
 import ast
-import hashlib
 import json
 from pathlib import Path
 import numpy as np
@@ -14,7 +14,7 @@ def main():
     data = DEMO / 'data/processed'
     manifest = json.loads((ROOT / 'docs/d01/manifest.json').read_text(encoding='utf-8'))
     for name, expected in manifest['sha256'].items():
-        assert hashlib.sha256((data / name).read_bytes()).hexdigest() == expected, name
+        verify_snapshot_hash(data / name, expected)
     st = pd.read_parquet(data / 'stores.parquet')
     units = pd.read_parquet(data / 'units.parquet').set_index('uid')
     ref = pd.Timestamp(manifest['reference_date'])
@@ -43,7 +43,7 @@ def main():
     output = ROOT / 'docs/d02'
     output.mkdir(exist_ok=True)
     payload = {'reference_date': str(ref.date()), 'source_commit': manifest['commit'],
-               'build_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
+               'build_sha256': snapshot_sha256(source),
                'input_hashes_verified': len(manifest['sha256']), 'unit_count': len(units),
                'baseline_checks_passed': 3, 'sensitivity': rows,
                'regions': json.loads(regional.reset_index().to_json(orient='records', force_ascii=False))}

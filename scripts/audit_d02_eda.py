@@ -1,6 +1,6 @@
 """Reproducible read-only address, alias and stratified EDA audit."""
+from snapshot_hashes import snapshot_sha256, verify_snapshot_hash
 import ast
-import hashlib
 import importlib.util
 import json
 from types import SimpleNamespace
@@ -20,7 +20,7 @@ def main():
     data=DEMO/'data/processed'
     manifest=json.loads((ROOT/'docs/d01/manifest.json').read_text(encoding='utf-8'))
     for name,value in manifest['sha256'].items():
-        assert hashlib.sha256((data/name).read_bytes()).hexdigest()==value,name
+        verify_snapshot_hash(data/name, value)
     st=pd.read_parquet(data/'stores.parquet')
     ref=pd.Timestamp(manifest['reference_date'])
     ns={'pd':pd,'np':np,'FLOOR_DOMINANCE':0.8}
@@ -79,7 +79,7 @@ def main():
              'exact_category_preempts_alias':[r['input'] for r in aliases if r['input'] in categories and set(r['resolved'] or [])!=set(c for c in r['configured'] if c in categories)]}
     out=ROOT/'docs/d02'
     payload={'reference_date':str(ref.date()),'summary':summary,'floor_sensitivity':floors,'aliases':aliases,'tables':tables,
-             'source_hashes':{name:hashlib.sha256((DEMO/name).read_bytes()).hexdigest() for name in ['pipeline/build.py','core/address.py','core/tools.py','config.py']}}
+             'source_hashes':{name:snapshot_sha256(DEMO/name) for name in ['pipeline/build.py','core/address.py','core/tools.py','config.py']}}
     (out/'eda_audit.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     lines=['# D-02 주소·층·별칭과 탐색 분석','',f'기준일 {ref.date()}. D-01 입력 14개 해시 확인. 원본·운영 코드 변경 없음.','',
            '## 주소·층 검증','','저장 주소에서 층을 재추출한 결과와 floor 전체 일치. 80% 층 보충 규칙으로 재계산한 uid도 전체 일치. 지번 앞자리 0·대구 약칭 정규화 예제 통과. 이는 물리적 호수·점포 경계 정확성 확인이 아니다.','','```text',pd.DataFrame(floors).to_string(index=False),'```','',

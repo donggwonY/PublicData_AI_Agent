@@ -1,4 +1,5 @@
 """Compare time-of-day alighting composition with quick-food POI composition."""
+from snapshot_hashes import snapshot_sha256, verify_snapshot_hash
 from pathlib import Path
 import hashlib
 import json
@@ -15,7 +16,7 @@ def main():
     original=json.loads(hpath.read_text(encoding='utf-8'))
     manifest=json.loads((ROOT/'docs/d01/manifest.json').read_text(encoding='utf-8'))
     assert hashlib.sha256(tpath.read_bytes()).hexdigest()==manifest['sha256'][tpath.name]
-    assert hashlib.sha256((OUT/'poi_join.json').read_bytes()).hexdigest()==original['input_sha256']
+    verify_snapshot_hash(OUT/'poi_join.json', original['input_sha256'])
     d=pd.DataFrame(original['station_results'])
     d=d[(~d.transfer)&(~d.coverage.isin(['exclude_outside_daegu','border_review']))&(d.denominator>0)]
     traffic=pd.read_parquet(tpath)
@@ -44,7 +45,7 @@ def main():
             'primary_n':len(primary),'excluded_transfers':['반월당','명덕','청라언덕'],
             'definition':'time share = interval alighting / available 05-24h alighting; outcome = quick-food POI rows / all POI rows',
             'no_imputed_transfer_shares':True,'statistics':stats,'median_splits':medians,
-            'input_hashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [hpath,tpath]},
+            'input_hashes':{p.name:snapshot_sha256(p) for p in [hpath,tpath]},
             'station_results':json.loads(d.drop(columns=['_merge']).to_json(orient='records',force_ascii=False)),
             'limitations':['No travel purpose observed','Relative shares, not time-specific patron counts','Exploratory post-hoc hypothesis','Spatial overlap and period/datum uncertainty retained']}
     (OUT/'time_slots.json').write_text(json.dumps(result,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')

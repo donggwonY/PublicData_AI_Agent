@@ -1,6 +1,6 @@
 """Read-only audit of closure, vacancy and survival definitions."""
+from snapshot_hashes import snapshot_sha256, verify_snapshot_hash
 import ast
-import hashlib
 import importlib.util
 import json
 from types import SimpleNamespace
@@ -12,7 +12,7 @@ def main():
     data=DEMO/'data/processed'
     manifest=json.loads((ROOT/'docs/d01/manifest.json').read_text(encoding='utf-8'))
     for name, value in manifest['sha256'].items():
-        assert hashlib.sha256((data/name).read_bytes()).hexdigest()==value, name
+        verify_snapshot_hash(data/name, value)
     st=pd.read_parquet(data/'stores.parquet')
     u=pd.read_parquet(data/'units.parquet')
     ref=pd.Timestamp(manifest['reference_date'])
@@ -65,7 +65,7 @@ def main():
             'live_missing_gu':int((live & u.gu.isna()).sum()),'live_missing_gu_or_dong':int((live & (u.gu.isna()|u.dong.isna())).sum()),
             'survival_rows_reproduced':len(saved),'vacancy_rows_reproduced':len(vac)}
     payload={'reference_date':str(ref.date()),'counts':counts,'vacancy_sensitivity':groups,'cohort_sensitivity':cohorts,
-             'source_hashes':{name:hashlib.sha256((DEMO/name).read_bytes()).hexdigest() for name in ['pipeline/build.py','core/survival.py','config.py']},
+             'source_hashes':{name:snapshot_sha256(DEMO/name) for name in ['pipeline/build.py','core/survival.py','config.py']},
              'checks':'input hashes; full survival/vacancy table comparison; derived duration/vacant/candidate identities; 3 KM checks; inclusive vacancy boundary'}
     out=ROOT/'docs/d02'
     (out/'outcome_audit.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

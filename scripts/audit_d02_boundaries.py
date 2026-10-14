@@ -1,6 +1,6 @@
 """Audit active-record truncation and same-day boundary effects, without changing production."""
+from snapshot_hashes import snapshot_sha256, verify_snapshot_hash
 import ast
-import hashlib
 import json
 from pathlib import Path
 import numpy as np
@@ -12,7 +12,7 @@ def main():
     data = DEMO / 'data/processed'
     manifest = json.loads((ROOT / 'docs/d01/manifest.json').read_text(encoding='utf-8'))
     for name, expected in manifest['sha256'].items():
-        assert hashlib.sha256((data / name).read_bytes()).hexdigest() == expected, name
+        verify_snapshot_hash(data / name, expected)
     source = DEMO / 'pipeline/build.py'
     tree = ast.parse(source.read_text(encoding='utf-8'))
     fn = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'max_concurrency')
@@ -71,7 +71,7 @@ def main():
     }
     out = ROOT / 'docs/d02'
     payload = {'reference_date': str(ref.date()), 'input_hashes_verified':len(manifest['sha256']),
-               'build_sha256':hashlib.sha256(source.read_bytes()).hexdigest(), 'counts':counts,'synthetic_cases':cases}
+               'build_sha256':snapshot_sha256(source), 'counts':counts,'synthetic_cases':cases}
     (out/'boundary_audit.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     lines = ['# D-02 자리 판정 경계·실제 이력 점검', '', f'기준일 {ref.date()}. D-01 입력 14개 해시 일치. 기존 0일·60일 동시영업 수 재현.', '',
              '## 분류 변화 원인', '',
