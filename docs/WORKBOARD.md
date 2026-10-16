@@ -80,3 +80,4 @@
 - 2026-10-16 · 염동권 · 공개 앱 DB 전환 준비: `requirements.txt`에 DB 드라이버 고정 추가, version 3을 현재 서비스 버전으로 지정, 읽기 전용 `app_reader` 계정 생성(쓰기 차단 확인), 데이터 갱신 절차를 작업 흐름 문서에 추가. 다음: `main`·`deploy` 푸시, Streamlit Secrets 등록, Reboot 후 확인.
 - 2026-10-16 · 염동권 · 공개 앱 DB 전환 완료: `main`·`deploy` d16af85 푸시, Streamlit Secrets에 읽기 전용 접속 정보 등록 후 Reboot. 공개 화면에서 "데이터 db v3"·15업종 누적 225,858건·대시보드 정상 확인. 다음: Supabase egress 추이 확인, 팀원 공지.
 - 2026-10-16 · 염동권 · E-01 기록을 `docs/e01/README.md`로 재정리(현재 상태·재현 절차 앞, 조사 기록은 부록). `service/` 기준 재현 절차와 15업종 기대값으로 갱신하고 단위 14개·smoke ALL PASSED 재확인. R5는 `service/README.md` 소개가 아직 7업종이라 일부 해결로 정정
+- 2026-10-16 · 염동권 · `service/README.md` 정리: 15업종·기준일 2026-10-13·Tool 11종 기준으로 소개·구조·업종 표 갱신, 공개 앱 DB 전환과 `deploy` 배포 반영, 옛 수치는 "이전 기록" 절로 이동. E-01 R5 해결로 갱신. 단위 14개·smoke ALL PASSED
