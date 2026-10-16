@@ -78,3 +78,4 @@
 - 2026-10-16 · 염동권 · DB에는 한 버전만 유지하기로 결정. 적재 스크립트에 `--fresh`·`--start-version`·`--max-db-mb` 추가 후 version 2만 다시 적재(DB 457MB → 240MB), parquet 경로와 도구 결과 20/20 재확인.
 - 2026-10-16 · 염동권 · 15업종 정식 반영: 배치 업종 판별을 정확 일치로 수정, `config.SERVICES` 확장, 정식 배치로 `service/data/processed` 갱신(인허가 225,858·기준일 2026-10-13). 확장 이전 데이터를 `service/data/snapshots/20260923_7services/`에 보존하고 D-01·D-02 스크립트·해시 테스트 경로만 변경(기대 해시 유지, 재실행 수치 동일). DB version 3 적재·도구 결과 20/20 일치. 다음: 세은·선경에게 데이터 변경 공지, `deploy` 반영 여부 결정.
 - 2026-10-16 · 염동권 · 공개 앱 DB 전환 준비: `requirements.txt`에 DB 드라이버 고정 추가, version 3을 현재 서비스 버전으로 지정, 읽기 전용 `app_reader` 계정 생성(쓰기 차단 확인), 데이터 갱신 절차를 작업 흐름 문서에 추가. 다음: `main`·`deploy` 푸시, Streamlit Secrets 등록, Reboot 후 확인.
+- 2026-10-16 · 염동권 · 공개 앱 DB 전환 완료: `main`·`deploy` d16af85 푸시, Streamlit Secrets에 읽기 전용 접속 정보 등록 후 Reboot. 공개 화면에서 "데이터 db v3"·15업종 누적 225,858건·대시보드 정상 확인. 다음: Supabase egress 추이 확인, 팀원 공지.
