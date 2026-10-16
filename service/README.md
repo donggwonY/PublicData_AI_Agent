@@ -44,6 +44,18 @@ streamlit run app.py              # 웹 UI
 
 데이터 갱신: 로컬에서 새 CSV 로 `python -m pipeline.build` → `data/processed` 커밋·푸시(`main`) → 검증 후 `deploy` 반영.
 
+### Supabase DB (선택)
+
+앱은 기본으로 `data/processed` 의 parquet 를 읽는다. 아래 환경변수(배포에서는 같은 이름의 Secrets)가 있으면 Supabase 의 `app` 스키마에서 읽는다 — `core/datasource.py`.
+
+| 이름 | 뜻 |
+| --- | --- |
+| `APP_DATABASE_URL` | Supabase Postgres 접속 문자열(Session pooler). 비밀값 |
+| `APP_DATA_SOURCE` | `auto`(기본, DB 실패 시 parquet 대체) · `db` · `parquet` |
+| `APP_DATA_VERSION` | 읽을 버전 번호. 없으면 `app.current_version` |
+
+적재(로컬): `python -m pipeline.load_supabase --processed data/processed --env-file ../.env --fresh --start-version <번호>` — `--fresh` 는 기존 버전을 모두 지우고 넣는다(무료 플랜 500MB 대비 한 버전 유지). `--activate` 를 주면 앱이 읽는 현재 버전으로 지정한다. 배포 `requirements.txt` 에는 아직 DB 드라이버가 없어 공개 앱은 parquet 로 동작한다. 설계·검증 기록은 [E-02 문서](../docs/e02/README.md).
+
 **운영자 키 보호 장치** — 운영자 키를 Secrets 에 넣으면 세션당 질문 수(`MAX_QUESTIONS_PER_SESSION`)와
 전체 방문자 합산 분당 질문 수(`GLOBAL_QUESTIONS_PER_MINUTE`)를 제한한다. 무료 한도(429)에 걸리면 `config.GEMINI_MODELS`
 순서대로 다음 모델을 시도한다(모델별 한도가 따로 잡힘). 방문자 키는 그 브라우저 세션에만 보관하고 서버 환경변수에 쓰지 않는다.
@@ -146,7 +158,13 @@ tests/                    test_core_units(주소·사이클 단위), smoke_test(
 **행정동 vs 법정동** — 인허가 주소는 법정동, 인구 통계는 행정동 기준이다. 상가정보에 두 값이 함께 있어
 법정동→행정동 대표 매핑(212건)을 학습해 두 체계를 연결한다.
 
-## 업종 확장 결과 (7종)
+## 업종 15종 확장 (2026-10-16)
+
+2026-10-15 팀 회의 결정에 따라 1차로 8개 업종(의원·병원, 약국, 체력단련장업, 인터넷컴퓨터게임시설제공업, 당구장업, 체육도장업, 골프연습장업, 축산판매업)을 추가했다(`config.SERVICES`, 파일 기준 16개 이름). 원본은 행정안전부 인허가 대구광역시 압축 파일(2026-10-13까지)에서 해당 16개 CSV 를 `data/raw` 에 둔다. 업종은 파일 이름 `분류_업종명[_지역].csv` 의 두 번째 칸이 정확히 같을 때만 읽는다.
+
+결과(기준일 2026-10-13): 인허가 225,858건(폐업 154,315 · 영업 중 71,543), 자리 86,386곳. 이 아래의 7종 표와 위 "실측 결과"는 확장 이전(2026-09-23 기준) 기록이다. 확장 이전 데이터는 D-01·D-02 검증 재현을 위해 `data/snapshots/20260923_7services/` 에 그대로 보존한다.
+
+## 업종 확장 결과 (7종, 2026-09-23 기준 · 이전 기록)
 
 | 업종 | 레코드 | 폐업 | 영업 중 | 중앙생존(2010~) | 좌표 채움률 |
 | --- | ---: | ---: | ---: | ---: | ---: |

@@ -1,14 +1,14 @@
 {
-  "reference_date": "2026-09-23",
-  "built_at": "2026-09-29 21:16:54",
+  "reference_date": "2026-10-13",
+  "built_at": "2026-10-16 14:46:59",
   "quality": {
-    "raw_rows": 197965,
+    "raw_rows": 226922,
     "duplicates_removed": 0,
     "missing_license_date": 0,
-    "license_date_before_1960": 4,
-    "closed_without_close_date": 228,
+    "license_date_before_1960": 11,
+    "closed_without_close_date": 557,
     "date_contradiction": 1,
-    "non_daegu_address": 378,
+    "non_daegu_address": 497,
     "non_daegu_examples": [
       "경상북도 영천시 화남면 삼창리 198 ",
       "호",
@@ -16,111 +16,198 @@
       "호",
       "호"
     ],
-    "address_unparsed": 140,
+    "address_unparsed": 296,
     "coord_fill_pct": {
+      "골프연습장업": 98.1,
       "노래연습장업": 97.6,
       "담배소매업": 87.9,
+      "당구장업": 98.3,
       "미용업": 97.3,
+      "병원": 93.2,
       "세탁업": 94.2,
+      "약국": 89.1,
+      "의원": 95.2,
+      "인터넷컴퓨터게임시설제공업": 98.8,
       "일반음식점": 95.9,
-      "제과점영업": 97.8,
+      "제과점영업": 97.6,
+      "체력단련장업": 98.3,
+      "체육도장업": 98.0,
+      "축산판매업": 94.7,
       "휴게음식점": 97.5
     }
   },
   "records": {
+    "골프연습장업": {
+      "total": 826,
+      "closed": 470,
+      "active": 356,
+      "unique_units": 767,
+      "date_min": "1989-12-20",
+      "date_max": "2026-10-01"
+    },
     "노래연습장업": {
       "total": 3051,
-      "closed": 1673,
-      "active": 1378,
-      "unique_units": 2954,
+      "closed": 1675,
+      "active": 1376,
+      "unique_units": 2956,
       "date_min": "1992-02-02",
-      "date_max": "2026-09-21"
+      "date_max": "2026-10-06"
     },
     "담배소매업": {
-      "total": 33746,
-      "closed": 27319,
-      "active": 6427,
-      "unique_units": 16503,
+      "total": 33762,
+      "closed": 27343,
+      "active": 6419,
+      "unique_units": 16705,
       "date_min": "1961-10-15",
-      "date_max": "2026-09-23"
+      "date_max": "2026-10-13"
+    },
+    "당구장업": {
+      "total": 1910,
+      "closed": 1463,
+      "active": 447,
+      "unique_units": 1632,
+      "date_min": "1981-01-08",
+      "date_max": "2026-10-12"
     },
     "미용업": {
-      "total": 24888,
-      "closed": 14102,
-      "active": 10786,
-      "unique_units": 15697,
+      "total": 24931,
+      "closed": 14137,
+      "active": 10794,
+      "unique_units": 15804,
       "date_min": "1963-08-17",
-      "date_max": "2026-09-23"
+      "date_max": "2026-10-13"
+    },
+    "병원": {
+      "total": 367,
+      "closed": 126,
+      "active": 241,
+      "unique_units": 331,
+      "date_min": "1962-08-22",
+      "date_max": "2026-08-13"
     },
     "세탁업": {
-      "total": 3584,
-      "closed": 2629,
-      "active": 955,
-      "unique_units": 3114,
+      "total": 3585,
+      "closed": 2632,
+      "active": 953,
+      "unique_units": 3123,
       "date_min": "1971-03-01",
-      "date_max": "2026-09-15"
+      "date_max": "2026-10-06"
+    },
+    "약국": {
+      "total": 3040,
+      "closed": 1636,
+      "active": 1404,
+      "unique_units": 2367,
+      "date_min": "1961-08-18",
+      "date_max": "2026-10-06"
+    },
+    "의원": {
+      "total": 5782,
+      "closed": 1639,
+      "active": 4143,
+      "unique_units": 4478,
+      "date_min": "1960-03-29",
+      "date_max": "2026-10-13"
+    },
+    "인터넷컴퓨터게임시설제공업": {
+      "total": 3001,
+      "closed": 2351,
+      "active": 650,
+      "unique_units": 2495,
+      "date_min": "2001-12-13",
+      "date_max": "2026-10-12"
     },
     "일반음식점": {
-      "total": 97114,
-      "closed": 67713,
+      "total": 97438,
+      "closed": 68037,
       "active": 29401,
-      "unique_units": 48983,
+      "unique_units": 49480,
       "date_min": "1963-10-10",
-      "date_max": "2026-09-08"
+      "date_max": "2026-10-13"
     },
     "제과점영업": {
-      "total": 4001,
-      "closed": 3000,
-      "active": 1001,
-      "unique_units": 2693,
+      "total": 4046,
+      "closed": 3037,
+      "active": 1009,
+      "unique_units": 2723,
       "date_min": "1979-03-28",
-      "date_max": "2026-08-04"
+      "date_max": "2026-10-13"
+    },
+    "체력단련장업": {
+      "total": 1328,
+      "closed": 572,
+      "active": 756,
+      "unique_units": 1208,
+      "date_min": "1990-06-15",
+      "date_max": "2026-10-12"
+    },
+    "체육도장업": {
+      "total": 1711,
+      "closed": 882,
+      "active": 829,
+      "unique_units": 1508,
+      "date_min": "1971-09-29",
+      "date_max": "2026-10-12"
+    },
+    "축산판매업": {
+      "total": 9957,
+      "closed": 6315,
+      "active": 3642,
+      "unique_units": 7395,
+      "date_min": "1971-09-03",
+      "date_max": "2026-10-13"
     },
     "휴게음식점": {
-      "total": 30972,
-      "closed": 21871,
-      "active": 9101,
-      "unique_units": 18148,
+      "total": 31123,
+      "closed": 22000,
+      "active": 9123,
+      "unique_units": 18371,
       "date_min": "1965-10-09",
-      "date_max": "2026-09-08"
+      "date_max": "2026-10-13"
     },
     "통합": {
-      "total": 197356,
-      "closed": 138307,
-      "active": 59049,
-      "unique_units": 76363
+      "total": 225858,
+      "closed": 154315,
+      "active": 71543,
+      "unique_units": 86386
     }
   },
   "records_by_gu": {
-    "달서구": 39715,
-    "북구": 31973,
-    "수성구": 31527,
-    "동구": 26150,
-    "중구": 20301,
-    "서구": 16561,
-    "남구": 15052,
-    "달성군": 14287,
-    "군위군": 1780
+    "달서구": 45621,
+    "북구": 37189,
+    "수성구": 36182,
+    "동구": 29936,
+    "중구": 22215,
+    "서구": 19044,
+    "남구": 17075,
+    "달성군": 16585,
+    "군위군": 1969,
+    "님구": 1
   },
   "vacancy_buckets_all_vacant_units": {
-    "10년 이상": 20021,
-    "3~10년": 10218,
-    "1~3년": 3762,
-    "3개월~1년": 1711,
-    "3개월 미만": 449
+    "10년 이상": 21261,
+    "3~10년": 11067,
+    "1~3년": 3867,
+    "3개월~1년": 1862,
+    "3개월 미만": 476
   },
-  "recent_vacancy_units": 5473,
-  "single_unit_ratio_pct": 68.5,
+  "recent_vacancy_units": 5729,
+  "single_unit_ratio_pct": 66.1,
   "max_closures_all_units_top5": [
     {
       "addr": "대구광역시 중구 달구벌대로 2077 지하1층",
-      "n_closed": 1112,
-      "max_concurrent": 69
+      "n_closed": 1131,
+      "max_concurrent": 71
     },
     {
       "addr": "대구광역시 동구 동부로 149 지하1층",
-      "n_closed": 888,
-      "max_concurrent": 71
+      "n_closed": 909,
+      "max_concurrent": 73
+    },
+    {
+      "addr": "대구광역시 수성구 들안로 38",
+      "n_closed": 271,
+      "max_concurrent": 48
     },
     {
       "addr": "대구광역시 중구 큰장로26길 55",
@@ -128,14 +215,9 @@
       "max_concurrent": 67
     },
     {
-      "addr": "대구광역시 수성구 들안로 38",
-      "n_closed": 230,
-      "max_concurrent": 48
-    },
-    {
-      "addr": "대구광역시 북구 엑스코로 10",
-      "n_closed": 213,
-      "max_concurrent": 15
+      "addr": "대구광역시 달서구 월배로 232 지하1층",
+      "n_closed": 250,
+      "max_concurrent": 33
     }
   ],
   "max_closures_single_units_top5": [
@@ -145,52 +227,52 @@
       "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
     },
     {
-      "addr": "대구광역시 수성구 달구벌대로650길 47 1층",
-      "n_closed": 11,
-      "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
-    },
-    {
       "addr": "대구광역시 달성군 논공읍 노이길 205",
       "n_closed": 11,
       "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
     },
     {
-      "addr": "대구광역시 중구 국채보상로 488 1층",
-      "n_closed": 10,
+      "addr": "대구광역시 수성구 달구벌대로650길 47 1층",
+      "n_closed": 11,
       "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
     },
     {
       "addr": "대구광역시 중구 남산로7길 50 1층",
       "n_closed": 10,
       "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
+    },
+    {
+      "addr": "대구광역시 달서구 성서공단로21길 100 1층",
+      "n_closed": 10,
+      "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
     }
   ],
-  "service_switch_units": 2789,
+  "service_switch_units": 3250,
   "survival_by_decade_1y": [
     {
       "decade": "1980년대",
-      "n": 4541,
+      "n": 5207,
       "survival_1y_pct": 100.0
     },
     {
       "decade": "1990년대",
-      "n": 23938,
+      "n": 26967,
       "survival_1y_pct": 99.8
     },
     {
       "decade": "2000년대",
-      "n": 68546,
-      "survival_1y_pct": 89.6
+      "n": 78935,
+      "survival_1y_pct": 89.9
     },
     {
       "decade": "2010년대",
-      "n": 57655,
+      "n": 66950,
       "survival_1y_pct": 88.3
     },
     {
       "decade": "2020년대",
-      "n": 41746,
-      "survival_1y_pct": 82.4
+      "n": 46596,
+      "survival_1y_pct": 83.2
     }
   ],
   "params": {

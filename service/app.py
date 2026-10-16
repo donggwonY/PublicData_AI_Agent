@@ -33,6 +33,15 @@ from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_
 
 st.set_page_config(page_title="대구 상권 생애주기 AI 에이전트", page_icon="🏪", layout="wide")
 
+# 데이터 출처(core/datasource.py)는 환경변수로 고른다. 배포에서는 Secrets 의 같은 이름을 서버 환경변수로 옮긴다.
+# 운영자가 정한 서버 설정이라 os.environ 에 둬도 된다(방문자 값은 여기에 넣지 않는다).
+for _name in ("APP_DATABASE_URL", "APP_DATA_SOURCE", "APP_DATA_VERSION"):
+    try:
+        if _name in st.secrets and not os.environ.get(_name):
+            os.environ[_name] = str(st.secrets[_name])
+    except Exception:  # secrets.toml 이 없으면 st.secrets 접근 자체가 예외를 던진다
+        break
+
 try:
     S = T.store()
 except FileNotFoundError as e:
@@ -127,7 +136,7 @@ with st.sidebar:
     c1, c2 = st.columns(2)
     c1.metric("그동안 폐업", f"{rec['closed']:,}")
     c2.metric("현재 영업 중", f"{rec['active']:,}")
-    st.caption(f"기준일 {META['reference_date']} · 배치 {META['built_at']}")
+    st.caption(f"기준일 {META['reference_date']} · 배치 {META['built_at']} · 데이터 {S.source}")
     st.divider()
     if OPERATOR_KEY:
         left = MAX_PER_SESSION - st.session_state.get("questions_used", 0)

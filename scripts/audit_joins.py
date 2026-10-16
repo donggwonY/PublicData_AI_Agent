@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    source = ROOT / 'service/data/processed'
+    source = ROOT / 'service/data/snapshots/20260923_7services'
     manifest = json.loads((ROOT/'docs/d01/manifest.json').read_text(encoding='utf-8'))
     frames = {}
     for name in ('stores','units','transitions','legal_admin_map','area_context'):

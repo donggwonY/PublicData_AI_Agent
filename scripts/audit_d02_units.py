@@ -11,7 +11,7 @@ DEMO = ROOT / 'service'
 
 def main():
     source = DEMO / 'pipeline/build.py'
-    data = DEMO / 'data/processed'
+    data = ROOT / 'service/data/snapshots/20260923_7services'
     manifest = json.loads((ROOT / 'docs/d01/manifest.json').read_text(encoding='utf-8'))
     for name, expected in manifest['sha256'].items():
         verify_snapshot_hash(data / name, expected)

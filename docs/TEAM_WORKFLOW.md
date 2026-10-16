@@ -26,6 +26,7 @@
 
 - `service/` 아래 코드나 `service/data/processed`를 바꾸는 사람은 `service/` 안에서 Python 3.12 가상환경으로 `python -m unittest tests.test_core_units`와 `python -m tests.smoke_test`를 통과시킨 뒤 `main`에 올립니다. 배포 설정·`service/requirements.txt` 변경은 염동권과 함께 확인합니다.
 - 배포는 염동권이 맡습니다. 순서: ① 최신 `main`에서 위 테스트 통과 확인 → ② `main`의 해당 커밋을 `deploy`로 fast-forward 푸시(강제 푸시 없음) → ③ Streamlit Cloud에서 Reboot → ④ 배포 로그의 패키지 버전과 공개 화면의 기준일·대표 수치 확인 → ⑤ 작업판에 배포한 커밋과 확인 결과 기록.
+- 데이터를 갱신할 때(염동권): ① `service/data/raw`의 원본으로 `python -m pipeline.build` → ② 테스트 통과 후 `main`에 올림 → ③ 관리자 접속 정보로 `python -m pipeline.load_supabase --processed data/processed --env-file ../.env --fresh --start-version <다음 번호> --activate` → ④ 공개 앱 Reboot 후 사이드바의 "데이터 db v<번호>"·기준일 확인. 코드 변경이 함께 있으면 위 배포 순서를 따릅니다. 공개 앱의 Secrets에는 읽기 전용 `app_reader` 접속 정보만 둡니다.
 - 문제가 생기면 `deploy`를 고치지 말고 `main`에서 수정해 다시 올립니다. 급히 되돌려야 하면 이전에 배포한 커밋을 가리키는 되돌림 커밋을 `main`에 만들고 같은 순서로 올립니다.
 - 다른 멘티와 그 에이전트는 `deploy`에 푸시하지 않습니다.
 

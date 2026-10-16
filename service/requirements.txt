@@ -11,3 +11,5 @@ plotly==7.1.0
 pydeck==0.9.3
 google-genai==2.26.0
 anthropic==1.11.0
+# Supabase(PostgreSQL) 읽기: core/datasource.py. 접속 정보(APP_DATABASE_URL)가 없거나 실패하면 parquet 로 대체한다.
+psycopg[binary]==3.3.6

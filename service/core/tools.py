@@ -29,6 +29,7 @@ import pandas as pd
 
 import config as C
 from core import address as A
+from core import datasource
 from core.cycle import classify_stage
 from core.survival import YEAR, summarize
 
@@ -49,30 +50,28 @@ class DataStore:
     12만 행이라 통째로 올려도 부담이 없고, 모든 Tool 이 이 표들을 걸러 쓰기만 한다.
     """
 
-    def __init__(self, processed_dir=C.PROCESSED_DIR):
-        if not (processed_dir / "meta.json").exists():
-            raise FileNotFoundError(f"{processed_dir} 에 배치 산출물이 없습니다. `python -m pipeline.build` 를 먼저 실행하세요.")
-        rd = lambda n: pd.read_parquet(processed_dir / f"{n}.parquet")  # noqa: E731
-        self.meta = json.loads((processed_dir / "meta.json").read_text(encoding="utf-8"))
-        self.stores = rd("stores")
-        self.units = rd("units").set_index("uid", drop=False)
-        self.transitions = rd("transitions")
-        self.cycle = rd("area_cycle")
-        self.area_year = rd("area_year")
-        self.survival = rd("survival")
-        self.vacancy = rd("vacancy_area")
+    def __init__(self, processed_dir=C.PROCESSED_DIR, loaded: datasource.Loaded | None = None):
+        # 출처(Supabase 또는 parquet)는 core/datasource.py 가 환경변수로 고른다. 표 구조는 어느 쪽이든 같다.
+        loaded = loaded or datasource.load(processed_dir)
+        f = loaded.frames
+        self.source, self.load_seconds, self.load_bytes, self.load_notes = (
+            loaded.source, loaded.seconds, loaded.bytes_read, loaded.notes)
+        self.meta = loaded.meta
+        self.stores = f["stores"]
+        self.units = f["units"].set_index("uid", drop=False)
+        self.transitions = f["transitions"]
+        self.cycle = f["area_cycle"]
+        self.area_year = f["area_year"]
+        self.survival = f["survival"]
+        self.vacancy = f["vacancy_area"]
         # 보조 데이터(상가정보·인구·지하철 등). pipeline/external.py 를 돌리지 않았으면 None 이고,
         # 해당 Tool 만 "데이터 없음"으로 안내한다 — 기존 8종은 그대로 동작한다.
-        def opt(name):
-            path = processed_dir / f"{name}.parquet"
-            return pd.read_parquet(path) if path.exists() else None
-
-        self.poi = opt("poi")
-        self.area_context = opt("area_context")
-        self.legal_admin = opt("legal_admin_map")
-        self.station = opt("station_traffic")
-        self.parking = opt("parking")
-        self.market = opt("market")
+        self.poi = f["poi"]
+        self.area_context = f["area_context"]
+        self.legal_admin = f["legal_admin_map"]
+        self.station = f["station_traffic"]
+        self.parking = f["parking"]
+        self.market = f["market"]
 
         self.ref = pd.Timestamp(self.meta["reference_date"])          # 분석 기준일
         self.categories = sorted(self.stores["category"].unique())     # 실제 존재하는 업태 목록(입력 검증용)
@@ -84,7 +83,7 @@ def store() -> DataStore:
     """DataStore 를 프로세스당 한 번만 만든다.
 
     @lru_cache 는 '같은 인자로 부르면 계산하지 않고 저장해 둔 결과를 준다'는 뜻이다.
-    덕분에 웹 방문자가 아무리 많아도 parquet 읽기는 서버 시작 후 한 번뿐이다.
+    덕분에 웹 방문자가 아무리 많아도 데이터 읽기(DB 또는 parquet)는 서버 시작 후 한 번뿐이다.
     표를 읽기만 하고 고치지 않으므로 여러 방문자가 공유해도 안전하다.
     """
     return DataStore()

@@ -55,8 +55,11 @@ def load_raw() -> tuple[pd.DataFrame, dict]:
     """data/raw 의 CSV 를 모두 읽어 한 장의 표로 합치고 중복을 제거한다."""
     frames = []
     for path in sorted(C.RAW_DIR.rglob("*.csv")):
-        # 업종은 파일명으로 구분한다. config.SERVICES 의 이름이 파일명에 들어 있어야 한다.
-        service = next((s for s in C.SERVICES if s in path.name), None)
+        # 업종은 파일명으로 구분한다: "분류_업종명.csv" 또는 "분류_업종명_지역.csv" 의 두 번째 칸이
+        # config.SERVICES 의 이름과 정확히 같아야 한다. 부분 일치로 찾으면 "병원"이 "동물병원",
+        # "약국"이 "동물약국" 파일에도 걸린다.
+        parts = path.stem.split("_")
+        service = parts[1] if len(parts) >= 2 and parts[1] in C.SERVICES else None
         if service is None:
             log(f"  건너뜀(업종 미식별): {path.name}")
             continue

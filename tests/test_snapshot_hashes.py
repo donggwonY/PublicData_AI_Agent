@@ -78,7 +78,7 @@ class SnapshotHashTests(unittest.TestCase):
     def test_existing_d01_manifest_and_a01_dependencies(self):
         manifest = json.loads((ROOT / "docs/d01/manifest.json").read_text(encoding="utf-8"))
         for name, expected in manifest["sha256"].items():
-            verify_snapshot_hash(ROOT / "service/data/processed" / name, expected)
+            verify_snapshot_hash(ROOT / "service/data/snapshots/20260923_7services" / name, expected)
         references = [
             ("poi_join.json", "input_hashes", "station_locations.json"),
             ("hypothesis.json", "input_sha256", "poi_join.json"),
