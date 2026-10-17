@@ -1,0 +1,448 @@
+{
+  "scope": "follow-up exploratory validation only; prior test untouched; historical release dates not verified",
+  "train_n": 22800,
+  "validation_n": 5643,
+  "results": {
+    "constant": {
+      "n": 5643,
+      "events": 442,
+      "actual_pct": 7.832713095870991,
+      "predicted_pct": 8.701754385964913,
+      "brier": 0.07226751479087581,
+      "log_loss": 0.27515490968999773,
+      "roc_auc": 0.5,
+      "average_precision": 0.07832713095870991
+    },
+    "base": {
+      "n": 5643,
+      "events": 442,
+      "actual_pct": 7.832713095870991,
+      "predicted_pct": 8.97863648137812,
+      "brier": 0.07298238161892996,
+      "log_loss": 0.27869916787324556,
+      "roc_auc": 0.5111053739230447,
+      "average_precision": 0.08218894791246742
+    },
+    "population_2m": {
+      "n": 5643,
+      "events": 442,
+      "actual_pct": 7.832713095870991,
+      "predicted_pct": 10.697338956500458,
+      "brier": 0.07381843764434652,
+      "log_loss": 0.282085215437323,
+      "roc_auc": 0.516291463267158,
+      "average_precision": 0.08319120912475003
+    },
+    "population_3m": {
+      "n": 5643,
+      "events": 442,
+      "actual_pct": 7.832713095870991,
+      "predicted_pct": 10.693607943693518,
+      "brier": 0.07380992902919192,
+      "log_loss": 0.2820556415448178,
+      "roc_auc": 0.5162366530627158,
+      "average_precision": 0.08325029691628233
+    }
+  },
+  "regions": [
+    {
+      "model": "base",
+      "gu": "남구",
+      "n": 437,
+      "events": 38,
+      "actual_pct": 8.695652173913043,
+      "predicted_pct": 10.399137080655448,
+      "brier": 0.08131739050616128,
+      "log_loss": 0.3041741140708798,
+      "roc_auc": 0.46636327661258414,
+      "average_precision": 0.08871596332928722
+    },
+    {
+      "model": "base",
+      "gu": "달서구",
+      "n": 1123,
+      "events": 98,
+      "actual_pct": 8.726625111308994,
+      "predicted_pct": 9.78941105011056,
+      "brier": 0.08027996239825809,
+      "log_loss": 0.2989283101820645,
+      "roc_auc": 0.518003982080637,
+      "average_precision": 0.09378130483317672
+    },
+    {
+      "model": "base",
+      "gu": "달성군",
+      "n": 584,
+      "events": 35,
+      "actual_pct": 5.993150684931506,
+      "predicted_pct": 6.573188770938401,
+      "brier": 0.05656427474993456,
+      "log_loss": 0.2279081700370689,
+      "roc_auc": 0.5269581056466303,
+      "average_precision": 0.06743163066946783
+    },
+    {
+      "model": "base",
+      "gu": "동구",
+      "n": 825,
+      "events": 66,
+      "actual_pct": 8.0,
+      "predicted_pct": 8.740873584966018,
+      "brier": 0.07409425370214756,
+      "log_loss": 0.28124311259694557,
+      "roc_auc": 0.4874336247854034,
+      "average_precision": 0.07956192251497164
+    },
+    {
+      "model": "base",
+      "gu": "북구",
+      "n": 933,
+      "events": 84,
+      "actual_pct": 9.003215434083602,
+      "predicted_pct": 8.20187147361276,
+      "brier": 0.08368672188691521,
+      "log_loss": 0.3139717096399487,
+      "roc_auc": 0.42816478770542377,
+      "average_precision": 0.0755765784829623
+    },
+    {
+      "model": "base",
+      "gu": "서구",
+      "n": 339,
+      "events": 30,
+      "actual_pct": 8.849557522123893,
+      "predicted_pct": 8.49771753552784,
+      "brier": 0.08245735796106687,
+      "log_loss": 0.31011485587877047,
+      "roc_auc": 0.4159115426105718,
+      "average_precision": 0.08014406294103445
+    },
+    {
+      "model": "base",
+      "gu": "수성구",
+      "n": 834,
+      "events": 55,
+      "actual_pct": 6.594724220623502,
+      "predicted_pct": 10.488388697644837,
+      "brier": 0.06341052335708414,
+      "log_loss": 0.252215026830882,
+      "roc_auc": 0.5191737659003384,
+      "average_precision": 0.07787440487059079
+    },
+    {
+      "model": "base",
+      "gu": "중구",
+      "n": 568,
+      "events": 36,
+      "actual_pct": 6.338028169014084,
+      "predicted_pct": 8.44746953839914,
+      "brier": 0.05822368652086295,
+      "log_loss": 0.22982924527681764,
+      "roc_auc": 0.6760912698412698,
+      "average_precision": 0.147615643715125
+    },
+    {
+      "model": "population_2m",
+      "gu": "남구",
+      "n": 437,
+      "events": 38,
+      "actual_pct": 8.695652173913043,
+      "predicted_pct": 12.381975229525876,
+      "brier": 0.08274564788158624,
+      "log_loss": 0.30916862492666647,
+      "roc_auc": 0.46939717715340984,
+      "average_precision": 0.08845074996050158
+    },
+    {
+      "model": "population_2m",
+      "gu": "달서구",
+      "n": 1123,
+      "events": 98,
+      "actual_pct": 8.726625111308994,
+      "predicted_pct": 11.70432939730762,
+      "brier": 0.08115910775938841,
+      "log_loss": 0.30237853821909333,
+      "roc_auc": 0.5287406669985066,
+      "average_precision": 0.09517405032105883
+    },
+    {
+      "model": "population_2m",
+      "gu": "달성군",
+      "n": 584,
+      "events": 35,
+      "actual_pct": 5.993150684931506,
+      "predicted_pct": 8.757497246499286,
+      "brier": 0.05752637439392037,
+      "log_loss": 0.2331580293320067,
+      "roc_auc": 0.5213635180848295,
+      "average_precision": 0.06915107374960654
+    },
+    {
+      "model": "population_2m",
+      "gu": "동구",
+      "n": 825,
+      "events": 66,
+      "actual_pct": 8.0,
+      "predicted_pct": 10.204042463327028,
+      "brier": 0.07460543528386586,
+      "log_loss": 0.2834981367557197,
+      "roc_auc": 0.5017566974088713,
+      "average_precision": 0.08622936633281149
+    },
+    {
+      "model": "population_2m",
+      "gu": "북구",
+      "n": 933,
+      "events": 84,
+      "actual_pct": 9.003215434083602,
+      "predicted_pct": 10.078822736497688,
+      "brier": 0.08416411457728272,
+      "log_loss": 0.31405610036089265,
+      "roc_auc": 0.434047058163666,
+      "average_precision": 0.07639271407938389
+    },
+    {
+      "model": "population_2m",
+      "gu": "서구",
+      "n": 339,
+      "events": 30,
+      "actual_pct": 8.849557522123893,
+      "predicted_pct": 9.911302829336096,
+      "brier": 0.08285107174074875,
+      "log_loss": 0.3103642722042254,
+      "roc_auc": 0.4216828478964401,
+      "average_precision": 0.0840779682396211
+    },
+    {
+      "model": "population_2m",
+      "gu": "수성구",
+      "n": 834,
+      "events": 55,
+      "actual_pct": 6.594724220623502,
+      "predicted_pct": 12.084164623030077,
+      "brier": 0.06490113312941437,
+      "log_loss": 0.2590998991866601,
+      "roc_auc": 0.5297117516629711,
+      "average_precision": 0.08005087696581986
+    },
+    {
+      "model": "population_2m",
+      "gu": "중구",
+      "n": 568,
+      "events": 36,
+      "actual_pct": 6.338028169014084,
+      "predicted_pct": 9.570103258711393,
+      "brier": 0.05875326317449302,
+      "log_loss": 0.23373536163879943,
+      "roc_auc": 0.6707132414369257,
+      "average_precision": 0.16563329043001987
+    },
+    {
+      "model": "population_3m",
+      "gu": "남구",
+      "n": 437,
+      "events": 38,
+      "actual_pct": 8.695652173913043,
+      "predicted_pct": 12.359362756123106,
+      "brier": 0.08271192243403824,
+      "log_loss": 0.30904621876202365,
+      "roc_auc": 0.4707162643450732,
+      "average_precision": 0.08721221215249961
+    },
+    {
+      "model": "population_3m",
+      "gu": "달서구",
+      "n": 1123,
+      "events": 98,
+      "actual_pct": 8.726625111308994,
+      "predicted_pct": 11.698532723905748,
+      "brier": 0.08115029404012615,
+      "log_loss": 0.30234682087316006,
+      "roc_auc": 0.5284420109507217,
+      "average_precision": 0.09501677345155059
+    },
+    {
+      "model": "population_3m",
+      "gu": "달성군",
+      "n": 584,
+      "events": 35,
+      "actual_pct": 5.993150684931506,
+      "predicted_pct": 8.803655772229277,
+      "brier": 0.05755355115013475,
+      "log_loss": 0.2333008932486736,
+      "roc_auc": 0.5205828779599272,
+      "average_precision": 0.06907462042323692
+    },
+    {
+      "model": "population_3m",
+      "gu": "동구",
+      "n": 825,
+      "events": 66,
+      "actual_pct": 8.0,
+      "predicted_pct": 10.206501266545889,
+      "brier": 0.07460293316571986,
+      "log_loss": 0.28349122208243765,
+      "roc_auc": 0.5032738451710783,
+      "average_precision": 0.08641177580562825
+    },
+    {
+      "model": "population_3m",
+      "gu": "북구",
+      "n": 933,
+      "events": 84,
+      "actual_pct": 9.003215434083602,
+      "predicted_pct": 10.068028628191861,
+      "brier": 0.08415829448221532,
+      "log_loss": 0.3140437711849937,
+      "roc_auc": 0.4347621852038813,
+      "average_precision": 0.07654797798209054
+    },
+    {
+      "model": "population_3m",
+      "gu": "서구",
+      "n": 339,
+      "events": 30,
+      "actual_pct": 8.849557522123893,
+      "predicted_pct": 9.879791421653827,
+      "brier": 0.08282540418427096,
+      "log_loss": 0.31025684251144214,
+      "roc_auc": 0.4226537216828479,
+      "average_precision": 0.0842003841791174
+    },
+    {
+      "model": "population_3m",
+      "gu": "수성구",
+      "n": 834,
+      "events": 55,
+      "actual_pct": 6.594724220623502,
+      "predicted_pct": 12.071364121796814,
+      "brier": 0.06487900582057606,
+      "log_loss": 0.25900564231365464,
+      "roc_auc": 0.5314389076905123,
+      "average_precision": 0.08038444641608902
+    },
+    {
+      "model": "population_3m",
+      "gu": "중구",
+      "n": 568,
+      "events": 36,
+      "actual_pct": 6.338028169014084,
+      "predicted_pct": 9.566196579905135,
+      "brier": 0.05874516521630423,
+      "log_loss": 0.2336843558204957,
+      "roc_auc": 0.6720185881370092,
+      "average_precision": 0.16236119653649003
+    }
+  ],
+  "calibration": {
+    "base": [
+      {
+        "bin": "(-0.001001, 0.05]",
+        "n": 255,
+        "predicted": 0.0438119094,
+        "actual": 0.0705882353
+      },
+      {
+        "bin": "(0.05, 0.1]",
+        "n": 3795,
+        "predicted": 0.077438661,
+        "actual": 0.0801054018
+      },
+      {
+        "bin": "(0.1, 0.15]",
+        "n": 1306,
+        "predicted": 0.1169521909,
+        "actual": 0.0712098009
+      },
+      {
+        "bin": "(0.15, 0.2]",
+        "n": 278,
+        "predicted": 0.1689081096,
+        "actual": 0.0935251799
+      },
+      {
+        "bin": "(0.2, 0.3]",
+        "n": 9,
+        "predicted": 0.2129650579,
+        "actual": 0.1111111111
+      }
+    ],
+    "population_2m": [
+      {
+        "bin": "(-0.001001, 0.05]",
+        "n": 42,
+        "predicted": 0.046346192,
+        "actual": 0.119047619
+      },
+      {
+        "bin": "(0.05, 0.1]",
+        "n": 2713,
+        "predicted": 0.0829683164,
+        "actual": 0.0755621084
+      },
+      {
+        "bin": "(0.1, 0.15]",
+        "n": 2295,
+        "predicted": 0.1176922379,
+        "actual": 0.0766884532
+      },
+      {
+        "bin": "(0.15, 0.2]",
+        "n": 504,
+        "predicted": 0.1729706769,
+        "actual": 0.1011904762
+      },
+      {
+        "bin": "(0.2, 0.3]",
+        "n": 89,
+        "predicted": 0.2171949181,
+        "actual": 0.0561797753
+      }
+    ],
+    "population_3m": [
+      {
+        "bin": "(-0.001001, 0.05]",
+        "n": 40,
+        "predicted": 0.0463394776,
+        "actual": 0.125
+      },
+      {
+        "bin": "(0.05, 0.1]",
+        "n": 2716,
+        "predicted": 0.0829584459,
+        "actual": 0.0754786451
+      },
+      {
+        "bin": "(0.1, 0.15]",
+        "n": 2290,
+        "predicted": 0.1175871298,
+        "actual": 0.076419214
+      },
+      {
+        "bin": "(0.15, 0.2]",
+        "n": 508,
+        "predicted": 0.1726476591,
+        "actual": 0.1023622047
+      },
+      {
+        "bin": "(0.2, 0.3]",
+        "n": 89,
+        "predicted": 0.2167644935,
+        "actual": 0.0561797753
+      }
+    ]
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "hashes": {
+    "script": "6095f0ab351000cff29e5dd66dbfa1532ea670a4907bfaa289a318f95972234a",
+    "plan": "54475d4bc64c7f58b51d20f61dc8b3d26158cb8bb87059cf965f3c2592dfc424",
+    "population": "013c14e5ae7c0f6a9f3ced15234feafeadcca5bd2e69ec440919e530df5a0f1a",
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62"
+  }
+}

@@ -1,0 +1,850 @@
+{
+  "scope": "frozen final evaluation; test was not used for fitting/tuning; prior annual summaries were visible",
+  "test": {
+    "all": {
+      "constant": {
+        "n": 5837,
+        "events": 1069,
+        "actual_pct": 18.314202501284907,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.15884866803879352,
+        "log_loss": 0.521582174505235,
+        "roc_auc": 0.5,
+        "average_precision": 0.18314202501284907
+      },
+      "logistic": {
+        "n": 5837,
+        "events": 1069,
+        "actual_pct": 18.314202501284907,
+        "predicted_pct": 9.09495327807441,
+        "brier": 0.15553286444574324,
+        "log_loss": 0.5057683142342091,
+        "roc_auc": 0.6186086813555917,
+        "average_precision": 0.24990621260575913
+      }
+    },
+    "new_buildings": {
+      "constant": {
+        "n": 2715,
+        "events": 416,
+        "actual_pct": 15.322283609576425,
+        "predicted_pct": 8.697735191637634,
+        "brier": 0.13413406276869638,
+        "log_loss": 0.45123878275028173,
+        "roc_auc": 0.5,
+        "average_precision": 0.15322283609576426
+      },
+      "logistic": {
+        "n": 2715,
+        "events": 416,
+        "actual_pct": 15.322283609576425,
+        "predicted_pct": 9.184160991377514,
+        "brier": 0.13073039214544147,
+        "log_loss": 0.4337358427678577,
+        "roc_auc": 0.6392265031619099,
+        "average_precision": 0.24058973795072477
+      }
+    }
+  },
+  "subgroups": [
+    {
+      "dimension": "gu",
+      "group": "군위군",
+      "small_n": false,
+      "constant": {
+        "n": 39,
+        "events": 15,
+        "actual_pct": 38.46153846153847,
+        "predicted_pct": 8.697735191637628,
+        "brier": 0.3252747890414804,
+        "log_loss": 0.9952687942188768,
+        "roc_auc": 0.5,
+        "average_precision": 0.38461538461538464
+      },
+      "logistic": {
+        "n": 39,
+        "events": 15,
+        "actual_pct": 38.46153846153847,
+        "predicted_pct": 6.381698428294507,
+        "brier": 0.33982904436849176,
+        "log_loss": 1.1003854787576652,
+        "roc_auc": 0.6180555555555556,
+        "average_precision": 0.44089400795283146
+      }
+    },
+    {
+      "dimension": "gu",
+      "group": "남구",
+      "small_n": false,
+      "constant": {
+        "n": 356,
+        "events": 61,
+        "actual_pct": 17.134831460674157,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.14910652903346974,
+        "log_loss": 0.4938538295410587,
+        "roc_auc": 0.5,
+        "average_precision": 0.17134831460674158
+      },
+      "logistic": {
+        "n": 356,
+        "events": 61,
+        "actual_pct": 17.134831460674157,
+        "predicted_pct": 10.40618889823097,
+        "brier": 0.14734181476022254,
+        "log_loss": 0.48181275422960146,
+        "roc_auc": 0.5800500138927479,
+        "average_precision": 0.20255922256527573
+      }
+    },
+    {
+      "dimension": "gu",
+      "group": "달서구",
+      "small_n": false,
+      "constant": {
+        "n": 1079,
+        "events": 183,
+        "actual_pct": 16.96014828544949,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.14766356688133075,
+        "log_loss": 0.48974683083134063,
+        "roc_auc": 0.5,
+        "average_precision": 0.1696014828544949
+      },
+      "logistic": {
+        "n": 1079,
+        "events": 183,
+        "actual_pct": 16.96014828544949,
+        "predicted_pct": 10.002344986430561,
+        "brier": 0.14363623234853298,
+        "log_loss": 0.46816885577160433,
+        "roc_auc": 0.651459431108509,
+        "average_precision": 0.2598030237883591
+      }
+    },
+    {
+      "dimension": "gu",
+      "group": "달성군",
+      "small_n": false,
+      "constant": {
+        "n": 535,
+        "events": 46,
+        "actual_pct": 8.598130841121495,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.07858951511777468,
+        "log_loss": 0.29314635794478117,
+        "roc_auc": 0.5,
+        "average_precision": 0.08598130841121496
+      },
+      "logistic": {
+        "n": 535,
+        "events": 46,
+        "actual_pct": 8.598130841121495,
+        "predicted_pct": 6.369411128245431,
+        "brier": 0.07899006426113579,
+        "log_loss": 0.2971845474117635,
+        "roc_auc": 0.5444785276073619,
+        "average_precision": 0.10846701029297988
+      }
+    },
+    {
+      "dimension": "gu",
+      "group": "동구",
+      "small_n": false,
+      "constant": {
+        "n": 846,
+        "events": 133,
+        "actual_pct": 15.721040189125295,
+        "predicted_pct": 8.697735191637634,
+        "brier": 0.13742797273721724,
+        "log_loss": 0.460614000229541,
+        "roc_auc": 0.5,
+        "average_precision": 0.15721040189125296
+      },
+      "logistic": {
+        "n": 846,
+        "events": 133,
+        "actual_pct": 15.721040189125295,
+        "predicted_pct": 8.665974213730495,
+        "brier": 0.1376395958505307,
+        "log_loss": 0.4634560325391428,
+        "roc_auc": 0.5259150681753473,
+        "average_precision": 0.16668255259998263
+      }
+    },
+    {
+      "dimension": "gu",
+      "group": "북구",
+      "small_n": false,
+      "constant": {
+        "n": 912,
+        "events": 186,
+        "actual_pct": 20.394736842105264,
+        "predicted_pct": 8.697735191637634,
+        "brier": 0.17603482409628432,
+        "log_loss": 0.5704978862919234,
+        "roc_auc": 0.5,
+        "average_precision": 0.20394736842105263
+      },
+      "logistic": {
+        "n": 912,
+        "events": 186,
+        "actual_pct": 20.394736842105264,
+        "predicted_pct": 8.407813013361283,
+        "brier": 0.1753330702918965,
+        "log_loss": 0.5678864513416204,
+        "roc_auc": 0.6221822328860452,
+        "average_precision": 0.24896783445636148
+      }
+    },
+    {
+      "dimension": "gu",
+      "group": "서구",
+      "small_n": false,
+      "constant": {
+        "n": 327,
+        "events": 41,
+        "actual_pct": 12.538226299694188,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.11113648831781377,
+        "log_loss": 0.38578245151081525,
+        "roc_auc": 0.5,
+        "average_precision": 0.12538226299694188
+      },
+      "logistic": {
+        "n": 327,
+        "events": 41,
+        "actual_pct": 12.538226299694188,
+        "predicted_pct": 8.281636169733453,
+        "brier": 0.11188786035002198,
+        "log_loss": 0.39178855534735324,
+        "roc_auc": 0.5196145318096538,
+        "average_precision": 0.13711012870199274
+      }
+    },
+    {
+      "dimension": "gu",
+      "group": "수성구",
+      "small_n": false,
+      "constant": {
+        "n": 968,
+        "events": 209,
+        "actual_pct": 21.59090909090909,
+        "predicted_pct": 8.697735191637634,
+        "brier": 0.1859157486915863,
+        "log_loss": 0.5986212466334075,
+        "roc_auc": 0.5,
+        "average_precision": 0.2159090909090909
+      },
+      "logistic": {
+        "n": 968,
+        "events": 209,
+        "actual_pct": 21.59090909090909,
+        "predicted_pct": 10.793577665033087,
+        "brier": 0.17451265978737043,
+        "log_loss": 0.5428099631232361,
+        "roc_auc": 0.6924497733734264,
+        "average_precision": 0.3865360733565657
+      }
+    },
+    {
+      "dimension": "gu",
+      "group": "중구",
+      "small_n": false,
+      "constant": {
+        "n": 775,
+        "events": 195,
+        "actual_pct": 25.161290322580644,
+        "predicted_pct": 8.697735191637634,
+        "brier": 0.21540871491104743,
+        "log_loss": 0.6825649412268759,
+        "roc_auc": 0.5,
+        "average_precision": 0.25161290322580643
+      },
+      "logistic": {
+        "n": 775,
+        "events": 195,
+        "actual_pct": 25.161290322580644,
+        "predicted_pct": 8.74576741086501,
+        "brier": 0.21036475960855217,
+        "log_loss": 0.658103482208241,
+        "roc_auc": 0.6658974358974359,
+        "average_precision": 0.3775547217228458
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "감성주점",
+      "small_n": true,
+      "constant": {
+        "n": 4,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 8.69773519163763,
+        "brier": 0.007565059746385172,
+        "log_loss": 0.09099459246962031,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "logistic": {
+        "n": 4,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 9.976102563341858,
+        "brier": 0.011100672720265865,
+        "log_loss": 0.10582510014118482,
+        "roc_auc": null,
+        "average_precision": null
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "경양식",
+      "small_n": false,
+      "constant": {
+        "n": 299,
+        "events": 36,
+        "actual_pct": 12.040133779264215,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.10702201848224106,
+        "log_loss": 0.37407173388677883,
+        "roc_auc": 0.5,
+        "average_precision": 0.12040133779264214
+      },
+      "logistic": {
+        "n": 299,
+        "events": 36,
+        "actual_pct": 12.040133779264215,
+        "predicted_pct": 7.263618955885747,
+        "brier": 0.10730888616552504,
+        "log_loss": 0.3776160651212482,
+        "roc_auc": 0.5689691592733418,
+        "average_precision": 0.15622648386914295
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "기타",
+      "small_n": false,
+      "constant": {
+        "n": 2087,
+        "events": 496,
+        "actual_pct": 23.766171538092955,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.20388440181584125,
+        "log_loss": 0.649764123171988,
+        "roc_auc": 0.5,
+        "average_precision": 0.23766171538092956
+      },
+      "logistic": {
+        "n": 2087,
+        "events": 496,
+        "actual_pct": 23.766171538092955,
+        "predicted_pct": 9.849813730021095,
+        "brier": 0.1986613529498536,
+        "log_loss": 0.624228740246923,
+        "roc_auc": 0.5879461841811805,
+        "average_precision": 0.29476182778813703
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "김밥(도시락)",
+      "small_n": true,
+      "constant": {
+        "n": 13,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.007565059746385173,
+        "log_loss": 0.0909945924696203,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "logistic": {
+        "n": 13,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 7.484778719406447,
+        "brier": 0.005957438338599254,
+        "log_loss": 0.07800926100533162,
+        "roc_auc": null,
+        "average_precision": null
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "냉면집",
+      "small_n": true,
+      "constant": {
+        "n": 5,
+        "events": 1,
+        "actual_pct": 20.0,
+        "predicted_pct": 8.69773519163763,
+        "brier": 0.1727741189798347,
+        "log_loss": 0.5612171773792337,
+        "roc_auc": 0.5,
+        "average_precision": 0.2
+      },
+      "logistic": {
+        "n": 5,
+        "events": 1,
+        "actual_pct": 20.0,
+        "predicted_pct": 5.506137630506632,
+        "brier": 0.18072165953215763,
+        "log_loss": 0.6223693080406731,
+        "roc_auc": 0.5,
+        "average_precision": 0.3333333333333333
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "라이브카페",
+      "small_n": true,
+      "constant": {
+        "n": 4,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 8.69773519163763,
+        "brier": 0.007565059746385172,
+        "log_loss": 0.09099459246962031,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "logistic": {
+        "n": 4,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 7.50545733333414,
+        "brier": 0.006203087510770717,
+        "log_loss": 0.07835512669027404,
+        "roc_auc": null,
+        "average_precision": null
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "복어취급",
+      "small_n": true,
+      "constant": {
+        "n": 4,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 8.69773519163763,
+        "brier": 0.007565059746385172,
+        "log_loss": 0.09099459246962031,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "logistic": {
+        "n": 4,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 7.876962255447562,
+        "brier": 0.006587288773363674,
+        "log_loss": 0.08226961022616279,
+        "roc_auc": null,
+        "average_precision": null
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "분식",
+      "small_n": false,
+      "constant": {
+        "n": 237,
+        "events": 50,
+        "actual_pct": 21.09704641350211,
+        "predicted_pct": 8.697735191637634,
+        "brier": 0.18183621927534036,
+        "log_loss": 0.5870099773953729,
+        "roc_auc": 0.5,
+        "average_precision": 0.2109704641350211
+      },
+      "logistic": {
+        "n": 237,
+        "events": 50,
+        "actual_pct": 21.09704641350211,
+        "predicted_pct": 11.218385230362081,
+        "brier": 0.1823062176863829,
+        "log_loss": 0.5889503874885436,
+        "roc_auc": 0.31497326203208553,
+        "average_precision": 0.16668860108117828
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "뷔페식",
+      "small_n": true,
+      "constant": {
+        "n": 14,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.007565059746385173,
+        "log_loss": 0.0909945924696203,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "logistic": {
+        "n": 14,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 4.916663972553836,
+        "brier": 0.002590229864217221,
+        "log_loss": 0.050513004435720314,
+        "roc_auc": null,
+        "average_precision": null
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "식육(숯불구이)",
+      "small_n": false,
+      "constant": {
+        "n": 335,
+        "events": 25,
+        "actual_pct": 7.462686567164178,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.06921023110214991,
+        "log_loss": 0.26645078086872975,
+        "roc_auc": 0.5,
+        "average_precision": 0.07462686567164178
+      },
+      "logistic": {
+        "n": 335,
+        "events": 25,
+        "actual_pct": 7.462686567164178,
+        "predicted_pct": 6.077599426254503,
+        "brier": 0.069260363053897,
+        "log_loss": 0.2677371724916984,
+        "roc_auc": 0.5371612903225806,
+        "average_precision": 0.09213246148705602
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "외국음식전문점(인도,태국등)",
+      "small_n": false,
+      "constant": {
+        "n": 45,
+        "events": 1,
+        "actual_pct": 2.2222222222222223,
+        "predicted_pct": 8.697735191637628,
+        "brier": 0.025921621883435123,
+        "log_loss": 0.14324154634846623,
+        "roc_auc": 0.5,
+        "average_precision": 0.022222222222222223
+      },
+      "logistic": {
+        "n": 45,
+        "events": 1,
+        "actual_pct": 2.2222222222222223,
+        "predicted_pct": 7.404692843775979,
+        "brier": 0.023369558150347924,
+        "log_loss": 0.1241306365554439,
+        "roc_auc": 0.8863636363636364,
+        "average_precision": 0.16666666666666666
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "일식",
+      "small_n": false,
+      "constant": {
+        "n": 187,
+        "events": 24,
+        "actual_pct": 12.834224598930483,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.11358156834539021,
+        "log_loss": 0.3927417057806022,
+        "roc_auc": 0.5,
+        "average_precision": 0.12834224598930483
+      },
+      "logistic": {
+        "n": 187,
+        "events": 24,
+        "actual_pct": 12.834224598930483,
+        "predicted_pct": 5.683403024338854,
+        "brier": 0.11345234409599222,
+        "log_loss": 0.39402549032866796,
+        "roc_auc": 0.6970858895705522,
+        "average_precision": 0.33919585329175034
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "정종/대포집/소주방",
+      "small_n": false,
+      "constant": {
+        "n": 101,
+        "events": 9,
+        "actual_pct": 8.91089108910891,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.08117305643455576,
+        "log_loss": 0.30049970455806185,
+        "roc_auc": 0.5,
+        "average_precision": 0.0891089108910891
+      },
+      "logistic": {
+        "n": 101,
+        "events": 9,
+        "actual_pct": 8.91089108910891,
+        "predicted_pct": 8.1750034361973,
+        "brier": 0.08223457511537947,
+        "log_loss": 0.3051275981799308,
+        "roc_auc": 0.572463768115942,
+        "average_precision": 0.10364916236504365
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "중국식",
+      "small_n": false,
+      "constant": {
+        "n": 118,
+        "events": 16,
+        "actual_pct": 13.559322033898304,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.1195712015995713,
+        "log_loss": 0.4097895652896972,
+        "roc_auc": 0.5,
+        "average_precision": 0.13559322033898305
+      },
+      "logistic": {
+        "n": 118,
+        "events": 16,
+        "actual_pct": 13.559322033898304,
+        "predicted_pct": 5.71945132619436,
+        "brier": 0.12444740780829806,
+        "log_loss": 0.45099015272021364,
+        "roc_auc": 0.42953431372549017,
+        "average_precision": 0.1276482174815166
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "출장조리",
+      "small_n": true,
+      "constant": {
+        "n": 5,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 8.69773519163763,
+        "brier": 0.007565059746385172,
+        "log_loss": 0.09099459246962031,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "logistic": {
+        "n": 5,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 5.3247831702856265,
+        "brier": 0.0028881368830610786,
+        "log_loss": 0.054747507474031155,
+        "roc_auc": null,
+        "average_precision": null
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "키즈카페",
+      "small_n": true,
+      "constant": {
+        "n": 2,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 8.69773519163763,
+        "brier": 0.007565059746385172,
+        "log_loss": 0.09099459246962031,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "logistic": {
+        "n": 2,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 5.294041901132381,
+        "brier": 0.0028812898890661458,
+        "log_loss": 0.05443709178353925,
+        "roc_auc": null,
+        "average_precision": null
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "탕류(보신용)",
+      "small_n": true,
+      "constant": {
+        "n": 13,
+        "events": 3,
+        "actual_pct": 23.076923076923077,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.19819089732344225,
+        "log_loss": 0.6335591135191743,
+        "roc_auc": 0.5,
+        "average_precision": 0.23076923076923078
+      },
+      "logistic": {
+        "n": 13,
+        "events": 3,
+        "actual_pct": 23.076923076923077,
+        "predicted_pct": 8.698305469671942,
+        "brier": 0.19880444705683967,
+        "log_loss": 0.6384078848037056,
+        "roc_auc": 0.49999999999999994,
+        "average_precision": 0.28535353535353536
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "패밀리레스트랑",
+      "small_n": true,
+      "constant": {
+        "n": 2,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 8.69773519163763,
+        "brier": 0.007565059746385172,
+        "log_loss": 0.09099459246962031,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "logistic": {
+        "n": 2,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 8.463465284426078,
+        "brier": 0.00791861400043714,
+        "log_loss": 0.0888830965768144,
+        "roc_auc": null,
+        "average_precision": null
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "한식",
+      "small_n": false,
+      "constant": {
+        "n": 1871,
+        "events": 288,
+        "actual_pct": 15.3928380545163,
+        "predicted_pct": 8.697735191637634,
+        "brier": 0.13471687444235916,
+        "log_loss": 0.4528975974241063,
+        "roc_auc": 0.5,
+        "average_precision": 0.153928380545163
+      },
+      "logistic": {
+        "n": 1871,
+        "events": 288,
+        "actual_pct": 15.3928380545163,
+        "predicted_pct": 8.99621132145978,
+        "brier": 0.13166539943999375,
+        "log_loss": 0.4391567296362465,
+        "roc_auc": 0.589839088931003,
+        "average_precision": 0.2533054639472408
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "호프/통닭",
+      "small_n": false,
+      "constant": {
+        "n": 436,
+        "events": 115,
+        "actual_pct": 26.376146788990823,
+        "predicted_pct": 8.697735191637632,
+        "brier": 0.22544397960701237,
+        "log_loss": 0.7111275886233536,
+        "roc_auc": 0.5,
+        "average_precision": 0.26376146788990823
+      },
+      "logistic": {
+        "n": 436,
+        "events": 115,
+        "actual_pct": 26.376146788990823,
+        "predicted_pct": 10.834766423748215,
+        "brier": 0.21744541958160615,
+        "log_loss": 0.6662405625027854,
+        "roc_auc": 0.6018014357307327,
+        "average_precision": 0.3530140478283832
+      }
+    },
+    {
+      "dimension": "category",
+      "group": "횟집",
+      "small_n": false,
+      "constant": {
+        "n": 55,
+        "events": 5,
+        "actual_pct": 9.090909090909092,
+        "predicted_pct": 8.697735191637628,
+        "brier": 0.08266008667068041,
+        "log_loss": 0.3047321310648991,
+        "roc_auc": 0.5,
+        "average_precision": 0.09090909090909091
+      },
+      "logistic": {
+        "n": 55,
+        "events": 5,
+        "actual_pct": 9.090909090909092,
+        "predicted_pct": 13.624383036989665,
+        "brier": 0.08366696928307062,
+        "log_loss": 0.3094317320837212,
+        "roc_auc": 0.622,
+        "average_precision": 0.16262108262108263
+      }
+    }
+  ],
+  "probability_bins": [
+    {
+      "bin": "(-0.001001, 0.05]",
+      "n": 287,
+      "predicted": 0.04380684,
+      "actual": 0.0696864111
+    },
+    {
+      "bin": "(0.05, 0.1]",
+      "n": 3861,
+      "predicted": 0.0776860423,
+      "actual": 0.1551411551
+    },
+    {
+      "bin": "(0.1, 0.15]",
+      "n": 1341,
+      "predicted": 0.118424468,
+      "actual": 0.2714392245
+    },
+    {
+      "bin": "(0.15, 0.2]",
+      "n": 338,
+      "predicted": 0.169742283,
+      "actual": 0.2485207101
+    },
+    {
+      "bin": "(0.2, 0.3]",
+      "n": 10,
+      "predicted": 0.217394721,
+      "actual": 0.2
+    }
+  ],
+  "failure_examples": {
+    "events_predicted_below_10pct": 619,
+    "nonevents_predicted_at_least_20pct": 8
+  },
+  "validation_reproduction": "PASS",
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "hashes": {
+    "script": "84ec52852cdffde624cb4711151a84aa03b5e35b4dc6c5d31616649de70d0fa5",
+    "validation": "fed86bed91dd665646d9b5bdba002a7a8b18cf3f72c1567e3d6d5b584ab06ed3",
+    "protocol": "78ec98ca5b15d965c166ffe36f35d206d4773e96e0522a1feb8ff5088909d699"
+  }
+}

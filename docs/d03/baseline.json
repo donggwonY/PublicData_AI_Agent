@@ -1,0 +1,4338 @@
+{
+  "analysis_groups": 15,
+  "group_mapping": {
+    "의원": "의원·병원",
+    "병원": "의원·병원"
+  },
+  "reference_date": "2026-10-13",
+  "built_at": "2026-10-16 14:46:59",
+  "records": 225858,
+  "services": 16,
+  "survival_rows_reproduced": 685,
+  "eligible365": 107168,
+  "events365": 14040,
+  "excluded_recent_since2010": 6378,
+  "tables": {
+    "service": [
+      {
+        "service": "골프연습장업",
+        "n": 414,
+        "events365": 8,
+        "observed_event_pct": 1.93,
+        "small_n": false
+      },
+      {
+        "service": "노래연습장업",
+        "n": 362,
+        "events365": 4,
+        "observed_event_pct": 1.1,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "n": 12649,
+        "events365": 1874,
+        "observed_event_pct": 14.82,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "n": 579,
+        "events365": 32,
+        "observed_event_pct": 5.53,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "n": 14177,
+        "events365": 1207,
+        "observed_event_pct": 8.51,
+        "small_n": false
+      },
+      {
+        "service": "병원",
+        "n": 178,
+        "events365": 8,
+        "observed_event_pct": 4.49,
+        "small_n": false
+      },
+      {
+        "service": "세탁업",
+        "n": 475,
+        "events365": 42,
+        "observed_event_pct": 8.84,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "n": 1664,
+        "events365": 218,
+        "observed_event_pct": 13.1,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "n": 2516,
+        "events365": 116,
+        "observed_event_pct": 4.61,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "n": 1843,
+        "events365": 434,
+        "observed_event_pct": 23.55,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "n": 42342,
+        "events365": 4755,
+        "observed_event_pct": 11.23,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "n": 2469,
+        "events365": 739,
+        "observed_event_pct": 29.93,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "n": 784,
+        "events365": 19,
+        "observed_event_pct": 2.42,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "n": 676,
+        "events365": 31,
+        "observed_event_pct": 4.59,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "n": 4316,
+        "events365": 487,
+        "observed_event_pct": 11.28,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "n": 21724,
+        "events365": 4066,
+        "observed_event_pct": 18.72,
+        "small_n": false
+      }
+    ],
+    "analysis_group": [
+      {
+        "analysis_group": "골프연습장업",
+        "n": 414,
+        "events365": 8,
+        "observed_event_pct": 1.93,
+        "small_n": false
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "n": 362,
+        "events365": 4,
+        "observed_event_pct": 1.1,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "n": 12649,
+        "events365": 1874,
+        "observed_event_pct": 14.82,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "n": 579,
+        "events365": 32,
+        "observed_event_pct": 5.53,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "n": 14177,
+        "events365": 1207,
+        "observed_event_pct": 8.51,
+        "small_n": false
+      },
+      {
+        "analysis_group": "세탁업",
+        "n": 475,
+        "events365": 42,
+        "observed_event_pct": 8.84,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "n": 1664,
+        "events365": 218,
+        "observed_event_pct": 13.1,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "n": 2694,
+        "events365": 124,
+        "observed_event_pct": 4.6,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "n": 1843,
+        "events365": 434,
+        "observed_event_pct": 23.55,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "n": 42342,
+        "events365": 4755,
+        "observed_event_pct": 11.23,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "n": 2469,
+        "events365": 739,
+        "observed_event_pct": 29.93,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "n": 784,
+        "events365": 19,
+        "observed_event_pct": 2.42,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "n": 676,
+        "events365": 31,
+        "observed_event_pct": 4.59,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "n": 4316,
+        "events365": 487,
+        "observed_event_pct": 11.28,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "n": 21724,
+        "events365": 4066,
+        "observed_event_pct": 18.72,
+        "small_n": false
+      }
+    ],
+    "analysis_group_year": [
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2010,
+        "n": 52,
+        "events365": 1,
+        "observed_event_pct": 1.92,
+        "small_n": false
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2011,
+        "n": 57,
+        "events365": 1,
+        "observed_event_pct": 1.75,
+        "small_n": false
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2012,
+        "n": 44,
+        "events365": 1,
+        "observed_event_pct": 2.27,
+        "small_n": false
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2013,
+        "n": 21,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2014,
+        "n": 31,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2015,
+        "n": 23,
+        "events365": 1,
+        "observed_event_pct": 4.35,
+        "small_n": true
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2016,
+        "n": 35,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2017,
+        "n": 29,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2018,
+        "n": 32,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2019,
+        "n": 32,
+        "events365": 1,
+        "observed_event_pct": 3.12,
+        "small_n": false
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2020,
+        "n": 14,
+        "events365": 1,
+        "observed_event_pct": 7.14,
+        "small_n": true
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2021,
+        "n": 20,
+        "events365": 2,
+        "observed_event_pct": 10.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2022,
+        "n": 10,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2023,
+        "n": 6,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2024,
+        "n": 6,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "골프연습장업",
+        "open_year": 2025,
+        "n": 2,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2010,
+        "n": 52,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2011,
+        "n": 40,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2012,
+        "n": 19,
+        "events365": 1,
+        "observed_event_pct": 5.26,
+        "small_n": true
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2013,
+        "n": 26,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2014,
+        "n": 32,
+        "events365": 2,
+        "observed_event_pct": 6.25,
+        "small_n": false
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2015,
+        "n": 38,
+        "events365": 1,
+        "observed_event_pct": 2.63,
+        "small_n": false
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2016,
+        "n": 35,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2017,
+        "n": 32,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2018,
+        "n": 21,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2019,
+        "n": 21,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2020,
+        "n": 13,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2021,
+        "n": 1,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2022,
+        "n": 6,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2023,
+        "n": 14,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2024,
+        "n": 11,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "노래연습장업",
+        "open_year": 2025,
+        "n": 1,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2010,
+        "n": 1100,
+        "events365": 225,
+        "observed_event_pct": 20.45,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2011,
+        "n": 1022,
+        "events365": 196,
+        "observed_event_pct": 19.18,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2012,
+        "n": 929,
+        "events365": 163,
+        "observed_event_pct": 17.55,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2013,
+        "n": 756,
+        "events365": 137,
+        "observed_event_pct": 18.12,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2014,
+        "n": 868,
+        "events365": 138,
+        "observed_event_pct": 15.9,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2015,
+        "n": 915,
+        "events365": 147,
+        "observed_event_pct": 16.07,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2016,
+        "n": 947,
+        "events365": 126,
+        "observed_event_pct": 13.31,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2017,
+        "n": 930,
+        "events365": 140,
+        "observed_event_pct": 15.05,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2018,
+        "n": 766,
+        "events365": 95,
+        "observed_event_pct": 12.4,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2019,
+        "n": 745,
+        "events365": 82,
+        "observed_event_pct": 11.01,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2020,
+        "n": 678,
+        "events365": 75,
+        "observed_event_pct": 11.06,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2021,
+        "n": 690,
+        "events365": 76,
+        "observed_event_pct": 11.01,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2022,
+        "n": 714,
+        "events365": 89,
+        "observed_event_pct": 12.46,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2023,
+        "n": 647,
+        "events365": 87,
+        "observed_event_pct": 13.45,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2024,
+        "n": 579,
+        "events365": 69,
+        "observed_event_pct": 11.92,
+        "small_n": false
+      },
+      {
+        "analysis_group": "담배소매업",
+        "open_year": 2025,
+        "n": 363,
+        "events365": 29,
+        "observed_event_pct": 7.99,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2010,
+        "n": 56,
+        "events365": 2,
+        "observed_event_pct": 3.57,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2011,
+        "n": 61,
+        "events365": 6,
+        "observed_event_pct": 9.84,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2012,
+        "n": 28,
+        "events365": 3,
+        "observed_event_pct": 10.71,
+        "small_n": true
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2013,
+        "n": 21,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2014,
+        "n": 34,
+        "events365": 2,
+        "observed_event_pct": 5.88,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2015,
+        "n": 50,
+        "events365": 5,
+        "observed_event_pct": 10.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2016,
+        "n": 78,
+        "events365": 1,
+        "observed_event_pct": 1.28,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2017,
+        "n": 66,
+        "events365": 4,
+        "observed_event_pct": 6.06,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2018,
+        "n": 46,
+        "events365": 2,
+        "observed_event_pct": 4.35,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2019,
+        "n": 32,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2020,
+        "n": 31,
+        "events365": 1,
+        "observed_event_pct": 3.23,
+        "small_n": false
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2021,
+        "n": 18,
+        "events365": 2,
+        "observed_event_pct": 11.11,
+        "small_n": true
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2022,
+        "n": 16,
+        "events365": 1,
+        "observed_event_pct": 6.25,
+        "small_n": true
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2023,
+        "n": 15,
+        "events365": 1,
+        "observed_event_pct": 6.67,
+        "small_n": true
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2024,
+        "n": 16,
+        "events365": 1,
+        "observed_event_pct": 6.25,
+        "small_n": true
+      },
+      {
+        "analysis_group": "당구장업",
+        "open_year": 2025,
+        "n": 11,
+        "events365": 1,
+        "observed_event_pct": 9.09,
+        "small_n": true
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2010,
+        "n": 894,
+        "events365": 101,
+        "observed_event_pct": 11.3,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2011,
+        "n": 678,
+        "events365": 75,
+        "observed_event_pct": 11.06,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2012,
+        "n": 670,
+        "events365": 63,
+        "observed_event_pct": 9.4,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2013,
+        "n": 714,
+        "events365": 71,
+        "observed_event_pct": 9.94,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2014,
+        "n": 913,
+        "events365": 99,
+        "observed_event_pct": 10.84,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2015,
+        "n": 812,
+        "events365": 58,
+        "observed_event_pct": 7.14,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2016,
+        "n": 943,
+        "events365": 104,
+        "observed_event_pct": 11.03,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2017,
+        "n": 971,
+        "events365": 80,
+        "observed_event_pct": 8.24,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2018,
+        "n": 971,
+        "events365": 92,
+        "observed_event_pct": 9.47,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2019,
+        "n": 1004,
+        "events365": 80,
+        "observed_event_pct": 7.97,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2020,
+        "n": 879,
+        "events365": 79,
+        "observed_event_pct": 8.99,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2021,
+        "n": 983,
+        "events365": 52,
+        "observed_event_pct": 5.29,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2022,
+        "n": 1023,
+        "events365": 57,
+        "observed_event_pct": 5.57,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2023,
+        "n": 1040,
+        "events365": 79,
+        "observed_event_pct": 7.6,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2024,
+        "n": 998,
+        "events365": 60,
+        "observed_event_pct": 6.01,
+        "small_n": false
+      },
+      {
+        "analysis_group": "미용업",
+        "open_year": 2025,
+        "n": 684,
+        "events365": 57,
+        "observed_event_pct": 8.33,
+        "small_n": false
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2010,
+        "n": 80,
+        "events365": 3,
+        "observed_event_pct": 3.75,
+        "small_n": false
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2011,
+        "n": 46,
+        "events365": 3,
+        "observed_event_pct": 6.52,
+        "small_n": false
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2012,
+        "n": 26,
+        "events365": 2,
+        "observed_event_pct": 7.69,
+        "small_n": true
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2013,
+        "n": 55,
+        "events365": 5,
+        "observed_event_pct": 9.09,
+        "small_n": false
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2014,
+        "n": 43,
+        "events365": 4,
+        "observed_event_pct": 9.3,
+        "small_n": false
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2015,
+        "n": 36,
+        "events365": 2,
+        "observed_event_pct": 5.56,
+        "small_n": false
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2016,
+        "n": 33,
+        "events365": 4,
+        "observed_event_pct": 12.12,
+        "small_n": false
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2017,
+        "n": 33,
+        "events365": 4,
+        "observed_event_pct": 12.12,
+        "small_n": false
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2018,
+        "n": 30,
+        "events365": 4,
+        "observed_event_pct": 13.33,
+        "small_n": false
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2019,
+        "n": 21,
+        "events365": 2,
+        "observed_event_pct": 9.52,
+        "small_n": true
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2020,
+        "n": 24,
+        "events365": 3,
+        "observed_event_pct": 12.5,
+        "small_n": true
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2021,
+        "n": 11,
+        "events365": 1,
+        "observed_event_pct": 9.09,
+        "small_n": true
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2022,
+        "n": 13,
+        "events365": 1,
+        "observed_event_pct": 7.69,
+        "small_n": true
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2023,
+        "n": 5,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2024,
+        "n": 11,
+        "events365": 3,
+        "observed_event_pct": 27.27,
+        "small_n": true
+      },
+      {
+        "analysis_group": "세탁업",
+        "open_year": 2025,
+        "n": 8,
+        "events365": 1,
+        "observed_event_pct": 12.5,
+        "small_n": true
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2010,
+        "n": 153,
+        "events365": 33,
+        "observed_event_pct": 21.57,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2011,
+        "n": 168,
+        "events365": 45,
+        "observed_event_pct": 26.79,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2012,
+        "n": 114,
+        "events365": 26,
+        "observed_event_pct": 22.81,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2013,
+        "n": 139,
+        "events365": 27,
+        "observed_event_pct": 19.42,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2014,
+        "n": 117,
+        "events365": 14,
+        "observed_event_pct": 11.97,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2015,
+        "n": 127,
+        "events365": 11,
+        "observed_event_pct": 8.66,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2016,
+        "n": 128,
+        "events365": 18,
+        "observed_event_pct": 14.06,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2017,
+        "n": 136,
+        "events365": 12,
+        "observed_event_pct": 8.82,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2018,
+        "n": 139,
+        "events365": 10,
+        "observed_event_pct": 7.19,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2019,
+        "n": 119,
+        "events365": 10,
+        "observed_event_pct": 8.4,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2020,
+        "n": 66,
+        "events365": 2,
+        "observed_event_pct": 3.03,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2021,
+        "n": 50,
+        "events365": 1,
+        "observed_event_pct": 2.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2022,
+        "n": 49,
+        "events365": 2,
+        "observed_event_pct": 4.08,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2023,
+        "n": 66,
+        "events365": 6,
+        "observed_event_pct": 9.09,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2024,
+        "n": 50,
+        "events365": 1,
+        "observed_event_pct": 2.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "약국",
+        "open_year": 2025,
+        "n": 43,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2010,
+        "n": 221,
+        "events365": 21,
+        "observed_event_pct": 9.5,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2011,
+        "n": 215,
+        "events365": 16,
+        "observed_event_pct": 7.44,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2012,
+        "n": 174,
+        "events365": 11,
+        "observed_event_pct": 6.32,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2013,
+        "n": 188,
+        "events365": 10,
+        "observed_event_pct": 5.32,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2014,
+        "n": 186,
+        "events365": 12,
+        "observed_event_pct": 6.45,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2015,
+        "n": 176,
+        "events365": 8,
+        "observed_event_pct": 4.55,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2016,
+        "n": 221,
+        "events365": 9,
+        "observed_event_pct": 4.07,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2017,
+        "n": 190,
+        "events365": 7,
+        "observed_event_pct": 3.68,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2018,
+        "n": 140,
+        "events365": 3,
+        "observed_event_pct": 2.14,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2019,
+        "n": 136,
+        "events365": 6,
+        "observed_event_pct": 4.41,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2020,
+        "n": 120,
+        "events365": 1,
+        "observed_event_pct": 0.83,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2021,
+        "n": 164,
+        "events365": 9,
+        "observed_event_pct": 5.49,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2022,
+        "n": 148,
+        "events365": 5,
+        "observed_event_pct": 3.38,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2023,
+        "n": 159,
+        "events365": 3,
+        "observed_event_pct": 1.89,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2024,
+        "n": 149,
+        "events365": 3,
+        "observed_event_pct": 2.01,
+        "small_n": false
+      },
+      {
+        "analysis_group": "의원·병원",
+        "open_year": 2025,
+        "n": 107,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2010,
+        "n": 148,
+        "events365": 46,
+        "observed_event_pct": 31.08,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2011,
+        "n": 111,
+        "events365": 28,
+        "observed_event_pct": 25.23,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2012,
+        "n": 91,
+        "events365": 21,
+        "observed_event_pct": 23.08,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2013,
+        "n": 92,
+        "events365": 16,
+        "observed_event_pct": 17.39,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2014,
+        "n": 206,
+        "events365": 70,
+        "observed_event_pct": 33.98,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2015,
+        "n": 149,
+        "events365": 47,
+        "observed_event_pct": 31.54,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2016,
+        "n": 115,
+        "events365": 20,
+        "observed_event_pct": 17.39,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2017,
+        "n": 183,
+        "events365": 21,
+        "observed_event_pct": 11.48,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2018,
+        "n": 162,
+        "events365": 50,
+        "observed_event_pct": 30.86,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2019,
+        "n": 151,
+        "events365": 32,
+        "observed_event_pct": 21.19,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2020,
+        "n": 104,
+        "events365": 28,
+        "observed_event_pct": 26.92,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2021,
+        "n": 89,
+        "events365": 15,
+        "observed_event_pct": 16.85,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2022,
+        "n": 66,
+        "events365": 12,
+        "observed_event_pct": 18.18,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2023,
+        "n": 69,
+        "events365": 14,
+        "observed_event_pct": 20.29,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2024,
+        "n": 53,
+        "events365": 9,
+        "observed_event_pct": 16.98,
+        "small_n": false
+      },
+      {
+        "analysis_group": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2025,
+        "n": 54,
+        "events365": 5,
+        "observed_event_pct": 9.26,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2010,
+        "n": 2411,
+        "events365": 205,
+        "observed_event_pct": 8.5,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2011,
+        "n": 2260,
+        "events365": 187,
+        "observed_event_pct": 8.27,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2012,
+        "n": 2192,
+        "events365": 173,
+        "observed_event_pct": 7.89,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2013,
+        "n": 2198,
+        "events365": 202,
+        "observed_event_pct": 9.19,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2014,
+        "n": 2582,
+        "events365": 185,
+        "observed_event_pct": 7.16,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2015,
+        "n": 2556,
+        "events365": 172,
+        "observed_event_pct": 6.73,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2016,
+        "n": 2940,
+        "events365": 247,
+        "observed_event_pct": 8.4,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2017,
+        "n": 2858,
+        "events365": 284,
+        "observed_event_pct": 9.94,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2018,
+        "n": 2963,
+        "events365": 342,
+        "observed_event_pct": 11.54,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2019,
+        "n": 3033,
+        "events365": 360,
+        "observed_event_pct": 11.87,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2020,
+        "n": 2805,
+        "events365": 204,
+        "observed_event_pct": 7.27,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2021,
+        "n": 2876,
+        "events365": 241,
+        "observed_event_pct": 8.38,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2022,
+        "n": 2841,
+        "events365": 406,
+        "observed_event_pct": 14.29,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2023,
+        "n": 3088,
+        "events365": 536,
+        "observed_event_pct": 17.36,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2024,
+        "n": 2749,
+        "events365": 533,
+        "observed_event_pct": 19.39,
+        "small_n": false
+      },
+      {
+        "analysis_group": "일반음식점",
+        "open_year": 2025,
+        "n": 1990,
+        "events365": 478,
+        "observed_event_pct": 24.02,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2010,
+        "n": 165,
+        "events365": 27,
+        "observed_event_pct": 16.36,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2011,
+        "n": 145,
+        "events365": 10,
+        "observed_event_pct": 6.9,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2012,
+        "n": 104,
+        "events365": 13,
+        "observed_event_pct": 12.5,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2013,
+        "n": 109,
+        "events365": 14,
+        "observed_event_pct": 12.84,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2014,
+        "n": 115,
+        "events365": 17,
+        "observed_event_pct": 14.78,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2015,
+        "n": 131,
+        "events365": 17,
+        "observed_event_pct": 12.98,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2016,
+        "n": 145,
+        "events365": 42,
+        "observed_event_pct": 28.97,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2017,
+        "n": 160,
+        "events365": 39,
+        "observed_event_pct": 24.38,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2018,
+        "n": 133,
+        "events365": 17,
+        "observed_event_pct": 12.78,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2019,
+        "n": 101,
+        "events365": 14,
+        "observed_event_pct": 13.86,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2020,
+        "n": 105,
+        "events365": 16,
+        "observed_event_pct": 15.24,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2021,
+        "n": 145,
+        "events365": 45,
+        "observed_event_pct": 31.03,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2022,
+        "n": 152,
+        "events365": 33,
+        "observed_event_pct": 21.71,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2023,
+        "n": 226,
+        "events365": 107,
+        "observed_event_pct": 47.35,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2024,
+        "n": 301,
+        "events365": 188,
+        "observed_event_pct": 62.46,
+        "small_n": false
+      },
+      {
+        "analysis_group": "제과점영업",
+        "open_year": 2025,
+        "n": 232,
+        "events365": 140,
+        "observed_event_pct": 60.34,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2010,
+        "n": 25,
+        "events365": 1,
+        "observed_event_pct": 4.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2011,
+        "n": 30,
+        "events365": 2,
+        "observed_event_pct": 6.67,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2012,
+        "n": 19,
+        "events365": 1,
+        "observed_event_pct": 5.26,
+        "small_n": true
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2013,
+        "n": 27,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2014,
+        "n": 30,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2015,
+        "n": 51,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2016,
+        "n": 47,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2017,
+        "n": 32,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2018,
+        "n": 33,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2019,
+        "n": 46,
+        "events365": 1,
+        "observed_event_pct": 2.17,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2020,
+        "n": 58,
+        "events365": 2,
+        "observed_event_pct": 3.45,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2021,
+        "n": 75,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2022,
+        "n": 105,
+        "events365": 2,
+        "observed_event_pct": 1.9,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2023,
+        "n": 70,
+        "events365": 2,
+        "observed_event_pct": 2.86,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2024,
+        "n": 85,
+        "events365": 3,
+        "observed_event_pct": 3.53,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체력단련장업",
+        "open_year": 2025,
+        "n": 51,
+        "events365": 5,
+        "observed_event_pct": 9.8,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2010,
+        "n": 51,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2011,
+        "n": 47,
+        "events365": 3,
+        "observed_event_pct": 6.38,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2012,
+        "n": 29,
+        "events365": 1,
+        "observed_event_pct": 3.45,
+        "small_n": true
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2013,
+        "n": 42,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2014,
+        "n": 42,
+        "events365": 2,
+        "observed_event_pct": 4.76,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2015,
+        "n": 55,
+        "events365": 3,
+        "observed_event_pct": 5.45,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2016,
+        "n": 50,
+        "events365": 3,
+        "observed_event_pct": 6.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2017,
+        "n": 41,
+        "events365": 2,
+        "observed_event_pct": 4.88,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2018,
+        "n": 27,
+        "events365": 1,
+        "observed_event_pct": 3.7,
+        "small_n": true
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2019,
+        "n": 36,
+        "events365": 3,
+        "observed_event_pct": 8.33,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2020,
+        "n": 98,
+        "events365": 8,
+        "observed_event_pct": 8.16,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2021,
+        "n": 35,
+        "events365": 1,
+        "observed_event_pct": 2.86,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2022,
+        "n": 30,
+        "events365": 2,
+        "observed_event_pct": 6.67,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2023,
+        "n": 34,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2024,
+        "n": 27,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "analysis_group": "체육도장업",
+        "open_year": 2025,
+        "n": 32,
+        "events365": 2,
+        "observed_event_pct": 6.25,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2010,
+        "n": 305,
+        "events365": 52,
+        "observed_event_pct": 17.05,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2011,
+        "n": 374,
+        "events365": 34,
+        "observed_event_pct": 9.09,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2012,
+        "n": 333,
+        "events365": 34,
+        "observed_event_pct": 10.21,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2013,
+        "n": 399,
+        "events365": 49,
+        "observed_event_pct": 12.28,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2014,
+        "n": 314,
+        "events365": 52,
+        "observed_event_pct": 16.56,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2015,
+        "n": 282,
+        "events365": 34,
+        "observed_event_pct": 12.06,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2016,
+        "n": 295,
+        "events365": 37,
+        "observed_event_pct": 12.54,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2017,
+        "n": 305,
+        "events365": 35,
+        "observed_event_pct": 11.48,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2018,
+        "n": 257,
+        "events365": 24,
+        "observed_event_pct": 9.34,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2019,
+        "n": 246,
+        "events365": 23,
+        "observed_event_pct": 9.35,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2020,
+        "n": 217,
+        "events365": 16,
+        "observed_event_pct": 7.37,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2021,
+        "n": 226,
+        "events365": 28,
+        "observed_event_pct": 12.39,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2022,
+        "n": 180,
+        "events365": 23,
+        "observed_event_pct": 12.78,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2023,
+        "n": 205,
+        "events365": 17,
+        "observed_event_pct": 8.29,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2024,
+        "n": 192,
+        "events365": 16,
+        "observed_event_pct": 8.33,
+        "small_n": false
+      },
+      {
+        "analysis_group": "축산판매업",
+        "open_year": 2025,
+        "n": 186,
+        "events365": 13,
+        "observed_event_pct": 6.99,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2010,
+        "n": 802,
+        "events365": 120,
+        "observed_event_pct": 14.96,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2011,
+        "n": 953,
+        "events365": 166,
+        "observed_event_pct": 17.42,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2012,
+        "n": 772,
+        "events365": 131,
+        "observed_event_pct": 16.97,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2013,
+        "n": 739,
+        "events365": 127,
+        "observed_event_pct": 17.19,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2014,
+        "n": 1077,
+        "events365": 140,
+        "observed_event_pct": 13.0,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2015,
+        "n": 1173,
+        "events365": 182,
+        "observed_event_pct": 15.52,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2016,
+        "n": 1515,
+        "events365": 271,
+        "observed_event_pct": 17.89,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2017,
+        "n": 1648,
+        "events365": 294,
+        "observed_event_pct": 17.84,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2018,
+        "n": 1462,
+        "events365": 223,
+        "observed_event_pct": 15.25,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2019,
+        "n": 1948,
+        "events365": 238,
+        "observed_event_pct": 12.22,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2020,
+        "n": 1643,
+        "events365": 209,
+        "observed_event_pct": 12.72,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2021,
+        "n": 1845,
+        "events365": 231,
+        "observed_event_pct": 12.52,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2022,
+        "n": 1777,
+        "events365": 308,
+        "observed_event_pct": 17.33,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2023,
+        "n": 1636,
+        "events365": 392,
+        "observed_event_pct": 23.96,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2024,
+        "n": 1558,
+        "events365": 501,
+        "observed_event_pct": 32.16,
+        "small_n": false
+      },
+      {
+        "analysis_group": "휴게음식점",
+        "open_year": 2025,
+        "n": 1176,
+        "events365": 533,
+        "observed_event_pct": 45.32,
+        "small_n": false
+      }
+    ],
+    "open_year": [
+      {
+        "open_year": 2010,
+        "n": 6515,
+        "events365": 837,
+        "observed_event_pct": 12.85,
+        "small_n": false
+      },
+      {
+        "open_year": 2011,
+        "n": 6207,
+        "events365": 772,
+        "observed_event_pct": 12.44,
+        "small_n": false
+      },
+      {
+        "open_year": 2012,
+        "n": 5544,
+        "events365": 644,
+        "observed_event_pct": 11.62,
+        "small_n": false
+      },
+      {
+        "open_year": 2013,
+        "n": 5526,
+        "events365": 658,
+        "observed_event_pct": 11.91,
+        "small_n": false
+      },
+      {
+        "open_year": 2014,
+        "n": 6590,
+        "events365": 737,
+        "observed_event_pct": 11.18,
+        "small_n": false
+      },
+      {
+        "open_year": 2015,
+        "n": 6574,
+        "events365": 688,
+        "observed_event_pct": 10.47,
+        "small_n": false
+      },
+      {
+        "open_year": 2016,
+        "n": 7527,
+        "events365": 882,
+        "observed_event_pct": 11.72,
+        "small_n": false
+      },
+      {
+        "open_year": 2017,
+        "n": 7614,
+        "events365": 922,
+        "observed_event_pct": 12.11,
+        "small_n": false
+      },
+      {
+        "open_year": 2018,
+        "n": 7182,
+        "events365": 863,
+        "observed_event_pct": 12.02,
+        "small_n": false
+      },
+      {
+        "open_year": 2019,
+        "n": 7671,
+        "events365": 852,
+        "observed_event_pct": 11.11,
+        "small_n": false
+      },
+      {
+        "open_year": 2020,
+        "n": 6855,
+        "events365": 645,
+        "observed_event_pct": 9.41,
+        "small_n": false
+      },
+      {
+        "open_year": 2021,
+        "n": 7228,
+        "events365": 704,
+        "observed_event_pct": 9.74,
+        "small_n": false
+      },
+      {
+        "open_year": 2022,
+        "n": 7130,
+        "events365": 941,
+        "observed_event_pct": 13.2,
+        "small_n": false
+      },
+      {
+        "open_year": 2023,
+        "n": 7280,
+        "events365": 1244,
+        "observed_event_pct": 17.09,
+        "small_n": false
+      },
+      {
+        "open_year": 2024,
+        "n": 6785,
+        "events365": 1387,
+        "observed_event_pct": 20.44,
+        "small_n": false
+      },
+      {
+        "open_year": 2025,
+        "n": 4940,
+        "events365": 1264,
+        "observed_event_pct": 25.59,
+        "small_n": false
+      }
+    ],
+    "service_year": [
+      {
+        "service": "골프연습장업",
+        "open_year": 2010,
+        "n": 52,
+        "events365": 1,
+        "observed_event_pct": 1.92,
+        "small_n": false
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2011,
+        "n": 57,
+        "events365": 1,
+        "observed_event_pct": 1.75,
+        "small_n": false
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2012,
+        "n": 44,
+        "events365": 1,
+        "observed_event_pct": 2.27,
+        "small_n": false
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2013,
+        "n": 21,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2014,
+        "n": 31,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2015,
+        "n": 23,
+        "events365": 1,
+        "observed_event_pct": 4.35,
+        "small_n": true
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2016,
+        "n": 35,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2017,
+        "n": 29,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2018,
+        "n": 32,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2019,
+        "n": 32,
+        "events365": 1,
+        "observed_event_pct": 3.12,
+        "small_n": false
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2020,
+        "n": 14,
+        "events365": 1,
+        "observed_event_pct": 7.14,
+        "small_n": true
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2021,
+        "n": 20,
+        "events365": 2,
+        "observed_event_pct": 10.0,
+        "small_n": true
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2022,
+        "n": 10,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2023,
+        "n": 6,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2024,
+        "n": 6,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "골프연습장업",
+        "open_year": 2025,
+        "n": 2,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2010,
+        "n": 52,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2011,
+        "n": 40,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2012,
+        "n": 19,
+        "events365": 1,
+        "observed_event_pct": 5.26,
+        "small_n": true
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2013,
+        "n": 26,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2014,
+        "n": 32,
+        "events365": 2,
+        "observed_event_pct": 6.25,
+        "small_n": false
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2015,
+        "n": 38,
+        "events365": 1,
+        "observed_event_pct": 2.63,
+        "small_n": false
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2016,
+        "n": 35,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2017,
+        "n": 32,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2018,
+        "n": 21,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2019,
+        "n": 21,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2020,
+        "n": 13,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2021,
+        "n": 1,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2022,
+        "n": 6,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2023,
+        "n": 14,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2024,
+        "n": 11,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "노래연습장업",
+        "open_year": 2025,
+        "n": 1,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2010,
+        "n": 1100,
+        "events365": 225,
+        "observed_event_pct": 20.45,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2011,
+        "n": 1022,
+        "events365": 196,
+        "observed_event_pct": 19.18,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2012,
+        "n": 929,
+        "events365": 163,
+        "observed_event_pct": 17.55,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2013,
+        "n": 756,
+        "events365": 137,
+        "observed_event_pct": 18.12,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2014,
+        "n": 868,
+        "events365": 138,
+        "observed_event_pct": 15.9,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2015,
+        "n": 915,
+        "events365": 147,
+        "observed_event_pct": 16.07,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2016,
+        "n": 947,
+        "events365": 126,
+        "observed_event_pct": 13.31,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2017,
+        "n": 930,
+        "events365": 140,
+        "observed_event_pct": 15.05,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2018,
+        "n": 766,
+        "events365": 95,
+        "observed_event_pct": 12.4,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2019,
+        "n": 745,
+        "events365": 82,
+        "observed_event_pct": 11.01,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2020,
+        "n": 678,
+        "events365": 75,
+        "observed_event_pct": 11.06,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2021,
+        "n": 690,
+        "events365": 76,
+        "observed_event_pct": 11.01,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2022,
+        "n": 714,
+        "events365": 89,
+        "observed_event_pct": 12.46,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2023,
+        "n": 647,
+        "events365": 87,
+        "observed_event_pct": 13.45,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2024,
+        "n": 579,
+        "events365": 69,
+        "observed_event_pct": 11.92,
+        "small_n": false
+      },
+      {
+        "service": "담배소매업",
+        "open_year": 2025,
+        "n": 363,
+        "events365": 29,
+        "observed_event_pct": 7.99,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2010,
+        "n": 56,
+        "events365": 2,
+        "observed_event_pct": 3.57,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2011,
+        "n": 61,
+        "events365": 6,
+        "observed_event_pct": 9.84,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2012,
+        "n": 28,
+        "events365": 3,
+        "observed_event_pct": 10.71,
+        "small_n": true
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2013,
+        "n": 21,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2014,
+        "n": 34,
+        "events365": 2,
+        "observed_event_pct": 5.88,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2015,
+        "n": 50,
+        "events365": 5,
+        "observed_event_pct": 10.0,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2016,
+        "n": 78,
+        "events365": 1,
+        "observed_event_pct": 1.28,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2017,
+        "n": 66,
+        "events365": 4,
+        "observed_event_pct": 6.06,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2018,
+        "n": 46,
+        "events365": 2,
+        "observed_event_pct": 4.35,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2019,
+        "n": 32,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2020,
+        "n": 31,
+        "events365": 1,
+        "observed_event_pct": 3.23,
+        "small_n": false
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2021,
+        "n": 18,
+        "events365": 2,
+        "observed_event_pct": 11.11,
+        "small_n": true
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2022,
+        "n": 16,
+        "events365": 1,
+        "observed_event_pct": 6.25,
+        "small_n": true
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2023,
+        "n": 15,
+        "events365": 1,
+        "observed_event_pct": 6.67,
+        "small_n": true
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2024,
+        "n": 16,
+        "events365": 1,
+        "observed_event_pct": 6.25,
+        "small_n": true
+      },
+      {
+        "service": "당구장업",
+        "open_year": 2025,
+        "n": 11,
+        "events365": 1,
+        "observed_event_pct": 9.09,
+        "small_n": true
+      },
+      {
+        "service": "미용업",
+        "open_year": 2010,
+        "n": 894,
+        "events365": 101,
+        "observed_event_pct": 11.3,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2011,
+        "n": 678,
+        "events365": 75,
+        "observed_event_pct": 11.06,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2012,
+        "n": 670,
+        "events365": 63,
+        "observed_event_pct": 9.4,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2013,
+        "n": 714,
+        "events365": 71,
+        "observed_event_pct": 9.94,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2014,
+        "n": 913,
+        "events365": 99,
+        "observed_event_pct": 10.84,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2015,
+        "n": 812,
+        "events365": 58,
+        "observed_event_pct": 7.14,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2016,
+        "n": 943,
+        "events365": 104,
+        "observed_event_pct": 11.03,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2017,
+        "n": 971,
+        "events365": 80,
+        "observed_event_pct": 8.24,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2018,
+        "n": 971,
+        "events365": 92,
+        "observed_event_pct": 9.47,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2019,
+        "n": 1004,
+        "events365": 80,
+        "observed_event_pct": 7.97,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2020,
+        "n": 879,
+        "events365": 79,
+        "observed_event_pct": 8.99,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2021,
+        "n": 983,
+        "events365": 52,
+        "observed_event_pct": 5.29,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2022,
+        "n": 1023,
+        "events365": 57,
+        "observed_event_pct": 5.57,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2023,
+        "n": 1040,
+        "events365": 79,
+        "observed_event_pct": 7.6,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2024,
+        "n": 998,
+        "events365": 60,
+        "observed_event_pct": 6.01,
+        "small_n": false
+      },
+      {
+        "service": "미용업",
+        "open_year": 2025,
+        "n": 684,
+        "events365": 57,
+        "observed_event_pct": 8.33,
+        "small_n": false
+      },
+      {
+        "service": "병원",
+        "open_year": 2010,
+        "n": 8,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2011,
+        "n": 13,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2012,
+        "n": 24,
+        "events365": 2,
+        "observed_event_pct": 8.33,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2013,
+        "n": 17,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2014,
+        "n": 15,
+        "events365": 2,
+        "observed_event_pct": 13.33,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2015,
+        "n": 14,
+        "events365": 1,
+        "observed_event_pct": 7.14,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2016,
+        "n": 11,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2017,
+        "n": 6,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2018,
+        "n": 6,
+        "events365": 1,
+        "observed_event_pct": 16.67,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2019,
+        "n": 11,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2020,
+        "n": 10,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2021,
+        "n": 6,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2022,
+        "n": 15,
+        "events365": 1,
+        "observed_event_pct": 6.67,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2023,
+        "n": 6,
+        "events365": 1,
+        "observed_event_pct": 16.67,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2024,
+        "n": 11,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "병원",
+        "open_year": 2025,
+        "n": 5,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2010,
+        "n": 80,
+        "events365": 3,
+        "observed_event_pct": 3.75,
+        "small_n": false
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2011,
+        "n": 46,
+        "events365": 3,
+        "observed_event_pct": 6.52,
+        "small_n": false
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2012,
+        "n": 26,
+        "events365": 2,
+        "observed_event_pct": 7.69,
+        "small_n": true
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2013,
+        "n": 55,
+        "events365": 5,
+        "observed_event_pct": 9.09,
+        "small_n": false
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2014,
+        "n": 43,
+        "events365": 4,
+        "observed_event_pct": 9.3,
+        "small_n": false
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2015,
+        "n": 36,
+        "events365": 2,
+        "observed_event_pct": 5.56,
+        "small_n": false
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2016,
+        "n": 33,
+        "events365": 4,
+        "observed_event_pct": 12.12,
+        "small_n": false
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2017,
+        "n": 33,
+        "events365": 4,
+        "observed_event_pct": 12.12,
+        "small_n": false
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2018,
+        "n": 30,
+        "events365": 4,
+        "observed_event_pct": 13.33,
+        "small_n": false
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2019,
+        "n": 21,
+        "events365": 2,
+        "observed_event_pct": 9.52,
+        "small_n": true
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2020,
+        "n": 24,
+        "events365": 3,
+        "observed_event_pct": 12.5,
+        "small_n": true
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2021,
+        "n": 11,
+        "events365": 1,
+        "observed_event_pct": 9.09,
+        "small_n": true
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2022,
+        "n": 13,
+        "events365": 1,
+        "observed_event_pct": 7.69,
+        "small_n": true
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2023,
+        "n": 5,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2024,
+        "n": 11,
+        "events365": 3,
+        "observed_event_pct": 27.27,
+        "small_n": true
+      },
+      {
+        "service": "세탁업",
+        "open_year": 2025,
+        "n": 8,
+        "events365": 1,
+        "observed_event_pct": 12.5,
+        "small_n": true
+      },
+      {
+        "service": "약국",
+        "open_year": 2010,
+        "n": 153,
+        "events365": 33,
+        "observed_event_pct": 21.57,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2011,
+        "n": 168,
+        "events365": 45,
+        "observed_event_pct": 26.79,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2012,
+        "n": 114,
+        "events365": 26,
+        "observed_event_pct": 22.81,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2013,
+        "n": 139,
+        "events365": 27,
+        "observed_event_pct": 19.42,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2014,
+        "n": 117,
+        "events365": 14,
+        "observed_event_pct": 11.97,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2015,
+        "n": 127,
+        "events365": 11,
+        "observed_event_pct": 8.66,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2016,
+        "n": 128,
+        "events365": 18,
+        "observed_event_pct": 14.06,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2017,
+        "n": 136,
+        "events365": 12,
+        "observed_event_pct": 8.82,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2018,
+        "n": 139,
+        "events365": 10,
+        "observed_event_pct": 7.19,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2019,
+        "n": 119,
+        "events365": 10,
+        "observed_event_pct": 8.4,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2020,
+        "n": 66,
+        "events365": 2,
+        "observed_event_pct": 3.03,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2021,
+        "n": 50,
+        "events365": 1,
+        "observed_event_pct": 2.0,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2022,
+        "n": 49,
+        "events365": 2,
+        "observed_event_pct": 4.08,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2023,
+        "n": 66,
+        "events365": 6,
+        "observed_event_pct": 9.09,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2024,
+        "n": 50,
+        "events365": 1,
+        "observed_event_pct": 2.0,
+        "small_n": false
+      },
+      {
+        "service": "약국",
+        "open_year": 2025,
+        "n": 43,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2010,
+        "n": 213,
+        "events365": 21,
+        "observed_event_pct": 9.86,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2011,
+        "n": 202,
+        "events365": 16,
+        "observed_event_pct": 7.92,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2012,
+        "n": 150,
+        "events365": 9,
+        "observed_event_pct": 6.0,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2013,
+        "n": 171,
+        "events365": 10,
+        "observed_event_pct": 5.85,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2014,
+        "n": 171,
+        "events365": 10,
+        "observed_event_pct": 5.85,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2015,
+        "n": 162,
+        "events365": 7,
+        "observed_event_pct": 4.32,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2016,
+        "n": 210,
+        "events365": 9,
+        "observed_event_pct": 4.29,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2017,
+        "n": 184,
+        "events365": 7,
+        "observed_event_pct": 3.8,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2018,
+        "n": 134,
+        "events365": 2,
+        "observed_event_pct": 1.49,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2019,
+        "n": 125,
+        "events365": 6,
+        "observed_event_pct": 4.8,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2020,
+        "n": 110,
+        "events365": 1,
+        "observed_event_pct": 0.91,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2021,
+        "n": 158,
+        "events365": 9,
+        "observed_event_pct": 5.7,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2022,
+        "n": 133,
+        "events365": 4,
+        "observed_event_pct": 3.01,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2023,
+        "n": 153,
+        "events365": 2,
+        "observed_event_pct": 1.31,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2024,
+        "n": 138,
+        "events365": 3,
+        "observed_event_pct": 2.17,
+        "small_n": false
+      },
+      {
+        "service": "의원",
+        "open_year": 2025,
+        "n": 102,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2010,
+        "n": 148,
+        "events365": 46,
+        "observed_event_pct": 31.08,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2011,
+        "n": 111,
+        "events365": 28,
+        "observed_event_pct": 25.23,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2012,
+        "n": 91,
+        "events365": 21,
+        "observed_event_pct": 23.08,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2013,
+        "n": 92,
+        "events365": 16,
+        "observed_event_pct": 17.39,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2014,
+        "n": 206,
+        "events365": 70,
+        "observed_event_pct": 33.98,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2015,
+        "n": 149,
+        "events365": 47,
+        "observed_event_pct": 31.54,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2016,
+        "n": 115,
+        "events365": 20,
+        "observed_event_pct": 17.39,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2017,
+        "n": 183,
+        "events365": 21,
+        "observed_event_pct": 11.48,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2018,
+        "n": 162,
+        "events365": 50,
+        "observed_event_pct": 30.86,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2019,
+        "n": 151,
+        "events365": 32,
+        "observed_event_pct": 21.19,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2020,
+        "n": 104,
+        "events365": 28,
+        "observed_event_pct": 26.92,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2021,
+        "n": 89,
+        "events365": 15,
+        "observed_event_pct": 16.85,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2022,
+        "n": 66,
+        "events365": 12,
+        "observed_event_pct": 18.18,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2023,
+        "n": 69,
+        "events365": 14,
+        "observed_event_pct": 20.29,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2024,
+        "n": 53,
+        "events365": 9,
+        "observed_event_pct": 16.98,
+        "small_n": false
+      },
+      {
+        "service": "인터넷컴퓨터게임시설제공업",
+        "open_year": 2025,
+        "n": 54,
+        "events365": 5,
+        "observed_event_pct": 9.26,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2010,
+        "n": 2411,
+        "events365": 205,
+        "observed_event_pct": 8.5,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2011,
+        "n": 2260,
+        "events365": 187,
+        "observed_event_pct": 8.27,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2012,
+        "n": 2192,
+        "events365": 173,
+        "observed_event_pct": 7.89,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2013,
+        "n": 2198,
+        "events365": 202,
+        "observed_event_pct": 9.19,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2014,
+        "n": 2582,
+        "events365": 185,
+        "observed_event_pct": 7.16,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2015,
+        "n": 2556,
+        "events365": 172,
+        "observed_event_pct": 6.73,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2016,
+        "n": 2940,
+        "events365": 247,
+        "observed_event_pct": 8.4,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2017,
+        "n": 2858,
+        "events365": 284,
+        "observed_event_pct": 9.94,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2018,
+        "n": 2963,
+        "events365": 342,
+        "observed_event_pct": 11.54,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2019,
+        "n": 3033,
+        "events365": 360,
+        "observed_event_pct": 11.87,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2020,
+        "n": 2805,
+        "events365": 204,
+        "observed_event_pct": 7.27,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2021,
+        "n": 2876,
+        "events365": 241,
+        "observed_event_pct": 8.38,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2022,
+        "n": 2841,
+        "events365": 406,
+        "observed_event_pct": 14.29,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2023,
+        "n": 3088,
+        "events365": 536,
+        "observed_event_pct": 17.36,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2024,
+        "n": 2749,
+        "events365": 533,
+        "observed_event_pct": 19.39,
+        "small_n": false
+      },
+      {
+        "service": "일반음식점",
+        "open_year": 2025,
+        "n": 1990,
+        "events365": 478,
+        "observed_event_pct": 24.02,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2010,
+        "n": 165,
+        "events365": 27,
+        "observed_event_pct": 16.36,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2011,
+        "n": 145,
+        "events365": 10,
+        "observed_event_pct": 6.9,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2012,
+        "n": 104,
+        "events365": 13,
+        "observed_event_pct": 12.5,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2013,
+        "n": 109,
+        "events365": 14,
+        "observed_event_pct": 12.84,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2014,
+        "n": 115,
+        "events365": 17,
+        "observed_event_pct": 14.78,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2015,
+        "n": 131,
+        "events365": 17,
+        "observed_event_pct": 12.98,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2016,
+        "n": 145,
+        "events365": 42,
+        "observed_event_pct": 28.97,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2017,
+        "n": 160,
+        "events365": 39,
+        "observed_event_pct": 24.38,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2018,
+        "n": 133,
+        "events365": 17,
+        "observed_event_pct": 12.78,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2019,
+        "n": 101,
+        "events365": 14,
+        "observed_event_pct": 13.86,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2020,
+        "n": 105,
+        "events365": 16,
+        "observed_event_pct": 15.24,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2021,
+        "n": 145,
+        "events365": 45,
+        "observed_event_pct": 31.03,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2022,
+        "n": 152,
+        "events365": 33,
+        "observed_event_pct": 21.71,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2023,
+        "n": 226,
+        "events365": 107,
+        "observed_event_pct": 47.35,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2024,
+        "n": 301,
+        "events365": 188,
+        "observed_event_pct": 62.46,
+        "small_n": false
+      },
+      {
+        "service": "제과점영업",
+        "open_year": 2025,
+        "n": 232,
+        "events365": 140,
+        "observed_event_pct": 60.34,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2010,
+        "n": 25,
+        "events365": 1,
+        "observed_event_pct": 4.0,
+        "small_n": true
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2011,
+        "n": 30,
+        "events365": 2,
+        "observed_event_pct": 6.67,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2012,
+        "n": 19,
+        "events365": 1,
+        "observed_event_pct": 5.26,
+        "small_n": true
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2013,
+        "n": 27,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2014,
+        "n": 30,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2015,
+        "n": 51,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2016,
+        "n": 47,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2017,
+        "n": 32,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2018,
+        "n": 33,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2019,
+        "n": 46,
+        "events365": 1,
+        "observed_event_pct": 2.17,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2020,
+        "n": 58,
+        "events365": 2,
+        "observed_event_pct": 3.45,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2021,
+        "n": 75,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2022,
+        "n": 105,
+        "events365": 2,
+        "observed_event_pct": 1.9,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2023,
+        "n": 70,
+        "events365": 2,
+        "observed_event_pct": 2.86,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2024,
+        "n": 85,
+        "events365": 3,
+        "observed_event_pct": 3.53,
+        "small_n": false
+      },
+      {
+        "service": "체력단련장업",
+        "open_year": 2025,
+        "n": 51,
+        "events365": 5,
+        "observed_event_pct": 9.8,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2010,
+        "n": 51,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2011,
+        "n": 47,
+        "events365": 3,
+        "observed_event_pct": 6.38,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2012,
+        "n": 29,
+        "events365": 1,
+        "observed_event_pct": 3.45,
+        "small_n": true
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2013,
+        "n": 42,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2014,
+        "n": 42,
+        "events365": 2,
+        "observed_event_pct": 4.76,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2015,
+        "n": 55,
+        "events365": 3,
+        "observed_event_pct": 5.45,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2016,
+        "n": 50,
+        "events365": 3,
+        "observed_event_pct": 6.0,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2017,
+        "n": 41,
+        "events365": 2,
+        "observed_event_pct": 4.88,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2018,
+        "n": 27,
+        "events365": 1,
+        "observed_event_pct": 3.7,
+        "small_n": true
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2019,
+        "n": 36,
+        "events365": 3,
+        "observed_event_pct": 8.33,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2020,
+        "n": 98,
+        "events365": 8,
+        "observed_event_pct": 8.16,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2021,
+        "n": 35,
+        "events365": 1,
+        "observed_event_pct": 2.86,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2022,
+        "n": 30,
+        "events365": 2,
+        "observed_event_pct": 6.67,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2023,
+        "n": 34,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": false
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2024,
+        "n": 27,
+        "events365": 0,
+        "observed_event_pct": 0.0,
+        "small_n": true
+      },
+      {
+        "service": "체육도장업",
+        "open_year": 2025,
+        "n": 32,
+        "events365": 2,
+        "observed_event_pct": 6.25,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2010,
+        "n": 305,
+        "events365": 52,
+        "observed_event_pct": 17.05,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2011,
+        "n": 374,
+        "events365": 34,
+        "observed_event_pct": 9.09,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2012,
+        "n": 333,
+        "events365": 34,
+        "observed_event_pct": 10.21,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2013,
+        "n": 399,
+        "events365": 49,
+        "observed_event_pct": 12.28,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2014,
+        "n": 314,
+        "events365": 52,
+        "observed_event_pct": 16.56,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2015,
+        "n": 282,
+        "events365": 34,
+        "observed_event_pct": 12.06,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2016,
+        "n": 295,
+        "events365": 37,
+        "observed_event_pct": 12.54,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2017,
+        "n": 305,
+        "events365": 35,
+        "observed_event_pct": 11.48,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2018,
+        "n": 257,
+        "events365": 24,
+        "observed_event_pct": 9.34,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2019,
+        "n": 246,
+        "events365": 23,
+        "observed_event_pct": 9.35,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2020,
+        "n": 217,
+        "events365": 16,
+        "observed_event_pct": 7.37,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2021,
+        "n": 226,
+        "events365": 28,
+        "observed_event_pct": 12.39,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2022,
+        "n": 180,
+        "events365": 23,
+        "observed_event_pct": 12.78,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2023,
+        "n": 205,
+        "events365": 17,
+        "observed_event_pct": 8.29,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2024,
+        "n": 192,
+        "events365": 16,
+        "observed_event_pct": 8.33,
+        "small_n": false
+      },
+      {
+        "service": "축산판매업",
+        "open_year": 2025,
+        "n": 186,
+        "events365": 13,
+        "observed_event_pct": 6.99,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2010,
+        "n": 802,
+        "events365": 120,
+        "observed_event_pct": 14.96,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2011,
+        "n": 953,
+        "events365": 166,
+        "observed_event_pct": 17.42,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2012,
+        "n": 772,
+        "events365": 131,
+        "observed_event_pct": 16.97,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2013,
+        "n": 739,
+        "events365": 127,
+        "observed_event_pct": 17.19,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2014,
+        "n": 1077,
+        "events365": 140,
+        "observed_event_pct": 13.0,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2015,
+        "n": 1173,
+        "events365": 182,
+        "observed_event_pct": 15.52,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2016,
+        "n": 1515,
+        "events365": 271,
+        "observed_event_pct": 17.89,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2017,
+        "n": 1648,
+        "events365": 294,
+        "observed_event_pct": 17.84,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2018,
+        "n": 1462,
+        "events365": 223,
+        "observed_event_pct": 15.25,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2019,
+        "n": 1948,
+        "events365": 238,
+        "observed_event_pct": 12.22,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2020,
+        "n": 1643,
+        "events365": 209,
+        "observed_event_pct": 12.72,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2021,
+        "n": 1845,
+        "events365": 231,
+        "observed_event_pct": 12.52,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2022,
+        "n": 1777,
+        "events365": 308,
+        "observed_event_pct": 17.33,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2023,
+        "n": 1636,
+        "events365": 392,
+        "observed_event_pct": 23.96,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2024,
+        "n": 1558,
+        "events365": 501,
+        "observed_event_pct": 32.16,
+        "small_n": false
+      },
+      {
+        "service": "휴게음식점",
+        "open_year": 2025,
+        "n": 1176,
+        "events365": 533,
+        "observed_event_pct": 45.32,
+        "small_n": false
+      }
+    ]
+  },
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "pyarrow": "24.0.0"
+  },
+  "hashes": {
+    "service\\data\\processed\\meta.json": "d880967c08ca7661cc8e74bfba018ed29fd40fa26690e19e33211dd4b12fd5e5",
+    "service\\data\\processed\\stores.parquet": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "service\\data\\processed\\survival.parquet": "f75364c8dfbd498bbb5cdd8b52dd84c1e72e0e0c38ff7d4e86461395e2e1ac39",
+    "service\\core\\survival.py": "4ff268d2d686592ed09525dc8fc860a067256510f1cd39ce6a02007145fcda19",
+    "service\\pipeline\\build.py": "5ca54bd807bb1a12232d0fea24976df3aafbd4f720aad129c2519fa74bd2d271",
+    "service\\config.py": "1eb162da6852f5d027e286b13d07d6a04e46035f35dfa439aff5bc6114dd3951"
+  }
+}

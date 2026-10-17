@@ -1,0 +1,70 @@
+{
+  "reference_date": "2026-10-13",
+  "service": "일반음식점",
+  "target": "closed and cd-ld <=365 days; full opportunity >=365 days",
+  "splits": [
+    {
+      "split": "train",
+      "n": 22960,
+      "min_open": "2010-01-04",
+      "max_open": "2018-12-31",
+      "missing_gu": 0,
+      "missing_category": 0,
+      "uid_overlap_train_rows": null,
+      "building_overlap_train_rows": null,
+      "events365": 1997
+    },
+    {
+      "split": "validation",
+      "n": 5681,
+      "min_open": "2020-01-02",
+      "max_open": "2021-12-31",
+      "missing_gu": 0,
+      "missing_category": 0,
+      "uid_overlap_train_rows": 2293,
+      "building_overlap_train_rows": 2717,
+      "events365": 445
+    },
+    {
+      "split": "test",
+      "n": 5837,
+      "min_open": "2023-01-02",
+      "max_open": "2024-12-31",
+      "missing_gu": 0,
+      "missing_category": 0,
+      "uid_overlap_train_rows": 2318,
+      "building_overlap_train_rows": 2648
+    }
+  ],
+  "unused_years": [
+    2019,
+    2022,
+    2025
+  ],
+  "test_new_building_rows": 2715,
+  "features": [
+    "category",
+    "gu",
+    "open_month"
+  ],
+  "forbidden": [
+    "uid",
+    "building_key",
+    "name",
+    "cd",
+    "closed",
+    "dur_days",
+    "end",
+    "current status",
+    "units summaries",
+    "current auxiliary data"
+  ],
+  "models_planned": [
+    "training prevalence",
+    "logistic regression with one-hot categories"
+  ],
+  "test_policy": "freeze now; prior baseline already contains annual test outcomes, not a fully blind holdout; no model tuning on test",
+  "hashes": {
+    "service/data/processed/stores.parquet": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62"
+  }
+}
