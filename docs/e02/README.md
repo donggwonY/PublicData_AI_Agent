@@ -74,6 +74,7 @@ Supabase 프로젝트 (Bigdata_platform, 기존 Pro, 시드니) — 원본 DB �
 - 모든 `app` 표에 RLS가 켜져 있고, 읽기 정책은 `app_reader`용 15개뿐이다.
 - 적재 스크립트가 표를 새로 만들 때마다 `app_reader` 권한·정책을 다시 적용한다.
 - 비밀번호는 `.env`와 Streamlit Secrets에만 있다. 문서·로그·커밋에 남기지 않는다.
+- 세 학생의 새 작업 대상은 모두 프로젝트 `uoiamnbkzlvlskngataq`다. 각 PC의 접속 설정·역할·분석 결과 저장·운영 반영 경계는 [공유 DB 작업 기준](../TEAM_WORKFLOW.md#공유-db-작업-기준-2026-10-17)을 따른다. `.env.example`은 빈 항목만 제공하므로 관리자에게 받은 접속 정보를 각자 로컬에 설정해야 한다. 과거 다른 프로젝트의 연결을 재사용하지 않는다.
 
 ### 2-4. 앱이 데이터를 읽는 방식
 
@@ -99,10 +100,11 @@ Supabase 프로젝트 (Bigdata_platform, 기존 Pro, 시드니) — 원본 DB �
 python -m pipeline.build                                   # data/raw → data/processed
 python -m unittest tests.test_core_units; python -m tests.smoke_test
 # 테스트 통과 후 main 에 올린다 (/commit-push)
-python -m pipeline.load_supabase --processed data/processed --env-file ../.env --fresh --start-version <다음 번호> --activate
+python -m pipeline.load_supabase --processed data/processed --env-file ../.env --activate
 ```
 
-- `--fresh`: 적재 전에 `app` 스키마를 비운다(한 버전 유지). 행만 지우면 디스크가 줄지 않아 스키마째 다시 만든다.
+- 실행 전에 새 프로젝트·쓰기 권한·현재 버전·백업·용량을 확인한다. 기본 용량 상한은 450MB이며, 기존 버전과 새 적재분의 합계가 넘으면 보존·교체 방식을 먼저 정한다. 이전 무료 한도 때문에 전체 교체를 자동 선택하지 않는다.
+- `--fresh --start-version <다음 번호>`: 운영 데이터 전체 교체가 요청됐을 때만 추가한다. 적재 전에 `app` 스키마를 비우므로 실패 시 이전 정상 데이터가 사라질 수 있다. 백업과 되돌리기 경로를 먼저 확보한다. 이전 무료 플랜에서는 한 버전 유지에 사용했다.
 - `--activate`: 표별 행 수 검증을 통과하면 `current_version`을 새 버전으로 바꾼다. 빼면 `validated`로만 남는다.
 - `--max-db-mb`(기본 450): 표를 넣을 때마다 DB 크기를 확인해 넘으면 중단한다.
 - `--activate-version N`: 적재 없이 이미 검증된 버전을 현재 버전으로 지정한다.
