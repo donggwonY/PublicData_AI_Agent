@@ -62,7 +62,7 @@ AI 답변이 함수 결과에 없는 수치를 만들어내면 실패로 판단�
 - **하위 폴더로 둔 이유**: 루트의 `config/`·`tests/`·`scripts/`와 이름이 겹치지 않고, 파일 내용이 그대로라 D-01·D-02의 입력 해시 검증이 유지됩니다.
 - **브랜치**: 멘티는 `main`에 직접 푸시합니다. 공개 앱은 `deploy` 브랜치에서 배포해 문서·실험 푸시가 서비스에 영향을 주지 않게 합니다. `deploy` 갱신은 염동권이 검증 후 수행합니다([작업 흐름](TEAM_WORKFLOW.md)).
 - **공식 공개 앱**: [pubdai.streamlit.app](https://pubdai.streamlit.app) — Streamlit Community Cloud, `donggwonY/PublicData_AI_Agent` · `deploy` · `service/app.py` · Python 3.12. 2026-10-11에 생성·확인했고 2026-10-12에 공식 주소로 정했습니다([E-01 기록](e01/README.md) 부록 B-3).
-- **데이터 저장소 (2026-10-16)**: 공개 앱은 염동권 소유 Supabase 프로젝트(무료 플랜)의 `app` 스키마에서 데이터를 읽습니다. 앱은 시작할 때 `app.current_version`이 가리키는 한 버전을 읽고, DB에 실패하면 저장소의 parquet로 대체합니다(`service/core/datasource.py`). 앱 접속에는 `app` 스키마 읽기만 가능한 `app_reader` 계정을 쓰고, 그 접속 정보는 Streamlit Cloud Secrets에만 둡니다. 적재는 로컬에서 관리자 계정으로 `service/pipeline/load_supabase.py`를 실행하며, DB에는 한 버전만 유지합니다. 무료 플랜 제약(500MB, egress 월 5GB, 1주 비활성 일시정지)과 측정값은 [E-02 기록](e02/README.md) 5절에 있습니다.
+- **데이터 저장소 (2026-10-17)**: 공개 앱은 Bigdata_platform 조직의 기존 Supabase Pro 프로젝트(시드니, `uoiamnbkzlvlskngataq`)의 `app` 스키마를 읽는다. 앱은 `app.current_version`의 버전 3을 로드하고 DB 실패 시 parquet로 대체한다. Streamlit Secrets의 `APP_DATABASE_URL`은 대상의 읽기 전용 `app_reader` 연결로 전환했다. 15개 표 463,451행의 전체 지문과 구조 일치, 앱 재시작 후 대상 DB의 13개 COPY 조회·`db v3`·인허가 225,858건·대시보드 정상 표시를 확인했다. 기존 무료 서울 DB는 보존했고, 새 프로젝트나 구독은 추가하지 않았다. 이전 무료 제약·전송량 분석과 전환 증거는 [E-02 기록](e02/README.md)에 있다.
 - **이전 앱**: daegulifecycleagent.streamlit.app은 원래 저장소 `main`에 연결된 채 남겨 둡니다. 이전 시점(1932844)의 스냅샷이며 이후 변경은 반영되지 않습니다. 발표·공유에는 공식 주소를 씁니다.
 
 ## 결정 보류
