@@ -1,0 +1,90 @@
+{
+  "checked_at_utc": "2026-10-21T13:59:01.529695+00:00",
+  "project": "uoiamnbkzlvlskngataq",
+  "schema": "app",
+  "db_role": "postgres",
+  "transaction_read_only": true,
+  "version": 3,
+  "status": "current",
+  "reference_date": "2026-10-13",
+  "comparisons": [
+    {
+      "table": "poi",
+      "db_rows": 118357,
+      "local_rows": 118357,
+      "exact_values_order_dtypes_equal": true,
+      "download_bytes": 20798386,
+      "local_sha256": "779b3214613977fe6846769c330438c018371e64167be5b02adb2e0c2b58663d"
+    },
+    {
+      "table": "station_traffic",
+      "db_rows": 94,
+      "local_rows": 94,
+      "exact_values_order_dtypes_equal": true,
+      "download_bytes": 7043,
+      "local_sha256": "a36e9a3707da0b074da644eaa202e3bccacc1dff92f6ed855e7ae103019a3f17"
+    },
+    {
+      "table": "area_context",
+      "db_rows": 150,
+      "local_rows": 150,
+      "exact_values_order_dtypes_equal": true,
+      "download_bytes": 76887,
+      "local_sha256": "c18f7dfa2ce6e1e9696290eb3bbe91ddb86c54c0541da43c16edf87f613367ac"
+    }
+  ],
+  "stores_count_only": 225858,
+  "dongdaegu": [
+    {
+      "radius": 300,
+      "all_rows": 732,
+      "all_deduplicated": 724,
+      "cafe_rows": 42,
+      "cafe_deduplicated": 41,
+      "exits": [
+        {
+          "exit": "1",
+          "rows": 3,
+          "deduplicated": 3
+        },
+        {
+          "exit": "2",
+          "rows": 21,
+          "deduplicated": 20
+        },
+        {
+          "exit": "3",
+          "rows": 18,
+          "deduplicated": 18
+        }
+      ]
+    },
+    {
+      "radius": 500,
+      "all_rows": 1294,
+      "all_deduplicated": 1272,
+      "cafe_rows": 72,
+      "cafe_deduplicated": 70,
+      "exits": [
+        {
+          "exit": "1",
+          "rows": 11,
+          "deduplicated": 10
+        },
+        {
+          "exit": "2",
+          "rows": 38,
+          "deduplicated": 37
+        },
+        {
+          "exit": "3",
+          "rows": 23,
+          "deduplicated": 23
+        }
+      ]
+    }
+  ],
+  "prior_counts_equal": true,
+  "location_sha256": "7bf5643a34eaeaf80fe68a8d711d69189c1083296b11d3c9c1ab30c488505714",
+  "database_written": false
+}

@@ -1,0 +1,94 @@
+{
+  "checked_date": "2026-10-21",
+  "scope": "local snapshots only; no database connection configured",
+  "reference_dates": [
+    "2026-09-23",
+    "2026-10-13"
+  ],
+  "inputs": [
+    {
+      "table": "poi",
+      "old_rows": 118357,
+      "new_rows": 118357,
+      "old_hash": "779b3214613977fe6846769c330438c018371e64167be5b02adb2e0c2b58663d",
+      "new_hash": "779b3214613977fe6846769c330438c018371e64167be5b02adb2e0c2b58663d",
+      "identical": true
+    },
+    {
+      "table": "station_traffic",
+      "old_rows": 94,
+      "new_rows": 94,
+      "old_hash": "a36e9a3707da0b074da644eaa202e3bccacc1dff92f6ed855e7ae103019a3f17",
+      "new_hash": "a36e9a3707da0b074da644eaa202e3bccacc1dff92f6ed855e7ae103019a3f17",
+      "identical": true
+    },
+    {
+      "table": "area_context",
+      "old_rows": 150,
+      "new_rows": 150,
+      "old_hash": "c18f7dfa2ce6e1e9696290eb3bbe91ddb86c54c0541da43c16edf87f613367ac",
+      "new_hash": "c18f7dfa2ce6e1e9696290eb3bbe91ddb86c54c0541da43c16edf87f613367ac",
+      "identical": true
+    },
+    {
+      "table": "stores",
+      "old_rows": 197356,
+      "new_rows": 225858,
+      "old_hash": "ff294387ab1f70485302b93affde368ace12e39fe78716431f7c3fe0876ac3ee",
+      "new_hash": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+      "identical": false
+    }
+  ],
+  "dongdaegu": [
+    {
+      "radius": 300,
+      "all_rows": 732,
+      "all_deduplicated": 724,
+      "cafe_rows": 42,
+      "cafe_deduplicated": 41,
+      "exits": [
+        {
+          "exit": "1",
+          "rows": 3,
+          "deduplicated": 3
+        },
+        {
+          "exit": "2",
+          "rows": 21,
+          "deduplicated": 20
+        },
+        {
+          "exit": "3",
+          "rows": 18,
+          "deduplicated": 18
+        }
+      ]
+    },
+    {
+      "radius": 500,
+      "all_rows": 1294,
+      "all_deduplicated": 1272,
+      "cafe_rows": 72,
+      "cafe_deduplicated": 70,
+      "exits": [
+        {
+          "exit": "1",
+          "rows": 11,
+          "deduplicated": 10
+        },
+        {
+          "exit": "2",
+          "rows": 38,
+          "deduplicated": 37
+        },
+        {
+          "exit": "3",
+          "rows": 23,
+          "deduplicated": 23
+        }
+      ]
+    }
+  ],
+  "location_hash": "7bf5643a34eaeaf80fe68a8d711d69189c1083296b11d3c9c1ab30c488505714",
+  "candidate_comparison_stale_for_current": true
+}

@@ -1,0 +1,815 @@
+{
+  "analysis_date": "2026-10-13",
+  "scope": "local processed Daegu snapshots, not live Supabase",
+  "reference_date": "2026-09-23",
+  "poi_configured_vintage": "202606",
+  "input_sha256": {
+    "stores.parquet": "ff294387ab1f70485302b93affde368ace12e39fe78716431f7c3fe0876ac3ee",
+    "poi.parquet": "779b3214613977fe6846769c330438c018371e64167be5b02adb2e0c2b58663d",
+    "meta.json": "24ffcc382435436c3e0e6073267b1670d3674c1381f8b0f0755fdf26ed2bd83c"
+  },
+  "total_license": {
+    "rows": 197356,
+    "coord_missing": 9877,
+    "coord_missing_pct": 5.0,
+    "coord_outside_pipeline_bbox": 0
+  },
+  "total_poi": {
+    "rows": 118357,
+    "coord_missing": 0,
+    "coord_missing_pct": 0.0,
+    "coord_outside_pipeline_bbox": 0
+  },
+  "candidates": [
+    {
+      "candidate": "카페(좁은 정의)",
+      "license_definition": {
+        "service": [
+          "일반음식점",
+          "휴게음식점"
+        ],
+        "category": [
+          "커피숍",
+          "까페"
+        ]
+      },
+      "poi_definition": {
+        "cat_s": [
+          "카페"
+        ]
+      },
+      "mapping_note": "부분 대응: 다방·전통찻집·키즈/라이브카페 제외. 기존 서비스 카페 별칭보다 좁음.",
+      "license_all": {
+        "rows": 11136,
+        "coord_missing": 185,
+        "coord_missing_pct": 1.66,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 3841,
+        "coord_missing": 78,
+        "coord_missing_pct": 2.03,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 7295,
+      "license_opened_2010plus": 9868,
+      "poi": {
+        "rows": 5513,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 5463,
+      "actual_license_categories": [
+        {
+          "service": "일반음식점",
+          "category": "까페",
+          "rows": 1026
+        },
+        {
+          "service": "휴게음식점",
+          "category": "커피숍",
+          "rows": 10110
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "비알코올 ",
+          "cat_s": "카페",
+          "rows": 5513
+        }
+      ]
+    },
+    {
+      "candidate": "베이커리",
+      "license_definition": {
+        "service": [
+          "제과점영업"
+        ],
+        "category": "ALL"
+      },
+      "poi_definition": {
+        "cat_s": [
+          "빵/도넛"
+        ]
+      },
+      "mapping_note": "부분 대응: 인허가는 푸드트럭 포함; 상가 빵 판매점과 제과점 허가 범위가 다를 수 있음.",
+      "license_all": {
+        "rows": 4001,
+        "coord_missing": 90,
+        "coord_missing_pct": 2.25,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 1001,
+        "coord_missing": 15,
+        "coord_missing_pct": 1.5,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 3000,
+      "license_opened_2010plus": 2646,
+      "poi": {
+        "rows": 1509,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 1500,
+      "actual_license_categories": [
+        {
+          "service": "제과점영업",
+          "category": "제과점영업",
+          "rows": 3999
+        },
+        {
+          "service": "제과점영업",
+          "category": "푸드트럭",
+          "rows": 2
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "기타 간이",
+          "cat_s": "빵/도넛",
+          "rows": 1509
+        }
+      ]
+    },
+    {
+      "candidate": "분식·김밥",
+      "license_definition": {
+        "service": [
+          "일반음식점",
+          "휴게음식점"
+        ],
+        "category": [
+          "분식",
+          "김밥(도시락)"
+        ]
+      },
+      "poi_definition": {
+        "cat_s": [
+          "김밥/만두/분식"
+        ]
+      },
+      "mapping_note": "부분 대응: 도시락·만두 포함 범위 및 일반조리판매 누락 여부 합의 필요.",
+      "license_all": {
+        "rows": 5163,
+        "coord_missing": 198,
+        "coord_missing_pct": 3.83,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 1284,
+        "coord_missing": 11,
+        "coord_missing_pct": 0.86,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 3879,
+      "license_opened_2010plus": 2444,
+      "poi": {
+        "rows": 2123,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 2112,
+      "actual_license_categories": [
+        {
+          "service": "일반음식점",
+          "category": "김밥(도시락)",
+          "rows": 670
+        },
+        {
+          "service": "일반음식점",
+          "category": "분식",
+          "rows": 4491
+        },
+        {
+          "service": "휴게음식점",
+          "category": "분식",
+          "rows": 2
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "기타 간이",
+          "cat_s": "김밥/만두/분식",
+          "rows": 2123
+        }
+      ]
+    },
+    {
+      "candidate": "치킨(좁은 정의)",
+      "license_definition": {
+        "service": [
+          "일반음식점"
+        ],
+        "category": [
+          "통닭(치킨)"
+        ]
+      },
+      "poi_definition": {
+        "cat_s": [
+          "치킨"
+        ]
+      },
+      "mapping_note": "부분 대응: 호프/통닭 제외. 포함하면 술집과 겹침; 기존 치킨 별칭과 다름.",
+      "license_all": {
+        "rows": 3630,
+        "coord_missing": 139,
+        "coord_missing_pct": 3.83,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 712,
+        "coord_missing": 5,
+        "coord_missing_pct": 0.7,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 2918,
+      "license_opened_2010plus": 976,
+      "poi": {
+        "rows": 1903,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 1884,
+      "actual_license_categories": [
+        {
+          "service": "일반음식점",
+          "category": "통닭(치킨)",
+          "rows": 3630
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "기타 간이",
+          "cat_s": "치킨",
+          "rows": 1903
+        }
+      ]
+    },
+    {
+      "candidate": "중식",
+      "license_definition": {
+        "service": [
+          "일반음식점"
+        ],
+        "category": [
+          "중국식"
+        ]
+      },
+      "poi_definition": {
+        "cat_m": [
+          "중식"
+        ]
+      },
+      "mapping_note": "분류상 대응 후보: 중국집·마라탕/훠궈 포함. 개별 점포 매칭은 미검증.",
+      "license_all": {
+        "rows": 3487,
+        "coord_missing": 168,
+        "coord_missing_pct": 4.82,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 1075,
+        "coord_missing": 12,
+        "coord_missing_pct": 1.12,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 2412,
+      "license_opened_2010plus": 1045,
+      "poi": {
+        "rows": 1349,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 1341,
+      "actual_license_categories": [
+        {
+          "service": "일반음식점",
+          "category": "중국식",
+          "rows": 3487
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "중식",
+          "cat_s": "마라탕/훠궈",
+          "rows": 155
+        },
+        {
+          "cat_m": "중식",
+          "cat_s": "중국집",
+          "rows": 1194
+        }
+      ]
+    },
+    {
+      "candidate": "한식(넓은 정의)",
+      "license_definition": {
+        "service": [
+          "일반음식점"
+        ],
+        "category": [
+          "한식",
+          "식육(숯불구이)",
+          "냉면집",
+          "탕류(보신용)",
+          "복어취급",
+          "횟집"
+        ]
+      },
+      "poi_definition": {
+        "cat_m": [
+          "한식"
+        ]
+      },
+      "mapping_note": "부분 대응: 한식 중분류의 고기·횟집 등을 반영한 제안. 인허가 한식만과 비교하면 범위 불일치.",
+      "license_all": {
+        "rows": 53851,
+        "coord_missing": 2529,
+        "coord_missing_pct": 4.7,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 15714,
+        "coord_missing": 159,
+        "coord_missing_pct": 1.01,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 38137,
+      "license_opened_2010plus": 20526,
+      "poi": {
+        "rows": 16201,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 16121,
+      "actual_license_categories": [
+        {
+          "service": "일반음식점",
+          "category": "냉면집",
+          "rows": 77
+        },
+        {
+          "service": "일반음식점",
+          "category": "복어취급",
+          "rows": 166
+        },
+        {
+          "service": "일반음식점",
+          "category": "식육(숯불구이)",
+          "rows": 6213
+        },
+        {
+          "service": "일반음식점",
+          "category": "탕류(보신용)",
+          "rows": 483
+        },
+        {
+          "service": "일반음식점",
+          "category": "한식",
+          "rows": 45247
+        },
+        {
+          "service": "일반음식점",
+          "category": "횟집",
+          "rows": 1665
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "한식",
+          "cat_s": "곱창 전골/구이",
+          "rows": 496
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "국/탕/찌개류",
+          "rows": 1094
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "국수/칼국수",
+          "rows": 1095
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "기타 한식 음식점",
+          "rows": 88
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "냉면/밀면",
+          "rows": 148
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "닭/오리고기 구이/찜",
+          "rows": 447
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "돼지고기 구이/찜",
+          "rows": 2696
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "백반/한정식",
+          "rows": 8152
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "복 요리 전문",
+          "rows": 63
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "소고기 구이/찜",
+          "rows": 271
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "전/부침개",
+          "rows": 21
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "족발/보쌈",
+          "rows": 334
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "해산물 구이/찜",
+          "rows": 510
+        },
+        {
+          "cat_m": "한식",
+          "cat_s": "횟집",
+          "rows": 786
+        }
+      ]
+    },
+    {
+      "candidate": "미용실(헤어)",
+      "license_definition": {
+        "service": [
+          "미용업"
+        ],
+        "category": [
+          "일반미용업"
+        ]
+      },
+      "poi_definition": {
+        "cat_s": [
+          "미용실"
+        ]
+      },
+      "mapping_note": "분류상 대응 후보: 피부·네일·메이크업·기타 제외. 기존 미용업 키워드는 더 넓음.",
+      "license_all": {
+        "rows": 17207,
+        "coord_missing": 564,
+        "coord_missing_pct": 3.28,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 7051,
+        "coord_missing": 108,
+        "coord_missing_pct": 1.53,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 10156,
+      "license_opened_2010plus": 7693,
+      "poi": {
+        "rows": 6435,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 6410,
+      "actual_license_categories": [
+        {
+          "service": "미용업",
+          "category": "일반미용업",
+          "rows": 17207
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "이용·미용",
+          "cat_s": "미용실",
+          "rows": 6435
+        }
+      ]
+    },
+    {
+      "candidate": "네일숍",
+      "license_definition": {
+        "service": [
+          "미용업"
+        ],
+        "category": [
+          "네일아트업"
+        ]
+      },
+      "poi_definition": {
+        "cat_s": [
+          "네일숍"
+        ]
+      },
+      "mapping_note": "분류상 대응 후보: 종합 미용실의 네일 겸업은 별도 확인 필요.",
+      "license_all": {
+        "rows": 2638,
+        "coord_missing": 36,
+        "coord_missing_pct": 1.36,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 1342,
+        "coord_missing": 27,
+        "coord_missing_pct": 2.01,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 1296,
+      "license_opened_2010plus": 2622,
+      "poi": {
+        "rows": 1383,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 1379,
+      "actual_license_categories": [
+        {
+          "service": "미용업",
+          "category": "네일아트업",
+          "rows": 2638
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "이용·미용",
+          "cat_s": "네일숍",
+          "rows": 1383
+        }
+      ]
+    },
+    {
+      "candidate": "피부관리",
+      "license_definition": {
+        "service": [
+          "미용업"
+        ],
+        "category": [
+          "피부미용업"
+        ]
+      },
+      "poi_definition": {
+        "cat_s": [
+          "피부 관리실"
+        ]
+      },
+      "mapping_note": "분류상 대응 후보: 마사지·체형관리 제외; 겸업은 별도 확인 필요.",
+      "license_all": {
+        "rows": 3725,
+        "coord_missing": 61,
+        "coord_missing_pct": 1.64,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 1654,
+        "coord_missing": 37,
+        "coord_missing_pct": 2.24,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 2071,
+      "license_opened_2010plus": 3488,
+      "poi": {
+        "rows": 1853,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 1853,
+      "actual_license_categories": [
+        {
+          "service": "미용업",
+          "category": "피부미용업",
+          "rows": 3725
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "이용·미용",
+          "cat_s": "피부 관리실",
+          "rows": 1853
+        }
+      ]
+    },
+    {
+      "candidate": "세탁",
+      "license_definition": {
+        "service": [
+          "세탁업"
+        ],
+        "category": "ALL"
+      },
+      "poi_definition": {
+        "cat_s": [
+          "세탁소",
+          "셀프 빨래방"
+        ]
+      },
+      "mapping_note": "부분 대응: 무인 셀프 빨래방의 허가 포괄 여부 불확실. 일반세탁/빨래방 분리 논의 필요.",
+      "license_all": {
+        "rows": 3584,
+        "coord_missing": 207,
+        "coord_missing_pct": 5.78,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 955,
+        "coord_missing": 5,
+        "coord_missing_pct": 0.52,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 2629,
+      "license_opened_2010plus": 485,
+      "poi": {
+        "rows": 950,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 946,
+      "actual_license_categories": [
+        {
+          "service": "세탁업",
+          "category": "빨래방업",
+          "rows": 17
+        },
+        {
+          "service": "세탁업",
+          "category": "세탁업 기타",
+          "rows": 28
+        },
+        {
+          "service": "세탁업",
+          "category": "운동화전문세탁업",
+          "rows": 90
+        },
+        {
+          "service": "세탁업",
+          "category": "일반세탁업",
+          "rows": 3449
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "세탁",
+          "cat_s": "세탁소",
+          "rows": 755
+        },
+        {
+          "cat_m": "세탁",
+          "cat_s": "셀프 빨래방",
+          "rows": 195
+        }
+      ]
+    },
+    {
+      "candidate": "노래방",
+      "license_definition": {
+        "service": [
+          "노래연습장업"
+        ],
+        "category": "ALL"
+      },
+      "poi_definition": {
+        "cat_s": [
+          "노래방"
+        ]
+      },
+      "mapping_note": "분류상 대응 후보: 유흥주점 제외. 기존 서비스 키워드의 유흥주점 포함은 검토 필요.",
+      "license_all": {
+        "rows": 3051,
+        "coord_missing": 73,
+        "coord_missing_pct": 2.39,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 1378,
+        "coord_missing": 1,
+        "coord_missing_pct": 0.07,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 1673,
+      "license_opened_2010plus": 366,
+      "poi": {
+        "rows": 1341,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 1318,
+      "actual_license_categories": [
+        {
+          "service": "노래연습장업",
+          "category": "노래연습장업",
+          "rows": 3051
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "유원지·오락",
+          "cat_s": "노래방",
+          "rows": 1341
+        }
+      ]
+    },
+    {
+      "candidate": "담배 소매",
+      "license_definition": {
+        "service": [
+          "담배소매업"
+        ],
+        "category": "ALL"
+      },
+      "poi_definition": {
+        "cat_s": [
+          "담배/전자담배 소매업"
+        ]
+      },
+      "mapping_note": "직접 대응 부적합: 담배 판매 허가는 편의점·슈퍼에도 있으나 상가 분류는 전문 소매업임.",
+      "license_all": {
+        "rows": 33746,
+        "coord_missing": 4083,
+        "coord_missing_pct": 12.1,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_not_closed": {
+        "rows": 6427,
+        "coord_missing": 260,
+        "coord_missing_pct": 4.05,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "license_closed": 27319,
+      "license_opened_2010plus": 13041,
+      "poi": {
+        "rows": 165,
+        "coord_missing": 0,
+        "coord_missing_pct": 0.0,
+        "coord_outside_pipeline_bbox": 0
+      },
+      "poi_exact_deduplicated": 164,
+      "actual_license_categories": [
+        {
+          "service": "담배소매업",
+          "category": "담배소매업",
+          "rows": 33746
+        }
+      ],
+      "actual_poi_categories": [
+        {
+          "cat_m": "담배 소매",
+          "cat_s": "담배/전자담배 소매업",
+          "rows": 165
+        }
+      ]
+    }
+  ],
+  "sensitivities": {
+    "카페_서비스별칭": {
+      "all": 14446,
+      "not_closed": 4320,
+      "categories": [
+        "커피숍",
+        "까페",
+        "다방",
+        "전통찻집",
+        "라이브카페",
+        "키즈카페"
+      ]
+    },
+    "치킨_호프통닭포함": {
+      "all": 10267,
+      "not_closed": 2715,
+      "categories": [
+        "통닭(치킨)",
+        "호프/통닭"
+      ]
+    },
+    "한식_인허가한식만": {
+      "all": 45247,
+      "not_closed": 12197,
+      "categories": [
+        "한식"
+      ]
+    }
+  }
+}
