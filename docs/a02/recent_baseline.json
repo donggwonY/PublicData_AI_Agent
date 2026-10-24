@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-24",
+  "window_years_fixed": 3,
+  "input_hash": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+  "validation_reused": true,
+  "final_test_used": false,
+  "db_written": false,
+  "windows": [
+    {
+      "validation_period": "2015-2016",
+      "recent_train_period": "2011-2013",
+      "recent_train_n": 1348,
+      "recent_train_events": 167,
+      "full_mean": {
+        "n": 1352,
+        "events": 201,
+        "observed_rate": 0.14866863905325445,
+        "mean_prediction": 0.12056737588652483,
+        "auc": 0.5,
+        "brier": 0.1273559558068734,
+        "log_loss": 0.4238930529767651
+      },
+      "recent_mean": {
+        "n": 1352,
+        "events": 201,
+        "observed_rate": 0.14866863905325445,
+        "mean_prediction": 0.12388724035608309,
+        "auc": 0.5,
+        "brier": 0.12718039253669575,
+        "log_loss": 0.4230746200677171
+      },
+      "logistic": {
+        "n": 1352,
+        "events": 201,
+        "observed_rate": 0.14866863905325445,
+        "mean_prediction": 0.1276082641472964,
+        "auc": 0.511631676543434,
+        "brier": 0.12828809812773087,
+        "log_loss": 0.42906366532787815
+      },
+      "new_buildings": {
+        "recent_mean": {
+          "n": 1136,
+          "events": 147,
+          "observed_rate": 0.12940140845070422,
+          "mean_prediction": 0.12388724035608309,
+          "auc": 0.5,
+          "brier": 0.11268708999145398,
+          "log_loss": 0.38538554706692285
+        },
+        "baseline": {
+          "n": 1136,
+          "events": 147,
+          "observed_rate": 0.12940140845070422,
+          "mean_prediction": 0.12056737588652482,
+          "auc": 0.5,
+          "brier": 0.11273472407302325,
+          "log_loss": 0.38560775132918473
+        },
+        "logistic": {
+          "n": 1136,
+          "events": 147,
+          "observed_rate": 0.12940140845070422,
+          "mean_prediction": 0.12818645295745132,
+          "auc": 0.5266778096476205,
+          "brier": 0.11360734508055219,
+          "log_loss": 0.39050675211525443
+        }
+      }
+    },
+    {
+      "validation_period": "2017-2018",
+      "recent_train_period": "2013-2015",
+      "recent_train_n": 1807,
+      "recent_train_events": 205,
+      "full_mean": {
+        "n": 1348,
+        "events": 231,
+        "observed_rate": 0.17136498516320475,
+        "mean_prediction": 0.11838211114764882,
+        "auc": 0.5,
+        "brier": 0.1448062119621676,
+        "log_loss": 0.4700702109158272
+      },
+      "recent_mean": {
+        "n": 1348,
+        "events": 231,
+        "observed_rate": 0.17136498516320475,
+        "mean_prediction": 0.11344770337576096,
+        "auc": 0.5,
+        "brier": 0.14535343855286553,
+        "log_loss": 0.47274125517547144
+      },
+      "logistic": {
+        "n": 1348,
+        "events": 231,
+        "observed_rate": 0.17136498516320475,
+        "mean_prediction": 0.12187707675730491,
+        "auc": 0.5063675506826805,
+        "brier": 0.14523116970445896,
+        "log_loss": 0.4727281815182658
+      },
+      "new_buildings": {
+        "recent_mean": {
+          "n": 1093,
+          "events": 139,
+          "observed_rate": 0.12717291857273558,
+          "mean_prediction": 0.11344770337576093,
+          "auc": 0.5,
+          "brier": 0.1111883488866312,
+          "log_loss": 0.3818824480875247
+        },
+        "baseline": {
+          "n": 1093,
+          "events": 139,
+          "observed_rate": 0.12717291857273558,
+          "mean_prediction": 0.11838211114764881,
+          "auc": 0.5,
+          "brier": 0.11107724564961291,
+          "log_loss": 0.3813395630216677
+        },
+        "logistic": {
+          "n": 1093,
+          "events": 139,
+          "observed_rate": 0.12717291857273558,
+          "mean_prediction": 0.12198859088005892,
+          "auc": 0.5092982217999185,
+          "brier": 0.11172336486296452,
+          "log_loss": 0.3847602446083786
+        }
+      }
+    },
+    {
+      "validation_period": "2020-2021",
+      "recent_train_period": "2016-2018",
+      "recent_train_n": 2006,
+      "recent_train_events": 346,
+      "full_mean": {
+        "n": 1502,
+        "events": 132,
+        "observed_rate": 0.08788282290279627,
+        "mean_prediction": 0.13988508024569055,
+        "auc": 0.5,
+        "brier": 0.08286366711018861,
+        "log_loss": 0.31030598919675306
+      },
+      "recent_mean": {
+        "n": 1502,
+        "events": 132,
+        "observed_rate": 0.08788282290279627,
+        "mean_prediction": 0.17248255234297113,
+        "auc": 0.5,
+        "brier": 0.0873165465627828,
+        "log_loss": 0.3271371391224624
+      },
+      "logistic": {
+        "n": 1502,
+        "events": 132,
+        "observed_rate": 0.08788282290279627,
+        "mean_prediction": 0.14336959659358242,
+        "auc": 0.541301703163017,
+        "brier": 0.08374208049952346,
+        "log_loss": 0.31255045599644316
+      },
+      "new_buildings": {
+        "recent_mean": {
+          "n": 1165,
+          "events": 99,
+          "observed_rate": 0.08497854077253218,
+          "mean_prediction": 0.1724825523429711,
+          "auc": 0.5,
+          "brier": 0.08541414042162278,
+          "log_loss": 0.32258283525969844
+        },
+        "baseline": {
+          "n": 1165,
+          "events": 99,
+          "observed_rate": 0.08497854077253218,
+          "mean_prediction": 0.13988508024569057,
+          "auc": 0.5,
+          "brier": 0.08077191645762076,
+          "log_loss": 0.30503110194438454
+        },
+        "logistic": {
+          "n": 1165,
+          "events": 99,
+          "observed_rate": 0.08497854077253218,
+          "mean_prediction": 0.14312439258157764,
+          "auc": 0.5225898762484128,
+          "brier": 0.08196070181874311,
+          "log_loss": 0.30870822518212154
+        }
+      }
+    }
+  ]
+}
