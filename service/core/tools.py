@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 from datetime import date
 from functools import lru_cache
 
@@ -278,7 +279,11 @@ def normalize_address(query: str, limit: int = 10) -> dict:
         hay = u["addr"] + " " + u["jibun_addr"]
         m = pd.Series(True, index=u.index)
         for t in tokens:
-            m &= hay.str.contains(t, regex=False)  # regex=False: 괄호 같은 기호를 글자 그대로 취급
+            if re.fullmatch(r"\d+(?:-\d+)?", t):
+                # 건물번호 9는 91, 149, 9-1 또는 층수 9층과 다르다.
+                m &= hay.str.contains(r"(?<![\w-])" + re.escape(t) + r"(?![\w-])", regex=True)
+            else:
+                m &= hay.str.contains(t, regex=False)
         hits, method = u.index[m], "주소 토큰 포함 검색"
     if hits.empty and len(q) >= 2:
         uids = s.stores.loc[s.stores["name"].str.contains(q, regex=False), "uid"].unique()
@@ -301,10 +306,14 @@ def normalize_address(query: str, limit: int = 10) -> dict:
 
 def _pick_unit(address: str) -> tuple[pd.Series, dict]:
     """가장 그럴듯한 자리 하나 + 나머지 후보 목록. 후보는 결과에 함께 실어 사용자가 고를 수 있게 한다."""
-    res = normalize_address(address, limit=5)
+    res = normalize_address(address, limit=len(store().units))
     if not res["matched"]:
         raise ToolError(f"'{address}'에 해당하는 자리를 찾지 못했습니다. {res.get('hint', '')}")
-    uid = res["matches"][0]["unit_id"]
+    candidates = res["matches"]
+    buildings = {(A.parse_road(x["address"]) or {}).get("key") or store().units.loc[x["unit_id"], "building_key"] for x in candidates}
+    if len(buildings) > 1:
+        raise ToolError("주소 후보가 여러 개입니다. normalize_address로 구·건물번호·층을 확인한 뒤 전체 주소를 지정하세요.")
+    uid = candidates[0]["unit_id"]
     return store().units.loc[uid], res
 
 
@@ -798,6 +807,8 @@ def find_nearby(address: str, radius_m: int = C.NEARBY_RADIUS_M, category: str |
     """특정 자리 반경 안의 경쟁 점포·공실·주차장·전통시장 — '이 자리 주변'을 보는 Tool."""
     s = store()
     poi = _require(s.poi, "상가정보")
+    if "출구" in address or address.strip().endswith("역"):
+        raise ToolError("역·출구 반경 합집합 및 최근접 출구 배정은 미지원입니다. 특정 점포의 전체 주소를 지정하세요. 주소 중심 집계를 출구 집계로 대체할 수 없습니다.")
     u, _ = _pick_unit(address)
     if pd.isna(u["lat"]) or pd.isna(u["lon"]):
         raise ToolError(f"'{u['addr']}'는 좌표가 없어 반경 분석을 할 수 없습니다.")
@@ -817,8 +828,22 @@ def find_nearby(address: str, radius_m: int = C.NEARBY_RADIUS_M, category: str |
         keys |= set(C.POI_CATEGORY_KEYWORDS.get(category.strip(), []))
         m = pd.Series(False, index=near.index)
         for k in keys:
-            m |= near["cat_m"].str.contains(k, na=False) | near["cat_s"].str.contains(k, na=False)
-        same = {"query": cat_label, "count": int(m.sum()),
+            m |= near["cat_m"].str.contains(k, regex=False, na=False) | near["cat_s"].str.contains(k, regex=False, na=False)
+        if category.strip() == "카페":
+            m = near["cat_s"].eq("카페")
+        selected = near.loc[m, poi.columns]
+        dedup = selected.drop_duplicates()
+        center_road = A.parse_road(u["addr"])
+        center_key = center_road["key"] if center_road else None
+        address_keys = dedup["addr"].map(lambda a: (A.parse_road(a) or {}).get("key"))
+        same_address = int(address_keys.eq(center_key).sum()) if center_key else None
+        same = {"query": "카페" if category.strip() == "카페" else cat_label, "count": int(m.sum()),
+                "definition": "cat_s == 카페" if category.strip() == "카페" else "업종 검색어 부분 일치",
+                "count_unit": "상가 기록 수; 현재 영업 확인 아님",
+                "exact_deduplicated_count": len(dedup),
+                "same_address_deduplicated_count": same_address,
+                "excluding_same_address_deduplicated_count": len(dedup) - same_address if same_address is not None else None,
+                "same_address_definition": "도로명 건물번호 일치, 층 무시; 건물 내 경쟁도 제외됨",
                 "examples": near[m].nsmallest(min(limit, 5), "dist_m")[["name", "cat_s", "dist_m"]].to_dict("records")}
 
     units = s.units.dropna(subset=["lat", "lon"])
@@ -828,6 +853,7 @@ def find_nearby(address: str, radius_m: int = C.NEARBY_RADIUS_M, category: str |
     risky = near_u[near_u["is_single_unit"] & (near_u["closures_since_2010"] >= 3)].nsmallest(limit, "dist_m")
 
     out = {
+        "center_definition": "인허가 자리 좌표 중심; 역 출구 또는 상가 카페 좌표 중심과 다름",
         "center": {"address": u["addr"], "unit_id": u["uid"], "lat": lat, "lon": lon,
                    "status": "공실" if u["vacant"] else f"영업중: {u['current_stores']}"},
         "radius_m": radius,

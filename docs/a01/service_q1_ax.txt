@@ -1,0 +1,227 @@
+Browser tab: 2, Title: "대구 상권 생애주기 AI 에이전트 · Streamlit", URL: "https://pubdai.streamlit.app/".
+0 AXWebArea 대구 상권 생애주기 AI 에이전트 · Streamlit, URL: pubdai.streamlit.app/
+	1 container
+		2 container streamlitApp
+			3 AXWebArea 대구 상권 생애주기 AI 에이전트, URL: pubdai.streamlit.app/~/+/
+				4 container
+					5 container
+						6 container
+							7 button keyboard_double_arrow_left
+							8 heading 🏪 상권 생애주기 에이전트, Value: 1
+								9 text 🏪 상권 생애주기 에이전트
+							10 text 그 자리의 과거를 데이터로 확인합니다
+							11 text 누적 인허가 (골프연습장업+노래연습장업+담배소매업+당구장업+미용업+병원+세탁업+약국+의원+인터넷컴퓨터게임시설제공업+일반음식점+제과점+체력단련장업+체육도장업+축산판매업+휴게음식점)
+							12 text 225,858
+							13 text 1960년부터 2026년까지 문을 연 전체 기록 (현재 점포 수가 아님)
+							14 text 그동안 폐업
+							15 text 154,315
+							16 text 현재 영업 중
+							17 text 71,543
+							18 container
+								19 text 기준일 2026-10-13 · 배치 2026-10-16 14:46 :59  · 데이터 db v3
+							20 container
+								21 text AI 상담 사용 가능 (Google Gemini)
+							22 text 이 세션 남은 질문 20회
+							23 heading 예시 질문, Value: 3
+								24 text 예시 질문
+							25 button 수성구에서 카페 열려는데 어때?
+								26 text 수성구에서 카페 열려는데 어때?
+							27 button 그럼 뭐가 더 오래 가?
+								28 text 그럼 뭐가 더 오래 가?
+							29 button 수성구, 중구, 달서구 중 카페 하기엔 어디가 나아?
+								30 text 수성구, 중구, 달서구 중 카페 하기엔 어디가 나아?
+							31 button 중구 삼덕동1가 요즘 분위기는?
+								32 text 중구 삼덕동1가 요즘 분위기는?
+							33 button 그 동네에 최근 빈자리 있어?
+								34 text 그 동네에 최근 빈자리 있어?
+							35 button 대구 군위군 중앙길 90 이전엔 뭐였어?
+								36 text 대구 군위군 중앙길 90 이전엔 뭐였어?
+							37 button 🔄 대화 초기화
+								38 text 🔄 대화 초기화
+						39 container
+							40 button keyboard_double_arrow_right
+							43 button Fork
+							44 button
+							45 pop up button (collapsed) Description: Main menu, Secondary Actions: Expand
+						46 container
+							47 tab group react-aria843208201-:r4:
+								48 tab (selected, settable, boolean) 💬 AI 상담, ID: react-aria843208201-:r4:-tab-0, Value: 1
+💬 AI 상담
+								49 tab (selectable, settable, boolean) 📊 대구 상권 대시보드, ID: react-aria843208201-:r4:-tab-1, Value: 0
+📊 대구 상권 대시보드
+								50 tab (selectable, settable, boolean) 🔎 자리 이력 조회, ID: react-aria843208201-:r4:-tab-2, Value: 0
+🔎 자리 이력 조회
+							51 container Description: 💬 AI 상담, ID: react-aria843208201-:r4:-tabpanel-0
+								52 text 질문은 Google Gemini API로 전달되어 답변이 생성됩니다 (무료 등급 입력은 제공사의 서비스 개선에 쓰일 수 있음). 수치는 인허가 데이터 분석 도구의 반환값만 사용하며, 창업 판단의 참고 자료입니다.
+								53 container
+									54 text entry area (settable) 예) 수성구 범어동에서 치킨집 하면 어때?
+									55 button (disabled) Send message
+								56 text face
+								57 container Chat message from user
+									58 text 동대구역 출구 주변 300m에 카페가 얼마나 있어? 500m로 넓히면?
+								59 text smart_toy
+								60 container Chat message from assistant
+									61 container
+										62 text 🔧  find_nearby  호출
+									63 container
+										64 text 🔧  find_nearby  호출
+									65 container
+										66 text 🔧  get_station_traffic  호출
+									72 button (collapsed) keyboard_arrow_right 🔧 find_nearby {"radius_m": 300, "address": "동대구역", "category": "카페"}, Secondary Actions: Expand
+										73 text keyboard_arrow_right
+										74 text 🔧 find_nearby {"radius_m": 300, "address": "동대구역", "category": "카페"}
+									75 container
+										76 button Fullscreen
+										77 container deckgl-wrapper
+											78 container
+												79 image deckgl-overlay
+												80 container view-default-view
+													81 container
+														82 container Map
+														83 container
+															84 button Toggle attribution
+													85 container
+														86 button Zoom In
+														87 button Zoom Out
+									88 text 점 8개 · 색이 진할수록 '공백일수' 값이 큼
+									89 button (collapsed) keyboard_arrow_right 🔧 find_nearby {"category": "카페", "radius_m": 500, "address": "동대구역"}, Secondary Actions: Expand
+										90 text keyboard_arrow_right
+										91 text 🔧 find_nearby {"category": "카페", "radius_m": 500, "address": "동대구역"}
+									92 container
+										93 button Fullscreen
+										94 container deckgl-wrapper
+											95 container
+												96 image deckgl-overlay
+												97 container view-default-view
+													98 container
+														99 container Map
+														100 container
+															101 button Toggle attribution
+													102 container
+														103 button Zoom In
+														104 button Zoom Out
+									105 text 점 11개 · 색이 진할수록 '공백일수' 값이 큼
+									106 button (collapsed) keyboard_arrow_right 🔧 get_station_traffic {"station": "동대구역"}, Secondary Actions: Expand
+										107 text keyboard_arrow_right
+										108 text 🔧 get_station_traffic {"station": "동대구역"}
+									109 container
+										110 image
+											111 image
+											112 image
+											113 image
+											114 image
+											115 image
+											116 image
+											117 image
+											118 image
+											119 image
+											120 image
+											121 image
+											122 text 아침 7~9시
+											123 text 점심 11~14시
+											124 text 저녁 17~20시
+											125 text 심야 22~24시
+											126 text 0
+											127 text 5
+											128 text 10
+											129 text 15
+											130 text 20
+										131 image
+											132 text 동대구역 · 일평균 37,228명 · 최대 18시-19시
+											133 text 시간대
+											134 text 하차 비중(%)
+										135 toolbar modebar-1db8d7
+											136 button Download plot as a PNG
+												137 image
+											138 container
+												139 button Zoom
+													140 image
+												141 button Pan
+													142 image
+											143 container
+												144 button Zoom in
+													145 image
+												146 button Zoom out
+													147 image
+												148 button Autoscale
+													149 image
+												150 button Reset axes
+													151 image
+											152 button Fullscreen
+												153 image
+										154 image
+									155 container
+										156 text 동대구역 중심 반경 300m 내 카페는 30개, 500m로 넓히면 56개
+										157 text 가 영업 중입니다.
+										158 heading 반경별 경쟁 및 상권 현황, Value: 3, ID: df273648
+											159 text 반경별 경쟁 및 상권 현황
+											160 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#df273648
+										161 table
+											162 row
+												163 cell
+													164 text 구분
+												165 cell
+													166 text 반경 300m
+												167 cell
+													168 text 반경 500m
+											169 row
+												170 cell
+													171 text 영업 중 카페 수
+												172 cell
+													173 text 30개
+												174 cell
+													175 text 56개
+											176 row
+												177 cell
+													178 text 전 업종 점포 수
+												179 cell
+													180 text 530개
+												181 cell
+													182 text 992개
+											183 row
+												184 cell
+													185 text 음식점·식음료 점포 수 (비중)
+												186 cell
+													187 text 146개 (27.5%)
+												188 cell
+													189 text 306개 (30.8%)
+											190 row
+												191 cell
+													192 text 인허가 공백(공실 후보) 자리
+												193 cell
+													194 text 7곳 (예: 커피숍 폐업 후 90일 공백 등)
+												195 cell
+													196 text 22곳
+										197 content list
+											198 container
+												199 AXListMarker •
+												200 text 주요 카페 사례 : 팔공티 동대구역사점, 카페베네 동대구역사점, 고망고 동대구역사점, 공차, 하와이안파라다이스커피 등 역사·신세계백화점 내부 및 주변으로 집중 형성되어 있습니다.
+											201 container
+												202 AXListMarker •
+												203 text 유동인구 대리지표 (도시철도 동대구역) : 일평균 이용객  37,228명 (승차 18,415명, 하차 18,813명 / 대구 94개 역 중 2위). 하차 기준 최대 시간대는  18시~19시 (17~20시 저녁 시간대 비중 22.2%, 11~14시 점심 비중 18.6%).
+										204 heading 확인 시 주의사항, Value: 3, ID: e48c7367
+											205 text 확인 시 주의사항
+											206 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#e48c7367
+										207 content list
+											208 container
+												209 AXListMarker 1.
+												210 text 데이터 출처 및 기준 : 점포 현황은 소상공인시장진흥공단 상가(상권)정보(2026년 6월 단면) 기준이며, 지하철 이용객은 대구교통공사(2026년 1~7월 일평균) 데이터입니다.
+											211 container
+												212 AXListMarker 2.
+												213 text 동선 분리 : 반경 기준은 직선거리입니다. 동대구역 특성상 역사/백화점 내부 상권과 동대구로·동부로 건너편 골목 상권의 접근성 및 임대료 수준이 상이하므로 실질적인 도보 동선을 현장 확인하셔야 합니다.
+										214 heading 이어서 확인해 볼 만한 질문, Value: 3, ID: e90b8652
+											215 text 이어서 확인해 볼 만한 질문
+											216 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#e90b8652
+										217 content list
+											218 container
+												219 AXListMarker 1.
+												220 text "동대구역 주변에서 카페가 폐업한 후 비어 있는 공실 후보 자리나 반복 폐업 자리가 있나요?"
+											221 container
+												222 AXListMarker 2.
+												223 text "동대구역이 위치한 신암동/신천동 지역 카페의 평균 생존기간과 생존율은 어떻게 되나요?"
+									224 text 모델: gemini-3.5-flash
+					69 image js-plotly-tester
+		70 link streamlit.io/cloud
+		71 link (collapsed) Description: App Creator Avatar, Value: share.streamlit.io/user/donggwony, Secondary Actions: Expand
+
+The focused UI element is 54 text entry area (settable) 예) 수성구 범어동에서 치킨집 하면 어때?
