@@ -1,0 +1,71 @@
+{
+  "checked_date": "2026-10-24",
+  "source": "local parquet, no live DB query",
+  "reference_date": "2026-10-13",
+  "license_cafe_definition": {
+    "service": [
+      "일반음식점",
+      "휴게음식점"
+    ],
+    "category": [
+      "커피숍",
+      "까페"
+    ]
+  },
+  "cafe_license_rows": 11170,
+  "eligible_365_rows": 9554,
+  "excluded_unknown_close_date": 0,
+  "excluded_invalid_dates": 0,
+  "known_outcome_rows": 9554,
+  "poi_rows": 118357,
+  "poi_cafe_rows": 5513,
+  "poi_columns": [
+    "name",
+    "branch",
+    "cat_l",
+    "cat_m",
+    "cat_s",
+    "gu",
+    "admin_dong",
+    "legal_dong",
+    "floor",
+    "addr",
+    "lat",
+    "lon"
+  ],
+  "poi_configured_vintage": "2026-06",
+  "poi_historical_availability_verified": false,
+  "splits_proposed": [
+    {
+      "split": "train",
+      "start": "2010-01-01",
+      "end": "2018-12-31",
+      "rows": 5047,
+      "buildings": 3991,
+      "missing_coords": 46
+    },
+    {
+      "split": "validation",
+      "start": "2020-01-01",
+      "end": "2021-12-31",
+      "rows": 1502,
+      "buildings": 1369,
+      "missing_coords": 15
+    },
+    {
+      "split": "test_reserved",
+      "start": "2023-01-01",
+      "end": "2024-12-31",
+      "rows": 1078,
+      "buildings": 937,
+      "missing_coords": 35
+    }
+  ],
+  "model_fitted": false,
+  "test_outcomes_scored": false,
+  "input_hashes": {
+    "stores.parquet": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "poi.parquet": "779b3214613977fe6846769c330438c018371e64167be5b02adb2e0c2b58663d",
+    "meta.json": "d880967c08ca7661cc8e74bfba018ed29fd40fa26690e19e33211dd4b12fd5e5"
+  }
+}

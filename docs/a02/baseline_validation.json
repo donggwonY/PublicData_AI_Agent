@@ -1,0 +1,279 @@
+{
+  "date": "2026-10-24",
+  "sklearn_version": "1.9.1",
+  "input_sha256": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+  "features": [
+    "category",
+    "gu",
+    "month"
+  ],
+  "C": 1.0,
+  "max_iter": 2000,
+  "n_iter": 20,
+  "train_rows": 5047,
+  "train_events": 706,
+  "train_rate": 0.13988508024569052,
+  "validation_baseline": {
+    "n": 1502,
+    "events": 132,
+    "observed_rate": 0.08788282290279627,
+    "mean_prediction": 0.13988508024569055,
+    "auc": 0.5,
+    "brier": 0.08286366711018861,
+    "log_loss": 0.31030598919675306
+  },
+  "validation_logistic": {
+    "n": 1502,
+    "events": 132,
+    "observed_rate": 0.08788282290279627,
+    "mean_prediction": 0.14336959659358242,
+    "auc": 0.541301703163017,
+    "brier": 0.08374208049952346,
+    "log_loss": 0.31255045599644316
+  },
+  "new_building_validation": {
+    "baseline": {
+      "n": 1165,
+      "events": 99,
+      "observed_rate": 0.08497854077253218,
+      "mean_prediction": 0.13988508024569057,
+      "auc": 0.5,
+      "brier": 0.08077191645762076,
+      "log_loss": 0.30503110194438454
+    },
+    "logistic": {
+      "n": 1165,
+      "events": 99,
+      "observed_rate": 0.08497854077253218,
+      "mean_prediction": 0.14312439258157764,
+      "auc": 0.5225898762484128,
+      "brier": 0.08196070181874311,
+      "log_loss": 0.30870822518212154
+    }
+  },
+  "validation_seen_building_rows": 337,
+  "validation_missing_building_rows": 0,
+  "by_gu": [
+    {
+      "gu": "군위군",
+      "baseline": {
+        "n": 20,
+        "events": 3,
+        "observed_rate": 0.15,
+        "mean_prediction": 0.13988508024569052,
+        "auc": 0.5,
+        "brier": 0.12760231160163613,
+        "log_loss": 0.4231259877116216
+      },
+      "logistic": {
+        "n": 20,
+        "events": 3,
+        "observed_rate": 0.15,
+        "mean_prediction": 0.07239175926400451,
+        "auc": 0.2941176470588235,
+        "brier": 0.13506644003994583,
+        "log_loss": 0.4704897914054971
+      }
+    },
+    {
+      "gu": "남구",
+      "baseline": {
+        "n": 136,
+        "events": 18,
+        "observed_rate": 0.1323529411764706,
+        "mean_prediction": 0.13988508024569055,
+        "auc": 0.5,
+        "brier": 0.11489237325736637,
+        "log_loss": 0.3910746092797448
+      },
+      "logistic": {
+        "n": 136,
+        "events": 18,
+        "observed_rate": 0.1323529411764706,
+        "mean_prediction": 0.14051561340832386,
+        "auc": 0.486346516007533,
+        "brier": 0.11574213767353396,
+        "log_loss": 0.39523781032468674
+      }
+    },
+    {
+      "gu": "달서구",
+      "baseline": {
+        "n": 321,
+        "events": 21,
+        "observed_rate": 0.06542056074766354,
+        "mean_prediction": 0.13988508024569055,
+        "auc": 0.5,
+        "brier": 0.06668567564319686,
+        "log_loss": 0.269509022859776
+      },
+      "logistic": {
+        "n": 321,
+        "events": 21,
+        "observed_rate": 0.06542056074766354,
+        "mean_prediction": 0.1144688327605048,
+        "auc": 0.5338095238095237,
+        "brier": 0.06362020548643968,
+        "log_loss": 0.25536670962217617
+      }
+    },
+    {
+      "gu": "달성군",
+      "baseline": {
+        "n": 171,
+        "events": 12,
+        "observed_rate": 0.07017543859649122,
+        "mean_prediction": 0.13988508024569055,
+        "auc": 0.5,
+        "brier": 0.0701102805531411,
+        "log_loss": 0.27814504492181635
+      },
+      "logistic": {
+        "n": 171,
+        "events": 12,
+        "observed_rate": 0.07017543859649122,
+        "mean_prediction": 0.10670922032832061,
+        "auc": 0.49056603773584917,
+        "brier": 0.0667719794968741,
+        "log_loss": 0.2628282105565381
+      }
+    },
+    {
+      "gu": "동구",
+      "baseline": {
+        "n": 5,
+        "events": 0,
+        "observed_rate": 0.0,
+        "mean_prediction": 0.13988508024569052,
+        "auc": null,
+        "brier": 0.019567835675343283,
+        "log_loss": 0.1506892710406689
+      },
+      "logistic": {
+        "n": 5,
+        "events": 0,
+        "observed_rate": 0.0,
+        "mean_prediction": 0.1045790234199337,
+        "auc": null,
+        "brier": 0.011161177379307573,
+        "log_loss": 0.11060050278195102
+      }
+    },
+    {
+      "gu": "북구",
+      "baseline": {
+        "n": 241,
+        "events": 26,
+        "observed_rate": 0.1078838174273859,
+        "mean_prediction": 0.13988508024569055,
+        "auc": 0.5,
+        "brier": 0.09726898018664659,
+        "log_loss": 0.3466326910529724
+      },
+      "logistic": {
+        "n": 241,
+        "events": 26,
+        "observed_rate": 0.1078838174273859,
+        "mean_prediction": 0.20404845693863077,
+        "auc": 0.5473166368515205,
+        "brier": 0.10505071589170871,
+        "log_loss": 0.3732394627363422
+      }
+    },
+    {
+      "gu": "서구",
+      "baseline": {
+        "n": 71,
+        "events": 4,
+        "observed_rate": 0.056338028169014086,
+        "mean_prediction": 0.13988508024569055,
+        "auc": 0.5,
+        "brier": 0.060144164661744354,
+        "log_loss": 0.2530129204945479
+      },
+      "logistic": {
+        "n": 71,
+        "events": 4,
+        "observed_rate": 0.056338028169014086,
+        "mean_prediction": 0.1317448694139408,
+        "auc": 0.48134328358208955,
+        "brier": 0.058781206134300414,
+        "log_loss": 0.24671696616065975
+      }
+    },
+    {
+      "gu": "수성구",
+      "baseline": {
+        "n": 296,
+        "events": 21,
+        "observed_rate": 0.07094594594594594,
+        "mean_prediction": 0.13988508024569055,
+        "auc": 0.5,
+        "brier": 0.07066522293777909,
+        "log_loss": 0.2795444748715249
+      },
+      "logistic": {
+        "n": 296,
+        "events": 21,
+        "observed_rate": 0.07094594594594594,
+        "mean_prediction": 0.15997608778939065,
+        "auc": 0.5289177489177489,
+        "brier": 0.07362933742094051,
+        "log_loss": 0.2905911232606248
+      }
+    },
+    {
+      "gu": "중구",
+      "baseline": {
+        "n": 241,
+        "events": 27,
+        "observed_rate": 0.11203319502074689,
+        "mean_prediction": 0.13988508024569055,
+        "auc": 0.5,
+        "brier": 0.10025748574477364,
+        "log_loss": 0.35416897643806095
+      },
+      "logistic": {
+        "n": 241,
+        "events": 27,
+        "observed_rate": 0.11203319502074689,
+        "mean_prediction": 0.13853121381379535,
+        "auc": 0.508307372793354,
+        "brier": 0.10023847718605826,
+        "log_loss": 0.35409426956258827
+      }
+    }
+  ],
+  "calibration": [
+    {
+      "low": 0.05,
+      "high": 0.1,
+      "n": 98,
+      "predicted": 0.08769478915829569,
+      "observed": 0.08163265306122448
+    },
+    {
+      "low": 0.1,
+      "high": 0.15,
+      "n": 848,
+      "predicted": 0.12444683824295183,
+      "observed": 0.07547169811320754
+    },
+    {
+      "low": 0.15,
+      "high": 0.2,
+      "n": 452,
+      "predicted": 0.1723259385583719,
+      "observed": 0.10398230088495575
+    },
+    {
+      "low": 0.2,
+      "high": 0.3,
+      "n": 104,
+      "predicted": 0.2242769393042362,
+      "observed": 0.125
+    }
+  ],
+  "final_test_evaluated": false,
+  "db_written": false
+}
