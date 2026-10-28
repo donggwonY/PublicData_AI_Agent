@@ -1,0 +1,146 @@
+{
+  "scope": "2010-2021 source-only dry run; processed snapshot unchanged",
+  "recovered_values": 55,
+  "recovered_min": 1004.99,
+  "recovered_max": 3147.92,
+  "previous_numeric_unchanged": 31108,
+  "mismatches": [
+    {
+      "key": "3460000|3460000-101-2020-00221",
+      "snapshot_area": 99.24,
+      "local_raw_text": "64.88",
+      "local_raw_parsed": 64.88,
+      "local_record_modified": "2025-07-30 11:06:59",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3470000|3470000-101-2012-00353",
+      "snapshot_area": 0.0,
+      "local_raw_text": "42.20",
+      "local_raw_parsed": 42.2,
+      "local_record_modified": "2012-11-01 21:49:17",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3480000|3480000-101-2021-00032",
+      "snapshot_area": 127.0,
+      "local_raw_text": ".00",
+      "local_raw_parsed": 0.0,
+      "local_record_modified": "2026-09-07 09:42:12",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3460000|3460000-101-2019-00071",
+      "snapshot_area": 81.0,
+      "local_raw_text": ".00",
+      "local_raw_parsed": 0.0,
+      "local_record_modified": "2026-09-08 16:22:15",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3430000|3430000-101-2019-00035",
+      "snapshot_area": 125.99,
+      "local_raw_text": ".00",
+      "local_raw_parsed": 0.0,
+      "local_record_modified": "2026-09-07 14:09:08",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3470000|3470000-101-2019-00614",
+      "snapshot_area": 0.0,
+      "local_raw_text": "43.18",
+      "local_raw_parsed": 43.18,
+      "local_record_modified": "2025-03-12 09:15:07",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3450000|3450000-101-2016-00234",
+      "snapshot_area": 133.56,
+      "local_raw_text": "52.80",
+      "local_raw_parsed": 52.8,
+      "local_record_modified": "2025-08-06 14:43:29",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3480000|3480000-101-2017-00167",
+      "snapshot_area": 0.0,
+      "local_raw_text": "60.00",
+      "local_raw_parsed": 60.0,
+      "local_record_modified": "2020-08-23 15:44:23",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3470000|3470000-101-2016-00208",
+      "snapshot_area": 0.0,
+      "local_raw_text": "151.30",
+      "local_raw_parsed": 151.3,
+      "local_record_modified": "2026-07-01 15:17:19",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3470000|3470000-101-2016-00488",
+      "snapshot_area": 61.52,
+      "local_raw_text": "372.00",
+      "local_raw_parsed": 372.0,
+      "local_record_modified": "2026-07-08 14:11:40",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3430000|3430000-101-2019-00108",
+      "snapshot_area": 0.0,
+      "local_raw_text": "71.55",
+      "local_raw_parsed": 71.55,
+      "local_record_modified": "2024-12-26 17:36:51",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3460000|3460000-101-2021-00240",
+      "snapshot_area": 61.0,
+      "local_raw_text": ".00",
+      "local_raw_parsed": 0.0,
+      "local_record_modified": "2026-09-11 16:22:44",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3470000|3470000-101-2010-00417",
+      "snapshot_area": 0.0,
+      "local_raw_text": "72.24",
+      "local_raw_parsed": 72.24,
+      "local_record_modified": "2023-11-13 13:53:27",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3460000|3460000-101-2018-00467",
+      "snapshot_area": 229.6,
+      "local_raw_text": "251.20",
+      "local_raw_parsed": 251.2,
+      "local_record_modified": "2024-07-18 13:12:45",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3430000|3430000-101-2020-00103",
+      "snapshot_area": 69.93,
+      "local_raw_text": "37.19",
+      "local_raw_parsed": 37.19,
+      "local_record_modified": "2025-02-28 14:06:21",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    },
+    {
+      "key": "3460000|3460000-101-2019-00240",
+      "snapshot_area": 0.0,
+      "local_raw_text": "52.29",
+      "local_raw_parsed": 52.29,
+      "local_record_modified": "2026-05-02 17:03:10",
+      "cause": "not a comma parsing issue; source version/record history unresolved"
+    }
+  ],
+  "raw_unmatched_keys": [
+    "3460000|3460000-101-2015-00404"
+  ],
+  "hashes": {
+    "raw": "45c4491fe2adb0be2ff3f5580d062b4556df8fe2c2f60f3104cab8398ac7cfb4",
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "parser": "3a283664c735bfb2d4d4fcd7a6eb9331849bcbcee573e4b0c7f7425630a36042",
+    "script": "ceaa01ed77eb9278a2bd4c9aa106cac5311e7354188058ec4db8cf887f9eadea"
+  }
+}

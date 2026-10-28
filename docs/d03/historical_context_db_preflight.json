@@ -1,0 +1,6 @@
+{
+  "setting_present": false,
+  "expected_project": false,
+  "source": "local_env",
+  "action": "No DB connection or write attempted; local experiment only"
+}

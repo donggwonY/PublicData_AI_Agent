@@ -1,0 +1,439 @@
+{
+  "scope": "post-selection retrospective diagnostic, fixed-model paired cluster bootstrap; not independent validation",
+  "windows": [
+    {
+      "window": "2015-2016",
+      "train_n": 8792,
+      "scores": {
+        "constant": {
+          "n": 5328,
+          "events": 317,
+          "actual_pct": 5.9496996996997,
+          "predicted_pct": 7.677434030937215,
+          "brier": 0.05625561093726999,
+          "log_loss": 0.2278508121895302,
+          "roc_auc": 0.5,
+          "average_precision": 0.059496996996996995
+        },
+        "forest_context": {
+          "n": 5328,
+          "events": 317,
+          "actual_pct": 5.9496996996997,
+          "predicted_pct": 7.387641364813054,
+          "brier": 0.055975074058681434,
+          "log_loss": 0.2256917154860734,
+          "roc_auc": 0.5631544356359227,
+          "average_precision": 0.0810645375901238
+        },
+        "forest_area": {
+          "n": 5328,
+          "events": 317,
+          "actual_pct": 5.9496996996997,
+          "predicted_pct": 7.103149428586963,
+          "brier": 0.055577956924408686,
+          "log_loss": 0.22239863098780588,
+          "roc_auc": 0.6110408835577502,
+          "average_precision": 0.09259257438778565
+        }
+      },
+      "missing_building_keys": 0,
+      "bootstrap": {
+        "constant": {
+          "building_blocks": 4356,
+          "repetitions": 2000,
+          "seed": 42,
+          "metrics": {
+            "brier": {
+              "difference": -0.0006776540128613152,
+              "lower95": -0.0010390946307673743,
+              "upper95": -0.00032936558935410743
+            },
+            "log_loss": {
+              "difference": -0.005452181201724323,
+              "lower95": -0.007909563745209246,
+              "upper95": -0.0029900533959825353
+            }
+          }
+        },
+        "forest_context": {
+          "building_blocks": 4356,
+          "repetitions": 2000,
+          "seed": 42,
+          "metrics": {
+            "brier": {
+              "difference": -0.0003971171342727488,
+              "lower95": -0.0007093394932045767,
+              "upper95": -8.307110370677356e-05
+            },
+            "log_loss": {
+              "difference": -0.0032930844982674823,
+              "lower95": -0.005425372225232176,
+              "upper95": -0.0011060222863344582
+            }
+          }
+        }
+      },
+      "subgroups": {
+        "seen_building": {
+          "constant": {
+            "n": 1333,
+            "events": 87,
+            "actual_pct": 6.526631657914479,
+            "predicted_pct": 7.6774340309372135,
+            "brier": 0.0611390591095111,
+            "log_loss": 0.24219912854382109,
+            "roc_auc": 0.5,
+            "average_precision": 0.06526631657914479
+          },
+          "forest_context": {
+            "n": 1333,
+            "events": 87,
+            "actual_pct": 6.526631657914479,
+            "predicted_pct": 7.386639965353424,
+            "brier": 0.060811148897635225,
+            "log_loss": 0.23993545586436063,
+            "roc_auc": 0.5442473386099888,
+            "average_precision": 0.10432066871195236
+          },
+          "forest_area": {
+            "n": 1333,
+            "events": 87,
+            "actual_pct": 6.526631657914479,
+            "predicted_pct": 7.359027626688502,
+            "brier": 0.06027681935848129,
+            "log_loss": 0.2357023259036889,
+            "roc_auc": 0.6255327392483533,
+            "average_precision": 0.11134624956122584
+          }
+        },
+        "new_building": {
+          "constant": {
+            "n": 3995,
+            "events": 230,
+            "actual_pct": 5.7571964956195245,
+            "predicted_pct": 7.677434030937216,
+            "brier": 0.05462616502648216,
+            "log_loss": 0.22306325131336754,
+            "roc_auc": 0.5,
+            "average_precision": 0.057571964956195244
+          },
+          "forest_context": {
+            "n": 3995,
+            "events": 230,
+            "actual_pct": 5.7571964956195245,
+            "predicted_pct": 7.387975498850519,
+            "brier": 0.05436143506986406,
+            "log_loss": 0.2209390481708651,
+            "roc_auc": 0.5701558981465443,
+            "average_precision": 0.07609714661780298
+          },
+          "forest_area": {
+            "n": 3995,
+            "events": 230,
+            "actual_pct": 5.7571964956195245,
+            "predicted_pct": 7.017771296404399,
+            "brier": 0.05401010119859673,
+            "log_loss": 0.217959625900729,
+            "roc_auc": 0.6048842311911773,
+            "average_precision": 0.08878479815120657
+          }
+        }
+      }
+    },
+    {
+      "window": "2017-2018",
+      "train_n": 13782,
+      "scores": {
+        "constant": {
+          "n": 5552,
+          "events": 421,
+          "actual_pct": 7.5828530259366,
+          "predicted_pct": 7.103468291975039,
+          "brier": 0.07010154523038595,
+          "log_loss": 0.2686316821473965,
+          "roc_auc": 0.5,
+          "average_precision": 0.07582853025936599
+        },
+        "forest_context": {
+          "n": 5552,
+          "events": 421,
+          "actual_pct": 7.5828530259366,
+          "predicted_pct": 6.886756659382742,
+          "brier": 0.07021590392772573,
+          "log_loss": 0.26937052927630845,
+          "roc_auc": 0.5253401266855883,
+          "average_precision": 0.08427092602470608
+        },
+        "forest_area": {
+          "n": 5552,
+          "events": 421,
+          "actual_pct": 7.5828530259366,
+          "predicted_pct": 6.878436100162174,
+          "brier": 0.06944806849873977,
+          "log_loss": 0.26403665882914223,
+          "roc_auc": 0.6078945407057192,
+          "average_precision": 0.10891837330195417
+        }
+      },
+      "missing_building_keys": 0,
+      "bootstrap": {
+        "constant": {
+          "building_blocks": 4566,
+          "repetitions": 2000,
+          "seed": 42,
+          "metrics": {
+            "brier": {
+              "difference": -0.0006534767316461828,
+              "lower95": -0.0010380068561510458,
+              "upper95": -0.0002648322016861716
+            },
+            "log_loss": {
+              "difference": -0.004595023318254309,
+              "lower95": -0.007208927855363296,
+              "upper95": -0.0019777533132974644
+            }
+          }
+        },
+        "forest_context": {
+          "building_blocks": 4566,
+          "repetitions": 2000,
+          "seed": 42,
+          "metrics": {
+            "brier": {
+              "difference": -0.0007678354289859442,
+              "lower95": -0.001103768085994171,
+              "upper95": -0.0004470128471801143
+            },
+            "log_loss": {
+              "difference": -0.005333870447166231,
+              "lower95": -0.007676355530812932,
+              "upper95": -0.003071737336338569
+            }
+          }
+        }
+      },
+      "subgroups": {
+        "seen_building": {
+          "constant": {
+            "n": 1761,
+            "events": 145,
+            "actual_pct": 8.233957978421351,
+            "predicted_pct": 7.103468291975037,
+            "brier": 0.07568757407828881,
+            "log_loss": 0.28537095991263917,
+            "roc_auc": 0.5,
+            "average_precision": 0.08233957978421351
+          },
+          "forest_context": {
+            "n": 1761,
+            "events": 145,
+            "actual_pct": 8.233957978421351,
+            "predicted_pct": 7.078285632142871,
+            "brier": 0.07605914917572863,
+            "log_loss": 0.28821583110132176,
+            "roc_auc": 0.4942023728234892,
+            "average_precision": 0.09476242806776046
+          },
+          "forest_area": {
+            "n": 1761,
+            "events": 145,
+            "actual_pct": 8.233957978421351,
+            "predicted_pct": 7.240816906261995,
+            "brier": 0.07514851368057662,
+            "log_loss": 0.2821974435972751,
+            "roc_auc": 0.5847217480368727,
+            "average_precision": 0.11653014427234469
+          }
+        },
+        "new_building": {
+          "constant": {
+            "n": 3791,
+            "events": 276,
+            "actual_pct": 7.280400949617515,
+            "predicted_pct": 7.1034682919750365,
+            "brier": 0.06750671621399004,
+            "log_loss": 0.2608559321752012,
+            "roc_auc": 0.5,
+            "average_precision": 0.07280400949617515
+          },
+          "forest_context": {
+            "n": 3791,
+            "events": 276,
+            "actual_pct": 7.280400949617515,
+            "predicted_pct": 6.79778738451316,
+            "brier": 0.06750159243162096,
+            "log_loss": 0.26061648640797597,
+            "roc_auc": 0.54005710516008,
+            "average_precision": 0.08112070168928329
+          },
+          "forest_area": {
+            "n": 3791,
+            "events": 276,
+            "actual_pct": 7.280400949617515,
+            "predicted_pct": 6.710102520752577,
+            "brier": 0.06680009066565755,
+            "log_loss": 0.25560058866911006,
+            "roc_auc": 0.6189168573607933,
+            "average_precision": 0.1064312960195114
+          }
+        }
+      }
+    },
+    {
+      "window": "2020-2021",
+      "train_n": 22172,
+      "scores": {
+        "constant": {
+          "n": 5558,
+          "events": 386,
+          "actual_pct": 6.944944224541202,
+          "predicted_pct": 7.112574418185099,
+          "brier": 0.0646290272053953,
+          "log_loss": 0.25223391368825426,
+          "roc_auc": 0.5,
+          "average_precision": 0.06944944224541202
+        },
+        "forest_context": {
+          "n": 5558,
+          "events": 386,
+          "actual_pct": 6.944944224541202,
+          "predicted_pct": 7.182504948230302,
+          "brier": 0.06468158070608178,
+          "log_loss": 0.2524596608745616,
+          "roc_auc": 0.5118947080533283,
+          "average_precision": 0.07227679383226675
+        },
+        "forest_area": {
+          "n": 5558,
+          "events": 386,
+          "actual_pct": 6.944944224541202,
+          "predicted_pct": 7.424680288351195,
+          "brier": 0.06357017774409897,
+          "log_loss": 0.24461305806044495,
+          "roc_auc": 0.6520302625937191,
+          "average_precision": 0.11390322344021082
+        }
+      },
+      "missing_building_keys": 0,
+      "bootstrap": {
+        "constant": {
+          "building_blocks": 4416,
+          "repetitions": 2000,
+          "seed": 42,
+          "metrics": {
+            "brier": {
+              "difference": -0.0010588494612963312,
+              "lower95": -0.0016110899718669892,
+              "upper95": -0.0005639498127092002
+            },
+            "log_loss": {
+              "difference": -0.007620855627809271,
+              "lower95": -0.010973433759087164,
+              "upper95": -0.00448997990297987
+            }
+          }
+        },
+        "forest_context": {
+          "building_blocks": 4416,
+          "repetitions": 2000,
+          "seed": 42,
+          "metrics": {
+            "brier": {
+              "difference": -0.0011114029619828099,
+              "lower95": -0.001592895156534848,
+              "upper95": -0.0006776266598713608
+            },
+            "log_loss": {
+              "difference": -0.007846602814116678,
+              "lower95": -0.010868379674560317,
+              "upper95": -0.005118676284870534
+            }
+          }
+        }
+      },
+      "subgroups": {
+        "seen_building": {
+          "constant": {
+            "n": 2639,
+            "events": 207,
+            "actual_pct": 7.84388025767336,
+            "predicted_pct": 7.112574418185099,
+            "brier": 0.07233963765014878,
+            "log_loss": 0.27533229098318546,
+            "roc_auc": 0.5,
+            "average_precision": 0.07843880257673361
+          },
+          "forest_context": {
+            "n": 2639,
+            "events": 207,
+            "actual_pct": 7.84388025767336,
+            "predicted_pct": 7.188595312060533,
+            "brier": 0.0724862709775247,
+            "log_loss": 0.2763119454623447,
+            "roc_auc": 0.4976163234172387,
+            "average_precision": 0.077547538185312
+          },
+          "forest_area": {
+            "n": 2639,
+            "events": 207,
+            "actual_pct": 7.84388025767336,
+            "predicted_pct": 7.498383259811386,
+            "brier": 0.07089196903187288,
+            "log_loss": 0.26521373878138915,
+            "roc_auc": 0.6686570366132722,
+            "average_precision": 0.13082162273180378
+          }
+        },
+        "new_building": {
+          "constant": {
+            "n": 2919,
+            "events": 179,
+            "actual_pct": 6.132237067488866,
+            "predicted_pct": 7.112574418185099,
+            "brier": 0.057658043661817225,
+            "log_loss": 0.23135120807629006,
+            "roc_auc": 0.5,
+            "average_precision": 0.06132237067488866
+          },
+          "forest_context": {
+            "n": 2919,
+            "events": 179,
+            "actual_pct": 6.132237067488866,
+            "predicted_pct": 7.176998791961724,
+            "brier": 0.0576255417796214,
+            "log_loss": 0.2308953652160623,
+            "roc_auc": 0.5287658524650328,
+            "average_precision": 0.07279603302536442
+          },
+          "forest_area": {
+            "n": 2919,
+            "events": 179,
+            "actual_pct": 6.132237067488866,
+            "predicted_pct": 7.358047146287665,
+            "brier": 0.056950716555871736,
+            "log_loss": 0.22598846182112609,
+            "roc_auc": 0.6311544264567956,
+            "average_precision": 0.10184537407067673
+          }
+        }
+      }
+    }
+  ],
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "raw": "45c4491fe2adb0be2ff3f5580d062b4556df8fe2c2f60f3104cab8398ac7cfb4",
+    "script": "05af290bbc76cfd253a3174957dc733cacb17d8c6944376dee09ce6c34961f26",
+    "plan": "4e3a1a62753a82a3ef807cfa23a72613020abe9d8b8b31383f9f69c5eac99cc2",
+    "reference_results": "01cac53248bec2926cd92ef8f5865a79f9edcaa8026a1ec7047d799246365bcc",
+    "model_helper": "9c479ce841981aad081846368e3b9e791279776bbf7e363ab3238b76df82ab97",
+    "feature_helper": "bd9edfadf0b3604eb5fb0b89d2e790f011a175f154cbdac203375327cba722ad",
+    "spatial_helper": "783578f1594c51a86c980a183e22c6dc5aba96fb705ca515382dbc5a00aa7d7f",
+    "metrics_helper": "9f9406ee4e997168ae784168df4c5485f7f47be1264230939aa35d5362cff2ec",
+    "parser": "3a283664c735bfb2d4d4fcd7a6eb9331849bcbcee573e4b0c7f7425630a36042"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  }
+}

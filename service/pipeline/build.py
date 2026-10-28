@@ -36,6 +36,7 @@ import config as C  # noqa: E402
 from core import address as A  # noqa: E402
 from core.cycle import classify_stage  # noqa: E402
 from core.survival import YEAR, summarize  # noqa: E402
+from pipeline.numeric import parse_area  # noqa: E402
 
 # 업종마다 열 구성이 다르다(음식점 39열, 담배소매업 24열 …). 없는 열은 적재 후 빈 값으로 채운다.
 USECOLS = [
@@ -127,7 +128,7 @@ def clean(df: pd.DataFrame, quality: dict) -> tuple[pd.DataFrame, pd.Timestamp]:
     # 영업 종료일: 폐업했으면 폐업일, 영업 중이면 기준일(= 여기서 관측을 끊는다 → 생존분석의 '중도절단')
     df["end"] = df["cd"].where(df["closed"], ref)
     df["dur_days"] = (df["end"] - df["ld"]).dt.days.clip(lower=0)  # 영업 일수
-    df["area_m2"] = pd.to_numeric(df["소재지면적"], errors="coerce")
+    df["area_m2"] = parse_area(df["소재지면적"])
     return df, ref
 
 

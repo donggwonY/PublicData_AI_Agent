@@ -1,0 +1,74 @@
+{
+  "scope": "general restaurants opened2010-2021; metadata only; no model evaluation",
+  "all": {
+    "n": 31674,
+    "missing": 565,
+    "nonpositive": 224,
+    "positive": 30885,
+    "positive_pct": 97.50899791627202,
+    "median_positive": 53.43,
+    "p99_positive": 430.1503999999999,
+    "max_positive": 991.1
+  },
+  "validation": {
+    "validation_2015_2016": {
+      "n": 5440,
+      "missing": 103,
+      "nonpositive": 20,
+      "positive": 5317,
+      "positive_pct": 97.73897058823529,
+      "median_positive": 58.9,
+      "p99_positive": 430.7896000000001,
+      "max_positive": 952.9
+    },
+    "validation_2017_2018": {
+      "n": 5772,
+      "missing": 143,
+      "nonpositive": 82,
+      "positive": 5547,
+      "positive_pct": 96.10187110187111,
+      "median_positive": 54.5,
+      "p99_positive": 422.9793999999999,
+      "max_positive": 974.49
+    },
+    "validation_2020_2021": {
+      "n": 5647,
+      "missing": 48,
+      "nonpositive": 43,
+      "positive": 5556,
+      "positive_pct": 98.38852488046751,
+      "median_positive": 49.5,
+      "p99_positive": 368.86549999999784,
+      "max_positive": 874.28
+    }
+  },
+  "raw_matches": 31673,
+  "raw_unmatched": 1,
+  "area_matches": 31657,
+  "area_mismatches": 16,
+  "comma_recoverable": 55,
+  "unparseable_nonblank": 55,
+  "unparseable_examples": [
+    "2,251.30",
+    "1,048.35",
+    "1,606.05",
+    "1,016.38",
+    "1,054.00",
+    "1,209.19",
+    "1,145.86",
+    "1,993.20",
+    "1,187.23",
+    "1,251.60"
+  ],
+  "both_area_fields_present": 31108,
+  "area_fields_disagree": 38,
+  "modified_after_open_day": 31212,
+  "modified_same_day": 460,
+  "modified_missing": 1,
+  "opening_time_area_confirmed": false,
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "raw": "45c4491fe2adb0be2ff3f5580d062b4556df8fe2c2f60f3104cab8398ac7cfb4",
+    "script": "27c6b9529c7a65f2f353585722b65722198a35ac4fd582ddf2ba90aeae7f2381"
+  }
+}
