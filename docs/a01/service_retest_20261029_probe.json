@@ -1,0 +1,201 @@
+{
+  "source": "local parquet reproduction, not live tool JSON",
+  "results": [
+    {
+      "address": "대구광역시 동구 동대구로 550",
+      "radius_m": 300,
+      "center": {
+        "address": "대구광역시 동구 동대구로 550",
+        "unit_id": "대구광역시 동구 신암동 294",
+        "lat": 35.87895200875041,
+        "lon": 128.6286985826641,
+        "status": "영업중: 코레일유통주식회사, 코레일유통주식회사, 동대구맞이2 잡화편의점"
+      },
+      "same_category": {
+        "query": "카페",
+        "count": 30,
+        "definition": "cat_s == 카페",
+        "count_unit": "상가 기록 수; 현재 영업 확인 아님",
+        "exact_deduplicated_count": 30,
+        "same_address_deduplicated_count": 4,
+        "excluding_same_address_deduplicated_count": 26,
+        "same_address_definition": "도로명 건물번호 일치, 층 무시; 건물 내 경쟁도 제외됨",
+        "examples": [
+          {
+            "name": "팔공티동대구역사지점",
+            "cat_s": "카페",
+            "dist_m": 55.0
+          },
+          {
+            "name": "카페베네동대구역사점",
+            "cat_s": "카페",
+            "dist_m": 55.0
+          },
+          {
+            "name": "하와이안파라다이스커피",
+            "cat_s": "카페",
+            "dist_m": 55.0
+          },
+          {
+            "name": "고망고동대구역사점",
+            "cat_s": "카페",
+            "dist_m": 55.0
+          },
+          {
+            "name": "공차",
+            "cat_s": "카페",
+            "dist_m": 121.0
+          }
+        ]
+      },
+      "floor_note": "층을 지정하지 않아 이 건물에서 인허가 기록이 가장 많은 층 표기 없는 자리(53건)을 표시했습니다. 다른 층 7곳은 다른 후보에서 고를 수 있습니다."
+    },
+    {
+      "address": "대구광역시 동구 동대구로 550",
+      "radius_m": 500,
+      "center": {
+        "address": "대구광역시 동구 동대구로 550",
+        "unit_id": "대구광역시 동구 신암동 294",
+        "lat": 35.87895200875041,
+        "lon": 128.6286985826641,
+        "status": "영업중: 코레일유통주식회사, 코레일유통주식회사, 동대구맞이2 잡화편의점"
+      },
+      "same_category": {
+        "query": "카페",
+        "count": 56,
+        "definition": "cat_s == 카페",
+        "count_unit": "상가 기록 수; 현재 영업 확인 아님",
+        "exact_deduplicated_count": 55,
+        "same_address_deduplicated_count": 4,
+        "excluding_same_address_deduplicated_count": 51,
+        "same_address_definition": "도로명 건물번호 일치, 층 무시; 건물 내 경쟁도 제외됨",
+        "examples": [
+          {
+            "name": "팔공티동대구역사지점",
+            "cat_s": "카페",
+            "dist_m": 55.0
+          },
+          {
+            "name": "카페베네동대구역사점",
+            "cat_s": "카페",
+            "dist_m": 55.0
+          },
+          {
+            "name": "하와이안파라다이스커피",
+            "cat_s": "카페",
+            "dist_m": 55.0
+          },
+          {
+            "name": "고망고동대구역사점",
+            "cat_s": "카페",
+            "dist_m": 55.0
+          },
+          {
+            "name": "공차",
+            "cat_s": "카페",
+            "dist_m": 121.0
+          }
+        ]
+      },
+      "floor_note": "층을 지정하지 않아 이 건물에서 인허가 기록이 가장 많은 층 표기 없는 자리(53건)을 표시했습니다. 다른 층 7곳은 다른 후보에서 고를 수 있습니다."
+    },
+    {
+      "address": "대구광역시 동구 동부로22길 9",
+      "radius_m": 300,
+      "center": {
+        "address": "대구광역시 동구 동부로22길 9",
+        "unit_id": "대구광역시 동구 신천동 327-3",
+        "lat": 35.876144221716466,
+        "lon": 128.62770419392697,
+        "status": "영업중: 바드, 구연, 씨유 동대구역아펠리체점"
+      },
+      "same_category": {
+        "query": "카페",
+        "count": 39,
+        "definition": "cat_s == 카페",
+        "count_unit": "상가 기록 수; 현재 영업 확인 아님",
+        "exact_deduplicated_count": 38,
+        "same_address_deduplicated_count": 1,
+        "excluding_same_address_deduplicated_count": 37,
+        "same_address_definition": "도로명 건물번호 일치, 층 무시; 건물 내 경쟁도 제외됨",
+        "examples": [
+          {
+            "name": "더리터동대구역아펠리체점",
+            "cat_s": "카페",
+            "dist_m": 1.0
+          },
+          {
+            "name": "연정개발주",
+            "cat_s": "카페",
+            "dist_m": 80.0
+          },
+          {
+            "name": "스타벅스",
+            "cat_s": "카페",
+            "dist_m": 80.0
+          },
+          {
+            "name": "투썸플레이스",
+            "cat_s": "카페",
+            "dist_m": 80.0
+          },
+          {
+            "name": "큰큰커피",
+            "cat_s": "카페",
+            "dist_m": 86.0
+          }
+        ]
+      },
+      "floor_note": "층을 지정하지 않아 이 건물에서 인허가 기록이 가장 많은 층 표기 없는 자리(6건)을 표시했습니다. 다른 층 3곳은 다른 후보에서 고를 수 있습니다."
+    },
+    {
+      "address": "대구광역시 동구 동부로 149",
+      "radius_m": 300,
+      "center": {
+        "address": "대구광역시 동구 동부로 149 지하1층",
+        "unit_id": "대구광역시 동구 신천동 1506 지하1층",
+        "lat": 35.877844175115854,
+        "lon": 128.62899725458902,
+        "status": "영업중: 하즈벤(HAZBEN), 르브레드랩대구점(신세계), 룰루스"
+      },
+      "same_category": {
+        "query": "카페",
+        "count": 44,
+        "definition": "cat_s == 카페",
+        "count_unit": "상가 기록 수; 현재 영업 확인 아님",
+        "exact_deduplicated_count": 43,
+        "same_address_deduplicated_count": 11,
+        "excluding_same_address_deduplicated_count": 32,
+        "same_address_definition": "도로명 건물번호 일치, 층 무시; 건물 내 경쟁도 제외됨",
+        "examples": [
+          {
+            "name": "공차",
+            "cat_s": "카페",
+            "dist_m": 20.0
+          },
+          {
+            "name": "킹콩쥬스엔커피",
+            "cat_s": "카페",
+            "dist_m": 20.0
+          },
+          {
+            "name": "라온네트웍스",
+            "cat_s": "카페",
+            "dist_m": 20.0
+          },
+          {
+            "name": "류커피로스터스",
+            "cat_s": "카페",
+            "dist_m": 20.0
+          },
+          {
+            "name": "주영BBYB",
+            "cat_s": "카페",
+            "dist_m": 20.0
+          }
+        ]
+      },
+      "floor_note": "층을 지정하지 않아 이 건물에서 인허가 기록이 가장 많은 지하1층(983건)을 표시했습니다. 다른 층 17곳은 다른 후보에서 고를 수 있습니다."
+    }
+  ]
+}

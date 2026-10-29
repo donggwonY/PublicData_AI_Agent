@@ -1,0 +1,562 @@
+Browser tab: 3, Title: "대구 상권 생애주기 AI 에이전트 · Streamlit", URL: "https://pubdai.streamlit.app/".
+0 AXWebArea 대구 상권 생애주기 AI 에이전트 · Streamlit, URL: pubdai.streamlit.app/
+	1 container
+		2 container streamlitApp
+			3 AXWebArea 대구 상권 생애주기 AI 에이전트, URL: pubdai.streamlit.app/~/+/
+				4 container
+					5 container
+						6 container
+							7 heading 🏪 상권 생애주기 에이전트, Value: 1
+								8 text 🏪 상권 생애주기 에이전트
+							9 text 그 자리의 과거를 데이터로 확인합니다
+							10 text 누적 인허가 (골프연습장업+노래연습장업+담배소매업+당구장업+미용업+병원+세탁업+약국+의원+인터넷컴퓨터게임시설제공업+일반음식점+제과점+체력단련장업+체육도장업+축산판매업+휴게음식점)
+							11 text 225,858
+							12 text 1960년부터 2026년까지 문을 연 전체 기록 (현재 점포 수가 아님)
+							13 text 그동안 폐업
+							14 text 154,315
+							15 text 현재 영업 중
+							16 text 71,543
+							17 container
+								18 text 기준일 2026-10-13 · 배치 2026-10-16 14:46 :59  · 데이터 db v3
+							19 container
+								20 text AI 상담 사용 가능 (Google Gemini)
+							21 text 이 세션 남은 질문 18회
+							22 heading 예시 질문, Value: 3
+								23 text 예시 질문
+							24 button 수성구에서 카페 열려는데 어때?
+								25 text 수성구에서 카페 열려는데 어때?
+							26 button 그럼 뭐가 더 오래 가?
+								27 text 그럼 뭐가 더 오래 가?
+							28 button 수성구, 중구, 달서구 중 카페 하기엔 어디가 나아?
+								29 text 수성구, 중구, 달서구 중 카페 하기엔 어디가 나아?
+							30 button 중구 삼덕동1가 요즘 분위기는?
+								31 text 중구 삼덕동1가 요즘 분위기는?
+							32 button 그 동네에 최근 빈자리 있어?
+								33 text 그 동네에 최근 빈자리 있어?
+							34 button 대구 군위군 중앙길 90 이전엔 뭐였어?
+								35 text 대구 군위군 중앙길 90 이전엔 뭐였어?
+							36 button 🔄 대화 초기화
+								37 text 🔄 대화 초기화
+						38 container
+							39 button keyboard_double_arrow_right
+							40 button Fork
+							41 button
+							42 pop up button (collapsed) Description: Main menu, Secondary Actions: Expand
+						43 container
+							44 tab group react-aria6183654428-:r2:
+								45 tab (selected, settable, boolean) 💬 AI 상담, ID: react-aria6183654428-:r2:-tab-0, Value: 1
+💬 AI 상담
+								46 tab (selectable, settable, boolean) 📊 대구 상권 대시보드, ID: react-aria6183654428-:r2:-tab-1, Value: 0
+📊 대구 상권 대시보드
+								47 tab (selectable, settable, boolean) 🔎 자리 이력 조회, ID: react-aria6183654428-:r2:-tab-2, Value: 0
+🔎 자리 이력 조회
+							48 container Description: 💬 AI 상담, ID: react-aria6183654428-:r2:-tabpanel-0
+								49 text 질문은 Google Gemini API로 전달되어 답변이 생성됩니다 (무료 등급 입력은 제공사의 서비스 개선에 쓰일 수 있음). 수치는 인허가 데이터 분석 도구의 반환값만 사용하며, 창업 판단의 참고 자료입니다.
+								50 text face
+								51 container Chat message from user
+									52 text 동대구역 출구 주변 300m에 카페가 얼마나 있어? 500m로 넓히면?
+								53 text smart_toy
+								54 container Chat message from assistant
+									55 button (collapsed) keyboard_arrow_right 🔧 normalize_address {"query": "동대구역"}, Secondary Actions: Expand
+										56 text keyboard_arrow_right
+										57 text 🔧 normalize_address {"query": "동대구역"}
+									58 container
+										59 button (expanded) Secondary Actions: Collapse, keyboard_arrow_down 🔧 find_nearby {"address": "대구광역시 동구 동대구로 550", "radius_m": 300, "category": "카페"}
+											60 text keyboard_arrow_down
+											61 text 🔧 find_nearby {"address": "대구광역시 동구 동대구로 550", "radius_m": 300, "category": "카페"}
+										62 container
+											63 text {
+											64 text ... }
+									65 container
+										66 button Fullscreen
+										67 container deckgl-wrapper
+											68 container
+												69 image deckgl-overlay
+												70 container view-default-view
+													71 container
+														72 container Map
+														73 container
+															74 content list
+																75 text ©
+																76 link Description: OpenStreetMap, Value: openstreetmap.org/copyright
+																77 text  contributors ©
+																78 link Description: CARTO, Value: carto.com/about-carto/
+													79 container
+														80 button Zoom In
+														81 button Zoom Out
+									82 text 점 8개 · 색이 진할수록 '공백일수' 값이 큼
+									83 button (collapsed) Secondary Actions: Expand, keyboard_arrow_right 🔧 find_nearby {"radius_m": 500, "address": "대구광역시 동구 동대구로 550", "category": "카페"}
+										84 text keyboard_arrow_right
+										85 text 🔧 find_nearby {"radius_m": 500, "address": "대구광역시 동구 동대구로 550", "category": "카페"}
+									86 container
+										87 button Fullscreen
+										88 container deckgl-wrapper
+											89 container
+												90 image deckgl-overlay
+												91 container view-default-view
+													92 container
+														93 container Map
+														94 container
+															95 content list
+																96 text ©
+																97 link Description: OpenStreetMap, Value: openstreetmap.org/copyright
+																98 text  contributors ©
+																99 link Description: CARTO, Value: carto.com/about-carto/
+													100 container
+														101 button Zoom In
+														102 button Zoom Out
+									103 text 점 11개 · 색이 진할수록 '공백일수' 값이 큼
+									104 button (collapsed) keyboard_arrow_right 🔧 get_station_traffic {"station": "동대구역"}, Secondary Actions: Expand
+										105 text keyboard_arrow_right
+										106 text 🔧 get_station_traffic {"station": "동대구역"}
+									107 container
+										108 image
+											109 image
+											110 image
+											111 image
+											112 image
+											113 image
+											114 image
+											115 image
+											116 image
+											117 image
+											118 image
+											119 image
+											120 text 아침 7~9시
+											121 text 점심 11~14시
+											122 text 저녁 17~20시
+											123 text 심야 22~24시
+											124 text 0
+											125 text 5
+											126 text 10
+											127 text 15
+											128 text 20
+										129 image
+											130 text 동대구역 · 일평균 37,228명 · 최대 18시-19시
+											131 text 시간대
+											132 text 하차 비중(%)
+										133 toolbar modebar-679bf0
+											134 button Download plot as a PNG
+												135 image
+											136 container
+												137 button Zoom
+													138 image
+												139 button Pan
+													140 image
+											141 container
+												142 button Zoom in
+													143 image
+												144 button Zoom out
+													145 image
+												146 button Autoscale
+													147 image
+												148 button Reset axes
+													149 image
+											150 button Fullscreen
+												151 image
+										152 image
+									153 container
+										154 heading 결론, Value: 3, ID: 99b2ed06
+											155 text 결론
+											156 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#99b2ed06
+										157 text 동대구역 역사 건물(대구 동구 동대구로 550) 중심 좌표 기준으로
+										158 text 반경 300m 내 카페는 30개
+										159 text ,
+										160 text 반경 500m로 넓히면 56개
+										161 text 가 확인됩니다. (소상공인 상가정보 2026-06 단면 기준)
+										162 container
+											163 text ※ 현재 서비스는  역 개별 출구별 반경 합집합 도구가 제공되지 않아 , 동대구역 대표 주소 지점을 중심으로 분석한 결과입니다. (공공데이터 자체가 없는 것이 아니라 출구 연결 도구 미지원)
+										164 heading 근거 수치 (동대구역 중심 반경 비교), Value: 3, ID: edbb371c
+											165 text 근거 수치 (동대구역 중심 반경 비교)
+											166 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#edbb371c
+										167 table
+											168 row
+												169 cell
+													170 text 구분
+												171 cell
+													172 text 반경 300m
+												173 cell
+													174 text 반경 500m
+												175 cell
+													176 text 비고
+											177 row
+												178 cell
+													179 text 카페 점포 수
+												180 cell
+													181 text 30개
+												182 cell
+													183 text 56개
+												184 cell
+													185 text cat_s = 카페
+													186 text  기준 (상가정보 2026-06)
+											187 row
+												188 cell
+													189 text 주소 중복 제거 수
+												190 cell
+													191 text 26개 지점
+												192 cell
+													193 text 51개 지점
+												194 cell
+													195 text 도로명 건물번호 일치 기준 (건물 내 다점포 제외)
+											196 row
+												197 cell
+													198 text 전체 점포 수
+												199 cell
+													200 text 530개
+												201 cell
+													202 text 992개
+												203 cell
+													204 text 전 업종 상가 점포
+											205 row
+												206 cell
+													207 text 음식·식음료 비중
+												208 cell
+													209 text 27.5% (146개)
+												210 cell
+													211 text 30.8% (306개)
+											212 row
+												213 cell
+													214 text 최근 공실 후보
+												215 cell
+													216 text 7곳
+												217 cell
+													218 text 22곳
+												219 cell
+													220 text 폐업 후 90일~3년 신규 인허가 없는 자리
+											221 row
+												222 cell
+													223 text 반복 폐업 Spot
+												224 cell
+													225 text 2곳
+												226 cell
+													227 text 2곳
+												228 cell
+													229 text 2010년 이후 3회 이상 폐업 자리
+										230 content list
+											231 container
+												232 AXListMarker •
+												233 text 주요 카페 예시 (역사 내 및 인접) : 팔공티 동대구역사점, 카페베네 동대구역사점, 고망고 동대구역사점, 하와이안파라다이스커피 등 역사 내 매장 포함
+											234 container
+												235 AXListMarker •
+												236 text 유동인구 참고 (도시철도 동대구역) : 일평균 승하차인원  37,228명  (승차 18,415명 / 하차 18,813명, 대구 전체 2위)
+										237 heading 해석 시 주의점, Value: 3, ID: 8e570da3
+											238 text 해석 시 주의점
+											239 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#8e570da3
+										240 content list
+											241 container
+												242 AXListMarker 1.
+												243 text 출구 중심 및 거리 측정 한계 : 역 출구별 배정 기능이 없어 역사 건물 좌표 중심의 직선거리입니다. 실제 도보 동선이나 특정 출구(예: 2번·3번 출구) 앞 동선과는 차이가 있을 수 있습니다.
+											244 container
+												245 AXListMarker 2.
+												246 text 층 미지정에 따른 기준 : Specific 층을 지정하지 않아 역사 건물 중 인허가 이력이 가장 많은 층(53건 기록)을 기준점으로 분석했습니다.
+											247 container
+												248 AXListMarker 3.
+												249 text 단면 데이터의 한계 : 상가정보(2026-06 단면)는 오늘 영업 중인 점포를 실황으로 완전 보장하지 않으며, 인허가(시간축) 데이터와 수치 차이가 발생할 수 있습니다.
+											250 container
+												251 AXListMarker 4.
+												252 text 공실 한계 : 공실 후보 수치는 인허가 공백일 뿐이며, 분석 대상 외 업종 전환 가능성이 있으므로 현장 확인이 필요합니다.
+										253 heading 제안 질문, Value: 3, ID: 7bb28f2b
+											254 text 제안 질문
+											255 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#7bb28f2b
+										256 content list
+											257 container
+												258 AXListMarker 1.
+												259 text "동대구역 주변(신암동/신천동) 카페의 평균 생존기간과 3년 생존율은 얼마인가요?"
+											260 container
+												261 AXListMarker 2.
+												262 text "동대구역 근처에 커피/카페 업종이 폐업하고 비어 있는 공실 자리가 어디인가요?"
+									263 text 모델: gemini-3.5-flash
+								264 text face
+								265 container Chat message from user
+									266 text 300m 범위의 카페를 가장 가까운 출구에 하나씩 배정하면 어느 출구 쪽에 많아?
+								267 text smart_toy
+								268 container Chat message from assistant
+									269 container
+										270 heading 결론, Value: 3, ID: 99b2ed06
+											271 text 결론
+											272 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#99b2ed06
+										273 text 데이터로 확인되지 않습니다.
+										274 text 현재 서비스에는 도시철도·KTX 역의 개별 출구 좌표 데이터 및 점포를 가장 가까운 출구에 배정하는 기능이 연결되어 있지 않습니다.
+										275 heading 이유 및 한계, Value: 3, ID: 1e74cbc8
+											276 text 이유 및 한계
+											277 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#1e74cbc8
+										278 content list
+											279 container
+												280 AXListMarker 1.
+												281 text 출구 배정 미지원 : 앞서 안내해 드린 300m 내 카페 30개는 동대구역 대표 주소 지점(대구 동구 동대구로 550)을 기준으로 한 직선거리 수치입니다. 각 출구별 좌표나 출구별 점포 배정 데이터는 제공되지 않습니다.
+											282 container
+												283 AXListMarker 2.
+												284 text 대체 불가 안내 : 단일 주소 중심의 좌표 데이터를 임의로 출구별로 나누어 설명할 경우 실제 사실과 다를 수 있어 출구 분석으로 대체하지 않습니다.
+											285 container
+												286 AXListMarker 3.
+												287 text 데이터 출처 : 이는 공공데이터 자체가 존재하지 않는다는 의미는 아니며, 현재 분석 에이전트 도구에 역 출구 위치 정보 및 배정 로직이 연동되어 있지 않기 때문입니다.
+										288 heading 제안 질문, Value: 3, ID: 7bb28f2b
+											289 text 제안 질문
+											290 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#7bb28f2b
+										291 content list
+											292 container
+												293 AXListMarker 1.
+												294 text "동대구역 주변(신암동/신천동) 카페들의 평균 생존기간이나 생존율을 확인하고 싶어요."
+											295 container
+												296 AXListMarker 2.
+												297 text "동대구역 인근에 카페가 폐업하고 현재 공실 상태인 자리가 있나요?"
+									298 text 모델: gemini-3.5-flash
+								299 container
+									300 text entry area (settable) 예) 수성구 범어동에서 치킨집 하면 어때?
+									301 button (disabled) Send message
+								302 text face
+								303 container Chat message from user
+									304 text 동부로22길 9와 동부로 149의 주변 카페 수를 비교해 줘. 카페가 적은 쪽에 창업하면 더 유리할까?
+								305 text smart_toy
+								306 container Chat message from assistant
+									307 container
+										308 text 🔧  normalize_address  호출
+									309 container
+										310 text 🔧  normalize_address  호출
+									311 container
+										312 text 🔧  find_nearby  호출
+									313 container
+										314 text 🔧  find_nearby  호출
+									315 container
+										316 text 🔧  get_survival_curve  호출
+									317 button (collapsed) keyboard_arrow_right 🔧 normalize_address {"query": "대구광역시 동구 동부로22길 9"}, Secondary Actions: Expand
+										318 text keyboard_arrow_right
+										319 text 🔧 normalize_address {"query": "대구광역시 동구 동부로22길 9"}
+									320 button (collapsed) keyboard_arrow_right 🔧 normalize_address {"query": "대구광역시 동구 동부로 149"}, Secondary Actions: Expand
+										321 text keyboard_arrow_right
+										322 text 🔧 normalize_address {"query": "대구광역시 동구 동부로 149"}
+									323 button (collapsed) Secondary Actions: Expand, keyboard_arrow_right 🔧 find_nearby {"address": "대구광역시 동구 동부로22길 9", "category": "카페", "radius_m": 300}
+										324 text keyboard_arrow_right
+										325 text 🔧 find_nearby {"address": "대구광역시 동구 동부로22길 9", "category": "카페", "radius_m": 300}
+									326 container
+										327 button Fullscreen
+										328 container deckgl-wrapper
+											329 container
+												330 image deckgl-overlay
+												331 container view-default-view
+													332 container
+														333 container Map
+														334 container
+															335 content list
+																336 text ©
+																337 link Description: OpenStreetMap, Value: openstreetmap.org/copyright
+																338 text  contributors ©
+																339 link Description: CARTO, Value: carto.com/about-carto/
+													340 container
+														341 button Zoom In
+														342 button Zoom Out
+									343 text 점 11개 · 색이 진할수록 '공백일수' 값이 큼
+									344 button (collapsed) Secondary Actions: Expand, keyboard_arrow_right 🔧 find_nearby {"category": "카페", "radius_m": 300, "address": "대구광역시 동구 동부로 149"}
+										345 text keyboard_arrow_right
+										346 text 🔧 find_nearby {"category": "카페", "radius_m": 300, "address": "대구광역시 동구 동부로 149"}
+									347 container
+										348 button Fullscreen
+										349 container deckgl-wrapper
+											350 container
+												351 image deckgl-overlay
+												352 container view-default-view
+													353 container
+														354 container Map
+														355 container
+															356 content list
+																357 text ©
+																358 link Description: OpenStreetMap, Value: openstreetmap.org/copyright
+																359 text  contributors ©
+																360 link Description: CARTO, Value: carto.com/about-carto/
+													361 container
+														362 button Zoom In
+														363 button Zoom Out
+									364 text 점 10개 · 색이 진할수록 '공백일수' 값이 큼
+									365 button (collapsed) keyboard_arrow_right 🔧 get_survival_curve {"category": "카페", "dong": "신천동"}, Secondary Actions: Expand
+										366 text keyboard_arrow_right
+										367 text 🔧 get_survival_curve {"category": "카페", "dong": "신천동"}
+									368 container
+										369 image
+											370 image
+											371 image
+											372 image
+											373 image
+											374 image
+											375 image
+											376 image
+											377 image
+											378 image
+											379 image
+											380 image
+											381 text 0
+											382 text 2
+											383 text 4
+											384 text 6
+											385 text 8
+											386 text 10
+											387 text 0
+											388 text 20
+											389 text 40
+											390 text 60
+											391 text 80
+											392 text 100
+										393 image
+											394 image
+											395 text 개업 후 경과 연수
+											396 text 생존율(%)
+											397 text 50% (중앙생존)
+										398 toolbar modebar-991823
+											399 button Download plot as a PNG
+												400 image
+											401 container
+												402 button Zoom
+													403 image
+												404 button Pan
+													405 image
+											406 container
+												407 button Zoom in
+													408 image
+												409 button Zoom out
+													410 image
+												411 button Autoscale
+													412 image
+												413 button Reset axes
+													414 image
+											415 button Fullscreen
+												416 image
+										417 image
+									418 container
+										419 heading 결론, Value: 3, ID: 99b2ed06
+											420 text 결론
+											421 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#99b2ed06
+										422 text 300m 반경 내 카페 수는
+										423 text 동부로22길 9가 39개
+										424 text ,
+										425 text 동부로 149가 44개
+										426 text 로,
+										427 text 동부로 149 주변이 5개 더 많습니다.
+										428 text 그러나
+										429 text "카페가 적은 쪽에 창업하는 것이 무조건 유리하다"고 단정할 수 없습니다.
+										430 text  단순 점포 수보다
+										431 text 건물 형태(대형 복합몰 vs 로드샵 이면상권)와 유동인구 밀도
+										432 text 에 따라 상권 성격이 크게 다르기 때문입니다.
+										433 heading 근거 수치 비교 (반경 300m 기준), Value: 3, ID: 300m
+											434 text 근거 수치 비교 (반경 300m 기준)
+											435 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#300m
+										436 table
+											437 row
+												438 cell
+													439 text 구분
+												440 cell
+													441 text 동부로22길 9 (아펠리체 인근)
+												442 cell
+													443 text 동부로 149 (신세계/복합환승센터)
+												444 cell
+													445 text 비고
+											446 row
+												447 cell
+													448 text 카페 점포 수
+												449 cell
+													450 text 39개
+												451 cell
+													452 text 44개
+												453 cell
+													454 text 소상공인 상가정보(2026-06) 기준
+											455 row
+												456 cell
+													457 text 동일 주소 제외 지점 수
+												458 cell
+													459 text 37개 지점
+												460 cell
+													461 text 32개 지점
+												462 cell
+													463 text 건물 내 다점포 중복 제거 후 지점 수
+											464 row
+												465 cell
+													466 text 건물 내 집적 카페 수
+												467 cell
+													468 text 1개 (해당 건물)
+												469 cell
+													470 text 11개
+													471 text  (몰 내 다수 집적)
+												472 cell
+													473 text 신세계/터미널 건물 내부 매장 포함
+											474 row
+												475 cell
+													476 text 전체 점포 수
+												477 cell
+													478 text 794개
+												479 cell
+													480 text 709개
+											481 row
+												482 cell
+													483 text 음식·식음료 비중
+												484 cell
+													485 text 33.6%
+												486 cell
+													487 text 32.9%
+											488 row
+												489 cell
+													490 text 최근 공실 후보
+												491 cell
+													492 text 13곳
+												493 cell
+													494 text 9곳
+												495 cell
+													496 text 폐업 후 90일 이상 신규 인허가 없는 자리
+										497 heading 입지별 분석 및 상권 특성, Value: 3, ID: f165d265
+											498 text 입지별 분석 및 상권 특성
+											499 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#f165d265
+										500 content list
+											501 container
+												502 AXListMarker 1.
+												503 text 동부로 149 (대구신세계 백화점 · 복합환승센터)
+												504 content list
+													505 container
+														506 AXListMarker ◦
+														507 text 특징 : 전체 44개 중 11개가 동부로 149 건물 내부에 몰려 있는  대형 복합몰·터미널 상권 입니다.
+													508 container
+														509 AXListMarker ◦
+														510 text 상권 성격 : 유동인구와 절대 집객력이 매우 높은 대신, 입점 수수료·임대료 부담이 크고 대형 프랜차이즈/앵커 브랜드와의 내부 경쟁이 치열합니다. 건물 외부 독립 매장은 32개 수준입니다.
+											511 container
+												512 AXListMarker 2.
+												513 text 동부로22길 9 (동대구역 아펠리체 및 이면 로드 상권)
+												514 content list
+													515 container
+														516 AXListMarker ◦
+														517 text 특징 : 전체 39개 중 37개가 각각 다른 건물에 흩어져 있는  외부 길거리(로드) 상권 입니다.
+													518 container
+														519 AXListMarker ◦
+														520 text 상권 성격 : 신세계 내부보다 카페 절대 수는 적지만, 길거리 로드샵 밀집도(37개 지점)는 오히려 더 높습니다. 오피스/주거/식당가 배후 유동인구에 직접 노출되는 구조입니다.
+											521 container
+												522 AXListMarker 3.
+												523 text 신천동 지역 카페 생존율 데이터
+												524 text  (2010년 이후 개업, n=77, Kaplan-Meier 분석)
+												525 content list
+													526 container
+														527 AXListMarker ◦
+														528 text 중앙생존기간 :  6.4년  (대구 전체 카페 평균 5.5년 대비 높음)
+													529 container
+														530 AXListMarker ◦
+														531 text 생존율 : 1년 생존율 90.9%, 3년 생존율 80.4%, 5년 생존율 65.5%
+										532 heading 주의점 및 현장 확인 사항, Value: 3, ID: e427d8ef
+											533 text 주의점 및 현장 확인 사항
+											534 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#e427d8ef
+										535 content list
+											536 container
+												537 AXListMarker •
+												538 text 수요·매출 미반영 : 경쟁 점포 수가 적더라도 실제 유동인구나 음료 수요 자체가 적다면 창업에 불리할 수 있습니다. 매출·임대료 데이터는 공공 데이터로 제공되지 않습니다.
+											539 container
+												540 AXListMarker •
+												541 text 층 기준 : 동부로 149는 인허가 이력이 가장 많은 지하 1층, 동부로22길 9는 1층/대표 표기를 기준으로 집계되었습니다.
+										542 heading 제안 질문, Value: 3, ID: 7bb28f2b
+											543 text 제안 질문
+											544 link Description: Link to heading, Value: pubdai.streamlit.app/~/+/#7bb28f2b
+										545 content list
+											546 container
+												547 AXListMarker 1.
+												548 text "동부로22길 9 건물 자체의 역대 인허가 이력과 이전 업종을 보고 싶어요."
+											549 container
+												550 AXListMarker 2.
+												551 text "신천동 일대에서 카페가 폐업한 자리에 새로 들어선 주요 업종(전이 분석)은 무엇인가요?"
+									552 text 모델: gemini-3.5-flash
+					553 image js-plotly-tester
+		554 link streamlit.io/cloud
+		555 link (collapsed) Description: App Creator Avatar, Value: share.streamlit.io/user/donggwony, Secondary Actions: Expand
+
+The focused UI element is 59 button (expanded) Secondary Actions: Collapse, keyboard_arrow_down 🔧 find_nearby {"address": "대구광역시 동구 동대구로 550", "radius_m": 300, "category": "카페"}
