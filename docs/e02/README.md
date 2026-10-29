@@ -156,7 +156,7 @@ python -m pipeline.load_supabase --processed data/processed --env-file ../.env -
 
 - [x] Gemini 키 교체·답변 확인 (2026-10-29, 7-3절)
 - [x] 염동권 로컬을 대상 DB로 전환·접속 확인 (2026-10-29, 7-3절)
-- [ ] 원본(서울) 프로젝트 `app_reader` 비밀번호 교체 또는 로그인 차단 (7-2절 노출 후속)
+- [x] 원본(서울) 프로젝트 `app_reader` 로그인 차단 (2026-10-29, 7-3절)
 - [ ] 원본 프로젝트 보존 기한과 삭제 시점 결정
 - [ ] 대상 Pro 조직의 egress 사용량·앱 접속 지연 관찰(기존 Pro 요금 유지, 새 프로젝트 추가 없음)
 - [ ] 공개 서버 메모리 확인(앱 반복 재시작 여부)
@@ -218,7 +218,8 @@ python -m pipeline.load_supabase --processed data/processed --env-file ../.env -
 - **Gemini 키 교체**: 염동권이 새 키를 발급해 Streamlit Secrets의 `GEMINI_API_KEY`를 바꾸고 Reboot했다. 공개 앱 AI 상담에 질문을 보내 답변이 오는 것을 확인했다(염동권 확인). 노출됐던 이전 키는 AI Studio에서 삭제했다(염동권 확인). Gemini 한도는 Google Cloud 프로젝트 단위라 같은 프로젝트의 키는 한도를 공유한다.
 - **로컬 연결 전환**: 염동권 PC의 `.env`에서 `APP_DATABASE_URL`(관리자)·`APP_READER_DATABASE_URL`(읽기 전용)을 대상 프로젝트로 바꿨다. 비밀값을 출력하지 않고 확인: 두 계정 모두 시드니 pooler 접속, `app.current_version`=3, `stores` 225,858행. `postgres`는 쓰기 가능, `app_reader`는 쓰기 권한 없음·UPDATE 시도 권한 오류로 차단. Windows 사용자·시스템 환경변수에 같은 키가 없어 적재 스크립트는 이 `.env`를 읽는다.
 - 주의: 비밀번호에 `@` 같은 URL 예약 문자가 있으면 `%40`처럼 인코딩해야 한다. Streamlit Secrets에서 복사할 때 따옴표가 따라오면 `sslmode` 값이 깨진다.
-- 남은 보안 조치: 원본(서울) 프로젝트 `app_reader` 비밀번호 교체 또는 로그인 차단, 원본 프로젝트 보존 기한 결정.
+- **원본 읽기 계정 차단**: 염동권이 원본(서울) 프로젝트 SQL Editor에서 `alter role app_reader nologin;`을 실행했다(결과 "Success. No rows returned", 염동권 확인). 데이터·권한은 그대로 두고 로그인만 막았다. 원본 쪽 `rolcanlogin`은 에이전트가 재조회하지 못했다. 같은 날 대상 DB의 `app_reader`는 로그인 가능(`rolcanlogin`=true)·v3 조회를 확인해 공개 앱 연결에는 영향이 없다.
+- 남은 일: 원본 프로젝트 보존 기한 결정.
 
 ## 부록 A. 1단계 조사 (2026-10-14)
 
