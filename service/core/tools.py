@@ -369,8 +369,14 @@ def _pick_unit(address: str) -> tuple[pd.Series, dict]:
     if building.nunique() > 1:
         raise AmbiguousAddressError(address, [_unit_brief(r) for _, r in cand.head(10).iterrows()], len(cand))
     res = {"query": address, "method": method, "matched": int(len(cand)),
-           "matches": [_unit_brief(r) for _, r in cand.iterrows()]}
-    return cand.iloc[0], _py(res)
+           "matches": [_unit_brief(r) for _, r in cand.iterrows()], "floor_note": None}
+    top = cand.iloc[0]
+    if method != "자리 ID 일치" and not A.extract_floor(q) and cand["floor"].nunique(dropna=False) > 1:
+        # 층을 쓰지 않으면 기록이 가장 많은 층을 고른다(A안). 사용자가 다른 층을 생각했을 수 있으니 알린다.
+        shown = top["floor"] if isinstance(top["floor"], str) else "층 표기 없는 자리"
+        res["floor_note"] = (f"층을 지정하지 않아 이 건물에서 인허가 기록이 가장 많은 {shown}({int(top['n_records'])}건)을 표시했습니다. "
+                             f"다른 층 {len(cand) - 1}곳은 다른 후보에서 고를 수 있습니다.")
+    return top, _py(res)
 
 
 # ─────────────────────────── Tool 2. get_unit_history ───────────────────────────
@@ -420,6 +426,7 @@ def get_unit_history(address: str, whole_building: bool = False, max_records: in
         "timeline": timeline[-max_records:],
         "timeline_truncated": len(timeline) > max_records,
         "other_candidates": res["matches"][1:],
+        "floor_note": None if whole_building else res["floor_note"],
         "basis": _basis(definition="같은 자리(건물+층)의 인허가 레코드를 인허가일 순으로 정렬. gap = 직전 폐업일~이번 인허가일(음수는 양도·양수로 인한 중첩)."),
     })
 
@@ -865,7 +872,7 @@ def find_nearby(address: str, radius_m: int = C.NEARBY_RADIUS_M, category: str |
     poi = _require(s.poi, "상가정보")
     if "출구" in address or address.strip().endswith("역"):
         raise ToolError("역·출구 반경 합집합 및 최근접 출구 배정은 미지원입니다. 특정 점포의 전체 주소를 지정하세요. 주소 중심 집계를 출구 집계로 대체할 수 없습니다.")
-    u, _ = _pick_unit(address)
+    u, picked = _pick_unit(address)
     if pd.isna(u["lat"]) or pd.isna(u["lon"]):
         raise ToolError(f"'{u['addr']}'는 좌표가 없어 반경 분석을 할 수 없습니다.")
     lat, lon, radius = float(u["lat"]), float(u["lon"]), int(radius_m)
@@ -910,6 +917,7 @@ def find_nearby(address: str, radius_m: int = C.NEARBY_RADIUS_M, category: str |
 
     out = {
         "center_definition": "인허가 자리 좌표 중심; 역 출구 또는 상가 카페 좌표 중심과 다름",
+        "floor_note": picked["floor_note"],
         "center": {"address": u["addr"], "unit_id": u["uid"], "lat": lat, "lon": lon,
                    "status": "공실" if u["vacant"] else f"영업중: {u['current_stores']}"},
         "radius_m": radius,

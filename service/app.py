@@ -350,6 +350,8 @@ with tab_unit:
             u = h["unit"]
             st.markdown(f"### {u['address']}")
             st.caption(f"자리 ID: {u['unit_id']} · {u['status']}")
+            if h.get("floor_note"):
+                st.info(h["floor_note"] + " (아래 '다른 후보 자리' 참고)")
             if not u["is_single_unit"]:
                 st.info(u["single_unit_note"])
             s = h["summary"]

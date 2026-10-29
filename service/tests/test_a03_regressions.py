@@ -42,5 +42,13 @@ class A03RegressionTest(unittest.TestCase):
             self.assertEqual(get_unit_history(a)["unit"]["address"], "대구광역시 중구 동성로5길 83 1층")
         self.assertEqual(get_unit_history("대구 중구 동성로5길 83 2층")["unit"]["address"], "대구광역시 중구 동성로5길 83 2층")
 
+    def test_floor_note_when_floor_not_given(self):
+        # 층을 쓰지 않으면 기록이 가장 많은 층을 고르고, 그 사실을 알린다(A안).
+        h = get_unit_history("대구 중구 동성로5길 83")
+        self.assertIn("1층(6건)", h["floor_note"])
+        self.assertIsNone(get_unit_history("대구 중구 동성로5길 83 2층")["floor_note"])
+        self.assertIsNone(get_unit_history("대구 중구 동성로5길 83", whole_building=True)["floor_note"])
+        self.assertIn("지하1층", find_nearby("대구 동구 동부로 149", category="카페")["floor_note"])
+
 if __name__ == "__main__":
     unittest.main()
