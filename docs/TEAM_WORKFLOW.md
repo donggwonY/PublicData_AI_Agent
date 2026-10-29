@@ -60,6 +60,7 @@
 - 데이터를 갱신할 때(염동권): ① `service/data/raw`의 원본으로 `python -m pipeline.build` → ② 테스트 통과 후 `main`에 올림 → ③ 위 공유 DB 대상·쓰기 계정·백업·용량을 확인하고 `python -m pipeline.load_supabase --processed data/processed --env-file ../.env --activate` → ④ 공개 앱 Reboot 후 사이드바의 "데이터 db v<번호>"·기준일 확인. 전체 교체가 요청된 경우에만 `--fresh --start-version <다음 번호>`를 추가합니다. 기본 용량 상한은 450MB이므로 기존 버전과의 합계가 넘으면 보존·교체 방식을 먼저 정하고 재실행합니다. 코드 변경이 함께 있으면 위 배포 순서를 따릅니다. 공개 앱의 Secrets에는 읽기 전용 `app_reader` 접속 정보만 둡니다.
 - 문제가 생기면 `deploy`를 고치지 말고 `main`에서 수정해 다시 올립니다. 급히 되돌려야 하면 이전에 배포한 커밋을 가리키는 되돌림 커밋을 `main`에 만들고 같은 순서로 올립니다.
 - 다른 멘티와 그 에이전트는 `deploy`에 푸시하지 않습니다.
+- 공개 앱의 Streamlit Cloud 메뉴에서 **Codespaces 기능을 쓰지 않습니다.** Streamlit이 배포 브랜치(`deploy`)에 `.devcontainer/devcontainer.json`을 자동으로 커밋하고, Codespaces 안의 커밋은 `main`을 거치지 않고 공개 앱을 바로 바꿉니다. 그러면 `deploy`가 `main`과 갈라져 fast-forward 배포가 막힙니다(2026-10-17 `ee1b3a2` 사례, 2026-10-29 정리).
 
 ## 코딩 에이전트와 Git 게시
 
