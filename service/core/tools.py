@@ -257,11 +257,26 @@ def normalize_address(query: str, limit: int = 10) -> dict:
         1 지번 기본주소 일치   2 도로명 기본주소 일치   3 주소 토큰 포함 검색   4 상호명 검색
     어떤 방법으로 찾았는지(method)도 함께 돌려주어, AI 와 사용자가 신뢰도를 판단할 수 있게 한다.
     """
-    s = store()
-    u = s.units
     q = (query or "").strip()
     if not q:
         raise ToolError("주소 또는 상호를 입력하세요.")
+    cand, method = _find_units(q)
+    if cand.empty:
+        return _py({"query": query, "matched": 0, "matches": [],
+                    "hint": "도로명(예: 동성로5길 83) 또는 지번(예: 삼덕동1가 28-6) 형식으로 다시 시도하세요."})
+    return _py({
+        "query": query, "method": method, "matched": int(len(cand)),
+        "matches": [_unit_brief(r) for _, r in cand.head(limit).iterrows()],
+        "note": "자리(unit) = 건물 기본주소(지번) + 층. 층 기재가 없는 과거 레코드는 건물 내 주 사용 층으로 합산.",
+    })
+
+
+def _find_units(q: str) -> tuple[pd.DataFrame, str | None]:
+    """normalize_address 의 검색 본체. 후보 자리(units 행)를 이력 많은 순으로 돌려준다."""
+    s = store()
+    u = s.units
+    if q in u.index:  # 후보 목록에서 고른 자리 ID 를 그대로 다시 넣은 경우
+        return u.loc[[q]], "자리 ID 일치"
     floor = A.extract_floor(q)
     hits, method = pd.Index([]), None
 
@@ -289,32 +304,73 @@ def normalize_address(query: str, limit: int = 10) -> dict:
         uids = s.stores.loc[s.stores["name"].str.contains(q, regex=False), "uid"].unique()
         hits, method = pd.Index(uids), "상호명 검색(과거 상호 포함)"
     if hits.empty:
-        return _py({"query": query, "matched": 0, "matches": [],
-                    "hint": "도로명(예: 동성로5길 83) 또는 지번(예: 삼덕동1가 28-6) 형식으로 다시 시도하세요."})
+        return u.iloc[0:0], None
 
     cand = u.loc[hits]
     if floor:  # 질문에 "2층"이 있으면 같은 층을 우선하되, 없으면 후보를 버리지 않는다
         same = cand[cand["floor"] == floor]
         cand = same if not same.empty else cand
-    cand = cand.sort_values("n_records", ascending=False)  # 이력이 많은 자리를 위로
-    return _py({
-        "query": query, "method": method, "matched": int(len(cand)),
-        "matches": [_unit_brief(r) for _, r in cand.head(limit).iterrows()],
-        "note": "자리(unit) = 건물 기본주소(지번) + 층. 층 기재가 없는 과거 레코드는 건물 내 주 사용 층으로 합산.",
-    })
+    return cand.sort_values("n_records", ascending=False), method  # 이력이 많은 자리를 위로
+
+
+class AmbiguousAddressError(ToolError):
+    """주소 후보가 서로 다른 건물에 걸칠 때. 메시지와 candidates 로 후보를 보여 주고 고르게 한다."""
+
+    def __init__(self, address: str, candidates: list[dict], total: int):
+        self.candidates = candidates
+        lines = [f"{i}. {c['address']} (자리 ID: {c['unit_id']}) — 인허가 {c['records']}건, {c['status']}"
+                 for i, c in enumerate(candidates, 1)]
+        more = f"\n(후보 {total}곳 중 이력이 많은 {len(candidates)}곳)" if total > len(candidates) else ""
+        super().__init__(f"'{address}'에 해당하는 건물이 여러 곳입니다. 사용자에게 아래 목록을 보여 주고 원하는 곳을 고르게 한 뒤, "
+                         f"고른 후보의 자리 ID 또는 전체 주소로 다시 조회하세요. 임의로 하나를 고르지 마세요.\n"
+                         + "\n".join(lines) + more)
+
+
+_ROAD_CORE = re.compile(r"(\S+?(?:로|길))\s+(지하\s*)?(\d+)(?:\s*-\s*(\d+))?")
+_JIBUN_CORE = re.compile(r"(\S+?(?:동|가|리))\s+(산\s*)?(\d+)(?:\s*-\s*(\d+))?")
+
+
+def _address_core(text: str | None) -> set[str]:
+    """'동성로5길 83', '삼덕동1가 61-3' 처럼 구 없이 비교할 도로명·지번 핵심부."""
+    out = set()
+    for rx, mark in ((_ROAD_CORE, "지하 "), (_JIBUN_CORE, "산")):
+        for m in rx.finditer(text or ""):
+            out.add(f"{m[1]} {mark if m[2] else ''}{A._num(m[3], m[4])}")
+    return out
+
+
+def _exact_matches(q: str, cand: pd.DataFrame) -> pd.DataFrame:
+    """후보 중 입력과 도로명·건물번호(또는 지번)가 정확히 같은 자리. 없으면 후보 그대로."""
+    full = A._clean(q if q.startswith("대구") else f"{A.SIDO} {q}")
+    keys = {k["key"] for k in (A.parse_road(full), A.parse_jibun(full)) if k}
+    if keys:
+        hit = cand["building_key"].isin(keys) | cand["addr"].map(lambda a: (A.parse_road(a) or {}).get("key")).isin(keys)
+        if hit.any():
+            return cand[hit]
+    core = _address_core(q)
+    if core:
+        hit = (cand["addr"] + " " + cand["jibun_addr"]).map(lambda a: bool(core & _address_core(a)))
+        if hit.any():
+            return cand[hit]
+    return cand
 
 
 def _pick_unit(address: str) -> tuple[pd.Series, dict]:
-    """가장 그럴듯한 자리 하나 + 나머지 후보 목록. 후보는 결과에 함께 실어 사용자가 고를 수 있게 한다."""
-    res = normalize_address(address, limit=len(store().units))
-    if not res["matched"]:
-        raise ToolError(f"'{address}'에 해당하는 자리를 찾지 못했습니다. {res.get('hint', '')}")
-    candidates = res["matches"]
-    buildings = {(A.parse_road(x["address"]) or {}).get("key") or store().units.loc[x["unit_id"], "building_key"] for x in candidates}
-    if len(buildings) > 1:
-        raise ToolError("주소 후보가 여러 개입니다. normalize_address로 구·건물번호·층을 확인한 뒤 전체 주소를 지정하세요.")
-    uid = candidates[0]["unit_id"]
-    return store().units.loc[uid], res
+    """가장 그럴듯한 자리 하나 + 같은 건물의 다른 후보(층). 건물이 여러 곳이면 고르게 한다."""
+    q = (address or "").strip()
+    if not q:
+        raise ToolError("주소 또는 상호를 입력하세요.")
+    cand, method = _find_units(q)
+    if cand.empty:
+        raise ToolError(f"'{address}'에 해당하는 자리를 찾지 못했습니다. "
+                        "도로명(예: 동성로5길 83) 또는 지번(예: 삼덕동1가 28-6) 형식으로 다시 시도하세요.")
+    cand = _exact_matches(q, cand)
+    building = cand["addr"].map(lambda a: (A.parse_road(a) or {}).get("key")).fillna(cand["building_key"])
+    if building.nunique() > 1:
+        raise AmbiguousAddressError(address, [_unit_brief(r) for _, r in cand.head(10).iterrows()], len(cand))
+    res = {"query": address, "method": method, "matched": int(len(cand)),
+           "matches": [_unit_brief(r) for _, r in cand.iterrows()]}
+    return cand.iloc[0], _py(res)
 
 
 # ─────────────────────────── Tool 2. get_unit_history ───────────────────────────

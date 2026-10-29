@@ -331,12 +331,22 @@ with tab_dash:
 with tab_unit:
     addr = st.text_input("주소 또는 상호", placeholder="예) 대구 중구 동성로5길 83 / 삼덕동1가 28-6 / 빽다방 대구군위점")
     whole = st.checkbox("층 구분 없이 건물 전체 보기")
+    h = None
     if addr:
         try:
             h = T.get_unit_history(addr, whole_building=whole)
+        except T.AmbiguousAddressError as e:
+            # 서로 다른 건물이 걸리면 임의로 고르지 않고 사용자가 고르게 한다. 고른 자리 ID 로 다시 조회한다.
+            opts = e.candidates
+            st.info(f"'{addr}'에 해당하는 건물이 여러 곳입니다. 원하는 주소를 고르세요.")
+            pick = st.selectbox("주소 후보", range(len(opts)), index=None, placeholder="주소 선택",
+                                format_func=lambda i: f"{opts[i]['address']} — 인허가 {opts[i]['records']}건, {opts[i]['status']}",
+                                key=f"unit-pick-{addr}")
+            if pick is not None:
+                h = T.get_unit_history(opts[pick]["unit_id"], whole_building=whole)
         except T.ToolError as e:
             st.warning(str(e))
-        else:
+        if h:
             u = h["unit"]
             st.markdown(f"### {u['address']}")
             st.caption(f"자리 ID: {u['unit_id']} · {u['status']}")

@@ -63,7 +63,7 @@ TOOL_SPECS = [
         "input_schema": {
             "type": "object",
             "properties": {
-                "address": {"type": "string", "description": "도로명·지번 주소 또는 상호명 (예: '동성로5길 83', '삼덕동1가 28-6 2층', '빽다방 대구군위점')."},
+                "address": {"type": "string", "description": "도로명·지번 주소, 상호명, 또는 후보 목록의 자리 ID (예: '동성로5길 83', '삼덕동1가 28-6 2층', '빽다방 대구군위점'). 건물이 여러 곳이면 후보 목록이 오류로 반환되니 사용자에게 고르게 한다."},
                 "whole_building": {"type": "boolean", "description": "층 구분 없이 건물 전체 이력.", "default": False},
                 "max_records": {"type": "integer", "default": 40},
             },
@@ -148,7 +148,7 @@ TOOL_SPECS = [
         "input_schema": {
             "type": "object",
             "properties": {
-                "address": {"type": "string", "description": "중심이 될 주소 또는 상호 (예: '동성로5길 83')."},
+                "address": {"type": "string", "description": "중심이 될 주소, 상호, 또는 후보 목록의 자리 ID (예: '동성로5길 83'). 건물이 여러 곳이면 후보 목록이 오류로 반환되니 사용자에게 고르게 한다."},
                 "radius_m": {"type": "integer", "description": "반경(m). 기본 300.", "default": 300},
                 "category": {"type": "string", "description": "경쟁으로 셀 업종. " + _CATEGORY_DESC},
                 "limit": {"type": "integer", "default": 10},

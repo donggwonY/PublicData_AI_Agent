@@ -2,7 +2,7 @@
 import os
 os.environ["APP_DATA_SOURCE"] = "parquet"
 import unittest
-from core.tools import find_nearby, normalize_address, ToolError
+from core.tools import AmbiguousAddressError, find_nearby, get_unit_history, normalize_address, ToolError
 
 class A03RegressionTest(unittest.TestCase):
     def test_building_number_is_not_prefix(self):
@@ -21,12 +21,26 @@ class A03RegressionTest(unittest.TestCase):
                 find_nearby(a, category="카페")
 
     def test_ambiguous_address_requires_clarification(self):
-        with self.assertRaises(ToolError):
-            find_nearby("대구 동구 동부로 149", category="카페")
+        # 같은 도로명·번호가 여러 구에 있으면 고르게 하고, 후보를 함께 돌려준다.
+        with self.assertRaises(AmbiguousAddressError) as ctx:
+            find_nearby("상화로 79", category="카페")
+        self.assertEqual({c["gu"] for c in ctx.exception.candidates}, {"달서구", "수성구"})
+        # 고른 후보의 자리 ID 로 다시 조회하면 그 자리가 중심이 된다.
+        pick = ctx.exception.candidates[0]
+        self.assertEqual(find_nearby(pick["unit_id"], category="카페")["center"]["unit_id"], pick["unit_id"])
+        # 동부로 149: 다른 건물(동대구로 지하 530)이 과거 기록 하나로 섞여 나오지만, 도로명·번호가 정확히 같은
+        # 후보만 남기면 한 건물이다. 층을 지정하지 않으면 이력이 가장 많은 층을 보여 주고 나머지 층은 후보로 준다.
+        self.assertEqual(find_nearby("대구 동구 동부로 149", category="카페")["center"]["address"], "대구광역시 동구 동부로 149 지하1층")
         r = find_nearby("대구 동구 동부로 149 지하1층", category="카페")
         c = r["same_category"]
         self.assertEqual((c["exact_deduplicated_count"], c["same_address_deduplicated_count"], c["excluding_same_address_deduplicated_count"]), (43, 11, 32))
         self.assertEqual(c["definition"], "cat_s == 카페")
+
+    def test_exact_full_address_is_not_ambiguous(self):
+        # '대구 중구 동성로5길 83'은 도로명 검색에 다른 건물(동성로4길 58)이 섞여 나오지만 정확히 일치하는 건물이 있다.
+        for a in ["대구 중구 동성로5길 83", "동성로5길 83", "삼덕동1가 61-3"]:
+            self.assertEqual(get_unit_history(a)["unit"]["address"], "대구광역시 중구 동성로5길 83 1층")
+        self.assertEqual(get_unit_history("대구 중구 동성로5길 83 2층")["unit"]["address"], "대구광역시 중구 동성로5길 83 2층")
 
 if __name__ == "__main__":
     unittest.main()
