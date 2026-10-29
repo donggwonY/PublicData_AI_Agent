@@ -11,7 +11,7 @@
 | 공개 앱 | [pubdai.streamlit.app](https://pubdai.streamlit.app) (`deploy` d16af85) — 사이드바 "데이터 db v3" |
 | 데이터 출처 | Bigdata_platform 조직의 기존 Supabase 프로젝트(Pro, 시드니)의 `app` 스키마. DB 실패 시 저장소 parquet로 자동 대체 |
 | 데이터 | 15업종 인허가 225,858건 · 자리 86,386곳 · 기준일 2026-10-13 (DB version 3) |
-| DB 크기 | 이전 원본에서 240MB 측정. 현재 대상은 기존 Pro 프로젝트이며 한 버전만 유지(7절) |
+| DB 크기 | 232MB (2026-10-29 대상 DB 측정). 한 버전만 유지(7절) |
 | 앱 접속 계정 | `app_reader` — `app` 스키마 읽기 전용 |
 | 검증 | DB 경로와 parquet 경로의 13개 표·도구 결과 20건 완전 일치 |
 | 남은 위험 | 앱 시작 1회당 약 150MB 전송. 대상 Pro 조직의 전체 사용량과 실제 지연 측정 필요(이전 무료 한도 분석은 5절) |
@@ -154,6 +154,10 @@ python -m pipeline.load_supabase --processed data/processed --env-file ../.env -
 
 ## 6. 남은 일
 
+- [x] Gemini 키 교체·답변 확인 (2026-10-29, 7-3절)
+- [x] 염동권 로컬을 대상 DB로 전환·접속 확인 (2026-10-29, 7-3절)
+- [ ] 원본(서울) 프로젝트 `app_reader` 비밀번호 교체 또는 로그인 차단 (7-2절 노출 후속)
+- [ ] 원본 프로젝트 보존 기한과 삭제 시점 결정
 - [ ] 대상 Pro 조직의 egress 사용량·앱 접속 지연 관찰(기존 Pro 요금 유지, 새 프로젝트 추가 없음)
 - [ ] 공개 서버 메모리 확인(앱 반복 재시작 여부)
 - [ ] 김세은: 15업종 데이터 품질 검증(D-04) — 새 업종의 폐업 기록 방식(PC방·게임업은 인허가취소일자 사용) 등
@@ -208,6 +212,13 @@ python -m pipeline.load_supabase --processed data/processed --env-file ../.env -
 - 로컬 증거: `.mentee/db-migration-20261017/app-cutover-validation.json`, `app-cutover.jpg`(Git 제외). 검증 증거에는 비밀번호를 기록하지 않았다.
 - 보안 기록: Secrets 확인 과정에서 기존 Gemini 키와 원본 DB 연결 비밀값이 도구 출력에 포함되는 실수가 있었다. 이후 비밀값 출력은 차단했다. 대상의 새 DB 비밀번호는 해당 출력에 포함되지 않았다. 기존 Gemini 키·원본 DB 읽기 계정 비밀번호의 교체는 별도 후속 조치다.
 - 다음 행동: 대상 조직 Usage와 시드니 DB 접속 지연 관찰. 원본 삭제와 인증값 교체는 아직 수행하지 않았다.
+
+### 7-3. 후속 조치 (2026-10-29, 염동권)
+
+- **Gemini 키 교체**: 염동권이 새 키를 발급해 Streamlit Secrets의 `GEMINI_API_KEY`를 바꾸고 Reboot했다. 공개 앱 AI 상담에 질문을 보내 답변이 오는 것을 확인했다(염동권 확인). 노출됐던 이전 키는 AI Studio에서 삭제했다(염동권 확인). Gemini 한도는 Google Cloud 프로젝트 단위라 같은 프로젝트의 키는 한도를 공유한다.
+- **로컬 연결 전환**: 염동권 PC의 `.env`에서 `APP_DATABASE_URL`(관리자)·`APP_READER_DATABASE_URL`(읽기 전용)을 대상 프로젝트로 바꿨다. 비밀값을 출력하지 않고 확인: 두 계정 모두 시드니 pooler 접속, `app.current_version`=3, `stores` 225,858행. `postgres`는 쓰기 가능, `app_reader`는 쓰기 권한 없음·UPDATE 시도 권한 오류로 차단. Windows 사용자·시스템 환경변수에 같은 키가 없어 적재 스크립트는 이 `.env`를 읽는다.
+- 주의: 비밀번호에 `@` 같은 URL 예약 문자가 있으면 `%40`처럼 인코딩해야 한다. Streamlit Secrets에서 복사할 때 따옴표가 따라오면 `sslmode` 값이 깨진다.
+- 남은 보안 조치: 원본(서울) 프로젝트 `app_reader` 비밀번호 교체 또는 로그인 차단, 원본 프로젝트 보존 기한 결정.
 
 ## 부록 A. 1단계 조사 (2026-10-14)
 
