@@ -900,12 +900,23 @@ def find_nearby(address: str, radius_m: int = C.NEARBY_RADIUS_M, category: str |
         center_key = center_road["key"] if center_road else None
         address_keys = dedup["addr"].map(lambda a: (A.parse_road(a) or {}).get("key"))
         same_address = int(address_keys.eq(center_key).sum()) if center_key else None
+        excluded = len(dedup) - same_address if same_address is not None else None
+        count_explanation = (
+            f"원기록 {len(selected)}건 → 동일행 제거 {len(dedup)}건. "
+            + (f"중심 건물과 같은 주소 {same_address}건을 제외하면 {len(dedup)} - {same_address} = {excluded}건. "
+               if same_address is not None else "중심 건물의 도로명 주소를 해석할 수 없어 같은 주소 포함·제외 수는 확인 불가. ")
+            + "모두 상가 기록 수이며 고유 건물 수가 아닙니다. 다른 건물 안의 여러 카페는 각각 남습니다. "
+              "같은 주소 제외는 중심 건물 내부의 경쟁 카페도 제외하므로 전체 경쟁 규모와 구별하세요."
+        )
         same = {"query": "카페" if category.strip() == "카페" else cat_label, "count": int(m.sum()),
                 "definition": "cat_s == 카페" if category.strip() == "카페" else "업종 검색어 부분 일치",
                 "count_unit": "상가 기록 수; 현재 영업 확인 아님",
                 "exact_deduplicated_count": len(dedup),
                 "same_address_deduplicated_count": same_address,
-                "excluding_same_address_deduplicated_count": len(dedup) - same_address if same_address is not None else None,
+                "excluding_same_address_deduplicated_count": excluded,
+                "count_explanation": count_explanation,
+                "unique_building_count": None,
+                "unique_building_count_status": "미계산; 위 기록 수를 고유 건물 수로 해석할 수 없음",
                 "same_address_definition": "도로명 건물번호 일치, 층 무시; 건물 내 경쟁도 제외됨",
                 "examples": near[m].nsmallest(min(limit, 5), "dist_m")[["name", "cat_s", "dist_m"]].to_dict("records")}
 
@@ -916,6 +927,10 @@ def find_nearby(address: str, radius_m: int = C.NEARBY_RADIUS_M, category: str |
     risky = near_u[near_u["is_single_unit"] & (near_u["closures_since_2010"] >= 3)].nsmallest(limit, "dist_m")
 
     out = {
+        "interpretation_limits": {
+            "unmeasured": ["주소별 실제 고객 수요", "매출", "임대료", "입점 수수료", "보행 동선"],
+            "guidance": "이번 도구에서 측정하지 않은 항목입니다. 높음·낮음·유리함을 단정하지 말고 확인 필요라고 설명하세요. 다른 공공자료 자체가 없다는 뜻은 아닙니다. 역 승하차 수치도 개별 건물 고객 수요가 아닙니다.",
+        },
         "center_definition": "인허가 자리 좌표 중심; 역 출구 또는 상가 카페 좌표 중심과 다름",
         "floor_note": picked["floor_note"],
         "center": {"address": u["addr"], "unit_id": u["uid"], "lat": lat, "lon": lon,

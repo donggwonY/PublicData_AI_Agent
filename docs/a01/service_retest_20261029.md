@@ -49,3 +49,15 @@ https://pubdai.streamlit.app/ 에 새 브라우저 탭과 빈 대화 세션을 �
 - [로컬 도구 재현](service_retest_20261029_probe.json)
 - [실행 화면](service_retest_20261029.png)
 - [수정 전 첫 평가](service_evaluation.md)
+
+## 재평가 후 로컬 보완
+
+후속 요청으로 `find_nearby`에 실제 계산값을 넣은 `count_explanation`과 고유 건물 수 미계산 표시를 추가했다. 기존 수치 필드는 유지한다. 중심 건물 제외가 다른 건물의 여러 카페를 합치지 않는다는 점을 명시하며, 수요·매출·임대료·수수료·동선의 미측정 한계를 도구 결과와 공통 시스템 프롬프트에 전달한다. 도구 설명도 같은 정의로 맞췄다.
+
+같은 중심 기록의 중복 1건과 같은 외부 건물의 서로 다른 카페 2건을 넣은 회귀 사례에서 원기록 4 → 동일행 제거 3 → 중심 1건 제외 후 2건이 유지되는지 검사한다. 이 검사는 고유 건물 수 1개로 오해해 집계를 바꾸는 회귀를 방지한다.
+
+이는 도구 계약·프롬프트 보완이며 실제 Gemini가 지침을 지키는지 보장하지 않는다. 공개 앱의 위 답변은 수정 전 증거로 유지한다. 염동권의 배포 후 새 세션에서 같은 질문으로 실제 응답을 재검증해야 한다. DB 변경·배포는 수행하지 않았다.
+
+검증: `python -m unittest tests.test_core_units tests.test_a03_regressions tests.test_area_parsing` 23개 통과. `python -m tests.smoke_test` ALL PASSED 0(의도한 오류 경로 포함). `git diff --check` 통과. 전체 discovery는 최초 Streamlit 미설치로 화면 검사 2개 모듈 import 실패; 지정 버전 1.64.0을 로컬 가상환경에 설치한 뒤 재시도했으나 화면 검사에서 장시간 완료되지 않아 중단했다. 전체 UI 검사 통과로 기록하지 않는다. 운영 의존성 파일은 변경하지 않았다. 실제 Gemini 재평가는 아직 하지 않았다.
+
+후속 검증: 중단 원인을 추적한 결과 샌드박스 임시 디렉터리 PermissionError 및 asyncio 로컬 socketpair의 accept 대기를 확인했다. 승인된 제한 밖 실행에서 `python -m unittest discover -s tests -p "test_*.py"` UI 포함 28개가 11.710초에 모두 통과했다. 이 문제 때문에 서비스 코드를 변경하지 않았다. 앞선 스모크 통과와 함께 main 반영 검증을 완료했으며, 실제 모델 응답 재검증은 여전히 배포 후 과제다.

@@ -15,6 +15,30 @@ class A03RegressionTest(unittest.TestCase):
         c = short["same_category"]
         self.assertEqual((c["count"], c["exact_deduplicated_count"], c["same_address_deduplicated_count"], c["excluding_same_address_deduplicated_count"]), (39, 38, 1, 37))
 
+    def test_excluding_center_preserves_other_building_records(self):
+        # 같은 외부 건물의 서로 다른 카페 2건은 건물 하나로 합치지 않는다.
+        from unittest.mock import patch
+        import pandas as pd
+        from core.tools import store
+        s = store()
+        center = find_nearby("대구 동구 동부로22길 9", category="카페")["center"]
+        row = s.poi.iloc[0].copy()
+        row["lat"], row["lon"] = center["lat"], center["lon"]
+        row["cat_s"] = "카페"
+        row["addr"], row["name"] = "대구광역시 동구 동부로22길 9", "중심카페"
+        outside = row.copy()
+        outside["addr"], outside["name"] = "대구광역시 동구 동부로22길 11", "외부카페A"
+        outside2 = outside.copy()
+        outside2["name"] = "외부카페B"
+        fixture = pd.DataFrame([row, row.copy(), outside, outside2]).reset_index(drop=True)
+        with patch.object(s, "poi", fixture):
+            c = find_nearby("대구 동구 동부로22길 9", category="카페")["same_category"]
+        self.assertEqual((c["count"], c["exact_deduplicated_count"],
+                          c["same_address_deduplicated_count"],
+                          c["excluding_same_address_deduplicated_count"]), (4, 3, 1, 2))
+        self.assertIn("3 - 1 = 2건", c["count_explanation"])
+        self.assertIsNone(c["unique_building_count"])
+
     def test_station_scope_is_not_silently_substituted(self):
         for a in ["동대구역", "동대구역 2번 출구"]:
             with self.assertRaises(ToolError):
