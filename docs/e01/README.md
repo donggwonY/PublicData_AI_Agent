@@ -184,7 +184,7 @@ python -m pipeline.external    # 보조 데이터 배치
 | R4 | 보조 데이터 갱신 시점이 기록되지 않는다 | 미해결 | `pipeline/external.py`가 `meta.json`을 갱신하지 않음. 15업종 확장 때도 보조 데이터는 다시 만들지 않아 시점이 인허가와 다름 → E-04 |
 | R5 | README 수치가 실제와 다르다 | 해결 | 2026-10-16 `service/README.md`를 15업종·기준일 2026-10-13·Tool 11종으로 정리. 옛 수치는 "이전 기록" 절에 날짜와 함께 남김 |
 | R6 | 재배포마다 최신 버전 설치 | 해결 (직접 지정 패키지) | `==` 고정 후 배포 로그에서 지정 버전 설치 확인. 전이 의존성은 미고정 → E-04 |
-| R7 | 환경마다 Python 버전 다름 | 해결 | 팀 기준 3.12, 로컬·배포 모두 3.12. `service/.devcontainer`는 루트가 아니라 동작하지 않음(3.11 설정 그대로) |
+| R7 | 환경마다 Python 버전 다름 | 해결 | 팀 기준 3.12, 로컬·배포 모두 3.12. Python 3.11 개발 컨테이너 설정(`service/.devcontainer`, Streamlit이 `deploy`에 자동 추가한 루트 `.devcontainer`)은 쓰지 않아 2026-10-29 삭제 |
 | R8 | 로컬이 배포와 다른 패키지로 실행 | 해결 | 로컬도 `.venv` + 같은 고정 버전. 시스템 Python 직접 실행을 막는 장치는 `run_batch.ps1`에만 있음 |
 
 위험이 처음 확인된 근거는 부록 A-3에 있다.
@@ -196,7 +196,8 @@ python -m pipeline.external    # 보조 데이터 배치
 - [ ] 보조 데이터 시점 기록 (R4) → E-04 또는 보조 데이터 갱신 때
 - [ ] 서버 메모리: 조사 당시 DataFrame 약 165MB(7업종). 15업종 확장과 DB 전환 후 Streamlit Cloud 한도 대비 확인 (E-02 운영 확인과 함께)
 - [ ] Gemini 운영자 키의 무료 등급 한도가 분당 3질문(질문 1개 ≈ 모델 호출 2~4회)을 감당하는지 ([AI Studio Rate limits](https://aistudio.google.com/rate-limit))
-- [ ] `service/.devcontainer` 정리 여부, D-01 보고서 스크립트가 출처로 적는 원래 저장소 주소·커밋(김세은 확인)
+- [x] `service/.devcontainer` 정리: 2026-10-29 삭제
+- [ ] D-01 보고서 스크립트가 출처로 적는 원래 저장소 주소·커밋(김세은 확인)
 
 ---
 
