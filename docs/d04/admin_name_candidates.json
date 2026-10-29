@@ -1,0 +1,72 @@
+{
+  "failed": 3008,
+  "current_admin_name_candidates": 2518,
+  "by_service": [
+    {
+      "service": "골프연습장업",
+      "failed": 1,
+      "direct_candidate": 0
+    },
+    {
+      "service": "담배소매업",
+      "failed": 1767,
+      "direct_candidate": 1596
+    },
+    {
+      "service": "당구장업",
+      "failed": 1,
+      "direct_candidate": 0
+    },
+    {
+      "service": "미용업",
+      "failed": 2,
+      "direct_candidate": 0
+    },
+    {
+      "service": "병원",
+      "failed": 38,
+      "direct_candidate": 28
+    },
+    {
+      "service": "세탁업",
+      "failed": 1,
+      "direct_candidate": 0
+    },
+    {
+      "service": "약국",
+      "failed": 644,
+      "direct_candidate": 487
+    },
+    {
+      "service": "의원",
+      "failed": 504,
+      "direct_candidate": 407
+    },
+    {
+      "service": "일반음식점",
+      "failed": 12,
+      "direct_candidate": 0
+    },
+    {
+      "service": "체력단련장업",
+      "failed": 2,
+      "direct_candidate": 0
+    },
+    {
+      "service": "체육도장업",
+      "failed": 5,
+      "direct_candidate": 0
+    },
+    {
+      "service": "축산판매업",
+      "failed": 26,
+      "direct_candidate": 0
+    },
+    {
+      "service": "휴게음식점",
+      "failed": 5,
+      "direct_candidate": 0
+    }
+  ],
+  "interpretation": "Current administrative-name exact match only; historical validity and raw-address consistency not verified. No correction applied."
+}

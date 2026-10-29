@@ -1,0 +1,1018 @@
+{
+  "scope": "post-hoc subgroup diagnostics; no tuning or deployment eligibility selection",
+  "scores": {
+    "full_training_constant": {
+      "n": 1608,
+      "events": 168,
+      "actual_pct": 10.44776119402985,
+      "predicted_pct": 7.4437343706585155,
+      "brier": 0.09446445825910434,
+      "log_loss": 0.34068342805932855,
+      "roc_auc": 0.5,
+      "average_precision": 0.1044776119402985
+    },
+    "full_training_rf": {
+      "n": 1608,
+      "events": 168,
+      "actual_pct": 10.44776119402985,
+      "predicted_pct": 8.152022805046082,
+      "brier": 0.08457872240583399,
+      "log_loss": 0.3010219513208619,
+      "roc_auc": 0.7060474537037038,
+      "average_precision": 0.3874539975762298
+    },
+    "calibration_base_rf": {
+      "n": 1608,
+      "events": 168,
+      "actual_pct": 10.44776119402985,
+      "predicted_pct": 7.511161116856421,
+      "brier": 0.09010003200726956,
+      "log_loss": 0.31672834680369144,
+      "roc_auc": 0.711636078042328,
+      "average_precision": 0.39643483174079686
+    },
+    "sigmoid_rf": {
+      "n": 1608,
+      "events": 168,
+      "actual_pct": 10.44776119402985,
+      "predicted_pct": 9.994233037997791,
+      "brier": 0.08425260709488475,
+      "log_loss": 0.3000380398960318,
+      "roc_auc": 0.711636078042328,
+      "average_precision": 0.39643483174079686
+    }
+  },
+  "subgroups": [
+    {
+      "field": "업태",
+      "group": "감성주점",
+      "before": {
+        "n": 3,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 7.048601687483107,
+        "brier": 0.005289279768523516,
+        "log_loss": 0.07328080397488838,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "after": {
+        "n": 3,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 8.498576780009996,
+        "brier": 0.00913389404985463,
+        "log_loss": 0.08998362585357261,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "gap_pp": 8.498576780009996,
+      "gap_lower95_pp": 4.875128947630083,
+      "gap_upper95_pp": 14.64881071390739,
+      "building_blocks": 3,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "경양식",
+      "before": {
+        "n": 70,
+        "events": 8,
+        "actual_pct": 11.428571428571429,
+        "predicted_pct": 6.793909614304678,
+        "brier": 0.10412466168760524,
+        "log_loss": 0.3748388073522968,
+        "roc_auc": 0.5282258064516129,
+        "average_precision": 0.13015444708264248
+      },
+      "after": {
+        "n": 70,
+        "events": 8,
+        "actual_pct": 11.428571428571429,
+        "predicted_pct": 8.06137365459697,
+        "brier": 0.10647743258552084,
+        "log_loss": 0.3833513775454384,
+        "roc_auc": 0.5282258064516129,
+        "average_precision": 0.13015444708264248
+      },
+      "gap_pp": -3.3671977739744587,
+      "gap_lower95_pp": -11.55218495225426,
+      "gap_upper95_pp": 3.9535701254882354,
+      "building_blocks": 66,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "기타",
+      "before": {
+        "n": 408,
+        "events": 75,
+        "actual_pct": 18.38235294117647,
+        "predicted_pct": 8.363619288901639,
+        "brier": 0.14748079978212034,
+        "log_loss": 0.4644682215002965,
+        "roc_auc": 0.8087287287287287,
+        "average_precision": 0.6877908590447767
+      },
+      "after": {
+        "n": 408,
+        "events": 75,
+        "actual_pct": 18.38235294117647,
+        "predicted_pct": 12.4497228188734,
+        "brier": 0.12152447007652611,
+        "log_loss": 0.3893733274765308,
+        "roc_auc": 0.8087287287287287,
+        "average_precision": 0.6877908590447767
+      },
+      "gap_pp": -5.93263012230307,
+      "gap_lower95_pp": -17.747181900975775,
+      "gap_upper95_pp": 4.404567134705889,
+      "building_blocks": 337,
+      "small_sample": false
+    },
+    {
+      "field": "업태",
+      "group": "김밥(도시락)",
+      "before": {
+        "n": 7,
+        "events": 3,
+        "actual_pct": 42.857142857142854,
+        "predicted_pct": 8.851394329807862,
+        "brier": 0.3619290470790026,
+        "log_loss": 1.1184800772141201,
+        "roc_auc": 0.41666666666666663,
+        "average_precision": 0.6095238095238096
+      },
+      "after": {
+        "n": 7,
+        "events": 3,
+        "actual_pct": 42.857142857142854,
+        "predicted_pct": 13.149751391550557,
+        "brier": 0.3365632689863337,
+        "log_loss": 1.0254973379515906,
+        "roc_auc": 0.41666666666666663,
+        "average_precision": 0.6095238095238096
+      },
+      "gap_pp": -29.707391465592295,
+      "gap_lower95_pp": -69.50251818118706,
+      "gap_upper95_pp": 2.7705783760758407,
+      "building_blocks": 7,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "냉면집",
+      "before": {
+        "n": 4,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 6.666438945248557,
+        "brier": 0.004711014073933927,
+        "log_loss": 0.06914549930213179,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "after": {
+        "n": 4,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 7.576491274104055,
+        "brier": 0.0072846301002933295,
+        "log_loss": 0.07972239345670977,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "gap_pp": 7.576491274104055,
+      "gap_lower95_pp": 4.3996532701728,
+      "gap_upper95_pp": 14.310877011748433,
+      "building_blocks": 3,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "라이브카페",
+      "before": {
+        "n": 3,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 5.827516031581125,
+        "brier": 0.003428233064958441,
+        "log_loss": 0.06006029828111791,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "after": {
+        "n": 3,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 5.528460049013038,
+        "brier": 0.003170072910599834,
+        "log_loss": 0.05693510237430092,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "gap_pp": 5.528460049013038,
+      "gap_lower95_pp": 4.1197143379303744,
+      "gap_upper95_pp": 6.698520063307218,
+      "building_blocks": 3,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "분식",
+      "before": {
+        "n": 64,
+        "events": 4,
+        "actual_pct": 6.25,
+        "predicted_pct": 9.41722666088132,
+        "brier": 0.059129310104011464,
+        "log_loss": 0.23717933793668916,
+        "roc_auc": 0.6000000000000001,
+        "average_precision": 0.13184331797235022
+      },
+      "after": {
+        "n": 64,
+        "events": 4,
+        "actual_pct": 6.25,
+        "predicted_pct": 14.96744144293228,
+        "brier": 0.06848257011092612,
+        "log_loss": 0.2712872634631783,
+        "roc_auc": 0.6000000000000001,
+        "average_precision": 0.13184331797235022
+      },
+      "gap_pp": 8.71744144293228,
+      "gap_lower95_pp": 2.0615259031613222,
+      "gap_upper95_pp": 14.033816945970239,
+      "building_blocks": 64,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "뷔페식",
+      "before": {
+        "n": 4,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 6.22602835931523,
+        "brier": 0.003960120190146448,
+        "log_loss": 0.06433074749766861,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "after": {
+        "n": 4,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 6.393081664422337,
+        "brier": 0.004474818862989425,
+        "log_loss": 0.06628992183915175,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "gap_pp": 6.393081664422337,
+      "gap_lower95_pp": 4.825203243788096,
+      "gap_upper95_pp": 8.441047553648003,
+      "building_blocks": 4,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "식육(숯불구이)",
+      "before": {
+        "n": 105,
+        "events": 5,
+        "actual_pct": 4.761904761904762,
+        "predicted_pct": 5.748352469740075,
+        "brier": 0.04170646538050375,
+        "log_loss": 0.1655005395922996,
+        "roc_auc": 0.9540000000000001,
+        "average_precision": 0.7484615384615384
+      },
+      "after": {
+        "n": 105,
+        "events": 5,
+        "actual_pct": 4.761904761904762,
+        "predicted_pct": 5.758661922836006,
+        "brier": 0.03694318189087214,
+        "log_loss": 0.14248612803917604,
+        "roc_auc": 0.9540000000000001,
+        "average_precision": 0.7484615384615384
+      },
+      "gap_pp": 0.996757160931244,
+      "gap_lower95_pp": -3.296990906245059,
+      "gap_upper95_pp": 4.328526475237303,
+      "building_blocks": 103,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "외국음식전문점(인도,태국등)",
+      "before": {
+        "n": 21,
+        "events": 1,
+        "actual_pct": 4.761904761904762,
+        "predicted_pct": 6.414520463492157,
+        "brier": 0.04734364950622229,
+        "log_loss": 0.20712055687893058,
+        "roc_auc": 0.09999999999999998,
+        "average_precision": 0.05263157894736842
+      },
+      "after": {
+        "n": 21,
+        "events": 1,
+        "actual_pct": 4.761904761904762,
+        "predicted_pct": 7.111330141803121,
+        "brier": 0.05105796751020994,
+        "log_loss": 0.22724113116645772,
+        "roc_auc": 0.09999999999999998,
+        "average_precision": 0.05263157894736842
+      },
+      "gap_pp": 2.349425379898359,
+      "gap_lower95_pp": -8.505493902103204,
+      "gap_upper95_pp": 8.736227682142472,
+      "building_blocks": 21,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "일식",
+      "before": {
+        "n": 53,
+        "events": 5,
+        "actual_pct": 9.433962264150944,
+        "predicted_pct": 7.6045354571675645,
+        "brier": 0.08662688154520877,
+        "log_loss": 0.3250152363407592,
+        "roc_auc": 0.39583333333333337,
+        "average_precision": 0.2685623639776464
+      },
+      "after": {
+        "n": 53,
+        "events": 5,
+        "actual_pct": 9.433962264150944,
+        "predicted_pct": 10.061593821653569,
+        "brier": 0.08873693603993478,
+        "log_loss": 0.3429380185321924,
+        "roc_auc": 0.39583333333333337,
+        "average_precision": 0.2685623639776464
+      },
+      "gap_pp": 0.6276315575026246,
+      "gap_lower95_pp": -7.3342096686086,
+      "gap_upper95_pp": 7.481136265213676,
+      "building_blocks": 52,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "정종/대포집/소주방",
+      "before": {
+        "n": 19,
+        "events": 1,
+        "actual_pct": 5.263157894736842,
+        "predicted_pct": 6.7784501971143385,
+        "brier": 0.05087932629132782,
+        "log_loss": 0.21120197910083008,
+        "roc_auc": 0.6666666666666667,
+        "average_precision": 0.14285714285714285
+      },
+      "after": {
+        "n": 19,
+        "events": 1,
+        "actual_pct": 5.263157894736842,
+        "predicted_pct": 8.054025195686954,
+        "brier": 0.05478450136182308,
+        "log_loss": 0.22404179789343323,
+        "roc_auc": 0.6666666666666667,
+        "average_precision": 0.14285714285714285
+      },
+      "gap_pp": 2.7908673009501124,
+      "gap_lower95_pp": -9.257197561805391,
+      "gap_upper95_pp": 10.53706818667734,
+      "building_blocks": 18,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "중국식",
+      "before": {
+        "n": 30,
+        "events": 4,
+        "actual_pct": 13.333333333333334,
+        "predicted_pct": 5.849168084679834,
+        "brier": 0.11952665762645799,
+        "log_loss": 0.41608793158431934,
+        "roc_auc": 0.7211538461538461,
+        "average_precision": 0.2698934837092732
+      },
+      "after": {
+        "n": 30,
+        "events": 4,
+        "actual_pct": 13.333333333333334,
+        "predicted_pct": 6.078156827005521,
+        "brier": 0.11976143187775565,
+        "log_loss": 0.41258573279078997,
+        "roc_auc": 0.7211538461538461,
+        "average_precision": 0.2698934837092732
+      },
+      "gap_pp": -7.255176506327813,
+      "gap_lower95_pp": -20.41398628044875,
+      "gap_upper95_pp": 3.416712685789075,
+      "building_blocks": 30,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "출장조리",
+      "before": {
+        "n": 1,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 5.090511276085315,
+        "brier": 0.002591330505195176,
+        "log_loss": 0.05224649881716283,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "after": {
+        "n": 1,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 4.155037301247103,
+        "brier": 0.0017264334974754795,
+        "log_loss": 0.04243827188106918,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "gap_pp": 4.155037301247103,
+      "gap_lower95_pp": 4.155037301247103,
+      "gap_upper95_pp": 4.155037301247103,
+      "building_blocks": 1,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "키즈카페",
+      "before": {
+        "n": 1,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 6.088764607189435,
+        "brier": 0.003707305444176271,
+        "log_loss": 0.06282015418610651,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "after": {
+        "n": 1,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 5.987148104599555,
+        "brier": 0.0035845942426410075,
+        "log_loss": 0.061738690772234095,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "gap_pp": 5.987148104599555,
+      "gap_lower95_pp": 5.987148104599555,
+      "gap_upper95_pp": 5.987148104599555,
+      "building_blocks": 1,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "패밀리레스트랑",
+      "before": {
+        "n": 2,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 5.804213435433633,
+        "brier": 0.003395738067419578,
+        "log_loss": 0.0598098639527968,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "after": {
+        "n": 2,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 5.475181239061338,
+        "brier": 0.0030951618035790648,
+        "log_loss": 0.05636226213674757,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "gap_pp": 5.475181239061338,
+      "gap_lower95_pp": 4.488262582220057,
+      "gap_upper95_pp": 6.462099895902619,
+      "building_blocks": 2,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "한식",
+      "before": {
+        "n": 698,
+        "events": 53,
+        "actual_pct": 7.593123209169055,
+        "predicted_pct": 7.41912464801195,
+        "brier": 0.06930289735675034,
+        "log_loss": 0.26292263048917536,
+        "roc_auc": 0.6189849349129735,
+        "average_precision": 0.11705792585649198
+      },
+      "after": {
+        "n": 698,
+        "events": 53,
+        "actual_pct": 7.593123209169055,
+        "predicted_pct": 9.604936799868158,
+        "brier": 0.07056059902723637,
+        "log_loss": 0.26737997578314004,
+        "roc_auc": 0.6189849349129735,
+        "average_precision": 0.11705792585649198
+      },
+      "gap_pp": 2.011813590699103,
+      "gap_lower95_pp": -0.13911556665760647,
+      "gap_upper95_pp": 4.064987098923107,
+      "building_blocks": 661,
+      "small_sample": false
+    },
+    {
+      "field": "업태",
+      "group": "호프/통닭",
+      "before": {
+        "n": 101,
+        "events": 8,
+        "actual_pct": 7.920792079207921,
+        "predicted_pct": 6.812115096523992,
+        "brier": 0.0713478241032654,
+        "log_loss": 0.2655222456544535,
+        "roc_auc": 0.721774193548387,
+        "average_precision": 0.21893315018315018
+      },
+      "after": {
+        "n": 101,
+        "events": 8,
+        "actual_pct": 7.920792079207921,
+        "predicted_pct": 8.01068079390839,
+        "brier": 0.07029423474727997,
+        "log_loss": 0.25869617605905204,
+        "roc_auc": 0.721774193548387,
+        "average_precision": 0.21893315018315018
+      },
+      "gap_pp": 0.08988871470046966,
+      "gap_lower95_pp": -5.790708583335648,
+      "gap_upper95_pp": 5.207763609823308,
+      "building_blocks": 100,
+      "small_sample": true
+    },
+    {
+      "field": "업태",
+      "group": "횟집",
+      "before": {
+        "n": 14,
+        "events": 1,
+        "actual_pct": 7.142857142857142,
+        "predicted_pct": 7.157714118894519,
+        "brier": 0.06654090931079344,
+        "log_loss": 0.2567045435380209,
+        "roc_auc": 0.7692307692307692,
+        "average_precision": 0.25
+      },
+      "after": {
+        "n": 14,
+        "events": 1,
+        "actual_pct": 7.142857142857142,
+        "predicted_pct": 8.712104251458845,
+        "brier": 0.06924545565815073,
+        "log_loss": 0.2626396965003771,
+        "roc_auc": 0.7692307692307692,
+        "average_precision": 0.25
+      },
+      "gap_pp": 1.5692471086017026,
+      "gap_lower95_pp": -13.953076441407616,
+      "gap_upper95_pp": 10.776788840360682,
+      "building_blocks": 14,
+      "small_sample": true
+    },
+    {
+      "field": "구군",
+      "group": "군위군",
+      "before": {
+        "n": 10,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 7.333392049056904,
+        "brier": 0.00567739024777212,
+        "log_loss": 0.07633967017841559,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "after": {
+        "n": 10,
+        "events": 0,
+        "actual_pct": 0.0,
+        "predicted_pct": 9.096631414949178,
+        "brier": 0.010411410844511481,
+        "log_loss": 0.09675204461923095,
+        "roc_auc": null,
+        "average_precision": null
+      },
+      "gap_pp": 9.096631414949178,
+      "gap_lower95_pp": 6.681019242762671,
+      "gap_upper95_pp": 12.328189181998017,
+      "building_blocks": 10,
+      "small_sample": true
+    },
+    {
+      "field": "구군",
+      "group": "남구",
+      "before": {
+        "n": 103,
+        "events": 11,
+        "actual_pct": 10.679611650485436,
+        "predicted_pct": 8.445204621723319,
+        "brier": 0.09464208337654784,
+        "log_loss": 0.3351299270394922,
+        "roc_auc": 0.6126482213438735,
+        "average_precision": 0.15830437822697885
+      },
+      "after": {
+        "n": 103,
+        "events": 11,
+        "actual_pct": 10.679611650485436,
+        "predicted_pct": 12.24609677171064,
+        "brier": 0.09555871523190233,
+        "log_loss": 0.33541919352743527,
+        "roc_auc": 0.6126482213438735,
+        "average_precision": 0.15830437822697885
+      },
+      "gap_pp": 1.5664851212252042,
+      "gap_lower95_pp": -5.910051436299015,
+      "gap_upper95_pp": 7.803713489191969,
+      "building_blocks": 99,
+      "small_sample": false
+    },
+    {
+      "field": "구군",
+      "group": "달서구",
+      "before": {
+        "n": 314,
+        "events": 22,
+        "actual_pct": 7.006369426751593,
+        "predicted_pct": 7.038463770186576,
+        "brier": 0.06496609812877023,
+        "log_loss": 0.252422908865887,
+        "roc_auc": 0.5832814445828144,
+        "average_precision": 0.10196737034187066
+      },
+      "after": {
+        "n": 314,
+        "events": 22,
+        "actual_pct": 7.006369426751593,
+        "predicted_pct": 8.82406923551886,
+        "brier": 0.06738705860600985,
+        "log_loss": 0.26230375289888436,
+        "roc_auc": 0.5832814445828144,
+        "average_precision": 0.10196737034187066
+      },
+      "gap_pp": 1.8176998087672667,
+      "gap_lower95_pp": -1.169464701158449,
+      "gap_upper95_pp": 4.6051840614962805,
+      "building_blocks": 282,
+      "small_sample": false
+    },
+    {
+      "field": "구군",
+      "group": "달성군",
+      "before": {
+        "n": 152,
+        "events": 5,
+        "actual_pct": 3.289473684210526,
+        "predicted_pct": 6.22566172264085,
+        "brier": 0.03172395147840978,
+        "log_loss": 0.1445728392702646,
+        "roc_auc": 0.8476190476190476,
+        "average_precision": 0.12468438538205981
+      },
+      "after": {
+        "n": 152,
+        "events": 5,
+        "actual_pct": 3.289473684210526,
+        "predicted_pct": 6.776786519013153,
+        "brier": 0.03215434521275327,
+        "log_loss": 0.1419357647979298,
+        "roc_auc": 0.8476190476190476,
+        "average_precision": 0.12468438538205981
+      },
+      "gap_pp": 3.4873128348026268,
+      "gap_lower95_pp": 0.32778155930156316,
+      "gap_upper95_pp": 5.955567072300198,
+      "building_blocks": 139,
+      "small_sample": true
+    },
+    {
+      "field": "구군",
+      "group": "동구",
+      "before": {
+        "n": 237,
+        "events": 62,
+        "actual_pct": 26.160337552742618,
+        "predicted_pct": 8.919915529768526,
+        "brier": 0.2026792359695101,
+        "log_loss": 0.6027740457743105,
+        "roc_auc": 0.8763133640552995,
+        "average_precision": 0.8283650779727536
+      },
+      "after": {
+        "n": 237,
+        "events": 62,
+        "actual_pct": 26.160337552742618,
+        "predicted_pct": 14.052840641281394,
+        "brier": 0.15392551924969833,
+        "log_loss": 0.4601628307106375,
+        "roc_auc": 0.8763133640552995,
+        "average_precision": 0.8283650779727536
+      },
+      "gap_pp": -12.107496911461224,
+      "gap_lower95_pp": -27.373719066412903,
+      "gap_upper95_pp": 5.287497617827504,
+      "building_blocks": 169,
+      "small_sample": false
+    },
+    {
+      "field": "구군",
+      "group": "북구",
+      "before": {
+        "n": 223,
+        "events": 19,
+        "actual_pct": 8.520179372197308,
+        "predicted_pct": 7.653156982473108,
+        "brier": 0.07780539277227153,
+        "log_loss": 0.2918074067546545,
+        "roc_auc": 0.5098039215686274,
+        "average_precision": 0.11845373656616529
+      },
+      "after": {
+        "n": 223,
+        "events": 19,
+        "actual_pct": 8.520179372197308,
+        "predicted_pct": 10.24727098276048,
+        "brier": 0.08028689950549975,
+        "log_loss": 0.3026984335582768,
+        "roc_auc": 0.5098039215686274,
+        "average_precision": 0.11845373656616529
+      },
+      "gap_pp": 1.7270916105631713,
+      "gap_lower95_pp": -2.31365791295818,
+      "gap_upper95_pp": 5.515946512486426,
+      "building_blocks": 209,
+      "small_sample": false
+    },
+    {
+      "field": "구군",
+      "group": "서구",
+      "before": {
+        "n": 115,
+        "events": 13,
+        "actual_pct": 11.304347826086957,
+        "predicted_pct": 7.995697578982897,
+        "brier": 0.09998942904330779,
+        "log_loss": 0.3517337606349988,
+        "roc_auc": 0.6244343891402715,
+        "average_precision": 0.1871081953697808
+      },
+      "after": {
+        "n": 115,
+        "events": 13,
+        "actual_pct": 11.304347826086957,
+        "predicted_pct": 11.00754873649229,
+        "brier": 0.09910190925291139,
+        "log_loss": 0.34696621752280543,
+        "roc_auc": 0.6244343891402715,
+        "average_precision": 0.1871081953697808
+      },
+      "gap_pp": -0.2967990895946677,
+      "gap_lower95_pp": -6.680401590961462,
+      "gap_upper95_pp": 5.685114870950841,
+      "building_blocks": 109,
+      "small_sample": false
+    },
+    {
+      "field": "구군",
+      "group": "수성구",
+      "before": {
+        "n": 249,
+        "events": 16,
+        "actual_pct": 6.425702811244979,
+        "predicted_pct": 6.826249892899548,
+        "brier": 0.058838399530285475,
+        "log_loss": 0.22888225633277906,
+        "roc_auc": 0.7049356223175965,
+        "average_precision": 0.14043265158012658
+      },
+      "after": {
+        "n": 249,
+        "events": 16,
+        "actual_pct": 6.425702811244979,
+        "predicted_pct": 8.010397109933026,
+        "brier": 0.05861909280313317,
+        "log_loss": 0.22575261955449427,
+        "roc_auc": 0.7049356223175965,
+        "average_precision": 0.14043265158012658
+      },
+      "gap_pp": 1.5846942986880466,
+      "gap_lower95_pp": -1.544018062657669,
+      "gap_upper95_pp": 4.437540875829287,
+      "building_blocks": 224,
+      "small_sample": false
+    },
+    {
+      "field": "구군",
+      "group": "중구",
+      "before": {
+        "n": 205,
+        "events": 20,
+        "actual_pct": 9.75609756097561,
+        "predicted_pct": 7.504699712855592,
+        "brier": 0.08936302538664989,
+        "log_loss": 0.3288291349552627,
+        "roc_auc": 0.5010810810810811,
+        "average_precision": 0.12313007185581604
+      },
+      "after": {
+        "n": 205,
+        "events": 20,
+        "actual_pct": 9.75609756097561,
+        "predicted_pct": 9.958348811768904,
+        "brier": 0.09320650357389329,
+        "log_loss": 0.34309266959832946,
+        "roc_auc": 0.5010810810810811,
+        "average_precision": 0.12313007185581604
+      },
+      "gap_pp": 0.2022512507932941,
+      "gap_lower95_pp": -4.021496631552641,
+      "gap_upper95_pp": 4.222517121944764,
+      "building_blocks": 187,
+      "small_sample": false
+    },
+    {
+      "field": "면적㎡",
+      "group": "0~30",
+      "before": {
+        "n": 311,
+        "events": 82,
+        "actual_pct": 26.366559485530544,
+        "predicted_pct": 11.879935556236546,
+        "brier": 0.20831629253866626,
+        "log_loss": 0.6261273748713527,
+        "roc_auc": 0.7303759718819895,
+        "average_precision": 0.6488858133924608
+      },
+      "after": {
+        "n": 311,
+        "events": 82,
+        "actual_pct": 26.366559485530544,
+        "predicted_pct": 22.124663069353666,
+        "brier": 0.17560994199402225,
+        "log_loss": 0.5293795143311613,
+        "roc_auc": 0.7303759718819895,
+        "average_precision": 0.6488858133924608
+      },
+      "gap_pp": -4.241896416176878,
+      "gap_lower95_pp": -17.536115222830656,
+      "gap_upper95_pp": 9.191299914666407,
+      "building_blocks": 244,
+      "small_sample": false
+    },
+    {
+      "field": "면적㎡",
+      "group": "100~200",
+      "before": {
+        "n": 232,
+        "events": 11,
+        "actual_pct": 4.741379310344827,
+        "predicted_pct": 5.625711067992489,
+        "brier": 0.0452719395866824,
+        "log_loss": 0.19156525567099003,
+        "roc_auc": 0.5232414644179351,
+        "average_precision": 0.0552364944890764
+      },
+      "after": {
+        "n": 232,
+        "events": 11,
+        "actual_pct": 4.741379310344827,
+        "predicted_pct": 5.185679399636987,
+        "brier": 0.04539187323252556,
+        "log_loss": 0.19187548395765097,
+        "roc_auc": 0.5232414644179351,
+        "average_precision": 0.0552364944890764
+      },
+      "gap_pp": 0.4443000892921596,
+      "gap_lower95_pp": -2.3628640521788347,
+      "gap_upper95_pp": 3.0545706352482953,
+      "building_blocks": 224,
+      "small_sample": false
+    },
+    {
+      "field": "면적㎡",
+      "group": "200 이상",
+      "before": {
+        "n": 116,
+        "events": 3,
+        "actual_pct": 2.586206896551724,
+        "predicted_pct": 5.6038378689040975,
+        "brier": 0.02611117542999338,
+        "log_loss": 0.13032959643784392,
+        "roc_auc": 0.5545722713864307,
+        "average_precision": 0.038624338624338624
+      },
+      "after": {
+        "n": 116,
+        "events": 3,
+        "actual_pct": 2.586206896551724,
+        "predicted_pct": 5.146433772901646,
+        "brier": 0.02599039389776556,
+        "log_loss": 0.1279612928186857,
+        "roc_auc": 0.5545722713864307,
+        "average_precision": 0.038624338624338624
+      },
+      "gap_pp": 2.5602268763499216,
+      "gap_lower95_pp": -0.49943514085300483,
+      "gap_upper95_pp": 5.159359921867544,
+      "building_blocks": 107,
+      "small_sample": true
+    },
+    {
+      "field": "면적㎡",
+      "group": "30~60",
+      "before": {
+        "n": 573,
+        "events": 50,
+        "actual_pct": 8.726003490401396,
+        "predicted_pct": 7.405988317580875,
+        "brier": 0.08008518916972654,
+        "log_loss": 0.2995013101826014,
+        "roc_auc": 0.5006118546845125,
+        "average_precision": 0.09884357530150903
+      },
+      "after": {
+        "n": 573,
+        "events": 50,
+        "actual_pct": 8.726003490401396,
+        "predicted_pct": 9.25876096308184,
+        "brier": 0.08135604395678787,
+        "log_loss": 0.30537413834908383,
+        "roc_auc": 0.5006118546845125,
+        "average_precision": 0.09884357530150903
+      },
+      "gap_pp": 0.5327574726804443,
+      "gap_lower95_pp": -2.0365680366013943,
+      "gap_upper95_pp": 3.026243653962324,
+      "building_blocks": 541,
+      "small_sample": false
+    },
+    {
+      "field": "면적㎡",
+      "group": "60~100",
+      "before": {
+        "n": 376,
+        "events": 22,
+        "actual_pct": 5.851063829787234,
+        "predicted_pct": 5.80969588131539,
+        "brier": 0.05498320414872703,
+        "log_loss": 0.22180304478259294,
+        "roc_auc": 0.5679250128402671,
+        "average_precision": 0.07962386763642347
+      },
+      "after": {
+        "n": 376,
+        "events": 22,
+        "actual_pct": 5.851063829787234,
+        "predicted_pct": 5.544208883811678,
+        "brier": 0.05505501802954147,
+        "log_loss": 0.2220375948847352,
+        "roc_auc": 0.5679250128402671,
+        "average_precision": 0.07962386763642347
+      },
+      "gap_pp": -0.30685494597555607,
+      "gap_lower95_pp": -2.848295402129126,
+      "gap_upper95_pp": 1.97518362898655,
+      "building_blocks": 360,
+      "small_sample": false
+    }
+  ],
+  "hashes": {
+    "script": "da502f52b0dd725c897420adb8c167e3803feff40610ab5174b1d7fd8135aae2",
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "raw": "45c4491fe2adb0be2ff3f5580d062b4556df8fe2c2f60f3104cab8398ac7cfb4",
+    "model_helper": "9c479ce841981aad081846368e3b9e791279776bbf7e363ab3238b76df82ab97",
+    "spatial_helper": "783578f1594c51a86c980a183e22c6dc5aba96fb705ca515382dbc5a00aa7d7f",
+    "logit_helper": "bd9edfadf0b3604eb5fb0b89d2e790f011a175f154cbdac203375327cba722ad",
+    "parser": "3a283664c735bfb2d4d4fcd7a6eb9331849bcbcee573e4b0c7f7425630a36042"
+  },
+  "diagnostic_script_sha256": "3ed8829c12f0e7316c6aac282eecd5381ba63298dc6e4bf37c5c462c52ba2cba",
+  "plan_sha256": "40b4b8e74a6c420c8599c81feb3a436c594aadf9b588304c3a609f19aef9de4a",
+  "calibration_results_sha256": "6ec2eb04161e44842d865cb25aed66beffcdd033192e970643ab8ccdbbb7ad7c",
+  "bootstrap_repetitions": 2000,
+  "seed": 42
+}

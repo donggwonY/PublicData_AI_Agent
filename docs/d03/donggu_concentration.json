@@ -1,0 +1,3447 @@
+{
+  "scope": "post-outcome concentration audit, no model change or exclusion",
+  "n": 237,
+  "events": 62,
+  "short_7d_events": 16,
+  "short_30d_events": 53,
+  "short_90d_events": 55,
+  "category_events": {
+    "기타": 62
+  },
+  "closure_dates": {
+    "2025-06-14": 10,
+    "2025-05-22": 4,
+    "2025-07-26": 3,
+    "2025-03-06": 2,
+    "2025-08-28": 2,
+    "2025-09-04": 2,
+    "2025-01-23": 1,
+    "2025-01-30": 1,
+    "2025-02-23": 1,
+    "2025-02-27": 1,
+    "2025-02-28": 1,
+    "2025-03-13": 1,
+    "2025-03-27": 1,
+    "2025-03-31": 1,
+    "2025-04-08": 1,
+    "2025-04-10": 1,
+    "2025-04-30": 1,
+    "2025-05-01": 1,
+    "2025-05-08": 1,
+    "2025-05-15": 1,
+    "2025-05-31": 1,
+    "2025-06-05": 1,
+    "2025-06-12": 1,
+    "2025-06-19": 1,
+    "2025-06-26": 1,
+    "2025-06-30": 1,
+    "2025-07-03": 1,
+    "2025-07-17": 1,
+    "2025-07-22": 1,
+    "2025-07-31": 1,
+    "2025-08-07": 1,
+    "2025-08-15": 1,
+    "2025-08-31": 1,
+    "2025-09-11": 1,
+    "2025-09-13": 1,
+    "2025-09-14": 1,
+    "2025-09-30": 1,
+    "2025-10-16": 1,
+    "2025-10-23": 1,
+    "2025-12-22": 1,
+    "2025-12-31": 1,
+    "2026-01-05": 1,
+    "2026-02-26": 1,
+    "2026-04-16": 1,
+    "2026-04-29": 1
+  },
+  "buildings": [
+    {
+      "building": "대구광역시 동구 신천동 1506",
+      "n": 46,
+      "events": 40,
+      "short_30d_events": 39,
+      "categories": {
+        "기타": 46
+      },
+      "open_dates": {
+        "2025-09-01": 3,
+        "2025-02-14": 2,
+        "2025-02-19": 2,
+        "2025-04-28": 2,
+        "2025-05-15": 2,
+        "2025-05-12": 2,
+        "2025-06-02": 2,
+        "2025-07-22": 2,
+        "2025-08-27": 2,
+        "2025-01-10": 1,
+        "2025-01-21": 1,
+        "2025-01-31": 1,
+        "2025-02-24": 1,
+        "2025-03-11": 1,
+        "2025-02-28": 1,
+        "2025-03-18": 1,
+        "2025-04-07": 1,
+        "2025-04-14": 1,
+        "2025-05-23": 1,
+        "2025-05-02": 1,
+        "2025-05-27": 1,
+        "2025-06-09": 1,
+        "2025-06-16": 1,
+        "2025-06-23": 1,
+        "2025-07-15": 1,
+        "2025-06-30": 1,
+        "2025-07-01": 1,
+        "2025-08-25": 1,
+        "2025-08-08": 1,
+        "2025-08-04": 1,
+        "2025-08-01": 1,
+        "2025-09-30": 1,
+        "2025-09-25": 1,
+        "2025-05-21": 1,
+        "2025-05-22": 1,
+        "2025-07-03": 1
+      },
+      "close_dates": {
+        "2025-05-22": 4,
+        "2025-03-06": 2,
+        "2025-08-28": 2,
+        "2025-09-04": 2,
+        "2025-01-23": 1,
+        "2025-01-30": 1,
+        "2025-02-23": 1,
+        "2025-02-27": 1,
+        "2025-02-28": 1,
+        "2025-03-13": 1,
+        "2025-03-27": 1,
+        "2025-03-31": 1,
+        "2025-04-10": 1,
+        "2025-04-30": 1,
+        "2025-05-01": 1,
+        "2025-05-08": 1,
+        "2025-05-15": 1,
+        "2025-05-31": 1,
+        "2025-06-05": 1,
+        "2025-06-12": 1,
+        "2025-06-19": 1,
+        "2025-06-26": 1,
+        "2025-06-30": 1,
+        "2025-07-03": 1,
+        "2025-07-17": 1,
+        "2025-07-31": 1,
+        "2025-08-07": 1,
+        "2025-08-15": 1,
+        "2025-08-31": 1,
+        "2025-09-11": 1,
+        "2025-09-14": 1,
+        "2025-09-30": 1,
+        "2025-10-16": 1,
+        "2025-10-23": 1
+      },
+      "duration_days": {
+        "10.0": 9,
+        "13.0": 3,
+        "23.0": 3,
+        "16.0": 3,
+        "17.0": 3,
+        "9.0": 2,
+        "7.0": 2,
+        "29.0": 2,
+        "28.0": 2,
+        "30.0": 2,
+        "24.0": 2,
+        "8.0": 2,
+        "14.0": 1,
+        "15.0": 1,
+        "22.0": 1,
+        "31.0": 1,
+        "20.0": 1
+      },
+      "area_min": 3.3,
+      "area_max": 394.0,
+      "addresses": {
+        "대구광역시 동구 동부로 149, 신세계동대구복합환승센터 지하1층 (신천동)": 34,
+        "대구광역시 동구 동부로 149, 신세계동대구복합환승센터 8층 (신천동)": 9,
+        "대구광역시 동구 동부로 149, 신세계동대구복합환승센터 5층 (신천동)": 2,
+        "대구광역시 동구 동부로 149, 신세계동대구복합환승센터 9층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 970",
+      "n": 10,
+      "events": 10,
+      "short_30d_events": 10,
+      "categories": {
+        "기타": 10
+      },
+      "open_dates": {
+        "2025-06-12": 8,
+        "2025-06-13": 1,
+        "2025-06-11": 1
+      },
+      "close_dates": {
+        "2025-06-14": 10
+      },
+      "duration_days": {
+        "2.0": 8,
+        "1.0": 1,
+        "3.0": 1
+      },
+      "area_min": 9.0,
+      "area_max": 25.0,
+      "addresses": {}
+    },
+    {
+      "building": "대구광역시 동구 검사동 984-9",
+      "n": 3,
+      "events": 3,
+      "short_30d_events": 3,
+      "categories": {
+        "기타": 3
+      },
+      "open_dates": {
+        "2025-07-25": 3
+      },
+      "close_dates": {
+        "2025-07-26": 3
+      },
+      "duration_days": {
+        "1.0": 3
+      },
+      "area_min": 9.0,
+      "area_max": 108.0,
+      "addresses": {}
+    },
+    {
+      "building": "대구광역시 동구 신서동 1188",
+      "n": 3,
+      "events": 1,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 3
+      },
+      "open_dates": {
+        "2025-03-04": 1,
+        "2025-02-26": 1,
+        "2025-05-23": 1
+      },
+      "close_dates": {
+        "2026-02-26": 1
+      },
+      "duration_days": {
+        "279.0": 1
+      },
+      "area_min": 66.21,
+      "area_max": 90.21,
+      "addresses": {
+        "대구광역시 동구 이노밸리로 322, 대구혁신도시 비젼스퀘어2 1층 150호 (신서동)": 1,
+        "대구광역시 동구 이노밸리로 322, 대구혁신도시 비젼스퀘어2 4층 411호 (신서동)": 1,
+        "대구광역시 동구 이노밸리로 322, 대구혁신도시 비젼스퀘어2 1층 140호 (신서동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 대림동 888-1",
+      "n": 1,
+      "events": 1,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-17": 1
+      },
+      "close_dates": {
+        "2025-07-22": 1
+      },
+      "duration_days": {
+        "96.0": 1
+      },
+      "area_min": 249.04,
+      "area_max": 249.04,
+      "addresses": {
+        "대구광역시 동구 혁신대로 468, 1층 101,102,103호 (대림동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 동호동 132-11",
+      "n": 1,
+      "events": 1,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-12": 1
+      },
+      "close_dates": {
+        "2025-12-31": 1
+      },
+      "duration_days": {
+        "322.0": 1
+      },
+      "area_min": 52.39,
+      "area_max": 52.39,
+      "addresses": {
+        "대구광역시 동구 경안로 790-57, 1층 (동호동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 808-3",
+      "n": 1,
+      "events": 1,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-09": 1
+      },
+      "close_dates": {
+        "2026-04-29": 1
+      },
+      "duration_days": {
+        "232.0": 1
+      },
+      "area_min": 24.92,
+      "area_max": 24.92,
+      "addresses": {
+        "대구광역시 동구 대현로 133, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 176-3",
+      "n": 1,
+      "events": 1,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-23": 1
+      },
+      "close_dates": {
+        "2026-04-16": 1
+      },
+      "duration_days": {
+        "358.0": 1
+      },
+      "area_min": 44.0,
+      "area_max": 44.0,
+      "addresses": {
+        "대구광역시 동구 반야월로24길 51, 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 지묘동 1382",
+      "n": 1,
+      "events": 1,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-28": 1
+      },
+      "close_dates": {
+        "2025-12-22": 1
+      },
+      "duration_days": {
+        "269.0": 1
+      },
+      "area_min": 140.18,
+      "area_max": 140.18,
+      "addresses": {
+        "대구광역시 동구 동화천로77길 12, 1층 101,102,103호 (지묘동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 지묘동 526",
+      "n": 1,
+      "events": 1,
+      "short_30d_events": 1,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-08": 1
+      },
+      "close_dates": {
+        "2025-09-13": 1
+      },
+      "duration_days": {
+        "5.0": 1
+      },
+      "area_min": 25.0,
+      "area_max": 25.0,
+      "addresses": {
+        "대구광역시 동구 신숭겸길 17, 신숭겸장군유적지 앞 잔디광장 (지묘동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 120-31",
+      "n": 1,
+      "events": 1,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-12": 1
+      },
+      "close_dates": {
+        "2026-01-05": 1
+      },
+      "duration_days": {
+        "327.0": 1
+      },
+      "area_min": 59.54,
+      "area_max": 59.54,
+      "addresses": {
+        "대구광역시 동구 아양로50길 88, 1층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 120-48",
+      "n": 1,
+      "events": 1,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-08": 1
+      },
+      "close_dates": {
+        "2025-04-08": 1
+      },
+      "duration_days": {
+        "90.0": 1
+      },
+      "area_min": 20.0,
+      "area_max": 20.0,
+      "addresses": {
+        "대구광역시 동구 아양로50길 82, 1층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 대림동 892-3",
+      "n": 2,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 2
+      },
+      "open_dates": {
+        "2025-04-16": 2
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 336.45,
+      "area_max": 371.33,
+      "addresses": {
+        "대구광역시 동구 메디밸리로 5-3, 2층 202호 (대림동)": 1,
+        "대구광역시 동구 메디밸리로 5-3, 2층 201호 (대림동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 169-1",
+      "n": 2,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 2
+      },
+      "open_dates": {
+        "2025-04-21": 1,
+        "2025-03-24": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 82.5,
+      "area_max": 116.21,
+      "addresses": {
+        "대구광역시 동구 송라로32길 40, 2층 (신암동)": 1,
+        "대구광역시 동구 송라로32길 40, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 186-17",
+      "n": 2,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 2
+      },
+      "open_dates": {
+        "2025-09-10": 2
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 12.6,
+      "area_max": 31.0,
+      "addresses": {
+        "대구광역시 동구 송라로24길 20, 1층 1호 (신암동)": 1,
+        "대구광역시 동구 송라로24길 20, 1층 2호 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 21-1",
+      "n": 2,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 2
+      },
+      "open_dates": {
+        "2025-09-03": 2
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 24.82,
+      "area_max": 24.82,
+      "addresses": {
+        "대구광역시 동구 송라로16길 34, 1층 (신천동)": 2
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 390-7",
+      "n": 2,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "식육(숯불구이)": 1,
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-23": 1,
+        "2025-09-02": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 166.0,
+      "area_max": 178.59,
+      "addresses": {
+        "대구광역시 동구 동부로 168, 1층 (신천동)": 1,
+        "대구광역시 동구 동부로 168, 2층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 393-2",
+      "n": 2,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 2
+      },
+      "open_dates": {
+        "2025-04-23": 1,
+        "2025-06-30": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 33.05,
+      "area_max": 82.98,
+      "addresses": {
+        "대구광역시 동구 동부로34길 9, 1층 (신천동)": 2
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 538-3",
+      "n": 2,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 2
+      },
+      "open_dates": {
+        "2025-05-19": 2
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 23.42,
+      "area_max": 78.22,
+      "addresses": {
+        "대구광역시 동구 동부로 29, 신천역 까사밀라 101동 101호 (신천동)": 2
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 1442",
+      "n": 2,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 2
+      },
+      "open_dates": {
+        "2025-01-22": 1,
+        "2025-07-22": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 32.0,
+      "area_max": 36.9,
+      "addresses": {
+        "대구광역시 동구 안심로22길 40-3, 마치프라자 1층 110호 (율하동)": 1,
+        "대구광역시 동구 안심로22길 40-3, 마치프라자 1층 101호 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 973-3",
+      "n": 2,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 2
+      },
+      "open_dates": {
+        "2025-09-09": 2
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 20.0,
+      "area_max": 20.0,
+      "addresses": {
+        "대구광역시 동구 율하동로17길 41-5, 1층 (율하동)": 2
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 1255-1",
+      "n": 2,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 2
+      },
+      "open_dates": {
+        "2025-07-01": 1,
+        "2025-04-01": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 72.87,
+      "area_max": 254.0,
+      "addresses": {
+        "대구광역시 동구 효동로6길 21, 1층 (효목동)": 1,
+        "대구광역시 동구 효동로6길 21, 3층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 각산동 1033-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-21": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 50.0,
+      "area_max": 50.0,
+      "addresses": {
+        "대구광역시 동구 이노밸리로 150, A동 1층 112호 (각산동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 각산동 1071-6",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-26": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 122.0,
+      "area_max": 122.0,
+      "addresses": {
+        "대구광역시 동구 과학로6길 25-1, 1층 (각산동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 각산동 1078-6",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-18": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 148.48,
+      "area_max": 148.48,
+      "addresses": {
+        "대구광역시 동구 과학로2길 14, 1층 (각산동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 각산동 1080-4",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-27": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 38.4,
+      "area_max": 38.4,
+      "addresses": {
+        "대구광역시 동구 이노밸리로36길 14, 1층 106호 (각산동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 각산동 1086-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-21": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 90.03,
+      "area_max": 90.03,
+      "addresses": {
+        "대구광역시 동구 혁신대로35길 3-6, 1층 (각산동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 각산동 374-5",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-14": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 51.65,
+      "area_max": 51.65,
+      "addresses": {
+        "대구광역시 동구 경안로 792, 1층 103호 (각산동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 검사동 908-82",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-28": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 508.37,
+      "area_max": 508.37,
+      "addresses": {
+        "대구광역시 동구 동촌로 117, 1층 (검사동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 검사동 991-45",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-05-28": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 147.19,
+      "area_max": 147.19,
+      "addresses": {
+        "대구광역시 동구 동촌로16길 31, 1,2층 (검사동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 대림동 886-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "뷔페식": 1
+      },
+      "open_dates": {
+        "2025-02-06": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 154.87,
+      "area_max": 154.87,
+      "addresses": {
+        "대구광역시 동구 혁신대로 430, 대구한의대한방병원 B동 1층 (대림동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 덕곡동 114",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-03": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 278.58,
+      "area_max": 278.58,
+      "addresses": {
+        "대구광역시 동구 팔공산로9길 6, A~G동 (덕곡동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 도동 60",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-15": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 86.0,
+      "area_max": 86.0,
+      "addresses": {
+        "대구광역시 동구 팔공로28길 67, 2층 (도동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 동호동 106-61",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-15": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 120.04,
+      "area_max": 120.04,
+      "addresses": {
+        "대구광역시 동구 경안로 742, 황제빌딩 1층 (동호동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 동호동 18",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-14": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 48.22,
+      "area_max": 48.22,
+      "addresses": {
+        "대구광역시 동구 경안로107길 23, 1층 (동호동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 동호동 367-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-03": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 58.8,
+      "area_max": 58.8,
+      "addresses": {
+        "대구광역시 동구 동호로3길 11, 1층 (동호동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 동호동 370-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-24": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 177.1,
+      "area_max": 177.1,
+      "addresses": {
+        "대구광역시 동구 동호로3길 32, 1층 (동호동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 동호동 7-5",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-10": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 110.2,
+      "area_max": 110.2,
+      "addresses": {
+        "대구광역시 동구 반야월로 210, 1층 (동호동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 매여동 197",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-26": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 44.73,
+      "area_max": 44.73,
+      "addresses": {
+        "대구광역시 동구 매여로8길 41-1, 지하1층 (매여동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1012-13",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-03": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 47.72,
+      "area_max": 47.72,
+      "addresses": {
+        "대구광역시 동구 동촌로 167, 1층 (방촌동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1044-92",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-11": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 41.9,
+      "area_max": 41.9,
+      "addresses": {
+        "대구광역시 동구 호반길 53, 1층 (방촌동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1050-71",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-10": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 41.54,
+      "area_max": 41.54,
+      "addresses": {
+        "대구광역시 동구 동촌로 190, 101동 107-3호 (방촌동, 영남네오빌)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1070-25",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-01": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 16.1,
+      "area_max": 16.1,
+      "addresses": {
+        "대구광역시 동구 동촌로46길 5, 1층 (방촌동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1077-11",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-22": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 36.0,
+      "area_max": 36.0,
+      "addresses": {
+        "대구광역시 동구 동촌로42길 63, 212동 104호 (방촌동, 방촌2차영남네오빌)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1086-9",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-19": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 15.9,
+      "area_max": 15.9,
+      "addresses": {
+        "대구광역시 동구 동촌로46길 13, 1층 4호 (방촌동, 태평상가아파트)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1103-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-14": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 99.0,
+      "area_max": 99.0,
+      "addresses": {
+        "대구광역시 동구 동촌로 274, BC스테이션 1층 102호 (방촌동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1113-145",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-04": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 64.45,
+      "area_max": 64.45,
+      "addresses": {
+        "대구광역시 동구 동촌로 286, 1층 (방촌동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1113-151",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-26": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 33.06,
+      "area_max": 33.06,
+      "addresses": {
+        "대구광역시 동구 동촌로54길 65, 1층 (방촌동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1113-237",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-07": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 39.6,
+      "area_max": 39.6,
+      "addresses": {
+        "대구광역시 동구 동촌로56길 32, 1층 (방촌동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 1119-52",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-01": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 31.0,
+      "area_max": 31.0,
+      "addresses": {
+        "대구광역시 동구 화랑로80길 7-3, 1층 (방촌동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 902-23",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-12": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 78.21,
+      "area_max": 78.21,
+      "addresses": {
+        "대구광역시 동구 동촌로45길 13, 2층 (방촌동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 방촌동 907-22",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-24": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 59.0,
+      "area_max": 59.0,
+      "addresses": {
+        "대구광역시 동구 동촌로 215-4, 1층 (방촌동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 백안동 18",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-24": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 154.16,
+      "area_max": 154.16,
+      "addresses": {
+        "대구광역시 동구 팔공로217길 66, 1층 (백안동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 147-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-06": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 151.9,
+      "area_max": 151.9,
+      "addresses": {
+        "대구광역시 동구 팔공로 368, 1층 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 149-7",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-05-09": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 91.08,
+      "area_max": 91.08,
+      "addresses": {
+        "대구광역시 동구 팔공로 353, 105동 1층 101호 (봉무동, 오봉그린하이츠빌라)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1537",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-28": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 46.87,
+      "area_max": 46.87,
+      "addresses": {
+        "대구광역시 동구 팔공로 260, 302동 103호 (봉무동, 협성휴포레 이시아폴리스)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1539-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-09": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 54.84,
+      "area_max": 54.84,
+      "addresses": {
+        "대구광역시 동구 팔공로51길 3, 이시아 시티 A 1층 109호 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1539-5",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-16": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 53.76,
+      "area_max": 53.76,
+      "addresses": {
+        "대구광역시 동구 팔공로 259, 1층 105호 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1539-7",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-11": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 135.0,
+      "area_max": 135.0,
+      "addresses": {
+        "대구광역시 동구 팔공로51길 15-13, 1층 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1542-5",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-24": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 63.19,
+      "area_max": 63.19,
+      "addresses": {
+        "대구광역시 동구 팔공로51길 15-8, 1층 106호 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1542-6",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-05-15": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 39.33,
+      "area_max": 39.33,
+      "addresses": {
+        "대구광역시 동구 팔공로51길 21-1, A동 1층 6호 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1542-9",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-26": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 72.44,
+      "area_max": 72.44,
+      "addresses": {
+        "대구광역시 동구 팔공로51길 31-5, A동 1층 2,3호 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1543-6",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-25": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 51.37,
+      "area_max": 51.37,
+      "addresses": {
+        "대구광역시 동구 팔공로53길 77-1, B동 1층 7호 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1549-4",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-05": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 203.5,
+      "area_max": 203.5,
+      "addresses": {
+        "대구광역시 동구 팔공로47길 26, 2층 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1553",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-11": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 142.66,
+      "area_max": 142.66,
+      "addresses": {
+        "대구광역시 동구 팔공로 250, 1층 119호,120호 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 1553-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-07": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 16.0,
+      "area_max": 16.0,
+      "addresses": {
+        "대구광역시 동구 팔공로50길 10, 3층 303호 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 봉무동 249-7",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-09": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 43.92,
+      "area_max": 43.92,
+      "addresses": {
+        "대구광역시 동구 팔공로 346, 1층 (봉무동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 불로동 1005",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-14": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 38.0,
+      "area_max": 38.0,
+      "addresses": {
+        "대구광역시 동구 방천로 34, 1층 (불로동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 불로동 1155",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-25": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 36.0,
+      "area_max": 36.0,
+      "addresses": {
+        "대구광역시 동구 팔공로33길 10, 상가2동 1층 1호 (불로동, 에덴공항아파트)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 불로동 382-19",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "한식": 1
+      },
+      "open_dates": {
+        "2025-05-09": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 166.77,
+      "area_max": 166.77,
+      "addresses": {
+        "대구광역시 동구 팔공로 160, 1층 (불로동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 불로동 382-20",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-07": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 76.91,
+      "area_max": 76.91,
+      "addresses": {
+        "대구광역시 동구 팔공로32길 1, 1층 (불로동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 불로동 382-27",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-16": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 64.56,
+      "area_max": 64.56,
+      "addresses": {
+        "대구광역시 동구 팔공로32길 2-1, 1층 (불로동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 불로동 460-44",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-15": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 82.0,
+      "area_max": 82.0,
+      "addresses": {
+        "대구광역시 동구 팔공로 144, 1층 (불로동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 불로동 581-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-18": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 42.0,
+      "area_max": 42.0,
+      "addresses": {
+        "대구광역시 동구 팔공로28길 8-7, 1층 (불로동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 상매동 506",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-05-15": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 125.88,
+      "area_max": 125.88,
+      "addresses": {
+        "대구광역시 동구 율암로 168, 1층 (상매동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 서호동 103-6",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-03": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 70.0,
+      "area_max": 70.0,
+      "addresses": {
+        "대구광역시 동구 안심로41길 16, 1층 (서호동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신기동 117-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-05": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 30.0,
+      "area_max": 30.0,
+      "addresses": {
+        "대구광역시 동구 반야월로 162-1, 1층 (신기동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신기동 204-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-25": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 79.0,
+      "area_max": 79.0,
+      "addresses": {
+        "대구광역시 동구 율하동로 120, 1층 (신기동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신기동 272-14",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-26": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 40.0,
+      "area_max": 40.0,
+      "addresses": {
+        "대구광역시 동구 율하동로26길 15, 1층 (신기동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신기동 547-9",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-05": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 90.21,
+      "area_max": 90.21,
+      "addresses": {
+        "대구광역시 동구 율하동로 115, 1층 (신기동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신서동 1163",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-13": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 92.0,
+      "area_max": 92.0,
+      "addresses": {
+        "대구광역시 동구 신서로22길 22, 1층 (신서동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신서동 517-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-17": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 98.0,
+      "area_max": 98.0,
+      "addresses": {
+        "대구광역시 동구 반야월로 370-6, 1층 (신서동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신서동 521-36",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-23": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 95.55,
+      "area_max": 95.55,
+      "addresses": {
+        "대구광역시 동구 안심로 389-5, 더블럭 2층 203호 (신서동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신서동 557-8",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-22": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 33.0,
+      "area_max": 33.0,
+      "addresses": {
+        "대구광역시 동구 동호로11길 14, 1층 (신서동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신서동 626-59",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-29": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 12.87,
+      "area_max": 12.87,
+      "addresses": {
+        "대구광역시 동구 신서로 16-1, 1층 (신서동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신서동 626-67",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-05-02": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 67.86,
+      "area_max": 67.86,
+      "addresses": {
+        "대구광역시 동구 신서로 16, 1층 (신서동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 136-174",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-25": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 288.68,
+      "area_max": 288.68,
+      "addresses": {
+        "대구광역시 동구 아양로 123, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 139-69",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-23": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 63.3,
+      "area_max": 63.3,
+      "addresses": {
+        "대구광역시 동구 아양로 133, 302동 1층 101호 (신암동, 동대구역센텀화성파크드림아파트)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 1840",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-06": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 68.7,
+      "area_max": 68.7,
+      "addresses": {
+        "대구광역시 동구 동대구로 577, 301동 1층 101호 (신암동, 이안센트럴D)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 186-12",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "식육(숯불구이)": 1
+      },
+      "open_dates": {
+        "2025-03-06": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 64.43,
+      "area_max": 64.43,
+      "addresses": {
+        "대구광역시 동구 신암남로 23, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 218-10",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-01": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 88.0,
+      "area_max": 88.0,
+      "addresses": {
+        "대구광역시 동구 아양로 86, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 259-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-27": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 74.0,
+      "area_max": 74.0,
+      "addresses": {
+        "대구광역시 동구 동대구로 572, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 348-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-09": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 97.52,
+      "area_max": 97.52,
+      "addresses": {
+        "대구광역시 동구 신암남로 146, 1층 104호 (신암동, 동양블루스카이)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 355-32",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-02": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 58.5,
+      "area_max": 58.5,
+      "addresses": {
+        "대구광역시 동구 신암남로28길 28-3, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 484-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-27": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 31.4,
+      "area_max": 31.4,
+      "addresses": {
+        "대구광역시 동구 신암로 132, 1층 점포4호 (신암동, 신흥아파트)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 484-8",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-10": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 23.14,
+      "area_max": 23.14,
+      "addresses": {
+        "대구광역시 동구 신성로 67, A동 1층 7호 (신암동, 대영아파트)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 576-35",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-23": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 85.4,
+      "area_max": 85.4,
+      "addresses": {
+        "대구광역시 동구 아양로15길 7, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 600-9",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-26": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 26.0,
+      "area_max": 26.0,
+      "addresses": {
+        "대구광역시 동구 아양로9길 16, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 603-419",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-30": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 180.0,
+      "area_max": 180.0,
+      "addresses": {
+        "대구광역시 동구 아양로 53, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 616-39",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-26": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 39.6,
+      "area_max": 39.6,
+      "addresses": {
+        "대구광역시 동구 아양로15길 53, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 635-51",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-08": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 73.06,
+      "area_max": 73.06,
+      "addresses": {
+        "대구광역시 동구 신암북로 46-5, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 648-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-25": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 33.0,
+      "area_max": 33.0,
+      "addresses": {
+        "대구광역시 동구 동북로 310, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 705-40",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-09": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 119.09,
+      "area_max": 119.09,
+      "addresses": {
+        "대구광역시 동구 경대로 46-1, 2층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 83-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-20": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 42.23,
+      "area_max": 42.23,
+      "addresses": {
+        "대구광역시 동구 동북로75길 20-1, 1층 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신암동 95-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-10": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 29.4,
+      "area_max": 29.4,
+      "addresses": {
+        "대구광역시 동구 아양로37길 31, 1층 7,8호 (신암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 118-6",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-14": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 84.78,
+      "area_max": 84.78,
+      "addresses": {
+        "대구광역시 동구 장등로 36-1, 1층 101,102호 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 149-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-30": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 64.7,
+      "area_max": 64.7,
+      "addresses": {
+        "대구광역시 동구 장등로 3, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 265-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-24": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 39.6,
+      "area_max": 39.6,
+      "addresses": {
+        "대구광역시 동구 송라로12길 18-1, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 294-5",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-05-26": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 272.22,
+      "area_max": 272.22,
+      "addresses": {
+        "대구광역시 동구 동대구로 454, 8층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 304-6",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-15": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 184.25,
+      "area_max": 184.25,
+      "addresses": {
+        "대구광역시 동구 화랑로 9, 천우빌딩 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 308-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-28": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 198.0,
+      "area_max": 198.0,
+      "addresses": {
+        "대구광역시 동구 동부로30길 100-15, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 314-4",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "한식": 1
+      },
+      "open_dates": {
+        "2025-06-02": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 200.66,
+      "area_max": 200.66,
+      "addresses": {
+        "대구광역시 동구 동부로30길 90, A동 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 337-19",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-11": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 96.92,
+      "area_max": 96.92,
+      "addresses": {
+        "대구광역시 동구 동부로28길 39-1, 2층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 348-4",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-14": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 43.11,
+      "area_max": 43.11,
+      "addresses": {
+        "대구광역시 동구 동부로30길 95, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 368-7",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-13": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 136.02,
+      "area_max": 136.02,
+      "addresses": {
+        "대구광역시 동구 동부로30길 53, 4층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 373-8",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-07": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 39.6,
+      "area_max": 39.6,
+      "addresses": {
+        "대구광역시 동구 동부로32길 98, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 378-10",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-30": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 49.26,
+      "area_max": 49.26,
+      "addresses": {
+        "대구광역시 동구 동부로30길 23, 2층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 384-10",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-05-15": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 35.0,
+      "area_max": 35.0,
+      "addresses": {
+        "대구광역시 동구 동부로30길 3-7, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 384-11",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-06": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 54.26,
+      "area_max": 54.26,
+      "addresses": {
+        "대구광역시 동구 동부로30길 3-9, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 388-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "일식": 1
+      },
+      "open_dates": {
+        "2025-02-14": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 27.6,
+      "area_max": 27.6,
+      "addresses": {
+        "대구광역시 동구 동부로 162, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 414-6",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-19": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 4.0,
+      "area_max": 4.0,
+      "addresses": {
+        "대구광역시 동구 효신로5길 24, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 416-7",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-11": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 49.35,
+      "area_max": 49.35,
+      "addresses": {
+        "대구광역시 동구 동부로34길 38-1, 2층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 429-4",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-13": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 52.8,
+      "area_max": 52.8,
+      "addresses": {
+        "대구광역시 동구 동부로32길 31, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 433-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-10": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 44.6,
+      "area_max": 44.6,
+      "addresses": {
+        "대구광역시 동구 효신로5길 86, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 443-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-05-08": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 25.0,
+      "area_max": 25.0,
+      "addresses": {
+        "대구광역시 동구 동부로32길 47, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 445",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-26": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 80.48,
+      "area_max": 80.48,
+      "addresses": {
+        "대구광역시 동구 화랑로11길 69-14, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 452-6",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-02": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 68.73,
+      "area_max": 68.73,
+      "addresses": {
+        "대구광역시 동구 동부로32길 87-9, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 484-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "한식": 1
+      },
+      "open_dates": {
+        "2025-01-15": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 49.0,
+      "area_max": 49.0,
+      "addresses": {
+        "대구광역시 동구 효신로 27, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 530-4",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-23": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 42.4,
+      "area_max": 42.4,
+      "addresses": {
+        "대구광역시 동구 동부로 39, 1층 105호 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 74-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-08": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 126.02,
+      "area_max": 126.02,
+      "addresses": {
+        "대구광역시 동구 동대구로 501, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 신천동 808-29",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-12": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 53.7,
+      "area_max": 53.7,
+      "addresses": {
+        "대구광역시 동구 국채보상로159길 27, 1층 (신천동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 용계동 157-16",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "한식": 1
+      },
+      "open_dates": {
+        "2025-05-08": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 60.0,
+      "area_max": 60.0,
+      "addresses": {
+        "대구광역시 동구 반야월로 45, 1층 (용계동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율암동 1184",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "한식": 1
+      },
+      "open_dates": {
+        "2025-05-08": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 165.0,
+      "area_max": 165.0,
+      "addresses": {
+        "대구광역시 동구 안심뉴타운3로 5, 1층 (율암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율암동 1264",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-13": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 56.95,
+      "area_max": 56.95,
+      "addresses": {
+        "대구광역시 동구 안심뉴타운5로 5, 1층 (율암동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율암동 1307",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-14": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 38.86,
+      "area_max": 38.86,
+      "addresses": {
+        "대구광역시 동구 반야월북로 111-11, 108동 102호 (율암동, 호반써밋이스텔라)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 1117",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-29": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 24.2,
+      "area_max": 24.2,
+      "addresses": {
+        "대구광역시 동구 안심로 80, 롯데쇼핑프라자 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 1223",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-02": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 66.96,
+      "area_max": 66.96,
+      "addresses": {
+        "대구광역시 동구 안심로22길 6, A동 1층 107호 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 1230",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "한식": 1
+      },
+      "open_dates": {
+        "2025-05-07": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 93.24,
+      "area_max": 93.24,
+      "addresses": {
+        "대구광역시 동구 안심로22길 16, 1층 101,102호 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 1291",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-11": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 59.0,
+      "area_max": 59.0,
+      "addresses": {
+        "대구광역시 동구 율하서로 52, 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 1426",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "한식": 1
+      },
+      "open_dates": {
+        "2025-04-22": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 70.38,
+      "area_max": 70.38,
+      "addresses": {
+        "대구광역시 동구 안심로22길 60-9, B동 1층 B-101호 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 1429",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-25": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 40.32,
+      "area_max": 40.32,
+      "addresses": {
+        "대구광역시 동구 안심로22길 60-3, 1층 104호 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 1431",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-18": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 46.0,
+      "area_max": 46.0,
+      "addresses": {
+        "대구광역시 동구 안심로22길 60-1, 모인프라자 1층 103호 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 1432",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-25": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 39.66,
+      "area_max": 39.66,
+      "addresses": {
+        "대구광역시 동구 안심로22길 60, 동흥메디칼 1층 102호 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 1437",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-01": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 73.57,
+      "area_max": 73.57,
+      "addresses": {
+        "대구광역시 동구 안심로22길 48, 1층 108호 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 169-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-24": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 66.0,
+      "area_max": 66.0,
+      "addresses": {
+        "대구광역시 동구 율하동로25길 22, 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 45-4",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-20": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 80.0,
+      "area_max": 80.0,
+      "addresses": {
+        "대구광역시 동구 반야월로14길 8, 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 867-7",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-08": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 42.0,
+      "area_max": 42.0,
+      "addresses": {
+        "대구광역시 동구 반야월로24길 56, 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 898-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-10": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 40.11,
+      "area_max": 40.11,
+      "addresses": {
+        "대구광역시 동구 율하동로23길 43, 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 898-4",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-27": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 46.0,
+      "area_max": 46.0,
+      "addresses": {
+        "대구광역시 동구 율하동로23길 39, 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 909-11",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-25": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 25.0,
+      "area_max": 25.0,
+      "addresses": {
+        "대구광역시 동구 율하동로19길 62, 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 925-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-30": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 6.0,
+      "area_max": 6.0,
+      "addresses": {
+        "대구광역시 동구 율하동로23길 19-12, 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 율하동 943",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-08-07": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 72.22,
+      "area_max": 72.22,
+      "addresses": {
+        "대구광역시 동구 율하동로21길 26-12, 1층 (율하동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 입석동 361-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-07": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 501.0,
+      "area_max": 501.0,
+      "addresses": {}
+    },
+    {
+      "building": "대구광역시 동구 중대동 665",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-18": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 134.37,
+      "area_max": 134.37,
+      "addresses": {
+        "대구광역시 동구 파계로 653, 1층 (중대동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 지묘동 1378-1",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-01-15": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 39.39,
+      "area_max": 39.39,
+      "addresses": {
+        "대구광역시 동구 동화천로77길 6, 1층 104호 (지묘동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 지저동 757-5",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-07-30": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 61.6,
+      "area_max": 61.6,
+      "addresses": {
+        "대구광역시 동구 해동로 54, 나동 2,3호 (지저동, 팔공아파트)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 지저동 766-9",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-28": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 46.0,
+      "area_max": 46.0,
+      "addresses": {
+        "대구광역시 동구 해동로 36, 1층 (지저동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 지저동 866-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-05-30": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 329.2,
+      "area_max": 329.2,
+      "addresses": {
+        "대구광역시 동구 해동로 91, 2층 201호 (지저동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 1116",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-25": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 84.24,
+      "area_max": 84.24,
+      "addresses": {
+        "대구광역시 동구 효동로2길 51, 2층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 1116-3",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "식육(숯불구이)": 1
+      },
+      "open_dates": {
+        "2025-05-16": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 254.21,
+      "area_max": 254.21,
+      "addresses": {
+        "대구광역시 동구 효동로2길 57-7, 2층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 119-6",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-30": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 27.72,
+      "area_max": 27.72,
+      "addresses": {
+        "대구광역시 동구 아양로50길 63, 1층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 120-28",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-05-13": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 22.0,
+      "area_max": 22.0,
+      "addresses": {
+        "대구광역시 동구 아양로50길 84, 1층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 456-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-22": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 177.04,
+      "area_max": 177.04,
+      "addresses": {
+        "대구광역시 동구 효목로 39-1, 창림빌딩 1층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 464-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-03-24": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 28.42,
+      "area_max": 28.42,
+      "addresses": {
+        "대구광역시 동구 효목로 15-1, 1층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 475-7",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-02-03": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 71.86,
+      "area_max": 71.86,
+      "addresses": {
+        "대구광역시 동구 화랑로19길 21, 1층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 540",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-18": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 19.8,
+      "area_max": 19.8,
+      "addresses": {
+        "대구광역시 동구 화랑로25길 5, 동구시장상가 1층 6호 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 557-2",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-09-22": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 81.0,
+      "area_max": 81.0,
+      "addresses": {
+        "대구광역시 동구 효목로 34, 1층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 958-15",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-04-30": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 101.0,
+      "area_max": 101.0,
+      "addresses": {
+        "대구광역시 동구 동북로 433, 1층 (효목동)": 1
+      }
+    },
+    {
+      "building": "대구광역시 동구 효목동 958-16",
+      "n": 1,
+      "events": 0,
+      "short_30d_events": 0,
+      "categories": {
+        "기타": 1
+      },
+      "open_dates": {
+        "2025-06-24": 1
+      },
+      "close_dates": {},
+      "duration_days": {},
+      "area_min": 43.0,
+      "area_max": 43.0,
+      "addresses": {
+        "대구광역시 동구 동북로 435, 1층 (효목동)": 1
+      }
+    }
+  ],
+  "raw_check": {
+    "matched": 237,
+    "ld_mismatch": 0,
+    "cd_mismatch": 1,
+    "category_mismatch": 0,
+    "date_differences": [
+      {
+        "stored_close": "2026-09-18 00:00:00",
+        "raw_close": "nan",
+        "stored_event": false,
+        "raw_status": "영업"
+      }
+    ],
+    "donggu_categories": {
+      "기타": 225,
+      "한식": 7,
+      "식육(숯불구이)": 3,
+      "일식": 1,
+      "뷔페식": 1
+    }
+  },
+  "raw_keyword_count": 0,
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "raw": "45c4491fe2adb0be2ff3f5580d062b4556df8fe2c2f60f3104cab8398ac7cfb4",
+    "script": "d2fc15f78b10ea8baadc9ea7e039889b721fd4623ff2d7d6ebed32d534ef2010"
+  }
+}

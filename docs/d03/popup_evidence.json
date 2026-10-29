@@ -1,0 +1,62 @@
+{
+  "source": "https://www.shinsegaegroupnewsroom.com/shinsegae-daegu-sweetpark-anniversary-event/",
+  "notice_date": "2025-07-24",
+  "checked_date": "2026-10-29",
+  "read_columns": [
+    "개방자치단체코드",
+    "관리번호",
+    "사업장명",
+    "도로명주소",
+    "인허가일자"
+  ],
+  "matching_scope": "general-restaurant raw CSV, address Dongbu-ro149, permits Jan-Sep2025; substring brand match requires review",
+  "results": [
+    {
+      "brand": "레브슈크레",
+      "scheduled_start": "2025-07-25",
+      "scheduled_end": "2025-07-31",
+      "matches": []
+    },
+    {
+      "brand": "롱브르378",
+      "scheduled_start": "2025-07-25",
+      "scheduled_end": "2025-08-07",
+      "matches": [
+        {
+          "name": "롱브르378(lombre378)",
+          "permit_date": "2025-07-22",
+          "address": "대구광역시 동구 동부로 149, 신세계동대구복합환승센터 지하1층 (신천동)",
+          "notice_available_by_permit_date": false
+        }
+      ]
+    },
+    {
+      "brand": "몬트쿠키",
+      "scheduled_start": "2025-08-01",
+      "scheduled_end": "2025-08-07",
+      "matches": []
+    },
+    {
+      "brand": "장인한과",
+      "scheduled_start": "2025-08-01",
+      "scheduled_end": "2025-08-04",
+      "matches": []
+    },
+    {
+      "brand": "끄네들로",
+      "scheduled_start": "2025-08-08",
+      "scheduled_end": "2025-08-21",
+      "matches": []
+    }
+  ],
+  "limitations": [
+    "No outcome columns read.",
+    "Brand-place-period alignment is evidence, not official management-number permit classification.",
+    "No match does not mean no popup; other permit services or operator names may differ.",
+    "Notice dates after permit cannot be used as permit-time predictors."
+  ],
+  "hashes": {
+    "raw": "45c4491fe2adb0be2ff3f5580d062b4556df8fe2c2f60f3104cab8398ac7cfb4",
+    "script": "5c14d7fd35e9bd634d961bfd2d82c6ca0127ab1c99c5cb276e9a748ad7f7595c"
+  }
+}

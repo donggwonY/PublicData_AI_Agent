@@ -1,0 +1,202 @@
+{
+  "n": 225858,
+  "failed": 3008,
+  "failed_pct": 1.33181025245951,
+  "raw_services": 16,
+  "analysis_services": 15,
+  "reasons": {
+    "missing_gu_or_dong": 302,
+    "no_mapping_with_keys": 2706,
+    "mapped_but_no_context": 0
+  },
+  "groups": [
+    {
+      "field": "analysis_service",
+      "group": "골프연습장업",
+      "n": 826,
+      "failed": 1,
+      "failed_pct": 0.12106537530266344
+    },
+    {
+      "field": "analysis_service",
+      "group": "노래연습장업",
+      "n": 3051,
+      "failed": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "field": "analysis_service",
+      "group": "담배소매업",
+      "n": 33762,
+      "failed": 1767,
+      "failed_pct": 5.233694686333748
+    },
+    {
+      "field": "analysis_service",
+      "group": "당구장업",
+      "n": 1910,
+      "failed": 1,
+      "failed_pct": 0.052356020942408384
+    },
+    {
+      "field": "analysis_service",
+      "group": "미용업",
+      "n": 24931,
+      "failed": 2,
+      "failed_pct": 0.008022141109462116
+    },
+    {
+      "field": "analysis_service",
+      "group": "세탁업",
+      "n": 3585,
+      "failed": 1,
+      "failed_pct": 0.02789400278940028
+    },
+    {
+      "field": "analysis_service",
+      "group": "약국",
+      "n": 3040,
+      "failed": 644,
+      "failed_pct": 21.184210526315788
+    },
+    {
+      "field": "analysis_service",
+      "group": "의원+병원",
+      "n": 6149,
+      "failed": 542,
+      "failed_pct": 8.814441372580907
+    },
+    {
+      "field": "analysis_service",
+      "group": "인터넷컴퓨터게임시설제공업",
+      "n": 3001,
+      "failed": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "field": "analysis_service",
+      "group": "일반음식점",
+      "n": 97438,
+      "failed": 12,
+      "failed_pct": 0.012315523717646094
+    },
+    {
+      "field": "analysis_service",
+      "group": "제과점영업",
+      "n": 4046,
+      "failed": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "field": "analysis_service",
+      "group": "체력단련장업",
+      "n": 1328,
+      "failed": 2,
+      "failed_pct": 0.15060240963855423
+    },
+    {
+      "field": "analysis_service",
+      "group": "체육도장업",
+      "n": 1711,
+      "failed": 5,
+      "failed_pct": 0.29222676797194624
+    },
+    {
+      "field": "analysis_service",
+      "group": "축산판매업",
+      "n": 9957,
+      "failed": 26,
+      "failed_pct": 0.2611228281610927
+    },
+    {
+      "field": "analysis_service",
+      "group": "휴게음식점",
+      "n": 31123,
+      "failed": 5,
+      "failed_pct": 0.01606528933586094
+    },
+    {
+      "field": "gu",
+      "group": "군위군",
+      "n": 1969,
+      "failed": 3,
+      "failed_pct": 0.15236160487557138
+    },
+    {
+      "field": "gu",
+      "group": "남구",
+      "n": 17075,
+      "failed": 635,
+      "failed_pct": 3.7188872620790634
+    },
+    {
+      "field": "gu",
+      "group": "님구",
+      "n": 1,
+      "failed": 1,
+      "failed_pct": 100.0
+    },
+    {
+      "field": "gu",
+      "group": "달서구",
+      "n": 45621,
+      "failed": 217,
+      "failed_pct": 0.4756581398917165
+    },
+    {
+      "field": "gu",
+      "group": "달성군",
+      "n": 16585,
+      "failed": 64,
+      "failed_pct": 0.3858908652396744
+    },
+    {
+      "field": "gu",
+      "group": "동구",
+      "n": 29936,
+      "failed": 364,
+      "failed_pct": 1.215927311598076
+    },
+    {
+      "field": "gu",
+      "group": "북구",
+      "n": 37189,
+      "failed": 528,
+      "failed_pct": 1.4197746645513458
+    },
+    {
+      "field": "gu",
+      "group": "서구",
+      "n": 19044,
+      "failed": 482,
+      "failed_pct": 2.53098088636841
+    },
+    {
+      "field": "gu",
+      "group": "수성구",
+      "n": 36182,
+      "failed": 460,
+      "failed_pct": 1.2713503952241447
+    },
+    {
+      "field": "gu",
+      "group": "중구",
+      "n": 22215,
+      "failed": 213,
+      "failed_pct": 0.9588116137744768
+    },
+    {
+      "field": "gu",
+      "group": "nan",
+      "n": 41,
+      "failed": 41,
+      "failed_pct": 100.0
+    }
+  ],
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "legal_admin_map": "b8ea8ebf7765237996015339dfe3e2ad3f39d62914a010dd0515b354f60ed270",
+    "area_context": "c18f7dfa2ce6e1e9696290eb3bbe91ddb86c54c0541da43c16edf87f613367ac"
+  },
+  "script_hash": "dc6ad70c0a4890abe621c60e0de27978cb32c26d7ad966253d181e4109f70538"
+}
