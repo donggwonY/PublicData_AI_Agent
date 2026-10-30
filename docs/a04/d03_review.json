@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-30",
+  "scope": "saved aggregate arithmetic audit, not independent model refit or future evaluation",
+  "checks_passed": 329,
+  "subgroup_summary": [
+    {
+      "field": "구군",
+      "groups": 9,
+      "brier_worse": 6
+    },
+    {
+      "field": "면적㎡",
+      "groups": 5,
+      "brier_worse": 3
+    },
+    {
+      "field": "업태",
+      "groups": 19,
+      "brier_worse": 11
+    }
+  ],
+  "historical_windows": [
+    {
+      "window": "2015-2016",
+      "n": 5328,
+      "events": 317,
+      "improved_vs_global": [
+        "gu"
+      ]
+    },
+    {
+      "window": "2017-2018",
+      "n": 5552,
+      "events": 421,
+      "improved_vs_global": []
+    },
+    {
+      "window": "2020-2021",
+      "n": 5558,
+      "events": 386,
+      "improved_vs_global": []
+    }
+  ],
+  "passed_candidates": [],
+  "input_hashes": {
+    "area_calibration": "6ec2eb04161e44842d865cb25aed66beffcdd033192e970643ab8ccdbbb7ad7c",
+    "area_subgroups": "611d2e474e3a3c18d75a1bca2ed08ed3948ac3bc78bbd218e01fcfc51885d826",
+    "group_calibration": "75a7ec0ede49d33f905334c9826796c3cb60d36144b362fa39c354a04844255e"
+  }
+}
