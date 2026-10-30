@@ -1,0 +1,39 @@
+{
+  "candidate_n": 2518,
+  "totals": {
+    "exact_address_support": 2518
+  },
+  "groups": [
+    {
+      "service": "담배소매업",
+      "status": "exact_address_support",
+      "n": 1596
+    },
+    {
+      "service": "병원",
+      "status": "exact_address_support",
+      "n": 28
+    },
+    {
+      "service": "약국",
+      "status": "exact_address_support",
+      "n": 487
+    },
+    {
+      "service": "의원",
+      "status": "exact_address_support",
+      "n": 407
+    }
+  ],
+  "limitations": [
+    "preserved source strings, not independent raw CSV comparison",
+    "current admin name agreement does not validate historical boundaries",
+    "no source/DB/production edits"
+  ],
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "legal_admin_map": "b8ea8ebf7765237996015339dfe3e2ad3f39d62914a010dd0515b354f60ed270",
+    "area_context": "c18f7dfa2ce6e1e9696290eb3bbe91ddb86c54c0541da43c16edf87f613367ac"
+  },
+  "script_hash": "95cd2af10c72a77f221cfdf2bb6b38d2972faf7260c670a4b06db6334eff6045"
+}

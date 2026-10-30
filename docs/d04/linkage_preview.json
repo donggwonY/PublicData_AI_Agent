@@ -1,0 +1,119 @@
+{
+  "n": 225858,
+  "before_failed": 3008,
+  "candidate_connections": 2518,
+  "after_failed": 490,
+  "after_failed_pct": 0.21695047330623665,
+  "methods": {
+    "existing_legal_map": 222850,
+    "direct_admin_address_candidate": 2518,
+    "unresolved": 490
+  },
+  "groups": [
+    {
+      "service": "골프연습장업",
+      "n": 826,
+      "before_failed": 1,
+      "after_failed": 1
+    },
+    {
+      "service": "노래연습장업",
+      "n": 3051,
+      "before_failed": 0,
+      "after_failed": 0
+    },
+    {
+      "service": "담배소매업",
+      "n": 33762,
+      "before_failed": 1767,
+      "after_failed": 171
+    },
+    {
+      "service": "당구장업",
+      "n": 1910,
+      "before_failed": 1,
+      "after_failed": 1
+    },
+    {
+      "service": "미용업",
+      "n": 24931,
+      "before_failed": 2,
+      "after_failed": 2
+    },
+    {
+      "service": "병원",
+      "n": 367,
+      "before_failed": 38,
+      "after_failed": 10
+    },
+    {
+      "service": "세탁업",
+      "n": 3585,
+      "before_failed": 1,
+      "after_failed": 1
+    },
+    {
+      "service": "약국",
+      "n": 3040,
+      "before_failed": 644,
+      "after_failed": 157
+    },
+    {
+      "service": "의원",
+      "n": 5782,
+      "before_failed": 504,
+      "after_failed": 97
+    },
+    {
+      "service": "인터넷컴퓨터게임시설제공업",
+      "n": 3001,
+      "before_failed": 0,
+      "after_failed": 0
+    },
+    {
+      "service": "일반음식점",
+      "n": 97438,
+      "before_failed": 12,
+      "after_failed": 12
+    },
+    {
+      "service": "제과점영업",
+      "n": 4046,
+      "before_failed": 0,
+      "after_failed": 0
+    },
+    {
+      "service": "체력단련장업",
+      "n": 1328,
+      "before_failed": 2,
+      "after_failed": 2
+    },
+    {
+      "service": "체육도장업",
+      "n": 1711,
+      "before_failed": 5,
+      "after_failed": 5
+    },
+    {
+      "service": "축산판매업",
+      "n": 9957,
+      "before_failed": 26,
+      "after_failed": 26
+    },
+    {
+      "service": "휴게음식점",
+      "n": 31123,
+      "before_failed": 5,
+      "after_failed": 5
+    }
+  ],
+  "review_only": true,
+  "local_overlay": "data/raw/d04_review/linkage_preview.parquet",
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "legal_admin_map": "b8ea8ebf7765237996015339dfe3e2ad3f39d62914a010dd0515b354f60ed270",
+    "area_context": "c18f7dfa2ce6e1e9696290eb3bbe91ddb86c54c0541da43c16edf87f613367ac"
+  },
+  "overlay_hash": "3fdbb234acee67c839c0cd460b6ef7531ecdae990c879663c2fb242f69d0cd91",
+  "script_hash": "b591842269e263b30a409a3f83f13f8efff97a1cb280aeb8b2a5f42403c54539"
+}
