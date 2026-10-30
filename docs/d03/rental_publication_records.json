@@ -1,0 +1,57 @@
+{
+  "records": [
+    {
+      "seq": 3368,
+      "bbsTit": "2024년 2분기 상업용부동산 임대동향조사",
+      "userDttm": "2024-07-25"
+    },
+    {
+      "seq": 2013,
+      "bbsTit": "2024년 1분기 상업용부동산 임대동향조사",
+      "userDttm": "2024-04-25"
+    },
+    {
+      "seq": 1995,
+      "bbsTit": "2023년 4분기 및 연간 상업용부동산 임대동향조사 결과",
+      "userDttm": "2024-01-25"
+    },
+    {
+      "seq": 1976,
+      "bbsTit": "2023년 3분기 상업용부동산 임대동향조사 결과",
+      "userDttm": "2023-10-26"
+    },
+    {
+      "seq": 1957,
+      "bbsTit": "2023년 2분기 상업용부동산 임대동향조사 결과",
+      "userDttm": "2023-07-27"
+    },
+    {
+      "seq": 1938,
+      "bbsTit": "2023년 1분기 상업용부동산 임대동향조사 결과",
+      "userDttm": "2023-04-27"
+    },
+    {
+      "seq": 1918,
+      "bbsTit": "2022년 4분기 및 연간 상업용부동산 임대동향조사 결과",
+      "userDttm": "2023-01-26"
+    },
+    {
+      "seq": 1900,
+      "bbsTit": "2022년 3분기 상업용부동산 임대동향조사 결과",
+      "userDttm": "2022-10-27"
+    },
+    {
+      "seq": 1882,
+      "bbsTit": "2022년 2분기 상업용부동산 임대동향조사 결과",
+      "userDttm": "2022-07-28"
+    },
+    {
+      "seq": 1863,
+      "bbsTit": "2022년 1분기 상업용부동산 임대동향조사 결과",
+      "userDttm": "2022-04-28"
+    }
+  ],
+  "checked_date": "2026-10-31",
+  "date_meaning": "Official board registration date, not verified original release date or historical CSV vintage",
+  "source": "https://www.reb.or.kr/r-one/portal/bbs/pres/searchBulletin.do"
+}
