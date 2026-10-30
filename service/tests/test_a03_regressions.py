@@ -39,6 +39,12 @@ class A03RegressionTest(unittest.TestCase):
         self.assertIn("3 - 1 = 2건", c["count_explanation"])
         self.assertIsNone(c["unique_building_count"])
 
+    def test_count_explanation_is_not_cafe_specific(self):
+        # 집계 설명은 업종과 무관한 문구여야 한다. AI가 미용실 답변에 "카페"라고 쓰지 않게 한다.
+        for cat in ["미용실", "약국"]:
+            c = find_nearby("대구 동구 동부로22길 9", category=cat)["same_category"]
+            self.assertNotIn("카페", c["count_explanation"])
+
     def test_station_scope_is_not_silently_substituted(self):
         for a in ["동대구역", "동대구역 2번 출구"]:
             with self.assertRaises(ToolError):

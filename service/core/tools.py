@@ -905,8 +905,8 @@ def find_nearby(address: str, radius_m: int = C.NEARBY_RADIUS_M, category: str |
             f"원기록 {len(selected)}건 → 동일행 제거 {len(dedup)}건. "
             + (f"중심 건물과 같은 주소 {same_address}건을 제외하면 {len(dedup)} - {same_address} = {excluded}건. "
                if same_address is not None else "중심 건물의 도로명 주소를 해석할 수 없어 같은 주소 포함·제외 수는 확인 불가. ")
-            + "모두 상가 기록 수이며 고유 건물 수가 아닙니다. 다른 건물 안의 여러 카페는 각각 남습니다. "
-              "같은 주소 제외는 중심 건물 내부의 경쟁 카페도 제외하므로 전체 경쟁 규모와 구별하세요."
+            + "모두 상가 기록 수이며 고유 건물 수가 아닙니다. 다른 건물 안의 여러 기록은 각각 남습니다. "
+              "같은 주소 제외는 중심 건물 내부의 같은 업종 기록도 제외하므로 전체 경쟁 규모와 구별하세요."
         )
         same = {"query": "카페" if category.strip() == "카페" else cat_label, "count": int(m.sum()),
                 "definition": "cat_s == 카페" if category.strip() == "카페" else "업종 검색어 부분 일치",
