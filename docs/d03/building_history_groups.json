@@ -1,0 +1,486 @@
+{
+  "source_sha256": "7c0e609dd1cef5c5dfecc0cae27dcc597f0271be679c692bf881d25536c06e4a",
+  "definition": "gain=baseline Brier-candidate Brier; contribution=n*gain; descriptive, not significance test",
+  "comparisons": [
+    {
+      "window": "2015-2016",
+      "candidate": "building_rf",
+      "baseline": "uncalibrated",
+      "total_gain": -0.1749659021886641,
+      "rows": [
+        {
+          "gu": "군위군",
+          "n": 41,
+          "events": 0,
+          "gain": 0.00011664957995012083,
+          "contribution": 0.004782632777954954,
+          "small": true
+        },
+        {
+          "gu": "남구",
+          "n": 371,
+          "events": 33,
+          "gain": 0.0003726438477711508,
+          "contribution": 0.13825086752309695,
+          "small": false
+        },
+        {
+          "gu": "달서구",
+          "n": 944,
+          "events": 39,
+          "gain": 1.009574002251018e-05,
+          "contribution": 0.00953037858124961,
+          "small": false
+        },
+        {
+          "gu": "달성군",
+          "n": 604,
+          "events": 16,
+          "gain": -3.6679566338709835e-05,
+          "contribution": -0.02215445806858074,
+          "small": false
+        },
+        {
+          "gu": "동구",
+          "n": 926,
+          "events": 62,
+          "gain": -5.338261715330528e-05,
+          "contribution": -0.04943230348396069,
+          "small": false
+        },
+        {
+          "gu": "북구",
+          "n": 766,
+          "events": 52,
+          "gain": -0.00035069286377767406,
+          "contribution": -0.26863073365369833,
+          "small": false
+        },
+        {
+          "gu": "서구",
+          "n": 366,
+          "events": 22,
+          "gain": 0.00015692729775291375,
+          "contribution": 0.05743539097756643,
+          "small": false
+        },
+        {
+          "gu": "수성구",
+          "n": 768,
+          "events": 55,
+          "gain": 3.240913261787215e-05,
+          "contribution": 0.02489021385052581,
+          "small": false
+        },
+        {
+          "gu": "중구",
+          "n": 542,
+          "events": 38,
+          "gain": -0.00012848319316018098,
+          "contribution": -0.06963789069281809,
+          "small": false
+        }
+      ]
+    },
+    {
+      "window": "2017-2018",
+      "candidate": "building_rf",
+      "baseline": "uncalibrated",
+      "total_gain": 0.7850074901880396,
+      "rows": [
+        {
+          "gu": "군위군",
+          "n": 31,
+          "events": 2,
+          "gain": 0.000556469829234775,
+          "contribution": 0.017250564706278025,
+          "small": true
+        },
+        {
+          "gu": "남구",
+          "n": 389,
+          "events": 38,
+          "gain": 0.0004623075494852996,
+          "contribution": 0.17983763674978154,
+          "small": false
+        },
+        {
+          "gu": "달서구",
+          "n": 1062,
+          "events": 57,
+          "gain": -0.00018032812624485528,
+          "contribution": -0.1915084700720363,
+          "small": false
+        },
+        {
+          "gu": "달성군",
+          "n": 601,
+          "events": 46,
+          "gain": -5.0688965892720095e-05,
+          "contribution": -0.030464068501524777,
+          "small": false
+        },
+        {
+          "gu": "동구",
+          "n": 816,
+          "events": 64,
+          "gain": 0.00014648068971799544,
+          "contribution": 0.11952824280988428,
+          "small": false
+        },
+        {
+          "gu": "북구",
+          "n": 848,
+          "events": 64,
+          "gain": -0.00015667792457256524,
+          "contribution": -0.13286288003753532,
+          "small": false
+        },
+        {
+          "gu": "서구",
+          "n": 365,
+          "events": 27,
+          "gain": 0.00017782414621578257,
+          "contribution": 0.06490581336876064,
+          "small": false
+        },
+        {
+          "gu": "수성구",
+          "n": 804,
+          "events": 73,
+          "gain": 2.0769584650054407e-05,
+          "contribution": 0.016698746058643743,
+          "small": false
+        },
+        {
+          "gu": "중구",
+          "n": 636,
+          "events": 50,
+          "gain": 0.001166072177839289,
+          "contribution": 0.7416219051057878,
+          "small": false
+        }
+      ]
+    },
+    {
+      "window": "2020-2021",
+      "candidate": "building_rf",
+      "baseline": "uncalibrated",
+      "total_gain": 2.0771410381956392,
+      "rows": [
+        {
+          "gu": "군위군",
+          "n": 35,
+          "events": 3,
+          "gain": -0.0002024301841669629,
+          "contribution": -0.0070850564458437015,
+          "small": true
+        },
+        {
+          "gu": "남구",
+          "n": 431,
+          "events": 35,
+          "gain": 0.0002900425280351615,
+          "contribution": 0.1250083295831546,
+          "small": false
+        },
+        {
+          "gu": "달서구",
+          "n": 1096,
+          "events": 82,
+          "gain": 0.0004211247705638438,
+          "contribution": 0.4615527485379728,
+          "small": false
+        },
+        {
+          "gu": "달성군",
+          "n": 559,
+          "events": 27,
+          "gain": -3.276305785614858e-05,
+          "contribution": -0.018314549341587057,
+          "small": false
+        },
+        {
+          "gu": "동구",
+          "n": 822,
+          "events": 65,
+          "gain": 0.0007604318198053822,
+          "contribution": 0.6250749558800242,
+          "small": false
+        },
+        {
+          "gu": "북구",
+          "n": 919,
+          "events": 70,
+          "gain": 0.0002810863111097489,
+          "contribution": 0.25831831990985926,
+          "small": false
+        },
+        {
+          "gu": "서구",
+          "n": 334,
+          "events": 28,
+          "gain": 0.0005659770338925507,
+          "contribution": 0.18903632932011194,
+          "small": false
+        },
+        {
+          "gu": "수성구",
+          "n": 816,
+          "events": 52,
+          "gain": 7.275610240210784e-05,
+          "contribution": 0.059368979560119994,
+          "small": false
+        },
+        {
+          "gu": "중구",
+          "n": 546,
+          "events": 24,
+          "gain": 0.0007036281706810019,
+          "contribution": 0.38418098119182703,
+          "small": false
+        }
+      ]
+    },
+    {
+      "window": "2015-2016",
+      "candidate": "building_calibrated",
+      "baseline": "global_regularized",
+      "total_gain": -0.2845996842617822,
+      "rows": [
+        {
+          "gu": "군위군",
+          "n": 41,
+          "events": 0,
+          "gain": 0.0001357488351243913,
+          "contribution": 0.005565702240100043,
+          "small": true
+        },
+        {
+          "gu": "남구",
+          "n": 371,
+          "events": 33,
+          "gain": 0.000356173542200508,
+          "contribution": 0.13214038415638846,
+          "small": false
+        },
+        {
+          "gu": "달서구",
+          "n": 944,
+          "events": 39,
+          "gain": -6.848744998878831e-06,
+          "contribution": -0.006465215278941616,
+          "small": false
+        },
+        {
+          "gu": "달성군",
+          "n": 604,
+          "events": 16,
+          "gain": -6.29435038739315e-05,
+          "contribution": -0.03801787633985462,
+          "small": false
+        },
+        {
+          "gu": "동구",
+          "n": 926,
+          "events": 62,
+          "gain": -6.040170010150614e-05,
+          "contribution": -0.055931974293994685,
+          "small": false
+        },
+        {
+          "gu": "북구",
+          "n": 766,
+          "events": 52,
+          "gain": -0.0004350749331485382,
+          "contribution": -0.33326739879178024,
+          "small": false
+        },
+        {
+          "gu": "서구",
+          "n": 366,
+          "events": 22,
+          "gain": 0.00024225019634903366,
+          "contribution": 0.08866357186374632,
+          "small": false
+        },
+        {
+          "gu": "수성구",
+          "n": 768,
+          "events": 55,
+          "gain": 4.0185336451128983e-05,
+          "contribution": 0.03086233839446706,
+          "small": false
+        },
+        {
+          "gu": "중구",
+          "n": 542,
+          "events": 38,
+          "gain": -0.00019953729928397224,
+          "contribution": -0.10814921621191295,
+          "small": false
+        }
+      ]
+    },
+    {
+      "window": "2017-2018",
+      "candidate": "building_calibrated",
+      "baseline": "global_regularized",
+      "total_gain": 0.5147930007506271,
+      "rows": [
+        {
+          "gu": "군위군",
+          "n": 31,
+          "events": 2,
+          "gain": 0.00040207710054294965,
+          "contribution": 0.01246439011683144,
+          "small": true
+        },
+        {
+          "gu": "남구",
+          "n": 389,
+          "events": 38,
+          "gain": 0.000190605362758417,
+          "contribution": 0.07414548611302421,
+          "small": false
+        },
+        {
+          "gu": "달서구",
+          "n": 1062,
+          "events": 57,
+          "gain": -0.00010408734546123177,
+          "contribution": -0.11054076087982814,
+          "small": false
+        },
+        {
+          "gu": "달성군",
+          "n": 601,
+          "events": 46,
+          "gain": -3.940532097877758e-05,
+          "contribution": -0.023682597908245326,
+          "small": false
+        },
+        {
+          "gu": "동구",
+          "n": 816,
+          "events": 64,
+          "gain": 0.00011549964705437343,
+          "contribution": 0.09424771199636872,
+          "small": false
+        },
+        {
+          "gu": "북구",
+          "n": 848,
+          "events": 64,
+          "gain": -0.00015622543339759154,
+          "contribution": -0.13247916752115763,
+          "small": false
+        },
+        {
+          "gu": "서구",
+          "n": 365,
+          "events": 27,
+          "gain": 8.52012747771802e-05,
+          "contribution": 0.031098465293670774,
+          "small": false
+        },
+        {
+          "gu": "수성구",
+          "n": 804,
+          "events": 73,
+          "gain": -5.790910173164576e-06,
+          "contribution": -0.004655891779224319,
+          "small": false
+        },
+        {
+          "gu": "중구",
+          "n": 636,
+          "events": 50,
+          "gain": 0.0009028229014452632,
+          "contribution": 0.5741953653191874,
+          "small": false
+        }
+      ]
+    },
+    {
+      "window": "2020-2021",
+      "candidate": "building_calibrated",
+      "baseline": "global_regularized",
+      "total_gain": 2.5104045762198925,
+      "rows": [
+        {
+          "gu": "군위군",
+          "n": 35,
+          "events": 3,
+          "gain": -0.0001428479109586156,
+          "contribution": -0.004999676883551546,
+          "small": true
+        },
+        {
+          "gu": "남구",
+          "n": 431,
+          "events": 35,
+          "gain": 0.00034100604645116717,
+          "contribution": 0.14697360602045306,
+          "small": false
+        },
+        {
+          "gu": "달서구",
+          "n": 1096,
+          "events": 82,
+          "gain": 0.0005217094477969475,
+          "contribution": 0.5717935547854545,
+          "small": false
+        },
+        {
+          "gu": "달성군",
+          "n": 559,
+          "events": 27,
+          "gain": -3.619498990053288e-05,
+          "contribution": -0.02023299935439788,
+          "small": false
+        },
+        {
+          "gu": "동구",
+          "n": 822,
+          "events": 65,
+          "gain": 0.0010191111449949497,
+          "contribution": 0.8377093611858486,
+          "small": false
+        },
+        {
+          "gu": "북구",
+          "n": 919,
+          "events": 70,
+          "gain": 0.00027312071971774543,
+          "contribution": 0.25099794142060805,
+          "small": false
+        },
+        {
+          "gu": "서구",
+          "n": 334,
+          "events": 28,
+          "gain": 0.0006630480347861734,
+          "contribution": 0.2214580436185819,
+          "small": false
+        },
+        {
+          "gu": "수성구",
+          "n": 816,
+          "events": 52,
+          "gain": 7.456613978867876e-05,
+          "contribution": 0.06084597006756187,
+          "small": false
+        },
+        {
+          "gu": "중구",
+          "n": 546,
+          "events": 24,
+          "gain": 0.000816591163661784,
+          "contribution": 0.44585877535933405,
+          "small": false
+        }
+      ]
+    }
+  ]
+}
