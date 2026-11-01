@@ -943,6 +943,7 @@ def find_nearby(address: str, radius_m: int = C.NEARBY_RADIUS_M, category: str |
         "recent_vacancies": [{"address": r["addr"], "dist_m": int(r["dist_m"]), "vacant_days": int(r["vacant_days"]),
                               "last_store": r["last_name"], "last_category": r["last_category"],
                               "lat": r["lat"], "lon": r["lon"]} for _, r in vacant.iterrows()],
+        "recent_vacancies_definition": "분석 대상 업종의 인허가 공백 후보. 실제 공실 여부 미확인. 카페 위치나 카페 집계가 아니며 지도에는 조회 중심도 포함됩니다.",
         "recent_vacancy_count": int(near_u["recent_vacancy"].sum()),
         "repeat_closure_spots": [{"address": r["addr"], "dist_m": int(r["dist_m"]),
                                   "closures_since_2010": int(r["closures_since_2010"]),

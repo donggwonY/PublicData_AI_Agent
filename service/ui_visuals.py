@@ -150,6 +150,9 @@ def render_tool_result(name: str, out: dict | None, key: str):
     elif name == "find_nearby":
         rows = [{**v, "address": v["address"]} for v in out.get("recent_vacancies", [])]
         if rows:
+            st.markdown("**주변 인허가 공백 후보 지도 — 카페 위치 지도 아님**")
+            st.caption("분석 대상 업종의 인허가 공백 기록입니다. 실제 공실 여부는 미확인입니다. "
+                       "점에는 조회 중심도 포함되며, 표시 개수는 반경 내 카페 수가 아닙니다.")
             _map(rows + [{"address": out["center"]["address"], "lat": out["center"]["lat"],
                           "lon": out["center"]["lon"], "vacant_days": 0}], "vacant_days",
                  ["last_store", "last_category", "vacant_days"], key)
