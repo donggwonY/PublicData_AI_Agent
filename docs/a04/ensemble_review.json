@@ -1,0 +1,55 @@
+{
+  "checks_passed": 1181,
+  "windows": [
+    {
+      "window": "2015-2016",
+      "n": 5328,
+      "events": 317,
+      "blend_brier_delta": 2.000599312711182e-05,
+      "blend_log_loss_delta": 0.00010470898079964486,
+      "gu": {
+        "groups": 9,
+        "brier_worse": 5
+      },
+      "category": {
+        "groups": 23,
+        "brier_worse": 11
+      }
+    },
+    {
+      "window": "2017-2018",
+      "n": 5552,
+      "events": 421,
+      "blend_brier_delta": -2.3858242272079e-06,
+      "blend_log_loss_delta": -0.00042799137683990907,
+      "gu": {
+        "groups": 9,
+        "brier_worse": 5
+      },
+      "category": {
+        "groups": 21,
+        "brier_worse": 9
+      }
+    },
+    {
+      "window": "2020-2021",
+      "n": 5558,
+      "events": 386,
+      "blend_brier_delta": -8.467129225782355e-05,
+      "blend_log_loss_delta": -0.0002991531516429724,
+      "gu": {
+        "groups": 9,
+        "brier_worse": 6
+      },
+      "category": {
+        "groups": 21,
+        "brier_worse": 8
+      }
+    }
+  ],
+  "passed_candidates": [],
+  "mutation_check": "altered subgroup event count rejected",
+  "date": "2026-11-02",
+  "scope": "saved historical aggregate audit, not independent refit or new-cutoff validation",
+  "input_sha256": "08f9cb473c5527ff29ffc808ee89b558f8b0c92cbbde19b87847a2f78360829c"
+}
