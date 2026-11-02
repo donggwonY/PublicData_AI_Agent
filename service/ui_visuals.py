@@ -6,6 +6,8 @@
 """
 from __future__ import annotations
 
+import math
+
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -21,6 +23,21 @@ HOVER_LABELS = {
 }
 
 
+def _map_view(df: pd.DataFrame):
+    """Fit visible coordinates in a narrow chat column with padding (Web Mercator)."""
+    west, east = float(df.lon.min()), float(df.lon.max())
+    def mercator(lat):
+        lat = max(-85.0, min(85.0, float(lat)))
+        return math.log(math.tan(math.pi / 4 + math.radians(lat) / 2))
+    south, north = mercator(df.lat.min()), mercator(df.lat.max())
+    xspan = max((east - west) / 360, 1e-12)
+    yspan = max((north - south) / (2 * math.pi), 1e-12)
+    zoom = min(math.log2(256 / (512 * xspan)), math.log2(336 / (512 * yspan)))
+    latitude = math.degrees(2 * math.atan(math.exp((south + north) / 2)) - math.pi / 2)
+    return pdk.ViewState(latitude=latitude, longitude=(west + east) / 2,
+                         zoom=min(16, max(0, zoom)))
+
+
 def _map(rows: list[dict], color: str, hover: list[str], key: str):
     """pydeck 산점도 지도. color 컬럼 값이 클수록 진한 빨강."""
     df = pd.DataFrame(rows).dropna(subset=["lat", "lon"])  # 좌표 없는 행(약 4%)은 지도에 못 찍는다
@@ -33,10 +50,13 @@ def _map(rows: list[dict], color: str, hover: list[str], key: str):
     layer = pdk.Layer("ScatterplotLayer", data=df, get_position="[lon, lat]", get_fill_color="[_r, _g, _b, 200]",
                       get_radius=35, radius_min_pixels=4, radius_max_pixels=14, pickable=True)
     tip = "<b>{address}</b><br/>" + "<br/>".join(f"{HOVER_LABELS.get(c, c)}: {{{c}}}" for c in hover if c in df)
-    view = pdk.ViewState(latitude=float(df["lat"].mean()), longitude=float(df["lon"].mean()),
-                         zoom=11 if len(df) > 1 else 15)
+    view = _map_view(df)
+    reset_key = f"{key}_view_reset"
+    if st.button("조회 지역으로 돌아가기", key=f"{key}_reset_button"):
+        st.session_state[reset_key] = st.session_state.get(reset_key, 0) + 1
+    chart_key = f"{key}_fit_{st.session_state.get(reset_key, 0)}"
     st.pydeck_chart(pdk.Deck(layers=[layer], initial_view_state=view, tooltip={"html": tip}, map_style="light"),
-                    height=420, key=key)
+                    height=420, key=chart_key)
     st.caption(f"점 {len(df)}개 · 색이 진할수록 '{HOVER_LABELS.get(color, color)}' 값이 큼")
 
 
