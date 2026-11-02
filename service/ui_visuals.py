@@ -47,16 +47,18 @@ def _map(rows: list[dict], color: str, hover: list[str], key: str):
     v = pd.to_numeric(df[color], errors="coerce") if color in df else pd.Series(0, index=df.index)
     t = ((v - v.min()) / (v.max() - v.min() or 1)).fillna(0)  # 0~1로 정규화 (or 1 은 0으로 나누기 방지)
     df["_r"], df["_g"], df["_b"] = 255, (170 - t * 150).astype(int), (60 - t * 50).astype(int)
-    layer = pdk.Layer("ScatterplotLayer", data=df, get_position="[lon, lat]", get_fill_color="[_r, _g, _b, 200]",
+    layer = pdk.Layer("ScatterplotLayer", id="result-points", data=df, get_position="[lon, lat]", get_fill_color="[_r, _g, _b, 200]",
                       get_radius=35, radius_min_pixels=4, radius_max_pixels=14, pickable=True)
     tip = "<b>{address}</b><br/>" + "<br/>".join(f"{HOVER_LABELS.get(c, c)}: {{{c}}}" for c in hover if c in df)
     view = _map_view(df)
     reset_key = f"{key}_view_reset"
     if st.button("조회 지역으로 돌아가기", key=f"{key}_reset_button"):
         st.session_state[reset_key] = st.session_state.get(reset_key, 0) + 1
+    # Streamlit only sends a stable chart widget ID when selection is enabled.
+    # Changing key in ignore mode does not remount the browser map.
     chart_key = f"{key}_fit_{st.session_state.get(reset_key, 0)}"
     st.pydeck_chart(pdk.Deck(layers=[layer], initial_view_state=view, tooltip={"html": tip}, map_style="light"),
-                    height=420, key=chart_key)
+                    height=420, key=chart_key, on_select="rerun", selection_mode="single-object")
     st.caption(f"점 {len(df)}개 · 색이 진할수록 '{HOVER_LABELS.get(color, color)}' 값이 큼")
 
 

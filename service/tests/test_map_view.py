@@ -33,6 +33,14 @@ _map([{'address':'A','lat':35.875,'lon':128.625,'vacant_days':10},
 """)
         app.run()
         self.assertFalse(app.exception)
+        before = app.get("deck_gl_json_chart")[0].proto.id
+        self.assertTrue(before)
         app.button[0].click().run()
         self.assertFalse(app.exception)
         self.assertEqual(app.session_state['test_map_view_reset'], 1)
+
+        after = app.get("deck_gl_json_chart")[0].proto.id
+        self.assertTrue(after)
+        self.assertNotEqual(before, after)
+        app.run()
+        self.assertEqual(after, app.get("deck_gl_json_chart")[0].proto.id)
