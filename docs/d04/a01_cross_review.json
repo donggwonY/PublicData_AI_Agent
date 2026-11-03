@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-03",
+  "scope": "local snapshot independent distance recomputation and code review; not live DB or full A01 validation",
+  "results": [
+    {
+      "radius_m": 300,
+      "all_rows": 732,
+      "dedup_all": 724,
+      "cafe_rows": 42,
+      "dedup_cafe": 41,
+      "exits": [
+        {
+          "exit": "1",
+          "buffer_count": 34,
+          "buffer_deduplicated": 34,
+          "nearest_count": 3,
+          "nearest_deduplicated": 3
+        },
+        {
+          "exit": "2",
+          "buffer_count": 39,
+          "buffer_deduplicated": 38,
+          "nearest_count": 21,
+          "nearest_deduplicated": 20
+        },
+        {
+          "exit": "3",
+          "buffer_count": 40,
+          "buffer_deduplicated": 39,
+          "nearest_count": 18,
+          "nearest_deduplicated": 18
+        }
+      ],
+      "ties": 0
+    },
+    {
+      "radius_m": 500,
+      "all_rows": 1294,
+      "dedup_all": 1272,
+      "cafe_rows": 72,
+      "dedup_cafe": 70,
+      "exits": [
+        {
+          "exit": "1",
+          "buffer_count": 66,
+          "buffer_deduplicated": 64,
+          "nearest_count": 11,
+          "nearest_deduplicated": 10
+        },
+        {
+          "exit": "2",
+          "buffer_count": 62,
+          "buffer_deduplicated": 60,
+          "nearest_count": 38,
+          "nearest_deduplicated": 37
+        },
+        {
+          "exit": "3",
+          "buffer_count": 65,
+          "buffer_deduplicated": 63,
+          "nearest_count": 23,
+          "nearest_deduplicated": 23
+        }
+      ],
+      "ties": 0
+    }
+  ],
+  "input_hashes": {
+    "poi.parquet": "779b3214613977fe6846769c330438c018371e64167be5b02adb2e0c2b58663d",
+    "station_locations.json": "7bf5643a34eaeaf80fe68a8d711d69189c1083296b11d3c9c1ab30c488505714"
+  },
+  "script_hash": "89fd826372c199baf3ccc1579bfb5e7488cfd80f43357c604684c9b59c8e237b",
+  "limitations": [
+    "degree datum not independently verified",
+    "records not unique live shops",
+    "nearest exit not pedestrian flow",
+    "station overlap retained in original all-station analysis",
+    "only Dongdaegu recomputed"
+  ]
+}
