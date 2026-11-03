@@ -1,0 +1,31 @@
+{
+  "n": 293,
+  "matched_raw": 293,
+  "raw_area_values": {
+    "": 274,
+    ".00": 17,
+    "218.61": 1,
+    "36.13": 1
+  },
+  "date_fields": {
+    "데이터갱신구분": {
+      "parsed": 0,
+      "after_opening": 0,
+      "closure_date_present": 286,
+      "on_or_after_closure_day": 0
+    },
+    "데이터갱신시점": {
+      "parsed": 293,
+      "after_opening": 293,
+      "closure_date_present": 286,
+      "on_or_after_closure_day": 286
+    },
+    "최종수정시점": {
+      "parsed": 293,
+      "after_opening": 293,
+      "closure_date_present": 286,
+      "on_or_after_closure_day": 286
+    }
+  },
+  "limitation": "Latest record timestamps do not establish when area changed; no historical area values supplied."
+}

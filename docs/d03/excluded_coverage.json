@@ -1,0 +1,343 @@
+{
+  "scope": "2025 sample coverage description, not model evaluation",
+  "reference_date": "2026-10-13",
+  "original_n": 1940,
+  "excluded_n": 332,
+  "totals": [
+    {
+      "group": "area_excluded",
+      "n": 293,
+      "events": 286,
+      "event_pct": 97.61092150170649
+    },
+    {
+      "group": "coordinate_excluded",
+      "n": 39,
+      "events": 1,
+      "event_pct": 2.564102564102564
+    },
+    {
+      "group": "included",
+      "n": 1608,
+      "events": 168,
+      "event_pct": 10.44776119402985
+    }
+  ],
+  "groups": [
+    {
+      "field": "gu",
+      "group": "군위군",
+      "n": 19,
+      "included": 10,
+      "coordinate_excluded": 0,
+      "area_excluded": 9,
+      "excluded_pct": 47.368421052631575,
+      "events_included": 0,
+      "events_excluded": 9
+    },
+    {
+      "field": "gu",
+      "group": "남구",
+      "n": 123,
+      "included": 103,
+      "coordinate_excluded": 0,
+      "area_excluded": 20,
+      "excluded_pct": 16.260162601626014,
+      "events_included": 11,
+      "events_excluded": 20
+    },
+    {
+      "field": "gu",
+      "group": "달서구",
+      "n": 380,
+      "included": 314,
+      "coordinate_excluded": 3,
+      "area_excluded": 63,
+      "excluded_pct": 17.36842105263158,
+      "events_included": 22,
+      "events_excluded": 59
+    },
+    {
+      "field": "gu",
+      "group": "달성군",
+      "n": 154,
+      "included": 152,
+      "coordinate_excluded": 0,
+      "area_excluded": 2,
+      "excluded_pct": 1.2987012987012987,
+      "events_included": 5,
+      "events_excluded": 2
+    },
+    {
+      "field": "gu",
+      "group": "동구",
+      "n": 246,
+      "included": 237,
+      "coordinate_excluded": 5,
+      "area_excluded": 4,
+      "excluded_pct": 3.6585365853658534,
+      "events_included": 62,
+      "events_excluded": 4
+    },
+    {
+      "field": "gu",
+      "group": "북구",
+      "n": 265,
+      "included": 223,
+      "coordinate_excluded": 5,
+      "area_excluded": 37,
+      "excluded_pct": 15.849056603773585,
+      "events_included": 19,
+      "events_excluded": 37
+    },
+    {
+      "field": "gu",
+      "group": "서구",
+      "n": 125,
+      "included": 115,
+      "coordinate_excluded": 4,
+      "area_excluded": 6,
+      "excluded_pct": 8.0,
+      "events_included": 13,
+      "events_excluded": 6
+    },
+    {
+      "field": "gu",
+      "group": "수성구",
+      "n": 331,
+      "included": 249,
+      "coordinate_excluded": 9,
+      "area_excluded": 73,
+      "excluded_pct": 24.773413897280967,
+      "events_included": 16,
+      "events_excluded": 71
+    },
+    {
+      "field": "gu",
+      "group": "중구",
+      "n": 297,
+      "included": 205,
+      "coordinate_excluded": 13,
+      "area_excluded": 79,
+      "excluded_pct": 30.976430976430976,
+      "events_included": 20,
+      "events_excluded": 79
+    },
+    {
+      "field": "category",
+      "group": "감성주점",
+      "n": 3,
+      "included": 3,
+      "coordinate_excluded": 0,
+      "area_excluded": 0,
+      "excluded_pct": 0.0,
+      "events_included": 0,
+      "events_excluded": 0
+    },
+    {
+      "field": "category",
+      "group": "경양식",
+      "n": 74,
+      "included": 70,
+      "coordinate_excluded": 2,
+      "area_excluded": 2,
+      "excluded_pct": 5.405405405405405,
+      "events_included": 8,
+      "events_excluded": 2
+    },
+    {
+      "field": "category",
+      "group": "기타",
+      "n": 547,
+      "included": 408,
+      "coordinate_excluded": 9,
+      "area_excluded": 130,
+      "excluded_pct": 25.411334552102378,
+      "events_included": 75,
+      "events_excluded": 129
+    },
+    {
+      "field": "category",
+      "group": "김밥(도시락)",
+      "n": 7,
+      "included": 7,
+      "coordinate_excluded": 0,
+      "area_excluded": 0,
+      "excluded_pct": 0.0,
+      "events_included": 3,
+      "events_excluded": 0
+    },
+    {
+      "field": "category",
+      "group": "냉면집",
+      "n": 5,
+      "included": 4,
+      "coordinate_excluded": 0,
+      "area_excluded": 1,
+      "excluded_pct": 20.0,
+      "events_included": 0,
+      "events_excluded": 1
+    },
+    {
+      "field": "category",
+      "group": "라이브카페",
+      "n": 3,
+      "included": 3,
+      "coordinate_excluded": 0,
+      "area_excluded": 0,
+      "excluded_pct": 0.0,
+      "events_included": 0,
+      "events_excluded": 0
+    },
+    {
+      "field": "category",
+      "group": "분식",
+      "n": 77,
+      "included": 64,
+      "coordinate_excluded": 4,
+      "area_excluded": 9,
+      "excluded_pct": 16.883116883116884,
+      "events_included": 4,
+      "events_excluded": 8
+    },
+    {
+      "field": "category",
+      "group": "뷔페식",
+      "n": 4,
+      "included": 4,
+      "coordinate_excluded": 0,
+      "area_excluded": 0,
+      "excluded_pct": 0.0,
+      "events_included": 0,
+      "events_excluded": 0
+    },
+    {
+      "field": "category",
+      "group": "식육(숯불구이)",
+      "n": 109,
+      "included": 105,
+      "coordinate_excluded": 2,
+      "area_excluded": 2,
+      "excluded_pct": 3.669724770642202,
+      "events_included": 5,
+      "events_excluded": 1
+    },
+    {
+      "field": "category",
+      "group": "외국음식전문점(인도,태국등)",
+      "n": 24,
+      "included": 21,
+      "coordinate_excluded": 0,
+      "area_excluded": 3,
+      "excluded_pct": 12.5,
+      "events_included": 1,
+      "events_excluded": 3
+    },
+    {
+      "field": "category",
+      "group": "일식",
+      "n": 60,
+      "included": 53,
+      "coordinate_excluded": 0,
+      "area_excluded": 7,
+      "excluded_pct": 11.666666666666666,
+      "events_included": 5,
+      "events_excluded": 7
+    },
+    {
+      "field": "category",
+      "group": "정종/대포집/소주방",
+      "n": 20,
+      "included": 19,
+      "coordinate_excluded": 1,
+      "area_excluded": 0,
+      "excluded_pct": 5.0,
+      "events_included": 1,
+      "events_excluded": 0
+    },
+    {
+      "field": "category",
+      "group": "중국식",
+      "n": 33,
+      "included": 30,
+      "coordinate_excluded": 1,
+      "area_excluded": 2,
+      "excluded_pct": 9.090909090909092,
+      "events_included": 4,
+      "events_excluded": 2
+    },
+    {
+      "field": "category",
+      "group": "출장조리",
+      "n": 1,
+      "included": 1,
+      "coordinate_excluded": 0,
+      "area_excluded": 0,
+      "excluded_pct": 0.0,
+      "events_included": 0,
+      "events_excluded": 0
+    },
+    {
+      "field": "category",
+      "group": "키즈카페",
+      "n": 1,
+      "included": 1,
+      "coordinate_excluded": 0,
+      "area_excluded": 0,
+      "excluded_pct": 0.0,
+      "events_included": 0,
+      "events_excluded": 0
+    },
+    {
+      "field": "category",
+      "group": "패밀리레스트랑",
+      "n": 4,
+      "included": 2,
+      "coordinate_excluded": 2,
+      "area_excluded": 0,
+      "excluded_pct": 50.0,
+      "events_included": 0,
+      "events_excluded": 1
+    },
+    {
+      "field": "category",
+      "group": "한식",
+      "n": 804,
+      "included": 698,
+      "coordinate_excluded": 13,
+      "area_excluded": 93,
+      "excluded_pct": 13.184079601990051,
+      "events_included": 53,
+      "events_excluded": 90
+    },
+    {
+      "field": "category",
+      "group": "호프/통닭",
+      "n": 148,
+      "included": 101,
+      "coordinate_excluded": 5,
+      "area_excluded": 42,
+      "excluded_pct": 31.756756756756754,
+      "events_included": 8,
+      "events_excluded": 41
+    },
+    {
+      "field": "category",
+      "group": "횟집",
+      "n": 16,
+      "included": 14,
+      "coordinate_excluded": 0,
+      "area_excluded": 2,
+      "excluded_pct": 12.5,
+      "events_included": 1,
+      "events_excluded": 2
+    }
+  ],
+  "overlapping_coordinate_and_area_invalid": 1,
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "raw": "45c4491fe2adb0be2ff3f5580d062b4556df8fe2c2f60f3104cab8398ac7cfb4",
+    "parser": "3a283664c735bfb2d4d4fcd7a6eb9331849bcbcee573e4b0c7f7425630a36042",
+    "script": "fdb855126699d2bf2437f6da7f0448e218c6874f3651e21fd43178875a0a7fdd"
+  }
+}
