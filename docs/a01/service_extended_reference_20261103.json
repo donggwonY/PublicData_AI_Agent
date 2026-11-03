@@ -1,0 +1,421 @@
+{
+  "date": "2026-11-03",
+  "scope": "local parquet reference only; not live AI evaluation",
+  "reference_date": "2026-10-13",
+  "cases": [
+    {
+      "id": "region",
+      "tool": "compare_areas",
+      "args": {
+        "areas": [
+          "수성구",
+          "중구"
+        ],
+        "category": "카페"
+      },
+      "result": {
+        "category": "카페(커피숍, 까페, 다방, 전통찻집, 라이브카페, 키즈카페)",
+        "areas": [
+          {
+            "area": "수성구",
+            "survival": {
+              "n": 2057,
+              "median_survival_years": 4.3,
+              "survival_1y_pct": 86.3,
+              "survival_3y_pct": 61.8,
+              "survival_5y_pct": 45.7
+            },
+            "vacancy_rate_pct": 9.1,
+            "vacant_units": 786,
+            "units_active_within_3y": 8625,
+            "cycle_stage": "성숙기",
+            "open_close_ratio_recent_3y": 1.01,
+            "active_stores_all": 11577,
+            "active_stores_same_category": 821,
+            "repeat_closure_spots": 112,
+            "top_active_categories": {
+              "한식": 1673,
+              "일반미용업": 1263,
+              "담배소매업": 772
+            }
+          },
+          {
+            "area": "중구",
+            "survival": {
+              "n": 1616,
+              "median_survival_years": 4.0,
+              "survival_1y_pct": 86.8,
+              "survival_3y_pct": 59.0,
+              "survival_5y_pct": 41.8
+            },
+            "vacancy_rate_pct": 12.7,
+            "vacant_units": 716,
+            "units_active_within_3y": 5638,
+            "cycle_stage": "성숙기",
+            "open_close_ratio_recent_3y": 1.03,
+            "active_stores_all": 6645,
+            "active_stores_same_category": 582,
+            "repeat_closure_spots": 95,
+            "top_active_categories": {
+              "한식": 1210,
+              "담배소매업": 555,
+              "커피숍": 531
+            }
+          }
+        ],
+        "errors": null,
+        "ranking": {
+          "longest_median_survival": [
+            "수성구",
+            "중구"
+          ],
+          "highest_3y_survival": [
+            "수성구",
+            "중구"
+          ],
+          "lowest_vacancy_rate": [
+            "수성구",
+            "중구"
+          ]
+        },
+        "basis": {
+          "data": "행정안전부 지방행정 인허가(대구 골프연습장업·노래연습장업·담배소매업·당구장업·미용업·병원·세탁업·약국·의원·인터넷컴퓨터게임시설제공업·일반음식점·제과점영업·체력단련장업·체육도장업·축산판매업·휴게음식점)",
+          "reference_date": "2026-10-13",
+          "survival_cohort": "2010년 이후 인허가, Kaplan-Meier",
+          "vacancy_definition": "최근 3년 내 영업했던 자리 중 폐업 후 90일~3년간 신규 인허가 없는 자리 비율",
+          "cycle": "최근 3년 vs 직전 3년 개업/폐업 비율"
+        }
+      }
+    },
+    {
+      "id": "history",
+      "tool": "get_unit_history",
+      "args": {
+        "address": "대구 중구 동성로5길 83 1층"
+      },
+      "result": {
+        "unit": {
+          "unit_id": "대구광역시 중구 삼덕동1가 61-3 1층",
+          "address": "대구광역시 중구 동성로5길 83 1층",
+          "jibun_address": "대구광역시 중구 삼덕동1가 61-3",
+          "floor": "1층",
+          "gu": "중구",
+          "dong": "삼덕동1가",
+          "records": 6,
+          "status": "영업중 3개 (레푸스, 오.유.재, 삼덕놀이터분식)",
+          "lat": 35.86722739916958,
+          "lon": 128.5990804723315,
+          "max_concurrent_stores": 3,
+          "is_single_unit": false,
+          "single_unit_note": "동시에 여러 점포가 영업한 다점포 건물/층(푸드코트·백화점 등)이라 '한 자리'의 교체 이력으로 해석하면 안 됨"
+        },
+        "summary": {
+          "total_records": 6,
+          "closed": 3,
+          "active": 3,
+          "first_open": "1991-02-27",
+          "closures_since_2010": 2,
+          "avg_years_closed_since_2010": 1.4,
+          "category_path": "한식 → 네일아트업 → 기타 휴게음식점 → 일반조리판매 → 네일아트업 → 일반조리판매"
+        },
+        "by_category": [
+          {
+            "category": "한식",
+            "stores": 1,
+            "closed": 1,
+            "avg_years": 19.9,
+            "max_years": 19.9,
+            "daegu_median_years_2010plus": 6.2
+          },
+          {
+            "category": "네일아트업",
+            "stores": 2,
+            "closed": 0,
+            "avg_years": 10.9,
+            "max_years": 15.7,
+            "daegu_median_years_2010plus": 5.9
+          },
+          {
+            "category": "일반조리판매",
+            "stores": 2,
+            "closed": 1,
+            "avg_years": 3.8,
+            "max_years": 6.0,
+            "daegu_median_years_2010plus": 2.8
+          },
+          {
+            "category": "기타 휴게음식점",
+            "stores": 1,
+            "closed": 1,
+            "avg_years": 1.0,
+            "max_years": 1.0,
+            "daegu_median_years_2010plus": 2.7
+          }
+        ],
+        "timeline": [
+          {
+            "open": "1991-02-27",
+            "close": "2011-01-24",
+            "name": "항아리갈비",
+            "service": "일반음식점",
+            "category": "한식",
+            "floor": "1층",
+            "years": 19.9,
+            "gap_from_previous_close_days": null
+          },
+          {
+            "open": "2011-01-24",
+            "close": "영업중",
+            "name": "오.유.재",
+            "service": "미용업",
+            "category": "네일아트업",
+            "floor": "1층",
+            "years": 15.7,
+            "gap_from_previous_close_days": 0
+          },
+          {
+            "open": "2015-08-03",
+            "close": "2016-08-12",
+            "name": "로보넛",
+            "service": "휴게음식점",
+            "category": "기타 휴게음식점",
+            "floor": "1층",
+            "years": 1.0,
+            "gap_from_previous_close_days": 1652
+          },
+          {
+            "open": "2018-01-12",
+            "close": "2019-09-26",
+            "name": "삼덕분식",
+            "service": "휴게음식점",
+            "category": "일반조리판매",
+            "floor": "1층",
+            "years": 1.7,
+            "gap_from_previous_close_days": 518
+          },
+          {
+            "open": "2020-08-18",
+            "close": "영업중",
+            "name": "레푸스",
+            "service": "미용업",
+            "category": "네일아트업",
+            "floor": "1층",
+            "years": 6.2,
+            "gap_from_previous_close_days": 327
+          },
+          {
+            "open": "2020-10-27",
+            "close": "영업중",
+            "name": "삼덕놀이터분식",
+            "service": "휴게음식점",
+            "category": "일반조리판매",
+            "floor": "1층",
+            "years": 6.0,
+            "gap_from_previous_close_days": 397
+          }
+        ],
+        "timeline_truncated": false,
+        "other_candidates": [],
+        "floor_note": null,
+        "basis": {
+          "data": "행정안전부 지방행정 인허가(대구 골프연습장업·노래연습장업·담배소매업·당구장업·미용업·병원·세탁업·약국·의원·인터넷컴퓨터게임시설제공업·일반음식점·제과점영업·체력단련장업·체육도장업·축산판매업·휴게음식점)",
+          "reference_date": "2026-10-13",
+          "definition": "같은 자리(건물+층)의 인허가 레코드를 인허가일 순으로 정렬. gap = 직전 폐업일~이번 인허가일(음수는 양도·양수로 인한 중첩)."
+        }
+      }
+    },
+    {
+      "id": "survival",
+      "tool": "get_survival_curve",
+      "args": {
+        "category": "카페",
+        "gu": "수성구"
+      },
+      "result": {
+        "target": "수성구 / 카페(커피숍, 까페, 다방, 전통찻집, 라이브카페, 키즈카페)",
+        "n": 2057,
+        "closed": 1307,
+        "censored_active": 750,
+        "median_survival_years": 4.3,
+        "survival_1y_pct": 86.3,
+        "survival_3y_pct": 61.8,
+        "survival_5y_pct": 45.7,
+        "curve": [
+          {
+            "year": 0,
+            "survival_pct": 100.0
+          },
+          {
+            "year": 1,
+            "survival_pct": 86.3
+          },
+          {
+            "year": 2,
+            "survival_pct": 74.3
+          },
+          {
+            "year": 3,
+            "survival_pct": 61.8
+          },
+          {
+            "year": 4,
+            "survival_pct": 52.1
+          },
+          {
+            "year": 5,
+            "survival_pct": 45.7
+          },
+          {
+            "year": 6,
+            "survival_pct": 39.5
+          },
+          {
+            "year": 7,
+            "survival_pct": 35.2
+          },
+          {
+            "year": 8,
+            "survival_pct": 30.8
+          },
+          {
+            "year": 9,
+            "survival_pct": 26.2
+          },
+          {
+            "year": 10,
+            "survival_pct": 23.3
+          }
+        ],
+        "short_lived_closures_pct": 5.9,
+        "daegu_baseline_same_cohort": {
+          "n": 113546,
+          "median_survival_years": 5.5,
+          "survival_1y_pct": 86.2,
+          "survival_3y_pct": 66.0,
+          "survival_5y_pct": 53.0
+        },
+        "close_within_1y_pct": 13.7,
+        "basis": {
+          "data": "행정안전부 지방행정 인허가(대구 골프연습장업·노래연습장업·담배소매업·당구장업·미용업·병원·세탁업·약국·의원·인터넷컴퓨터게임시설제공업·일반음식점·제과점영업·체력단련장업·체육도장업·축산판매업·휴게음식점)",
+          "reference_date": "2026-10-13",
+          "cohort": "2010년 이후 인허가",
+          "area": "수성구",
+          "category": "카페(커피숍, 까페, 다방, 전통찻집, 라이브카페, 키즈카페)",
+          "method": "Kaplan-Meier, 영업중 점포는 기준일에서 중도절단",
+          "caveat": null
+        }
+      }
+    },
+    {
+      "id": "ambiguous",
+      "tool": "normalize_address",
+      "args": {
+        "query": "상화로 79"
+      },
+      "result": {
+        "query": "상화로 79",
+        "method": "주소 토큰 포함 검색",
+        "matched": 8,
+        "matches": [
+          {
+            "unit_id": "대구광역시 달서구 진천동 446 1층",
+            "address": "대구광역시 달서구 상화로 79 1층",
+            "jibun_address": "대구광역시 달서구 진천동 446",
+            "floor": "1층",
+            "gu": "달서구",
+            "dong": "진천동",
+            "records": 12,
+            "status": "영업중 5개 (생활온천두부방, 유정피부관리실, 홍시네일)",
+            "lat": 35.808140536214005,
+            "lon": 128.52290973434242
+          },
+          {
+            "unit_id": "대구광역시 수성구 상동 69 1층",
+            "address": "대구광역시 수성구 상화로 79 1층",
+            "jibun_address": "대구광역시 수성구 상동 69",
+            "floor": "1층",
+            "gu": "수성구",
+            "dong": "상동",
+            "records": 9,
+            "status": "영업중 1개 (세븐일레븐 대구상동센터점)",
+            "lat": 35.83522707431293,
+            "lon": 128.61599518297453
+          },
+          {
+            "unit_id": "대구광역시 수성구 두산동 79 1층",
+            "address": "대구광역시 수성구 상화로 117 1층",
+            "jibun_address": "대구광역시 수성구 두산동 79",
+            "floor": "1층",
+            "gu": "수성구",
+            "dong": "두산동",
+            "records": 8,
+            "status": "영업중 1개 (원마트&선진포크프라자)",
+            "lat": 35.835562436826784,
+            "lon": 128.61998851482417
+          },
+          {
+            "unit_id": "대구광역시 달서구 진천동 446",
+            "address": "대구광역시 달서구 상화로 79",
+            "jibun_address": "대구광역시 달서구 진천동 446",
+            "floor": null,
+            "gu": "달서구",
+            "dong": "진천동",
+            "records": 4,
+            "status": "영업중 1개 ((주)생활온천)",
+            "lat": 35.808140536214005,
+            "lon": 128.52290973434242
+          },
+          {
+            "unit_id": "대구광역시 달서구 진천동 446 지하1층",
+            "address": "대구광역시 달서구 상화로 79 지하1층",
+            "jibun_address": "대구광역시 달서구 진천동 446",
+            "floor": "지하1층",
+            "gu": "달서구",
+            "dong": "진천동",
+            "records": 3,
+            "status": "영업중 2개 (생활온천스낵코너, 생활온천스낵코너)",
+            "lat": 35.808140536214005,
+            "lon": 128.52290973434242
+          },
+          {
+            "unit_id": "대구광역시 달서구 진천동 446 3층",
+            "address": "대구광역시 달서구 상화로 79 3층",
+            "jibun_address": "대구광역시 달서구 진천동 446",
+            "floor": "3층",
+            "gu": "달서구",
+            "dong": "진천동",
+            "records": 2,
+            "status": "영업중 1개 (생활온천 남탕 매점)",
+            "lat": 35.808140536214005,
+            "lon": 128.52290973434242
+          },
+          {
+            "unit_id": "대구광역시 달서구 진천동 446 2층",
+            "address": "대구광역시 달서구 상화로 79 2층",
+            "jibun_address": "대구광역시 달서구 진천동 446",
+            "floor": "2층",
+            "gu": "달서구",
+            "dong": "진천동",
+            "records": 1,
+            "status": "영업중 1개 (생활온천여탕매점)",
+            "lat": 35.808140536214005,
+            "lon": 128.52290973434242
+          },
+          {
+            "unit_id": "대구광역시 수성구 상동 69-5",
+            "address": "대구광역시 수성구 상화로 79",
+            "jibun_address": "대구광역시 수성구 상동 69-5",
+            "floor": null,
+            "gu": "수성구",
+            "dong": "상동",
+            "records": 1,
+            "status": "영업중 1개 (세븐일레븐대구상동센터점)",
+            "lat": 35.83522707431293,
+            "lon": 128.61599518297453
+          }
+        ],
+        "note": "자리(unit) = 건물 기본주소(지번) + 층. 층 기재가 없는 과거 레코드는 건물 내 주 사용 층으로 합산."
+      }
+    }
+  ]
+}

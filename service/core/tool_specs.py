@@ -13,7 +13,7 @@ TOOL_SPECS = [
         "description": (
             "Kaplan-Meier 점포 생존분석(영업 중 점포는 중도절단). 업태·지역별 중앙생존기간, 1/3/5년 생존율, 연차별 생존곡선과 "
             "대구 전체 기준선을 반환한다. group_by 를 주면 업태·구·동별 순위표를 반환한다('뭐가 더 오래 가?', '어느 동이 오래 버텨?'). "
-            "기본 코호트는 2010년 이후 개업(그 이전은 생존편향)."
+            "기본 코호트는 2010년 이후 개업(그 이전은 생존편향). 답변에 basis의 기준일·코호트와 영업 중 기록의 중도절단을 표시한다. 단순 평균이나 개별 신규 점포의 생존 확률 보장이 아니다."
         ),
         "input_schema": {
             "type": "object",
@@ -63,7 +63,7 @@ TOOL_SPECS = [
         "input_schema": {
             "type": "object",
             "properties": {
-                "address": {"type": "string", "description": "도로명·지번 주소, 상호명, 또는 후보 목록의 자리 ID (예: '동성로5길 83', '삼덕동1가 28-6 2층', '빽다방 대구군위점'). 건물이 여러 곳이면 후보 목록이 오류로 반환되니 사용자에게 고르게 한다."},
+                "address": {"type": "string", "description": "도로명·지번 주소, 상호명, 또는 후보 목록의 자리 ID (예: '동성로5길 83', '삼덕동1가 28-6 2층', '빽다방 대구군위점'). 사용자가 명시한 구·건물번호·층을 생략하지 않는다. 건물이 여러 곳이면 후보 목록이 오류로 반환되니 사용자에게 고르게 한다."},
                 "whole_building": {"type": "boolean", "description": "층 구분 없이 건물 전체 이력.", "default": False},
                 "max_records": {"type": "integer", "default": 40},
             },
@@ -91,7 +91,7 @@ TOOL_SPECS = [
         "name": "compare_areas",
         "description": (
             "여러 구·동을 한 번에 비교: 업태별 생존율(중앙생존·1/3/5년), 최근 3년 공실률, 사이클 단계, 영업 중 동종 점포 수(경쟁), "
-            "반복 폐업 자리 수, 주력 업태. '어느 구가 나아?'에 사용."
+            "반복 폐업 자리 수, 주력 업태. '어느 구가 나아?'에 사용. 주거지·학원가·고객층·유동인구 구성은 이 도구로 확인되지 않으며 표본/생존율 차이의 원인으로 추정하지 않는다."
         ),
         "input_schema": {
             "type": "object",
@@ -148,7 +148,7 @@ TOOL_SPECS = [
         "input_schema": {
             "type": "object",
             "properties": {
-                "address": {"type": "string", "description": "중심이 될 주소, 상호, 또는 후보 목록의 자리 ID (예: '동성로5길 83'). 건물이 여러 곳이면 후보 목록이 오류로 반환되니 사용자에게 고르게 한다."},
+                "address": {"type": "string", "description": "중심이 될 주소, 상호, 또는 후보 목록의 자리 ID (예: '동성로5길 83'). 사용자가 명시한 구·건물번호·층을 생략하지 않는다. 건물이 여러 곳이면 후보 목록이 오류로 반환되니 사용자에게 고르게 한다."},
                 "radius_m": {"type": "integer", "description": "반경(m). 기본 300.", "default": 300},
                 "category": {"type": "string", "description": "경쟁으로 셀 업종. " + _CATEGORY_DESC},
                 "limit": {"type": "integer", "default": 10},
