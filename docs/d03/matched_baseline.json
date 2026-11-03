@@ -1,0 +1,209 @@
+{
+  "scope": "same complete cases and training/evaluation years; uncalibrated comparison; exploratory, not independent test",
+  "windows": [
+    {
+      "window": "2015-2016",
+      "train_n": 8792,
+      "scores": {
+        "basic_logistic": {
+          "n": 5328,
+          "events": 317,
+          "actual_pct": 5.9496996996997,
+          "predicted_pct": 7.138208689204456,
+          "brier": 0.05623625851820498,
+          "log_loss": 0.2269246079524826,
+          "roc_auc": 0.5490866466014516,
+          "average_precision": 0.06724274965892152
+        },
+        "constant": {
+          "n": 5328,
+          "events": 317,
+          "actual_pct": 5.9496996996997,
+          "predicted_pct": 7.677434030937215,
+          "brier": 0.05625561093726999,
+          "log_loss": 0.2278508121895302,
+          "roc_auc": 0.5,
+          "average_precision": 0.059496996996996995
+        },
+        "logistic_context": {
+          "n": 5328,
+          "events": 317,
+          "actual_pct": 5.9496996996997,
+          "predicted_pct": 6.924522048432735,
+          "brier": 0.05613613504391485,
+          "log_loss": 0.22603170631282496,
+          "roc_auc": 0.5591396089486411,
+          "average_precision": 0.06951819299232792
+        },
+        "logistic_area": {
+          "n": 5328,
+          "events": 317,
+          "actual_pct": 5.9496996996997,
+          "predicted_pct": 6.782799543844777,
+          "brier": 0.05624097360963109,
+          "log_loss": 0.22596380463965265,
+          "roc_auc": 0.5983020320594377,
+          "average_precision": 0.08182794278284201
+        },
+        "forest_context": {
+          "n": 5328,
+          "events": 317,
+          "actual_pct": 5.9496996996997,
+          "predicted_pct": 7.387641364813054,
+          "brier": 0.055975074058681434,
+          "log_loss": 0.2256917154860734,
+          "roc_auc": 0.5631544356359227,
+          "average_precision": 0.0810645375901238
+        },
+        "forest_area": {
+          "n": 5328,
+          "events": 317,
+          "actual_pct": 5.9496996996997,
+          "predicted_pct": 7.103149428586963,
+          "brier": 0.055577956924408686,
+          "log_loss": 0.22239863098780588,
+          "roc_auc": 0.6110408835577502,
+          "average_precision": 0.09259257438778565
+        }
+      }
+    },
+    {
+      "window": "2017-2018",
+      "train_n": 13782,
+      "scores": {
+        "basic_logistic": {
+          "n": 5552,
+          "events": 421,
+          "actual_pct": 7.5828530259366,
+          "predicted_pct": 6.4537464797838995,
+          "brier": 0.07038416388873873,
+          "log_loss": 0.2717496984435773,
+          "roc_auc": 0.5246765156695065,
+          "average_precision": 0.08567599556214404
+        },
+        "constant": {
+          "n": 5552,
+          "events": 421,
+          "actual_pct": 7.5828530259366,
+          "predicted_pct": 7.103468291975039,
+          "brier": 0.07010154523038595,
+          "log_loss": 0.2686316821473965,
+          "roc_auc": 0.5,
+          "average_precision": 0.07582853025936599
+        },
+        "logistic_context": {
+          "n": 5552,
+          "events": 421,
+          "actual_pct": 7.5828530259366,
+          "predicted_pct": 6.362877847659097,
+          "brier": 0.07042339031782328,
+          "log_loss": 0.27217789374347606,
+          "roc_auc": 0.5262134452637802,
+          "average_precision": 0.0844751016588173
+        },
+        "logistic_area": {
+          "n": 5552,
+          "events": 421,
+          "actual_pct": 7.5828530259366,
+          "predicted_pct": 6.493687021437769,
+          "brier": 0.06968883840375098,
+          "log_loss": 0.2673072268960374,
+          "roc_auc": 0.5967381446945145,
+          "average_precision": 0.10879189014302097
+        },
+        "forest_context": {
+          "n": 5552,
+          "events": 421,
+          "actual_pct": 7.5828530259366,
+          "predicted_pct": 6.886756659382742,
+          "brier": 0.07021590392772573,
+          "log_loss": 0.26937052927630845,
+          "roc_auc": 0.5253401266855883,
+          "average_precision": 0.08427092602470608
+        },
+        "forest_area": {
+          "n": 5552,
+          "events": 421,
+          "actual_pct": 7.5828530259366,
+          "predicted_pct": 6.878436100162174,
+          "brier": 0.06944806849873977,
+          "log_loss": 0.26403665882914223,
+          "roc_auc": 0.6078945407057192,
+          "average_precision": 0.10891837330195417
+        }
+      }
+    },
+    {
+      "window": "2020-2021",
+      "train_n": 22172,
+      "scores": {
+        "basic_logistic": {
+          "n": 5558,
+          "events": 386,
+          "actual_pct": 6.944944224541202,
+          "predicted_pct": 7.1572301725269805,
+          "brier": 0.06475211661435355,
+          "log_loss": 0.2527776487848548,
+          "roc_auc": 0.529972320065398,
+          "average_precision": 0.0733909802053453
+        },
+        "constant": {
+          "n": 5558,
+          "events": 386,
+          "actual_pct": 6.944944224541202,
+          "predicted_pct": 7.112574418185099,
+          "brier": 0.0646290272053953,
+          "log_loss": 0.25223391368825426,
+          "roc_auc": 0.5,
+          "average_precision": 0.06944944224541202
+        },
+        "logistic_context": {
+          "n": 5558,
+          "events": 386,
+          "actual_pct": 6.944944224541202,
+          "predicted_pct": 7.24445880774868,
+          "brier": 0.06479062421917663,
+          "log_loss": 0.2530384809577629,
+          "roc_auc": 0.5253647580234744,
+          "average_precision": 0.07340616733216367
+        },
+        "logistic_area": {
+          "n": 5558,
+          "events": 386,
+          "actual_pct": 6.944944224541202,
+          "predicted_pct": 7.75129835929773,
+          "brier": 0.06360835446039018,
+          "log_loss": 0.2441807962437121,
+          "roc_auc": 0.6445610381127553,
+          "average_precision": 0.11538469587906297
+        },
+        "forest_context": {
+          "n": 5558,
+          "events": 386,
+          "actual_pct": 6.944944224541202,
+          "predicted_pct": 7.182504948230302,
+          "brier": 0.06468158070608178,
+          "log_loss": 0.2524596608745616,
+          "roc_auc": 0.5118947080533283,
+          "average_precision": 0.07227679383226675
+        },
+        "forest_area": {
+          "n": 5558,
+          "events": 386,
+          "actual_pct": 6.944944224541202,
+          "predicted_pct": 7.424680288351195,
+          "brier": 0.06357017774409897,
+          "log_loss": 0.24461305806044495,
+          "roc_auc": 0.6520302625937191,
+          "average_precision": 0.11390322344021082
+        }
+      }
+    }
+  ],
+  "hashes": {
+    "prior": "01cac53248bec2926cd92ef8f5865a79f9edcaa8026a1ec7047d799246365bcc",
+    "script": "1837331c3bd0b4a900cf608db1a764589820978382efb252d7cb0fc96852148c",
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "raw": "45c4491fe2adb0be2ff3f5580d062b4556df8fe2c2f60f3104cab8398ac7cfb4"
+  }
+}

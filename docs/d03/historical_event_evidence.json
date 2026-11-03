@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "place": "대구광역시 달서구 두류동 560",
+      "n": 46,
+      "raw_address_available": 40,
+      "raw_addresses": {
+        "대구광역시 달서구 두류동 560 ": 40
+      },
+      "raw_open_dates": {
+        "2016-07-26": 31,
+        "2016-07-27": 15
+      },
+      "festival_address_n": 0
+    },
+    {
+      "place": "대구광역시 수성구 두산동 152-1",
+      "n": 50,
+      "raw_address_available": 50,
+      "raw_addresses": {
+        "대구광역시 수성구 두산동 152-1 2018 들안길 푸드페스티벌 행사장 내 ": 49,
+        "대구광역시 수성구 두산동 152-1 2018들안길 푸드페스티벌 행사장 내 ": 1
+      },
+      "raw_open_dates": {
+        "2018-09-07": 50
+      },
+      "festival_address_n": 50
+    }
+  ],
+  "hashes": {
+    "raw": "45c4491fe2adb0be2ff3f5580d062b4556df8fe2c2f60f3104cab8398ac7cfb4",
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "script": "e20bccec04536cce5f3ae353a33b9bfe9cb48239696e14c79d8b081318a2d941"
+  },
+  "limitation": "address identifies festival context, not legal temporary permit type or historical availability"
+}

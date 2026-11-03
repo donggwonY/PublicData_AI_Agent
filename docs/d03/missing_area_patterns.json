@@ -1,0 +1,1069 @@
+{
+  "scope": "historical missing-area descriptive audit; no predictions or causal identification",
+  "windows": [
+    {
+      "window": "2015-2016",
+      "n": 112,
+      "events": 97,
+      "tables": {
+        "gu": [
+          {
+            "group": "달서구",
+            "n": 61,
+            "events": 57
+          },
+          {
+            "group": "수성구",
+            "n": 23,
+            "events": 20
+          },
+          {
+            "group": "중구",
+            "n": 15,
+            "events": 10
+          },
+          {
+            "group": "남구",
+            "n": 5,
+            "events": 5
+          },
+          {
+            "group": "서구",
+            "n": 5,
+            "events": 4
+          },
+          {
+            "group": "달성군",
+            "n": 3,
+            "events": 1
+          }
+        ],
+        "category": [
+          {
+            "group": "한식",
+            "n": 46,
+            "events": 40
+          },
+          {
+            "group": "호프/통닭",
+            "n": 20,
+            "events": 20
+          },
+          {
+            "group": "기타",
+            "n": 17,
+            "events": 16
+          },
+          {
+            "group": "경양식",
+            "n": 13,
+            "events": 8
+          },
+          {
+            "group": "식육(숯불구이)",
+            "n": 3,
+            "events": 2
+          },
+          {
+            "group": "김밥(도시락)",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "까페",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "분식",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "횟집",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "일식",
+            "n": 2,
+            "events": 1
+          },
+          {
+            "group": "외국음식전문점(인도,태국등)",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "탕류(보신용)",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "출장조리",
+            "n": 1,
+            "events": 0
+          }
+        ],
+        "raw_area_kind": [
+          {
+            "group": "blank",
+            "n": 92,
+            "events": 87
+          },
+          {
+            "group": "nonpositive",
+            "n": 19,
+            "events": 10
+          },
+          {
+            "group": "positive",
+            "n": 1,
+            "events": 0
+          }
+        ],
+        "duration_band": [
+          {
+            "group": "1-7",
+            "n": 56,
+            "events": 56
+          },
+          {
+            "group": "8-30",
+            "n": 32,
+            "events": 32
+          },
+          {
+            "group": "31-90",
+            "n": 6,
+            "events": 6
+          },
+          {
+            "group": "0",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "91-180",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "no_date",
+            "n": 8,
+            "events": 0
+          },
+          {
+            "group": "366+",
+            "n": 7,
+            "events": 0
+          }
+        ],
+        "close_month": [
+          {
+            "group": "2016-08",
+            "n": 51,
+            "events": 51
+          },
+          {
+            "group": "2015-06",
+            "n": 5,
+            "events": 5
+          },
+          {
+            "group": "2015-03",
+            "n": 4,
+            "events": 4
+          },
+          {
+            "group": "2015-04",
+            "n": 4,
+            "events": 4
+          },
+          {
+            "group": "2015-09",
+            "n": 4,
+            "events": 4
+          },
+          {
+            "group": "2015-05",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "2015-07",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "2016-05",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "2016-10",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "2015-02",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "2015-08",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "2016-07",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "2016-11",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "2015-01",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2015-12",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2016-02",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2016-03",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2016-06",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2016-09",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2016-12",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2017-01",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2017-02",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "__MISSING__",
+            "n": 8,
+            "events": 0
+          },
+          {
+            "group": "2018-01",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2020-04",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2020-12",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2022-06",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2023-01",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2023-09",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2025-04",
+            "n": 1,
+            "events": 0
+          }
+        ],
+        "영업상태명": [
+          {
+            "group": "폐업",
+            "n": 104,
+            "events": 97
+          },
+          {
+            "group": "영업/정상",
+            "n": 8,
+            "events": 0
+          }
+        ],
+        "상세영업상태명": [
+          {
+            "group": "폐업",
+            "n": 104,
+            "events": 97
+          },
+          {
+            "group": "영업",
+            "n": 8,
+            "events": 0
+          }
+        ]
+      }
+    },
+    {
+      "window": "2017-2018",
+      "n": 220,
+      "events": 197,
+      "tables": {
+        "gu": [
+          {
+            "group": "달서구",
+            "n": 106,
+            "events": 98
+          },
+          {
+            "group": "수성구",
+            "n": 67,
+            "events": 64
+          },
+          {
+            "group": "중구",
+            "n": 18,
+            "events": 16
+          },
+          {
+            "group": "달성군",
+            "n": 18,
+            "events": 11
+          },
+          {
+            "group": "서구",
+            "n": 7,
+            "events": 4
+          },
+          {
+            "group": "남구",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "북구",
+            "n": 1,
+            "events": 1
+          }
+        ],
+        "category": [
+          {
+            "group": "호프/통닭",
+            "n": 74,
+            "events": 72
+          },
+          {
+            "group": "한식",
+            "n": 68,
+            "events": 61
+          },
+          {
+            "group": "기타",
+            "n": 38,
+            "events": 34
+          },
+          {
+            "group": "경양식",
+            "n": 8,
+            "events": 7
+          },
+          {
+            "group": "분식",
+            "n": 7,
+            "events": 6
+          },
+          {
+            "group": "식육(숯불구이)",
+            "n": 7,
+            "events": 4
+          },
+          {
+            "group": "일식",
+            "n": 4,
+            "events": 4
+          },
+          {
+            "group": "외국음식전문점(인도,태국등)",
+            "n": 5,
+            "events": 3
+          },
+          {
+            "group": "정종/대포집/소주방",
+            "n": 4,
+            "events": 2
+          },
+          {
+            "group": "횟집",
+            "n": 2,
+            "events": 1
+          },
+          {
+            "group": "김밥(도시락)",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "복어취급",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "중국식",
+            "n": 1,
+            "events": 1
+          }
+        ],
+        "raw_area_kind": [
+          {
+            "group": "blank",
+            "n": 138,
+            "events": 132
+          },
+          {
+            "group": "nonpositive",
+            "n": 81,
+            "events": 65
+          },
+          {
+            "group": "positive",
+            "n": 1,
+            "events": 0
+          }
+        ],
+        "duration_band": [
+          {
+            "group": "8-30",
+            "n": 113,
+            "events": 113
+          },
+          {
+            "group": "1-7",
+            "n": 76,
+            "events": 76
+          },
+          {
+            "group": "31-90",
+            "n": 5,
+            "events": 5
+          },
+          {
+            "group": "91-180",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "0",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "366+",
+            "n": 15,
+            "events": 0
+          },
+          {
+            "group": "no_date",
+            "n": 8,
+            "events": 0
+          }
+        ],
+        "close_month": [
+          {
+            "group": "2018-09",
+            "n": 51,
+            "events": 51
+          },
+          {
+            "group": "2018-07",
+            "n": 47,
+            "events": 47
+          },
+          {
+            "group": "2017-07",
+            "n": 43,
+            "events": 43
+          },
+          {
+            "group": "2018-04",
+            "n": 7,
+            "events": 6
+          },
+          {
+            "group": "2017-05",
+            "n": 6,
+            "events": 6
+          },
+          {
+            "group": "2017-12",
+            "n": 5,
+            "events": 5
+          },
+          {
+            "group": "2018-11",
+            "n": 5,
+            "events": 5
+          },
+          {
+            "group": "2017-03",
+            "n": 4,
+            "events": 4
+          },
+          {
+            "group": "2017-04",
+            "n": 4,
+            "events": 4
+          },
+          {
+            "group": "2017-08",
+            "n": 4,
+            "events": 4
+          },
+          {
+            "group": "2018-10",
+            "n": 4,
+            "events": 4
+          },
+          {
+            "group": "2017-10",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "2017-09",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "2018-08",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "2018-12",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "2017-01",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2017-06",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2017-11",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2018-01",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2018-02",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2018-03",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2018-05",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2018-06",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2019-02",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "__MISSING__",
+            "n": 8,
+            "events": 0
+          },
+          {
+            "group": "2019-07",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2019-11",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2020-06",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2021-02",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2021-10",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2021-12",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2022-05",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2022-06",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2023-02",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2023-11",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2024-02",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2024-11",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2025-07",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2026-03",
+            "n": 1,
+            "events": 0
+          }
+        ],
+        "영업상태명": [
+          {
+            "group": "폐업",
+            "n": 212,
+            "events": 197
+          },
+          {
+            "group": "영업/정상",
+            "n": 8,
+            "events": 0
+          }
+        ],
+        "상세영업상태명": [
+          {
+            "group": "폐업",
+            "n": 212,
+            "events": 197
+          },
+          {
+            "group": "영업",
+            "n": 8,
+            "events": 0
+          }
+        ]
+      }
+    },
+    {
+      "window": "2020-2021",
+      "n": 89,
+      "events": 58,
+      "tables": {
+        "gu": [
+          {
+            "group": "달서구",
+            "n": 23,
+            "events": 16
+          },
+          {
+            "group": "북구",
+            "n": 14,
+            "events": 14
+          },
+          {
+            "group": "중구",
+            "n": 19,
+            "events": 12
+          },
+          {
+            "group": "달성군",
+            "n": 14,
+            "events": 8
+          },
+          {
+            "group": "남구",
+            "n": 4,
+            "events": 3
+          },
+          {
+            "group": "수성구",
+            "n": 9,
+            "events": 2
+          },
+          {
+            "group": "서구",
+            "n": 4,
+            "events": 2
+          },
+          {
+            "group": "동구",
+            "n": 2,
+            "events": 1
+          }
+        ],
+        "category": [
+          {
+            "group": "한식",
+            "n": 36,
+            "events": 23
+          },
+          {
+            "group": "기타",
+            "n": 25,
+            "events": 19
+          },
+          {
+            "group": "일식",
+            "n": 7,
+            "events": 5
+          },
+          {
+            "group": "경양식",
+            "n": 6,
+            "events": 3
+          },
+          {
+            "group": "식육(숯불구이)",
+            "n": 5,
+            "events": 2
+          },
+          {
+            "group": "횟집",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "호프/통닭",
+            "n": 3,
+            "events": 1
+          },
+          {
+            "group": "분식",
+            "n": 2,
+            "events": 1
+          },
+          {
+            "group": "중국식",
+            "n": 2,
+            "events": 1
+          },
+          {
+            "group": "통닭(치킨)",
+            "n": 1,
+            "events": 1
+          }
+        ],
+        "raw_area_kind": [
+          {
+            "group": "blank",
+            "n": 46,
+            "events": 39
+          },
+          {
+            "group": "nonpositive",
+            "n": 43,
+            "events": 19
+          }
+        ],
+        "duration_band": [
+          {
+            "group": "8-30",
+            "n": 27,
+            "events": 27
+          },
+          {
+            "group": "31-90",
+            "n": 15,
+            "events": 15
+          },
+          {
+            "group": "1-7",
+            "n": 11,
+            "events": 11
+          },
+          {
+            "group": "181-365",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "91-180",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "no_date",
+            "n": 16,
+            "events": 0
+          },
+          {
+            "group": "366+",
+            "n": 15,
+            "events": 0
+          }
+        ],
+        "close_month": [
+          {
+            "group": "2021-09",
+            "n": 6,
+            "events": 6
+          },
+          {
+            "group": "2021-10",
+            "n": 6,
+            "events": 6
+          },
+          {
+            "group": "2020-12",
+            "n": 5,
+            "events": 5
+          },
+          {
+            "group": "2021-12",
+            "n": 5,
+            "events": 4
+          },
+          {
+            "group": "2020-08",
+            "n": 4,
+            "events": 4
+          },
+          {
+            "group": "2020-09",
+            "n": 4,
+            "events": 4
+          },
+          {
+            "group": "2021-08",
+            "n": 4,
+            "events": 3
+          },
+          {
+            "group": "2021-02",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "2021-03",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "2021-11",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "2022-01",
+            "n": 3,
+            "events": 3
+          },
+          {
+            "group": "2020-02",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "2021-04",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "2021-07",
+            "n": 2,
+            "events": 2
+          },
+          {
+            "group": "2022-02",
+            "n": 2,
+            "events": 1
+          },
+          {
+            "group": "2022-03",
+            "n": 2,
+            "events": 1
+          },
+          {
+            "group": "2020-03",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2020-06",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2020-10",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2020-11",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2021-01",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "2021-06",
+            "n": 1,
+            "events": 1
+          },
+          {
+            "group": "__MISSING__",
+            "n": 16,
+            "events": 0
+          },
+          {
+            "group": "2023-02",
+            "n": 2,
+            "events": 0
+          },
+          {
+            "group": "2025-12",
+            "n": 2,
+            "events": 0
+          },
+          {
+            "group": "2022-05",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2022-06",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2023-11",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2024-01",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2024-11",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2025-03",
+            "n": 1,
+            "events": 0
+          },
+          {
+            "group": "2026-06",
+            "n": 1,
+            "events": 0
+          }
+        ],
+        "영업상태명": [
+          {
+            "group": "폐업",
+            "n": 73,
+            "events": 58
+          },
+          {
+            "group": "영업/정상",
+            "n": 16,
+            "events": 0
+          }
+        ],
+        "상세영업상태명": [
+          {
+            "group": "폐업",
+            "n": 73,
+            "events": 58
+          },
+          {
+            "group": "영업",
+            "n": 16,
+            "events": 0
+          }
+        ]
+      }
+    }
+  ],
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "raw": "45c4491fe2adb0be2ff3f5580d062b4556df8fe2c2f60f3104cab8398ac7cfb4",
+    "script": "6f221c2352ae475bfdba5c4c377c180482511eed3d346a5ce16e449aaa2e1532",
+    "baseline": "848275891e5b598b15c1764816c7abc42409f1097dd3b2cd556899b767bfdc8a"
+  }
+}
