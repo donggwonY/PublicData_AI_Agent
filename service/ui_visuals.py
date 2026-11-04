@@ -38,9 +38,18 @@ def _map_view(df: pd.DataFrame):
                          zoom=min(16, max(0, zoom)))
 
 
+def metric_value(value, suffix="", missing="산출 불가"):
+    """Display missing estimates without implying zero."""
+    return missing if value is None or pd.isna(value) else f"{value}{suffix}"
+
+
 def _map(rows: list[dict], color: str, hover: list[str], key: str):
     """pydeck 산점도 지도. color 컬럼 값이 클수록 진한 빨강."""
-    df = pd.DataFrame(rows).dropna(subset=["lat", "lon"])  # 좌표 없는 행(약 4%)은 지도에 못 찍는다
+    df = pd.DataFrame(rows)
+    if df.empty or not {"lat", "lon"}.issubset(df.columns):
+        st.caption("좌표가 있는 결과가 없습니다.")
+        return
+    df = df.dropna(subset=["lat", "lon"])
     if df.empty:
         st.caption("좌표가 있는 결과가 없습니다.")
         return
@@ -63,8 +72,17 @@ def _map(rows: list[dict], color: str, hover: list[str], key: str):
 
 
 def survival_chart(out: dict, key: str):
+    basis = out.get("basis", {})
+    sample = out.get("n", out.get("overall", {}).get("n"))
+    st.caption(f"기준일: {basis.get('reference_date', '미제공')} · 대상: {basis.get('area', '미제공')} / {basis.get('category', '미제공')} · {basis.get('cohort', '개업 코호트 미제공')} · 표본 {sample if sample is not None else '미제공'}건")
+    st.caption("생존율은 Kaplan–Meier 추정치입니다. 기준일까지 영업 중인 기록도 관찰한 기간만큼 반영하며, 새 점포의 개별 성공 확률은 아닙니다.")
     if "ranking_by_median_survival" in out:
         df = pd.DataFrame(out["ranking_by_median_survival"])
+        if df.empty:
+            st.caption("최소 표본 조건을 충족하는 그룹이 없습니다.")
+            return
+        st.caption("중앙생존기간이 없는 그룹은 관찰기간 안에 생존율이 50%까지 내려가지 않아 중앙값에 도달하지 못한 경우입니다.")
+        st.caption(f"그룹별 최소 표본 {out.get('min_n', '미제공')}건 · 조건 충족 {out.get('groups', len(df))}그룹 중 {len(df)}그룹 표시 · 개별 표본 수는 그래프에 마우스를 올려 확인하세요.")
         col = out["group_by"]
         fig = px.bar(df, x="median_survival_years", y=col, orientation="h", text="median_survival_years",
                      hover_data=["n", "survival_1y_pct", "survival_3y_pct", "survival_5y_pct"],
@@ -73,6 +91,7 @@ def survival_chart(out: dict, key: str):
         st.plotly_chart(fig, width="stretch", key=key)
         return
     if not out.get("curve"):
+        st.caption("표시할 생존곡선이 없습니다.")
         return
     df = pd.DataFrame(out["curve"])
     fig = go.Figure()
@@ -86,16 +105,19 @@ def survival_chart(out: dict, key: str):
 def cycle_chart(out: dict, key: str):
     df = pd.DataFrame(out.get("yearly") or [])
     if df.empty:
+        st.caption("표시할 연도별 집계가 없습니다.")
         return
     df["label"] = df["year"].astype(str) + df["partial_year"].map({True: "*", False: ""})
     fig = go.Figure()
     fig.add_bar(x=df["label"], y=df["opens"], name="개업")
-    fig.add_bar(x=df["label"], y=df["closes"], name="폐업")
+    fig.add_bar(x=df["label"], y=df["closes"], name="폐업 신고")
     fig.add_scatter(x=df["label"], y=df["active_end_of_year"], name="연말 영업점포", yaxis="y2", mode="lines+markers")
     fig.update_layout(barmode="group", height=320, margin=dict(l=0, r=0, t=10, b=0),
                       yaxis2=dict(overlaying="y", side="right", showgrid=False), legend=dict(orientation="h"))
     st.plotly_chart(fig, width="stretch", key=key)
     st.caption(f"단계: **{out['stage']}** — {out['stage_desc']} (* 부분 연도)")
+    basis = out.get("basis", {})
+    st.caption(f"기준일: {basis.get('reference_date', '미제공')} · 최근 기간: {basis.get('window_recent', '미제공')} · 비교 기간: {basis.get('window_prev', '미제공')} · 개업/폐업 비율의 분모는 해당 기간 폐업 신고 건수입니다.")
 
 
 def history_chart(out: dict, key: str):
@@ -165,6 +187,8 @@ def render_tool_result(name: str, out: dict | None, key: str):
                  "인허가 공백 후보율%": a["vacancy_rate_pct"], "사이클": a["cycle_stage"], "동종 영업점포": a["active_stores_same_category"],
                  "반복폐업 자리": a["repeat_closure_spots"]} for a in out["areas"]]
         st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch", key=key)
+        basis = out.get("basis", {})
+        st.caption(f"기준일: {basis.get('reference_date', '미제공')} · 대상: {out.get('category', '미제공')} · {basis.get('survival_cohort', '생존 코호트 미제공')}")
         st.caption("인허가 공백 후보율은 최근 3년 내 영업 이력이 있는 자리 중 후보의 비율이며, 현장 공실률이 아닙니다.")
     elif name == "get_area_profile":
         profile_chart(out, key)

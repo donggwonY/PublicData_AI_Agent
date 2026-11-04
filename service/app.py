@@ -29,7 +29,7 @@ import streamlit as st
 import config as C
 from agent import API_KEY_ENV, create_agent
 from core import tools as T
-from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_chart, _map
+from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_chart, _map, metric_value
 
 st.set_page_config(page_title="대구 상권 생애주기 AI 에이전트", page_icon="🏪", layout="wide")
 
@@ -249,10 +249,12 @@ with tab_dash:
     vac = T.find_vacant_units(gu=gu, limit=1000)
     k1, k2, k3, k4 = st.columns(4)
     k1.metric("상권 사이클", cyc["stage"], f"개업/폐업 {cyc['open_close_ratio_recent']} (직전 {cyc['open_close_ratio_prev']})", delta_color="off")
-    k2.metric("중앙생존기간 (2010~ 개업)", f"{surv['median_survival_years']}년", f"대구 {surv['daegu_baseline_same_cohort']['median_survival_years']}년", delta_color="off")
-    k3.metric("1년 내 폐업 신고", f"{surv['close_within_1y_pct']}%", f"n={surv['n']:,}", delta_color="off")
+    k2.metric("중앙생존기간 (2010~ 개업)", metric_value(surv["median_survival_years"], "년", "관찰기간 내 미도달"), "대구 " + metric_value(surv["daegu_baseline_same_cohort"]["median_survival_years"], "년", "관찰기간 내 미도달"), delta_color="off")
+    k3.metric("1년 내 폐업 신고 추정치", metric_value(surv["close_within_1y_pct"], "%"), f"n={surv['n']:,}", delta_color="off")
     k4.metric("인허가 공백 후보 (90일~3년)", f"{vac['total_vacant']:,}곳")
 
+    st.caption(f"기준일: {surv['basis']['reference_date']} · 대상: {surv['target']} · {surv['basis']['cohort']} · 표본 {surv['n']:,}건")
+    st.caption("1년 내 폐업 신고 추정치는 100%−Kaplan–Meier 1년 생존율입니다. 표본 전체 중 신고 건수의 단순 비율이나 새 점포의 개별 예측 확률이 아닙니다.")
     st.caption("폐업 신고는 실제 사업 실패와 같지 않으며 행사장 영업 종료 등이 포함될 수 있습니다. 인허가 공백 후보는 실제 공실·임대 매물 여부를 확인한 결과가 아닙니다.")
     st.caption("원천 업종명은 16개이며, 분석 보고서는 의원·병원을 합쳐 15그룹으로 집계합니다. 서비스의 원천 업종 조회에서는 의원·병원을 각각 유지합니다.")
 
@@ -305,6 +307,7 @@ with tab_dash:
         render_tool_result("get_station_traffic", T.get_station_traffic(top_n=15), key="dash-station")
 
     st.subheader("인허가 공백 후보 지도")
+    st.caption(f"전체 후보 {vac['total_vacant']:,}곳 중 목록 {vac['shown']:,}곳을 조회했습니다. 지도에서는 좌표가 없는 기록이 빠질 수 있습니다.")
     st.caption(safe_markdown(vac["basis"]["definition"] + " · " + vac["basis"]["caveat"]))
     _map(vac["units"], "vacant_days", ["last_store", "last_category", "vacant_days", "closures_since_2010"], key="dash-map")
 
