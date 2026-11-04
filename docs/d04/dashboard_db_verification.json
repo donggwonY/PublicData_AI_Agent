@@ -1,0 +1,238 @@
+{
+  "checked_at_utc": "2026-11-04T06:09:03.220831+00:00",
+  "project": "uoiamnbkzlvlskngataq",
+  "role": "app_reader",
+  "transaction_read_only": true,
+  "stores_select_privilege": true,
+  "stores_write_privilege": false,
+  "version": 3,
+  "status": "current",
+  "reference_date": "2026-10-13",
+  "rows": 225858,
+  "closed": 154315,
+  "missing_keys": 0,
+  "duplicate_keys": 0,
+  "groups": [
+    {
+      "group": "골프연습장업",
+      "n": 826,
+      "failed": 1
+    },
+    {
+      "group": "노래연습장업",
+      "n": 3051,
+      "failed": 0
+    },
+    {
+      "group": "담배소매업",
+      "n": 33762,
+      "failed": 1767
+    },
+    {
+      "group": "당구장업",
+      "n": 1910,
+      "failed": 1
+    },
+    {
+      "group": "미용업",
+      "n": 24931,
+      "failed": 2
+    },
+    {
+      "group": "세탁업",
+      "n": 3585,
+      "failed": 1
+    },
+    {
+      "group": "약국",
+      "n": 3040,
+      "failed": 644
+    },
+    {
+      "group": "의원+병원",
+      "n": 6149,
+      "failed": 542
+    },
+    {
+      "group": "인터넷컴퓨터게임시설제공업",
+      "n": 3001,
+      "failed": 0
+    },
+    {
+      "group": "일반음식점",
+      "n": 97438,
+      "failed": 12
+    },
+    {
+      "group": "제과점영업",
+      "n": 4046,
+      "failed": 0
+    },
+    {
+      "group": "체력단련장업",
+      "n": 1328,
+      "failed": 2
+    },
+    {
+      "group": "체육도장업",
+      "n": 1711,
+      "failed": 5
+    },
+    {
+      "group": "축산판매업",
+      "n": 9957,
+      "failed": 26
+    },
+    {
+      "group": "휴게음식점",
+      "n": 31123,
+      "failed": 5
+    }
+  ],
+  "checks": {
+    "row_count": true,
+    "closed_count": true,
+    "composite_key_no_nulls": true,
+    "composite_key_unique": true,
+    "join_rows_preserved": true,
+    "failed_count": true,
+    "all_service_groups": true
+  },
+  "local_hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "legal_admin_map": "b8ea8ebf7765237996015339dfe3e2ad3f39d62914a010dd0515b354f60ed270",
+    "area_context": "c18f7dfa2ce6e1e9696290eb3bbe91ddb86c54c0541da43c16edf87f613367ac"
+  },
+  "scope": "DB aggregate versus local and database metadata used by dashboard; screenshot cohort checked; not live UI rendering validation",
+  "database_written": false,
+  "raw_service_groups": [
+    {
+      "service": "골프연습장업",
+      "total": 826,
+      "closed": 470,
+      "active": 356,
+      "unknown_status": 0
+    },
+    {
+      "service": "노래연습장업",
+      "total": 3051,
+      "closed": 1675,
+      "active": 1376,
+      "unknown_status": 0
+    },
+    {
+      "service": "담배소매업",
+      "total": 33762,
+      "closed": 27343,
+      "active": 6419,
+      "unknown_status": 0
+    },
+    {
+      "service": "당구장업",
+      "total": 1910,
+      "closed": 1463,
+      "active": 447,
+      "unknown_status": 0
+    },
+    {
+      "service": "미용업",
+      "total": 24931,
+      "closed": 14137,
+      "active": 10794,
+      "unknown_status": 0
+    },
+    {
+      "service": "병원",
+      "total": 367,
+      "closed": 126,
+      "active": 241,
+      "unknown_status": 0
+    },
+    {
+      "service": "세탁업",
+      "total": 3585,
+      "closed": 2632,
+      "active": 953,
+      "unknown_status": 0
+    },
+    {
+      "service": "약국",
+      "total": 3040,
+      "closed": 1636,
+      "active": 1404,
+      "unknown_status": 0
+    },
+    {
+      "service": "의원",
+      "total": 5782,
+      "closed": 1639,
+      "active": 4143,
+      "unknown_status": 0
+    },
+    {
+      "service": "인터넷컴퓨터게임시설제공업",
+      "total": 3001,
+      "closed": 2351,
+      "active": 650,
+      "unknown_status": 0
+    },
+    {
+      "service": "일반음식점",
+      "total": 97438,
+      "closed": 68037,
+      "active": 29401,
+      "unknown_status": 0
+    },
+    {
+      "service": "제과점영업",
+      "total": 4046,
+      "closed": 3037,
+      "active": 1009,
+      "unknown_status": 0
+    },
+    {
+      "service": "체력단련장업",
+      "total": 1328,
+      "closed": 572,
+      "active": 756,
+      "unknown_status": 0
+    },
+    {
+      "service": "체육도장업",
+      "total": 1711,
+      "closed": 882,
+      "active": 829,
+      "unknown_status": 0
+    },
+    {
+      "service": "축산판매업",
+      "total": 9957,
+      "closed": 6315,
+      "active": 3642,
+      "unknown_status": 0
+    },
+    {
+      "service": "휴게음식점",
+      "total": 31123,
+      "closed": 22000,
+      "active": 9123,
+      "unknown_status": 0
+    }
+  ],
+  "active": 71543,
+  "cohort_since_2010_n": 113546,
+  "dashboard_meta_checks": {
+    "local_total": true,
+    "local_closed": true,
+    "local_active": true,
+    "local_reference": true,
+    "local_services": true,
+    "db_total": true,
+    "db_closed": true,
+    "db_active": true,
+    "db_reference": true,
+    "db_services": true,
+    "no_unknown_status": true,
+    "cohort_matches_screenshot": true
+  }
+}
