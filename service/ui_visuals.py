@@ -162,9 +162,10 @@ def render_tool_result(name: str, out: dict | None, key: str):
     elif name == "compare_areas":
         rows = [{"지역": a["area"], "표본": a["survival"].get("n"), "중앙생존(년)": a["survival"].get("median_survival_years"),
                  "1년 생존%": a["survival"].get("survival_1y_pct"), "3년 생존%": a["survival"].get("survival_3y_pct"),
-                 "공실률%": a["vacancy_rate_pct"], "사이클": a["cycle_stage"], "동종 영업점포": a["active_stores_same_category"],
+                 "인허가 공백 후보율%": a["vacancy_rate_pct"], "사이클": a["cycle_stage"], "동종 영업점포": a["active_stores_same_category"],
                  "반복폐업 자리": a["repeat_closure_spots"]} for a in out["areas"]]
         st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch", key=key)
+        st.caption("인허가 공백 후보율은 최근 3년 내 영업 이력이 있는 자리 중 후보의 비율이며, 현장 공실률이 아닙니다.")
     elif name == "get_area_profile":
         profile_chart(out, key)
     elif name == "get_station_traffic":
