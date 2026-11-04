@@ -1,0 +1,30 @@
+{
+  "method": "year counts from saved outcome-independent address review; no labels or model fits",
+  "windows": [
+    {
+      "train": "2010-2013",
+      "evaluation": "2015-2016",
+      "train_marked": 0,
+      "evaluation_marked": 0
+    },
+    {
+      "train": "2010-2015",
+      "evaluation": "2017-2018",
+      "train_marked": 0,
+      "evaluation_marked": 50
+    },
+    {
+      "train": "2010-2018",
+      "evaluation": "2020-2021",
+      "train_marked": 50,
+      "evaluation_marked": 0
+    }
+  ],
+  "outside_selected_windows": {
+    "2019": 9,
+    "2022": 2
+  },
+  "hashes": {
+    "review": "cae4b20e57abef22d753a51c2fc9ea739584652b334d47b0a7c16b8ac94aa8d9"
+  }
+}
