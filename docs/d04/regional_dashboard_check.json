@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-04",
+  "source": "local parquet",
+  "scope": "9 regional tool results and survival/cycle chart construction; Streamlit output mocked, not live browser",
+  "results": [
+    {
+      "gu": "중구",
+      "n": 12766,
+      "candidate_total": 604,
+      "shown": 604,
+      "ranking_groups": 22,
+      "passed": true
+    },
+    {
+      "gu": "동구",
+      "n": 16029,
+      "candidate_total": 531,
+      "shown": 531,
+      "ranking_groups": 21,
+      "passed": true
+    },
+    {
+      "gu": "서구",
+      "n": 7241,
+      "candidate_total": 297,
+      "shown": 297,
+      "ranking_groups": 15,
+      "passed": true
+    },
+    {
+      "gu": "남구",
+      "n": 7724,
+      "candidate_total": 407,
+      "shown": 407,
+      "ranking_groups": 19,
+      "passed": true
+    },
+    {
+      "gu": "북구",
+      "n": 17975,
+      "candidate_total": 629,
+      "shown": 629,
+      "ranking_groups": 28,
+      "passed": true
+    },
+    {
+      "gu": "수성구",
+      "n": 18350,
+      "candidate_total": 555,
+      "shown": 555,
+      "ranking_groups": 28,
+      "passed": true
+    },
+    {
+      "gu": "달서구",
+      "n": 22484,
+      "candidate_total": 784,
+      "shown": 784,
+      "ranking_groups": 31,
+      "passed": true
+    },
+    {
+      "gu": "달성군",
+      "n": 10168,
+      "candidate_total": 261,
+      "shown": 261,
+      "ranking_groups": 20,
+      "passed": true
+    },
+    {
+      "gu": "군위군",
+      "n": 799,
+      "candidate_total": 75,
+      "shown": 75,
+      "ranking_groups": 2,
+      "passed": true
+    }
+  ]
+}

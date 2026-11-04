@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-04",
+  "method": "Streamlit AppTest local parquet, no AI requests; not deployed browser JS test",
+  "results": [
+    {
+      "region": "대구 전체",
+      "errors": [],
+      "metric_count": 10
+    },
+    {
+      "region": "군위군",
+      "errors": [],
+      "metric_count": 10
+    },
+    {
+      "region": "수성구",
+      "errors": [],
+      "metric_count": 10
+    }
+  ]
+}
