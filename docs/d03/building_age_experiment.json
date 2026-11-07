@@ -1,0 +1,172 @@
+{
+  "scope": "current building approval date conditioned subset, not causal or point-in-time proven",
+  "quality": {
+    "all_restaurants": 97438,
+    "single_dated_buildings": 652,
+    "matched_permits": 1464,
+    "approval_after_license": 158
+  },
+  "windows": [
+    {
+      "train": 2013,
+      "test": 2015,
+      "train_n": 403,
+      "train_events": 29,
+      "test_buildings": 308,
+      "scores": {
+        "constant": {
+          "n": 395,
+          "events": 23,
+          "actual_pct": 5.822784810126582,
+          "predicted_pct": 7.196029776674939,
+          "brier": 0.055025945980576786,
+          "log_loss": 0.22356704111656958,
+          "roc_auc": 0.5,
+          "average_precision": 0.05822784810126582
+        },
+        "age": {
+          "n": 395,
+          "events": 23,
+          "actual_pct": 5.822784810126582,
+          "predicted_pct": 6.851736190025992,
+          "brier": 0.05549561071610391,
+          "log_loss": 0.22492756353144125,
+          "roc_auc": 0.5381019167835437,
+          "average_precision": 0.06266742167008912
+        },
+        "age_building": {
+          "n": 395,
+          "events": 23,
+          "actual_pct": 5.822784810126582,
+          "predicted_pct": 6.775344862898317,
+          "brier": 0.05603698763547479,
+          "log_loss": 0.23092898274897133,
+          "roc_auc": 0.47621552127162226,
+          "average_precision": 0.06492961013298307
+        }
+      }
+    },
+    {
+      "train": 2015,
+      "test": 2017,
+      "train_n": 395,
+      "train_events": 23,
+      "test_buildings": 330,
+      "scores": {
+        "constant": {
+          "n": 427,
+          "events": 29,
+          "actual_pct": 6.791569086651054,
+          "predicted_pct": 5.822784810126581,
+          "brier": 0.06339700409807923,
+          "log_loss": 0.2490284200237034,
+          "roc_auc": 0.5,
+          "average_precision": 0.06791569086651054
+        },
+        "age": {
+          "n": 427,
+          "events": 29,
+          "actual_pct": 6.791569086651054,
+          "predicted_pct": 5.882055567939011,
+          "brier": 0.06334006718122566,
+          "log_loss": 0.24875082222277117,
+          "roc_auc": 0.5381649627447582,
+          "average_precision": 0.07663128557830598
+        },
+        "age_building": {
+          "n": 427,
+          "events": 29,
+          "actual_pct": 6.791569086651054,
+          "predicted_pct": 5.986327495638487,
+          "brier": 0.0636658230960558,
+          "log_loss": 0.2523709778537655,
+          "roc_auc": 0.5168948189221971,
+          "average_precision": 0.08260513970311795
+        }
+      }
+    },
+    {
+      "train": 2018,
+      "test": 2020,
+      "train_n": 452,
+      "train_events": 31,
+      "test_buildings": 352,
+      "scores": {
+        "constant": {
+          "n": 485,
+          "events": 53,
+          "actual_pct": 10.927835051546392,
+          "predicted_pct": 6.85840707964602,
+          "brier": 0.0989926170259318,
+          "log_loss": 0.35611783758789817,
+          "roc_auc": 0.5,
+          "average_precision": 0.10927835051546392
+        },
+        "age": {
+          "n": 485,
+          "events": 53,
+          "actual_pct": 10.927835051546392,
+          "predicted_pct": 7.021195393543136,
+          "brier": 0.0980374923524426,
+          "log_loss": 0.352618135942595,
+          "roc_auc": 0.5362071977638014,
+          "average_precision": 0.12730542011513504
+        },
+        "age_building": {
+          "n": 485,
+          "events": 53,
+          "actual_pct": 10.927835051546392,
+          "predicted_pct": 6.865585313033377,
+          "brier": 0.09918052028201338,
+          "log_loss": 0.3611782911972025,
+          "roc_auc": 0.5557739343116702,
+          "average_precision": 0.13142654595126751
+        }
+      }
+    },
+    {
+      "train": 2021,
+      "test": 2023,
+      "train_n": 481,
+      "train_events": 47,
+      "test_buildings": 355,
+      "scores": {
+        "constant": {
+          "n": 473,
+          "events": 42,
+          "actual_pct": 8.879492600422834,
+          "predicted_pct": 9.771309771309774,
+          "brier": 0.08098992090676081,
+          "log_loss": 0.3002047046319833,
+          "roc_auc": 0.5,
+          "average_precision": 0.08879492600422834
+        },
+        "age": {
+          "n": 473,
+          "events": 42,
+          "actual_pct": 8.879492600422834,
+          "predicted_pct": 9.446258291604773,
+          "brier": 0.08010661488058052,
+          "log_loss": 0.2934155387404219,
+          "roc_auc": 0.6153463705667882,
+          "average_precision": 0.11576109483768013
+        },
+        "age_building": {
+          "n": 473,
+          "events": 42,
+          "actual_pct": 8.879492600422834,
+          "predicted_pct": 9.611959735852674,
+          "brier": 0.07950143130953495,
+          "log_loss": 0.288038320313136,
+          "roc_auc": 0.6602861562258314,
+          "average_precision": 0.13384155320458146
+        }
+      }
+    }
+  ],
+  "hashes": {
+    "source": "0627837558b7df2e31c4cfb4b646b447a3cce0425c2006bce22e647d3608cc38",
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "script": "451e4bf9d7b326d3b1fb2ab6446a21c0aa384f5ae4493b88b1164a17c46760d4"
+  }
+}

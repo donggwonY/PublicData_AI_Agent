@@ -1,0 +1,206 @@
+{
+  "source": "docs\\d03\\operating_age_calibration.json",
+  "windows": [
+    {
+      "year": 2015,
+      "groups": [
+        {
+          "age_band": "1-3",
+          "n": 3563,
+          "events": 373,
+          "actual_pct": 10.468706146505752,
+          "predicted_pct": 10.317532054922777,
+          "actual_minus_predicted_pp": 0.15117409158297512,
+          "brier_change": -2.659797460219382e-05
+        },
+        {
+          "age_band": "10+",
+          "n": 12598,
+          "events": 663,
+          "actual_pct": 5.262740117478965,
+          "predicted_pct": 5.976089791513274,
+          "actual_minus_predicted_pp": -0.7133496740343084,
+          "brier_change": 2.7921947243034206e-05
+        },
+        {
+          "age_band": "3-5",
+          "n": 3098,
+          "events": 285,
+          "actual_pct": 9.199483537766302,
+          "predicted_pct": 9.363544057129667,
+          "actual_minus_predicted_pp": -0.16406051936336574,
+          "brier_change": -9.211096366479321e-07
+        },
+        {
+          "age_band": "5-10",
+          "n": 6235,
+          "events": 409,
+          "actual_pct": 6.559743384121893,
+          "predicted_pct": 7.5617928227575195,
+          "actual_minus_predicted_pp": -1.002049438635627,
+          "brier_change": 4.9915832079923395e-05
+        },
+        {
+          "age_band": "<1",
+          "n": 2510,
+          "events": 222,
+          "actual_pct": 8.844621513944222,
+          "predicted_pct": 10.619235977255052,
+          "actual_minus_predicted_pp": -1.7746144633108294,
+          "brier_change": 0.0001249410589264227
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "groups": [
+        {
+          "age_band": "1-3",
+          "n": 4299,
+          "events": 470,
+          "actual_pct": 10.932775063968364,
+          "predicted_pct": 10.263511730065321,
+          "actual_minus_predicted_pp": 0.6692633339030429,
+          "brier_change": 3.57144640150131e-05
+        },
+        {
+          "age_band": "10+",
+          "n": 13259,
+          "events": 676,
+          "actual_pct": 5.09842371219549,
+          "predicted_pct": 5.437574285464055,
+          "actual_minus_predicted_pp": -0.3391505732685651,
+          "brier_change": -6.660133069847501e-05
+        },
+        {
+          "age_band": "3-5",
+          "n": 2908,
+          "events": 242,
+          "actual_pct": 8.321870701513067,
+          "predicted_pct": 7.509358178101119,
+          "actual_minus_predicted_pp": 0.8125125234119475,
+          "brier_change": 6.540166451003693e-05
+        },
+        {
+          "age_band": "5-10",
+          "n": 6184,
+          "events": 418,
+          "actual_pct": 6.7593790426908145,
+          "predicted_pct": 6.993466286041769,
+          "actual_minus_predicted_pp": -0.2340872433509542,
+          "brier_change": -7.95056263167282e-05
+        },
+        {
+          "age_band": "<1",
+          "n": 2800,
+          "events": 229,
+          "actual_pct": 8.178571428571429,
+          "predicted_pct": 9.266929719178062,
+          "actual_minus_predicted_pp": -1.0883582906066334,
+          "brier_change": -0.0002717382789784867
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "groups": [
+        {
+          "age_band": "1-3",
+          "n": 4589,
+          "events": 550,
+          "actual_pct": 11.985181956853346,
+          "predicted_pct": 11.44921888380009,
+          "actual_minus_predicted_pp": 0.5359630730532565,
+          "brier_change": -0.0003441273574779219
+        },
+        {
+          "age_band": "10+",
+          "n": 14201,
+          "events": 962,
+          "actual_pct": 6.774170833039926,
+          "predicted_pct": 5.501661861532846,
+          "actual_minus_predicted_pp": 1.2725089715070794,
+          "brier_change": -0.0002309241870314116
+        },
+        {
+          "age_band": "3-5",
+          "n": 3702,
+          "events": 368,
+          "actual_pct": 9.940572663425176,
+          "predicted_pct": 9.532957567336027,
+          "actual_minus_predicted_pp": 0.4076150960891489,
+          "brier_change": -0.00023655408754852392
+        },
+        {
+          "age_band": "5-10",
+          "n": 5835,
+          "events": 547,
+          "actual_pct": 9.374464438731792,
+          "predicted_pct": 7.372319239297442,
+          "actual_minus_predicted_pp": 2.0021451994343495,
+          "brier_change": -0.0004614478879661904
+        },
+        {
+          "age_band": "<1",
+          "n": 2798,
+          "events": 272,
+          "actual_pct": 9.721229449606863,
+          "predicted_pct": 9.447557430748022,
+          "actual_minus_predicted_pp": 0.27367201885884107,
+          "brier_change": -0.00020205132927086922
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "groups": [
+        {
+          "age_band": "1-3",
+          "n": 4550,
+          "events": 659,
+          "actual_pct": 14.483516483516484,
+          "predicted_pct": 11.505199510233389,
+          "actual_minus_predicted_pp": 2.9783169732830945,
+          "brier_change": -0.00018546299935720545
+        },
+        {
+          "age_band": "10+",
+          "n": 14179,
+          "events": 854,
+          "actual_pct": 6.022991748360251,
+          "predicted_pct": 5.622503206491315,
+          "actual_minus_predicted_pp": 0.40048854186893657,
+          "brier_change": -1.4741115551004935e-05
+        },
+        {
+          "age_band": "3-5",
+          "n": 3754,
+          "events": 404,
+          "actual_pct": 10.761854022376133,
+          "predicted_pct": 9.505122299600016,
+          "actual_minus_predicted_pp": 1.2567317227761166,
+          "brier_change": -6.921339034145213e-05
+        },
+        {
+          "age_band": "5-10",
+          "n": 6433,
+          "events": 570,
+          "actual_pct": 8.860562723457175,
+          "predicted_pct": 7.702908963476207,
+          "actual_minus_predicted_pp": 1.1576537599809678,
+          "brier_change": -5.2177070853434704e-05
+        },
+        {
+          "age_band": "<1",
+          "n": 2559,
+          "events": 309,
+          "actual_pct": 12.075029308323563,
+          "predicted_pct": 10.340354734918945,
+          "actual_minus_predicted_pp": 1.734674573404618,
+          "brier_change": -0.00010095317572424156
+        }
+      ]
+    }
+  ],
+  "scope": "saved predictions aggregated by operating age; no retraining"
+}

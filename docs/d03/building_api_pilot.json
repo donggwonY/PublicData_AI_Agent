@@ -1,0 +1,377 @@
+{
+  "scope": "2026-11-07 두산동 소재 일반음식점 고유건물599개 중 무작위20(seed7), 결과 미사용 표집. 대구 전체 대표표본 아님.",
+  "counts": {
+    "requested": 20,
+    "responses": 20,
+    "none": 5,
+    "single": 14,
+    "multiple": 1,
+    "single_valid_approval_date": 14
+  },
+  "results": [
+    {
+      "building_key": "대구광역시 수성구 두산동 121-3",
+      "status": "ok",
+      "code": "00",
+      "total": 2,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 121-3번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0121",
+          "ji": "0003",
+          "mainPurpsCdNm": "제2종근린생활시설",
+          "grndFlrCnt": 2,
+          "ugrndFlrCnt": 0,
+          "useAprDay": "20100121",
+          "totArea": 495.06,
+          "crtnDay": "20221126"
+        },
+        {
+          "platPlc": "대구광역시 수성구 두산동 121-3번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0121",
+          "ji": "0003",
+          "mainPurpsCdNm": "제2종근린생활시설",
+          "grndFlrCnt": 3,
+          "ugrndFlrCnt": 0,
+          "useAprDay": "20091207",
+          "totArea": 1972.41,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 123-6",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 123-6번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0123",
+          "ji": "0006",
+          "mainPurpsCdNm": "제2종근린생활시설",
+          "grndFlrCnt": 3,
+          "ugrndFlrCnt": 1,
+          "useAprDay": "19991221",
+          "totArea": 637.48,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 140-15",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 140-15번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0140",
+          "ji": "0015",
+          "mainPurpsCdNm": "단독주택",
+          "grndFlrCnt": 2,
+          "ugrndFlrCnt": 1,
+          "useAprDay": "19920914",
+          "totArea": 225.43,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 188-11",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 188-11번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0188",
+          "ji": "0011",
+          "mainPurpsCdNm": "단독주택",
+          "grndFlrCnt": 2,
+          "ugrndFlrCnt": 0,
+          "useAprDay": "19890525",
+          "totArea": 162.72,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 19-8",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 19-8번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0019",
+          "ji": "0008",
+          "mainPurpsCdNm": "제2종근린생활시설",
+          "grndFlrCnt": 2,
+          "ugrndFlrCnt": 1,
+          "useAprDay": "19781228",
+          "totArea": 233.95,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 191-7",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 191-7번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0191",
+          "ji": "0007",
+          "mainPurpsCdNm": "단독주택",
+          "grndFlrCnt": 4,
+          "ugrndFlrCnt": 0,
+          "useAprDay": "20120503",
+          "totArea": 483.86,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 191-8",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 191-8번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0191",
+          "ji": "0008",
+          "mainPurpsCdNm": "제2종근린생활시설",
+          "grndFlrCnt": 1,
+          "ugrndFlrCnt": 0,
+          "useAprDay": "20030213",
+          "totArea": 176.13,
+          "crtnDay": "20241203"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 201-9",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 201-9번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0201",
+          "ji": "0009",
+          "mainPurpsCdNm": "방송통신시설",
+          "grndFlrCnt": 8,
+          "ugrndFlrCnt": 1,
+          "useAprDay": "19940608",
+          "totArea": 10317.62,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 204-7",
+      "status": "ok",
+      "code": "00",
+      "total": 0,
+      "items": []
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 27",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 27번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0027",
+          "ji": "0000",
+          "mainPurpsCdNm": "단독주택",
+          "grndFlrCnt": 3,
+          "ugrndFlrCnt": 0,
+          "useAprDay": "20021023",
+          "totArea": 238.59,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 314",
+      "status": "ok",
+      "code": "00",
+      "total": 0,
+      "items": []
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 36-4",
+      "status": "ok",
+      "code": "00",
+      "total": 0,
+      "items": []
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 653",
+      "status": "ok",
+      "code": "00",
+      "total": 0,
+      "items": []
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 656-2",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 656-2번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0656",
+          "ji": "0002",
+          "mainPurpsCdNm": "제2종근린생활시설",
+          "grndFlrCnt": 4,
+          "ugrndFlrCnt": 0,
+          "useAprDay": "20210408",
+          "totArea": 223.92,
+          "crtnDay": "20260424"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 69-5",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 69-5번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0069",
+          "ji": "0005",
+          "mainPurpsCdNm": "제2종근린생활시설",
+          "grndFlrCnt": 4,
+          "ugrndFlrCnt": 0,
+          "useAprDay": "20180212",
+          "totArea": 655.93,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 704",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 704번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0704",
+          "ji": "0000",
+          "mainPurpsCdNm": "위락시설",
+          "grndFlrCnt": 3,
+          "ugrndFlrCnt": 1,
+          "useAprDay": "20030210",
+          "totArea": 1020.58,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 746-2",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 746-2번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0746",
+          "ji": "0002",
+          "mainPurpsCdNm": "제1종근린생활시설",
+          "grndFlrCnt": 3,
+          "ugrndFlrCnt": 0,
+          "useAprDay": "19860402",
+          "totArea": 486.57,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 91-12",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 91-12번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0091",
+          "ji": "0012",
+          "mainPurpsCdNm": "근린생활시설",
+          "grndFlrCnt": 4,
+          "ugrndFlrCnt": 1,
+          "useAprDay": "19890926",
+          "totArea": 558.97,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 94-2",
+      "status": "ok",
+      "code": "00",
+      "total": 1,
+      "items": [
+        {
+          "platPlc": "대구광역시 수성구 두산동 94-2번지",
+          "sigunguCd": "27260",
+          "bjdongCd": "11100",
+          "bun": "0094",
+          "ji": "0002",
+          "mainPurpsCdNm": "제2종근린생활시설",
+          "grndFlrCnt": 2,
+          "ugrndFlrCnt": 1,
+          "useAprDay": "19960516",
+          "totArea": 441,
+          "crtnDay": "20221126"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 수성구 두산동 963-16",
+      "status": "ok",
+      "code": "00",
+      "total": 0,
+      "items": []
+    }
+  ],
+  "validation": "20개 응답의 코드·지번·응답행수 일치, 고유표본 확인"
+}

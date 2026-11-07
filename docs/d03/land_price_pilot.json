@@ -1,0 +1,440 @@
+{
+  "retrieved_at": "2026-11-07T13:31:18.052432+00:00",
+  "selection": "First parcel in each of first 3 districts in existing sorted 900-parcel candidates; availability only, not representative.",
+  "source": "https://www.data.go.kr/data/15124014/openapi.do",
+  "endpoint": "https://api.vworld.kr/ned/data/getIndvdLandPriceAttr",
+  "limitations": [
+    "Current parcel identity; historical splits/mergers unverified.",
+    "Use publication date before prediction date, not reference year alone.",
+    "Last update may indicate retrospective corrections; original vintage unverified.",
+    "No model training or performance claim."
+  ],
+  "results": [
+    {
+      "building_key": "대구광역시 군위군 군위읍 내량리 1-29",
+      "pnu": "2772025027100010029",
+      "requested_year": 2012,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2772025027100010029",
+          "stdrYear": "2012",
+          "stdrMt": "01",
+          "pblntfDe": "2012-05-31",
+          "pblntfPclnd": "17000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 군위군 군위읍 내량리 1-29",
+      "pnu": "2772025027100010029",
+      "requested_year": 2014,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2772025027100010029",
+          "stdrYear": "2014",
+          "stdrMt": "01",
+          "pblntfDe": "2014-05-30",
+          "pblntfPclnd": "19000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 군위군 군위읍 내량리 1-29",
+      "pnu": "2772025027100010029",
+      "requested_year": 2016,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2772025027100010029",
+          "stdrYear": "2016",
+          "stdrMt": "01",
+          "pblntfDe": "2016-05-31",
+          "pblntfPclnd": "23000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 군위군 군위읍 내량리 1-29",
+      "pnu": "2772025027100010029",
+      "requested_year": 2019,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2772025027100010029",
+          "stdrYear": "2019",
+          "stdrMt": "01",
+          "pblntfDe": "2019-05-31",
+          "pblntfPclnd": "29200",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 군위군 군위읍 내량리 1-29",
+      "pnu": "2772025027100010029",
+      "requested_year": 2020,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2772025027100010029",
+          "stdrYear": "2020",
+          "stdrMt": "01",
+          "pblntfDe": "2020-05-29",
+          "pblntfPclnd": "31300",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 군위군 군위읍 내량리 1-29",
+      "pnu": "2772025027100010029",
+      "requested_year": 2022,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2772025027100010029",
+          "stdrYear": "2022",
+          "stdrMt": "01",
+          "pblntfDe": "2022-04-29",
+          "pblntfPclnd": "42900",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 군위군 군위읍 내량리 1-29",
+      "pnu": "2772025027100010029",
+      "requested_year": 2024,
+      "status": "ok",
+      "result_code": "",
+      "total": "3",
+      "items": [
+        {
+          "pnu": "2772025027100010029",
+          "stdrYear": "2024",
+          "stdrMt": "01",
+          "pblntfDe": "2024-04-30",
+          "pblntfPclnd": "41200",
+          "lastUpdtDt": "2024-07-10"
+        },
+        {
+          "pnu": "2772025027100010029",
+          "stdrYear": "2024",
+          "stdrMt": "01",
+          "pblntfDe": "2024-04-30",
+          "pblntfPclnd": "41200",
+          "lastUpdtDt": "2024-08-02"
+        },
+        {
+          "pnu": "2772025027100010029",
+          "stdrYear": "2024",
+          "stdrMt": "01",
+          "pblntfDe": "2024-04-30",
+          "pblntfPclnd": "41200",
+          "lastUpdtDt": "2025-01-15"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 남구 대명동 1089-10",
+      "pnu": "2720010300110890010",
+      "requested_year": 2012,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2720010300110890010",
+          "stdrYear": "2012",
+          "stdrMt": "01",
+          "pblntfDe": "2012-05-31",
+          "pblntfPclnd": "860000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 남구 대명동 1089-10",
+      "pnu": "2720010300110890010",
+      "requested_year": 2014,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2720010300110890010",
+          "stdrYear": "2014",
+          "stdrMt": "01",
+          "pblntfDe": "2014-05-30",
+          "pblntfPclnd": "900000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 남구 대명동 1089-10",
+      "pnu": "2720010300110890010",
+      "requested_year": 2016,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2720010300110890010",
+          "stdrYear": "2016",
+          "stdrMt": "01",
+          "pblntfDe": "2016-05-31",
+          "pblntfPclnd": "1010000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 남구 대명동 1089-10",
+      "pnu": "2720010300110890010",
+      "requested_year": 2019,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2720010300110890010",
+          "stdrYear": "2019",
+          "stdrMt": "01",
+          "pblntfDe": "2019-05-31",
+          "pblntfPclnd": "1310000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 남구 대명동 1089-10",
+      "pnu": "2720010300110890010",
+      "requested_year": 2020,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2720010300110890010",
+          "stdrYear": "2020",
+          "stdrMt": "01",
+          "pblntfDe": "2020-05-29",
+          "pblntfPclnd": "1420000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 남구 대명동 1089-10",
+      "pnu": "2720010300110890010",
+      "requested_year": 2022,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2720010300110890010",
+          "stdrYear": "2022",
+          "stdrMt": "01",
+          "pblntfDe": "2022-04-29",
+          "pblntfPclnd": "1805000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 남구 대명동 1089-10",
+      "pnu": "2720010300110890010",
+      "requested_year": 2024,
+      "status": "ok",
+      "result_code": "",
+      "total": "3",
+      "items": [
+        {
+          "pnu": "2720010300110890010",
+          "stdrYear": "2024",
+          "stdrMt": "01",
+          "pblntfDe": "2024-04-30",
+          "pblntfPclnd": "1731000",
+          "lastUpdtDt": "2024-07-10"
+        },
+        {
+          "pnu": "2720010300110890010",
+          "stdrYear": "2024",
+          "stdrMt": "01",
+          "pblntfDe": "2024-04-30",
+          "pblntfPclnd": "1731000",
+          "lastUpdtDt": "2024-08-02"
+        },
+        {
+          "pnu": "2720010300110890010",
+          "stdrYear": "2024",
+          "stdrMt": "01",
+          "pblntfDe": "2024-04-30",
+          "pblntfPclnd": "1731000",
+          "lastUpdtDt": "2025-01-15"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 달서구 감삼동 120-12",
+      "pnu": "2729011300101200012",
+      "requested_year": 2012,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2729011300101200012",
+          "stdrYear": "2012",
+          "stdrMt": "01",
+          "pblntfDe": "2012-05-31",
+          "pblntfPclnd": "1030000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 달서구 감삼동 120-12",
+      "pnu": "2729011300101200012",
+      "requested_year": 2014,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2729011300101200012",
+          "stdrYear": "2014",
+          "stdrMt": "01",
+          "pblntfDe": "2014-05-30",
+          "pblntfPclnd": "1118000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 달서구 감삼동 120-12",
+      "pnu": "2729011300101200012",
+      "requested_year": 2016,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2729011300101200012",
+          "stdrYear": "2016",
+          "stdrMt": "01",
+          "pblntfDe": "2016-05-31",
+          "pblntfPclnd": "1217000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 달서구 감삼동 120-12",
+      "pnu": "2729011300101200012",
+      "requested_year": 2019,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2729011300101200012",
+          "stdrYear": "2019",
+          "stdrMt": "01",
+          "pblntfDe": "2019-05-31",
+          "pblntfPclnd": "1560000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 달서구 감삼동 120-12",
+      "pnu": "2729011300101200012",
+      "requested_year": 2020,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2729011300101200012",
+          "stdrYear": "2020",
+          "stdrMt": "01",
+          "pblntfDe": "2020-05-29",
+          "pblntfPclnd": "1831000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 달서구 감삼동 120-12",
+      "pnu": "2729011300101200012",
+      "requested_year": 2022,
+      "status": "ok",
+      "result_code": "",
+      "total": "1",
+      "items": [
+        {
+          "pnu": "2729011300101200012",
+          "stdrYear": "2022",
+          "stdrMt": "01",
+          "pblntfDe": "2022-04-29",
+          "pblntfPclnd": "2394000",
+          "lastUpdtDt": "2023-08-10"
+        }
+      ]
+    },
+    {
+      "building_key": "대구광역시 달서구 감삼동 120-12",
+      "pnu": "2729011300101200012",
+      "requested_year": 2024,
+      "status": "ok",
+      "result_code": "",
+      "total": "3",
+      "items": [
+        {
+          "pnu": "2729011300101200012",
+          "stdrYear": "2024",
+          "stdrMt": "01",
+          "pblntfDe": "2024-04-30",
+          "pblntfPclnd": "2407000",
+          "lastUpdtDt": "2024-07-10"
+        },
+        {
+          "pnu": "2729011300101200012",
+          "stdrYear": "2024",
+          "stdrMt": "01",
+          "pblntfDe": "2024-04-30",
+          "pblntfPclnd": "2407000",
+          "lastUpdtDt": "2024-08-02"
+        },
+        {
+          "pnu": "2729011300101200012",
+          "stdrYear": "2024",
+          "stdrMt": "01",
+          "pblntfDe": "2024-04-30",
+          "pblntfPclnd": "2407000",
+          "lastUpdtDt": "2025-01-15"
+        }
+      ]
+    }
+  ]
+}

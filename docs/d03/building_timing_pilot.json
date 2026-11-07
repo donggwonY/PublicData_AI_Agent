@@ -1,0 +1,42 @@
+{
+  "scope": "pilot timing check only; dates consistent does not prove historic building identity",
+  "rows": [
+    {
+      "date": "2013-01-01",
+      "joined_active": 14,
+      "date_consistent": 12,
+      "unique_buildings": 9,
+      "events_next365": 1
+    },
+    {
+      "date": "2015-01-01",
+      "joined_active": 17,
+      "date_consistent": 15,
+      "unique_buildings": 10,
+      "events_next365": 0
+    },
+    {
+      "date": "2017-01-01",
+      "joined_active": 18,
+      "date_consistent": 15,
+      "unique_buildings": 10,
+      "events_next365": 0
+    },
+    {
+      "date": "2018-01-01",
+      "joined_active": 18,
+      "date_consistent": 15,
+      "unique_buildings": 10,
+      "events_next365": 1
+    },
+    {
+      "date": "2020-01-01",
+      "joined_active": 16,
+      "date_consistent": 14,
+      "unique_buildings": 10,
+      "events_next365": 0
+    }
+  ],
+  "decision": "insufficient sample for model comparison; no training",
+  "required": "broader geographically distributed sample; historical building identity/missingness review; same-cohort comparison"
+}

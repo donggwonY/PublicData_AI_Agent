@@ -1,0 +1,258 @@
+{
+  "reference_date": "2026-10-13",
+  "quality": {
+    "rows": 97438,
+    "invalid_dates": 0
+  },
+  "windows": [
+    {
+      "train_date": "2013-01-01",
+      "evaluation_date": "2015-01-01",
+      "train_n": 27477,
+      "scores": {
+        "constant": {
+          "n": 28004,
+          "events": 1952,
+          "actual_pct": 6.970432795314956,
+          "predicted_pct": 7.733740946973833,
+          "brier": 0.0649038985511882,
+          "log_loss": 0.2532946797224763,
+          "roc_auc": 0.5,
+          "average_precision": 0.06970432795314956
+        },
+        "age_only": {
+          "n": 28004,
+          "events": 1952,
+          "actual_pct": 6.970432795314956,
+          "predicted_pct": 7.652743203353444,
+          "brier": 0.06455275285678672,
+          "log_loss": 0.2506938439614164,
+          "roc_auc": 0.5788367896929973,
+          "average_precision": 0.08636279951430367
+        },
+        "category_gu": {
+          "n": 28004,
+          "events": 1952,
+          "actual_pct": 6.970432795314956,
+          "predicted_pct": 7.712529198441169,
+          "brier": 0.06480331967946049,
+          "log_loss": 0.25257093052998786,
+          "roc_auc": 0.5492528597439421,
+          "average_precision": 0.08408873024472187
+        },
+        "category_gu_age": {
+          "n": 28004,
+          "events": 1952,
+          "actual_pct": 6.970432795314956,
+          "predicted_pct": 7.6354060755332895,
+          "brier": 0.06453302655716653,
+          "log_loss": 0.2505973798890311,
+          "roc_auc": 0.5835307631898875,
+          "average_precision": 0.09448036182259956
+        }
+      },
+      "age_groups": [
+        {
+          "age_band_years_365": "10+",
+          "n": 12598,
+          "events": 663,
+          "actual_pct": 5.262740117478965
+        },
+        {
+          "age_band_years_365": "5-10",
+          "n": 6235,
+          "events": 409,
+          "actual_pct": 6.559743384121893
+        },
+        {
+          "age_band_years_365": "3-5",
+          "n": 3098,
+          "events": 285,
+          "actual_pct": 9.199483537766302
+        },
+        {
+          "age_band_years_365": "1-3",
+          "n": 3563,
+          "events": 373,
+          "actual_pct": 10.468706146505752
+        },
+        {
+          "age_band_years_365": "<1",
+          "n": 2510,
+          "events": 222,
+          "actual_pct": 8.844621513944222
+        }
+      ]
+    },
+    {
+      "train_date": "2015-01-01",
+      "evaluation_date": "2017-01-01",
+      "train_n": 28004,
+      "scores": {
+        "constant": {
+          "n": 29450,
+          "events": 2035,
+          "actual_pct": 6.910016977928693,
+          "predicted_pct": 6.970432795314954,
+          "brier": 0.0643257013228597,
+          "log_loss": 0.25130794401078826,
+          "roc_auc": 0.5,
+          "average_precision": 0.06910016977928693
+        },
+        "age_only": {
+          "n": 29450,
+          "events": 2035,
+          "actual_pct": 6.910016977928693,
+          "predicted_pct": 7.027607298620163,
+          "brier": 0.06392380700161528,
+          "log_loss": 0.24832516635332733,
+          "roc_auc": 0.5840631104136484,
+          "average_precision": 0.0877751835344874
+        },
+        "category_gu": {
+          "n": 29450,
+          "events": 2035,
+          "actual_pct": 6.910016977928693,
+          "predicted_pct": 6.9277596396390155,
+          "brier": 0.06429870213072479,
+          "log_loss": 0.2510231697603925,
+          "roc_auc": 0.544603453784559,
+          "average_precision": 0.07915273156012498
+        },
+        "category_gu_age": {
+          "n": 29450,
+          "events": 2035,
+          "actual_pct": 6.910016977928693,
+          "predicted_pct": 6.948554149941605,
+          "brier": 0.06390846327925413,
+          "log_loss": 0.24827167071514578,
+          "roc_auc": 0.588499928974122,
+          "average_precision": 0.09534719171699632
+        }
+      },
+      "age_groups": [
+        {
+          "age_band_years_365": "10+",
+          "n": 13259,
+          "events": 676,
+          "actual_pct": 5.09842371219549
+        },
+        {
+          "age_band_years_365": "5-10",
+          "n": 6184,
+          "events": 418,
+          "actual_pct": 6.7593790426908145
+        },
+        {
+          "age_band_years_365": "3-5",
+          "n": 2908,
+          "events": 242,
+          "actual_pct": 8.321870701513067
+        },
+        {
+          "age_band_years_365": "1-3",
+          "n": 4299,
+          "events": 470,
+          "actual_pct": 10.932775063968364
+        },
+        {
+          "age_band_years_365": "<1",
+          "n": 2800,
+          "events": 229,
+          "actual_pct": 8.178571428571429
+        }
+      ]
+    },
+    {
+      "train_date": "2018-01-01",
+      "evaluation_date": "2020-01-01",
+      "train_n": 30114,
+      "scores": {
+        "constant": {
+          "n": 31125,
+          "events": 2699,
+          "actual_pct": 8.671485943775101,
+          "predicted_pct": 7.557946470080361,
+          "brier": 0.07931938960638969,
+          "log_loss": 0.29572067467021285,
+          "roc_auc": 0.5,
+          "average_precision": 0.08671485943775101
+        },
+        "age_only": {
+          "n": 31125,
+          "events": 2699,
+          "actual_pct": 8.671485943775101,
+          "predicted_pct": 7.558789170763927,
+          "brier": 0.07899047633526678,
+          "log_loss": 0.29382920991558986,
+          "roc_auc": 0.5643854768008884,
+          "average_precision": 0.10197788981849974
+        },
+        "category_gu": {
+          "n": 31125,
+          "events": 2699,
+          "actual_pct": 8.671485943775101,
+          "predicted_pct": 7.600197869055256,
+          "brier": 0.07914042620676334,
+          "log_loss": 0.29471863374609564,
+          "roc_auc": 0.5448709971174546,
+          "average_precision": 0.1011331593463789
+        },
+        "category_gu_age": {
+          "n": 31125,
+          "events": 2699,
+          "actual_pct": 8.671485943775101,
+          "predicted_pct": 7.545993826378064,
+          "brier": 0.07889123691519716,
+          "log_loss": 0.29312152180228357,
+          "roc_auc": 0.5782165047434904,
+          "average_precision": 0.10860287650721578
+        }
+      },
+      "age_groups": [
+        {
+          "age_band_years_365": "10+",
+          "n": 14201,
+          "events": 962,
+          "actual_pct": 6.774170833039926
+        },
+        {
+          "age_band_years_365": "5-10",
+          "n": 5835,
+          "events": 547,
+          "actual_pct": 9.374464438731792
+        },
+        {
+          "age_band_years_365": "3-5",
+          "n": 3702,
+          "events": 368,
+          "actual_pct": 9.940572663425176
+        },
+        {
+          "age_band_years_365": "1-3",
+          "n": 4589,
+          "events": 550,
+          "actual_pct": 11.985181956853346
+        },
+        {
+          "age_band_years_365": "<1",
+          "n": 2798,
+          "events": 272,
+          "actual_pct": 9.721229449606863
+        }
+      ]
+    }
+  ],
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "script": "cc7d659ff32bc0cdc4bb9ed70d46a7320c64c70254d4611edd87da21f9283216"
+  },
+  "limitations": [
+    "Latest-snapshot retrospective reconstruction, not historical availability proof.",
+    "Age is days since license, not verified continuous operation or owner tenure.",
+    "Same permits may occur across time windows; no ID predictors. This is existing-store forecasting, not unseen-store validation.",
+    "Exploratory reused historical years; no independent final test or 2023-2025 scoring.",
+    "Not comparable directly to opening-time first-year prediction.",
+    "No area/current status/closure date used as input; dates used only to construct cohort and outcome."
+  ]
+}

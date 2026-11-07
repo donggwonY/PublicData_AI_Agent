@@ -1,0 +1,227 @@
+{
+  "scope": "Exploratory matched parcel subset; not independent evaluation or deployment recommendation",
+  "quality": {
+    "requested_parcels": 900,
+    "ok_parcels": 842,
+    "raw_price_rows": 30913,
+    "invalid_price_or_date_rows": 17
+  },
+  "cohorts": {
+    "2013": {
+      "eligible_in_sample": 590,
+      "matched": 556,
+      "unmatched": 34,
+      "conflicting_price_parcels": 0,
+      "unique_buildings": 422
+    },
+    "2015": {
+      "eligible_in_sample": 570,
+      "matched": 538,
+      "unmatched": 32,
+      "conflicting_price_parcels": 0,
+      "unique_buildings": 421
+    },
+    "2017": {
+      "eligible_in_sample": 599,
+      "matched": 565,
+      "unmatched": 34,
+      "conflicting_price_parcels": 0,
+      "unique_buildings": 438
+    },
+    "2018": {
+      "eligible_in_sample": 619,
+      "matched": 585,
+      "unmatched": 34,
+      "conflicting_price_parcels": 0,
+      "unique_buildings": 449
+    },
+    "2020": {
+      "eligible_in_sample": 647,
+      "matched": 608,
+      "unmatched": 39,
+      "conflicting_price_parcels": 0,
+      "unique_buildings": 449
+    },
+    "2021": {
+      "eligible_in_sample": 639,
+      "matched": 602,
+      "unmatched": 37,
+      "conflicting_price_parcels": 0,
+      "unique_buildings": 438
+    },
+    "2023": {
+      "eligible_in_sample": 626,
+      "matched": 589,
+      "unmatched": 37,
+      "conflicting_price_parcels": 0,
+      "unique_buildings": 430
+    }
+  },
+  "windows": [
+    {
+      "train": 2013,
+      "test": 2015,
+      "train_n": 556,
+      "train_events": 44,
+      "scores": {
+        "constant": {
+          "n": 538,
+          "events": 41,
+          "actual_pct": 7.6208178438661704,
+          "predicted_pct": 7.913669064748201,
+          "brier": 0.07040906816148003,
+          "log_loss": 0.26946882652700593,
+          "roc_auc": 0.5,
+          "average_precision": 0.0762081784386617
+        },
+        "age": {
+          "n": 538,
+          "events": 41,
+          "actual_pct": 7.6208178438661704,
+          "predicted_pct": 7.519009207400017,
+          "brier": 0.06924328246294349,
+          "log_loss": 0.26075748471451565,
+          "roc_auc": 0.6260244393188399,
+          "average_precision": 0.1030408731805614
+        },
+        "age_land_price": {
+          "n": 538,
+          "events": 41,
+          "actual_pct": 7.6208178438661704,
+          "predicted_pct": 7.472332163379154,
+          "brier": 0.06987809958051909,
+          "log_loss": 0.2648858408784493,
+          "roc_auc": 0.5799185356038672,
+          "average_precision": 0.09987915039120075
+        }
+      },
+      "brier_delta": 0.0006348171175755979,
+      "log_loss_delta": 0.004128356163933644
+    },
+    {
+      "train": 2015,
+      "test": 2017,
+      "train_n": 538,
+      "train_events": 41,
+      "scores": {
+        "constant": {
+          "n": 565,
+          "events": 46,
+          "actual_pct": 8.141592920353983,
+          "predicted_pct": 7.62081784386617,
+          "brier": 0.07481449634349312,
+          "log_loss": 0.28240273960860124,
+          "roc_auc": 0.5,
+          "average_precision": 0.08141592920353982
+        },
+        "age": {
+          "n": 565,
+          "events": 46,
+          "actual_pct": 8.141592920353983,
+          "predicted_pct": 7.776067387006104,
+          "brier": 0.07454535131859458,
+          "log_loss": 0.27924544098249665,
+          "roc_auc": 0.605533216050934,
+          "average_precision": 0.10532834609917319
+        },
+        "age_land_price": {
+          "n": 565,
+          "events": 46,
+          "actual_pct": 8.141592920353983,
+          "predicted_pct": 8.373726170528089,
+          "brier": 0.07595744022882504,
+          "log_loss": 0.285101995034231,
+          "roc_auc": 0.6094077238837229,
+          "average_precision": 0.11815442605196534
+        }
+      },
+      "brier_delta": 0.0014120889102304662,
+      "log_loss_delta": 0.005856554051734353
+    },
+    {
+      "train": 2018,
+      "test": 2020,
+      "train_n": 585,
+      "train_events": 44,
+      "scores": {
+        "constant": {
+          "n": 608,
+          "events": 60,
+          "actual_pct": 9.868421052631579,
+          "predicted_pct": 7.521367521367521,
+          "brier": 0.08949650314697548,
+          "log_loss": 0.325813914924344,
+          "roc_auc": 0.5,
+          "average_precision": 0.09868421052631579
+        },
+        "age": {
+          "n": 608,
+          "events": 60,
+          "actual_pct": 9.868421052631579,
+          "predicted_pct": 7.6014035031599985,
+          "brier": 0.08912970363661094,
+          "log_loss": 0.3252878673558033,
+          "roc_auc": 0.587287104622871,
+          "average_precision": 0.12641923382037534
+        },
+        "age_land_price": {
+          "n": 608,
+          "events": 60,
+          "actual_pct": 9.868421052631579,
+          "predicted_pct": 7.740804601498817,
+          "brier": 0.08878456012196911,
+          "log_loss": 0.32278725025634936,
+          "roc_auc": 0.6074513381995134,
+          "average_precision": 0.1526602180749011
+        }
+      },
+      "brier_delta": -0.00034514351464182136,
+      "log_loss_delta": -0.002500617099453928
+    },
+    {
+      "train": 2021,
+      "test": 2023,
+      "train_n": 602,
+      "train_events": 60,
+      "scores": {
+        "constant": {
+          "n": 589,
+          "events": 51,
+          "actual_pct": 8.65874363327674,
+          "predicted_pct": 9.966777408637872,
+          "brier": 0.0792611474378349,
+          "log_loss": 0.29556358886084677,
+          "roc_auc": 0.5,
+          "average_precision": 0.0865874363327674
+        },
+        "age": {
+          "n": 589,
+          "events": 51,
+          "actual_pct": 8.65874363327674,
+          "predicted_pct": 9.668502210508487,
+          "brier": 0.07849397754318173,
+          "log_loss": 0.2900758354802214,
+          "roc_auc": 0.5979845469786427,
+          "average_precision": 0.10928381879393971
+        },
+        "age_land_price": {
+          "n": 589,
+          "events": 51,
+          "actual_pct": 8.65874363327674,
+          "predicted_pct": 9.938526461814972,
+          "brier": 0.07741326790446947,
+          "log_loss": 0.2845736803795638,
+          "roc_auc": 0.6398607770245646,
+          "average_precision": 0.15303853484337693
+        }
+      },
+      "brier_delta": -0.0010807096387122628,
+      "log_loss_delta": -0.005502155100657602
+    }
+  ],
+  "hashes": {
+    "source": "4daec6f9eaba9a7bedd6e33a57838cd5205383af09a79b014e93760e66e51390",
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "script": "c4db85ce54f3452e7f0f2be967547590d133f4beb103411a0295366e6c21af23"
+  }
+}

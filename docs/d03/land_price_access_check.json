@@ -1,0 +1,18 @@
+{
+  "checked_on": "2026-11-07",
+  "endpoint": "https://api.vworld.kr/ned/data/getIndvdLandPriceAttr",
+  "request": {
+    "pnu": "2726010800105510075",
+    "stdrYear": "2022",
+    "format": "json",
+    "numOfRows": 1,
+    "pageNo": 1
+  },
+  "http_status": 200,
+  "resultCode": "PARAM_REQUIRED",
+  "resultMsg": "필수 파라미터인 key가 없어서 요청을 처리할수 없습니다.",
+  "status": "authentication_required_no_price_acquired",
+  "local_vworld_configuration_found": false,
+  "historical_coverage_verified": false,
+  "provider_link": "https://www.vworld.kr/dtna/dtna_apiSvcList_s001.do?searchKeyword=%EA%B0%9C%EB%B3%84%EA%B3%B5%EC%8B%9C%EC%A7%80%EA%B0%80"
+}

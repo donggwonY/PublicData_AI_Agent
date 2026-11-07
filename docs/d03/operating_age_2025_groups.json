@@ -1,0 +1,85 @@
+{
+  "scope": "saved 2025 predictions; descriptive age-group audit, no refitting",
+  "rows": [
+    {
+      "age_band": "1-3",
+      "n": 4255,
+      "events": 717,
+      "actual_pct": 16.850763807285546,
+      "predicted_pct": 12.081868991203844,
+      "gap_pp": 4.768894816081701,
+      "observed_rate_wilson95_pct": [
+        15.756072677826896,
+        18.00525590703298
+      ],
+      "brier_before": 0.1440474896767916,
+      "brier_after": 0.1423870497606481,
+      "weighted_brier_improvement": 0.00022947810326070633
+    },
+    {
+      "age_band": "10+",
+      "n": 14253,
+      "events": 879,
+      "actual_pct": 6.167122711008209,
+      "predicted_pct": 6.620543178131991,
+      "gap_pp": -0.4534204671237818,
+      "observed_rate_wilson95_pct": [
+        5.78388574315588,
+        6.573980926748376
+      ],
+      "brier_before": 0.057885117456802505,
+      "brier_after": 0.05788844586881944,
+      "weighted_brier_improvement": -1.540855413710618e-06
+    },
+    {
+      "age_band": "3-5",
+      "n": 3351,
+      "events": 489,
+      "actual_pct": 14.592658907788719,
+      "predicted_pct": 10.649519063439115,
+      "gap_pp": 3.943139844349604,
+      "observed_rate_wilson95_pct": [
+        13.437902179828882,
+        15.828501937098732
+      ],
+      "brier_before": 0.12742781901027006,
+      "brier_after": 0.1261868548611904,
+      "weighted_brier_improvement": 0.00013506791163979157
+    },
+    {
+      "age_band": "5-10",
+      "n": 6598,
+      "events": 653,
+      "actual_pct": 9.89693846620188,
+      "predicted_pct": 9.312773511819795,
+      "gap_pp": 0.5841649543820839,
+      "observed_rate_wilson95_pct": [
+        9.19955859147721,
+        10.64098842848523
+      ],
+      "brier_before": 0.0894895597972321,
+      "brier_after": 0.08920857043103297,
+      "weighted_brier_improvement": 6.021722223534516e-05
+    },
+    {
+      "age_band": "<1",
+      "n": 2331,
+      "events": 297,
+      "actual_pct": 12.741312741312742,
+      "predicted_pct": 12.062303415558857,
+      "gap_pp": 0.679009325753885,
+      "observed_rate_wilson95_pct": [
+        11.448745162404524,
+        14.15648197463021
+      ],
+      "brier_before": 0.11165455501261934,
+      "brier_after": 0.11122512774237965,
+      "weighted_brier_improvement": 3.251250379786645e-05
+    }
+  ],
+  "limitations": [
+    "Wilson intervals assume independent Bernoulli permits; same-building dependence ignored. Not calibrated-prediction uncertainty.",
+    "Group deviations are diagnostic, not authority to tune on 2025 outcomes.",
+    "Current snapshot and previous use of evaluation years prevent fully blinded external validation."
+  ]
+}

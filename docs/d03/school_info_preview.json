@@ -1,0 +1,52 @@
+{
+  "source": "https://open.neis.go.kr/hub/schoolInfo?Type=json&ATPT_OFCDC_SC_CODE=D10&pIndex=1&pSize=1000",
+  "retrieved_at": "2026-11-07T13:17:18.738610+00:00",
+  "response_sha256": "fd1e9c612e2ccd46bc35361860ada180c3fb98ac74eec74a75c54a4f82d49a93",
+  "reported_total": 484,
+  "received": 5,
+  "complete": false,
+  "status": "preview_only_not_model_input",
+  "limitation": "Unauthenticated sample. Current school addresses do not establish historical location or include all closed schools. Founding date is not address occupancy date.",
+  "rows": [
+    {
+      "SD_SCHUL_CODE": "7281014",
+      "SCHUL_NM": "가창중학교",
+      "SCHUL_KND_SC_NM": "중학교",
+      "ORG_RDNMA": "대구광역시 달성군 가창면 원정길 2",
+      "FOND_YMD": "19630705",
+      "LOAD_DTM": "20260423"
+    },
+    {
+      "SD_SCHUL_CODE": "7240223",
+      "SCHUL_NM": "강동고등학교",
+      "SCHUL_KND_SC_NM": "고등학교",
+      "ORG_RDNMA": "대구광역시 동구 금강로 65",
+      "FOND_YMD": "20040301",
+      "LOAD_DTM": "20260423"
+    },
+    {
+      "SD_SCHUL_CODE": "7251026",
+      "SCHUL_NM": "강동중학교",
+      "SCHUL_KND_SC_NM": "중학교",
+      "ORG_RDNMA": "대구광역시 동구 동호로 112",
+      "FOND_YMD": "20040301",
+      "LOAD_DTM": "20260423"
+    },
+    {
+      "SD_SCHUL_CODE": "7240068",
+      "SCHUL_NM": "강북고등학교",
+      "SCHUL_KND_SC_NM": "고등학교",
+      "ORG_RDNMA": "대구광역시 북구 태전로 100",
+      "FOND_YMD": "19741227",
+      "LOAD_DTM": "20260423"
+    },
+    {
+      "SD_SCHUL_CODE": "7261033",
+      "SCHUL_NM": "강북중학교",
+      "SCHUL_KND_SC_NM": "중학교",
+      "ORG_RDNMA": "대구광역시 북구 구암서로 27",
+      "FOND_YMD": "20040301",
+      "LOAD_DTM": "20260423"
+    }
+  ]
+}
