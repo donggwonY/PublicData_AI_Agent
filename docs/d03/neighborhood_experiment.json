@@ -1,0 +1,966 @@
+{
+  "train_year": 2021,
+  "test_year": 2023,
+  "train_n": 70492,
+  "context_features": [
+    "active_00",
+    "opened_00",
+    "closed_00",
+    "active_01",
+    "opened_01",
+    "closed_01",
+    "active_02",
+    "opened_02",
+    "closed_02",
+    "active_03",
+    "opened_03",
+    "closed_03",
+    "active_04",
+    "opened_04",
+    "closed_04",
+    "active_05",
+    "opened_05",
+    "closed_05",
+    "active_06",
+    "opened_06",
+    "closed_06",
+    "active_07",
+    "opened_07",
+    "closed_07",
+    "active_08",
+    "opened_08",
+    "closed_08",
+    "active_09",
+    "opened_09",
+    "closed_09",
+    "active_10",
+    "opened_10",
+    "closed_10",
+    "active_11",
+    "opened_11",
+    "closed_11",
+    "active_12",
+    "opened_12",
+    "closed_12",
+    "active_13",
+    "opened_13",
+    "closed_13",
+    "active_14",
+    "opened_14",
+    "closed_14",
+    "active_total",
+    "industry_variety",
+    "concentration_hhi",
+    "same_industry_active",
+    "opened_total",
+    "closed_total",
+    "net_permit_flow"
+  ],
+  "overall": {
+    "industry_mean": {
+      "n": 72661,
+      "events": 6302,
+      "actual_pct": 8.673153411045815,
+      "predicted_pct": 7.7224926871549515,
+      "brier": 0.07821529362998754,
+      "log_loss": 0.28773755079753777,
+      "roc_auc": 0.6240758813763029,
+      "average_precision": 0.12053444013151961
+    },
+    "lr_base": {
+      "n": 72661,
+      "events": 6302,
+      "actual_pct": 8.673153411045815,
+      "predicted_pct": 7.667530179115464,
+      "brier": 0.07772670873285488,
+      "log_loss": 0.2846559809131802,
+      "roc_auc": 0.6503812587952812,
+      "average_precision": 0.13369743396991993
+    },
+    "lr_context": {
+      "n": 72661,
+      "events": 6302,
+      "actual_pct": 8.673153411045815,
+      "predicted_pct": 7.748794262674799,
+      "brier": 0.07775416251130828,
+      "log_loss": 0.28493913731706616,
+      "roc_auc": 0.6456223418553616,
+      "average_precision": 0.1323449925424365
+    },
+    "rf_base": {
+      "n": 72661,
+      "events": 6302,
+      "actual_pct": 8.673153411045815,
+      "predicted_pct": 7.65730293477318,
+      "brier": 0.07787730788204929,
+      "log_loss": 0.28584485860314895,
+      "roc_auc": 0.6467017094427119,
+      "average_precision": 0.13838069218366977
+    },
+    "rf_context": {
+      "n": 72661,
+      "events": 6302,
+      "actual_pct": 8.673153411045815,
+      "predicted_pct": 7.7544998514404035,
+      "brier": 0.07802430794651097,
+      "log_loss": 0.286984070414001,
+      "roc_auc": 0.6397739579584728,
+      "average_precision": 0.1383185734255099
+    }
+  },
+  "groups": [
+    {
+      "industry": "골프연습장업",
+      "small_sample": true,
+      "scores": {
+        "industry_mean": {
+          "n": 416,
+          "events": 19,
+          "actual_pct": 4.567307692307692,
+          "predicted_pct": 10.675381263616558,
+          "brier": 0.04731790324270781,
+          "log_loss": 0.20991805125201568,
+          "roc_auc": 0.5,
+          "average_precision": 0.04567307692307692
+        },
+        "lr_base": {
+          "n": 416,
+          "events": 19,
+          "actual_pct": 4.567307692307692,
+          "predicted_pct": 9.160291322758022,
+          "brier": 0.0457132961132231,
+          "log_loss": 0.19921246869739279,
+          "roc_auc": 0.6111626673737239,
+          "average_precision": 0.061194166594451226
+        },
+        "lr_context": {
+          "n": 416,
+          "events": 19,
+          "actual_pct": 4.567307692307692,
+          "predicted_pct": 10.161688117433647,
+          "brier": 0.047873040890678224,
+          "log_loss": 0.2095489670135982,
+          "roc_auc": 0.48800212117194747,
+          "average_precision": 0.05229672812072002
+        },
+        "rf_base": {
+          "n": 416,
+          "events": 19,
+          "actual_pct": 4.567307692307692,
+          "predicted_pct": 8.653267810721971,
+          "brier": 0.04529083247977913,
+          "log_loss": 0.19822836806853703,
+          "roc_auc": 0.49330505104069994,
+          "average_precision": 0.052075701621973315
+        },
+        "rf_context": {
+          "n": 416,
+          "events": 19,
+          "actual_pct": 4.567307692307692,
+          "predicted_pct": 7.389895463962218,
+          "brier": 0.04430127967127674,
+          "log_loss": 0.19117509592625248,
+          "roc_auc": 0.5815325467320694,
+          "average_precision": 0.05781983536947377
+        }
+      }
+    },
+    {
+      "industry": "노래연습장업",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 1591,
+          "events": 77,
+          "actual_pct": 4.8397234443746076,
+          "predicted_pct": 5.181347150259068,
+          "brier": 0.04606661281758537,
+          "log_loss": 0.19389000816167196,
+          "roc_auc": 0.5,
+          "average_precision": 0.04839723444374607
+        },
+        "lr_base": {
+          "n": 1591,
+          "events": 77,
+          "actual_pct": 4.8397234443746076,
+          "predicted_pct": 5.111590180855993,
+          "brier": 0.04610173992019418,
+          "log_loss": 0.19422590696589206,
+          "roc_auc": 0.4887543104187754,
+          "average_precision": 0.052760507592353026
+        },
+        "lr_context": {
+          "n": 1591,
+          "events": 77,
+          "actual_pct": 4.8397234443746076,
+          "predicted_pct": 5.0387672652375874,
+          "brier": 0.04606956216585887,
+          "log_loss": 0.19394646616413813,
+          "roc_auc": 0.524434284341814,
+          "average_precision": 0.0580540039140511
+        },
+        "rf_base": {
+          "n": 1591,
+          "events": 77,
+          "actual_pct": 4.8397234443746076,
+          "predicted_pct": 5.536571740393741,
+          "brier": 0.04607495115678661,
+          "log_loss": 0.19399217430599888,
+          "roc_auc": 0.49451869134828175,
+          "average_precision": 0.0559945975766167
+        },
+        "rf_context": {
+          "n": 1591,
+          "events": 77,
+          "actual_pct": 4.8397234443746076,
+          "predicted_pct": 5.9633267956217315,
+          "brier": 0.046186816302524795,
+          "log_loss": 0.19497350005339337,
+          "roc_auc": 0.4987390416716705,
+          "average_precision": 0.057362403210428535
+        }
+      }
+    },
+    {
+      "industry": "담배소매업",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 6608,
+          "events": 750,
+          "actual_pct": 11.349878934624698,
+          "predicted_pct": 9.376927822331897,
+          "brier": 0.10100606777233298,
+          "log_loss": 0.3559284296259181,
+          "roc_auc": 0.5,
+          "average_precision": 0.11349878934624698
+        },
+        "lr_base": {
+          "n": 6608,
+          "events": 750,
+          "actual_pct": 11.349878934624698,
+          "predicted_pct": 9.19214564287178,
+          "brier": 0.10050609414740226,
+          "log_loss": 0.35362516387551846,
+          "roc_auc": 0.5714456583589393,
+          "average_precision": 0.14227221847149427
+        },
+        "lr_context": {
+          "n": 6608,
+          "events": 750,
+          "actual_pct": 11.349878934624698,
+          "predicted_pct": 9.266350919679192,
+          "brier": 0.1008568729000676,
+          "log_loss": 0.35551402628902473,
+          "roc_auc": 0.5582703994537385,
+          "average_precision": 0.13052894896203499
+        },
+        "rf_base": {
+          "n": 6608,
+          "events": 750,
+          "actual_pct": 11.349878934624698,
+          "predicted_pct": 8.549336462173589,
+          "brier": 0.10071358674252882,
+          "log_loss": 0.3552504332057806,
+          "roc_auc": 0.5722120177534995,
+          "average_precision": 0.14118097437992397
+        },
+        "rf_context": {
+          "n": 6608,
+          "events": 750,
+          "actual_pct": 11.349878934624698,
+          "predicted_pct": 8.114187691876548,
+          "brier": 0.10124746098007881,
+          "log_loss": 0.35847305224042075,
+          "roc_auc": 0.5616879481051553,
+          "average_precision": 0.13758476579758694
+        }
+      }
+    },
+    {
+      "industry": "당구장업",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 458,
+          "events": 24,
+          "actual_pct": 5.240174672489083,
+          "predicted_pct": 6.9672131147541005,
+          "brier": 0.049954069843177344,
+          "log_loss": 0.20802973655023693,
+          "roc_auc": 0.5,
+          "average_precision": 0.05240174672489083
+        },
+        "lr_base": {
+          "n": 458,
+          "events": 24,
+          "actual_pct": 5.240174672489083,
+          "predicted_pct": 6.656344710345934,
+          "brier": 0.04966895485836047,
+          "log_loss": 0.20540238630570548,
+          "roc_auc": 0.5664362519201228,
+          "average_precision": 0.07520239663860709
+        },
+        "lr_context": {
+          "n": 458,
+          "events": 24,
+          "actual_pct": 5.240174672489083,
+          "predicted_pct": 6.812586334192611,
+          "brier": 0.049666162838855554,
+          "log_loss": 0.20476366609524466,
+          "roc_auc": 0.5882296466973886,
+          "average_precision": 0.08369209597426047
+        },
+        "rf_base": {
+          "n": 458,
+          "events": 24,
+          "actual_pct": 5.240174672489083,
+          "predicted_pct": 7.310103765094361,
+          "brier": 0.05011921525829096,
+          "log_loss": 0.20874010583368915,
+          "roc_auc": 0.5510752688172043,
+          "average_precision": 0.06927451276029066
+        },
+        "rf_context": {
+          "n": 458,
+          "events": 24,
+          "actual_pct": 5.240174672489083,
+          "predicted_pct": 7.180729083909523,
+          "brier": 0.04981959751153436,
+          "log_loss": 0.20683032820693023,
+          "roc_auc": 0.5890937019969278,
+          "average_precision": 0.08484507520541384
+        }
+      }
+    },
+    {
+      "industry": "미용업",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 9689,
+          "events": 612,
+          "actual_pct": 6.31644132521416,
+          "predicted_pct": 7.427496125747178,
+          "brier": 0.05929811442763303,
+          "log_loss": 0.23652941659118504,
+          "roc_auc": 0.5,
+          "average_precision": 0.0631644132521416
+        },
+        "lr_base": {
+          "n": 9689,
+          "events": 612,
+          "actual_pct": 6.31644132521416,
+          "predicted_pct": 7.326810153867265,
+          "brier": 0.05869981168491213,
+          "log_loss": 0.23148125373063164,
+          "roc_auc": 0.6199695092314771,
+          "average_precision": 0.08662025176277843
+        },
+        "lr_context": {
+          "n": 9689,
+          "events": 612,
+          "actual_pct": 6.31644132521416,
+          "predicted_pct": 7.464377645752665,
+          "brier": 0.05882562134563208,
+          "log_loss": 0.2321564453363107,
+          "roc_auc": 0.612378859589813,
+          "average_precision": 0.08307444160343902
+        },
+        "rf_base": {
+          "n": 9689,
+          "events": 612,
+          "actual_pct": 6.31644132521416,
+          "predicted_pct": 7.602481401477408,
+          "brier": 0.05876759790365885,
+          "log_loss": 0.23195279031061838,
+          "roc_auc": 0.6134359017008442,
+          "average_precision": 0.08398775581762614
+        },
+        "rf_context": {
+          "n": 9689,
+          "events": 612,
+          "actual_pct": 6.31644132521416,
+          "predicted_pct": 7.885361677315042,
+          "brier": 0.058862416292422455,
+          "log_loss": 0.2328693150439363,
+          "roc_auc": 0.6142580255634258,
+          "average_precision": 0.08594563111348283
+        }
+      }
+    },
+    {
+      "industry": "세탁업",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 1129,
+          "events": 61,
+          "actual_pct": 5.403011514614704,
+          "predicted_pct": 6.408227848101265,
+          "brier": 0.051211907791151944,
+          "log_loss": 0.2111018845704557,
+          "roc_auc": 0.5,
+          "average_precision": 0.054030115146147036
+        },
+        "lr_base": {
+          "n": 1129,
+          "events": 61,
+          "actual_pct": 5.403011514614704,
+          "predicted_pct": 6.35307423242223,
+          "brier": 0.05152224116538557,
+          "log_loss": 0.2129858732200427,
+          "roc_auc": 0.4976438263645852,
+          "average_precision": 0.054613629636889864
+        },
+        "lr_context": {
+          "n": 1129,
+          "events": 61,
+          "actual_pct": 5.403011514614704,
+          "predicted_pct": 6.244006894626601,
+          "brier": 0.05152014732577585,
+          "log_loss": 0.21293409960453913,
+          "roc_auc": 0.5039448640019648,
+          "average_precision": 0.05417948301673162
+        },
+        "rf_base": {
+          "n": 1129,
+          "events": 61,
+          "actual_pct": 5.403011514614704,
+          "predicted_pct": 6.037859740903142,
+          "brier": 0.051455128974783375,
+          "log_loss": 0.21273989197355464,
+          "roc_auc": 0.46540952907226624,
+          "average_precision": 0.05152689368541923
+        },
+        "rf_context": {
+          "n": 1129,
+          "events": 61,
+          "actual_pct": 5.403011514614704,
+          "predicted_pct": 6.06164784993476,
+          "brier": 0.051343755959013276,
+          "log_loss": 0.21190317261602545,
+          "roc_auc": 0.5139528458279607,
+          "average_precision": 0.053259521081475185
+        }
+      }
+    },
+    {
+      "industry": "약국",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 1320,
+          "events": 29,
+          "actual_pct": 2.196969696969697,
+          "predicted_pct": 3.5168195718654434,
+          "brier": 0.021661229753982887,
+          "log_loss": 0.10856098721276576,
+          "roc_auc": 0.5,
+          "average_precision": 0.02196969696969697
+        },
+        "lr_base": {
+          "n": 1320,
+          "events": 29,
+          "actual_pct": 2.196969696969697,
+          "predicted_pct": 3.579969703883955,
+          "brier": 0.021601950894057132,
+          "log_loss": 0.10739599777629992,
+          "roc_auc": 0.5969176527150832,
+          "average_precision": 0.04057974751636849
+        },
+        "lr_context": {
+          "n": 1320,
+          "events": 29,
+          "actual_pct": 2.196969696969697,
+          "predicted_pct": 3.2398156318304006,
+          "brier": 0.021500619664443894,
+          "log_loss": 0.10572862484097117,
+          "roc_auc": 0.6194342797617457,
+          "average_precision": 0.03836188765442721
+        },
+        "rf_base": {
+          "n": 1320,
+          "events": 29,
+          "actual_pct": 2.196969696969697,
+          "predicted_pct": 5.583350992120847,
+          "brier": 0.02255203183827406,
+          "log_loss": 0.1181990304746039,
+          "roc_auc": 0.5967306819092391,
+          "average_precision": 0.04826074126210365
+        },
+        "rf_context": {
+          "n": 1320,
+          "events": 29,
+          "actual_pct": 2.196969696969697,
+          "predicted_pct": 6.619295421268586,
+          "brier": 0.02335972031654667,
+          "log_loss": 0.12507544642397497,
+          "roc_auc": 0.6334303800849381,
+          "average_precision": 0.036684173908395595
+        }
+      }
+    },
+    {
+      "industry": "의원·병원",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 4125,
+          "events": 80,
+          "actual_pct": 1.9393939393939394,
+          "predicted_pct": 1.8108651911468816,
+          "brier": 0.0190194664726362,
+          "log_loss": 0.09571638176623407,
+          "roc_auc": 0.5,
+          "average_precision": 0.019393939393939394
+        },
+        "lr_base": {
+          "n": 4125,
+          "events": 80,
+          "actual_pct": 1.9393939393939394,
+          "predicted_pct": 1.7485975870515154,
+          "brier": 0.019015669198985237,
+          "log_loss": 0.09566655466902006,
+          "roc_auc": 0.5324521013597033,
+          "average_precision": 0.022353478015970655
+        },
+        "lr_context": {
+          "n": 4125,
+          "events": 80,
+          "actual_pct": 1.9393939393939394,
+          "predicted_pct": 1.7639606230040719,
+          "brier": 0.019022681902005897,
+          "log_loss": 0.09588778899066046,
+          "roc_auc": 0.5358343634116193,
+          "average_precision": 0.0229428915810185
+        },
+        "rf_base": {
+          "n": 4125,
+          "events": 80,
+          "actual_pct": 1.9393939393939394,
+          "predicted_pct": 3.0825332701406754,
+          "brier": 0.019146181967927143,
+          "log_loss": 0.09791447094478159,
+          "roc_auc": 0.532520086526576,
+          "average_precision": 0.024199441394257802
+        },
+        "rf_context": {
+          "n": 4125,
+          "events": 80,
+          "actual_pct": 1.9393939393939394,
+          "predicted_pct": 4.151087300889939,
+          "brier": 0.019543327001355828,
+          "log_loss": 0.10302150484159152,
+          "roc_auc": 0.5355840543881335,
+          "average_precision": 0.02745137755424009
+        }
+      }
+    },
+    {
+      "industry": "인터넷컴퓨터게임시설제공업",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 718,
+          "events": 106,
+          "actual_pct": 14.763231197771587,
+          "predicted_pct": 14.590747330960857,
+          "brier": 0.12583998750626124,
+          "log_loss": 0.4185919114563707,
+          "roc_auc": 0.5,
+          "average_precision": 0.14763231197771587
+        },
+        "lr_base": {
+          "n": 718,
+          "events": 106,
+          "actual_pct": 14.763231197771587,
+          "predicted_pct": 14.783950997656406,
+          "brier": 0.1267406188938867,
+          "log_loss": 0.4223524257248942,
+          "roc_auc": 0.5186366999630041,
+          "average_precision": 0.15942888168844244
+        },
+        "lr_context": {
+          "n": 718,
+          "events": 106,
+          "actual_pct": 14.763231197771587,
+          "predicted_pct": 14.936842195695652,
+          "brier": 0.1274214415326169,
+          "log_loss": 0.4248441157510908,
+          "roc_auc": 0.5018806264644222,
+          "average_precision": 0.1469521323216507
+        },
+        "rf_base": {
+          "n": 718,
+          "events": 106,
+          "actual_pct": 14.763231197771587,
+          "predicted_pct": 11.855173277690707,
+          "brier": 0.12634523818020404,
+          "log_loss": 0.42084017679410374,
+          "roc_auc": 0.5851985448267357,
+          "average_precision": 0.18026254489209542
+        },
+        "rf_context": {
+          "n": 718,
+          "events": 106,
+          "actual_pct": 14.763231197771587,
+          "predicted_pct": 9.765726848622235,
+          "brier": 0.1286488081003978,
+          "log_loss": 0.4334282568676351,
+          "roc_auc": 0.477016278209397,
+          "average_precision": 0.15181905010791935
+        }
+      }
+    },
+    {
+      "industry": "일반음식점",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 31262,
+          "events": 2782,
+          "actual_pct": 8.898982790608406,
+          "predicted_pct": 7.7537685191175525,
+          "brier": 0.08120179000809225,
+          "log_loss": 0.3010727037046387,
+          "roc_auc": 0.5,
+          "average_precision": 0.08898982790608406
+        },
+        "lr_base": {
+          "n": 31262,
+          "events": 2782,
+          "actual_pct": 8.898982790608406,
+          "predicted_pct": 7.741419658163916,
+          "brier": 0.08043690006578333,
+          "log_loss": 0.2962581105069468,
+          "roc_auc": 0.597980206322345,
+          "average_precision": 0.11779364235730617
+        },
+        "lr_context": {
+          "n": 31262,
+          "events": 2782,
+          "actual_pct": 8.898982790608406,
+          "predicted_pct": 7.82954051667263,
+          "brier": 0.08043196342129656,
+          "log_loss": 0.2964297380159103,
+          "roc_auc": 0.5968229435920323,
+          "average_precision": 0.11884515209233912
+        },
+        "rf_base": {
+          "n": 31262,
+          "events": 2782,
+          "actual_pct": 8.898982790608406,
+          "predicted_pct": 7.641315136253474,
+          "brier": 0.08051131905172658,
+          "log_loss": 0.2966134057533759,
+          "roc_auc": 0.6002323574907714,
+          "average_precision": 0.11915395038071765
+        },
+        "rf_context": {
+          "n": 31262,
+          "events": 2782,
+          "actual_pct": 8.898982790608406,
+          "predicted_pct": 7.767813849926458,
+          "brier": 0.08042905979359236,
+          "log_loss": 0.29611237688212333,
+          "roc_auc": 0.6029729705510545,
+          "average_precision": 0.12417361827217398
+        }
+      }
+    },
+    {
+      "industry": "제과점영업",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 984,
+          "events": 103,
+          "actual_pct": 10.467479674796747,
+          "predicted_pct": 9.844559585492226,
+          "brier": 0.09375678661750507,
+          "log_loss": 0.33544940286612196,
+          "roc_auc": 0.5,
+          "average_precision": 0.10467479674796748
+        },
+        "lr_base": {
+          "n": 984,
+          "events": 103,
+          "actual_pct": 10.467479674796747,
+          "predicted_pct": 9.928461882089024,
+          "brier": 0.09250513248730666,
+          "log_loss": 0.328227321544457,
+          "roc_auc": 0.6071652909866324,
+          "average_precision": 0.13179572436014292
+        },
+        "lr_context": {
+          "n": 984,
+          "events": 103,
+          "actual_pct": 10.467479674796747,
+          "predicted_pct": 10.108971975249508,
+          "brier": 0.09220190283587619,
+          "log_loss": 0.3271412316749823,
+          "roc_auc": 0.6193094784170678,
+          "average_precision": 0.1559848181079196
+        },
+        "rf_base": {
+          "n": 984,
+          "events": 103,
+          "actual_pct": 10.467479674796747,
+          "predicted_pct": 8.229860385615073,
+          "brier": 0.09289397896218608,
+          "log_loss": 0.3302645347597103,
+          "roc_auc": 0.6140969551370353,
+          "average_precision": 0.13918340441412555
+        },
+        "rf_context": {
+          "n": 984,
+          "events": 103,
+          "actual_pct": 10.467479674796747,
+          "predicted_pct": 7.878672078123111,
+          "brier": 0.09342893352523272,
+          "log_loss": 0.33338564557186395,
+          "roc_auc": 0.6086915795157753,
+          "average_precision": 0.14012621335329215
+        }
+      }
+    },
+    {
+      "industry": "체력단련장업",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 581,
+          "events": 20,
+          "actual_pct": 3.4423407917383817,
+          "predicted_pct": 4.921700223713647,
+          "brier": 0.03345728733763463,
+          "log_loss": 0.15239874464151346,
+          "roc_auc": 0.5,
+          "average_precision": 0.03442340791738382
+        },
+        "lr_base": {
+          "n": 581,
+          "events": 20,
+          "actual_pct": 3.4423407917383817,
+          "predicted_pct": 6.275899535187508,
+          "brier": 0.03430407197627646,
+          "log_loss": 0.15922201228387534,
+          "roc_auc": 0.5080659536541889,
+          "average_precision": 0.039806015977813705
+        },
+        "lr_context": {
+          "n": 581,
+          "events": 20,
+          "actual_pct": 3.4423407917383817,
+          "predicted_pct": 6.023334624907211,
+          "brier": 0.034079939352656276,
+          "log_loss": 0.1570764695637135,
+          "roc_auc": 0.5358288770053476,
+          "average_precision": 0.04168343028635865
+        },
+        "rf_base": {
+          "n": 581,
+          "events": 20,
+          "actual_pct": 3.4423407917383817,
+          "predicted_pct": 7.216597259110823,
+          "brier": 0.034796142399874594,
+          "log_loss": 0.16348454579575783,
+          "roc_auc": 0.469741532976827,
+          "average_precision": 0.0339419257529559
+        },
+        "rf_context": {
+          "n": 581,
+          "events": 20,
+          "actual_pct": 3.4423407917383817,
+          "predicted_pct": 7.96074882594135,
+          "brier": 0.03544555326525476,
+          "log_loss": 0.16749444813286302,
+          "roc_auc": 0.5139928698752227,
+          "average_precision": 0.08581047809076195
+        }
+      }
+    },
+    {
+      "industry": "체육도장업",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 805,
+          "events": 22,
+          "actual_pct": 2.732919254658385,
+          "predicted_pct": 3.652392947103274,
+          "brier": 0.02666685096844542,
+          "log_loss": 0.12664459646964507,
+          "roc_auc": 0.5,
+          "average_precision": 0.02732919254658385
+        },
+        "lr_base": {
+          "n": 805,
+          "events": 22,
+          "actual_pct": 2.732919254658385,
+          "predicted_pct": 4.278213257898857,
+          "brier": 0.026833671302928023,
+          "log_loss": 0.12847722663783484,
+          "roc_auc": 0.5443805874840357,
+          "average_precision": 0.0470931151651289
+        },
+        "lr_context": {
+          "n": 805,
+          "events": 22,
+          "actual_pct": 2.732919254658385,
+          "predicted_pct": 3.990688615734206,
+          "brier": 0.026841035262298918,
+          "log_loss": 0.12880272362321785,
+          "roc_auc": 0.5151515151515152,
+          "average_precision": 0.039485560766644376
+        },
+        "rf_base": {
+          "n": 805,
+          "events": 22,
+          "actual_pct": 2.732919254658385,
+          "predicted_pct": 5.976236538051164,
+          "brier": 0.02769267731033935,
+          "log_loss": 0.1368963985516365,
+          "roc_auc": 0.5414199465923604,
+          "average_precision": 0.08147543065920418
+        },
+        "rf_context": {
+          "n": 805,
+          "events": 22,
+          "actual_pct": 2.732919254658385,
+          "predicted_pct": 6.690630556072992,
+          "brier": 0.028271491191406196,
+          "log_loss": 0.14143183585414812,
+          "roc_auc": 0.5137002205967723,
+          "average_precision": 0.03642719837209308
+        }
+      }
+    },
+    {
+      "industry": "축산판매업",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 3152,
+          "events": 107,
+          "actual_pct": 3.394670050761421,
+          "predicted_pct": 4.2608980662078,
+          "brier": 0.03286935712973498,
+          "log_loss": 0.14919049944718402,
+          "roc_auc": 0.5,
+          "average_precision": 0.03394670050761421
+        },
+        "lr_base": {
+          "n": 3152,
+          "events": 107,
+          "actual_pct": 3.394670050761421,
+          "predicted_pct": 4.204888628036145,
+          "brier": 0.03280639821352672,
+          "log_loss": 0.14795965416376014,
+          "roc_auc": 0.5783404692847168,
+          "average_precision": 0.041012368323378165
+        },
+        "lr_context": {
+          "n": 3152,
+          "events": 107,
+          "actual_pct": 3.394670050761421,
+          "predicted_pct": 4.3816833104387,
+          "brier": 0.03285421326252507,
+          "log_loss": 0.14835312355441624,
+          "roc_auc": 0.5764298758497921,
+          "average_precision": 0.04493456629380202
+        },
+        "rf_base": {
+          "n": 3152,
+          "events": 107,
+          "actual_pct": 3.394670050761421,
+          "predicted_pct": 5.447848876112302,
+          "brier": 0.0331451022564324,
+          "log_loss": 0.15144691626936907,
+          "roc_auc": 0.5925601952027991,
+          "average_precision": 0.04120308183888141
+        },
+        "rf_context": {
+          "n": 3152,
+          "events": 107,
+          "actual_pct": 3.394670050761421,
+          "predicted_pct": 6.201714081840827,
+          "brier": 0.0334899318149262,
+          "log_loss": 0.15453229533395474,
+          "roc_auc": 0.6055015883246627,
+          "average_precision": 0.044868225861834234
+        }
+      }
+    },
+    {
+      "industry": "휴게음식점",
+      "small_sample": false,
+      "scores": {
+        "industry_mean": {
+          "n": 9823,
+          "events": 1510,
+          "actual_pct": 15.372085920798126,
+          "predicted_pct": 11.216773602199817,
+          "brier": 0.13181741869885075,
+          "log_loss": 0.4369882284266003,
+          "roc_auc": 0.5,
+          "average_precision": 0.15372085920798126
+        },
+        "lr_base": {
+          "n": 9823,
+          "events": 1510,
+          "actual_pct": 15.372085920798126,
+          "predicted_pct": 11.051151636606923,
+          "brier": 0.13162955442308094,
+          "log_loss": 0.4368172769800879,
+          "roc_auc": 0.5379603318189096,
+          "average_precision": 0.16305941177261168
+        },
+        "lr_context": {
+          "n": 9823,
+          "events": 1510,
+          "actual_pct": 15.372085920798126,
+          "predicted_pct": 11.152616331957068,
+          "brier": 0.13139098916028066,
+          "log_loss": 0.4361039925134751,
+          "roc_auc": 0.5470780625255425,
+          "average_precision": 0.1747377039584092
+        },
+        "rf_base": {
+          "n": 9823,
+          "events": 1510,
+          "actual_pct": 15.372085920798126,
+          "predicted_pct": 10.3742052054345,
+          "brier": 0.13190849378994593,
+          "log_loss": 0.43832417910748045,
+          "roc_auc": 0.5642796768485966,
+          "average_precision": 0.18372023524313177
+        },
+        "rf_context": {
+          "n": 9823,
+          "events": 1510,
+          "actual_pct": 15.372085920798126,
+          "predicted_pct": 9.947491199830278,
+          "brier": 0.13216177483067687,
+          "log_loss": 0.4396982676737812,
+          "roc_auc": 0.5643275950936179,
+          "average_precision": 0.19422589436374046
+        }
+      }
+    }
+  ],
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "context": "901e154db78b1fe3e58e3dc426692c51d995db73ab22ff88e3c21955a80d501c",
+    "script": "d2f95eabc1f7de6a48ef71a35b1232933a3d0b82aedf67c110d43627d8c6df67"
+  },
+  "limitations": [
+    "Single reused evaluation year, exploratory; not definitive model selection.",
+    "Matched geocoded subset, not identical to earlier all-record evaluation.",
+    "Latest location reconstructs historical neighbors; permits are not unique shops.",
+    "Current industry/gu and permit reporting definitions may differ historically.",
+    "Spatial neighborhoods overlap and same permits repeat across years.",
+    "No 2025 outcomes or current-date future outcomes used; no deployment."
+  ]
+}

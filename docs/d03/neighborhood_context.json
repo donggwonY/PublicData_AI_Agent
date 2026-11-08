@@ -1,0 +1,482 @@
+{
+  "quality": {
+    "raw_rows": 225858,
+    "invalid_dates": 108,
+    "missing_or_invalid_coordinates": 11199
+  },
+  "radius_m": 500,
+  "lag_days": 60,
+  "event_lookback_days": 365,
+  "industry_columns": {
+    "00": "골프연습장업",
+    "01": "노래연습장업",
+    "02": "담배소매업",
+    "03": "당구장업",
+    "04": "미용업",
+    "05": "세탁업",
+    "06": "약국",
+    "07": "의원·병원",
+    "08": "인터넷컴퓨터게임시설제공업",
+    "09": "일반음식점",
+    "10": "제과점영업",
+    "11": "체력단련장업",
+    "12": "체육도장업",
+    "13": "축산판매업",
+    "14": "휴게음식점"
+  },
+  "dates": [
+    {
+      "as_of": "2021-01-01",
+      "feature_cutoff": "2020-11-02",
+      "n": 70492,
+      "no_nearby_active": 103,
+      "groups": [
+        {
+          "industry": "골프연습장업",
+          "n": 459,
+          "median_nearby_active": 347.0,
+          "median_same_industry": 3.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 33.0,
+          "median_recent_closures": 27.0
+        },
+        {
+          "industry": "노래연습장업",
+          "n": 1737,
+          "median_nearby_active": 458.0,
+          "median_same_industry": 13.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 40.0,
+          "median_recent_closures": 35.0
+        },
+        {
+          "industry": "담배소매업",
+          "n": 6484,
+          "median_nearby_active": 372.0,
+          "median_same_industry": 31.0,
+          "median_industry_variety": 14.0,
+          "median_recent_openings": 33.0,
+          "median_recent_closures": 29.0
+        },
+        {
+          "industry": "당구장업",
+          "n": 488,
+          "median_nearby_active": 464.5,
+          "median_same_industry": 3.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 41.0,
+          "median_recent_closures": 36.0
+        },
+        {
+          "industry": "미용업",
+          "n": 9034,
+          "median_nearby_active": 438.0,
+          "median_same_industry": 62.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 40.0,
+          "median_recent_closures": 35.0
+        },
+        {
+          "industry": "세탁업",
+          "n": 1264,
+          "median_nearby_active": 385.5,
+          "median_same_industry": 7.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 34.0,
+          "median_recent_closures": 31.0
+        },
+        {
+          "industry": "약국",
+          "n": 1308,
+          "median_nearby_active": 471.5,
+          "median_same_industry": 10.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 41.0,
+          "median_recent_closures": 37.0
+        },
+        {
+          "industry": "의원·병원",
+          "n": 3976,
+          "median_nearby_active": 508.0,
+          "median_same_industry": 37.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 46.0,
+          "median_recent_closures": 40.0
+        },
+        {
+          "industry": "인터넷컴퓨터게임시설제공업",
+          "n": 843,
+          "median_nearby_active": 454.0,
+          "median_same_industry": 7.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 41.0,
+          "median_recent_closures": 35.0
+        },
+        {
+          "industry": "일반음식점",
+          "n": 30914,
+          "median_nearby_active": 435.0,
+          "median_same_industry": 189.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 39.0,
+          "median_recent_closures": 34.0
+        },
+        {
+          "industry": "제과점영업",
+          "n": 965,
+          "median_nearby_active": 450.0,
+          "median_same_industry": 6.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 42.0,
+          "median_recent_closures": 36.0
+        },
+        {
+          "industry": "체력단련장업",
+          "n": 447,
+          "median_nearby_active": 465.0,
+          "median_same_industry": 3.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 43.0,
+          "median_recent_closures": 36.0
+        },
+        {
+          "industry": "체육도장업",
+          "n": 794,
+          "median_nearby_active": 369.0,
+          "median_same_industry": 5.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 35.0,
+          "median_recent_closures": 28.5
+        },
+        {
+          "industry": "축산판매업",
+          "n": 3051,
+          "median_nearby_active": 326.0,
+          "median_same_industry": 15.0,
+          "median_industry_variety": 14.0,
+          "median_recent_openings": 28.0,
+          "median_recent_closures": 24.0
+        },
+        {
+          "industry": "휴게음식점",
+          "n": 8728,
+          "median_nearby_active": 445.0,
+          "median_same_industry": 53.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 41.0,
+          "median_recent_closures": 36.0
+        }
+      ]
+    },
+    {
+      "as_of": "2023-01-01",
+      "feature_cutoff": "2022-11-02",
+      "n": 72661,
+      "no_nearby_active": 111,
+      "groups": [
+        {
+          "industry": "골프연습장업",
+          "n": 416,
+          "median_nearby_active": 363.0,
+          "median_same_industry": 3.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 32.0,
+          "median_recent_closures": 29.0
+        },
+        {
+          "industry": "노래연습장업",
+          "n": 1591,
+          "median_nearby_active": 470.0,
+          "median_same_industry": 12.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 39.0,
+          "median_recent_closures": 36.0
+        },
+        {
+          "industry": "담배소매업",
+          "n": 6608,
+          "median_nearby_active": 375.0,
+          "median_same_industry": 31.0,
+          "median_industry_variety": 14.0,
+          "median_recent_openings": 32.0,
+          "median_recent_closures": 29.0
+        },
+        {
+          "industry": "당구장업",
+          "n": 458,
+          "median_nearby_active": 477.5,
+          "median_same_industry": 3.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 41.0,
+          "median_recent_closures": 36.0
+        },
+        {
+          "industry": "미용업",
+          "n": 9689,
+          "median_nearby_active": 453.0,
+          "median_same_industry": 66.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 40.0,
+          "median_recent_closures": 35.0
+        },
+        {
+          "industry": "세탁업",
+          "n": 1129,
+          "median_nearby_active": 395.0,
+          "median_same_industry": 6.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 33.0,
+          "median_recent_closures": 30.0
+        },
+        {
+          "industry": "약국",
+          "n": 1320,
+          "median_nearby_active": 481.0,
+          "median_same_industry": 10.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 42.0,
+          "median_recent_closures": 37.0
+        },
+        {
+          "industry": "의원·병원",
+          "n": 4125,
+          "median_nearby_active": 526.0,
+          "median_same_industry": 39.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 45.0,
+          "median_recent_closures": 40.0
+        },
+        {
+          "industry": "인터넷컴퓨터게임시설제공업",
+          "n": 718,
+          "median_nearby_active": 477.0,
+          "median_same_industry": 6.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 40.0,
+          "median_recent_closures": 34.0
+        },
+        {
+          "industry": "일반음식점",
+          "n": 31262,
+          "median_nearby_active": 448.0,
+          "median_same_industry": 190.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 40.0,
+          "median_recent_closures": 35.0
+        },
+        {
+          "industry": "제과점영업",
+          "n": 984,
+          "median_nearby_active": 466.0,
+          "median_same_industry": 6.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 43.0,
+          "median_recent_closures": 37.0
+        },
+        {
+          "industry": "체력단련장업",
+          "n": 581,
+          "median_nearby_active": 485.0,
+          "median_same_industry": 4.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 44.0,
+          "median_recent_closures": 38.0
+        },
+        {
+          "industry": "체육도장업",
+          "n": 805,
+          "median_nearby_active": 386.0,
+          "median_same_industry": 5.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 35.0,
+          "median_recent_closures": 29.0
+        },
+        {
+          "industry": "축산판매업",
+          "n": 3152,
+          "median_nearby_active": 323.0,
+          "median_same_industry": 15.0,
+          "median_industry_variety": 14.0,
+          "median_recent_openings": 25.0,
+          "median_recent_closures": 25.0
+        },
+        {
+          "industry": "휴게음식점",
+          "n": 9823,
+          "median_nearby_active": 451.0,
+          "median_same_industry": 59.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 41.0,
+          "median_recent_closures": 36.0
+        }
+      ]
+    },
+    {
+      "as_of": "2026-10-13",
+      "feature_cutoff": "2026-08-14",
+      "n": 70251,
+      "no_nearby_active": 99,
+      "groups": [
+        {
+          "industry": "골프연습장업",
+          "n": 353,
+          "median_nearby_active": 335.0,
+          "median_same_industry": 2.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 22.0,
+          "median_recent_closures": 28.0
+        },
+        {
+          "industry": "노래연습장업",
+          "n": 1375,
+          "median_nearby_active": 447.0,
+          "median_same_industry": 11.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 28.0,
+          "median_recent_closures": 37.0
+        },
+        {
+          "industry": "담배소매업",
+          "n": 6159,
+          "median_nearby_active": 361.0,
+          "median_same_industry": 29.0,
+          "median_industry_variety": 14.0,
+          "median_recent_openings": 23.0,
+          "median_recent_closures": 32.0
+        },
+        {
+          "industry": "당구장업",
+          "n": 445,
+          "median_nearby_active": 451.0,
+          "median_same_industry": 3.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 29.0,
+          "median_recent_closures": 39.0
+        },
+        {
+          "industry": "미용업",
+          "n": 10611,
+          "median_nearby_active": 441.0,
+          "median_same_industry": 73.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 30.0,
+          "median_recent_closures": 39.0
+        },
+        {
+          "industry": "세탁업",
+          "n": 948,
+          "median_nearby_active": 375.0,
+          "median_same_industry": 5.0,
+          "median_industry_variety": 14.0,
+          "median_recent_openings": 24.0,
+          "median_recent_closures": 34.0
+        },
+        {
+          "industry": "약국",
+          "n": 1387,
+          "median_nearby_active": 465.0,
+          "median_same_industry": 11.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 31.0,
+          "median_recent_closures": 42.0
+        },
+        {
+          "industry": "의원·병원",
+          "n": 4311,
+          "median_nearby_active": 513.0,
+          "median_same_industry": 43.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 35.0,
+          "median_recent_closures": 43.0
+        },
+        {
+          "industry": "인터넷컴퓨터게임시설제공업",
+          "n": 644,
+          "median_nearby_active": 450.0,
+          "median_same_industry": 6.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 29.0,
+          "median_recent_closures": 40.0
+        },
+        {
+          "industry": "일반음식점",
+          "n": 29087,
+          "median_nearby_active": 432.0,
+          "median_same_industry": 175.0,
+          "median_industry_variety": 14.0,
+          "median_recent_openings": 29.0,
+          "median_recent_closures": 39.0
+        },
+        {
+          "industry": "제과점영업",
+          "n": 993,
+          "median_nearby_active": 465.0,
+          "median_same_industry": 6.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 34.0,
+          "median_recent_closures": 41.0
+        },
+        {
+          "industry": "체력단련장업",
+          "n": 748,
+          "median_nearby_active": 483.0,
+          "median_same_industry": 6.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 35.0,
+          "median_recent_closures": 41.0
+        },
+        {
+          "industry": "체육도장업",
+          "n": 811,
+          "median_nearby_active": 371.0,
+          "median_same_industry": 5.0,
+          "median_industry_variety": 15.0,
+          "median_recent_openings": 25.0,
+          "median_recent_closures": 33.0
+        },
+        {
+          "industry": "축산판매업",
+          "n": 3431,
+          "median_nearby_active": 289.0,
+          "median_same_industry": 17.0,
+          "median_industry_variety": 14.0,
+          "median_recent_openings": 17.0,
+          "median_recent_closures": 26.0
+        },
+        {
+          "industry": "휴게음식점",
+          "n": 8948,
+          "median_nearby_active": 428.0,
+          "median_same_industry": 51.0,
+          "median_industry_variety": 14.0,
+          "median_recent_openings": 29.0,
+          "median_recent_closures": 38.0
+        }
+      ]
+    }
+  ],
+  "rows": 213404,
+  "local_dataset": "data/raw/d03/neighborhood_context.parquet",
+  "hashes": {
+    "stores": "156c3e4ac7b0a2dcb42f283d41f53741dbe552035c701eb87f3e7d89adecba62",
+    "features": "901e154db78b1fe3e58e3dc426692c51d995db73ab22ff88e3c21955a80d501c",
+    "script": "a4cce116d120184464a2214654226945377446ea006264f658275331fa057f19"
+  },
+  "limitations": [
+    "Latest coordinates and current snapshot reconstruct past permits; relocation and reporting availability unverified.",
+    "Counts represent permits, not verified independent storefronts; same-address permits retained.",
+    "Opening counts include entrants subsequently closed; flows are not automatically vacancy or stock change.",
+    "500m straight-line radius, self permit excluded, neighboring permits may share building.",
+    "Only 16 source industries/15 groups, not all commercial activities or proposed 42 industries.",
+    "60-day lag is a conservative assumption, not verified reporting delay.",
+    "Overlapping neighborhoods cannot be summed to city totals.",
+    "Current-date context has no completed future365-day outcome. No model fit or service changes."
+  ],
+  "validation": {
+    "brute_force_sample_rows": 6,
+    "counts_checked": 18,
+    "all_matched": true,
+    "raw_uid_duplicates": 139472,
+    "join_key": "source_row_id + as_of; source hash must match"
+  }
+}
