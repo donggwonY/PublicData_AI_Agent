@@ -30,5 +30,7 @@ def render_permit_trends(stores, reference_date, gu=None):
     table = shown.rename(columns={'industry':'업종', 'active_permits':'기록상 영업 인허가(건)', 'opened':'최근 1년 개업(건)', 'closure_reports':'최근 1년 폐업 신고(건)', 'previous_opened':'직전 365일 개업(건)', 'previous_closure_reports':'직전 365일 폐업 신고(건)', 'active_share_pct':'선택 지역 내 영업 인허가 비중(%)'})
     st.dataframe(table, hide_index=True, width='stretch')
     st.download_button('선택 결과 CSV 다운로드', data=permit_trends_csv(result, gu, None if selected == choices[0] else selected), file_name=f"permit_trends_{result['reference_date']}.csv", mime='text/csv', key='dash_trend_download')
+    if result.get('excluded_short_event_rows'):
+        st.caption(f"백화점·마트 식품관 등 다점포 자리에서 30일 이내 폐업한 단기 행사·팝업 등록 {result['excluded_short_event_rows']:,}건은 이 집계에서 제외했습니다.")
     if result['excluded_date_rows']:
         st.caption(f"개업·폐업 날짜가 없거나 일관되지 않은 기록 {result['excluded_date_rows']:,}건은 이 집계에서 제외했습니다.")

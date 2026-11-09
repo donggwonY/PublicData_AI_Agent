@@ -284,9 +284,25 @@ def _assign_dong(points: pd.DataFrame, poi: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
-def main() -> None:
+def _reuse(name: str, df: pd.DataFrame | None, out_dir) -> pd.DataFrame | None:
+    """원본 CSV 가 없으면 이전에 만든 parquet 을 그대로 다시 쓴다(주차장·전통시장, 2026-11-09)."""
+    if df is not None:
+        return df
+    for d in (out_dir, C.PROCESSED_DIR):
+        p = d / f"{name}.parquet"
+        if p.exists():
+            log(f"  {name}: 원본 없음 → 기존 {p} 재사용")
+            return pd.read_parquet(p)
+    return None
+
+
+def main(argv: list[str] | None = None) -> None:
+    import argparse
+    ap = argparse.ArgumentParser(description="보조 데이터 → 분석 테이블")
+    ap.add_argument("--out", type=Path, default=None, help="산출 폴더 (기본: config.PROCESSED_DIR)")
+    out_dir = ap.parse_args(argv).out or C.PROCESSED_DIR
     t0 = time.time()
-    C.PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     log("1/5 상가정보")
     poi, mapping = build_poi()
     if poi is None:
@@ -296,16 +312,16 @@ def main() -> None:
     log("3/5 지하철 승하차")
     station = build_station_traffic()
     log("4/5 주차장 · 전통시장")
-    park, market = build_parking(), build_market()
+    park, market = _reuse("parking", build_parking(), out_dir), _reuse("market", build_market(), out_dir)
     log("5/5 동네 맥락 집계")
     ctx = build_area_context(poi, pop, park, market)
 
-    poi.to_parquet(C.PROCESSED_DIR / "poi.parquet", index=False)
-    mapping.to_parquet(C.PROCESSED_DIR / "legal_admin_map.parquet", index=False)
-    ctx.to_parquet(C.PROCESSED_DIR / "area_context.parquet", index=False)
+    poi.to_parquet(out_dir / "poi.parquet", index=False)
+    mapping.to_parquet(out_dir / "legal_admin_map.parquet", index=False)
+    ctx.to_parquet(out_dir / "area_context.parquet", index=False)
     for name, df in (("station_traffic", station), ("parking", park), ("market", market)):
         if df is not None:
-            df.to_parquet(C.PROCESSED_DIR / f"{name}.parquet", index=False)
+            df.to_parquet(out_dir / f"{name}.parquet", index=False)
     log(f"완료 ({time.time() - t0:.0f}초) · 점포 {len(poi):,} · 행정동 {len(ctx)} · "
         f"역 {0 if station is None else len(station)} · 주차장 {0 if park is None else len(park)} · "
         f"시장 {0 if market is None else len(market)}")

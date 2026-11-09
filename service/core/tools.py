@@ -59,6 +59,9 @@ class DataStore:
             loaded.source, loaded.seconds, loaded.bytes_read, loaded.notes)
         self.meta = loaded.meta
         self.stores = f["stores"]
+        # 통계용 레코드: 단기 행사 등록(다점포·30일 이내 폐업)을 뺀다. 자리 이력은 self.stores 전체를 쓴다(2026-11-09).
+        self.stats_stores = (self.stores[~self.stores["short_event"].astype(bool)]
+                             if "short_event" in self.stores.columns else self.stores)
         self.units = f["units"].set_index("uid", drop=False)
         self.transitions = f["transitions"]
         self.cycle = f["area_cycle"]
@@ -126,8 +129,10 @@ def _basis(**extra) -> dict:
 
 @lru_cache(maxsize=1)
 def _services_label() -> str:
-    """'일반음식점·휴게음식점·제과점영업' — 업종을 확장해도 안내 문구가 따라오도록 meta 에서 만든다."""
-    return "·".join(k for k in store().meta["records"] if k != "통합")
+    """'일반음식점·휴게음식점·제과점영업' — 업종을 확장해도 안내 문구가 따라오도록 meta 에서 만든다.
+    업종이 많으면(42종 확장, 2026-11-09) 이름을 다 나열하지 않고 개수로 줄인다."""
+    names = [k for k in store().meta["records"] if k != "통합"]
+    return "·".join(names) if len(names) <= 8 else f"점포형 {len(names)}개 업종"
 
 
 def _resolve_area(gu: str | None = None, dong: str | None = None) -> tuple[str | None, list[str] | None, str]:
@@ -393,6 +398,7 @@ def get_unit_history(address: str, whole_building: bool = False, max_records: in
             "open": r["ld"], "close": r["cd"] if r["closed"] else "영업중",
             "name": r["name"], "service": r["service"], "category": r["category"], "floor": r["floor"],
             "years": _years(r["dur_days"]), "gap_from_previous_close_days": gap,
+            "short_event": bool(r.get("short_event", False)),
         })
         if r["closed"]:
             prev_close = r["cd"] if prev_close is None else max(prev_close, r["cd"])
@@ -421,7 +427,11 @@ def get_unit_history(address: str, whole_building: bool = False, max_records: in
             "first_open": recs["ld"].min(), "closures_since_2010": int(since["closed"].sum()),
             "avg_years_closed_since_2010": _years(since.loc[since["closed"], "dur_days"].mean()),
             "category_path": " → ".join(recs["category"].tolist()[-12:]),
+            "short_event_records": int(recs["short_event"].sum()) if "short_event" in recs else 0,
         },
+        "short_event_note": ("short_event=true 는 다점포 자리에서 30일 이내 폐업한 단기 행사·팝업 등록으로 추정되며 "
+                             "생존율·상권 사이클·개폐업 통계에서는 제외됩니다.")
+        if "short_event" in recs and recs["short_event"].any() else None,
         "by_category": by_cat.to_dict("records"),
         "timeline": timeline[-max_records:],
         "timeline_truncated": len(timeline) > max_records,
@@ -446,7 +456,7 @@ def get_survival_curve(category: str | None = None, gu: str | None = None, dong:
     service, cats, cat_label = _resolve_category(category)
     g, d, area_label = _resolve_area(gu, dong)
     since_year = int(since_year or C.SURVIVAL_START_YEAR)
-    st = s.stores
+    st = s.stats_stores
     base = st[st["ld"].dt.year >= since_year]        # 코호트: 이 연도 이후 개업분만
     # 불리언 마스크를 & 로 결합해 조건을 한 번에 적용한다(pandas 의 기본 필터링 방식)
     frame = base[_area_mask(base, g, d) & _cat_mask(base, service, cats)]
@@ -532,7 +542,7 @@ def get_market_cycle(gu: str | None = None, dong: str | None = None, years: int 
     row, series = _cycle_for(g, d)
 
     # 최근 3년 업태별 순증감 (어떤 업종이 들어오고 나가는지)
-    st = s.stores[_area_mask(s.stores, g, d)]
+    st = s.stats_stores[_area_mask(s.stats_stores, g, d)]
     t1 = s.ref - pd.DateOffset(years=C.CYCLE_WINDOW_YEARS)
     mv = pd.DataFrame({
         "opens": st[st["ld"] > t1].groupby("category").size(),
@@ -602,7 +612,7 @@ def find_risk_spots(gu: str | None = None, dong: str | None = None, min_closures
     """
     s = store()
     g, d, label = _resolve_area(gu, dong)
-    st = s.stores
+    st = s.stats_stores
     c = st[st["closed"] & (st["ld"].dt.year >= int(since_year)) & _area_mask(st, g, d)]
     agg = c.groupby("uid").agg(closures=("name", "size"), avg_days=("dur_days", "mean"),
                                names=("name", lambda x: " → ".join(x.tolist()[-5:])))
@@ -641,7 +651,7 @@ def compare_areas(areas: list[str], category: str | None = None, since_year: int
     if not areas:
         areas = ["중구", "동구", "서구", "남구", "북구", "수성구", "달서구", "달성군", "군위군"]
     service, cats, cat_label = _resolve_category(category)
-    base = s.stores[s.stores["ld"].dt.year >= int(since_year)]
+    base = s.stats_stores[s.stats_stores["ld"].dt.year >= int(since_year)]
     results, errors = [], []
     for a in areas:
         try:
@@ -829,7 +839,7 @@ def get_area_profile(gu: str | None = None, dong: str | None = None, top_n: int 
     legal = s.legal_admin
     legal_dongs = (legal.loc[(legal["gu"] == r["gu"]) & (legal["admin_dong"] == r["admin_dong"]), "legal_dong"]
                    .tolist() if legal is not None else [])
-    st = s.stores[(s.stores["gu"] == r["gu"]) & s.stores["dong"].isin(legal_dongs)]
+    st = s.stats_stores[(s.stats_stores["gu"] == r["gu"]) & s.stats_stores["dong"].isin(legal_dongs)]
     if len(st) >= C.MIN_GROUP_N:
         coh = st[st["ld"].dt.year >= C.SURVIVAL_START_YEAR]
         profile["license_based"] = {

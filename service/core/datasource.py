@@ -87,6 +87,8 @@ def load_db(url: str, version: int | None = None) -> Loaded:
         frames: dict[str, pd.DataFrame | None] = {}
         for t in TABLES:
             spec = [(c, dt) for c, dt in cols.get(t, []) if c not in ("version_id", "_row")]
+            if dtypes.get(t):   # 이후 버전이 열을 늘려도(2026-11-09) 이 버전에 있던 열만 읽는다
+                spec = [(c, dt) for c, dt in spec if c in dtypes[t]]
             if not spec:
                 if t in REQUIRED:
                     raise LookupError(f"{SCHEMA}.{t} 표가 없습니다.")

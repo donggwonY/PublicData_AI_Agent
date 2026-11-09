@@ -99,6 +99,18 @@ def clean(df: pd.DataFrame, quality: dict) -> tuple[pd.DataFrame, pd.Timestamp]:
     # '폐업' 외에 '취소', '말소'도 영업 종료로 본다
     df["closed"] = df["영업상태명"].fillna("").str.contains("폐업|취소|말소")
 
+    # 추출 시점보다 늦은 날짜는 입력 오류다(2026-11-08 받은 파일에 폐업일 2026-11-23 이 1건).
+    # 그대로 두면 기준일(ref)이 미래로 밀려 모든 공실 기간이 틀어진다. 상한 = 원본의 최종수정·갱신 시점 최댓값.
+    extracted = max(pd.to_datetime(df["최종수정시점"], errors="coerce").max(),
+                    pd.to_datetime(df["데이터갱신시점"], errors="coerce").max())
+    if pd.notna(extracted):
+        limit = extracted.normalize() + DAY
+        future_ld, future_cd = df["ld"] >= limit, df["cd"] >= limit
+        quality["date_after_extraction"] = {"license": int(future_ld.sum()), "close": int(future_cd.sum()),
+                                            "extracted_at": str(extracted.date())}
+        df.loc[future_ld, "ld"] = pd.NaT
+        df.loc[future_cd, "cd"] = pd.NaT  # 폐업 상태라면 아래 '폐업일 없음' 규칙으로 제외된다
+
     quality["missing_license_date"] = int(df["ld"].isna().sum())
     # 1900-01-01 같은 명백한 입력 오류 (담배소매업에서 4건 확인). 데이터 개방은 1960년대부터다.
     too_old = df["ld"].dt.year < 1960
@@ -112,8 +124,17 @@ def clean(df: pd.DataFrame, quality: dict) -> tuple[pd.DataFrame, pd.Timestamp]:
     quality["non_daegu_examples"] = (df.loc[~in_daegu, "지번주소"].fillna(df.loc[~in_daegu, "도로명주소"])
                                      .head(5).tolist())
 
-    # 분석에 쓸 수 있는 행만 남긴다: 대구 주소 + 개업일 있음 + (폐업인데 폐업일 없음) 아님 + 날짜 모순 아님
-    ok = in_daegu & df["ld"].notna() & ~(df["closed"] & df["cd"].isna()) & ~(df["cd"] < df["ld"])
+    # 점포가 아닌 판매 방식으로 등록된 인허가(예: 건강기능식품일반판매업의 전자상거래·방문판매)는 뺀다.
+    # 서비스 대상은 점포형 업종이고, 이런 등록은 자택·사무실 주소라 '자리'를 차지하지 않는다(2026-11-09).
+    raw_cat = df["업태구분명"].astype("string").str.strip().fillna(df["위생업태명"].astype("string").str.strip())
+    nonstore = pd.Series(False, index=df.index)
+    for svc, cats in C.NON_STOREFRONT_CATEGORIES.items():
+        nonstore |= df["service"].eq(svc) & raw_cat.isin(cats).fillna(False)
+    quality["non_storefront_excluded"] = {s: int((nonstore & df["service"].eq(s)).sum()) for s in C.NON_STOREFRONT_CATEGORIES}
+
+    # 분석에 쓸 수 있는 행만 남긴다: 대구 주소 + 개업일 있음 + (폐업인데 폐업일 없음) 아님 + 날짜 모순 아님 + 점포형
+    ok = (in_daegu & df["ld"].notna() & ~(df["closed"] & df["cd"].isna()) & ~(df["cd"] < df["ld"])
+          & ~nonstore)
     df = df[ok].copy()
     # 기준일 = 데이터에 등장하는 가장 늦은 날짜. 배치를 언제 돌리든 같은 데이터면 같은 결과가 나온다.
     ref = max(df["ld"].max(), df["cd"].max()).normalize()
@@ -204,6 +225,53 @@ def build_address(df: pd.DataFrame, quality: dict) -> pd.DataFrame:
     return df
 
 
+# ─────────────────────────── 3-1. 겸업 묶기 ───────────────────────────
+_CORP = r"\(주\)|㈜|주식회사|\(유\)|유한회사"
+
+
+def normalize_name(s: pd.Series) -> pd.Series:
+    """상호 비교용 정규화: 법인 표기·공백·기호를 지우고 소문자로."""
+    return (s.fillna("").str.replace(_CORP, "", regex=True)
+            .str.replace(r"[\s\(\)\[\]·.,\-_&/'\"]", "", regex=True).str.lower())
+
+
+def merge_concurrent_licenses(st: pd.DataFrame, ref: pd.Timestamp) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """같은 자리 + 겹치는 영업 기간 + 같은 상호 = 한 가게(점유자)로 묶는다 (2026-11-08 결정).
+
+    예) 약국이 동물약국을, 카페가 즉석판매제조가공업을, 편의점이 식품판매업(기타)을 함께 등록하면
+    인허가는 2건이지만 실제 가게는 하나다. 묶지 않으면 동시영업 수가 2가 되어 단독 자리가 다점포로 오판된다.
+
+    반환: (stores — 모든 인허가 + occupant_id·is_primary, occ — 한 행 = 점유자 1개)
+    occ 는 stores 와 같은 열을 가지므로 자리·전이·사이클·생존·공실 계산에 그대로 쓴다.
+      ld = 가장 이른 인허가일, 영업 중 = 하나라도 영업 중, cd = (모두 폐업이면) 가장 늦은 폐업일,
+      업종·업태·상호·면적·좌표 = 대표 인허가(config.SERVICES 순서가 빠른 업종 → 먼저 개업한 것).
+    """
+    st = st.copy()
+    st["_nm"] = normalize_name(st["name"])
+    st["_prio"] = st["service"].map({s: i for i, s in enumerate(C.SERVICES)})
+    st = st.sort_values(["uid", "_nm", "ld", "end"]).reset_index(drop=True)
+    # 같은 (자리, 상호) 안에서 시간순으로 훑으며, 앞선 기간들의 최대 종료일보다 늦게 시작하면 새 가게.
+    st["_cmax"] = st.groupby(["uid", "_nm"], sort=False)["end"].cummax()
+    prev_end = st.groupby(["uid", "_nm"], sort=False)["_cmax"].shift(1)
+    st = st.drop(columns="_cmax")
+    new_occ = prev_end.isna() | (st["ld"] > prev_end) | (st["_nm"] == "")  # 상호가 비면 묶지 않는다
+    st["occupant_id"] = new_occ.cumsum().astype("int64")
+
+    st = st.sort_values(["occupant_id", "_prio", "ld"])
+    st["is_primary"] = ~st.duplicated("occupant_id")
+    g = st.groupby("occupant_id")
+    occ = st[st["is_primary"]].set_index("occupant_id").copy()
+    occ["ld"] = g["ld"].min()
+    occ["closed"] = g["closed"].all()
+    occ["cd"] = g["cd"].max().where(occ["closed"])
+    occ["end"] = occ["cd"].where(occ["closed"], ref)
+    occ["dur_days"] = (occ["end"] - occ["ld"]).dt.days.clip(lower=0)
+    occ["n_licenses"] = g.size()
+    occ = occ.reset_index()
+    stores = st.drop(columns=["_nm", "_prio"]).sort_values(["uid", "ld", "end"]).reset_index(drop=True)
+    return stores, occ.drop(columns=["_nm", "_prio", "is_primary"])
+
+
 # ─────────────────────────── 4. 자리(unit) ───────────────────────────
 def max_concurrency(df: pd.DataFrame, ref: pd.Timestamp, tolerance_days: int) -> pd.Series:
     """시작=+1, 종료=-1 이벤트 누적합의 최댓값 = 동시 영업 점포 수 (기획서 문제2).
@@ -283,6 +351,19 @@ def build_units(st: pd.DataFrame, ref: pd.Timestamp) -> pd.DataFrame:
     units.loc[~units["vacant"], "vacancy_bucket"] = "영업중"
     units.index.name = "uid"
     return units.reset_index()
+
+
+# ─────────────────────────── 4-1. 단기 행사 등록 ───────────────────────────
+def flag_short_events(occ: pd.DataFrame, st: pd.DataFrame, units: pd.DataFrame,
+                      max_days: int | None = None) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """다점포 자리(최대 동시영업 2 이상)에서 max_days 이내에 폐업한 가게 = 단기 행사·팝업 등록(2026-11-09).
+    점유자(occ)와 인허가(st) 양쪽에 short_event 열을 붙인다. 통계에서만 빼고 자리 이력에는 남긴다."""
+    max_days = C.SHORT_EVENT_MAX_DAYS if max_days is None else max_days
+    multi = set(units.loc[~units["is_single_unit"], "uid"])
+    occ = occ.assign(short_event=occ["closed"] & (occ["dur_days"] <= max_days) & occ["uid"].isin(multi))
+    st = st.assign(short_event=st["occupant_id"].map(occ.set_index("occupant_id")["short_event"])
+                   .fillna(False).astype(bool))
+    return occ, st
 
 
 # ─────────────────────────── 5. 업종 전이 ───────────────────────────
@@ -419,9 +500,15 @@ def build_vacancy_area(units: pd.DataFrame) -> pd.DataFrame:
 
 
 # ─────────────────────────── main ───────────────────────────
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
+    import argparse
+    ap = argparse.ArgumentParser(description="인허가 원본 → 분석 테이블")
+    ap.add_argument("--out", type=Path, default=None,
+                    help="산출 폴더 (기본: config.PROCESSED_DIR). 비교용 빌드는 다른 폴더를 지정한다")
+    args = ap.parse_args(argv)
+    out_dir = args.out or C.PROCESSED_DIR
     t_start = time.time()
-    C.PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     log("1/8 원본 적재")
     df, quality = load_raw()
     log("2/8 정제")
@@ -434,20 +521,35 @@ def main() -> None:
             "floor", "도로명주소", "지번주소", "road_key", "lat", "lon", "area_m2", "관리번호", "개방자치단체코드"]
     st = df[keep].rename(columns={"도로명주소": "road_addr_raw", "지번주소": "jibun_addr_raw",
                                   "관리번호": "mgmt_no", "개방자치단체코드": "org_code"})
+    # 겸업 묶기: stores 에는 인허가 전부를 남기고, 이후 계산은 점유자(occ) 기준으로 한다
+    st, occ = merge_concurrent_licenses(st, ref)
+    quality["licenses"] = int(len(st))
+    quality["occupants"] = int(len(occ))
+    quality["merged_multi_license_occupants"] = int((occ["n_licenses"] > 1).sum())
+    log(f"    겸업 묶기: 인허가 {len(st):,}건 → 가게 {len(occ):,}곳 (2건 이상 묶인 가게 "
+        f"{quality['merged_multi_license_occupants']:,}곳)")
 
     log("4/8 자리(unit) 집계 · 동시영업 수 계산")
-    units = build_units(st, ref)
+    units = build_units(occ, ref)
+    # 단기 행사 등록(2026-11-09): 다점포 자리(백화점·마트 식품관 등)에서 30일 이내 폐업한 가게.
+    # 행사·팝업 판매대라 생존·사이클·개폐업 통계에서는 빼고, 자리 이력에는 표시와 함께 남긴다.
+    occ, st = flag_short_events(occ, st, units)
+    quality["short_event_excluded_from_stats"] = {
+        "occupants": int(occ["short_event"].sum()), "licenses": int(st["short_event"].sum()),
+        "by_service": occ.loc[occ["short_event"], "service"].value_counts().head(10).to_dict()}
+    stat = occ[~occ["short_event"]]
+    log(f"    단기 행사 등록(다점포·{C.SHORT_EVENT_MAX_DAYS}일 이내 폐업) {int(occ['short_event'].sum()):,}곳 → 통계 제외")
     log("5/8 업종 전이")
-    trans = build_transitions(st, units)
+    trans = build_transitions(occ, units)
     log("6/8 상권 사이클")
-    cycle, area_year = build_cycle(st, ref)
+    cycle, area_year = build_cycle(stat, ref)
     log("7/8 Kaplan-Meier 생존분석")
-    surv, decade = build_survival(st)
+    surv, decade = build_survival(stat)
     log("8/8 공실률")
     vac = build_vacancy_area(units)
 
     # 업종 확장 효과 (문제4): 일반음식점만 봤다면 공실로 오판했을 자리
-    latest = st.sort_values("ld").groupby("uid").tail(1).set_index("uid")
+    latest = occ.sort_values("ld").groupby("uid").tail(1).set_index("uid")
     switch = trans[(trans["from_service"] != trans["to_service"]) & (trans["to_closed"] == False)]  # noqa: E712
     switch_units = switch[switch["uid"].isin(latest.index[~latest["closed"]])]["uid"].nunique()
 
@@ -478,16 +580,16 @@ def main() -> None:
                                                "HANDOVER_TOLERANCE_DAYS", "CYCLE_WINDOW_YEARS", "CYCLE_MIN_EVENTS")},
     }
 
-    st.drop(columns=["end"]).to_parquet(C.PROCESSED_DIR / "stores.parquet", index=False)
-    units.to_parquet(C.PROCESSED_DIR / "units.parquet", index=False)
-    trans.to_parquet(C.PROCESSED_DIR / "transitions.parquet", index=False)
-    cycle.to_parquet(C.PROCESSED_DIR / "area_cycle.parquet", index=False)
-    area_year.to_parquet(C.PROCESSED_DIR / "area_year.parquet", index=False)
-    surv.to_parquet(C.PROCESSED_DIR / "survival.parquet", index=False)
-    vac.to_parquet(C.PROCESSED_DIR / "vacancy_area.parquet", index=False)
-    (C.PROCESSED_DIR / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2, default=str),
+    st.drop(columns=["end"]).to_parquet(out_dir / "stores.parquet", index=False)
+    units.to_parquet(out_dir / "units.parquet", index=False)
+    trans.to_parquet(out_dir / "transitions.parquet", index=False)
+    cycle.to_parquet(out_dir / "area_cycle.parquet", index=False)
+    area_year.to_parquet(out_dir / "area_year.parquet", index=False)
+    surv.to_parquet(out_dir / "survival.parquet", index=False)
+    vac.to_parquet(out_dir / "vacancy_area.parquet", index=False)
+    (out_dir / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2, default=str),
                                                encoding="utf-8")
-    log(f"완료 ({time.time() - t_start:.0f}초) → {C.PROCESSED_DIR}")
+    log(f"완료 ({time.time() - t_start:.0f}초) → {out_dir}")
 
 
 if __name__ == "__main__":

@@ -131,7 +131,12 @@ with st.sidebar:
     rec = META["records"]["통합"]
     services = [k for k in META["records"] if k != "통합"]
     first_year = min(int(v["date_min"][:4]) for k, v in META["records"].items() if k != "통합")
-    st.metric(f"누적 인허가 ({'+'.join(s.replace('영업', '') for s in services)})", f"{rec['total']:,}")
+    kpi_label = ('+'.join(s.replace('영업', '') for s in services) if len(services) <= 8
+                 else f"점포형 {len(services)}개 업종")
+    st.metric(f"누적 인허가 ({kpi_label})", f"{rec['total']:,}")
+    if len(services) > 8:
+        with st.expander("포함 업종 보기"):
+            st.caption(" · ".join(services))
     # 누적 수치를 '현재 점포 수'로 오해하기 쉬워 기간을 명시한다
     st.caption(f"{first_year}년부터 {META['reference_date'][:4]}년까지 문을 연 전체 기록 (현재 점포 수가 아님)")
     c1, c2 = st.columns(2)
@@ -257,7 +262,17 @@ with tab_dash:
     st.caption(f"기준일: {surv['basis']['reference_date']} · 대상: {surv['target']} · {surv['basis']['cohort']} · 표본 {surv['n']:,}건")
     st.caption("1년 내 폐업 신고 추정치는 100%−Kaplan–Meier 1년 생존율입니다. 표본 전체 중 신고 건수의 단순 비율이나 새 점포의 개별 예측 확률이 아닙니다.")
     st.caption("폐업 신고는 실제 사업 실패와 같지 않으며 행사장 영업 종료 등이 포함될 수 있습니다. 인허가 공백 후보는 실제 공실·임대 매물 여부를 확인한 결과가 아닙니다.")
-    st.caption("원천 업종명은 16개이며, 분석 보고서는 의원·병원을 합쳐 15그룹으로 집계합니다. 서비스의 원천 업종 조회에서는 의원·병원을 각각 유지합니다.")
+    _n_src = len(services)
+    _n_grp = len({"의원·병원" if s in ("의원", "병원") else s for s in services})
+    st.caption(f"원천 업종명은 {_n_src}개이며, 분석 보고서는 의원·병원을 합쳐 {_n_grp}그룹으로 집계합니다. "
+               "서비스의 원천 업종 조회에서는 의원·병원을 각각 유지합니다.")
+    _se = META.get("quality", {}).get("short_event_excluded_from_stats")
+    if _se:
+        st.caption(f"백화점·마트 식품관 등 다점포 자리에서 {C.SHORT_EVENT_MAX_DAYS}일 이내 폐업한 단기 행사·팝업 등록 "
+                   f"{_se['occupants']:,}곳은 생존율·상권 사이클·개폐업 통계에서 제외했습니다(자리 이력에는 표시).")
+    if META.get("quality", {}).get("occupants"):
+        st.caption("같은 자리·같은 상호로 기간이 겹치는 인허가(예: 편의점의 담배소매업+휴게음식점)는 한 가게로 묶어 "
+                   "자리·공백·생존·교체를 계산합니다. 누적 인허가 수는 묶기 전 건수입니다.")
 
     render_permit_trends(S.stores, S.ref, gu)
 

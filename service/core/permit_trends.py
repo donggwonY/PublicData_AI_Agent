@@ -8,6 +8,10 @@ def summarize_permit_trends(stores: pd.DataFrame, reference_date, gu: str | None
     f = stores.copy()
     if gu is not None:
         f = f[f['gu'].eq(gu)].copy()
+    # 단기 행사 등록(다점포·30일 이내 폐업)은 개폐업 현황에서 뺀다(2026-11-09). 열이 없는 이전 버전은 그대로.
+    short = f['short_event'].astype(bool) if 'short_event' in f.columns else pd.Series(False, index=f.index)
+    excluded_short = int(short.sum())
+    f = f[~short].copy()
     bad = f.ld.isna() | (f.closed & f.cd.isna()) | (f.cd < f.ld) | (~f.closed & f.cd.notna())
     excluded = int(bad.sum())
     f = f[~bad].copy()
@@ -26,7 +30,7 @@ def summarize_permit_trends(stores: pd.DataFrame, reference_date, gu: str | None
             'previous_window_first_day': str((previous_start + pd.Timedelta(days=1)).date()),
             'previous_window_last_day': str(start.date()),
             'window_first_day': str((start + pd.Timedelta(days=1)).date()),
-            'excluded_date_rows': excluded, 'source_service_count': int(stores.service.nunique()),
+            'excluded_date_rows': excluded, 'excluded_short_event_rows': excluded_short, 'source_service_count': int(stores.service.nunique()),
             'analysis_group_count': int(stores.service.replace({'의원':'의원·병원','병원':'의원·병원'}).nunique()),
             'rows': counts.to_dict('records')}
 

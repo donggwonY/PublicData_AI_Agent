@@ -54,6 +54,10 @@ def ddl(table: str, df: pd.DataFrame) -> list[str]:
              + (f',\n  primary key (version_id, {", ".join(chr(34) + k + chr(34) for k in PRIMARY_KEYS[table])})'
                 if table in PRIMARY_KEYS else "") + "\n)"]
     stmts.append(f'alter table {SCHEMA}."{table}" add column if not exists "_row" bigint')  # _row 도입 전에 만든 표
+    # 새 버전에 열이 늘어난 경우(예: 42종 확장의 stores.occupant_id·is_primary, 2026-11-09) 기존 표에 열을 더한다.
+    # 이전 버전 행에는 NULL 이 들어가며, 앱은 버전별 dtypes 로 읽으므로 이전 버전 조회에는 영향이 없다.
+    for c in df.columns:
+        stmts.append(f'alter table {SCHEMA}."{table}" add column if not exists "{c}" {pg_type(df[c])}')
     stmts.append(f'create index if not exists "{table}_version_row_idx" on {SCHEMA}."{table}" (version_id, "_row")')
     for cols_ in INDEXES.get(table, []):
         name = f'{table}_{"_".join(cols_)}_idx'

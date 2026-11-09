@@ -24,7 +24,7 @@ from core.tool_specs import TOOL_SPECS  # noqa: E402
 mcp = Server(
     "daegu-lifecycle",
     instructions=(
-        "대구 일반·휴게음식점 인허가 데이터 기반 상권 생애주기 분석 도구. "
+        "대구 점포형 인허가(음식·미용·의료·동물·오락·운동 등 42개 업종) 데이터 기반 상권 생애주기 분석 도구. "
         "답변 수치는 반드시 도구 반환값만 사용하고 표본 수와 정의를 함께 밝힐 것."
     ),
 )

@@ -1,14 +1,19 @@
 {
-  "reference_date": "2026-10-13",
-  "built_at": "2026-10-16 14:46:59",
+  "reference_date": "2026-11-06",
+  "built_at": "2026-11-09 22:50:11",
   "quality": {
-    "raw_rows": 226922,
+    "raw_rows": 299362,
     "duplicates_removed": 0,
-    "missing_license_date": 0,
+    "date_after_extraction": {
+      "license": 0,
+      "close": 1,
+      "extracted_at": "2026-11-07"
+    },
+    "missing_license_date": 1,
     "license_date_before_1960": 11,
-    "closed_without_close_date": 557,
+    "closed_without_close_date": 651,
     "date_contradiction": 1,
-    "non_daegu_address": 497,
+    "non_daegu_address": 531,
     "non_daegu_examples": [
       "경상북도 영천시 화남면 삼창리 198 ",
       "호",
@@ -16,66 +21,210 @@
       "호",
       "호"
     ],
-    "address_unparsed": 296,
+    "non_storefront_excluded": {
+      "건강기능식품일반판매업": 11278
+    },
+    "address_unparsed": 11640,
     "coord_fill_pct": {
-      "골프연습장업": 98.1,
+      "건강기능식품일반판매업": 98.0,
+      "골프연습장업": 97.9,
+      "관광식당": 100.0,
+      "관광유흥음식점업": 100.0,
       "노래연습장업": 97.6,
+      "단란주점영업": 96.5,
       "담배소매업": 87.9,
       "당구장업": 98.3,
-      "미용업": 97.3,
-      "병원": 93.2,
+      "동물미용업": 98.3,
+      "동물병원": 85.2,
+      "동물약국": 97.2,
+      "동물위탁관리업": 98.2,
+      "동물판매업": 97.6,
+      "목욕장업": 93.1,
+      "무도장업": 100.0,
+      "무도학원업": 97.4,
+      "미용업": 97.2,
+      "병원": 90.7,
+      "복합영상물제공업": 100.0,
+      "복합유통게임제공업": 100.0,
+      "비디오물감상실업": 99.4,
+      "비디오물소극장업": 100.0,
+      "비디오물시청제공업": 88.2,
       "세탁업": 94.2,
+      "식품판매업(기타)": 97.9,
+      "안경업": 96.8,
       "약국": 89.1,
+      "외국인전용유흥음식점업": 98.5,
+      "유흥주점영업": 94.3,
+      "의료유사업": 100.0,
       "의원": 95.2,
-      "인터넷컴퓨터게임시설제공업": 98.8,
+      "이용업": 94.7,
+      "인터넷컴퓨터게임시설제공업": 98.7,
+      "일반게임제공업": 96.5,
       "일반음식점": 95.9,
-      "제과점영업": 97.6,
+      "제과점영업": 97.3,
+      "즉석판매제조가공업": 98.1,
+      "청소년게임제공업": 98.4,
       "체력단련장업": 98.3,
       "체육도장업": 98.0,
-      "축산판매업": 94.7,
+      "축산판매업": 94.6,
       "휴게음식점": 97.5
+    },
+    "licenses": 286896,
+    "occupants": 272128,
+    "merged_multi_license_occupants": 11016,
+    "short_event_excluded_from_stats": {
+      "occupants": 17161,
+      "licenses": 17899,
+      "by_service": {
+        "즉석판매제조가공업": 11770,
+        "일반음식점": 2294,
+        "휴게음식점": 1861,
+        "제과점영업": 502,
+        "담배소매업": 261,
+        "건강기능식품일반판매업": 135,
+        "축산판매업": 133,
+        "미용업": 102,
+        "이용업": 24,
+        "인터넷컴퓨터게임시설제공업": 17
+      }
     }
   },
   "records": {
+    "건강기능식품일반판매업": {
+      "total": 9577,
+      "closed": 7114,
+      "active": 2463,
+      "unique_units": 3265,
+      "date_min": "2004-02-04",
+      "date_max": "2026-11-06"
+    },
     "골프연습장업": {
-      "total": 826,
-      "closed": 470,
+      "total": 827,
+      "closed": 471,
       "active": 356,
-      "unique_units": 767,
+      "unique_units": 769,
       "date_min": "1989-12-20",
-      "date_max": "2026-10-01"
+      "date_max": "2026-11-06"
+    },
+    "관광식당": {
+      "total": 1,
+      "closed": 1,
+      "active": 0,
+      "unique_units": 1,
+      "date_min": "2012-10-02",
+      "date_max": "2016-04-26"
+    },
+    "관광유흥음식점업": {
+      "total": 2,
+      "closed": 2,
+      "active": 0,
+      "unique_units": 2,
+      "date_min": "2010-03-24",
+      "date_max": "2022-02-09"
     },
     "노래연습장업": {
       "total": 3051,
-      "closed": 1675,
-      "active": 1376,
-      "unique_units": 2956,
+      "closed": 1678,
+      "active": 1373,
+      "unique_units": 2958,
       "date_min": "1992-02-02",
-      "date_max": "2026-10-06"
+      "date_max": "2026-10-27"
+    },
+    "단란주점영업": {
+      "total": 921,
+      "closed": 466,
+      "active": 455,
+      "unique_units": 856,
+      "date_min": "1989-07-12",
+      "date_max": "2026-10-30"
     },
     "담배소매업": {
-      "total": 33762,
-      "closed": 27343,
-      "active": 6419,
-      "unique_units": 16705,
+      "total": 33790,
+      "closed": 27370,
+      "active": 6420,
+      "unique_units": 16758,
       "date_min": "1961-10-15",
-      "date_max": "2026-10-13"
+      "date_max": "2026-11-06"
     },
     "당구장업": {
-      "total": 1910,
-      "closed": 1463,
-      "active": 447,
-      "unique_units": 1632,
+      "total": 1912,
+      "closed": 1464,
+      "active": 448,
+      "unique_units": 1639,
       "date_min": "1981-01-08",
-      "date_max": "2026-10-12"
+      "date_max": "2026-10-30"
+    },
+    "동물미용업": {
+      "total": 835,
+      "closed": 240,
+      "active": 595,
+      "unique_units": 482,
+      "date_min": "2018-04-06",
+      "date_max": "2026-11-04"
+    },
+    "동물병원": {
+      "total": 420,
+      "closed": 203,
+      "active": 217,
+      "unique_units": 364,
+      "date_min": "1966-06-01",
+      "date_max": "2026-08-10"
+    },
+    "동물약국": {
+      "total": 963,
+      "closed": 345,
+      "active": 618,
+      "unique_units": 808,
+      "date_min": "1981-07-01",
+      "date_max": "2026-11-06"
+    },
+    "동물위탁관리업": {
+      "total": 504,
+      "closed": 196,
+      "active": 308,
+      "unique_units": 338,
+      "date_min": "2018-04-07",
+      "date_max": "2026-11-04"
+    },
+    "동물판매업": {
+      "total": 421,
+      "closed": 305,
+      "active": 116,
+      "unique_units": 271,
+      "date_min": "2008-02-19",
+      "date_max": "2026-10-23"
+    },
+    "목욕장업": {
+      "total": 845,
+      "closed": 614,
+      "active": 231,
+      "unique_units": 753,
+      "date_min": "1960-11-25",
+      "date_max": "2026-10-14"
+    },
+    "무도장업": {
+      "total": 10,
+      "closed": 7,
+      "active": 3,
+      "unique_units": 9,
+      "date_min": "1991-10-12",
+      "date_max": "2021-07-06"
+    },
+    "무도학원업": {
+      "total": 268,
+      "closed": 197,
+      "active": 71,
+      "unique_units": 231,
+      "date_min": "1991-08-26",
+      "date_max": "2026-10-26"
     },
     "미용업": {
-      "total": 24931,
-      "closed": 14137,
-      "active": 10794,
-      "unique_units": 15804,
+      "total": 24991,
+      "closed": 14190,
+      "active": 10801,
+      "unique_units": 15853,
       "date_min": "1963-08-17",
-      "date_max": "2026-10-13"
+      "date_max": "2026-11-06"
     },
     "병원": {
       "total": 367,
@@ -85,194 +234,306 @@
       "date_min": "1962-08-22",
       "date_max": "2026-08-13"
     },
+    "복합영상물제공업": {
+      "total": 4,
+      "closed": 3,
+      "active": 1,
+      "unique_units": 4,
+      "date_min": "2013-01-15",
+      "date_max": "2020-10-30"
+    },
+    "복합유통게임제공업": {
+      "total": 91,
+      "closed": 50,
+      "active": 41,
+      "unique_units": 90,
+      "date_min": "1998-03-21",
+      "date_max": "2026-10-02"
+    },
+    "비디오물감상실업": {
+      "total": 181,
+      "closed": 162,
+      "active": 19,
+      "unique_units": 174,
+      "date_min": "1996-09-05",
+      "date_max": "2024-07-31"
+    },
+    "비디오물소극장업": {
+      "total": 7,
+      "closed": 5,
+      "active": 2,
+      "unique_units": 7,
+      "date_min": "2001-12-01",
+      "date_max": "2008-07-11"
+    },
+    "비디오물시청제공업": {
+      "total": 17,
+      "closed": 17,
+      "active": 0,
+      "unique_units": 17,
+      "date_min": "1996-07-05",
+      "date_max": "2019-01-16"
+    },
     "세탁업": {
       "total": 3585,
-      "closed": 2632,
-      "active": 953,
-      "unique_units": 3123,
+      "closed": 2634,
+      "active": 951,
+      "unique_units": 3120,
       "date_min": "1971-03-01",
-      "date_max": "2026-10-06"
+      "date_max": "2026-11-03"
+    },
+    "식품판매업(기타)": {
+      "total": 703,
+      "closed": 401,
+      "active": 302,
+      "unique_units": 542,
+      "date_min": "1990-05-12",
+      "date_max": "2026-11-02"
+    },
+    "안경업": {
+      "total": 965,
+      "closed": 303,
+      "active": 662,
+      "unique_units": 853,
+      "date_min": "1970-08-12",
+      "date_max": "2026-11-04"
     },
     "약국": {
-      "total": 3040,
-      "closed": 1636,
-      "active": 1404,
-      "unique_units": 2367,
+      "total": 3043,
+      "closed": 1641,
+      "active": 1402,
+      "unique_units": 2374,
       "date_min": "1961-08-18",
-      "date_max": "2026-10-06"
+      "date_max": "2026-11-05"
+    },
+    "외국인전용유흥음식점업": {
+      "total": 67,
+      "closed": 53,
+      "active": 14,
+      "unique_units": 58,
+      "date_min": "1999-12-09",
+      "date_max": "2026-07-07"
+    },
+    "유흥주점영업": {
+      "total": 2136,
+      "closed": 1007,
+      "active": 1129,
+      "unique_units": 1792,
+      "date_min": "1966-04-15",
+      "date_max": "2026-11-05"
+    },
+    "의료유사업": {
+      "total": 121,
+      "closed": 68,
+      "active": 53,
+      "unique_units": 117,
+      "date_min": "1985-01-19",
+      "date_max": "2026-07-30"
     },
     "의원": {
-      "total": 5782,
-      "closed": 1639,
-      "active": 4143,
-      "unique_units": 4478,
+      "total": 5789,
+      "closed": 1645,
+      "active": 4144,
+      "unique_units": 4517,
       "date_min": "1960-03-29",
-      "date_max": "2026-10-13"
+      "date_max": "2026-11-05"
+    },
+    "이용업": {
+      "total": 3421,
+      "closed": 2586,
+      "active": 835,
+      "unique_units": 2781,
+      "date_min": "1960-11-25",
+      "date_max": "2026-11-06"
     },
     "인터넷컴퓨터게임시설제공업": {
-      "total": 3001,
-      "closed": 2351,
-      "active": 650,
-      "unique_units": 2495,
+      "total": 3011,
+      "closed": 2362,
+      "active": 649,
+      "unique_units": 2511,
       "date_min": "2001-12-13",
-      "date_max": "2026-10-12"
+      "date_max": "2026-11-06"
+    },
+    "일반게임제공업": {
+      "total": 1904,
+      "closed": 1833,
+      "active": 71,
+      "unique_units": 1683,
+      "date_min": "1979-08-16",
+      "date_max": "2026-11-03"
     },
     "일반음식점": {
-      "total": 97438,
-      "closed": 68037,
-      "active": 29401,
-      "unique_units": 49480,
+      "total": 97697,
+      "closed": 68474,
+      "active": 29223,
+      "unique_units": 49697,
       "date_min": "1963-10-10",
-      "date_max": "2026-10-13"
+      "date_max": "2026-11-06"
     },
     "제과점영업": {
-      "total": 4046,
-      "closed": 3037,
-      "active": 1009,
-      "unique_units": 2723,
+      "total": 4063,
+      "closed": 3057,
+      "active": 1006,
+      "unique_units": 2724,
       "date_min": "1979-03-28",
-      "date_max": "2026-10-13"
+      "date_max": "2026-11-06"
+    },
+    "즉석판매제조가공업": {
+      "total": 34383,
+      "closed": 29802,
+      "active": 4581,
+      "unique_units": 11037,
+      "date_min": "1972-02-28",
+      "date_max": "2026-11-06"
+    },
+    "청소년게임제공업": {
+      "total": 1728,
+      "closed": 1424,
+      "active": 304,
+      "unique_units": 1378,
+      "date_min": "2007-05-23",
+      "date_max": "2026-11-05"
     },
     "체력단련장업": {
-      "total": 1328,
+      "total": 1332,
       "closed": 572,
-      "active": 756,
-      "unique_units": 1208,
+      "active": 760,
+      "unique_units": 1212,
       "date_min": "1990-06-15",
-      "date_max": "2026-10-12"
+      "date_max": "2026-11-05"
     },
     "체육도장업": {
-      "total": 1711,
-      "closed": 882,
-      "active": 829,
-      "unique_units": 1508,
+      "total": 1712,
+      "closed": 886,
+      "active": 826,
+      "unique_units": 1512,
       "date_min": "1971-09-29",
-      "date_max": "2026-10-12"
+      "date_max": "2026-11-04"
     },
     "축산판매업": {
-      "total": 9957,
-      "closed": 6315,
+      "total": 9974,
+      "closed": 6332,
       "active": 3642,
-      "unique_units": 7395,
+      "unique_units": 7405,
       "date_min": "1971-09-03",
-      "date_max": "2026-10-13"
+      "date_max": "2026-11-06"
     },
     "휴게음식점": {
-      "total": 31123,
-      "closed": 22000,
-      "active": 9123,
-      "unique_units": 18371,
+      "total": 31257,
+      "closed": 22146,
+      "active": 9111,
+      "unique_units": 18440,
       "date_min": "1965-10-09",
-      "date_max": "2026-10-13"
+      "date_max": "2026-11-06"
     },
     "통합": {
-      "total": 225858,
-      "closed": 154315,
-      "active": 71543,
-      "unique_units": 86386
+      "total": 286896,
+      "closed": 202452,
+      "active": 84444,
+      "unique_units": 95861
     }
   },
   "records_by_gu": {
-    "달서구": 45621,
-    "북구": 37189,
-    "수성구": 36182,
-    "동구": 29936,
-    "중구": 22215,
-    "서구": 19044,
-    "남구": 17075,
-    "달성군": 16585,
-    "군위군": 1969,
+    "달서구": 58782,
+    "북구": 47488,
+    "수성구": 45747,
+    "동구": 39235,
+    "중구": 29060,
+    "서구": 23272,
+    "남구": 20599,
+    "달성군": 20156,
+    "군위군": 2515,
     "님구": 1
   },
   "vacancy_buckets_all_vacant_units": {
-    "10년 이상": 21261,
-    "3~10년": 11067,
-    "1~3년": 3867,
-    "3개월~1년": 1862,
-    "3개월 미만": 476
+    "10년 이상": 23211,
+    "3~10년": 12747,
+    "1~3년": 4216,
+    "3개월~1년": 1983,
+    "3개월 미만": 644
   },
-  "recent_vacancy_units": 5729,
-  "single_unit_ratio_pct": 66.1,
+  "recent_vacancy_units": 6199,
+  "single_unit_ratio_pct": 65.9,
   "max_closures_all_units_top5": [
     {
       "addr": "대구광역시 중구 달구벌대로 2077 지하1층",
-      "n_closed": 1131,
-      "max_concurrent": 71
+      "n_closed": 1757,
+      "max_concurrent": 95
     },
     {
       "addr": "대구광역시 동구 동부로 149 지하1층",
-      "n_closed": 909,
-      "max_concurrent": 73
-    },
-    {
-      "addr": "대구광역시 수성구 들안로 38",
-      "n_closed": 271,
-      "max_concurrent": 48
-    },
-    {
-      "addr": "대구광역시 중구 큰장로26길 55",
-      "n_closed": 255,
-      "max_concurrent": 67
+      "n_closed": 1632,
+      "max_concurrent": 88
     },
     {
       "addr": "대구광역시 달서구 월배로 232 지하1층",
-      "n_closed": 250,
-      "max_concurrent": 33
+      "n_closed": 1093,
+      "max_concurrent": 49
+    },
+    {
+      "addr": "대구광역시 달서구 진천로 92 1층",
+      "n_closed": 818,
+      "max_concurrent": 34
+    },
+    {
+      "addr": "대구광역시 중구 명덕로 333",
+      "n_closed": 816,
+      "max_concurrent": 52
     }
   ],
   "max_closures_single_units_top5": [
+    {
+      "addr": "대구광역시 남구 중앙대로 261 2층",
+      "n_closed": 15,
+      "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업"
+    },
+    {
+      "addr": "대구광역시 북구 동암로12길 8 지하1층",
+      "n_closed": 12,
+      "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업"
+    },
     {
       "addr": "대구광역시 남구 명덕로 228-17",
       "n_closed": 12,
       "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
     },
     {
-      "addr": "대구광역시 달성군 논공읍 노이길 205",
+      "addr": "대구광역시 달서구 달구벌대로 1467 3층",
+      "n_closed": 12,
+      "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 기타 휴게음식점"
+    },
+    {
+      "addr": "대구광역시 동구 경안로 722 2층",
       "n_closed": 11,
-      "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
-    },
-    {
-      "addr": "대구광역시 수성구 달구벌대로650길 47 1층",
-      "n_closed": 11,
-      "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
-    },
-    {
-      "addr": "대구광역시 중구 남산로7길 50 1층",
-      "n_closed": 10,
-      "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
-    },
-    {
-      "addr": "대구광역시 달서구 성서공단로21길 100 1층",
-      "n_closed": 10,
-      "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
+      "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업"
     }
   ],
-  "service_switch_units": 3250,
+  "service_switch_units": 3999,
   "survival_by_decade_1y": [
     {
       "decade": "1980년대",
-      "n": 5207,
+      "n": 6230,
       "survival_1y_pct": 100.0
     },
     {
       "decade": "1990년대",
-      "n": 26967,
+      "n": 30284,
       "survival_1y_pct": 99.8
     },
     {
       "decade": "2000년대",
-      "n": 78935,
+      "n": 91418,
       "survival_1y_pct": 89.9
     },
     {
       "decade": "2010년대",
-      "n": 66950,
-      "survival_1y_pct": 88.3
+      "n": 76935,
+      "survival_1y_pct": 88.7
     },
     {
       "decade": "2020년대",
-      "n": 46596,
-      "survival_1y_pct": 83.2
+      "n": 48555,
+      "survival_1y_pct": 89.5
     }
   ],
   "params": {

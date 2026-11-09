@@ -94,3 +94,10 @@ AI 답변이 함수 결과에 없는 수치를 만들어내면 실패로 판단�
 `service/ui_permit_trends.py`는 기록상영업/개업/폐업신고 카드, 영업인허가수 상위10개 차트, 전체표를 표시한다. 점포순증감·공실·예측확률로 해석하지 않는다. UI 선택은 다른 기존 차트의 업종조건을 변경하지 않는다. 운영DB 쓰기·배포 변경 없음. 공개 반영은 담당자 deploy 절차가 필요하다.
 
 동일 영역은 직전365일 (기준일-730일, 기준일-365일]과 최근365일을 비교한다. 윤년 달력상 전년동일기간과 다를 수 있음을 표시한다. CSV는 선택한 지역·업종과 기준일/기간/업종범위/제외건수/정의를 포함하며 UTF8-BOM으로 반환한다. 다운로드 수치는 화면과 같은 계산결과를 사용한다.
+
+## 2026-11-09 점포형 42종 확장(v4) 준비 — 로컬, 배포 전
+- 범위: 서비스·분석·예측 대상을 점포형 인허가 42종으로 한정(결정 [e02 README](e02/README.md) 11-08). 근거·판정표 [service_expansion.md](e02/service_expansion.md).
+- 배치(`pipeline/build.py`): 추출 시점 이후 날짜 제외, 비점포 업태 제외(`NON_STOREFRONT_CATEGORIES`), 겸업 묶기(`occupant_id`·`is_primary`), 단기 행사 등록 표시(`short_event`, 다점포 자리 30일 이내 폐업), `--out` 비교 빌드. 보조 배치(`pipeline/external.py`): `--out`, 원본 없는 표 재사용.
+- 조회(`core/tools.py`): 생존·사이클·지역 비교·위험 자리·동네 프로필·개폐업 현황은 `short_event`를 뺀 `stats_stores`, 자리 이력은 전체 기록 + 표시. 업종이 많으면 "점포형 N개 업종"으로 표기.
+- DB: 적재 시 새 열 자동 추가, 앱은 버전별 `dtypes` 열만 읽음(v3·v4 공존 가능). 반영 순서는 v4 validated 적재 → `deploy` → v4 전환 → Reboot → 확인.
+- 표 정의 변경 상세: [data_contract.md](e02/data_contract.md) v4 절.
