@@ -1,0 +1,3321 @@
+{
+  "annual_source_rows": [
+    {
+      "district": "달성군",
+      "reference_year": 2007,
+      "establishments": 10803,
+      "workers": 52854,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2008,
+      "establishments": 11057,
+      "workers": 54794,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2009,
+      "establishments": 11229,
+      "workers": 56160,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2010,
+      "establishments": 12004,
+      "workers": 61253,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2011,
+      "establishments": 12593,
+      "workers": 65986,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2012,
+      "establishments": 13166,
+      "workers": 70369,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2009,
+      "establishments": 11229,
+      "workers": 56160,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2010,
+      "establishments": 12004,
+      "workers": 61253,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2011,
+      "establishments": 12593,
+      "workers": 65986,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2012,
+      "establishments": 13166,
+      "workers": 70369,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2013,
+      "establishments": 13762,
+      "workers": 75156,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2014,
+      "establishments": 14669,
+      "workers": 79536,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2011,
+      "establishments": 12593,
+      "workers": 65986,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2012,
+      "establishments": 13166,
+      "workers": 70369,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2013,
+      "establishments": 13762,
+      "workers": 75156,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2014,
+      "establishments": 14669,
+      "workers": 79536,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2015,
+      "establishments": 15895,
+      "workers": 88349,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2016,
+      "establishments": 16362,
+      "workers": 91896,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2012,
+      "establishments": 13166,
+      "workers": 70369,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2013,
+      "establishments": 13762,
+      "workers": 75156,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2014,
+      "establishments": 14669,
+      "workers": 79536,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2015,
+      "establishments": 15895,
+      "workers": 88349,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2016,
+      "establishments": 16362,
+      "workers": 91896,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2017,
+      "establishments": 17314,
+      "workers": 98008,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2013,
+      "establishments": 13762,
+      "workers": 75156,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2014,
+      "establishments": 14669,
+      "workers": 79536,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2015,
+      "establishments": 15895,
+      "workers": 88349,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2016,
+      "establishments": 16362,
+      "workers": 91896,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2017,
+      "establishments": 17314,
+      "workers": 98008,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2018,
+      "establishments": 18071,
+      "workers": 101944,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2014,
+      "establishments": 14669,
+      "workers": 79536,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2015,
+      "establishments": 15895,
+      "workers": 88349,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2016,
+      "establishments": 16362,
+      "workers": 91896,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2017,
+      "establishments": 17314,
+      "workers": 98008,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2018,
+      "establishments": 18071,
+      "workers": 101944,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2019,
+      "establishments": 18710,
+      "workers": 106122,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2015,
+      "establishments": 15895,
+      "workers": 88349,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2016,
+      "establishments": 16362,
+      "workers": 91896,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2017,
+      "establishments": 17314,
+      "workers": 98008,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2018,
+      "establishments": 18071,
+      "workers": 101944,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2019,
+      "establishments": 18710,
+      "workers": 106122,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2020,
+      "establishments": 26084,
+      "workers": 114764,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2016,
+      "establishments": 16362,
+      "workers": 91896,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2017,
+      "establishments": 17314,
+      "workers": 98008,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2018,
+      "establishments": 18071,
+      "workers": 101944,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2019,
+      "establishments": 18710,
+      "workers": 106122,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2020,
+      "establishments": 26084,
+      "workers": 114764,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2021,
+      "establishments": 26278,
+      "workers": 116098,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2017,
+      "establishments": 17314,
+      "workers": 98008,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2018,
+      "establishments": 18071,
+      "workers": 101944,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2019,
+      "establishments": 18710,
+      "workers": 106122,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2020,
+      "establishments": 26084,
+      "workers": 114764,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2021,
+      "establishments": 26278,
+      "workers": 116098,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2022,
+      "establishments": 26404,
+      "workers": 117880,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2018,
+      "establishments": 18071,
+      "workers": 101944,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2019,
+      "establishments": 18710,
+      "workers": 106122,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2020,
+      "establishments": 26084,
+      "workers": 114764,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2021,
+      "establishments": 26278,
+      "workers": 116098,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2022,
+      "establishments": 26404,
+      "workers": 117880,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html"
+    },
+    {
+      "district": "달성군",
+      "reference_year": 2023,
+      "establishments": 27083,
+      "workers": 118038,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2009,
+      "establishments": 24913,
+      "workers": 114766,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2010,
+      "establishments": 25202,
+      "workers": 113827,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2011,
+      "establishments": 26365,
+      "workers": 118593,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2012,
+      "establishments": 26579,
+      "workers": 119738,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2013,
+      "establishments": 26758,
+      "workers": 119532,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2014,
+      "establishments": 26764,
+      "workers": 120338,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2009,
+      "establishments": 24913,
+      "workers": 114766,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2010,
+      "establishments": 25202,
+      "workers": 113827,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2011,
+      "establishments": 26365,
+      "workers": 118593,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2012,
+      "establishments": 26579,
+      "workers": 119738,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2013,
+      "establishments": 26758,
+      "workers": 119532,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2014,
+      "establishments": 26764,
+      "workers": 120338,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2011,
+      "establishments": 26365,
+      "workers": 118593,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2012,
+      "establishments": 26579,
+      "workers": 119738,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2013,
+      "establishments": 26758,
+      "workers": 119532,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2014,
+      "establishments": 26764,
+      "workers": 120338,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2015,
+      "establishments": 26930,
+      "workers": 129999,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2016,
+      "establishments": 27298,
+      "workers": 131690,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2011,
+      "establishments": 26365,
+      "workers": 118593,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2012,
+      "establishments": 26579,
+      "workers": 119738,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2013,
+      "establishments": 26758,
+      "workers": 119532,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2014,
+      "establishments": 26764,
+      "workers": 120338,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2015,
+      "establishments": 26930,
+      "workers": 129999,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2016,
+      "establishments": 27298,
+      "workers": 131690,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2013,
+      "establishments": 26758,
+      "workers": 119532,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2014,
+      "establishments": 26764,
+      "workers": 120338,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2015,
+      "establishments": 26930,
+      "workers": 129999,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2016,
+      "establishments": 27298,
+      "workers": 131690,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2017,
+      "establishments": 27466,
+      "workers": 131221,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2018,
+      "establishments": 27557,
+      "workers": 144999,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2013,
+      "establishments": 26758,
+      "workers": 119532,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2014,
+      "establishments": 26764,
+      "workers": 120338,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2015,
+      "establishments": 26930,
+      "workers": 129999,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2016,
+      "establishments": 27298,
+      "workers": 131690,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2017,
+      "establishments": 27466,
+      "workers": 131221,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2018,
+      "establishments": 27557,
+      "workers": 144999,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2015,
+      "establishments": 26930,
+      "workers": 129999,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2016,
+      "establishments": 27298,
+      "workers": 131690,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2017,
+      "establishments": 27466,
+      "workers": 131221,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2018,
+      "establishments": 27557,
+      "workers": 144999,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2019,
+      "establishments": 27563,
+      "workers": 133665,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2020,
+      "establishments": 37852,
+      "workers": 147187,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2015,
+      "establishments": 26930,
+      "workers": 129999,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2016,
+      "establishments": 27298,
+      "workers": 131690,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2017,
+      "establishments": 27466,
+      "workers": 131221,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2018,
+      "establishments": 27557,
+      "workers": 144999,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2019,
+      "establishments": 27563,
+      "workers": 133665,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2020,
+      "establishments": 37852,
+      "workers": 147187,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2017,
+      "establishments": 27466,
+      "workers": 131221,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2018,
+      "establishments": 27557,
+      "workers": 144999,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2019,
+      "establishments": 27563,
+      "workers": 133665,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2020,
+      "establishments": 37852,
+      "workers": 147187,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2021,
+      "establishments": 36963,
+      "workers": 140216,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2022,
+      "establishments": 36566,
+      "workers": 142411,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040601.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2017,
+      "establishments": 27466,
+      "workers": 131221,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2018,
+      "establishments": 27557,
+      "workers": 144999,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2019,
+      "establishments": 27563,
+      "workers": 133665,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2020,
+      "establishments": 37852,
+      "workers": 147187,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2021,
+      "establishments": 36963,
+      "workers": 140216,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html"
+    },
+    {
+      "district": "수성구",
+      "reference_year": 2022,
+      "establishments": 36566,
+      "workers": 142411,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html"
+    }
+  ],
+  "local_source_rows": [
+    {
+      "district": "달성군",
+      "area_label": "화원",
+      "reference_year_inferred": 2012,
+      "reference_year_verified": false,
+      "establishments": 3541,
+      "workers": 11589,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "논공",
+      "reference_year_inferred": 2012,
+      "reference_year_verified": false,
+      "establishments": 2238,
+      "workers": 22350,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "다사",
+      "reference_year_inferred": 2012,
+      "reference_year_verified": false,
+      "establishments": 2913,
+      "workers": 12142,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "가창",
+      "reference_year_inferred": 2012,
+      "reference_year_verified": false,
+      "establishments": 525,
+      "workers": 3761,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "하빈",
+      "reference_year_inferred": 2012,
+      "reference_year_verified": false,
+      "establishments": 833,
+      "workers": 3468,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "옥포",
+      "reference_year_inferred": 2012,
+      "reference_year_verified": false,
+      "establishments": 1281,
+      "workers": 4746,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "현풍",
+      "reference_year_inferred": 2012,
+      "reference_year_verified": false,
+      "establishments": 1072,
+      "workers": 4597,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "유가",
+      "reference_year_inferred": 2012,
+      "reference_year_verified": false,
+      "establishments": 171,
+      "workers": 1602,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "구지",
+      "reference_year_inferred": 2012,
+      "reference_year_verified": false,
+      "establishments": 592,
+      "workers": 6114,
+      "edition_year": 2013,
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "화원",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 3690,
+      "workers": 12451,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "논공",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 2452,
+      "workers": 23840,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "다사",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 3395,
+      "workers": 15162,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "가창",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 580,
+      "workers": 4181,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "하빈",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1010,
+      "workers": 3780,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "옥포",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1362,
+      "workers": 4787,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "현풍",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1184,
+      "workers": 5149,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "유가",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 256,
+      "workers": 3435,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "구지",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 740,
+      "workers": 6751,
+      "edition_year": 2015,
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "화원",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 3564,
+      "workers": 13770,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "논공",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 2635,
+      "workers": 24561,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "다사",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 4065,
+      "workers": 18707,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "가창",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 614,
+      "workers": 4290,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "하빈",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1021,
+      "workers": 4590,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "옥포",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1591,
+      "workers": 5642,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "현풍",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1496,
+      "workers": 6697,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "유가",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 665,
+      "workers": 6474,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "구지",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 711,
+      "workers": 7165,
+      "edition_year": 2017,
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "화원",
+      "reference_year_inferred": 2017,
+      "reference_year_verified": false,
+      "establishments": 3521,
+      "workers": 13374,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "논공",
+      "reference_year_inferred": 2017,
+      "reference_year_verified": false,
+      "establishments": 2631,
+      "workers": 24915,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "다사",
+      "reference_year_inferred": 2017,
+      "reference_year_verified": false,
+      "establishments": 4442,
+      "workers": 20178,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "가창",
+      "reference_year_inferred": 2017,
+      "reference_year_verified": false,
+      "establishments": 626,
+      "workers": 4317,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "하빈",
+      "reference_year_inferred": 2017,
+      "reference_year_verified": false,
+      "establishments": 1008,
+      "workers": 4271,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "옥포",
+      "reference_year_inferred": 2017,
+      "reference_year_verified": false,
+      "establishments": 1708,
+      "workers": 5951,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "현풍",
+      "reference_year_inferred": 2017,
+      "reference_year_verified": false,
+      "establishments": 1646,
+      "workers": 7506,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "유가",
+      "reference_year_inferred": 2017,
+      "reference_year_verified": false,
+      "establishments": 924,
+      "workers": 8815,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "구지",
+      "reference_year_inferred": 2017,
+      "reference_year_verified": false,
+      "establishments": 808,
+      "workers": 8681,
+      "edition_year": 2018,
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "화원",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 3556,
+      "workers": 13870,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "논공",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 2659,
+      "workers": 24913,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "다사",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 4589,
+      "workers": 21075,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "유가",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1103,
+      "workers": 9327,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "옥포",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1783,
+      "workers": 6207,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "현풍",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1784,
+      "workers": 7871,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "가창",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 648,
+      "workers": 4671,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "하빈",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1008,
+      "workers": 4216,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "구지",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 941,
+      "workers": 9794,
+      "edition_year": 2019,
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "화원",
+      "reference_year_inferred": 2019,
+      "reference_year_verified": false,
+      "establishments": 3610,
+      "workers": 13780,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "논공",
+      "reference_year_inferred": 2019,
+      "reference_year_verified": false,
+      "establishments": 2694,
+      "workers": 25449,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "다사",
+      "reference_year_inferred": 2019,
+      "reference_year_verified": false,
+      "establishments": 4675,
+      "workers": 22225,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "유가",
+      "reference_year_inferred": 2019,
+      "reference_year_verified": false,
+      "establishments": 1287,
+      "workers": 10190,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "옥포",
+      "reference_year_inferred": 2019,
+      "reference_year_verified": false,
+      "establishments": 1810,
+      "workers": 6491,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "현풍",
+      "reference_year_inferred": 2019,
+      "reference_year_verified": false,
+      "establishments": 1891,
+      "workers": 8536,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "가창",
+      "reference_year_inferred": 2019,
+      "reference_year_verified": false,
+      "establishments": 659,
+      "workers": 4591,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "하빈",
+      "reference_year_inferred": 2019,
+      "reference_year_verified": false,
+      "establishments": 1013,
+      "workers": 4314,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "구지",
+      "reference_year_inferred": 2019,
+      "reference_year_verified": false,
+      "establishments": 1071,
+      "workers": 10546,
+      "edition_year": 2020,
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "화원",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 5256,
+      "workers": 16028,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "논공",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 3438,
+      "workers": 25758,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "다사",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 6576,
+      "workers": 23850,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "유가",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1906,
+      "workers": 10927,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "옥포",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 2495,
+      "workers": 7703,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "현풍",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 2571,
+      "workers": 9005,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "가창",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 902,
+      "workers": 5203,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "하빈",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1341,
+      "workers": 4608,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "구지",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1599,
+      "workers": 11682,
+      "edition_year": 2021,
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "화원",
+      "reference_year_inferred": 2021,
+      "reference_year_verified": false,
+      "establishments": 5156,
+      "workers": 15329,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "논공",
+      "reference_year_inferred": 2021,
+      "reference_year_verified": false,
+      "establishments": 3435,
+      "workers": 25660,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "다사",
+      "reference_year_inferred": 2021,
+      "reference_year_verified": false,
+      "establishments": 6622,
+      "workers": 24189,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "유가",
+      "reference_year_inferred": 2021,
+      "reference_year_verified": false,
+      "establishments": 1862,
+      "workers": 11824,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "옥포",
+      "reference_year_inferred": 2021,
+      "reference_year_verified": false,
+      "establishments": 2623,
+      "workers": 7532,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "현풍",
+      "reference_year_inferred": 2021,
+      "reference_year_verified": false,
+      "establishments": 2526,
+      "workers": 8922,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "가창",
+      "reference_year_inferred": 2021,
+      "reference_year_verified": false,
+      "establishments": 911,
+      "workers": 5683,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "하빈",
+      "reference_year_inferred": 2021,
+      "reference_year_verified": false,
+      "establishments": 1310,
+      "workers": 4374,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "구지",
+      "reference_year_inferred": 2021,
+      "reference_year_verified": false,
+      "establishments": 1833,
+      "workers": 12585,
+      "edition_year": 2022,
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "화원",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 5032,
+      "workers": 14880,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html",
+      "quality_hold": true
+    },
+    {
+      "district": "달성군",
+      "area_label": "논공",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 3345,
+      "workers": 25115,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html",
+      "quality_hold": true
+    },
+    {
+      "district": "달성군",
+      "area_label": "다사",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 6749,
+      "workers": 24793,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html",
+      "quality_hold": true
+    },
+    {
+      "district": "달성군",
+      "area_label": "유가",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1960,
+      "workers": 12144,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html",
+      "quality_hold": true
+    },
+    {
+      "district": "달성군",
+      "area_label": "옥포",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 2635,
+      "workers": 7448,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html",
+      "quality_hold": true
+    },
+    {
+      "district": "달성군",
+      "area_label": "현풍",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 2558,
+      "workers": 9561,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html",
+      "quality_hold": true
+    },
+    {
+      "district": "달성군",
+      "area_label": "가창",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 882,
+      "workers": 5093,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html",
+      "quality_hold": true
+    },
+    {
+      "district": "달성군",
+      "area_label": "하빈",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1304,
+      "workers": 4140,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html",
+      "quality_hold": true
+    },
+    {
+      "district": "달성군",
+      "area_label": "구지",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1939,
+      "workers": 14696,
+      "edition_year": 2023,
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html",
+      "quality_hold": true
+    },
+    {
+      "district": "달성군",
+      "area_label": "화원",
+      "reference_year_inferred": 2023,
+      "reference_year_verified": false,
+      "establishments": 4936,
+      "workers": 13990,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "논공",
+      "reference_year_inferred": 2023,
+      "reference_year_verified": false,
+      "establishments": 3309,
+      "workers": 24647,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "다사",
+      "reference_year_inferred": 2023,
+      "reference_year_verified": false,
+      "establishments": 6991,
+      "workers": 25143,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "유가",
+      "reference_year_inferred": 2023,
+      "reference_year_verified": false,
+      "establishments": 2096,
+      "workers": 11843,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "옥포",
+      "reference_year_inferred": 2023,
+      "reference_year_verified": false,
+      "establishments": 2744,
+      "workers": 7427,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "현풍",
+      "reference_year_inferred": 2023,
+      "reference_year_verified": false,
+      "establishments": 2787,
+      "workers": 10149,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "가창",
+      "reference_year_inferred": 2023,
+      "reference_year_verified": false,
+      "establishments": 874,
+      "workers": 4941,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "하빈",
+      "reference_year_inferred": 2023,
+      "reference_year_verified": false,
+      "establishments": 1295,
+      "workers": 4797,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "달성군",
+      "area_label": "구지",
+      "reference_year_inferred": 2023,
+      "reference_year_verified": false,
+      "establishments": 2051,
+      "workers": 15101,
+      "edition_year": 2024,
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어1동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1308,
+      "workers": 9278,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어2동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1271,
+      "workers": 9199,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어3동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1264,
+      "workers": 8787,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어4동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1249,
+      "workers": 4583,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌1동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1491,
+      "workers": 7182,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌2동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 917,
+      "workers": 4088,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌3동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1029,
+      "workers": 3819,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성1가동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 928,
+      "workers": 2374,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성2·3가동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1086,
+      "workers": 6748,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성4가동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 902,
+      "workers": 3369,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "황금1동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 625,
+      "workers": 1943,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "황금2동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1252,
+      "workers": 6699,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "중동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1165,
+      "workers": 5583,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "상동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1202,
+      "workers": 4636,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "파동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 675,
+      "workers": 2090,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "두산동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1370,
+      "workers": 6946,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "지산1동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1814,
+      "workers": 7571,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "지산2동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1183,
+      "workers": 3654,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범물1동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 691,
+      "workers": 2546,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범물2동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 780,
+      "workers": 2227,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산1동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1691,
+      "workers": 6445,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산2동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1420,
+      "workers": 6119,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산3동",
+      "reference_year_inferred": 2014,
+      "reference_year_verified": false,
+      "establishments": 1451,
+      "workers": 4452,
+      "edition_year": 2015,
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어1동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1335,
+      "workers": 10374,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어2동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1352,
+      "workers": 11521,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어3동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1273,
+      "workers": 9652,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어4동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1243,
+      "workers": 4866,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌1동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1507,
+      "workers": 8594,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌2동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 941,
+      "workers": 4523,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌3동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1111,
+      "workers": 4566,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성1가동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1034,
+      "workers": 2898,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성2·3가동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1055,
+      "workers": 5576,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성4가동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 906,
+      "workers": 3762,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "황금1동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 631,
+      "workers": 2059,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "황금2동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1308,
+      "workers": 7884,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "중동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1145,
+      "workers": 5222,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "상동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1221,
+      "workers": 5107,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "파동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 635,
+      "workers": 2497,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "두산동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1441,
+      "workers": 7875,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "지산1동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1802,
+      "workers": 8204,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "지산2동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1233,
+      "workers": 4225,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범물1동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 711,
+      "workers": 2570,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범물2동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 731,
+      "workers": 1965,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산1동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1786,
+      "workers": 6761,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산2동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1443,
+      "workers": 6166,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산3동",
+      "reference_year_inferred": 2016,
+      "reference_year_verified": false,
+      "establishments": 1454,
+      "workers": 4823,
+      "edition_year": 2017,
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어1동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1284,
+      "workers": 9747,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어2동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1404,
+      "workers": 11353,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어3동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1309,
+      "workers": 8887,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어4동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1240,
+      "workers": 4661,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌1동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1522,
+      "workers": 8356,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌2동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 896,
+      "workers": 4157,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌3동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1077,
+      "workers": 4419,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성1가동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1042,
+      "workers": 3240,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성2·3가동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1056,
+      "workers": 6266,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성4가동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 920,
+      "workers": 3576,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "황금1동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 630,
+      "workers": 1988,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "황금2동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1271,
+      "workers": 7253,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "중동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1039,
+      "workers": 4950,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "상동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1281,
+      "workers": 5133,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "파동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 684,
+      "workers": 2510,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "두산동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1485,
+      "workers": 19955,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "지산1동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1828,
+      "workers": 8786,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "지산2동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1263,
+      "workers": 4413,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범물1동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 710,
+      "workers": 2651,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범물2동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 760,
+      "workers": 2570,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산1동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1812,
+      "workers": 7309,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산2동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1540,
+      "workers": 7577,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산3동",
+      "reference_year_inferred": 2018,
+      "reference_year_verified": false,
+      "establishments": 1504,
+      "workers": 5242,
+      "edition_year": 2019,
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어1동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1726,
+      "workers": 9545,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어2동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 2184,
+      "workers": 17759,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어3동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1797,
+      "workers": 8644,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어4동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1679,
+      "workers": 5256,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌1동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 2021,
+      "workers": 8606,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌2동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1235,
+      "workers": 4554,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌3동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1434,
+      "workers": 4566,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성1가동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1351,
+      "workers": 3472,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성2·3가동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1376,
+      "workers": 6900,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성4가동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1189,
+      "workers": 3956,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "황금1동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 911,
+      "workers": 2540,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "황금2동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1831,
+      "workers": 7122,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "중동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1830,
+      "workers": 5918,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "상동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1833,
+      "workers": 5738,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "파동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 900,
+      "workers": 2677,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "두산동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 2123,
+      "workers": 8640,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "지산1동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 2458,
+      "workers": 9371,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "지산2동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1587,
+      "workers": 4485,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범물1동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 874,
+      "workers": 2984,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범물2동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 1054,
+      "workers": 2930,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산1동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 2098,
+      "workers": 6607,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산2동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 2314,
+      "workers": 9381,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산3동",
+      "reference_year_inferred": 2020,
+      "reference_year_verified": false,
+      "establishments": 2047,
+      "workers": 5536,
+      "edition_year": 2021,
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어1동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1711,
+      "workers": 8717,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어2동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1978,
+      "workers": 12743,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어3동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1797,
+      "workers": 8897,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범어4동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1779,
+      "workers": 5363,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌1동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1950,
+      "workers": 8562,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌2동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1109,
+      "workers": 4580,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "만촌3동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1407,
+      "workers": 4505,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성1가동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1264,
+      "workers": 3312,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성2·3가동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1378,
+      "workers": 6603,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "수성4가동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1130,
+      "workers": 3919,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "황금1동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 978,
+      "workers": 2688,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "황금2동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1688,
+      "workers": 7000,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "중동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1391,
+      "workers": 4895,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "상동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1689,
+      "workers": 5501,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "파동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 802,
+      "workers": 2866,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "두산동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 2117,
+      "workers": 9126,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "지산1동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 2353,
+      "workers": 8853,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "지산2동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1544,
+      "workers": 4461,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범물1동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 811,
+      "workers": 2813,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "범물2동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 1077,
+      "workers": 2934,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산1동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 2115,
+      "workers": 6528,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산2동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 2447,
+      "workers": 11820,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    },
+    {
+      "district": "수성구",
+      "area_label": "고산3동",
+      "reference_year_inferred": 2022,
+      "reference_year_verified": false,
+      "establishments": 2051,
+      "workers": 5725,
+      "edition_year": 2023,
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "quality_hold": false
+    }
+  ],
+  "sum_checks": [
+    {
+      "source": "https://dalseong.daegu.kr/tong2013/040603.html",
+      "local_rows": 9,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://dalseong.daegu.kr/tong2015/040603.html",
+      "local_rows": 9,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://dalseong.daegu.kr/tong2017/040603.html",
+      "local_rows": 9,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://dalseong.daegu.kr/tong2018/040603.html",
+      "local_rows": 9,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://dalseong.daegu.kr/tong2019/040603.html",
+      "local_rows": 9,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://dalseong.daegu.kr/tong2020/040603.html",
+      "local_rows": 9,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://dalseong.daegu.kr/tong2021/040603.html",
+      "local_rows": 9,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://dalseong.daegu.kr/tong2022/040603.html",
+      "local_rows": 9,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://dalseong.daegu.kr/tong2023/040603.html",
+      "local_rows": 9,
+      "establishments_sum_match": true,
+      "workers_sum_match": false
+    },
+    {
+      "source": "https://dalseong.daegu.kr/tong2024/040603.html",
+      "local_rows": 9,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://stat.suseong.kr/2015st/040603.html",
+      "local_rows": 23,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://stat.suseong.kr/2017st/040603.html",
+      "local_rows": 23,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://stat.suseong.kr/2019st/040603.html",
+      "local_rows": 23,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://stat.suseong.kr/2021st/040603.html",
+      "local_rows": 23,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    },
+    {
+      "source": "https://stat.suseong.kr/2023st/040603.html",
+      "local_rows": 23,
+      "establishments_sum_match": true,
+      "workers_sum_match": true
+    }
+  ],
+  "cross_edition_conflicts": [],
+  "unique_district_years": 31,
+  "limitations": [
+    "Edition provenance retained; duplicate yearbook observations must not be summed.",
+    "Local area year inferred from latest annual row, not independently verified publication date.",
+    "2020 census scope change not corrected.",
+    "Not model input: publication dates, historical area mapping and revisions need verification."
+  ]
+}

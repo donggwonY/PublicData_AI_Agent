@@ -29,6 +29,7 @@ import streamlit as st
 import config as C
 from agent import API_KEY_ENV, create_agent
 from core import tools as T
+from ui_permit_trends import render_permit_trends
 from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_chart, _map, metric_value
 
 st.set_page_config(page_title="대구 상권 생애주기 AI 에이전트", page_icon="🏪", layout="wide")
@@ -257,6 +258,8 @@ with tab_dash:
     st.caption("1년 내 폐업 신고 추정치는 100%−Kaplan–Meier 1년 생존율입니다. 표본 전체 중 신고 건수의 단순 비율이나 새 점포의 개별 예측 확률이 아닙니다.")
     st.caption("폐업 신고는 실제 사업 실패와 같지 않으며 행사장 영업 종료 등이 포함될 수 있습니다. 인허가 공백 후보는 실제 공실·임대 매물 여부를 확인한 결과가 아닙니다.")
     st.caption("원천 업종명은 16개이며, 분석 보고서는 의원·병원을 합쳐 15그룹으로 집계합니다. 서비스의 원천 업종 조회에서는 의원·병원을 각각 유지합니다.")
+
+    render_permit_trends(S.stores, S.ref, gu)
 
     left, right = st.columns(2)
     with left:
