@@ -238,7 +238,20 @@ def build_area_context(poi: pd.DataFrame, pop: pd.DataFrame | None, park: pd.Dat
     ctx = pd.DataFrame(rows)
 
     if pop is not None:
-        ctx = ctx.merge(pop, on=["gu", "admin_dong"], how="left")
+        # 읍 승격·면 환원으로 두 자료의 이름이 다를 수 있다(예: 상가정보 '구지면' ↔ 인구 '구지읍', 2026-11-09).
+        # 그대로 맞지 않는 행정동은 끝 글자 면↔읍만 바꿔 한 번 더 맞춘다.
+        names = set(zip(pop["gu"], pop["admin_dong"]))
+        swap = {"면": "읍", "읍": "면"}
+        key = [d if (g, d) in names or not isinstance(d, str) or d[-1:] not in swap
+               or (g, d[:-1] + swap[d[-1]]) not in names else d[:-1] + swap[d[-1]]
+               for g, d in zip(ctx["gu"], ctx["admin_dong"])]
+        ctx = ctx.assign(_pop_key=key).merge(pop.rename(columns={"admin_dong": "_pop_key"}),
+                                             on=["gu", "_pop_key"], how="left").drop(columns="_pop_key")
+        # 인구 수는 결측이 있어도 정수형을 유지한다(DB 열이 bigint).
+        for c in ["pop_total", "pop_male", "pop_female", *AGE_BUCKETS]:
+            if c in ctx:
+                v = ctx[c].round().astype("Int64")
+                ctx[c] = v.astype("int64") if v.notna().all() else v
     # 좌표만 있는 시설은 가장 가까운 점포의 행정동에 배정해 집계한다
     for src, prefix, value_col in ((park, "parking", "slots"), (market, "market", "stores")):
         if src is None:
