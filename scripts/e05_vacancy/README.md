@@ -35,5 +35,6 @@ E05_WORK=<작업폴더> E05_AUX=<보조폴더> PY=<실험 python> SVC_PY=service
 | 4 | `run_sangga.py`(`sangga.py`) → `test_sangga.py` → `models_sangga.py` | 상가정보 변수·누수 테스트·비교 `sangga_report.json`, `test_sangga_result.json`, `models_sangga.json` |
 | 5 | `final_test.py` | 평가 구간 최종 `final_test.json` |
 | 6 | `leakage_compare.py` → `leakage_ablation.py` | 누수 비교 `leakage_compare.json` |
+| 7 | `conditional_check.py` (2026-11-10 추가, `run_all.sh` 밖에서 따로 실행) | 오래 빈 자리 조건부 확률 사후 점검 `conditional_check.json`(약 11분) |
 
 결과 json 사본은 `docs/e05/results/`에 있다.
