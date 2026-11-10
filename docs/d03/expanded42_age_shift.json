@@ -1,0 +1,4565 @@
+{
+  "cal_year": 2021,
+  "test_year": 2023,
+  "rows": [
+    {
+      "industry": "미용업",
+      "gu": "군위군",
+      "total_change_pp": 5.263157894736842,
+      "composition_change_pp": 0.0,
+      "within_band_change_pp": 5.2631578947368425,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 2,
+          "test_n": 0,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": null,
+          "rate_change_pp": null,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 1,
+          "test_n": 6,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 2,
+          "test_n": 1,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 1,
+          "test_n": 2,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 29,
+          "test_n": 29,
+          "cal_events": 0,
+          "test_events": 2,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 6.896551724137931,
+          "rate_change_pp": 6.896551724137931,
+          "weighted_change_pp": 5.2631578947368425,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "미용업",
+      "gu": "남구",
+      "total_change_pp": -2.138472934541939,
+      "composition_change_pp": -0.20653769374960085,
+      "within_band_change_pp": -1.9319352407923387,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 68,
+          "test_n": 80,
+          "cal_events": 9,
+          "test_events": 4,
+          "cal_rate_pct": 13.23529411764706,
+          "test_rate_pct": 5.0,
+          "rate_change_pp": -8.23529411764706,
+          "weighted_change_pp": -0.9188612683567152,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 129,
+          "test_n": 106,
+          "cal_events": 21,
+          "test_events": 11,
+          "cal_rate_pct": 16.27906976744186,
+          "test_rate_pct": 10.377358490566039,
+          "rate_change_pp": -5.901711276875822,
+          "weighted_change_pp": -0.8724984593428692,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 74,
+          "test_n": 97,
+          "cal_events": 7,
+          "test_events": 12,
+          "cal_rate_pct": 9.45945945945946,
+          "test_rate_pct": 12.371134020618557,
+          "rate_change_pp": 2.9116745611590975,
+          "weighted_change_pp": 0.3939085529043688,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 121,
+          "test_n": 125,
+          "cal_events": 10,
+          "test_events": 10,
+          "cal_rate_pct": 8.264462809917356,
+          "test_rate_pct": 8.0,
+          "rate_change_pp": -0.26446280991735627,
+          "weighted_change_pp": -0.04610578973454608,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 299,
+          "test_n": 309,
+          "cal_events": 15,
+          "test_events": 12,
+          "cal_rate_pct": 5.016722408026756,
+          "test_rate_pct": 3.8834951456310676,
+          "rate_change_pp": -1.1332272623956885,
+          "weighted_change_pp": -0.48837827626257707,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "미용업",
+      "gu": "달서구",
+      "total_change_pp": -1.675135421083036,
+      "composition_change_pp": -0.018150284221889024,
+      "within_band_change_pp": -1.656985136861148,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 200,
+          "test_n": 213,
+          "cal_events": 20,
+          "test_events": 21,
+          "cal_rate_pct": 10.0,
+          "test_rate_pct": 9.859154929577464,
+          "rate_change_pp": -0.1408450704225359,
+          "weighted_change_pp": -0.013410818059901722,
+          "small_sample": false
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 380,
+          "test_n": 383,
+          "cal_events": 48,
+          "test_events": 29,
+          "cal_rate_pct": 12.631578947368421,
+          "test_rate_pct": 7.5718015665796345,
+          "rate_change_pp": -5.059777380788787,
+          "weighted_change_pp": -0.8662917911676822,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 272,
+          "test_n": 306,
+          "cal_events": 36,
+          "test_events": 22,
+          "cal_rate_pct": 13.23529411764706,
+          "test_rate_pct": 7.18954248366013,
+          "rate_change_pp": -6.04575163398693,
+          "weighted_change_pp": -0.8270004470272688,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 491,
+          "test_n": 532,
+          "cal_events": 32,
+          "test_events": 44,
+          "cal_rate_pct": 6.517311608961303,
+          "test_rate_pct": 8.270676691729323,
+          "rate_change_pp": 1.7533650827680196,
+          "weighted_change_pp": 0.41698266608519735,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 751,
+          "test_n": 803,
+          "cal_events": 32,
+          "test_events": 26,
+          "cal_rate_pct": 4.26098535286285,
+          "test_rate_pct": 3.23785803237858,
+          "rate_change_pp": -1.02312732048427,
+          "weighted_change_pp": -0.3672647466914925,
+          "small_sample": false
+        }
+      ]
+    },
+    {
+      "industry": "미용업",
+      "gu": "달성군",
+      "total_change_pp": -0.6375227686703093,
+      "composition_change_pp": 0.07569844347304322,
+      "within_band_change_pp": -0.7132212121433529,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 67,
+          "test_n": 67,
+          "cal_events": 5,
+          "test_events": 4,
+          "cal_rate_pct": 7.462686567164178,
+          "test_rate_pct": 5.970149253731343,
+          "rate_change_pp": -1.4925373134328357,
+          "weighted_change_pp": -0.13661202185792348,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 131,
+          "test_n": 134,
+          "cal_events": 12,
+          "test_events": 8,
+          "cal_rate_pct": 9.16030534351145,
+          "test_rate_pct": 5.970149253731343,
+          "rate_change_pp": -3.190156089780107,
+          "weighted_change_pp": -0.5839903224460852,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 131,
+          "test_n": 107,
+          "cal_events": 5,
+          "test_events": 9,
+          "cal_rate_pct": 3.816793893129771,
+          "test_rate_pct": 8.411214953271028,
+          "rate_change_pp": 4.594421060141256,
+          "weighted_change_pp": 0.6715888708129978,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 108,
+          "test_n": 169,
+          "cal_events": 7,
+          "test_events": 12,
+          "cal_rate_pct": 6.481481481481481,
+          "test_rate_pct": 7.100591715976331,
+          "rate_change_pp": 0.6191102344948503,
+          "weighted_change_pp": 0.1429366524994941,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 229,
+          "test_n": 255,
+          "cal_events": 8,
+          "test_events": 3,
+          "cal_rate_pct": 3.4934497816593884,
+          "test_rate_pct": 1.1764705882352942,
+          "rate_change_pp": -2.3169791934240944,
+          "weighted_change_pp": -0.8071443911518361,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "미용업",
+      "gu": "동구",
+      "total_change_pp": -1.14202228970497,
+      "composition_change_pp": 0.17950324075967483,
+      "within_band_change_pp": -1.3215255304646458,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 96,
+          "test_n": 128,
+          "cal_events": 12,
+          "test_events": 12,
+          "cal_rate_pct": 12.5,
+          "test_rate_pct": 9.375,
+          "rate_change_pp": -3.125,
+          "weighted_change_pp": -0.33472803347280333,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 214,
+          "test_n": 189,
+          "cal_events": 14,
+          "test_events": 14,
+          "cal_rate_pct": 6.5420560747663545,
+          "test_rate_pct": 7.4074074074074066,
+          "rate_change_pp": 0.865351332641052,
+          "weighted_change_pp": 0.1368630977984593,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 143,
+          "test_n": 178,
+          "cal_events": 13,
+          "test_events": 11,
+          "cal_rate_pct": 9.090909090909092,
+          "test_rate_pct": 6.179775280898876,
+          "rate_change_pp": -2.9111338100102158,
+          "weighted_change_pp": -0.43362495245340454,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 216,
+          "test_n": 242,
+          "cal_events": 16,
+          "test_events": 14,
+          "cal_rate_pct": 7.4074074074074066,
+          "test_rate_pct": 5.785123966942149,
+          "rate_change_pp": -1.6222834404652575,
+          "weighted_change_pp": -0.3285293661862697,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 425,
+          "test_n": 458,
+          "cal_events": 17,
+          "test_events": 14,
+          "cal_rate_pct": 4.0,
+          "test_rate_pct": 3.056768558951965,
+          "rate_change_pp": -0.9432314410480349,
+          "weighted_change_pp": -0.3615062761506276,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "미용업",
+      "gu": "북구",
+      "total_change_pp": -1.2179305791360129,
+      "composition_change_pp": 0.0860330887037577,
+      "within_band_change_pp": -1.303963667839771,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 108,
+          "test_n": 153,
+          "cal_events": 11,
+          "test_events": 10,
+          "cal_rate_pct": 10.185185185185185,
+          "test_rate_pct": 6.535947712418301,
+          "rate_change_pp": -3.6492374727668837,
+          "weighted_change_pp": -0.36732456140350866,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 215,
+          "test_n": 226,
+          "cal_events": 18,
+          "test_events": 22,
+          "cal_rate_pct": 8.372093023255815,
+          "test_rate_pct": 9.734513274336283,
+          "rate_change_pp": 1.3624202510804686,
+          "weighted_change_pp": 0.2025703794369644,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 197,
+          "test_n": 186,
+          "cal_events": 12,
+          "test_events": 15,
+          "cal_rate_pct": 6.091370558375635,
+          "test_rate_pct": 8.064516129032258,
+          "rate_change_pp": 1.973145570656623,
+          "weighted_change_pp": 0.24145070798824467,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 314,
+          "test_n": 344,
+          "cal_events": 27,
+          "test_events": 20,
+          "cal_rate_pct": 8.598726114649681,
+          "test_rate_pct": 5.813953488372093,
+          "rate_change_pp": -2.7847726262775883,
+          "weighted_change_pp": -0.6302380154207173,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 561,
+          "test_n": 611,
+          "cal_events": 27,
+          "test_events": 18,
+          "cal_rate_pct": 4.81283422459893,
+          "test_rate_pct": 2.9459901800327333,
+          "rate_change_pp": -1.866844044566197,
+          "weighted_change_pp": -0.7504221784407542,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "미용업",
+      "gu": "서구",
+      "total_change_pp": -2.105697434792682,
+      "composition_change_pp": -0.13804459196909402,
+      "within_band_change_pp": -1.9676528428235882,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 47,
+          "test_n": 50,
+          "cal_events": 9,
+          "test_events": 3,
+          "cal_rate_pct": 19.148936170212767,
+          "test_rate_pct": 6.0,
+          "rate_change_pp": -13.148936170212767,
+          "weighted_change_pp": -0.9272874591123249,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 76,
+          "test_n": 71,
+          "cal_events": 8,
+          "test_events": 7,
+          "cal_rate_pct": 10.526315789473683,
+          "test_rate_pct": 9.859154929577464,
+          "rate_change_pp": -0.6671608598962191,
+          "weighted_change_pp": -0.06681018484151136,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 62,
+          "test_n": 60,
+          "cal_events": 6,
+          "test_events": 5,
+          "cal_rate_pct": 9.67741935483871,
+          "test_rate_pct": 8.333333333333332,
+          "rate_change_pp": -1.3440860215053778,
+          "weighted_change_pp": -0.11374493835024353,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 127,
+          "test_n": 124,
+          "cal_events": 13,
+          "test_events": 6,
+          "cal_rate_pct": 10.236220472440944,
+          "test_rate_pct": 4.838709677419355,
+          "rate_change_pp": -5.3975107950215895,
+          "weighted_change_pp": -0.9439934253634374,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 382,
+          "test_n": 404,
+          "cal_events": 7,
+          "test_events": 8,
+          "cal_rate_pct": 1.832460732984293,
+          "test_rate_pct": 1.9801980198019802,
+          "rate_change_pp": 0.14773728681768716,
+          "weighted_change_pp": 0.08418316484392893,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "미용업",
+      "gu": "수성구",
+      "total_change_pp": -0.4394465948407982,
+      "composition_change_pp": -0.28945176768468084,
+      "within_band_change_pp": -0.14999482715611745,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 159,
+          "test_n": 174,
+          "cal_events": 15,
+          "test_events": 17,
+          "cal_rate_pct": 9.433962264150944,
+          "test_rate_pct": 9.770114942528735,
+          "rate_change_pp": 0.3361526783777915,
+          "weighted_change_pp": 0.03224397245740668,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 298,
+          "test_n": 279,
+          "cal_events": 38,
+          "test_events": 29,
+          "cal_rate_pct": 12.751677852348994,
+          "test_rate_pct": 10.39426523297491,
+          "rate_change_pp": -2.3574126193740845,
+          "weighted_change_pp": -0.362578897908142,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 257,
+          "test_n": 236,
+          "cal_events": 33,
+          "test_events": 20,
+          "cal_rate_pct": 12.840466926070038,
+          "test_rate_pct": 8.47457627118644,
+          "rate_change_pp": -4.365890654883598,
+          "weighted_change_pp": -0.567999004714735,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 383,
+          "test_n": 432,
+          "cal_events": 24,
+          "test_events": 35,
+          "cal_rate_pct": 6.266318537859007,
+          "test_rate_pct": 8.101851851851851,
+          "rate_change_pp": 1.835533313992844,
+          "weighted_change_pp": 0.43712811005783275,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 626,
+          "test_n": 693,
+          "cal_events": 22,
+          "test_events": 30,
+          "cal_rate_pct": 3.5143769968051117,
+          "test_rate_pct": 4.329004329004329,
+          "rate_change_pp": 0.8146273321992172,
+          "weighted_change_pp": 0.3112109929515201,
+          "small_sample": false
+        }
+      ]
+    },
+    {
+      "industry": "미용업",
+      "gu": "중구",
+      "total_change_pp": 0.21704996767340923,
+      "composition_change_pp": -0.061232526074114446,
+      "within_band_change_pp": 0.27828249374752234,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 86,
+          "test_n": 132,
+          "cal_events": 7,
+          "test_events": 11,
+          "cal_rate_pct": 8.13953488372093,
+          "test_rate_pct": 8.333333333333332,
+          "rate_change_pp": 0.19379844961240167,
+          "weighted_change_pp": 0.03189700168184167,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 166,
+          "test_n": 171,
+          "cal_events": 13,
+          "test_events": 22,
+          "cal_rate_pct": 7.83132530120482,
+          "test_rate_pct": 12.865497076023392,
+          "rate_change_pp": 5.034171774818572,
+          "weighted_change_pp": 1.0733707898927378,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 118,
+          "test_n": 133,
+          "cal_events": 11,
+          "test_events": 12,
+          "cal_rate_pct": 9.322033898305085,
+          "test_rate_pct": 9.022556390977442,
+          "rate_change_pp": -0.29947750732764256,
+          "weighted_change_pp": -0.04966397565408536,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 155,
+          "test_n": 178,
+          "cal_events": 13,
+          "test_events": 19,
+          "cal_rate_pct": 8.38709677419355,
+          "test_rate_pct": 10.674157303370785,
+          "rate_change_pp": 2.2870605291772357,
+          "weighted_change_pp": 0.5076019628348478,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 177,
+          "test_n": 188,
+          "cal_events": 21,
+          "test_events": 12,
+          "cal_rate_pct": 11.864406779661017,
+          "test_rate_pct": 6.382978723404255,
+          "rate_change_pp": -5.481428056256762,
+          "weighted_change_pp": -1.2849232850078196,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "이용업",
+      "gu": "남구",
+      "total_change_pp": 0.7517540928833943,
+      "composition_change_pp": -1.4742733043768803,
+      "within_band_change_pp": 2.226027397260274,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 3,
+          "test_n": 2,
+          "cal_events": 2,
+          "test_events": 1,
+          "cal_rate_pct": 66.66666666666666,
+          "test_rate_pct": 50.0,
+          "rate_change_pp": -16.666666666666657,
+          "weighted_change_pp": -0.45662100456620974,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 6,
+          "test_n": 1,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 16.666666666666664,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -16.666666666666664,
+          "weighted_change_pp": -0.22831050228310498,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 4,
+          "test_n": 5,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 5,
+          "test_n": 5,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 64,
+          "test_n": 60,
+          "cal_events": 2,
+          "test_events": 4,
+          "cal_rate_pct": 3.125,
+          "test_rate_pct": 6.666666666666667,
+          "rate_change_pp": 3.541666666666667,
+          "weighted_change_pp": 2.910958904109589,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "이용업",
+      "gu": "달서구",
+      "total_change_pp": 0.9766288027157586,
+      "composition_change_pp": -0.599516720798186,
+      "within_band_change_pp": 1.5761455235139445,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 9,
+          "test_n": 3,
+          "cal_events": 2,
+          "test_events": 1,
+          "cal_rate_pct": 22.22222222222222,
+          "test_rate_pct": 33.33333333333333,
+          "rate_change_pp": 11.111111111111107,
+          "weighted_change_pp": 0.18018018018018012,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 11,
+          "test_n": 7,
+          "cal_events": 2,
+          "test_events": 1,
+          "cal_rate_pct": 18.181818181818183,
+          "test_rate_pct": 14.285714285714285,
+          "rate_change_pp": -3.8961038961038987,
+          "weighted_change_pp": -0.14742014742014753,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 8,
+          "test_n": 8,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 12.5,
+          "rate_change_pp": 12.5,
+          "weighted_change_pp": 0.5405405405405406,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 19,
+          "test_n": 17,
+          "cal_events": 1,
+          "test_events": 2,
+          "cal_rate_pct": 5.263157894736842,
+          "test_rate_pct": 11.76470588235294,
+          "rate_change_pp": 6.501547987616099,
+          "weighted_change_pp": 0.5974395448079659,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 160,
+          "test_n": 150,
+          "cal_events": 12,
+          "test_events": 12,
+          "cal_rate_pct": 7.5,
+          "test_rate_pct": 8.0,
+          "rate_change_pp": 0.5,
+          "weighted_change_pp": 0.40540540540540543,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "이용업",
+      "gu": "달성군",
+      "total_change_pp": 3.3051295610787945,
+      "composition_change_pp": -1.2486045008519888,
+      "within_band_change_pp": 4.553734061930783,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 2,
+          "test_n": 5,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 20.0,
+          "rate_change_pp": 20.0,
+          "weighted_change_pp": 1.6393442622950818,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 9,
+          "test_n": 2,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 11.11111111111111,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -11.11111111111111,
+          "weighted_change_pp": -0.36429872495446264,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 2,
+          "test_n": 5,
+          "cal_events": 0,
+          "test_events": 2,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 40.0,
+          "rate_change_pp": 40.0,
+          "weighted_change_pp": 3.2786885245901636,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 6,
+          "test_n": 6,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 43,
+          "test_n": 43,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "이용업",
+      "gu": "동구",
+      "total_change_pp": -0.2945252945252941,
+      "composition_change_pp": -0.2251162628521115,
+      "within_band_change_pp": -0.06940903167318252,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 6,
+          "test_n": 3,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 33.33333333333333,
+          "rate_change_pp": 33.33333333333333,
+          "weighted_change_pp": 0.6756756756756757,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 18,
+          "test_n": 12,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 5.555555555555555,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -5.555555555555555,
+          "weighted_change_pp": -0.45045045045045046,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 8,
+          "test_n": 16,
+          "cal_events": 0,
+          "test_events": 3,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 18.75,
+          "rate_change_pp": 18.75,
+          "weighted_change_pp": 2.027027027027027,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 18,
+          "test_n": 17,
+          "cal_events": 2,
+          "test_events": 0,
+          "cal_rate_pct": 11.11111111111111,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -11.11111111111111,
+          "weighted_change_pp": -1.2762762762762763,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 106,
+          "test_n": 100,
+          "cal_events": 8,
+          "test_events": 6,
+          "cal_rate_pct": 7.547169811320755,
+          "test_rate_pct": 6.0,
+          "rate_change_pp": -1.5471698113207548,
+          "weighted_change_pp": -1.0453850076491586,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "이용업",
+      "gu": "북구",
+      "total_change_pp": -3.9113013386758944,
+      "composition_change_pp": -0.2662174058221769,
+      "within_band_change_pp": -3.645083932853718,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 5,
+          "test_n": 4,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 22,
+          "test_n": 11,
+          "cal_events": 4,
+          "test_events": 3,
+          "cal_rate_pct": 18.181818181818183,
+          "test_rate_pct": 27.27272727272727,
+          "rate_change_pp": 9.090909090909086,
+          "weighted_change_pp": 0.7194244604316543,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 7,
+          "test_n": 14,
+          "cal_events": 1,
+          "test_events": 1,
+          "cal_rate_pct": 14.285714285714285,
+          "test_rate_pct": 7.142857142857142,
+          "rate_change_pp": -7.142857142857142,
+          "weighted_change_pp": -0.7194244604316546,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 19,
+          "test_n": 19,
+          "cal_events": 1,
+          "test_events": 2,
+          "cal_rate_pct": 5.263157894736842,
+          "test_rate_pct": 10.526315789473683,
+          "rate_change_pp": 5.263157894736842,
+          "weighted_change_pp": 0.7194244604316546,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 105,
+          "test_n": 91,
+          "cal_events": 7,
+          "test_events": 0,
+          "cal_rate_pct": 6.666666666666667,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -6.666666666666667,
+          "weighted_change_pp": -4.364508393285372,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "이용업",
+      "gu": "서구",
+      "total_change_pp": -7.792860734037206,
+      "composition_change_pp": -0.3366094163058122,
+      "within_band_change_pp": -7.456251317731394,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 3,
+          "test_n": 4,
+          "cal_events": 1,
+          "test_events": 1,
+          "cal_rate_pct": 33.33333333333333,
+          "test_rate_pct": 25.0,
+          "rate_change_pp": -8.333333333333329,
+          "weighted_change_pp": -0.3267973856209148,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 10,
+          "test_n": 6,
+          "cal_events": 4,
+          "test_events": 1,
+          "cal_rate_pct": 40.0,
+          "test_rate_pct": 16.666666666666664,
+          "rate_change_pp": -23.333333333333336,
+          "weighted_change_pp": -1.3725490196078434,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 6,
+          "test_n": 5,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 16.666666666666664,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -16.666666666666664,
+          "weighted_change_pp": -0.8169934640522875,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 5,
+          "test_n": 6,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 20.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -20.0,
+          "weighted_change_pp": -1.1764705882352942,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 93,
+          "test_n": 81,
+          "cal_events": 9,
+          "test_events": 4,
+          "cal_rate_pct": 9.67741935483871,
+          "test_rate_pct": 4.938271604938271,
+          "rate_change_pp": -4.739147749900439,
+          "weighted_change_pp": -3.763440860215054,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "이용업",
+      "gu": "중구",
+      "total_change_pp": -6.298076923076923,
+      "composition_change_pp": -2.1955128205128194,
+      "within_band_change_pp": -4.102564102564103,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 5,
+          "test_n": 6,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 20.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -20.0,
+          "weighted_change_pp": -1.8461538461538463,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 9,
+          "test_n": 8,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 12.5,
+          "rate_change_pp": 12.5,
+          "weighted_change_pp": 1.5384615384615385,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 2,
+          "test_n": 8,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 3,
+          "test_n": 1,
+          "cal_events": 2,
+          "test_events": 0,
+          "cal_rate_pct": 66.66666666666666,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -66.66666666666666,
+          "weighted_change_pp": -1.0256410256410255,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 45,
+          "test_n": 42,
+          "cal_events": 3,
+          "test_events": 1,
+          "cal_rate_pct": 6.666666666666667,
+          "test_rate_pct": 2.380952380952381,
+          "rate_change_pp": -4.2857142857142865,
+          "weighted_change_pp": -2.76923076923077,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "일반음식점",
+      "gu": "군위군",
+      "total_change_pp": -4.567600932074011,
+      "composition_change_pp": 0.2778024609377985,
+      "within_band_change_pp": -4.845403393011809,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 19,
+          "test_n": 20,
+          "cal_events": 2,
+          "test_events": 1,
+          "cal_rate_pct": 10.526315789473683,
+          "test_rate_pct": 5.0,
+          "rate_change_pp": -5.526315789473683,
+          "weighted_change_pp": -0.29952931108258446,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 23,
+          "test_n": 32,
+          "cal_events": 2,
+          "test_events": 2,
+          "cal_rate_pct": 8.695652173913043,
+          "test_rate_pct": 6.25,
+          "rate_change_pp": -2.445652173913043,
+          "weighted_change_pp": -0.2120890774125132,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 29,
+          "test_n": 18,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 5.555555555555555,
+          "rate_change_pp": 5.555555555555555,
+          "weighted_change_pp": 0.27100271002710025,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 60,
+          "test_n": 68,
+          "cal_events": 5,
+          "test_events": 2,
+          "cal_rate_pct": 8.333333333333332,
+          "test_rate_pct": 2.941176470588235,
+          "rate_change_pp": -5.392156862745097,
+          "weighted_change_pp": -0.9936766034327007,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 240,
+          "test_n": 231,
+          "cal_events": 18,
+          "test_events": 4,
+          "cal_rate_pct": 7.5,
+          "test_rate_pct": 1.7316017316017316,
+          "rate_change_pp": -5.768398268398268,
+          "weighted_change_pp": -3.6111111111111107,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "일반음식점",
+      "gu": "남구",
+      "total_change_pp": -3.4020498964213406,
+      "composition_change_pp": 0.011268611064565448,
+      "within_band_change_pp": -3.413318507485905,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 206,
+          "test_n": 170,
+          "cal_events": 30,
+          "test_events": 15,
+          "cal_rate_pct": 14.563106796116504,
+          "test_rate_pct": 8.823529411764707,
+          "rate_change_pp": -5.739577384351797,
+          "weighted_change_pp": -0.4515169622118489,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 309,
+          "test_n": 340,
+          "cal_events": 44,
+          "test_events": 42,
+          "cal_rate_pct": 14.239482200647249,
+          "test_rate_pct": 12.352941176470589,
+          "rate_change_pp": -1.88654102417666,
+          "weighted_change_pp": -0.29681811578901635,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 223,
+          "test_n": 233,
+          "cal_events": 24,
+          "test_events": 21,
+          "cal_rate_pct": 10.762331838565023,
+          "test_rate_pct": 9.012875536480687,
+          "rate_change_pp": -1.7494563020843366,
+          "weighted_change_pp": -0.18862717185823713,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 407,
+          "test_n": 398,
+          "cal_events": 44,
+          "test_events": 24,
+          "cal_rate_pct": 10.81081081081081,
+          "test_rate_pct": 6.030150753768844,
+          "rate_change_pp": -4.780660057041967,
+          "weighted_change_pp": -0.8804732543742262,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 1041,
+          "test_n": 1020,
+          "cal_events": 75,
+          "test_events": 39,
+          "cal_rate_pct": 7.204610951008646,
+          "test_rate_pct": 3.823529411764706,
+          "rate_change_pp": -3.3810815392439397,
+          "weighted_change_pp": -1.5958830032525768,
+          "small_sample": false
+        }
+      ]
+    },
+    {
+      "industry": "일반음식점",
+      "gu": "달서구",
+      "total_change_pp": 1.0853014499044171,
+      "composition_change_pp": -0.09714792841385034,
+      "within_band_change_pp": 1.1824493783182675,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 564,
+          "test_n": 477,
+          "cal_events": 67,
+          "test_events": 58,
+          "cal_rate_pct": 11.879432624113475,
+          "test_rate_pct": 12.159329140461216,
+          "rate_change_pp": 0.2798965163477405,
+          "weighted_change_pp": 0.020786336337828462,
+          "small_sample": false
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 955,
+          "test_n": 879,
+          "cal_events": 111,
+          "test_events": 125,
+          "cal_rate_pct": 11.62303664921466,
+          "test_rate_pct": 14.220705346985211,
+          "rate_change_pp": 2.597668697770551,
+          "weighted_change_pp": 0.35549599647210256,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 716,
+          "test_n": 757,
+          "cal_events": 79,
+          "test_events": 91,
+          "cal_rate_pct": 11.033519553072626,
+          "test_rate_pct": 12.021136063408191,
+          "rate_change_pp": 0.987616510335565,
+          "weighted_change_pp": 0.1163982092984622,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 1173,
+          "test_n": 1254,
+          "cal_events": 95,
+          "test_events": 124,
+          "cal_rate_pct": 8.098891730605287,
+          "test_rate_pct": 9.888357256778308,
+          "rate_change_pp": 1.7894655261730215,
+          "weighted_change_pp": 0.3493678607848309,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 2999,
+          "test_n": 3056,
+          "cal_events": 165,
+          "test_events": 190,
+          "cal_rate_pct": 5.501833944648216,
+          "test_rate_pct": 6.217277486910995,
+          "rate_change_pp": 0.7154435422627792,
+          "weighted_change_pp": 0.34040097542504333,
+          "small_sample": false
+        }
+      ]
+    },
+    {
+      "industry": "일반음식점",
+      "gu": "달성군",
+      "total_change_pp": 0.5937188632655142,
+      "composition_change_pp": -0.10963583639871732,
+      "within_band_change_pp": 0.7033546996642297,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 266,
+          "test_n": 279,
+          "cal_events": 28,
+          "test_events": 30,
+          "cal_rate_pct": 10.526315789473683,
+          "test_rate_pct": 10.75268817204301,
+          "rate_change_pp": 0.2263723825693269,
+          "weighted_change_pp": 0.02074832284390348,
+          "small_sample": false
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 531,
+          "test_n": 473,
+          "cal_events": 49,
+          "test_events": 66,
+          "cal_rate_pct": 9.227871939736348,
+          "test_rate_pct": 13.953488372093023,
+          "rate_change_pp": 4.725616432356675,
+          "weighted_change_pp": 0.7343024219792074,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 453,
+          "test_n": 436,
+          "cal_events": 40,
+          "test_events": 44,
+          "cal_rate_pct": 8.830022075055188,
+          "test_rate_pct": 10.091743119266056,
+          "rate_change_pp": 1.2617210442108675,
+          "weighted_change_pp": 0.18071957137842912,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 589,
+          "test_n": 733,
+          "cal_events": 37,
+          "test_events": 63,
+          "cal_rate_pct": 6.281833616298811,
+          "test_rate_pct": 8.594815825375171,
+          "rate_change_pp": 2.3129822090763605,
+          "weighted_change_pp": 0.5569697632237097,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 1073,
+          "test_n": 1123,
+          "cal_events": 65,
+          "test_events": 44,
+          "cal_rate_pct": 6.0577819198508855,
+          "test_rate_pct": 3.9180765805877114,
+          "rate_change_pp": -2.139705339263174,
+          "weighted_change_pp": -0.78938537976102,
+          "small_sample": false
+        }
+      ]
+    },
+    {
+      "industry": "일반음식점",
+      "gu": "동구",
+      "total_change_pp": -0.21652492760964748,
+      "composition_change_pp": 0.012264790345613008,
+      "within_band_change_pp": -0.2287897179552608,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 391,
+          "test_n": 363,
+          "cal_events": 32,
+          "test_events": 32,
+          "cal_rate_pct": 8.184143222506394,
+          "test_rate_pct": 8.81542699724518,
+          "rate_change_pp": 0.6312837747387849,
+          "weighted_change_pp": 0.05200998870408056,
+          "small_sample": false
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 642,
+          "test_n": 667,
+          "cal_events": 65,
+          "test_events": 78,
+          "cal_rate_pct": 10.12461059190031,
+          "test_rate_pct": 11.694152923538232,
+          "rate_change_pp": 1.569542331637921,
+          "weighted_change_pp": 0.23760434298740202,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 629,
+          "test_n": 522,
+          "cal_events": 51,
+          "test_events": 48,
+          "cal_rate_pct": 8.108108108108109,
+          "test_rate_pct": 9.195402298850574,
+          "rate_change_pp": 1.0872941907424654,
+          "weighted_change_pp": 0.12881696948878052,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 872,
+          "test_n": 1042,
+          "cal_events": 73,
+          "test_events": 74,
+          "cal_rate_pct": 8.371559633027523,
+          "test_rate_pct": 7.1017274472168905,
+          "rate_change_pp": -1.2698321858106327,
+          "weighted_change_pp": -0.3003098360450929,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 1769,
+          "test_n": 1812,
+          "cal_events": 94,
+          "test_events": 81,
+          "cal_rate_pct": 5.313736574335783,
+          "test_rate_pct": 4.470198675496689,
+          "rate_change_pp": -0.8435378988390942,
+          "weighted_change_pp": -0.34691118309043095,
+          "small_sample": false
+        }
+      ]
+    },
+    {
+      "industry": "일반음식점",
+      "gu": "북구",
+      "total_change_pp": 4.644642297474993,
+      "composition_change_pp": 0.018073519581087716,
+      "within_band_change_pp": 4.626568777893905,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 450,
+          "test_n": 402,
+          "cal_events": 51,
+          "test_events": 48,
+          "cal_rate_pct": 11.333333333333332,
+          "test_rate_pct": 11.940298507462686,
+          "rate_change_pp": 0.6069651741293534,
+          "weighted_change_pp": 0.047213622291021676,
+          "small_sample": false
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 801,
+          "test_n": 731,
+          "cal_events": 81,
+          "test_events": 153,
+          "cal_rate_pct": 10.112359550561797,
+          "test_rate_pct": 20.930232558139537,
+          "rate_change_pp": 10.81787300757774,
+          "weighted_change_pp": 1.5301596688350092,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 557,
+          "test_n": 635,
+          "cal_events": 56,
+          "test_events": 79,
+          "cal_rate_pct": 10.053859964093357,
+          "test_rate_pct": 12.440944881889763,
+          "rate_change_pp": 2.3870849177964057,
+          "weighted_change_pp": 0.29330474512397786,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 953,
+          "test_n": 939,
+          "cal_events": 71,
+          "test_events": 106,
+          "cal_rate_pct": 7.450157397691501,
+          "test_rate_pct": 11.288604898828542,
+          "rate_change_pp": 3.8384475011370407,
+          "weighted_change_pp": 0.6974268969751705,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 2593,
+          "test_n": 2461,
+          "cal_events": 145,
+          "test_events": 244,
+          "cal_rate_pct": 5.591978403393752,
+          "test_rate_pct": 9.914668833807395,
+          "rate_change_pp": 4.322690430413643,
+          "weighted_change_pp": 2.058463844668726,
+          "small_sample": false
+        }
+      ]
+    },
+    {
+      "industry": "일반음식점",
+      "gu": "서구",
+      "total_change_pp": 2.886373465410106,
+      "composition_change_pp": -0.06718315317774248,
+      "within_band_change_pp": 2.9535566185878483,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 171,
+          "test_n": 139,
+          "cal_events": 18,
+          "test_events": 24,
+          "cal_rate_pct": 10.526315789473683,
+          "test_rate_pct": 17.26618705035971,
+          "rate_change_pp": 6.739871260886028,
+          "weighted_change_pp": 0.3866455242522319,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 280,
+          "test_n": 276,
+          "cal_events": 26,
+          "test_events": 39,
+          "cal_rate_pct": 9.285714285714286,
+          "test_rate_pct": 14.130434782608695,
+          "rate_change_pp": 4.844720496894409,
+          "weighted_change_pp": 0.5518542538765402,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 217,
+          "test_n": 235,
+          "cal_events": 12,
+          "test_events": 25,
+          "cal_rate_pct": 5.529953917050691,
+          "test_rate_pct": 10.638297872340425,
+          "rate_change_pp": 5.108343955289734,
+          "weighted_change_pp": 0.49544400721959864,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 408,
+          "test_n": 429,
+          "cal_events": 25,
+          "test_events": 49,
+          "cal_rate_pct": 6.127450980392156,
+          "test_rate_pct": 11.421911421911423,
+          "rate_change_pp": 5.294460441519266,
+          "weighted_change_pp": 0.9374013740865725,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 1346,
+          "test_n": 1344,
+          "cal_events": 72,
+          "test_events": 86,
+          "cal_rate_pct": 5.349182763744428,
+          "test_rate_pct": 6.398809523809524,
+          "rate_change_pp": 1.0496267600650961,
+          "weighted_change_pp": 0.5822114591529052,
+          "small_sample": false
+        }
+      ]
+    },
+    {
+      "industry": "일반음식점",
+      "gu": "수성구",
+      "total_change_pp": -0.3241194638504883,
+      "composition_change_pp": 0.02990270517471494,
+      "within_band_change_pp": -0.3540221690252032,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 357,
+          "test_n": 397,
+          "cal_events": 32,
+          "test_events": 57,
+          "cal_rate_pct": 8.96358543417367,
+          "test_rate_pct": 14.357682619647354,
+          "rate_change_pp": 5.394097185473685,
+          "weighted_change_pp": 0.47064979838089077,
+          "small_sample": false
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 655,
+          "test_n": 692,
+          "cal_events": 77,
+          "test_events": 91,
+          "cal_rate_pct": 11.755725190839694,
+          "test_rate_pct": 13.150289017341041,
+          "rate_change_pp": 1.3945638265013471,
+          "weighted_change_pp": 0.21209630064591917,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 521,
+          "test_n": 529,
+          "cal_events": 56,
+          "test_events": 49,
+          "cal_rate_pct": 10.748560460652591,
+          "test_rate_pct": 9.262759924385634,
+          "rate_change_pp": -1.4858005362669573,
+          "weighted_change_pp": -0.17274472168905944,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 861,
+          "test_n": 917,
+          "cal_events": 75,
+          "test_events": 73,
+          "cal_rate_pct": 8.710801393728223,
+          "test_rate_pct": 7.960741548527809,
+          "rate_change_pp": -0.7500598452004148,
+          "weighted_change_pp": -0.1511659072634682,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 1993,
+          "test_n": 2015,
+          "cal_events": 130,
+          "test_events": 99,
+          "cal_rate_pct": 6.522829904666332,
+          "test_rate_pct": 4.913151364764268,
+          "rate_change_pp": -1.609678539902064,
+          "weighted_change_pp": -0.7128576390994855,
+          "small_sample": false
+        }
+      ]
+    },
+    {
+      "industry": "일반음식점",
+      "gu": "중구",
+      "total_change_pp": 2.2975810507535748,
+      "composition_change_pp": 0.13535620433927953,
+      "within_band_change_pp": 2.1622248464142957,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 278,
+          "test_n": 313,
+          "cal_events": 26,
+          "test_events": 44,
+          "cal_rate_pct": 9.352517985611511,
+          "test_rate_pct": 14.057507987220447,
+          "rate_change_pp": 4.704990001608936,
+          "weighted_change_pp": 0.5015878305529963,
+          "small_sample": false
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 471,
+          "test_n": 462,
+          "cal_events": 39,
+          "test_events": 63,
+          "cal_rate_pct": 8.280254777070063,
+          "test_rate_pct": 13.636363636363635,
+          "rate_change_pp": 5.356108859293572,
+          "weighted_change_pp": 0.8428209444801192,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 405,
+          "test_n": 389,
+          "cal_events": 30,
+          "test_events": 46,
+          "cal_rate_pct": 7.4074074074074066,
+          "test_rate_pct": 11.825192802056556,
+          "rate_change_pp": 4.417785394649149,
+          "weighted_change_pp": 0.5853264708850542,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 528,
+          "test_n": 655,
+          "cal_events": 51,
+          "test_events": 55,
+          "cal_rate_pct": 9.659090909090908,
+          "test_rate_pct": 8.396946564885496,
+          "rate_change_pp": -1.2621443442054119,
+          "weighted_change_pp": -0.2815751176616297,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 1119,
+          "test_n": 1117,
+          "cal_events": 52,
+          "test_events": 67,
+          "cal_rate_pct": 4.647006255585344,
+          "test_rate_pct": 5.998209489704566,
+          "rate_change_pp": 1.3512032341192217,
+          "weighted_change_pp": 0.5140647181577557,
+          "small_sample": false
+        }
+      ]
+    },
+    {
+      "industry": "제과점영업",
+      "gu": "군위군",
+      "total_change_pp": 20.0,
+      "composition_change_pp": 0.0,
+      "within_band_change_pp": 20.0,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 2,
+          "test_n": 2,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 1,
+          "test_n": 2,
+          "cal_events": 0,
+          "test_events": 2,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 100.0,
+          "rate_change_pp": 100.0,
+          "weighted_change_pp": 20.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 2,
+          "test_n": 1,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 2,
+          "test_n": 3,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 1,
+          "test_n": 2,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "제과점영업",
+      "gu": "남구",
+      "total_change_pp": 4.871194379391101,
+      "composition_change_pp": 5.5976901058868265,
+      "within_band_change_pp": -0.7264957264957265,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 9,
+          "test_n": 7,
+          "cal_events": 1,
+          "test_events": 1,
+          "cal_rate_pct": 11.11111111111111,
+          "test_rate_pct": 14.285714285714285,
+          "rate_change_pp": 3.174603174603174,
+          "weighted_change_pp": 0.31746031746031744,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 13,
+          "test_n": 16,
+          "cal_events": 1,
+          "test_events": 1,
+          "cal_rate_pct": 7.6923076923076925,
+          "test_rate_pct": 6.25,
+          "rate_change_pp": -1.4423076923076925,
+          "weighted_change_pp": -0.3296703296703297,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 2,
+          "test_n": 11,
+          "cal_events": 1,
+          "test_events": 2,
+          "cal_rate_pct": 50.0,
+          "test_rate_pct": 18.181818181818183,
+          "rate_change_pp": -31.818181818181817,
+          "weighted_change_pp": -5.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 9,
+          "test_n": 8,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 12.5,
+          "rate_change_pp": 12.5,
+          "weighted_change_pp": 1.4285714285714286,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 28,
+          "test_n": 28,
+          "cal_events": 1,
+          "test_events": 3,
+          "cal_rate_pct": 3.571428571428571,
+          "test_rate_pct": 10.714285714285714,
+          "rate_change_pp": 7.142857142857142,
+          "weighted_change_pp": 2.857142857142857,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "제과점영업",
+      "gu": "달서구",
+      "total_change_pp": 3.9067453543383888,
+      "composition_change_pp": 0.3130084227888492,
+      "within_band_change_pp": 3.5937369315495395,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 19,
+          "test_n": 23,
+          "cal_events": 2,
+          "test_events": 2,
+          "cal_rate_pct": 10.526315789473683,
+          "test_rate_pct": 8.695652173913043,
+          "rate_change_pp": -1.8306636155606402,
+          "weighted_change_pp": -0.20741508944775727,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 27,
+          "test_n": 32,
+          "cal_events": 4,
+          "test_events": 6,
+          "cal_rate_pct": 14.814814814814813,
+          "test_rate_pct": 18.75,
+          "rate_change_pp": 3.935185185185187,
+          "weighted_change_pp": 0.620324758255793,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 17,
+          "test_n": 16,
+          "cal_events": 1,
+          "test_events": 4,
+          "cal_rate_pct": 5.88235294117647,
+          "test_rate_pct": 25.0,
+          "rate_change_pp": 19.11764705882353,
+          "weighted_change_pp": 1.506809620399884,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 43,
+          "test_n": 42,
+          "cal_events": 1,
+          "test_events": 3,
+          "cal_rate_pct": 2.3255813953488373,
+          "test_rate_pct": 7.142857142857142,
+          "rate_change_pp": 4.817275747508305,
+          "weighted_change_pp": 0.9966777408637871,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 96,
+          "test_n": 90,
+          "cal_events": 6,
+          "test_events": 7,
+          "cal_rate_pct": 6.25,
+          "test_rate_pct": 7.777777777777778,
+          "rate_change_pp": 1.5277777777777777,
+          "weighted_change_pp": 0.6773399014778325,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "제과점영업",
+      "gu": "달성군",
+      "total_change_pp": 6.233653007846557,
+      "composition_change_pp": -0.3300535558600073,
+      "within_band_change_pp": 6.563706563706564,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 9,
+          "test_n": 14,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 14,
+          "test_n": 15,
+          "cal_events": 2,
+          "test_events": 4,
+          "cal_rate_pct": 14.285714285714285,
+          "test_rate_pct": 26.666666666666668,
+          "rate_change_pp": 12.380952380952383,
+          "weighted_change_pp": 2.5096525096525104,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 17,
+          "test_n": 10,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 6,
+          "test_n": 17,
+          "cal_events": 0,
+          "test_events": 2,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 11.76470588235294,
+          "rate_change_pp": 11.76470588235294,
+          "weighted_change_pp": 2.7027027027027026,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 16,
+          "test_n": 18,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 5.555555555555555,
+          "rate_change_pp": 5.555555555555555,
+          "weighted_change_pp": 1.3513513513513513,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "제과점영업",
+      "gu": "동구",
+      "total_change_pp": -6.030534351145036,
+      "composition_change_pp": -1.7676885013426649,
+      "within_band_change_pp": -4.262845849802371,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 12,
+          "test_n": 12,
+          "cal_events": 2,
+          "test_events": 3,
+          "cal_rate_pct": 16.666666666666664,
+          "test_rate_pct": 25.0,
+          "rate_change_pp": 8.333333333333336,
+          "weighted_change_pp": 0.8333333333333336,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 22,
+          "test_n": 16,
+          "cal_events": 9,
+          "test_events": 2,
+          "cal_rate_pct": 40.909090909090914,
+          "test_rate_pct": 12.5,
+          "rate_change_pp": -28.409090909090914,
+          "weighted_change_pp": -3.7878787878787885,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 23,
+          "test_n": 13,
+          "cal_events": 4,
+          "test_events": 2,
+          "cal_rate_pct": 17.391304347826086,
+          "test_rate_pct": 15.384615384615385,
+          "rate_change_pp": -2.006688963210701,
+          "weighted_change_pp": -0.21739130434782594,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 30,
+          "test_n": 29,
+          "cal_events": 3,
+          "test_events": 2,
+          "cal_rate_pct": 10.0,
+          "test_rate_pct": 6.896551724137931,
+          "rate_change_pp": -3.1034482758620694,
+          "weighted_change_pp": -0.7500000000000001,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 44,
+          "test_n": 50,
+          "cal_events": 3,
+          "test_events": 3,
+          "cal_rate_pct": 6.8181818181818175,
+          "test_rate_pct": 6.0,
+          "rate_change_pp": -0.8181818181818175,
+          "weighted_change_pp": -0.3409090909090906,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "제과점영업",
+      "gu": "북구",
+      "total_change_pp": 0.11524251771006355,
+      "composition_change_pp": -0.5186341007531574,
+      "within_band_change_pp": 0.6338766184632206,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 19,
+          "test_n": 15,
+          "cal_events": 4,
+          "test_events": 4,
+          "cal_rate_pct": 21.052631578947366,
+          "test_rate_pct": 26.666666666666668,
+          "rate_change_pp": 5.6140350877193015,
+          "weighted_change_pp": 0.5166289958023896,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 32,
+          "test_n": 26,
+          "cal_events": 6,
+          "test_events": 5,
+          "cal_rate_pct": 18.75,
+          "test_rate_pct": 19.230769230769234,
+          "rate_change_pp": 0.4807692307692335,
+          "weighted_change_pp": 0.07668711656441761,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 26,
+          "test_n": 20,
+          "cal_events": 2,
+          "test_events": 2,
+          "cal_rate_pct": 7.6923076923076925,
+          "test_rate_pct": 10.0,
+          "rate_change_pp": 2.3076923076923075,
+          "weighted_change_pp": 0.2831524303916942,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 36,
+          "test_n": 29,
+          "cal_events": 5,
+          "test_events": 5,
+          "cal_rate_pct": 13.88888888888889,
+          "test_rate_pct": 17.24137931034483,
+          "rate_change_pp": 3.35249042145594,
+          "weighted_change_pp": 0.5964553510565782,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 68,
+          "test_n": 73,
+          "cal_events": 5,
+          "test_events": 4,
+          "cal_rate_pct": 7.352941176470589,
+          "test_rate_pct": 5.47945205479452,
+          "rate_change_pp": -1.8734891216760685,
+          "weighted_change_pp": -0.839047275351859,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "제과점영업",
+      "gu": "서구",
+      "total_change_pp": 0.0,
+      "composition_change_pp": -0.4716981132075464,
+      "within_band_change_pp": 0.47169811320754607,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 4,
+          "test_n": 5,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 25.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -25.0,
+          "weighted_change_pp": -2.358490566037736,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 3,
+          "test_n": 6,
+          "cal_events": 0,
+          "test_events": 2,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 33.33333333333333,
+          "rate_change_pp": 33.33333333333333,
+          "weighted_change_pp": 3.773584905660377,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 1,
+          "test_n": 3,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 12,
+          "test_n": 6,
+          "cal_events": 1,
+          "test_events": 1,
+          "cal_rate_pct": 8.333333333333332,
+          "test_rate_pct": 16.666666666666664,
+          "rate_change_pp": 8.333333333333332,
+          "weighted_change_pp": 0.9433962264150942,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 33,
+          "test_n": 33,
+          "cal_events": 3,
+          "test_events": 2,
+          "cal_rate_pct": 9.090909090909092,
+          "test_rate_pct": 6.0606060606060606,
+          "rate_change_pp": -3.030303030303031,
+          "weighted_change_pp": -1.8867924528301891,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "제과점영업",
+      "gu": "수성구",
+      "total_change_pp": -2.6407957411039504,
+      "composition_change_pp": -0.11823516495389086,
+      "within_band_change_pp": -2.522560576150061,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 9,
+          "test_n": 11,
+          "cal_events": 1,
+          "test_events": 1,
+          "cal_rate_pct": 11.11111111111111,
+          "test_rate_pct": 9.090909090909092,
+          "rate_change_pp": -2.020202020202019,
+          "weighted_change_pp": -0.12919896640826867,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 33,
+          "test_n": 27,
+          "cal_events": 5,
+          "test_events": 2,
+          "cal_rate_pct": 15.151515151515152,
+          "test_rate_pct": 7.4074074074074066,
+          "rate_change_pp": -7.744107744107746,
+          "weighted_change_pp": -1.2156448202959833,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 15,
+          "test_n": 26,
+          "cal_events": 2,
+          "test_events": 4,
+          "cal_rate_pct": 13.333333333333334,
+          "test_rate_pct": 15.384615384615385,
+          "rate_change_pp": 2.051282051282051,
+          "weighted_change_pp": 0.3100775193798449,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 46,
+          "test_n": 36,
+          "cal_events": 4,
+          "test_events": 2,
+          "cal_rate_pct": 8.695652173913043,
+          "test_rate_pct": 5.555555555555555,
+          "rate_change_pp": -3.1400966183574877,
+          "weighted_change_pp": -0.6572295247724974,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 63,
+          "test_n": 72,
+          "cal_events": 3,
+          "test_events": 2,
+          "cal_rate_pct": 4.761904761904762,
+          "test_rate_pct": 2.7777777777777777,
+          "rate_change_pp": -1.9841269841269842,
+          "weighted_change_pp": -0.8305647840531563,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "제과점영업",
+      "gu": "중구",
+      "total_change_pp": 0.5081300813008145,
+      "composition_change_pp": -3.317094678883297,
+      "within_band_change_pp": 3.8252247601841107,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 12,
+          "test_n": 34,
+          "cal_events": 0,
+          "test_events": 5,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 14.705882352941178,
+          "rate_change_pp": 14.705882352941178,
+          "weighted_change_pp": 4.065040650406504,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 27,
+          "test_n": 23,
+          "cal_events": 5,
+          "test_events": 1,
+          "cal_rate_pct": 18.51851851851852,
+          "test_rate_pct": 4.3478260869565215,
+          "rate_change_pp": -14.170692431561998,
+          "weighted_change_pp": -2.649804275820536,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 20,
+          "test_n": 17,
+          "cal_events": 5,
+          "test_events": 4,
+          "cal_rate_pct": 25.0,
+          "test_rate_pct": 23.52941176470588,
+          "rate_change_pp": -1.4705882352941195,
+          "weighted_change_pp": -0.20325203252032548,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 28,
+          "test_n": 26,
+          "cal_events": 3,
+          "test_events": 5,
+          "cal_rate_pct": 10.714285714285714,
+          "test_rate_pct": 19.230769230769234,
+          "rate_change_pp": 8.51648351648352,
+          "weighted_change_pp": 1.8002322880371668,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 17,
+          "test_n": 23,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 4.3478260869565215,
+          "rate_change_pp": 4.3478260869565215,
+          "weighted_change_pp": 0.8130081300813007,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "즉석판매제조가공업",
+      "gu": "군위군",
+      "total_change_pp": 4.5337159253945485,
+      "composition_change_pp": 0.4160688665710177,
+      "within_band_change_pp": 4.11764705882353,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 3,
+          "test_n": 5,
+          "cal_events": 0,
+          "test_events": 3,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 60.0,
+          "rate_change_pp": 60.0,
+          "weighted_change_pp": 3.5294117647058822,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 9,
+          "test_n": 8,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 6,
+          "test_n": 9,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 16.666666666666664,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -16.666666666666664,
+          "weighted_change_pp": -1.764705882352941,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 10,
+          "test_n": 9,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 54,
+          "test_n": 54,
+          "cal_events": 3,
+          "test_events": 5,
+          "cal_rate_pct": 5.555555555555555,
+          "test_rate_pct": 9.25925925925926,
+          "rate_change_pp": 3.703703703703704,
+          "weighted_change_pp": 2.3529411764705883,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "즉석판매제조가공업",
+      "gu": "남구",
+      "total_change_pp": 6.068688563893551,
+      "composition_change_pp": 0.8145011831688871,
+      "within_band_change_pp": 5.254187380724662,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 47,
+          "test_n": 58,
+          "cal_events": 9,
+          "test_events": 16,
+          "cal_rate_pct": 19.148936170212767,
+          "test_rate_pct": 27.586206896551722,
+          "rate_change_pp": 8.437270726338955,
+          "weighted_change_pp": 1.261241500329019,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 52,
+          "test_n": 74,
+          "cal_events": 10,
+          "test_events": 13,
+          "cal_rate_pct": 19.230769230769234,
+          "test_rate_pct": 17.56756756756757,
+          "rate_change_pp": -1.663201663201665,
+          "weighted_change_pp": -0.31720856463124536,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 32,
+          "test_n": 36,
+          "cal_events": 1,
+          "test_events": 9,
+          "cal_rate_pct": 3.125,
+          "test_rate_pct": 25.0,
+          "rate_change_pp": 21.875,
+          "weighted_change_pp": 2.029639175257732,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 36,
+          "test_n": 50,
+          "cal_events": 1,
+          "test_events": 8,
+          "cal_rate_pct": 2.7777777777777777,
+          "test_rate_pct": 16.0,
+          "rate_change_pp": 13.222222222222221,
+          "weighted_change_pp": 1.70389461626575,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 177,
+          "test_n": 170,
+          "cal_events": 6,
+          "test_events": 8,
+          "cal_rate_pct": 3.389830508474576,
+          "test_rate_pct": 4.705882352941177,
+          "rate_change_pp": 1.3160518444666005,
+          "weighted_change_pp": 0.5766206535034074,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "즉석판매제조가공업",
+      "gu": "달서구",
+      "total_change_pp": 2.658857620744575,
+      "composition_change_pp": 0.3597825962408212,
+      "within_band_change_pp": 2.299075024503753,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 140,
+          "test_n": 153,
+          "cal_events": 32,
+          "test_events": 34,
+          "cal_rate_pct": 22.857142857142858,
+          "test_rate_pct": 22.22222222222222,
+          "rate_change_pp": -0.6349206349206362,
+          "weighted_change_pp": -0.10582010582010604,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 174,
+          "test_n": 216,
+          "cal_events": 39,
+          "test_events": 56,
+          "cal_rate_pct": 22.413793103448278,
+          "test_rate_pct": 25.925925925925924,
+          "rate_change_pp": 3.5121328224776462,
+          "weighted_change_pp": 0.826384193524152,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 74,
+          "test_n": 113,
+          "cal_events": 6,
+          "test_events": 24,
+          "cal_rate_pct": 8.108108108108109,
+          "test_rate_pct": 21.238938053097346,
+          "rate_change_pp": 13.130829944989237,
+          "weighted_change_pp": 1.6163222045574988,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 121,
+          "test_n": 127,
+          "cal_events": 7,
+          "test_events": 10,
+          "cal_rate_pct": 5.785123966942149,
+          "test_rate_pct": 7.874015748031496,
+          "rate_change_pp": 2.0888917810893473,
+          "weighted_change_pp": 0.2889861178631232,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 309,
+          "test_n": 309,
+          "cal_events": 19,
+          "test_events": 16,
+          "cal_rate_pct": 6.148867313915858,
+          "test_rate_pct": 5.177993527508091,
+          "rate_change_pp": -0.9708737864077666,
+          "weighted_change_pp": -0.3267973856209149,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "즉석판매제조가공업",
+      "gu": "달성군",
+      "total_change_pp": 3.889189583029749,
+      "composition_change_pp": -0.47057746118872323,
+      "within_band_change_pp": 4.359767044218471,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 89,
+          "test_n": 92,
+          "cal_events": 19,
+          "test_events": 17,
+          "cal_rate_pct": 21.34831460674157,
+          "test_rate_pct": 18.478260869565215,
+          "rate_change_pp": -2.870053737176356,
+          "weighted_change_pp": -0.5455474045872413,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 99,
+          "test_n": 136,
+          "cal_events": 14,
+          "test_events": 42,
+          "cal_rate_pct": 14.14141414141414,
+          "test_rate_pct": 30.88235294117647,
+          "rate_change_pp": 16.740938799762333,
+          "weighted_change_pp": 4.704065447867102,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 46,
+          "test_n": 73,
+          "cal_events": 4,
+          "test_events": 10,
+          "cal_rate_pct": 8.695652173913043,
+          "test_rate_pct": 13.698630136986301,
+          "rate_change_pp": 5.002977963073258,
+          "weighted_change_pp": 0.7545813869924541,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 41,
+          "test_n": 67,
+          "cal_events": 2,
+          "test_events": 5,
+          "cal_rate_pct": 4.878048780487805,
+          "test_rate_pct": 7.462686567164178,
+          "rate_change_pp": 2.5846377866763737,
+          "weighted_change_pp": 0.3577907679903245,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 122,
+          "test_n": 116,
+          "cal_events": 12,
+          "test_events": 7,
+          "cal_rate_pct": 9.836065573770492,
+          "test_rate_pct": 6.0344827586206895,
+          "rate_change_pp": -3.8015828151498026,
+          "weighted_change_pp": -0.9111231540441675,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "즉석판매제조가공업",
+      "gu": "동구",
+      "total_change_pp": 2.2616969273743024,
+      "composition_change_pp": 0.5602858112464322,
+      "within_band_change_pp": 1.701411116127869,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 94,
+          "test_n": 118,
+          "cal_events": 36,
+          "test_events": 36,
+          "cal_rate_pct": 38.297872340425535,
+          "test_rate_pct": 30.508474576271187,
+          "rate_change_pp": -7.789397764154348,
+          "weighted_change_pp": -1.2837275644835378,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 118,
+          "test_n": 152,
+          "cal_events": 19,
+          "test_events": 39,
+          "cal_rate_pct": 16.101694915254235,
+          "test_rate_pct": 25.657894736842106,
+          "rate_change_pp": 9.556199821587871,
+          "weighted_change_pp": 2.0286904649180957,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 94,
+          "test_n": 85,
+          "cal_events": 16,
+          "test_events": 13,
+          "cal_rate_pct": 17.02127659574468,
+          "test_rate_pct": 15.294117647058824,
+          "rate_change_pp": -1.7271589486858563,
+          "weighted_change_pp": -0.20503981932723153,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 81,
+          "test_n": 115,
+          "cal_events": 5,
+          "test_events": 11,
+          "cal_rate_pct": 6.172839506172839,
+          "test_rate_pct": 9.565217391304348,
+          "rate_change_pp": 3.3923778851315083,
+          "weighted_change_pp": 0.5448651631146976,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 253,
+          "test_n": 246,
+          "cal_events": 15,
+          "test_events": 19,
+          "cal_rate_pct": 5.928853754940711,
+          "test_rate_pct": 7.723577235772358,
+          "rate_change_pp": 1.7947234808316468,
+          "weighted_change_pp": 0.6166228719058451,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "즉석판매제조가공업",
+      "gu": "북구",
+      "total_change_pp": 3.2074977442733665,
+      "composition_change_pp": 0.6129367180956855,
+      "within_band_change_pp": 2.5945610261776797,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 122,
+          "test_n": 124,
+          "cal_events": 20,
+          "test_events": 40,
+          "cal_rate_pct": 16.39344262295082,
+          "test_rate_pct": 32.25806451612903,
+          "rate_change_pp": 15.864621893178214,
+          "weighted_change_pp": 2.4620940109563185,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 125,
+          "test_n": 178,
+          "cal_events": 24,
+          "test_events": 41,
+          "cal_rate_pct": 19.2,
+          "test_rate_pct": 23.03370786516854,
+          "rate_change_pp": 3.8337078651685417,
+          "weighted_change_pp": 0.8540675844806013,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 73,
+          "test_n": 86,
+          "cal_events": 15,
+          "test_events": 9,
+          "cal_rate_pct": 20.54794520547945,
+          "test_rate_pct": 10.465116279069768,
+          "rate_change_pp": -10.082828926409682,
+          "weighted_change_pp": -1.0852606854458482,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 109,
+          "test_n": 111,
+          "cal_events": 12,
+          "test_events": 12,
+          "cal_rate_pct": 11.009174311926607,
+          "test_rate_pct": 10.81081081081081,
+          "rate_change_pp": -0.19836350111579648,
+          "weighted_change_pp": -0.027557382507951703,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 302,
+          "test_n": 300,
+          "cal_events": 19,
+          "test_events": 22,
+          "cal_rate_pct": 6.291390728476822,
+          "test_rate_pct": 7.333333333333333,
+          "rate_change_pp": 1.0419426048565112,
+          "weighted_change_pp": 0.3912174986945599,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "즉석판매제조가공업",
+      "gu": "서구",
+      "total_change_pp": -2.147413182140326,
+      "composition_change_pp": -0.6336143848847424,
+      "within_band_change_pp": -1.513798797255584,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 41,
+          "test_n": 33,
+          "cal_events": 13,
+          "test_events": 6,
+          "cal_rate_pct": 31.70731707317073,
+          "test_rate_pct": 18.181818181818183,
+          "rate_change_pp": -13.525498891352548,
+          "weighted_change_pp": -1.3444019982368496,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 42,
+          "test_n": 52,
+          "cal_events": 2,
+          "test_events": 7,
+          "cal_rate_pct": 4.761904761904762,
+          "test_rate_pct": 13.461538461538462,
+          "rate_change_pp": 8.6996336996337,
+          "weighted_change_pp": 1.3625932300631098,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 29,
+          "test_n": 25,
+          "cal_events": 3,
+          "test_events": 4,
+          "cal_rate_pct": 10.344827586206897,
+          "test_rate_pct": 16.0,
+          "rate_change_pp": 5.655172413793103,
+          "weighted_change_pp": 0.42584129621936023,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 36,
+          "test_n": 44,
+          "cal_events": 3,
+          "test_events": 3,
+          "cal_rate_pct": 8.333333333333332,
+          "test_rate_pct": 6.8181818181818175,
+          "rate_change_pp": -1.5151515151515147,
+          "weighted_change_pp": -0.20080321285140557,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 192,
+          "test_n": 178,
+          "cal_events": 16,
+          "test_events": 9,
+          "cal_rate_pct": 8.333333333333332,
+          "test_rate_pct": 5.056179775280898,
+          "rate_change_pp": -3.277153558052434,
+          "weighted_change_pp": -1.7570281124497988,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "즉석판매제조가공업",
+      "gu": "수성구",
+      "total_change_pp": 7.405047523421986,
+      "composition_change_pp": 0.24509433552046112,
+      "within_band_change_pp": 7.159953187901528,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 148,
+          "test_n": 143,
+          "cal_events": 30,
+          "test_events": 39,
+          "cal_rate_pct": 20.27027027027027,
+          "test_rate_pct": 27.27272727272727,
+          "rate_change_pp": 7.002457002457,
+          "weighted_change_pp": 1.1263794728361654,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 145,
+          "test_n": 275,
+          "cal_events": 21,
+          "test_events": 77,
+          "cal_rate_pct": 14.482758620689657,
+          "test_rate_pct": 28.000000000000004,
+          "rate_change_pp": 13.517241379310347,
+          "weighted_change_pp": 4.18137387998914,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 91,
+          "test_n": 101,
+          "cal_events": 14,
+          "test_events": 23,
+          "cal_rate_pct": 15.384615384615385,
+          "test_rate_pct": 22.772277227722775,
+          "rate_change_pp": 7.38766184310739,
+          "weighted_change_pp": 0.839318162152808,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 112,
+          "test_n": 119,
+          "cal_events": 14,
+          "test_events": 17,
+          "cal_rate_pct": 12.5,
+          "test_rate_pct": 14.285714285714285,
+          "rate_change_pp": 1.7857142857142847,
+          "weighted_change_pp": 0.2390326209223846,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 249,
+          "test_n": 251,
+          "cal_events": 15,
+          "test_events": 22,
+          "cal_rate_pct": 6.024096385542169,
+          "test_rate_pct": 8.764940239043826,
+          "rate_change_pp": 2.740843853501657,
+          "weighted_change_pp": 0.7738490520010302,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "즉석판매제조가공업",
+      "gu": "중구",
+      "total_change_pp": 0.6632945218553132,
+      "composition_change_pp": 0.6925880805755114,
+      "within_band_change_pp": -0.029293558720195678,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 74,
+          "test_n": 78,
+          "cal_events": 24,
+          "test_events": 24,
+          "cal_rate_pct": 32.432432432432435,
+          "test_rate_pct": 30.76923076923077,
+          "rate_change_pp": -1.663201663201665,
+          "weighted_change_pp": -0.34873583260680074,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 58,
+          "test_n": 86,
+          "cal_events": 13,
+          "test_events": 23,
+          "cal_rate_pct": 22.413793103448278,
+          "test_rate_pct": 26.744186046511626,
+          "rate_change_pp": 4.330392943063348,
+          "weighted_change_pp": 1.0011123470522794,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 30,
+          "test_n": 35,
+          "cal_events": 5,
+          "test_events": 8,
+          "cal_rate_pct": 16.666666666666664,
+          "test_rate_pct": 22.857142857142858,
+          "rate_change_pp": 6.190476190476193,
+          "weighted_change_pp": 0.5824372759856633,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 55,
+          "test_n": 51,
+          "cal_events": 5,
+          "test_events": 1,
+          "cal_rate_pct": 9.090909090909092,
+          "test_rate_pct": 1.9607843137254901,
+          "rate_change_pp": -7.130124777183601,
+          "weighted_change_pp": -0.9775171065493646,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 121,
+          "test_n": 122,
+          "cal_events": 8,
+          "test_events": 7,
+          "cal_rate_pct": 6.6115702479338845,
+          "test_rate_pct": 5.737704918032787,
+          "rate_change_pp": -0.8738653299010979,
+          "weighted_change_pp": -0.28659024260197297,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "체육도장업",
+      "gu": "달서구",
+      "total_change_pp": -0.688259109311741,
+      "composition_change_pp": -0.41114587167218763,
+      "within_band_change_pp": -0.2771132376395535,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 16,
+          "test_n": 6,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 6.25,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -6.25,
+          "weighted_change_pp": -0.19736842105263158,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 11,
+          "test_n": 26,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 3.8461538461538463,
+          "rate_change_pp": 3.8461538461538463,
+          "weighted_change_pp": 0.5263157894736843,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 12,
+          "test_n": 11,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 33,
+          "test_n": 35,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 3.0303030303030303,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -3.0303030303030303,
+          "weighted_change_pp": -0.5582137161084529,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 110,
+          "test_n": 112,
+          "cal_events": 5,
+          "test_events": 5,
+          "cal_rate_pct": 4.545454545454546,
+          "test_rate_pct": 4.464285714285714,
+          "rate_change_pp": -0.08116883116883145,
+          "weighted_change_pp": -0.04784688995215327,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "체육도장업",
+      "gu": "달성군",
+      "total_change_pp": -3.008015087223008,
+      "composition_change_pp": -2.116198901289175,
+      "within_band_change_pp": -0.891816185933833,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 17,
+          "test_n": 5,
+          "cal_events": 3,
+          "test_events": 0,
+          "cal_rate_pct": 17.647058823529413,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -17.647058823529413,
+          "weighted_change_pp": -0.8403361344537815,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 10,
+          "test_n": 18,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 24,
+          "test_n": 10,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 13,
+          "test_n": 33,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 37,
+          "test_n": 39,
+          "cal_events": 1,
+          "test_events": 1,
+          "cal_rate_pct": 2.7027027027027026,
+          "test_rate_pct": 2.564102564102564,
+          "rate_change_pp": -0.13860013860013876,
+          "weighted_change_pp": -0.05148005148005154,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "체육도장업",
+      "gu": "동구",
+      "total_change_pp": -0.865501125151463,
+      "composition_change_pp": 0.17548781434105498,
+      "within_band_change_pp": -1.040988939492518,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 18,
+          "test_n": 2,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 5,
+          "test_n": 18,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 5.555555555555555,
+          "rate_change_pp": 5.555555555555555,
+          "weighted_change_pp": 0.9433962264150942,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 10,
+          "test_n": 5,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 18,
+          "test_n": 21,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 58,
+          "test_n": 60,
+          "cal_events": 3,
+          "test_events": 1,
+          "cal_rate_pct": 5.172413793103448,
+          "test_rate_pct": 1.6666666666666667,
+          "rate_change_pp": -3.5057471264367814,
+          "weighted_change_pp": -1.9843851659076122,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "체육도장업",
+      "gu": "북구",
+      "total_change_pp": 0.6846240179573511,
+      "composition_change_pp": -0.18773625556653828,
+      "within_band_change_pp": 0.8723602735238891,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 22,
+          "test_n": 7,
+          "cal_events": 1,
+          "test_events": 1,
+          "cal_rate_pct": 4.545454545454546,
+          "test_rate_pct": 14.285714285714285,
+          "rate_change_pp": 9.740259740259738,
+          "weighted_change_pp": 0.42087542087542074,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 19,
+          "test_n": 26,
+          "cal_events": 0,
+          "test_events": 2,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 7.6923076923076925,
+          "rate_change_pp": 7.6923076923076925,
+          "weighted_change_pp": 1.2345679012345678,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 14,
+          "test_n": 19,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 7.142857142857142,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -7.142857142857142,
+          "weighted_change_pp": -0.837742504409171,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 29,
+          "test_n": 27,
+          "cal_events": 2,
+          "test_events": 1,
+          "cal_rate_pct": 6.896551724137931,
+          "test_rate_pct": 3.7037037037037033,
+          "rate_change_pp": -3.1928480204342273,
+          "weighted_change_pp": -0.5321413367390379,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 81,
+          "test_n": 83,
+          "cal_events": 2,
+          "test_events": 3,
+          "cal_rate_pct": 2.4691358024691357,
+          "test_rate_pct": 3.614457831325301,
+          "rate_change_pp": 1.1453220288561652,
+          "weighted_change_pp": 0.5868007925621094,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "체육도장업",
+      "gu": "수성구",
+      "total_change_pp": -2.1788283658787253,
+      "composition_change_pp": -0.5944107278557746,
+      "within_band_change_pp": -1.5844176380229509,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 9,
+          "test_n": 6,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 11.11111111111111,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -11.11111111111111,
+          "weighted_change_pp": -0.47619047619047616,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 6,
+          "test_n": 11,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 9.090909090909092,
+          "rate_change_pp": 9.090909090909092,
+          "weighted_change_pp": 0.7142857142857143,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 8,
+          "test_n": 6,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 12.5,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -12.5,
+          "weighted_change_pp": -0.5357142857142857,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 31,
+          "test_n": 23,
+          "cal_events": 2,
+          "test_events": 0,
+          "cal_rate_pct": 6.451612903225806,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -6.451612903225806,
+          "weighted_change_pp": -1.0599078341013823,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 85,
+          "test_n": 94,
+          "cal_events": 3,
+          "test_events": 3,
+          "cal_rate_pct": 3.5294117647058822,
+          "test_rate_pct": 3.1914893617021276,
+          "rate_change_pp": -0.33792240300375465,
+          "weighted_change_pp": -0.22689075630252095,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "체육도장업",
+      "gu": "중구",
+      "total_change_pp": 0.0,
+      "composition_change_pp": 0.0,
+      "within_band_change_pp": 0.0,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 3,
+          "test_n": 1,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 2,
+          "test_n": 5,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 2,
+          "test_n": 2,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 1,
+          "test_n": 3,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 12,
+          "test_n": 12,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "축산판매업",
+      "gu": "군위군",
+      "total_change_pp": -0.14619883040935688,
+      "composition_change_pp": -0.14619883040935688,
+      "within_band_change_pp": 0.0,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 2,
+          "test_n": 1,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 5,
+          "test_n": 5,
+          "cal_events": 1,
+          "test_events": 1,
+          "cal_rate_pct": 20.0,
+          "test_rate_pct": 20.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 5,
+          "test_n": 3,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 7,
+          "test_n": 11,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 17,
+          "test_n": 18,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "축산판매업",
+      "gu": "남구",
+      "total_change_pp": -1.1957060280759695,
+      "composition_change_pp": 0.2623892100192684,
+      "within_band_change_pp": -1.4580952380952386,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 8,
+          "test_n": 9,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 12.5,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -12.5,
+          "weighted_change_pp": -0.6428571428571428,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 25,
+          "test_n": 13,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 25,
+          "test_n": 25,
+          "cal_events": 3,
+          "test_events": 1,
+          "cal_rate_pct": 12.0,
+          "test_rate_pct": 4.0,
+          "rate_change_pp": -8.0,
+          "weighted_change_pp": -1.1428571428571428,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 40,
+          "test_n": 45,
+          "cal_events": 0,
+          "test_events": 4,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 8.88888888888889,
+          "rate_change_pp": 8.88888888888889,
+          "weighted_change_pp": 2.2857142857142856,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 75,
+          "test_n": 83,
+          "cal_events": 4,
+          "test_events": 1,
+          "cal_rate_pct": 5.333333333333334,
+          "test_rate_pct": 1.2048192771084338,
+          "rate_change_pp": -4.1285140562249,
+          "weighted_change_pp": -1.9580952380952386,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "축산판매업",
+      "gu": "달서구",
+      "total_change_pp": -0.961389522816221,
+      "composition_change_pp": -0.187256930632401,
+      "within_band_change_pp": -0.7741325921838194,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 39,
+          "test_n": 21,
+          "cal_events": 3,
+          "test_events": 1,
+          "cal_rate_pct": 7.6923076923076925,
+          "test_rate_pct": 4.761904761904762,
+          "rate_change_pp": -2.9304029304029307,
+          "weighted_change_pp": -0.11374946679937438,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 61,
+          "test_n": 57,
+          "cal_events": 5,
+          "test_events": 2,
+          "cal_rate_pct": 8.19672131147541,
+          "test_rate_pct": 3.508771929824561,
+          "rate_change_pp": -4.6879493816508475,
+          "weighted_change_pp": -0.4939244265325292,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 53,
+          "test_n": 54,
+          "cal_events": 3,
+          "test_events": 4,
+          "cal_rate_pct": 5.660377358490567,
+          "test_rate_pct": 7.4074074074074066,
+          "rate_change_pp": 1.74703004891684,
+          "weighted_change_pp": 0.1743800788197955,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 138,
+          "test_n": 133,
+          "cal_events": 7,
+          "test_events": 5,
+          "cal_rate_pct": 5.072463768115942,
+          "test_rate_pct": 3.7593984962406015,
+          "rate_change_pp": -1.3130652718753408,
+          "weighted_change_pp": -0.3228053256181522,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 246,
+          "test_n": 276,
+          "cal_events": 9,
+          "test_events": 10,
+          "cal_rate_pct": 3.6585365853658534,
+          "test_rate_pct": 3.6231884057971016,
+          "rate_change_pp": -0.0353481795687518,
+          "weighted_change_pp": -0.018033452053559145,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "축산판매업",
+      "gu": "달성군",
+      "total_change_pp": -3.100975329890993,
+      "composition_change_pp": 0.2000606219533969,
+      "within_band_change_pp": -3.3010359518443897,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 39,
+          "test_n": 26,
+          "cal_events": 2,
+          "test_events": 1,
+          "cal_rate_pct": 5.128205128205128,
+          "test_rate_pct": 3.8461538461538463,
+          "rate_change_pp": -1.2820512820512815,
+          "weighted_change_pp": -0.10040160642570277,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 59,
+          "test_n": 64,
+          "cal_events": 1,
+          "test_events": 3,
+          "cal_rate_pct": 1.694915254237288,
+          "test_rate_pct": 4.6875,
+          "rate_change_pp": 2.992584745762712,
+          "weighted_change_pp": 0.576883806412089,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 47,
+          "test_n": 53,
+          "cal_events": 4,
+          "test_events": 1,
+          "cal_rate_pct": 8.51063829787234,
+          "test_rate_pct": 1.8867924528301887,
+          "rate_change_pp": -6.623845845042151,
+          "weighted_change_pp": -1.0574211740579336,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 77,
+          "test_n": 88,
+          "cal_events": 10,
+          "test_events": 5,
+          "cal_rate_pct": 12.987012987012985,
+          "test_rate_pct": 5.681818181818182,
+          "rate_change_pp": -7.3051948051948035,
+          "weighted_change_pp": -1.9363166953528397,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 93,
+          "test_n": 101,
+          "cal_events": 7,
+          "test_events": 5,
+          "cal_rate_pct": 7.526881720430108,
+          "test_rate_pct": 4.9504950495049505,
+          "rate_change_pp": -2.5763866709251575,
+          "weighted_change_pp": -0.7837802824200027,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "축산판매업",
+      "gu": "동구",
+      "total_change_pp": -0.2954889771183784,
+      "composition_change_pp": -0.1818970212528881,
+      "within_band_change_pp": -0.11359195586549066,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 33,
+          "test_n": 26,
+          "cal_events": 3,
+          "test_events": 1,
+          "cal_rate_pct": 9.090909090909092,
+          "test_rate_pct": 3.8461538461538463,
+          "rate_change_pp": -5.244755244755245,
+          "weighted_change_pp": -0.24220894558372358,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 70,
+          "test_n": 56,
+          "cal_events": 4,
+          "test_events": 2,
+          "cal_rate_pct": 5.714285714285714,
+          "test_rate_pct": 3.571428571428571,
+          "rate_change_pp": -2.1428571428571432,
+          "weighted_change_pp": -0.21314387211367677,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 74,
+          "test_n": 66,
+          "cal_events": 2,
+          "test_events": 2,
+          "cal_rate_pct": 2.7027027027027026,
+          "test_rate_pct": 3.0303030303030303,
+          "rate_change_pp": 0.32760032760032765,
+          "weighted_change_pp": 0.03840430128174356,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 117,
+          "test_n": 139,
+          "cal_events": 3,
+          "test_events": 9,
+          "cal_rate_pct": 2.564102564102564,
+          "test_rate_pct": 6.474820143884892,
+          "rate_change_pp": 3.910717579782328,
+          "weighted_change_pp": 0.9655235232499886,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 250,
+          "test_n": 276,
+          "cal_events": 7,
+          "test_events": 4,
+          "cal_rate_pct": 2.8000000000000003,
+          "test_rate_pct": 1.4492753623188406,
+          "rate_change_pp": -1.3507246376811597,
+          "weighted_change_pp": -0.6621669626998224,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "축산판매업",
+      "gu": "북구",
+      "total_change_pp": -0.8812930729599788,
+      "composition_change_pp": -0.20907970945571863,
+      "within_band_change_pp": -0.6722133635042598,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 41,
+          "test_n": 41,
+          "cal_events": 1,
+          "test_events": 1,
+          "cal_rate_pct": 2.4390243902439024,
+          "test_rate_pct": 2.4390243902439024,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 100,
+          "test_n": 80,
+          "cal_events": 7,
+          "test_events": 3,
+          "cal_rate_pct": 7.000000000000001,
+          "test_rate_pct": 3.75,
+          "rate_change_pp": -3.250000000000001,
+          "weighted_change_pp": -0.32059186189889033,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 110,
+          "test_n": 85,
+          "cal_events": 3,
+          "test_events": 4,
+          "cal_rate_pct": 2.727272727272727,
+          "test_rate_pct": 4.705882352941177,
+          "rate_change_pp": 1.9786096256684496,
+          "weighted_change_pp": 0.20737585472480669,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 204,
+          "test_n": 220,
+          "cal_events": 9,
+          "test_events": 7,
+          "cal_rate_pct": 4.411764705882353,
+          "test_rate_pct": 3.1818181818181817,
+          "rate_change_pp": -1.2299465240641716,
+          "weighted_change_pp": -0.33364763908029316,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 319,
+          "test_n": 385,
+          "cal_events": 4,
+          "test_events": 3,
+          "cal_rate_pct": 1.2539184952978055,
+          "test_rate_pct": 0.7792207792207793,
+          "rate_change_pp": -0.47469771607702627,
+          "weighted_change_pp": -0.225349717249883,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "축산판매업",
+      "gu": "서구",
+      "total_change_pp": 0.9708737864077674,
+      "composition_change_pp": -0.05918765571460716,
+      "within_band_change_pp": 1.030061442122374,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 21,
+          "test_n": 9,
+          "cal_events": 1,
+          "test_events": 0,
+          "cal_rate_pct": 4.761904761904762,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -4.761904761904762,
+          "weighted_change_pp": -0.13869625520110956,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 39,
+          "test_n": 31,
+          "cal_events": 2,
+          "test_events": 2,
+          "cal_rate_pct": 5.128205128205128,
+          "test_rate_pct": 6.451612903225806,
+          "rate_change_pp": 1.3234077750206783,
+          "weighted_change_pp": 0.13276906480789977,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 40,
+          "test_n": 33,
+          "cal_events": 1,
+          "test_events": 4,
+          "cal_rate_pct": 2.5,
+          "test_rate_pct": 12.121212121212121,
+          "rate_change_pp": 9.621212121212121,
+          "weighted_change_pp": 1.0275080906148866,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 102,
+          "test_n": 104,
+          "cal_events": 2,
+          "test_events": 3,
+          "cal_rate_pct": 1.9607843137254901,
+          "test_rate_pct": 2.8846153846153846,
+          "rate_change_pp": 0.9238310708898945,
+          "weighted_change_pp": 0.3109334348626182,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 107,
+          "test_n": 132,
+          "cal_events": 4,
+          "test_events": 4,
+          "cal_rate_pct": 3.7383177570093453,
+          "test_rate_pct": 3.0303030303030303,
+          "rate_change_pp": -0.708014726706315,
+          "weighted_change_pp": -0.30245289296192096,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "축산판매업",
+      "gu": "수성구",
+      "total_change_pp": -1.1251435132032146,
+      "composition_change_pp": 0.18030403895197633,
+      "within_band_change_pp": -1.3054475521551903,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 14,
+          "test_n": 16,
+          "cal_events": 3,
+          "test_events": 0,
+          "cal_rate_pct": 21.428571428571427,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": -21.428571428571427,
+          "weighted_change_pp": -0.8528784648187633,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 34,
+          "test_n": 40,
+          "cal_events": 3,
+          "test_events": 3,
+          "cal_rate_pct": 8.823529411764707,
+          "test_rate_pct": 7.5,
+          "rate_change_pp": -1.3235294117647065,
+          "weighted_change_pp": -0.13169446883230912,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 40,
+          "test_n": 29,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 3.4482758620689653,
+          "rate_change_pp": 3.4482758620689653,
+          "weighted_change_pp": 0.24875621890547264,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 98,
+          "test_n": 91,
+          "cal_events": 5,
+          "test_events": 4,
+          "cal_rate_pct": 5.1020408163265305,
+          "test_rate_pct": 4.395604395604396,
+          "rate_change_pp": -0.7064364207221345,
+          "weighted_change_pp": -0.15991471215351802,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 204,
+          "test_n": 226,
+          "cal_events": 6,
+          "test_events": 5,
+          "cal_rate_pct": 2.941176470588235,
+          "test_rate_pct": 2.2123893805309733,
+          "rate_change_pp": -0.7287870900572617,
+          "weighted_change_pp": -0.4097161252560725,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "휴게음식점",
+      "gu": "군위군",
+      "total_change_pp": -2.97452625038832,
+      "composition_change_pp": -2.104458289301914,
+      "within_band_change_pp": -0.8700679610864053,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 22,
+          "test_n": 14,
+          "cal_events": 4,
+          "test_events": 2,
+          "cal_rate_pct": 18.181818181818183,
+          "test_rate_pct": 14.285714285714285,
+          "rate_change_pp": -3.8961038961038987,
+          "weighted_change_pp": -0.47021943573667746,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 18,
+          "test_n": 23,
+          "cal_events": 1,
+          "test_events": 3,
+          "cal_rate_pct": 5.555555555555555,
+          "test_rate_pct": 13.043478260869565,
+          "rate_change_pp": 7.487922705314009,
+          "weighted_change_pp": 1.4846743295019156,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 20,
+          "test_n": 17,
+          "cal_events": 0,
+          "test_events": 0,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 0.0,
+          "rate_change_pp": 0.0,
+          "weighted_change_pp": 0.0,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 8,
+          "test_n": 26,
+          "cal_events": 0,
+          "test_events": 1,
+          "cal_rate_pct": 0.0,
+          "test_rate_pct": 3.8461538461538463,
+          "rate_change_pp": 3.8461538461538463,
+          "weighted_change_pp": 0.8620689655172414,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 43,
+          "test_n": 36,
+          "cal_events": 5,
+          "test_events": 1,
+          "cal_rate_pct": 11.627906976744185,
+          "test_rate_pct": 2.7777777777777777,
+          "rate_change_pp": -8.850129198966407,
+          "weighted_change_pp": -2.746591820368885,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "휴게음식점",
+      "gu": "남구",
+      "total_change_pp": -0.48945211716497283,
+      "composition_change_pp": -0.6563961304588339,
+      "within_band_change_pp": 0.1669440132938625,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 116,
+          "test_n": 112,
+          "cal_events": 20,
+          "test_events": 21,
+          "cal_rate_pct": 17.24137931034483,
+          "test_rate_pct": 18.75,
+          "rate_change_pp": 1.5086206896551708,
+          "weighted_change_pp": 0.2560083594566351,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 179,
+          "test_n": 167,
+          "cal_events": 29,
+          "test_events": 22,
+          "cal_rate_pct": 16.201117318435752,
+          "test_rate_pct": 13.17365269461078,
+          "rate_change_pp": -3.0274646238249723,
+          "weighted_change_pp": -0.7660402911799552,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 97,
+          "test_n": 129,
+          "cal_events": 7,
+          "test_events": 17,
+          "cal_rate_pct": 7.216494845360824,
+          "test_rate_pct": 13.178294573643413,
+          "rate_change_pp": 5.961799728282589,
+          "weighted_change_pp": 1.1652608559825062,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 110,
+          "test_n": 132,
+          "cal_events": 9,
+          "test_events": 5,
+          "cal_rate_pct": 8.181818181818182,
+          "test_rate_pct": 3.787878787878788,
+          "rate_change_pp": -4.393939393939394,
+          "weighted_change_pp": -0.8787878787878788,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 97,
+          "test_n": 120,
+          "cal_events": 6,
+          "test_events": 10,
+          "cal_rate_pct": 6.185567010309279,
+          "test_rate_pct": 8.333333333333332,
+          "rate_change_pp": 2.1477663230240536,
+          "weighted_change_pp": 0.3905029678225552,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "휴게음식점",
+      "gu": "달서구",
+      "total_change_pp": 7.724390484865133,
+      "composition_change_pp": -0.00668457686009738,
+      "within_band_change_pp": 7.731075061725229,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 268,
+          "test_n": 281,
+          "cal_events": 20,
+          "test_events": 37,
+          "cal_rate_pct": 7.462686567164178,
+          "test_rate_pct": 13.167259786476867,
+          "rate_change_pp": 5.704573219312689,
+          "weighted_change_pp": 0.814524936294139,
+          "small_sample": false
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 462,
+          "test_n": 521,
+          "cal_events": 53,
+          "test_events": 82,
+          "cal_rate_pct": 11.471861471861471,
+          "test_rate_pct": 15.738963531669867,
+          "rate_change_pp": 4.267102059808396,
+          "weighted_change_pp": 1.1296545595326088,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 316,
+          "test_n": 369,
+          "cal_events": 37,
+          "test_events": 68,
+          "cal_rate_pct": 11.708860759493671,
+          "test_rate_pct": 18.428184281842817,
+          "rate_change_pp": 6.719323522349146,
+          "weighted_change_pp": 1.259873160440465,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 363,
+          "test_n": 456,
+          "cal_events": 38,
+          "test_events": 102,
+          "cal_rate_pct": 10.46831955922865,
+          "test_rate_pct": 22.36842105263158,
+          "rate_change_pp": 11.900101493402929,
+          "weighted_change_pp": 2.757340589934825,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 278,
+          "test_n": 341,
+          "cal_events": 14,
+          "test_events": 52,
+          "cal_rate_pct": 5.0359712230215825,
+          "test_rate_pct": 15.249266862170089,
+          "rate_change_pp": 10.213295639148505,
+          "weighted_change_pp": 1.7696818155231913,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "휴게음식점",
+      "gu": "달성군",
+      "total_change_pp": 5.316822251857495,
+      "composition_change_pp": -0.2310872141686211,
+      "within_band_change_pp": 5.547909466026117,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 148,
+          "test_n": 169,
+          "cal_events": 15,
+          "test_events": 27,
+          "cal_rate_pct": 10.135135135135135,
+          "test_rate_pct": 15.976331360946746,
+          "rate_change_pp": 5.841196225811611,
+          "weighted_change_pp": 1.0907869195162014,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 233,
+          "test_n": 254,
+          "cal_events": 29,
+          "test_events": 50,
+          "cal_rate_pct": 12.446351931330472,
+          "test_rate_pct": 19.68503937007874,
+          "rate_change_pp": 7.2386874387482685,
+          "weighted_change_pp": 2.03163161264316,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 157,
+          "test_n": 185,
+          "cal_events": 9,
+          "test_events": 23,
+          "cal_rate_pct": 5.7324840764331215,
+          "test_rate_pct": 12.432432432432433,
+          "rate_change_pp": 6.699948355999312,
+          "weighted_change_pp": 1.369602702607594,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 106,
+          "test_n": 203,
+          "cal_events": 8,
+          "test_events": 24,
+          "cal_rate_pct": 7.547169811320755,
+          "test_rate_pct": 11.822660098522167,
+          "rate_change_pp": 4.275490287201412,
+          "weighted_change_pp": 0.9590326279578859,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 81,
+          "test_n": 94,
+          "cal_events": 7,
+          "test_events": 9,
+          "cal_rate_pct": 8.641975308641975,
+          "test_rate_pct": 9.574468085106384,
+          "rate_change_pp": 0.9324927764644091,
+          "weighted_change_pp": 0.09685560330127564,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "휴게음식점",
+      "gu": "동구",
+      "total_change_pp": 2.2974830912518023,
+      "composition_change_pp": -0.2457265608747612,
+      "within_band_change_pp": 2.543209652126564,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 217,
+          "test_n": 229,
+          "cal_events": 27,
+          "test_events": 42,
+          "cal_rate_pct": 12.442396313364055,
+          "test_rate_pct": 18.340611353711793,
+          "rate_change_pp": 5.898215040347738,
+          "weighted_change_pp": 0.9315112029238841,
+          "small_sample": false
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 342,
+          "test_n": 382,
+          "cal_events": 35,
+          "test_events": 55,
+          "cal_rate_pct": 10.23391812865497,
+          "test_rate_pct": 14.397905759162304,
+          "rate_change_pp": 4.163987630507334,
+          "weighted_change_pp": 1.0969953619681392,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 257,
+          "test_n": 269,
+          "cal_events": 39,
+          "test_events": 46,
+          "cal_rate_pct": 15.17509727626459,
+          "test_rate_pct": 17.100371747211895,
+          "rate_change_pp": 1.9252744709473042,
+          "weighted_change_pp": 0.357171608748155,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 259,
+          "test_n": 358,
+          "cal_events": 20,
+          "test_events": 38,
+          "cal_rate_pct": 7.722007722007722,
+          "test_rate_pct": 10.614525139664805,
+          "rate_change_pp": 2.892517417657083,
+          "weighted_change_pp": 0.7141525762215418,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 169,
+          "test_n": 212,
+          "cal_events": 16,
+          "test_events": 12,
+          "cal_rate_pct": 9.467455621301776,
+          "test_rate_pct": 5.660377358490567,
+          "rate_change_pp": -3.807078262811209,
+          "weighted_change_pp": -0.5566210977351561,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "휴게음식점",
+      "gu": "북구",
+      "total_change_pp": 4.553057853398011,
+      "composition_change_pp": -0.2473496241335127,
+      "within_band_change_pp": 4.800407477531525,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 249,
+          "test_n": 248,
+          "cal_events": 31,
+          "test_events": 52,
+          "cal_rate_pct": 12.449799196787147,
+          "test_rate_pct": 20.967741935483872,
+          "rate_change_pp": 8.517942738696725,
+          "weighted_change_pp": 1.3378402781486938,
+          "small_sample": false
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 469,
+          "test_n": 414,
+          "cal_events": 73,
+          "test_events": 81,
+          "cal_rate_pct": 15.56503198294243,
+          "test_rate_pct": 19.565217391304348,
+          "rate_change_pp": 4.000185408361917,
+          "weighted_change_pp": 1.048813653617374,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 282,
+          "test_n": 349,
+          "cal_events": 42,
+          "test_events": 72,
+          "cal_rate_pct": 14.893617021276595,
+          "test_rate_pct": 20.630372492836678,
+          "rate_change_pp": 5.736755471560082,
+          "weighted_change_pp": 1.2679719186665412,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 270,
+          "test_n": 354,
+          "cal_events": 27,
+          "test_events": 44,
+          "cal_rate_pct": 10.0,
+          "test_rate_pct": 12.429378531073446,
+          "rate_change_pp": 2.4293785310734464,
+          "weighted_change_pp": 0.5446485117162762,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 185,
+          "test_n": 214,
+          "cal_events": 16,
+          "test_events": 28,
+          "cal_rate_pct": 8.64864864864865,
+          "test_rate_pct": 13.084112149532709,
+          "rate_change_pp": 4.43546350088406,
+          "weighted_change_pp": 0.6011331153826402,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "휴게음식점",
+      "gu": "서구",
+      "total_change_pp": 2.8760620686904144,
+      "composition_change_pp": 0.002550567248311708,
+      "within_band_change_pp": 2.8735115014421018,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 61,
+          "test_n": 83,
+          "cal_events": 7,
+          "test_events": 15,
+          "cal_rate_pct": 11.475409836065573,
+          "test_rate_pct": 18.072289156626507,
+          "rate_change_pp": 6.596879320560934,
+          "weighted_change_pp": 0.9391783595309735,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 124,
+          "test_n": 124,
+          "cal_events": 13,
+          "test_events": 17,
+          "cal_rate_pct": 10.483870967741936,
+          "test_rate_pct": 13.709677419354838,
+          "rate_change_pp": 3.225806451612902,
+          "weighted_change_pp": 0.6861063464837047,
+          "small_sample": true
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 62,
+          "test_n": 99,
+          "cal_events": 5,
+          "test_events": 10,
+          "cal_rate_pct": 8.064516129032258,
+          "test_rate_pct": 10.1010101010101,
+          "rate_change_pp": 2.0364939719778423,
+          "weighted_change_pp": 0.34581973109057695,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 111,
+          "test_n": 107,
+          "cal_events": 9,
+          "test_events": 15,
+          "cal_rate_pct": 8.108108108108109,
+          "test_rate_pct": 14.018691588785046,
+          "rate_change_pp": 5.910583480676937,
+          "weighted_change_pp": 1.0847897640350468,
+          "small_sample": true
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 158,
+          "test_n": 170,
+          "cal_events": 14,
+          "test_events": 14,
+          "cal_rate_pct": 8.860759493670885,
+          "test_rate_pct": 8.235294117647058,
+          "rate_change_pp": -0.6254653760238273,
+          "weighted_change_pp": -0.18238269969820006,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "휴게음식점",
+      "gu": "수성구",
+      "total_change_pp": 3.6563946476770237,
+      "composition_change_pp": -0.09382766163091816,
+      "within_band_change_pp": 3.750222309307939,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 245,
+          "test_n": 266,
+          "cal_events": 19,
+          "test_events": 35,
+          "cal_rate_pct": 7.755102040816326,
+          "test_rate_pct": 13.157894736842104,
+          "rate_change_pp": 5.402792696025778,
+          "weighted_change_pp": 0.9078603014168396,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 398,
+          "test_n": 439,
+          "cal_events": 42,
+          "test_events": 64,
+          "cal_rate_pct": 10.552763819095476,
+          "test_rate_pct": 14.578587699316628,
+          "rate_change_pp": 4.025823880221152,
+          "weighted_change_pp": 1.1164476837757964,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 300,
+          "test_n": 309,
+          "cal_events": 34,
+          "test_events": 44,
+          "cal_rate_pct": 11.333333333333332,
+          "test_rate_pct": 14.239482200647249,
+          "rate_change_pp": 2.9061488673139166,
+          "weighted_change_pp": 0.5672773215413773,
+          "small_sample": false
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 253,
+          "test_n": 366,
+          "cal_events": 21,
+          "test_events": 48,
+          "cal_rate_pct": 8.300395256916996,
+          "test_rate_pct": 13.114754098360656,
+          "rate_change_pp": 4.81435884144366,
+          "weighted_change_pp": 1.113111393536563,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 179,
+          "test_n": 203,
+          "cal_events": 17,
+          "test_events": 20,
+          "cal_rate_pct": 9.497206703910614,
+          "test_rate_pct": 9.852216748768473,
+          "rate_change_pp": 0.3550100448578597,
+          "weighted_change_pp": 0.04552560903736293,
+          "small_sample": true
+        }
+      ]
+    },
+    {
+      "industry": "휴게음식점",
+      "gu": "중구",
+      "total_change_pp": 4.665305123009819,
+      "composition_change_pp": -0.4902064331181002,
+      "within_band_change_pp": 5.1555115561279194,
+      "age_bands": [
+        {
+          "age_band": "<1",
+          "cal_n": 185,
+          "test_n": 167,
+          "cal_events": 32,
+          "test_events": 36,
+          "cal_rate_pct": 17.2972972972973,
+          "test_rate_pct": 21.55688622754491,
+          "rate_change_pp": 4.259588930247613,
+          "weighted_change_pp": 0.6833346314614327,
+          "small_sample": true
+        },
+        {
+          "age_band": "1-3",
+          "cal_n": 311,
+          "test_n": 256,
+          "cal_events": 63,
+          "test_events": 62,
+          "cal_rate_pct": 20.257234726688104,
+          "test_rate_pct": 24.21875,
+          "rate_change_pp": 3.961515273311896,
+          "weighted_change_pp": 0.9742054850795825,
+          "small_sample": false
+        },
+        {
+          "age_band": "3-5",
+          "cal_n": 202,
+          "test_n": 199,
+          "cal_events": 32,
+          "test_events": 43,
+          "cal_rate_pct": 15.841584158415841,
+          "test_rate_pct": 21.608040201005025,
+          "rate_change_pp": 5.7664560425891835,
+          "weighted_change_pp": 1.1023292530982205,
+          "small_sample": true
+        },
+        {
+          "age_band": "5-10",
+          "cal_n": 214,
+          "test_n": 251,
+          "cal_events": 26,
+          "test_events": 38,
+          "cal_rate_pct": 12.149532710280374,
+          "test_rate_pct": 15.139442231075698,
+          "rate_change_pp": 2.989909520795324,
+          "weighted_change_pp": 0.7209099805183731,
+          "small_sample": false
+        },
+        {
+          "age_band": "10+",
+          "cal_n": 159,
+          "test_n": 168,
+          "cal_events": 10,
+          "test_events": 28,
+          "cal_rate_pct": 6.289308176100629,
+          "test_rate_pct": 16.666666666666664,
+          "rate_change_pp": 10.377358490566035,
+          "weighted_change_pp": 1.6747322059703111,
+          "small_sample": true
+        }
+      ]
+    }
+  ],
+  "hashes": {
+    "input": "3d32003e69ca6309070df311becceb6852f0364051693f76f8c1ade6d2a5d0d8",
+    "script": "de3efb057285f7ea90092a2f3fdd0291d9d6509f98d2eaab8afbdbaaca49e919"
+  },
+  "definition": "Total rate change = change in age composition at 2021 rates + within-age rate changes weighted by 2023 population. This is descriptive, not causal or model error attribution."
+}

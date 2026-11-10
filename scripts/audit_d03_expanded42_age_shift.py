@@ -1,0 +1,32 @@
+"""Age-band decomposition of observed rate drift, not prediction error or causality."""
+import json
+from pathlib import Path
+from snapshot_hashes import snapshot_sha256
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'docs/d03'
+p=OUT/'expanded42_drift.json';source=json.loads(p.read_text(encoding='utf-8'))
+rows=[]
+for r in source['rows']:
+ if r['cal_rate_with_test_age_mix_pct'] is None:continue
+ bands=[]
+ for b in r['age_bands']:
+  weight=b['test_n']/r['test_n']
+  delta=b['test_rate_pct']-b['cal_rate_pct'] if b['test_n'] and b['cal_n'] else None
+  bands.append({**b,'rate_change_pp':delta,'weighted_change_pp':weight*delta if delta is not None else 0.0,'small_sample':min(b['cal_n'],b['test_n'])<200 or min(b['cal_events'],b['test_events'])<20})
+ composition=r['cal_rate_with_test_age_mix_pct']-r['cal_rate_pct']
+ within=sum(b['weighted_change_pp'] for b in bands)
+ total=r['test_rate_pct']-r['cal_rate_pct']
+ assert abs(composition+within-total)<1e-10
+ rows.append({'industry':r['industry'],'gu':r['gu'],'total_change_pp':total,'composition_change_pp':composition,'within_band_change_pp':within,'age_bands':bands})
+out={'cal_year':2021,'test_year':2023,'rows':rows,'hashes':{'input':snapshot_sha256(p),'script':snapshot_sha256(Path(__file__))},'definition':'Total rate change = change in age composition at 2021 rates + within-age rate changes weighted by 2023 population. This is descriptive, not causal or model error attribution.'}
+(OUT/'expanded42_age_shift.json').write_text(json.dumps(out,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')
+lines=['# 운영기간별 폐업 신고율 변화 분해','','2021년과 2023년 각 1월 1일 영업 인허가의 이후 365일 신고율을 비교했습니다. 동일 가게를 추적한 결과가 아닙니다. 모델 오차 자체가 아니라 관측 신고율 변화의 구성요소를 분해했습니다.','','|업종·지역|운영기간|2021 표본/신고|2023 표본/신고|2021 신고%|2023 신고%|전체 변화 기여(%p)|소표본|','|---|---|---:|---:|---:|---:|---:|---|']
+focus=[('일반음식점','북구'),('즉석판매제조가공업','수성구'),('휴게음식점','중구')]
+for r in rows:
+ if (r['industry'],r['gu']) not in focus:continue
+ for b in r['age_bands']:
+  lines.append(f"|{r['industry']} · {r['gu']}|{b['age_band']}|{b['cal_n']}/{b['cal_events']}|{b['test_n']}/{b['test_events']}|{b['cal_rate_pct']:.2f}|{b['test_rate_pct']:.2f}|{b['weighted_change_pp']:.2f}|{'주의' if b['small_sample'] else '아니오'}|")
+lines+=['','## 해석','','- 북구 일반음식점: 1~3년 구간 신고율은 10.11%→20.93%로 증가했습니다. 10년 이상 구간도 5.59%→9.91%로 증가했고 표본 비중이 커 전체 변화에 크게 기여했습니다. 신규점만의 변화로 보기 어렵습니다.','- 수성구 즉석판매제조가공업: 1~3년 구간이 14.48%→28.00%로 증가했습니다. 다만 2021 표본145건으로 소표본 주의 대상입니다.','- 중구 휴게음식점: 모든 운영기간 구간에서 신고율이 증가했습니다. 10년 이상 구간은 6.29%→16.67%이지만 2021 신고10건뿐이므로 강한 결론을 피해야 합니다.','','소표본: 두 기간 중 하나라도 n<200 또는 신고<20. 모든 8개 후보 업종의 비교 가능한 지역은 JSON에 저장했습니다. 각 지역의 구성 변화+구간 내 변화=전체 변화 검증을 통과했습니다.','','사후 탐색이며 경기·코로나·행정 신고 변화 등 특정 원인으로 단정할 수 없습니다. 업종·지역·운영기간의 관계가 시간에 따라 달라질 가능성을 후속 검증할 근거입니다. 이 결과로 2023에 맞춰 보정하거나 바로 서비스에 적용하지 않습니다.']
+(OUT/'expanded42_age_shift.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+print('Validated decompositions:',len(rows))
+for r in rows:
+ if (r['industry'],r['gu']) in focus:print(r['industry'],r['gu'],[(b['age_band'],round(b['weighted_change_pp'],3)) for b in r['age_bands']])
