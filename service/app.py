@@ -30,6 +30,7 @@ import config as C
 from agent import API_KEY_ENV, create_agent
 from core import tools as T
 from ui_permit_trends import render_permit_trends
+from prediction_review_app import render_review
 from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_chart, _map, metric_value
 
 st.set_page_config(page_title="대구 상권 생애주기 AI 에이전트", page_icon="🏪", layout="wide")
@@ -162,7 +163,7 @@ with st.sidebar:
         st.session_state.history = []
         st.rerun()
 
-tab_chat, tab_dash, tab_unit = st.tabs(["💬 AI 상담", "📊 대구 상권 대시보드", "🔎 자리 이력 조회"])
+tab_chat, tab_dash, tab_unit, tab_prediction = st.tabs(["💬 AI 상담", "📊 대구 상권 대시보드", "🔎 자리 이력 조회", "🧪 폐업 예측 연구"])
 
 
 # ─────────────────────────── 1. AI 상담 ───────────────────────────
@@ -397,3 +398,7 @@ with tab_unit:
             if h["other_candidates"]:
                 st.markdown("**다른 후보 자리**")
                 st.dataframe(pd.DataFrame(h["other_candidates"])[["address", "floor", "records", "status"]], hide_index=True)
+
+
+with tab_prediction:
+    render_review()

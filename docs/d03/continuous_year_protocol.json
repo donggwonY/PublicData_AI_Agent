@@ -1,0 +1,32 @@
+{
+  "years": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "candidate": "region_cal",
+  "train_offset": -4,
+  "calibration_offset": -2,
+  "horizon_days": 365,
+  "seed": 7,
+  "industry_and_region_shrinkage": 500,
+  "reason_for_start": "Use baseline landmark at 2009 and calibration at 2011 for first test 2013; avoids relying on pre-2009 training snapshots in this run. Not proof earlier years unusable.",
+  "reason_for_end": "2025 is latest full Jan1+365 day follow-up before snapshot 2026-11-06.",
+  "scope": "All eligible active permit rows each test year; no random row subsample.",
+  "limitations": [
+    "Selected landmarks previously evaluated; retrospective stability assessment, not untouched test.",
+    "Fixed lag policy allows labels to mature but is not yet an optimized service update schedule.",
+    "Missing historical industry coverage and current-address reconstruction remain.",
+    "Candidate stays fixed regardless of best model each year; no automatic deployment."
+  ]
+}

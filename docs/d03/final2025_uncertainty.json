@@ -1,0 +1,57 @@
+{
+  "n": 85528,
+  "place_clusters": 53782,
+  "replicates": 2000,
+  "seed": 20261110,
+  "method": "Paired percentile bootstrap sampling uid clusters with replacement; loss mean weighted by sampled permit count. Conditional on fixed fitted model; training not bootstrapped.",
+  "intervals": [
+    {
+      "comparison": "raw_minus_baseline:brier",
+      "difference": -0.0009370263008448067,
+      "ci95_low": -0.0010602102907906995,
+      "ci95_high": -0.0008080025300741387
+    },
+    {
+      "comparison": "raw_minus_baseline:log_loss",
+      "difference": -0.00495668380986146,
+      "ci95_low": -0.005677767518115734,
+      "ci95_high": -0.004219158548356829
+    },
+    {
+      "comparison": "calibrated_minus_baseline:brier",
+      "difference": -0.0010871287655681132,
+      "ci95_low": -0.0012407015859695388,
+      "ci95_high": -0.0009410013011675733
+    },
+    {
+      "comparison": "calibrated_minus_baseline:log_loss",
+      "difference": -0.005630114691841707,
+      "ci95_low": -0.006368095494751251,
+      "ci95_high": -0.004916766906681623
+    },
+    {
+      "comparison": "calibrated_minus_raw:brier",
+      "difference": -0.00015010246472330643,
+      "ci95_low": -0.0002941052314644531,
+      "ci95_high": -1.3923194030753446e-05
+    },
+    {
+      "comparison": "calibrated_minus_raw:log_loss",
+      "difference": -0.0006734308819802459,
+      "ci95_low": -0.0012789887096986768,
+      "ci95_high": -7.394607675985975e-05
+    }
+  ],
+  "hashes": {
+    "stores": "e011e410c8779e2d5a37c1bce169e56d70efde292e943d92ec5f8338fab24091",
+    "source_result": "0039c407977079618b9de8bff2f02ebeb0b499c7e7b7cd64f81a2324bb939c73",
+    "script": "b4473d8c92e8de8b617a45ed47b4505ff0bf49d0d8b700752883be31e0c59e68"
+  },
+  "limitations": [
+    "Post-hoc assessment; repeated inspection of 2025, not independent confirmatory testing.",
+    "Clusters reflect current uid, not proven historical unique businesses.",
+    "Does not account for cross-place spatial dependence or future time shifts.",
+    "Pointwise 95% intervals, not simultaneous multiple-comparison correction.",
+    "No subgroup significance claim, model tuning, DB or service change."
+  ]
+}

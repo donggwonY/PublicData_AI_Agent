@@ -1,0 +1,181 @@
+{
+  "quarter_starts": 268,
+  "evaluated": 96,
+  "annual": [
+    {
+      "year": 2002,
+      "quarters": 4,
+      "both_improved": 0,
+      "brier_gain_min": -1.0639057248627566,
+      "brier_gain_max": -0.8742969021908431
+    },
+    {
+      "year": 2003,
+      "quarters": 4,
+      "both_improved": 0,
+      "brier_gain_min": -0.5407002637970757,
+      "brier_gain_max": -0.43146329083408985
+    },
+    {
+      "year": 2004,
+      "quarters": 4,
+      "both_improved": 0,
+      "brier_gain_min": -1.5785462856021693,
+      "brier_gain_max": -0.9970358605555659
+    },
+    {
+      "year": 2005,
+      "quarters": 4,
+      "both_improved": 0,
+      "brier_gain_min": -1.6211641596747635,
+      "brier_gain_max": -1.3191990390015478
+    },
+    {
+      "year": 2006,
+      "quarters": 4,
+      "both_improved": 0,
+      "brier_gain_min": -0.3299121302002769,
+      "brier_gain_max": -0.10408101895407694
+    },
+    {
+      "year": 2007,
+      "quarters": 4,
+      "both_improved": 1,
+      "brier_gain_min": -0.39347124838347974,
+      "brier_gain_max": 0.07215803689345597
+    },
+    {
+      "year": 2008,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.010599386822934402,
+      "brier_gain_max": 0.4093721724155432
+    },
+    {
+      "year": 2009,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 9.949247787599708,
+      "brier_gain_max": 10.78574152106132
+    },
+    {
+      "year": 2010,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.7657324888773305,
+      "brier_gain_max": 1.0267750939077052
+    },
+    {
+      "year": 2011,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.4011126195310833,
+      "brier_gain_max": 1.044479263191843
+    },
+    {
+      "year": 2012,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.5059494583929343,
+      "brier_gain_max": 0.8686420099223021
+    },
+    {
+      "year": 2013,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 1.0059055286668255,
+      "brier_gain_max": 1.228075085227619
+    },
+    {
+      "year": 2014,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.6979886701486697,
+      "brier_gain_max": 0.9832378827032752
+    },
+    {
+      "year": 2015,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 1.0108629546102421,
+      "brier_gain_max": 1.0843387510806786
+    },
+    {
+      "year": 2016,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.836764692431323,
+      "brier_gain_max": 1.2042060822275509
+    },
+    {
+      "year": 2017,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.6218721913945856,
+      "brier_gain_max": 0.9959726938230544
+    },
+    {
+      "year": 2018,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.5635866721449801,
+      "brier_gain_max": 0.7935074540201398
+    },
+    {
+      "year": 2019,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.43641034654845584,
+      "brier_gain_max": 0.7896514651290922
+    },
+    {
+      "year": 2020,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.5319464676638254,
+      "brier_gain_max": 0.6282575443772952
+    },
+    {
+      "year": 2021,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.720148555930345,
+      "brier_gain_max": 0.7694415532621808
+    },
+    {
+      "year": 2022,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.3785430437727697,
+      "brier_gain_max": 0.5347458706441338
+    },
+    {
+      "year": 2023,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.9299614859651901,
+      "brier_gain_max": 1.1730565243392446
+    },
+    {
+      "year": 2024,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.9703317973581088,
+      "brier_gain_max": 1.0731046326004687
+    },
+    {
+      "year": 2025,
+      "quarters": 4,
+      "both_improved": 4,
+      "brier_gain_min": 0.5850204765397063,
+      "brier_gain_max": 1.3774262107048816
+    }
+  ],
+  "skip_counts": {
+    "평가 기록 없음": 1,
+    "학습 표본/양성/음성 최소 기준 미충족": 168,
+    "보정 표본/양성/음성 최소 기준 미충족": 160,
+    "365일 추적 미완료": 4
+  },
+  "source_hash": "c3330c51310af23e5abe0003c93ce4c08affff4f716d2a8ec8515e9f419f717b"
+}

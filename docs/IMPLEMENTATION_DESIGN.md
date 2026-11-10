@@ -101,3 +101,15 @@ AI 답변이 함수 결과에 없는 수치를 만들어내면 실패로 판단�
 - 조회(`core/tools.py`): 생존·사이클·지역 비교·위험 자리·동네 프로필·개폐업 현황은 `short_event`를 뺀 `stats_stores`, 자리 이력은 전체 기록 + 표시. 업종이 많으면 "점포형 N개 업종"으로 표기.
 - DB: 적재 시 새 열 자동 추가, 앱은 버전별 `dtypes` 열만 읽음(v3·v4 공존 가능). 반영 순서는 v4 validated 적재 → `deploy` → v4 전환 → Reboot → 확인.
 - 표 정의 변경 상세: [data_contract.md](e02/data_contract.md) v4 절.
+
+## 2026-11-10 폐업 예측 적용 범위 검토 화면
+
+service/prediction_review_app.py는 연속 연도 평가 결과를 읽는 별도 로컬 검토 화면입니다. 표본 부족·AUC·평균확률 오차·기준선 대비 두 오차를 개별 사유로 표시합니다. 조건 충족은 추가 검증 후보이며 서비스 허용으로 처리하지 않습니다. 공개 app.py·DB·실시간 추론과 연결하지 않았습니다.
+
+연구용 입력 시뮬레이션 추가: core/prediction_preview.py가 순수 Python으로 JSON 계수·보정 절편을 적용합니다. scripts/export_d03_prediction_preview.py는 고정2025평가 모델을 재현해 모든 평가행의 확률 일치를 확인한 뒤 내보냅니다. 미래 결과 학습·모델 변경 없음. 표시 보류는 사후 진단안이며 별도 운영 검증이 필요합니다. 검토 화면 외 공개 app.py에는 연결하지 않았습니다.
+
+## 2026-11-10 메인 앱의 연구용 예측 탭 연결
+
+`service/app.py`의 ‘폐업 예측 연구’ 탭이 `prediction_review_app.render_review()`를 호출합니다. 단독 실행도 유지합니다. 2021학습/2023보정/2025평가 고정 모델의 연구용 계산이며 현재 시점 갱신 모델이 아닙니다. 입력 범위와 보류 사유는 기존 검토안을 유지합니다.
+
+`package_d03_prediction_evidence.py`가 연초13시점과 전체96분기 검증을 `service/data/research/closure_validation.json`으로 묶어 docs 없이도 조회됩니다. 전체분기 시작일268개 중 평가조건 충족96개라는 범위를 화면에 표시합니다. 별도 widget key와 캐시를 사용하며 자료 오류 시 해당 영역만 오류를 표시합니다. 배포에는 이 파일과 `closure_preview_model.json`이 함께 필요합니다. 운영DB 변경·공개 배포 없음.

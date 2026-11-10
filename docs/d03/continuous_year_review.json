@@ -1,0 +1,953 @@
+{
+  "years": [
+    {
+      "year": 2013,
+      "n": 72954,
+      "actual_pct": 7.85974723798558,
+      "predicted_pct": 8.4844588370032,
+      "brier_relative_improvement_pct": 1.0281345997647646,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 53,
+      "regions_gap_over5pp": 6
+    },
+    {
+      "year": 2014,
+      "n": 73848,
+      "actual_pct": 8.731448380457154,
+      "predicted_pct": 7.847928632562291,
+      "brier_relative_improvement_pct": 0.9172968766624373,
+      "beats_baseline_both": true,
+      "beats_raw_both": false,
+      "eligible_regions": 55,
+      "regions_gap_over5pp": 11
+    },
+    {
+      "year": 2015,
+      "n": 74628,
+      "actual_pct": 7.904539850994265,
+      "predicted_pct": 7.673207022914008,
+      "brier_relative_improvement_pct": 1.041926507935174,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 56,
+      "regions_gap_over5pp": 1
+    },
+    {
+      "year": 2016,
+      "n": 75875,
+      "actual_pct": 7.761449752883031,
+      "predicted_pct": 8.494313156024536,
+      "brier_relative_improvement_pct": 1.110132630118946,
+      "beats_baseline_both": true,
+      "beats_raw_both": false,
+      "eligible_regions": 52,
+      "regions_gap_over5pp": 11
+    },
+    {
+      "year": 2017,
+      "n": 78281,
+      "actual_pct": 8.205056143891877,
+      "predicted_pct": 7.907863456430314,
+      "brier_relative_improvement_pct": 0.8670120109872933,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 52,
+      "regions_gap_over5pp": 8
+    },
+    {
+      "year": 2018,
+      "n": 80173,
+      "actual_pct": 8.54277624636723,
+      "predicted_pct": 7.898085196335265,
+      "brier_relative_improvement_pct": 0.7935074540201398,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 53,
+      "regions_gap_over5pp": 6
+    },
+    {
+      "year": 2019,
+      "n": 81706,
+      "actual_pct": 9.075220914008764,
+      "predicted_pct": 8.31714515102618,
+      "brier_relative_improvement_pct": 0.7896514651290922,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 54,
+      "regions_gap_over5pp": 8
+    },
+    {
+      "year": 2020,
+      "n": 82884,
+      "actual_pct": 8.479320496115053,
+      "predicted_pct": 8.486468642265605,
+      "brier_relative_improvement_pct": 0.5471155826842388,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 53,
+      "regions_gap_over5pp": 6
+    },
+    {
+      "year": 2021,
+      "n": 83808,
+      "actual_pct": 8.001622756777396,
+      "predicted_pct": 8.890275020873041,
+      "brier_relative_improvement_pct": 0.7694415532621808,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 52,
+      "regions_gap_over5pp": 8
+    },
+    {
+      "year": 2022,
+      "n": 85554,
+      "actual_pct": 8.164434158543141,
+      "predicted_pct": 8.469690071934773,
+      "brier_relative_improvement_pct": 0.5347458706441338,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 49,
+      "regions_gap_over5pp": 1
+    },
+    {
+      "year": 2023,
+      "n": 86525,
+      "actual_pct": 9.138399306558798,
+      "predicted_pct": 8.074939407533085,
+      "brier_relative_improvement_pct": 0.9299614859651901,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 50,
+      "regions_gap_over5pp": 7
+    },
+    {
+      "year": 2024,
+      "n": 86163,
+      "actual_pct": 8.844863804649329,
+      "predicted_pct": 8.067282917286862,
+      "brier_relative_improvement_pct": 0.9703317973581088,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 49,
+      "regions_gap_over5pp": 5
+    },
+    {
+      "year": 2025,
+      "n": 85528,
+      "actual_pct": 8.758535216537275,
+      "predicted_pct": 8.922504428073099,
+      "brier_relative_improvement_pct": 1.3774262107048816,
+      "beats_baseline_both": true,
+      "beats_raw_both": true,
+      "eligible_regions": 50,
+      "regions_gap_over5pp": 1
+    }
+  ],
+  "industry": [
+    {
+      "industry": "건강기능식품일반판매업",
+      "eligible_years": 13,
+      "improved_years": 9,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "골프연습장업",
+      "eligible_years": 8,
+      "improved_years": 3,
+      "eligible_year_list": [
+        2014,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2024
+      ],
+      "improved_year_list": [
+        2020,
+        2022,
+        2024
+      ]
+    },
+    {
+      "industry": "관광식당",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "관광유흥음식점업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "노래연습장업",
+      "eligible_years": 13,
+      "improved_years": 3,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "industry": "단란주점영업",
+      "eligible_years": 3,
+      "improved_years": 0,
+      "eligible_year_list": [
+        2018,
+        2020,
+        2021
+      ],
+      "improved_year_list": []
+    },
+    {
+      "industry": "담배소매업",
+      "eligible_years": 13,
+      "improved_years": 12,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "industry": "당구장업",
+      "eligible_years": 11,
+      "improved_years": 7,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "improved_year_list": [
+        2013,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2022
+      ]
+    },
+    {
+      "industry": "동물미용업",
+      "eligible_years": 5,
+      "improved_years": 3,
+      "eligible_year_list": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2022,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "동물병원",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "동물약국",
+      "eligible_years": 5,
+      "improved_years": 4,
+      "eligible_year_list": [
+        2015,
+        2017,
+        2019,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2015,
+        2019,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "동물위탁관리업",
+      "eligible_years": 5,
+      "improved_years": 3,
+      "eligible_year_list": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2021,
+        2022,
+        2025
+      ]
+    },
+    {
+      "industry": "동물판매업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "목욕장업",
+      "eligible_years": 8,
+      "improved_years": 0,
+      "eligible_year_list": [
+        2014,
+        2015,
+        2016,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "improved_year_list": []
+    },
+    {
+      "industry": "무도장업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "무도학원업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "미용업",
+      "eligible_years": 13,
+      "improved_years": 13,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "복합영상물제공업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "복합유통게임제공업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "비디오물감상실업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "비디오물소극장업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "비디오물시청제공업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "세탁업",
+      "eligible_years": 13,
+      "improved_years": 6,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021
+      ]
+    },
+    {
+      "industry": "식품판매업(기타)",
+      "eligible_years": 7,
+      "improved_years": 6,
+      "eligible_year_list": [
+        2015,
+        2016,
+        2019,
+        2020,
+        2022,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2016,
+        2019,
+        2020,
+        2022,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "안경업",
+      "eligible_years": 1,
+      "improved_years": 1,
+      "eligible_year_list": [
+        2019
+      ],
+      "improved_year_list": [
+        2019
+      ]
+    },
+    {
+      "industry": "약국",
+      "eligible_years": 13,
+      "improved_years": 8,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2024
+      ]
+    },
+    {
+      "industry": "외국인전용유흥음식점업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "유흥주점영업",
+      "eligible_years": 13,
+      "improved_years": 3,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2016,
+        2021,
+        2022
+      ]
+    },
+    {
+      "industry": "의료유사업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "의원·병원",
+      "eligible_years": 13,
+      "improved_years": 6,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2015,
+        2018,
+        2020,
+        2023,
+        2024
+      ]
+    },
+    {
+      "industry": "이용업",
+      "eligible_years": 13,
+      "improved_years": 13,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "인터넷컴퓨터게임시설제공업",
+      "eligible_years": 13,
+      "improved_years": 11,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "일반게임제공업",
+      "eligible_years": 0,
+      "improved_years": 0,
+      "eligible_year_list": [],
+      "improved_year_list": []
+    },
+    {
+      "industry": "일반음식점",
+      "eligible_years": 13,
+      "improved_years": 12,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "제과점영업",
+      "eligible_years": 13,
+      "improved_years": 11,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "즉석판매제조가공업",
+      "eligible_years": 13,
+      "improved_years": 13,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "청소년게임제공업",
+      "eligible_years": 13,
+      "improved_years": 7,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2019,
+        2021,
+        2022
+      ]
+    },
+    {
+      "industry": "체력단련장업",
+      "eligible_years": 9,
+      "improved_years": 1,
+      "eligible_year_list": [
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "improved_year_list": [
+        2021
+      ]
+    },
+    {
+      "industry": "체육도장업",
+      "eligible_years": 13,
+      "improved_years": 3,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2015,
+        2020,
+        2021
+      ]
+    },
+    {
+      "industry": "축산판매업",
+      "eligible_years": 13,
+      "improved_years": 10,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "industry": "휴게음식점",
+      "eligible_years": 13,
+      "improved_years": 13,
+      "eligible_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "improved_year_list": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    }
+  ],
+  "source_hash": "b7b5a0d20bc29e1e6fbdb252524e9ddd5928d13cd59fbf3a3ce579fdcd536cc3"
+}

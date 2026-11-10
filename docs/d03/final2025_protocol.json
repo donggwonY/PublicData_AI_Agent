@@ -1,0 +1,30 @@
+{
+  "train": 2021,
+  "calibration": 2023,
+  "evaluation": 2025,
+  "candidate": "pooled LR C=1 max_iter=2000 seed=7 + global intercept + industry shrink500 + industry/gu shrink500",
+  "features": [
+    "industry",
+    "gu",
+    "age_band"
+  ],
+  "target": "Active permit on January 1, closure report in following 365 days",
+  "baseline": "2023 industry closure proportion, fallback to 2021 industry or global training average",
+  "primary_metrics": [
+    "brier",
+    "log_loss"
+  ],
+  "diagnostics": [
+    "mean predicted minus actual percentage points",
+    "roc_auc",
+    "industry and industry/gu errors",
+    "sufficient cells n>=200 and events>=20; absolute mean gap>5pp flagged descriptively, not a formal statistical acceptance threshold"
+  ],
+  "decision_rule": "If candidate does not beat baseline on both primary metrics, do not adopt. Improvement alone is insufficient for deployment; review subgroup errors, magnitude and historical data limitations. No post-evaluation tuning or switching to another candidate.",
+  "limitations": [
+    "2025 was inspected in earlier project experiments; not a pristine untouched test set.",
+    "Current snapshot reconstructs past permits; historical availability and gu not proven.",
+    "Permit rows, not unique businesses; short-event and merged-occupant flags not used.",
+    "Stopping evaluation for this model development round. No automatic service or DB updates."
+  ]
+}
