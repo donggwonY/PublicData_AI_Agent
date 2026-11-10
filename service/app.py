@@ -247,6 +247,8 @@ with tab_chat:
 
 # ─────────────────────────── 2. 대시보드 ───────────────────────────
 with tab_dash:
+    st.subheader("대구 상권 한눈에 보기")
+    st.caption("지역을 선택해 상권 현황과 업종별 변화를 살펴보세요.")
     gu_sel = st.selectbox("지역", ["대구 전체"] + GUS, key="dash_gu")
     gu = None if gu_sel == "대구 전체" else gu_sel
 
@@ -254,27 +256,30 @@ with tab_dash:
     surv = T.get_survival_curve(gu=gu)
     vac = T.find_vacant_units(gu=gu, limit=1000)
     k1, k2, k3, k4 = st.columns(4)
-    k1.metric("상권 사이클", cyc["stage"], f"개업/폐업 {cyc['open_close_ratio_recent']} (직전 {cyc['open_close_ratio_prev']})", delta_color="off")
-    k2.metric("중앙생존기간 (2010~ 개업)", metric_value(surv["median_survival_years"], "년", "관찰기간 내 미도달"), "대구 " + metric_value(surv["daegu_baseline_same_cohort"]["median_survival_years"], "년", "관찰기간 내 미도달"), delta_color="off")
-    k3.metric("1년 내 폐업 신고 추정치", metric_value(surv["close_within_1y_pct"], "%"), f"n={surv['n']:,}", delta_color="off")
-    k4.metric("인허가 공백 후보 (90일~3년)", f"{vac['total_vacant']:,}곳")
+    k1.metric("상권 사이클", cyc["stage"], f"개업/폐업 {cyc['open_close_ratio_recent']} (직전 {cyc['open_close_ratio_prev']})", delta_color="off", border=True)
+    k2.metric("중앙생존기간 (2010~ 개업)", metric_value(surv["median_survival_years"], "년", "관찰기간 내 미도달"), "대구 " + metric_value(surv["daegu_baseline_same_cohort"]["median_survival_years"], "년", "관찰기간 내 미도달"), delta_color="off", border=True)
+    k3.metric("1년 내 폐업 신고 추정치", metric_value(surv["close_within_1y_pct"], "%"), f"n={surv['n']:,}", delta_color="off", border=True)
+    k4.metric("인허가 공백 후보 (90일~3년)", f"{vac['total_vacant']:,}곳", border=True)
 
     st.caption(f"기준일: {surv['basis']['reference_date']} · 대상: {surv['target']} · {surv['basis']['cohort']} · 표본 {surv['n']:,}건")
     st.caption("1년 내 폐업 신고 추정치는 100%−Kaplan–Meier 1년 생존율입니다. 표본 전체 중 신고 건수의 단순 비율이나 새 점포의 개별 예측 확률이 아닙니다.")
     st.caption("폐업 신고는 실제 사업 실패와 같지 않으며 행사장 영업 종료 등이 포함될 수 있습니다. 인허가 공백 후보는 실제 공실·임대 매물 여부를 확인한 결과가 아닙니다.")
-    _n_src = len(services)
-    _n_grp = len({"의원·병원" if s in ("의원", "병원") else s for s in services})
-    st.caption(f"원천 업종명은 {_n_src}개이며, 분석 보고서는 의원·병원을 합쳐 {_n_grp}그룹으로 집계합니다. "
-               "서비스의 원천 업종 조회에서는 의원·병원을 각각 유지합니다.")
-    _se = META.get("quality", {}).get("short_event_excluded_from_stats")
-    if _se:
-        st.caption(f"백화점·마트 식품관 등 다점포 자리에서 {C.SHORT_EVENT_MAX_DAYS}일 이내 폐업한 단기 행사·팝업 등록 "
-                   f"{_se['occupants']:,}곳은 생존율·상권 사이클·개폐업 통계에서 제외했습니다(자리 이력에는 표시).")
-    if META.get("quality", {}).get("occupants"):
-        st.caption("같은 자리·같은 상호로 기간이 겹치는 인허가(예: 편의점의 담배소매업+휴게음식점)는 한 가게로 묶어 "
-                   "자리·공백·생존·교체를 계산합니다. 누적 인허가 수는 묶기 전 건수입니다.")
+    with st.expander("집계 대상과 기준 자세히 보기"):
+        _n_src = len(services)
+        _n_grp = len({"의원·병원" if s in ("의원", "병원") else s for s in services})
+        st.caption(f"원천 업종명은 {_n_src}개이며, 분석 보고서는 의원·병원을 합쳐 {_n_grp}그룹으로 집계합니다. "
+                   "서비스의 원천 업종 조회에서는 의원·병원을 각각 유지합니다.")
+        _se = META.get("quality", {}).get("short_event_excluded_from_stats")
+        if _se:
+            st.caption(f"백화점·마트 식품관 등 다점포 자리에서 {C.SHORT_EVENT_MAX_DAYS}일 이내 폐업한 단기 행사·팝업 등록 "
+                       f"{_se['occupants']:,}곳은 생존율·상권 사이클·개폐업 통계에서 제외했습니다(자리 이력에는 표시).")
+        if META.get("quality", {}).get("occupants"):
+            st.caption("같은 자리·같은 상호로 기간이 겹치는 인허가(예: 편의점의 담배소매업+휴게음식점)는 한 가게로 묶어 "
+                       "자리·공백·생존·교체를 계산합니다. 누적 인허가 수는 묶기 전 건수입니다.")
 
+    st.divider()
     render_permit_trends(S.stores, S.ref, gu)
+    st.divider()
 
     left, right = st.columns(2)
     with left:
@@ -329,7 +334,7 @@ with tab_dash:
     st.caption(safe_markdown(vac["basis"]["definition"] + " · " + vac["basis"]["caveat"]))
     _map(vac["units"], "vacant_days", ["last_store", "last_category", "vacant_days", "closures_since_2010"], key="dash-map")
 
-    with st.expander("📐 데이터 품질 · 방법론 (기획서 5장 검증 결과 재현)"):
+    with st.expander("데이터 품질과 산출 방법"):
         q = META["quality"]
         st.markdown(safe_markdown(f"""
 - **레코드**: 원본 {q['raw_rows']:,}건 · 중복 제거 {q['duplicates_removed']}건 · 인허가일 결측 {q['missing_license_date']}건 · 날짜 모순 {q['date_contradiction']}건 · 대구 외 주소 {q['non_daegu_address']}건 제외
@@ -342,11 +347,11 @@ with tab_dash:
             poi_food = int((S.poi["cat_l"] == "음식").sum())
             poi_bakery = int(S.poi["cat_s"].fillna("").str.contains("제과|베이커리|빵").sum())
             st.markdown(safe_markdown(
-                f"- **교차검증(현재 점포 수)**: 인허가 기준 영업 중 **{rec['active']:,}곳** vs "
-                f"소상공인 상가정보 2026-06 음식 {poi_food:,} + 제과·베이커리 {poi_bakery:,} = **{poi_food + poi_bakery:,}곳** "
-                f"(차이 {abs(rec['active'] - poi_food - poi_bakery):,}곳). 수집 시점과 출처가 다른데도 거의 일치한다.\n"
-                f"- **누적 vs 현재**: 위 {rec['total']:,}건은 {first_year}년 이후 누적이라 폐업이 {rec['closed']:,}건으로 쌓인다. "
-                f"2000년대 개업분은 84%가 폐업했지만 2020년대 개업분은 45%다 — 시간이 지날수록 폐업이 누적되는 구조."))
+                f"- **출처별 수록 범위**: 인허가 자료의 전체 업종 영업 중 기록은 {rec['active']:,}건, "
+                f"소상공인 상가정보 2026-06의 음식·제과·베이커리 점포는 {poi_food + poi_bakery:,}개입니다. "
+                "업종 범위·집계 단위·수집 시점이 달라 두 수치의 일치 여부로 정확도를 판단할 수 없습니다.\n"
+                f"- **누적과 현재**: 누적 인허가 {rec['total']:,}건에는 과거 폐업 신고 {rec['closed']:,}건도 포함됩니다. "
+                "개업 시기별 관찰기간이 다르므로 단순 폐업 비율을 같은 조건의 위험도로 비교하지 않습니다."))
         st.markdown("**문제3 생존편향** — 개업 연대별 1년 생존율 (그래서 생존분석은 2010년 이후 개업만)")
         st.dataframe(pd.DataFrame(META["survival_by_decade_1y"]), hide_index=True)
 
