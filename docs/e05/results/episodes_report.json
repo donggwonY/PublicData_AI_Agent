@@ -1,0 +1,39 @@
+{
+  "reference_date": "2026-11-06",
+  "episodes_before_rule": 26436,
+  "landmark90_before_rule": 20642,
+  "episodes": 26436,
+  "bulk_registration_censored": 8,
+  "event_pct": 39.9,
+  "filled_within_90d_pct": 21.9,
+  "landmark90": 20642,
+  "landmark_events": 4764,
+  "by_split": {
+    "test": {
+      "n": 4761,
+      "events": 1736
+    },
+    "train": {
+      "n": 17211,
+      "events": 7208
+    },
+    "valid": {
+      "n": 4464,
+      "events": 1613
+    }
+  },
+  "landmark_by_split": {
+    "test": {
+      "n": 3644,
+      "events": 619
+    },
+    "train": {
+      "n": 13469,
+      "events": 3467
+    },
+    "valid": {
+      "n": 3529,
+      "events": 678
+    }
+  }
+}

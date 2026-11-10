@@ -1,0 +1,92 @@
+{
+  "episodes": 28570,
+  "landmark90": 21627,
+  "events": 12687,
+  "landmark_events": 5746,
+  "bulk_censored": 14,
+  "vs_final_single_episodes": {
+    "final_only": 9,
+    "asof_only": 2143
+  },
+  "by_split": {
+    "test": {
+      "n": 4971,
+      "events": 1948
+    },
+    "train": {
+      "n": 18857,
+      "events": 8848
+    },
+    "valid": {
+      "n": 4742,
+      "events": 1891
+    }
+  },
+  "landmark_by_split": {
+    "test": {
+      "n": 3704,
+      "events": 681
+    },
+    "train": {
+      "n": 14295,
+      "events": 4288
+    },
+    "valid": {
+      "n": 3628,
+      "events": 777
+    }
+  },
+  "missing_pct": {
+    "prev_group": 0.0,
+    "prev_life_years": 0.0,
+    "prev_area_m2": 31.0,
+    "prev_n_licenses": 0.0,
+    "floor_class": 0.0,
+    "f_gu": 0.0,
+    "close_month": 0.0,
+    "covid": 0.0,
+    "h_n_occ": 0.0,
+    "h_n_closed": 0.0,
+    "h_n_turnover": 0.0,
+    "h_mean_gap_days": 77.3,
+    "h_years_since_first": 0.0,
+    "h_n_groups": 0.0,
+    "s1_nb_active": 3.6,
+    "s1_nb_active_same": 3.6,
+    "s1_nb_open_12m": 3.6,
+    "s1_nb_close_12m": 3.6,
+    "s1_nb_net_12m": 3.6,
+    "s1_nb_net_same_12m": 3.6,
+    "s1_nb_vacant": 3.6,
+    "s1_nb_vacancy_rate": 3.6,
+    "s1_dong_vacancy_rate": 0.0,
+    "s1_dong_live_change_3y": 0.0,
+    "s1_sub_dist_m": 3.6,
+    "s1_sub_board_12m": 3.6,
+    "s1_sub_board_yoy": 6.0,
+    "s1_pop": 1.8,
+    "s1_pop_2039_share": 1.8,
+    "s1_pop_60plus_share": 1.8,
+    "s1_pop_change_12m": 1.8,
+    "s1_pop_is_dong": 0.0,
+    "s2_nb_active": 3.6,
+    "s2_nb_active_same": 3.6,
+    "s2_nb_open_12m": 3.6,
+    "s2_nb_close_12m": 3.6,
+    "s2_nb_net_12m": 3.6,
+    "s2_nb_net_same_12m": 3.6,
+    "s2_nb_vacant": 3.6,
+    "s2_nb_vacancy_rate": 3.6,
+    "s2_dong_vacancy_rate": 0.0,
+    "s2_dong_live_change_3y": 0.0,
+    "s2_sub_dist_m": 3.6,
+    "s2_sub_board_12m": 3.6,
+    "s2_sub_board_yoy": 6.0,
+    "s2_pop": 1.1,
+    "s2_pop_2039_share": 1.1,
+    "s2_pop_60plus_share": 1.1,
+    "s2_pop_change_12m": 1.1,
+    "s2_pop_is_dong": 0.0
+  },
+  "seconds": 42
+}

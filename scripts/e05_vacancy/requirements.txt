@@ -1,0 +1,10 @@
+# E-05 실험 환경(Python 3.12.10, 2026-11-09 실행). 서비스 requirements.txt와 별개.
+numpy==2.5.4
+pandas==2.3.3
+pyarrow==26.0.1
+scipy==1.18.1
+scikit-learn==1.9.1
+scikit-survival==0.28.0
+lightgbm==4.7.0
+lifelines==0.30.3
+openpyxl==3.1.5

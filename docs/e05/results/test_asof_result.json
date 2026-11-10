@@ -1,0 +1,21 @@
+{
+ "T1_history_single": {
+  "n": 400,
+  "mismatch": 0
+ },
+ "T2_neighbor_dong": {
+  "2015-06": {
+   "n": 193,
+   "mismatch": 0
+  },
+  "2019-03": {
+   "n": 255,
+   "mismatch": 0
+  },
+  "2022-09": {
+   "n": 172,
+   "mismatch": 0
+  }
+ },
+ "T3_feature_names_clean": true
+}

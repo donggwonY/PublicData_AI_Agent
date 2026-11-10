@@ -3,6 +3,9 @@
 *.json text eol=lf
 *.md text eol=lf
 *.html text eol=lf
+# Shell scripts and sha256sum check lists break with CRLF (E-05, 2026-11-10).
+*.sh text eol=lf
+docs/e05/results/input_sha256.txt text eol=lf
 
 # Snapshot and image bytes must never undergo newline conversion.
 *.parquet -text

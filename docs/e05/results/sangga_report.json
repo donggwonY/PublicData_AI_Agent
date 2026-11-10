@@ -1,0 +1,22 @@
+{
+ "store_quarters": 4717810,
+ "quarters": 44,
+ "unknown_code_rows": 0,
+ "bkey_parsed_pct": 100.0,
+ "floor_parsed_pct": 47.1,
+ "other_share_pct": 45.4,
+ "episodes_2016plus": 19504,
+ "episode_building_in_sangga_pct_2016plus": 72.0,
+ "episode_has_floor_pct_2016plus": 54.7,
+ "s2_missing_pct_2016plus": {
+  "s2_sg_floor_total": 45.3,
+  "s2_sg_floor_other": 45.3,
+  "s2_sg_bldg_other": 0.0,
+  "s2_sg_floor_new_other": 45.3,
+  "s2_sg_nb_total": 2.7,
+  "s2_sg_nb_other_share": 3.0,
+  "s2_sg_nb_change_1y": 12.8
+ },
+ "s2_floor_other_gt0_pct_2016plus": 5.6,
+ "seconds": 56
+}
