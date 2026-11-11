@@ -1,0 +1,189 @@
+{
+ "inputs": {
+  "frozen": {
+   "reference_date": "2026-11-06",
+   "built_at": "2026-11-09 22:04:16"
+  },
+  "v5": {
+   "dir": "service\\data\\processed",
+   "reference_date": "2026-11-06",
+   "built_at": "2026-11-09 22:50:11"
+  }
+ },
+ "frozen_vs_v5": {
+  "stores_rows": [
+   286896,
+   286896
+  ],
+  "units_rows": [
+   95861,
+   95861
+  ],
+  "stores_only_in_v5": [
+   "short_event"
+  ],
+  "stores_cols_with_diff": {},
+  "units_cols_with_diff": {},
+  "short_event_occupants": 17161
+ },
+ "episodes": {
+  "frozen_2012_2023": {
+   "episodes": 28570,
+   "events": 12687,
+   "landmark90": 21627,
+   "landmark90_events": 5746
+  },
+  "v5_2012_2023": {
+   "episodes": 28570,
+   "events": 12687,
+   "landmark90": 21627,
+   "landmark90_events": 5746
+  },
+  "v5_2012_2023_same_ids_as_frozen": true,
+  "v5_2012_2026": {
+   "episodes": 35127,
+   "events": 14745,
+   "landmark90": 26271,
+   "landmark90_events": 6344
+  },
+  "v5_by_close_year": {
+   "2012": {
+    "episodes": 2349,
+    "events": 1112,
+    "landmark90": 1867,
+    "landmark90_events": 630
+   },
+   "2013": {
+    "episodes": 2241,
+    "events": 1095,
+    "landmark90": 1743,
+    "landmark90_events": 597
+   },
+   "2014": {
+    "episodes": 2269,
+    "events": 1032,
+    "landmark90": 1779,
+    "landmark90_events": 542
+   },
+   "2015": {
+    "episodes": 2207,
+    "events": 1086,
+    "landmark90": 1666,
+    "landmark90_events": 545
+   },
+   "2016": {
+    "episodes": 2264,
+    "events": 1117,
+    "landmark90": 1634,
+    "landmark90_events": 487
+   },
+   "2017": {
+    "episodes": 2357,
+    "events": 1087,
+    "landmark90": 1735,
+    "landmark90_events": 465
+   },
+   "2018": {
+    "episodes": 2464,
+    "events": 1136,
+    "landmark90": 1857,
+    "landmark90_events": 531
+   },
+   "2019": {
+    "episodes": 2706,
+    "events": 1183,
+    "landmark90": 2014,
+    "landmark90_events": 491
+   },
+   "2020": {
+    "episodes": 2518,
+    "events": 1005,
+    "landmark90": 1937,
+    "landmark90_events": 424
+   },
+   "2021": {
+    "episodes": 2224,
+    "events": 886,
+    "landmark90": 1691,
+    "landmark90_events": 353
+   },
+   "2022": {
+    "episodes": 2313,
+    "events": 956,
+    "landmark90": 1674,
+    "landmark90_events": 317
+   },
+   "2023": {
+    "episodes": 2658,
+    "events": 992,
+    "landmark90": 2030,
+    "landmark90_events": 364
+   },
+   "2024": {
+    "episodes": 2466,
+    "events": 920,
+    "landmark90": 1882,
+    "landmark90_events": 336
+   },
+   "2025": {
+    "episodes": 2330,
+    "events": 709,
+    "landmark90": 1834,
+    "landmark90_events": 213
+   },
+   "2026": {
+    "episodes": 1761,
+    "events": 429,
+    "landmark90": 928,
+    "landmark90_events": 49
+   }
+  },
+  "v5_vs_frozen_event_or_T_diff": 0
+ },
+ "candidates": {
+  "n": 4536,
+  "definition": "vacant & 90<=vacant_days<=1095 & is_single_unit (find_vacant_units 기본값)",
+  "link": {
+   "ok": 4536
+  },
+  "linked": 4536,
+  "linked_pct": 100.0,
+  "by_band": {
+   "90~180일": {
+    "n": 343,
+    "linked": 343
+   },
+   "180일~1년": {
+    "n": 1056,
+    "linked": 1056
+   },
+   "1~2년": {
+    "n": 1581,
+    "linked": 1581
+   },
+   "2~3년": {
+    "n": 1556,
+    "linked": 1556
+   }
+  },
+  "close_year_of_linked": {
+   "2023": 490,
+   "2024": 1546,
+   "2025": 1621,
+   "2026": 879
+  },
+  "by_last_service_top": {
+   "일반음식점": 1817,
+   "휴게음식점": 666,
+   "담배소매업": 446,
+   "미용업": 424,
+   "즉석판매제조가공업": 317,
+   "건강기능식품일반판매업": 184,
+   "축산판매업": 98,
+   "의원": 72,
+   "노래연습장업": 68,
+   "이용업": 45
+  }
+ },
+ "seconds": 16
+}
