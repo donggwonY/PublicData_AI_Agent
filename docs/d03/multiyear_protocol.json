@@ -1,0 +1,27 @@
+{
+  "question": "Does training across multiple years, with or without recency weighting, improve the fixed continuous-age model?",
+  "evaluation": "all96 quarters2002-2025, identical full cohorts",
+  "train": "Jan1 of evaluation year-6,-5,-4",
+  "calibration": "Jan1 year-2, unchanged global/industry/region shrink500",
+  "variants": {
+    "uniform": [
+      1,
+      1,
+      1
+    ],
+    "recent": [
+      0.25,
+      0.5,
+      1
+    ]
+  },
+  "weight_normalization": "sum of weights equals n of latest training cohort (year-4) to keep effective L2 penalty comparable",
+  "fixed_model": "same categorical+continuous age spline, LR C1 seed7 max_iter2000",
+  "comparison": "single-year continuous_age_result; compare uniform and recent separately, never select per evaluation year",
+  "limits": [
+    "Repeated permits across annual training cohorts are longitudinal observations, not unique independent stores.",
+    "Reused evaluation periods, retrospective experiment; no untouched test claim.",
+    "Every training outcome ends before calibration; calibration outcome ends before evaluation.",
+    "No random sampling, no tuning after results, no app or database update."
+  ]
+}

@@ -54,3 +54,22 @@ def permit_trends_csv(result: dict, gu: str | None = None, industry: str | None 
     for col in rows.select_dtypes(include=['object','string']).columns:
         rows[col] = rows[col].map(lambda value: "'"+value if isinstance(value,str) and value.startswith(('=','+','-','@','\t','\r','\n')) else value)
     return rows.to_csv(index=False).encode('utf-8-sig')
+
+
+def compare_industry_regions(stores: pd.DataFrame, reference_date, industry: str) -> pd.DataFrame:
+    """Same industry across recorded regions; shares use all valid active permits per region."""
+    records = []
+    valid_regions = {'중구', '동구', '서구', '남구', '북구', '수성구', '달서구', '달성군', '군위군'}
+    for region in sorted(set(stores.gu.dropna().unique()) & valid_regions):
+        summary = summarize_permit_trends(stores, reference_date, region)
+        row = next((r for r in summary['rows'] if r['industry'] == industry), None)
+        row = row or dict(active_permits=0, opened=0, closure_reports=0,
+                          previous_opened=0, previous_closure_reports=0, active_share_pct=0.0)
+        total = sum(r['active_permits'] for r in summary['rows'])
+        records.append(dict(region=region, active_permits=row['active_permits'],
+            active_share_pct=row['active_share_pct'] if total else None,
+            opened=row['opened'], opened_change=row['opened']-row['previous_opened'],
+            closure_reports=row['closure_reports'],
+            closure_change=row['closure_reports']-row['previous_closure_reports'],
+            region_active_total=total))
+    return pd.DataFrame(records)

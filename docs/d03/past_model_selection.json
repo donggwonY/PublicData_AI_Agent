@@ -1,0 +1,2294 @@
+{
+  "protocol": {
+    "selection": "Use all four quarterly evaluations of year y-2; all outcomes complete before Jan1 y",
+    "rule": "Separate model only if all four past quarters exist, each n>=200/events>=20, and separate calibrated beats pooled calibrated on BOTH Brier/logloss in ALL four. Otherwise pooled.",
+    "scope": "All saved quarters; no per-result threshold tuning; unavailable separate models fall back to pooled",
+    "limitations": "Rule proposed after inspecting past project results; retrospective analysis, not pristine holdout. Not operational validation."
+  },
+  "summary": [
+    {
+      "scope": "all",
+      "quarters": 92,
+      "better": 45,
+      "worse": 25,
+      "equal": 12,
+      "mixed": 10
+    },
+    {
+      "scope": "since2013",
+      "quarters": 52,
+      "better": 26,
+      "worse": 18,
+      "equal": 0,
+      "mixed": 8
+    },
+    {
+      "scope": "recent",
+      "quarters": 12,
+      "better": 5,
+      "worse": 4,
+      "equal": 0,
+      "mixed": 3
+    }
+  ],
+  "results": [
+    {
+      "landmark": "2002-01-01",
+      "selection_year": 2000,
+      "n": 0,
+      "excluded_n": 58161,
+      "selected_industries": [],
+      "scores": {}
+    },
+    {
+      "landmark": "2002-04-01",
+      "selection_year": 2000,
+      "n": 0,
+      "excluded_n": 60104,
+      "selected_industries": [],
+      "scores": {}
+    },
+    {
+      "landmark": "2002-07-01",
+      "selection_year": 2000,
+      "n": 0,
+      "excluded_n": 62147,
+      "selected_industries": [],
+      "scores": {}
+    },
+    {
+      "landmark": "2002-10-01",
+      "selection_year": 2000,
+      "n": 0,
+      "excluded_n": 63725,
+      "selected_industries": [],
+      "scores": {}
+    },
+    {
+      "landmark": "2003-01-01",
+      "selection_year": 2001,
+      "n": 2546,
+      "excluded_n": 62576,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07922224693176065,
+          "log_loss": 0.31788723547493647
+        },
+        "separate_cal": {
+          "brier": 0.0797945669219743,
+          "log_loss": 0.4209384444329657
+        },
+        "past_selected": {
+          "brier": 0.07922224693176065,
+          "log_loss": 0.31788723547493647
+        }
+      }
+    },
+    {
+      "landmark": "2003-04-01",
+      "selection_year": 2001,
+      "n": 2599,
+      "excluded_n": 63644,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.09118411502746149,
+          "log_loss": 0.3594895332469638
+        },
+        "separate_cal": {
+          "brier": 0.0932567002823761,
+          "log_loss": 0.48643875869425496
+        },
+        "past_selected": {
+          "brier": 0.09118411502746149,
+          "log_loss": 0.3594895332469638
+        }
+      }
+    },
+    {
+      "landmark": "2003-07-01",
+      "selection_year": 2001,
+      "n": 2618,
+      "excluded_n": 64509,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0954809052837305,
+          "log_loss": 0.3757790708772756
+        },
+        "separate_cal": {
+          "brier": 0.09807246028562035,
+          "log_loss": 0.5100971187616816
+        },
+        "past_selected": {
+          "brier": 0.0954809052837305,
+          "log_loss": 0.3757790708772756
+        }
+      }
+    },
+    {
+      "landmark": "2003-10-01",
+      "selection_year": 2001,
+      "n": 2674,
+      "excluded_n": 65949,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0976702184227121,
+          "log_loss": 0.38873087272755225
+        },
+        "separate_cal": {
+          "brier": 0.10086389620204948,
+          "log_loss": 0.5466000800511063
+        },
+        "past_selected": {
+          "brier": 0.0976702184227121,
+          "log_loss": 0.38873087272755225
+        }
+      }
+    },
+    {
+      "landmark": "2004-01-01",
+      "selection_year": 2002,
+      "n": 46241,
+      "excluded_n": 22008,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.11347748975175341,
+          "log_loss": 0.40993555740138343
+        },
+        "separate_cal": {
+          "brier": 0.11345140940800338,
+          "log_loss": 0.4235637060075286
+        },
+        "past_selected": {
+          "brier": 0.11347748975175341,
+          "log_loss": 0.40993555740138343
+        }
+      }
+    },
+    {
+      "landmark": "2004-04-01",
+      "selection_year": 2002,
+      "n": 45961,
+      "excluded_n": 22177,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.1125492034050597,
+          "log_loss": 0.4072630027814249
+        },
+        "separate_cal": {
+          "brier": 0.1125004877711687,
+          "log_loss": 0.42287659297190067
+        },
+        "past_selected": {
+          "brier": 0.1125492034050597,
+          "log_loss": 0.4072630027814249
+        }
+      }
+    },
+    {
+      "landmark": "2004-07-01",
+      "selection_year": 2002,
+      "n": 46101,
+      "excluded_n": 22963,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.11581007286858569,
+          "log_loss": 0.41837496966392135
+        },
+        "separate_cal": {
+          "brier": 0.1157928701675301,
+          "log_loss": 0.4347571006110062
+        },
+        "past_selected": {
+          "brier": 0.11581007286858569,
+          "log_loss": 0.41837496966392135
+        }
+      }
+    },
+    {
+      "landmark": "2004-10-01",
+      "selection_year": 2002,
+      "n": 46105,
+      "excluded_n": 23396,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.11402109470367622,
+          "log_loss": 0.4118008634780784
+        },
+        "separate_cal": {
+          "brier": 0.11412260167522176,
+          "log_loss": 0.4270945135363304
+        },
+        "past_selected": {
+          "brier": 0.11402109470367622,
+          "log_loss": 0.4118008634780784
+        }
+      }
+    },
+    {
+      "landmark": "2005-01-01",
+      "selection_year": 2003,
+      "n": 49447,
+      "excluded_n": 20057,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.11949122109892475,
+          "log_loss": 0.4047820368379594
+        },
+        "separate_cal": {
+          "brier": 0.1228590597971582,
+          "log_loss": 0.4194159459189646
+        },
+        "past_selected": {
+          "brier": 0.11949122109892475,
+          "log_loss": 0.4047820368379594
+        }
+      }
+    },
+    {
+      "landmark": "2005-04-01",
+      "selection_year": 2003,
+      "n": 48811,
+      "excluded_n": 20172,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.12198633040488989,
+          "log_loss": 0.41197492817229353
+        },
+        "separate_cal": {
+          "brier": 0.12492710904716738,
+          "log_loss": 0.42415620743100757
+        },
+        "past_selected": {
+          "brier": 0.12198633040488989,
+          "log_loss": 0.41197492817229353
+        }
+      }
+    },
+    {
+      "landmark": "2005-07-01",
+      "selection_year": 2003,
+      "n": 48619,
+      "excluded_n": 20416,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.12112987863969002,
+          "log_loss": 0.40979280273468527
+        },
+        "separate_cal": {
+          "brier": 0.1239776682384964,
+          "log_loss": 0.421440535650283
+        },
+        "past_selected": {
+          "brier": 0.12112987863969002,
+          "log_loss": 0.40979280273468527
+        }
+      }
+    },
+    {
+      "landmark": "2005-10-01",
+      "selection_year": 2003,
+      "n": 48481,
+      "excluded_n": 20641,
+      "selected_industries": [],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.12020008247917907,
+          "log_loss": 0.4082916343761747
+        },
+        "separate_cal": {
+          "brier": 0.12326649152935648,
+          "log_loss": 0.4207157414030362
+        },
+        "past_selected": {
+          "brier": 0.12020008247917907,
+          "log_loss": 0.4082916343761747
+        }
+      }
+    },
+    {
+      "landmark": "2006-01-01",
+      "selection_year": 2004,
+      "n": 54426,
+      "excluded_n": 14286,
+      "selected_industries": [
+        "담배소매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.1081210362022654,
+          "log_loss": 0.3723518247665253
+        },
+        "separate_cal": {
+          "brier": 0.10987327710461642,
+          "log_loss": 0.37772452561128683
+        },
+        "past_selected": {
+          "brier": 0.10807416641039075,
+          "log_loss": 0.37209368262174497
+        }
+      }
+    },
+    {
+      "landmark": "2006-04-01",
+      "selection_year": 2004,
+      "n": 53584,
+      "excluded_n": 14308,
+      "selected_industries": [
+        "담배소매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.10664781050562319,
+          "log_loss": 0.3686086930658116
+        },
+        "separate_cal": {
+          "brier": 0.10832194014504148,
+          "log_loss": 0.3736891285143707
+        },
+        "past_selected": {
+          "brier": 0.10656886896788027,
+          "log_loss": 0.3682213882016154
+        }
+      }
+    },
+    {
+      "landmark": "2006-07-01",
+      "selection_year": 2004,
+      "n": 53234,
+      "excluded_n": 14412,
+      "selected_industries": [
+        "담배소매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.10199063785947832,
+          "log_loss": 0.35550676109707613
+        },
+        "separate_cal": {
+          "brier": 0.10361794192188938,
+          "log_loss": 0.3603723792616291
+        },
+        "past_selected": {
+          "brier": 0.10185236679484463,
+          "log_loss": 0.35490914003472057
+        }
+      }
+    },
+    {
+      "landmark": "2006-10-01",
+      "selection_year": 2004,
+      "n": 53245,
+      "excluded_n": 14508,
+      "selected_industries": [
+        "담배소매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.09882302773475349,
+          "log_loss": 0.3467480610673717
+        },
+        "separate_cal": {
+          "brier": 0.09993817219118571,
+          "log_loss": 0.3503007235545016
+        },
+        "past_selected": {
+          "brier": 0.09871074067132751,
+          "log_loss": 0.3462420041543656
+        }
+      }
+    },
+    {
+      "landmark": "2007-01-01",
+      "selection_year": 2005,
+      "n": 57223,
+      "excluded_n": 10366,
+      "selected_industries": [
+        "담배소매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.09644807516044664,
+          "log_loss": 0.34044247684059814
+        },
+        "separate_cal": {
+          "brier": 0.09807930234328661,
+          "log_loss": 0.3440189197484669
+        },
+        "past_selected": {
+          "brier": 0.09626386958225874,
+          "log_loss": 0.3396523571706666
+        }
+      }
+    },
+    {
+      "landmark": "2007-04-01",
+      "selection_year": 2005,
+      "n": 56579,
+      "excluded_n": 10209,
+      "selected_industries": [
+        "담배소매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08968232640377582,
+          "log_loss": 0.32222291326248914
+        },
+        "separate_cal": {
+          "brier": 0.09132845795174889,
+          "log_loss": 0.32544233997279015
+        },
+        "past_selected": {
+          "brier": 0.08948383587739042,
+          "log_loss": 0.3214132469093051
+        }
+      }
+    },
+    {
+      "landmark": "2007-07-01",
+      "selection_year": 2005,
+      "n": 56857,
+      "excluded_n": 10183,
+      "selected_industries": [
+        "담배소매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0943874907768628,
+          "log_loss": 0.3348400725497827
+        },
+        "separate_cal": {
+          "brier": 0.09610962244178044,
+          "log_loss": 0.33858790359981483
+        },
+        "past_selected": {
+          "brier": 0.0943220612300751,
+          "log_loss": 0.334738664624261
+        }
+      }
+    },
+    {
+      "landmark": "2007-10-01",
+      "selection_year": 2005,
+      "n": 57261,
+      "excluded_n": 10258,
+      "selected_industries": [
+        "담배소매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.09460276982758574,
+          "log_loss": 0.3355318776014202
+        },
+        "separate_cal": {
+          "brier": 0.09637202527304346,
+          "log_loss": 0.3398314030025152
+        },
+        "past_selected": {
+          "brier": 0.09453454009138236,
+          "log_loss": 0.3354542195615455
+        }
+      }
+    },
+    {
+      "landmark": "2008-01-01",
+      "selection_year": 2006,
+      "n": 59356,
+      "excluded_n": 8205,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.09112378621369556,
+          "log_loss": 0.3241409369740046
+        },
+        "separate_cal": {
+          "brier": 0.09100222157989223,
+          "log_loss": 0.32403167945910877
+        },
+        "past_selected": {
+          "brier": 0.09109468278587066,
+          "log_loss": 0.32434540495720415
+        }
+      }
+    },
+    {
+      "landmark": "2008-04-01",
+      "selection_year": 2006,
+      "n": 59188,
+      "excluded_n": 8397,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0896951229123202,
+          "log_loss": 0.32076267259565383
+        },
+        "separate_cal": {
+          "brier": 0.08966371607957353,
+          "log_loss": 0.3208112869444935
+        },
+        "past_selected": {
+          "brier": 0.08967703685729801,
+          "log_loss": 0.3209465209311695
+        }
+      }
+    },
+    {
+      "landmark": "2008-07-01",
+      "selection_year": 2006,
+      "n": 58844,
+      "excluded_n": 9075,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08250195592248603,
+          "log_loss": 0.30173478975274765
+        },
+        "separate_cal": {
+          "brier": 0.08248996702830227,
+          "log_loss": 0.3014497064528676
+        },
+        "past_selected": {
+          "brier": 0.08235088259281509,
+          "log_loss": 0.3011564537666414
+        }
+      }
+    },
+    {
+      "landmark": "2008-10-01",
+      "selection_year": 2006,
+      "n": 58818,
+      "excluded_n": 9456,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08190384788086601,
+          "log_loss": 0.30064179421076237
+        },
+        "separate_cal": {
+          "brier": 0.08206562657252396,
+          "log_loss": 0.3010162577791278
+        },
+        "past_selected": {
+          "brier": 0.0817974195058106,
+          "log_loss": 0.30034733003011616
+        }
+      }
+    },
+    {
+      "landmark": "2009-01-01",
+      "selection_year": 2007,
+      "n": 62003,
+      "excluded_n": 6512,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08081675129663358,
+          "log_loss": 0.29643250731498444
+        },
+        "separate_cal": {
+          "brier": 0.08112938452688435,
+          "log_loss": 0.29820382383503063
+        },
+        "past_selected": {
+          "brier": 0.08085325382438555,
+          "log_loss": 0.296731877755786
+        }
+      }
+    },
+    {
+      "landmark": "2009-04-01",
+      "selection_year": 2007,
+      "n": 61866,
+      "excluded_n": 6618,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07917384757036545,
+          "log_loss": 0.29131060764743383
+        },
+        "separate_cal": {
+          "brier": 0.07956218866357027,
+          "log_loss": 0.2933309751931173
+        },
+        "past_selected": {
+          "brier": 0.07922147759107788,
+          "log_loss": 0.29177759703468237
+        }
+      }
+    },
+    {
+      "landmark": "2009-07-01",
+      "selection_year": 2007,
+      "n": 62375,
+      "excluded_n": 6748,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08148907735910074,
+          "log_loss": 0.29739310427754273
+        },
+        "separate_cal": {
+          "brier": 0.08185561708901715,
+          "log_loss": 0.2995956862189237
+        },
+        "past_selected": {
+          "brier": 0.08149124394600041,
+          "log_loss": 0.29784796415784204
+        }
+      }
+    },
+    {
+      "landmark": "2009-10-01",
+      "selection_year": 2007,
+      "n": 63030,
+      "excluded_n": 6771,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07862199875589979,
+          "log_loss": 0.2896173323580577
+        },
+        "separate_cal": {
+          "brier": 0.07890131392313489,
+          "log_loss": 0.291178839025209
+        },
+        "past_selected": {
+          "brier": 0.07854956884802561,
+          "log_loss": 0.28953527217050035
+        }
+      }
+    },
+    {
+      "landmark": "2010-01-01",
+      "selection_year": 2008,
+      "n": 62522,
+      "excluded_n": 7572,
+      "selected_industries": [
+        "유흥주점영업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0802227425133654,
+          "log_loss": 0.2932422187538835
+        },
+        "separate_cal": {
+          "brier": 0.0803375538172861,
+          "log_loss": 0.29391825294632506
+        },
+        "past_selected": {
+          "brier": 0.08031536686609314,
+          "log_loss": 0.29377699664822526
+        }
+      }
+    },
+    {
+      "landmark": "2010-04-01",
+      "selection_year": 2008,
+      "n": 62643,
+      "excluded_n": 7645,
+      "selected_industries": [
+        "유흥주점영업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07996172309363718,
+          "log_loss": 0.29296314429108594
+        },
+        "separate_cal": {
+          "brier": 0.08008302546476344,
+          "log_loss": 0.2935044618292554
+        },
+        "past_selected": {
+          "brier": 0.0800380929106952,
+          "log_loss": 0.2933999512847975
+        }
+      }
+    },
+    {
+      "landmark": "2010-07-01",
+      "selection_year": 2008,
+      "n": 63129,
+      "excluded_n": 7743,
+      "selected_industries": [
+        "유흥주점영업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0799665188492204,
+          "log_loss": 0.2931777885610951
+        },
+        "separate_cal": {
+          "brier": 0.08009954464828813,
+          "log_loss": 0.2937277619926756
+        },
+        "past_selected": {
+          "brier": 0.08001673772439141,
+          "log_loss": 0.29348158765499327
+        }
+      }
+    },
+    {
+      "landmark": "2010-10-01",
+      "selection_year": 2008,
+      "n": 63612,
+      "excluded_n": 7798,
+      "selected_industries": [
+        "유흥주점영업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07881732542809818,
+          "log_loss": 0.2904724127039931
+        },
+        "separate_cal": {
+          "brier": 0.07898947465036066,
+          "log_loss": 0.29124036578875734
+        },
+        "past_selected": {
+          "brier": 0.07887898843273713,
+          "log_loss": 0.2908450265107978
+        }
+      }
+    },
+    {
+      "landmark": "2011-01-01",
+      "selection_year": 2009,
+      "n": 64233,
+      "excluded_n": 7411,
+      "selected_industries": [
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07897343474874599,
+          "log_loss": 0.28937826292576296
+        },
+        "separate_cal": {
+          "brier": 0.079152127036759,
+          "log_loss": 0.290594939743252
+        },
+        "past_selected": {
+          "brier": 0.07885185574669962,
+          "log_loss": 0.2888950092211516
+        }
+      }
+    },
+    {
+      "landmark": "2011-04-01",
+      "selection_year": 2009,
+      "n": 64320,
+      "excluded_n": 7492,
+      "selected_industries": [
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08020389618048755,
+          "log_loss": 0.2928813671790415
+        },
+        "separate_cal": {
+          "brier": 0.08030618288944527,
+          "log_loss": 0.29374308062265525
+        },
+        "past_selected": {
+          "brier": 0.08006553470345693,
+          "log_loss": 0.292407682912133
+        }
+      }
+    },
+    {
+      "landmark": "2011-07-01",
+      "selection_year": 2009,
+      "n": 64538,
+      "excluded_n": 7589,
+      "selected_industries": [
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07694404482656919,
+          "log_loss": 0.2836426312634994
+        },
+        "separate_cal": {
+          "brier": 0.07701956445909106,
+          "log_loss": 0.28422428738436806
+        },
+        "past_selected": {
+          "brier": 0.07678441839195185,
+          "log_loss": 0.28309941066191685
+        }
+      }
+    },
+    {
+      "landmark": "2011-10-01",
+      "selection_year": 2009,
+      "n": 65098,
+      "excluded_n": 7650,
+      "selected_industries": [
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.078265797801376,
+          "log_loss": 0.2870071364318627
+        },
+        "separate_cal": {
+          "brier": 0.07834845482368624,
+          "log_loss": 0.287693522564517
+        },
+        "past_selected": {
+          "brier": 0.07812946224698776,
+          "log_loss": 0.28655460532161775
+        }
+      }
+    },
+    {
+      "landmark": "2012-01-01",
+      "selection_year": 2010,
+      "n": 69038,
+      "excluded_n": 3584,
+      "selected_industries": [
+        "미용업",
+        "유흥주점영업",
+        "이용업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07322507864646043,
+          "log_loss": 0.27179391589020924
+        },
+        "separate_cal": {
+          "brier": 0.07342978335036963,
+          "log_loss": 0.27271963091444135
+        },
+        "past_selected": {
+          "brier": 0.07316258317894074,
+          "log_loss": 0.27145240723363057
+        }
+      }
+    },
+    {
+      "landmark": "2012-04-01",
+      "selection_year": 2010,
+      "n": 68871,
+      "excluded_n": 3607,
+      "selected_industries": [
+        "미용업",
+        "유흥주점영업",
+        "이용업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07386944648439663,
+          "log_loss": 0.2738711676628065
+        },
+        "separate_cal": {
+          "brier": 0.07404407686921032,
+          "log_loss": 0.27467596416608225
+        },
+        "past_selected": {
+          "brier": 0.07378828709915768,
+          "log_loss": 0.2734367926217962
+        }
+      }
+    },
+    {
+      "landmark": "2012-07-01",
+      "selection_year": 2010,
+      "n": 69155,
+      "excluded_n": 3617,
+      "selected_industries": [
+        "미용업",
+        "유흥주점영업",
+        "이용업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0734851915178144,
+          "log_loss": 0.2732938261284085
+        },
+        "separate_cal": {
+          "brier": 0.07359566640031409,
+          "log_loss": 0.2737265841634943
+        },
+        "past_selected": {
+          "brier": 0.07343259183394132,
+          "log_loss": 0.2729268170421748
+        }
+      }
+    },
+    {
+      "landmark": "2012-10-01",
+      "selection_year": 2010,
+      "n": 69338,
+      "excluded_n": 3633,
+      "selected_industries": [
+        "미용업",
+        "유흥주점영업",
+        "이용업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0713915382028327,
+          "log_loss": 0.2678209450331078
+        },
+        "separate_cal": {
+          "brier": 0.07154601433363378,
+          "log_loss": 0.2684088411054272
+        },
+        "past_selected": {
+          "brier": 0.07139018076795198,
+          "log_loss": 0.26759844577720365
+        }
+      }
+    },
+    {
+      "landmark": "2013-01-01",
+      "selection_year": 2011,
+      "n": 70343,
+      "excluded_n": 2611,
+      "selected_industries": [
+        "목욕장업",
+        "이용업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07202729612070671,
+          "log_loss": 0.26946384849126676
+        },
+        "separate_cal": {
+          "brier": 0.07220965666056271,
+          "log_loss": 0.2701598570732216
+        },
+        "past_selected": {
+          "brier": 0.07197424177881352,
+          "log_loss": 0.26918910024679965
+        }
+      }
+    },
+    {
+      "landmark": "2013-04-01",
+      "selection_year": 2011,
+      "n": 70170,
+      "excluded_n": 2628,
+      "selected_industries": [
+        "목욕장업",
+        "이용업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07148472836588567,
+          "log_loss": 0.2677768488012574
+        },
+        "separate_cal": {
+          "brier": 0.07172703860672647,
+          "log_loss": 0.2686118779229644
+        },
+        "past_selected": {
+          "brier": 0.07143887867361474,
+          "log_loss": 0.26761765346305183
+        }
+      }
+    },
+    {
+      "landmark": "2013-07-01",
+      "selection_year": 2011,
+      "n": 70451,
+      "excluded_n": 2665,
+      "selected_industries": [
+        "목욕장업",
+        "이용업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07273913307439639,
+          "log_loss": 0.2710498492721339
+        },
+        "separate_cal": {
+          "brier": 0.07308254211574851,
+          "log_loss": 0.2723742675213289
+        },
+        "past_selected": {
+          "brier": 0.07268753493746842,
+          "log_loss": 0.2709233984738081
+        }
+      }
+    },
+    {
+      "landmark": "2013-10-01",
+      "selection_year": 2011,
+      "n": 70838,
+      "excluded_n": 2812,
+      "selected_industries": [
+        "목욕장업",
+        "이용업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07465509811057165,
+          "log_loss": 0.2763534966997668
+        },
+        "separate_cal": {
+          "brier": 0.0750730343219351,
+          "log_loss": 0.2780148683444088
+        },
+        "past_selected": {
+          "brier": 0.07459913940859426,
+          "log_loss": 0.27622754391367277
+        }
+      }
+    },
+    {
+      "landmark": "2014-01-01",
+      "selection_year": 2012,
+      "n": 68886,
+      "excluded_n": 4962,
+      "selected_industries": [
+        "이용업",
+        "일반음식점",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07965044512801171,
+          "log_loss": 0.2916955201606161
+        },
+        "separate_cal": {
+          "brier": 0.07965170975031692,
+          "log_loss": 0.29203268317672926
+        },
+        "past_selected": {
+          "brier": 0.07959825197035529,
+          "log_loss": 0.2918384969062949
+        }
+      }
+    },
+    {
+      "landmark": "2014-04-01",
+      "selection_year": 2012,
+      "n": 68876,
+      "excluded_n": 4945,
+      "selected_industries": [
+        "이용업",
+        "일반음식점",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0789371977254539,
+          "log_loss": 0.28954506903710453
+        },
+        "separate_cal": {
+          "brier": 0.07886142951753683,
+          "log_loss": 0.2896114954189573
+        },
+        "past_selected": {
+          "brier": 0.07885350822898683,
+          "log_loss": 0.28952233177676806
+        }
+      }
+    },
+    {
+      "landmark": "2014-07-01",
+      "selection_year": 2012,
+      "n": 69278,
+      "excluded_n": 4954,
+      "selected_industries": [
+        "이용업",
+        "일반음식점",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0778955258825695,
+          "log_loss": 0.28682109507995746
+        },
+        "separate_cal": {
+          "brier": 0.07786993490367121,
+          "log_loss": 0.2869675133817289
+        },
+        "past_selected": {
+          "brier": 0.07785503488188036,
+          "log_loss": 0.2867763454676756
+        }
+      }
+    },
+    {
+      "landmark": "2014-10-01",
+      "selection_year": 2012,
+      "n": 69673,
+      "excluded_n": 4974,
+      "selected_industries": [
+        "이용업",
+        "일반음식점",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07651564748567705,
+          "log_loss": 0.2832997466542591
+        },
+        "separate_cal": {
+          "brier": 0.07650708477807974,
+          "log_loss": 0.28361598103545654
+        },
+        "past_selected": {
+          "brier": 0.07647788631637754,
+          "log_loss": 0.28326757633872796
+        }
+      }
+    },
+    {
+      "landmark": "2015-01-01",
+      "selection_year": 2013,
+      "n": 71312,
+      "excluded_n": 3316,
+      "selected_industries": [
+        "담배소매업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07201929899510763,
+          "log_loss": 0.26897816312431494
+        },
+        "separate_cal": {
+          "brier": 0.07223178088236164,
+          "log_loss": 0.2699452991387061
+        },
+        "past_selected": {
+          "brier": 0.07203414355153195,
+          "log_loss": 0.2689718192754107
+        }
+      }
+    },
+    {
+      "landmark": "2015-04-01",
+      "selection_year": 2013,
+      "n": 71371,
+      "excluded_n": 3330,
+      "selected_industries": [
+        "담배소매업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07032767408242802,
+          "log_loss": 0.2639178377355381
+        },
+        "separate_cal": {
+          "brier": 0.07051108713226412,
+          "log_loss": 0.26489427011332045
+        },
+        "past_selected": {
+          "brier": 0.07032080600667608,
+          "log_loss": 0.263771927448438
+        }
+      }
+    },
+    {
+      "landmark": "2015-07-01",
+      "selection_year": 2013,
+      "n": 71777,
+      "excluded_n": 3352,
+      "selected_industries": [
+        "담배소매업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.06917983068055805,
+          "log_loss": 0.2604237133914567
+        },
+        "separate_cal": {
+          "brier": 0.06942332638605482,
+          "log_loss": 0.2616505898467126
+        },
+        "past_selected": {
+          "brier": 0.06920779698413088,
+          "log_loss": 0.26039161735600336
+        }
+      }
+    },
+    {
+      "landmark": "2015-10-01",
+      "selection_year": 2013,
+      "n": 72232,
+      "excluded_n": 3365,
+      "selected_industries": [
+        "담배소매업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.06979160357175651,
+          "log_loss": 0.26207843839144274
+        },
+        "separate_cal": {
+          "brier": 0.07007323793037663,
+          "log_loss": 0.26328182439601605
+        },
+        "past_selected": {
+          "brier": 0.06982741398720435,
+          "log_loss": 0.2621444864823517
+        }
+      }
+    },
+    {
+      "landmark": "2016-01-01",
+      "selection_year": 2014,
+      "n": 71052,
+      "excluded_n": 4823,
+      "selected_industries": [
+        "노래연습장업",
+        "일반음식점",
+        "축산판매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07255583994656466,
+          "log_loss": 0.27063037886017305
+        },
+        "separate_cal": {
+          "brier": 0.07292400713526588,
+          "log_loss": 0.27210827733634957
+        },
+        "past_selected": {
+          "brier": 0.07265044207130289,
+          "log_loss": 0.2708971451115528
+        }
+      }
+    },
+    {
+      "landmark": "2016-04-01",
+      "selection_year": 2014,
+      "n": 71385,
+      "excluded_n": 4851,
+      "selected_industries": [
+        "노래연습장업",
+        "일반음식점",
+        "축산판매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07417292473655437,
+          "log_loss": 0.2752753527273794
+        },
+        "separate_cal": {
+          "brier": 0.07447647169014254,
+          "log_loss": 0.27658392335998033
+        },
+        "past_selected": {
+          "brier": 0.07425400776025788,
+          "log_loss": 0.2754648748270513
+        }
+      }
+    },
+    {
+      "landmark": "2016-07-01",
+      "selection_year": 2014,
+      "n": 72106,
+      "excluded_n": 4889,
+      "selected_industries": [
+        "노래연습장업",
+        "일반음식점",
+        "축산판매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07362276685058092,
+          "log_loss": 0.27419692669457374
+        },
+        "separate_cal": {
+          "brier": 0.0739437306207305,
+          "log_loss": 0.27566084959830395
+        },
+        "past_selected": {
+          "brier": 0.07368376591190595,
+          "log_loss": 0.27425341735894043
+        }
+      }
+    },
+    {
+      "landmark": "2016-10-01",
+      "selection_year": 2014,
+      "n": 72683,
+      "excluded_n": 4915,
+      "selected_industries": [
+        "노래연습장업",
+        "일반음식점",
+        "축산판매업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07437351489086459,
+          "log_loss": 0.27722110551161727
+        },
+        "separate_cal": {
+          "brier": 0.0747681421970838,
+          "log_loss": 0.2787310663737393
+        },
+        "past_selected": {
+          "brier": 0.074422341595159,
+          "log_loss": 0.27721293800271873
+        }
+      }
+    },
+    {
+      "landmark": "2017-01-01",
+      "selection_year": 2015,
+      "n": 74778,
+      "excluded_n": 3503,
+      "selected_industries": [
+        "담배소매업",
+        "당구장업",
+        "미용업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0748510394062158,
+          "log_loss": 0.27638748056970414
+        },
+        "separate_cal": {
+          "brier": 0.07502295441621976,
+          "log_loss": 0.27735142840014504
+        },
+        "past_selected": {
+          "brier": 0.07486899900351675,
+          "log_loss": 0.2764341404699362
+        }
+      }
+    },
+    {
+      "landmark": "2017-04-01",
+      "selection_year": 2015,
+      "n": 75192,
+      "excluded_n": 3525,
+      "selected_industries": [
+        "담배소매업",
+        "당구장업",
+        "미용업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07475808577690654,
+          "log_loss": 0.2758033363325757
+        },
+        "separate_cal": {
+          "brier": 0.07494102389862535,
+          "log_loss": 0.2768045236205103
+        },
+        "past_selected": {
+          "brier": 0.07479220013511045,
+          "log_loss": 0.27596656909390105
+        }
+      }
+    },
+    {
+      "landmark": "2017-07-01",
+      "selection_year": 2015,
+      "n": 76045,
+      "excluded_n": 3543,
+      "selected_industries": [
+        "담배소매업",
+        "당구장업",
+        "미용업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07596673199784104,
+          "log_loss": 0.2791061165465466
+        },
+        "separate_cal": {
+          "brier": 0.07613361841004168,
+          "log_loss": 0.2800465793769987
+        },
+        "past_selected": {
+          "brier": 0.07601687379442819,
+          "log_loss": 0.2793862382936712
+        }
+      }
+    },
+    {
+      "landmark": "2017-10-01",
+      "selection_year": 2015,
+      "n": 76664,
+      "excluded_n": 3537,
+      "selected_industries": [
+        "담배소매업",
+        "당구장업",
+        "미용업",
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0772406800621941,
+          "log_loss": 0.28363621525897137
+        },
+        "separate_cal": {
+          "brier": 0.07742493601817525,
+          "log_loss": 0.28466846437386534
+        },
+        "past_selected": {
+          "brier": 0.07728989540195823,
+          "log_loss": 0.283991006035625
+        }
+      }
+    },
+    {
+      "landmark": "2018-01-01",
+      "selection_year": 2016,
+      "n": 76955,
+      "excluded_n": 3218,
+      "selected_industries": [
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07726570590922398,
+          "log_loss": 0.2841430140660056
+        },
+        "separate_cal": {
+          "brier": 0.07737169437142563,
+          "log_loss": 0.28512917533494014
+        },
+        "past_selected": {
+          "brier": 0.07727028968523357,
+          "log_loss": 0.2841501855019277
+        }
+      }
+    },
+    {
+      "landmark": "2018-04-01",
+      "selection_year": 2016,
+      "n": 77176,
+      "excluded_n": 3231,
+      "selected_industries": [
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07846595963153939,
+          "log_loss": 0.2881865471389543
+        },
+        "separate_cal": {
+          "brier": 0.07860475202474533,
+          "log_loss": 0.28947612177734255
+        },
+        "past_selected": {
+          "brier": 0.07846440001120521,
+          "log_loss": 0.2881433400625296
+        }
+      }
+    },
+    {
+      "landmark": "2018-07-01",
+      "selection_year": 2016,
+      "n": 77742,
+      "excluded_n": 3427,
+      "selected_industries": [
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08073520455182395,
+          "log_loss": 0.29539634585119695
+        },
+        "separate_cal": {
+          "brier": 0.08091623748689505,
+          "log_loss": 0.29675356418562443
+        },
+        "past_selected": {
+          "brier": 0.08073633361769364,
+          "log_loss": 0.2953563892152155
+        }
+      }
+    },
+    {
+      "landmark": "2018-10-01",
+      "selection_year": 2016,
+      "n": 78063,
+      "excluded_n": 3618,
+      "selected_industries": [
+        "일반음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07987898143672884,
+          "log_loss": 0.2928539346869853
+        },
+        "separate_cal": {
+          "brier": 0.0800696272030105,
+          "log_loss": 0.29422935902103386
+        },
+        "past_selected": {
+          "brier": 0.07988638435714612,
+          "log_loss": 0.29288320965469555
+        }
+      }
+    },
+    {
+      "landmark": "2019-01-01",
+      "selection_year": 2017,
+      "n": 78406,
+      "excluded_n": 3300,
+      "selected_industries": [
+        "노래연습장업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08093690717495583,
+          "log_loss": 0.2942464335941736
+        },
+        "separate_cal": {
+          "brier": 0.08151343323946422,
+          "log_loss": 0.2966550092190671
+        },
+        "past_selected": {
+          "brier": 0.08096392460502151,
+          "log_loss": 0.2943884435335061
+        }
+      }
+    },
+    {
+      "landmark": "2019-04-01",
+      "selection_year": 2017,
+      "n": 78582,
+      "excluded_n": 3309,
+      "selected_industries": [
+        "노래연습장업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07938215953233818,
+          "log_loss": 0.29079626926233954
+        },
+        "separate_cal": {
+          "brier": 0.07997299980391111,
+          "log_loss": 0.2930749066001301
+        },
+        "past_selected": {
+          "brier": 0.07938862043707663,
+          "log_loss": 0.29082845198483814
+        }
+      }
+    },
+    {
+      "landmark": "2019-07-01",
+      "selection_year": 2017,
+      "n": 79017,
+      "excluded_n": 3323,
+      "selected_industries": [
+        "노래연습장업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07648013058086284,
+          "log_loss": 0.2836092002318016
+        },
+        "separate_cal": {
+          "brier": 0.07710418366197916,
+          "log_loss": 0.2856003579702175
+        },
+        "past_selected": {
+          "brier": 0.0765090863016256,
+          "log_loss": 0.2837196918566657
+        }
+      }
+    },
+    {
+      "landmark": "2019-10-01",
+      "selection_year": 2017,
+      "n": 79435,
+      "excluded_n": 3343,
+      "selected_industries": [
+        "노래연습장업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0757476288155457,
+          "log_loss": 0.2821020322614891
+        },
+        "separate_cal": {
+          "brier": 0.07630054758509246,
+          "log_loss": 0.28365794014777873
+        },
+        "past_selected": {
+          "brier": 0.0757671306489183,
+          "log_loss": 0.2821800970275146
+        }
+      }
+    },
+    {
+      "landmark": "2020-01-01",
+      "selection_year": 2018,
+      "n": 79140,
+      "excluded_n": 3744,
+      "selected_industries": [
+        "노래연습장업",
+        "유흥주점영업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07742952915200485,
+          "log_loss": 0.28671715659209956
+        },
+        "separate_cal": {
+          "brier": 0.07754584468343044,
+          "log_loss": 0.28697849950110704
+        },
+        "past_selected": {
+          "brier": 0.07733533492028659,
+          "log_loss": 0.2862524105025239
+        }
+      }
+    },
+    {
+      "landmark": "2020-04-01",
+      "selection_year": 2018,
+      "n": 79194,
+      "excluded_n": 3764,
+      "selected_industries": [
+        "노래연습장업",
+        "유흥주점영업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07436204282638247,
+          "log_loss": 0.2776621836153512
+        },
+        "separate_cal": {
+          "brier": 0.074487967040341,
+          "log_loss": 0.2778887272037997
+        },
+        "past_selected": {
+          "brier": 0.07431970956943877,
+          "log_loss": 0.27747425732282704
+        }
+      }
+    },
+    {
+      "landmark": "2020-07-01",
+      "selection_year": 2018,
+      "n": 79733,
+      "excluded_n": 3797,
+      "selected_industries": [
+        "노래연습장업",
+        "유흥주점영업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07554549693477937,
+          "log_loss": 0.28073425069552116
+        },
+        "separate_cal": {
+          "brier": 0.0756332740678109,
+          "log_loss": 0.28081842581254285
+        },
+        "past_selected": {
+          "brier": 0.07552125213272573,
+          "log_loss": 0.2805781329704615
+        }
+      }
+    },
+    {
+      "landmark": "2020-10-01",
+      "selection_year": 2018,
+      "n": 80173,
+      "excluded_n": 3795,
+      "selected_industries": [
+        "노래연습장업",
+        "유흥주점영업",
+        "즉석판매제조가공업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07343793375263673,
+          "log_loss": 0.27443787481716025
+        },
+        "separate_cal": {
+          "brier": 0.07353970229101317,
+          "log_loss": 0.2745809106897157
+        },
+        "past_selected": {
+          "brier": 0.07343013310593252,
+          "log_loss": 0.27433729077395347
+        }
+      }
+    },
+    {
+      "landmark": "2021-01-01",
+      "selection_year": 2019,
+      "n": 80938,
+      "excluded_n": 2870,
+      "selected_industries": [
+        "노래연습장업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0733773884571383,
+          "log_loss": 0.27393882352052396
+        },
+        "separate_cal": {
+          "brier": 0.07365396824068593,
+          "log_loss": 0.2746993204006565
+        },
+        "past_selected": {
+          "brier": 0.07336952519648222,
+          "log_loss": 0.2738554831991784
+        }
+      }
+    },
+    {
+      "landmark": "2021-04-01",
+      "selection_year": 2019,
+      "n": 81556,
+      "excluded_n": 2886,
+      "selected_industries": [
+        "노래연습장업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07273671402224657,
+          "log_loss": 0.27196433124158576
+        },
+        "separate_cal": {
+          "brier": 0.07305059636262981,
+          "log_loss": 0.27285741473342123
+        },
+        "past_selected": {
+          "brier": 0.0727294486848878,
+          "log_loss": 0.27188183681414135
+        }
+      }
+    },
+    {
+      "landmark": "2021-07-01",
+      "selection_year": 2019,
+      "n": 82272,
+      "excluded_n": 2905,
+      "selected_industries": [
+        "노래연습장업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0697354663634065,
+          "log_loss": 0.2632205931197864
+        },
+        "separate_cal": {
+          "brier": 0.0700781594738554,
+          "log_loss": 0.2641498256375953
+        },
+        "past_selected": {
+          "brier": 0.06973359354990016,
+          "log_loss": 0.2631988385874156
+        }
+      }
+    },
+    {
+      "landmark": "2021-10-01",
+      "selection_year": 2019,
+      "n": 82836,
+      "excluded_n": 2931,
+      "selected_industries": [
+        "노래연습장업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07064438052576703,
+          "log_loss": 0.26610380590749166
+        },
+        "separate_cal": {
+          "brier": 0.07106068179637515,
+          "log_loss": 0.2672492472122463
+        },
+        "past_selected": {
+          "brier": 0.07064143219127449,
+          "log_loss": 0.2660627883648903
+        }
+      }
+    },
+    {
+      "landmark": "2022-01-01",
+      "selection_year": 2020,
+      "n": 82969,
+      "excluded_n": 2585,
+      "selected_industries": [
+        "노래연습장업",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "휴게음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07412440782355866,
+          "log_loss": 0.2754985955516586
+        },
+        "separate_cal": {
+          "brier": 0.07424437617535234,
+          "log_loss": 0.2759805763505831
+        },
+        "past_selected": {
+          "brier": 0.0740750219016008,
+          "log_loss": 0.2753081120982712
+        }
+      }
+    },
+    {
+      "landmark": "2022-04-01",
+      "selection_year": 2020,
+      "n": 83454,
+      "excluded_n": 2627,
+      "selected_industries": [
+        "노래연습장업",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "휴게음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07894430477219418,
+          "log_loss": 0.28935869762983046
+        },
+        "separate_cal": {
+          "brier": 0.07904343117249142,
+          "log_loss": 0.28975897619699026
+        },
+        "past_selected": {
+          "brier": 0.07886912853235319,
+          "log_loss": 0.28908323875044345
+        }
+      }
+    },
+    {
+      "landmark": "2022-07-01",
+      "selection_year": 2020,
+      "n": 84183,
+      "excluded_n": 2655,
+      "selected_industries": [
+        "노래연습장업",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "휴게음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08168165745962513,
+          "log_loss": 0.29713237612991633
+        },
+        "separate_cal": {
+          "brier": 0.08178073214423637,
+          "log_loss": 0.2974641316291643
+        },
+        "past_selected": {
+          "brier": 0.08161500469101507,
+          "log_loss": 0.2968988785729841
+        }
+      }
+    },
+    {
+      "landmark": "2022-10-01",
+      "selection_year": 2020,
+      "n": 84575,
+      "excluded_n": 2688,
+      "selected_industries": [
+        "노래연습장업",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "휴게음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08155823536360382,
+          "log_loss": 0.29639269553014114
+        },
+        "separate_cal": {
+          "brier": 0.08168768230585195,
+          "log_loss": 0.2968677638421245
+        },
+        "past_selected": {
+          "brier": 0.08152537811951292,
+          "log_loss": 0.29631044973766163
+        }
+      }
+    },
+    {
+      "landmark": "2023-01-01",
+      "selection_year": 2021,
+      "n": 83367,
+      "excluded_n": 3158,
+      "selected_industries": [
+        "노래연습장업",
+        "약국"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08195758626482617,
+          "log_loss": 0.29612395320564
+        },
+        "separate_cal": {
+          "brier": 0.08204845172235091,
+          "log_loss": 0.296776673487366
+        },
+        "past_selected": {
+          "brier": 0.08196279640175122,
+          "log_loss": 0.2961624471594282
+        }
+      }
+    },
+    {
+      "landmark": "2023-04-01",
+      "selection_year": 2021,
+      "n": 83230,
+      "excluded_n": 3157,
+      "selected_industries": [
+        "노래연습장업",
+        "약국"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07944749407884506,
+          "log_loss": 0.2886531717020927
+        },
+        "separate_cal": {
+          "brier": 0.0795153159677887,
+          "log_loss": 0.28907452217968355
+        },
+        "past_selected": {
+          "brier": 0.07945343387571868,
+          "log_loss": 0.28868345699852943
+        }
+      }
+    },
+    {
+      "landmark": "2023-07-01",
+      "selection_year": 2021,
+      "n": 83467,
+      "excluded_n": 3212,
+      "selected_industries": [
+        "노래연습장업",
+        "약국"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07846605724341293,
+          "log_loss": 0.28608034034912927
+        },
+        "separate_cal": {
+          "brier": 0.07855387882085335,
+          "log_loss": 0.2864718756148317
+        },
+        "past_selected": {
+          "brier": 0.07847032586411685,
+          "log_loss": 0.2860934263021967
+        }
+      }
+    },
+    {
+      "landmark": "2023-10-01",
+      "selection_year": 2021,
+      "n": 83833,
+      "excluded_n": 3224,
+      "selected_industries": [
+        "노래연습장업",
+        "약국"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07808077367272398,
+          "log_loss": 0.2848305156830435
+        },
+        "separate_cal": {
+          "brier": 0.07820212502411134,
+          "log_loss": 0.28533053120908053
+        },
+        "past_selected": {
+          "brier": 0.07808588253585567,
+          "log_loss": 0.28486544744608916
+        }
+      }
+    },
+    {
+      "landmark": "2024-01-01",
+      "selection_year": 2022,
+      "n": 83259,
+      "excluded_n": 2904,
+      "selected_industries": [
+        "담배소매업",
+        "세탁업",
+        "약국",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "체력단련장업",
+        "휴게음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07927875112355728,
+          "log_loss": 0.2880199915217979
+        },
+        "separate_cal": {
+          "brier": 0.07916906554690717,
+          "log_loss": 0.28764898501340713
+        },
+        "past_selected": {
+          "brier": 0.07912191275323495,
+          "log_loss": 0.28748232021783415
+        }
+      }
+    },
+    {
+      "landmark": "2024-04-01",
+      "selection_year": 2022,
+      "n": 83156,
+      "excluded_n": 2944,
+      "selected_industries": [
+        "담배소매업",
+        "세탁업",
+        "약국",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "체력단련장업",
+        "휴게음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07798191904755947,
+          "log_loss": 0.28442920991881776
+        },
+        "separate_cal": {
+          "brier": 0.07784614292802212,
+          "log_loss": 0.28393814024393366
+        },
+        "past_selected": {
+          "brier": 0.07778970993359034,
+          "log_loss": 0.28376944343854865
+        }
+      }
+    },
+    {
+      "landmark": "2024-07-01",
+      "selection_year": 2022,
+      "n": 83403,
+      "excluded_n": 3022,
+      "selected_industries": [
+        "담배소매업",
+        "세탁업",
+        "약국",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "체력단련장업",
+        "휴게음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07752250671751774,
+          "log_loss": 0.28293096726761124
+        },
+        "separate_cal": {
+          "brier": 0.07749937421145678,
+          "log_loss": 0.2828711177203777
+        },
+        "past_selected": {
+          "brier": 0.07742182529342115,
+          "log_loss": 0.28267263849054153
+        }
+      }
+    },
+    {
+      "landmark": "2024-10-01",
+      "selection_year": 2022,
+      "n": 83583,
+      "excluded_n": 3048,
+      "selected_industries": [
+        "담배소매업",
+        "세탁업",
+        "약국",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "체력단련장업",
+        "휴게음식점"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07855997249331226,
+          "log_loss": 0.28629158825679396
+        },
+        "separate_cal": {
+          "brier": 0.07851504349308891,
+          "log_loss": 0.2860798488345772
+        },
+        "past_selected": {
+          "brier": 0.0784726938244408,
+          "log_loss": 0.28601825293065225
+        }
+      }
+    },
+    {
+      "landmark": "2025-01-01",
+      "selection_year": 2023,
+      "n": 82328,
+      "excluded_n": 3200,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "체육도장업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.07909682604596843,
+          "log_loss": 0.28751715227276314
+        },
+        "separate_cal": {
+          "brier": 0.07917760110124776,
+          "log_loss": 0.2879832502254506
+        },
+        "past_selected": {
+          "brier": 0.07907630590445355,
+          "log_loss": 0.28756780022946954
+        }
+      }
+    },
+    {
+      "landmark": "2025-04-01",
+      "selection_year": 2023,
+      "n": 82186,
+      "excluded_n": 3199,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "체육도장업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.0800087598684856,
+          "log_loss": 0.2909570645746949
+        },
+        "separate_cal": {
+          "brier": 0.08011881986294991,
+          "log_loss": 0.2913494617718597
+        },
+        "past_selected": {
+          "brier": 0.08000455111049283,
+          "log_loss": 0.29085372055025416
+        }
+      }
+    },
+    {
+      "landmark": "2025-07-01",
+      "selection_year": 2023,
+      "n": 82420,
+      "excluded_n": 3214,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "체육도장업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08047242747695697,
+          "log_loss": 0.29316319490037646
+        },
+        "separate_cal": {
+          "brier": 0.08062539771258322,
+          "log_loss": 0.29375256240676373
+        },
+        "past_selected": {
+          "brier": 0.08049783951183864,
+          "log_loss": 0.29313404788527747
+        }
+      }
+    },
+    {
+      "landmark": "2025-10-01",
+      "selection_year": 2023,
+      "n": 82720,
+      "excluded_n": 3231,
+      "selected_industries": [
+        "담배소매업",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "체육도장업"
+      ],
+      "scores": {
+        "pooled_cal": {
+          "brier": 0.08073052142521372,
+          "log_loss": 0.29520848629258095
+        },
+        "separate_cal": {
+          "brier": 0.08090386363637345,
+          "log_loss": 0.2956794515090992
+        },
+        "past_selected": {
+          "brier": 0.08076536241798511,
+          "log_loss": 0.29505672035469704
+        }
+      }
+    }
+  ],
+  "source_hash": "5eab1cf4c5d04ad9d9e5c633d6f73afb472603132fd4ed5511e3d46088b99b58",
+  "script_hash": "84776e53de087498090406f22954df97044a8f53e6235f8cd36344b67953bd7e"
+}

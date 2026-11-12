@@ -1,0 +1,16 @@
+{
+  "scope": "All 96 saved quarters 2002-2025, all available industries, no sampling",
+  "train": "Jan1 year-4",
+  "calibration": "Jan1 year-2",
+  "target": "Active permit closure report within next365 days",
+  "features": [
+    "gu",
+    "age_band"
+  ],
+  "model": "separate LR C1 max_iter2000 seed7 per industry",
+  "eligibility": "training AND calibration each n>=200 events>=20 non-events>=20; no evaluation-label selection",
+  "calibration_method": "industry-specific intercept by calibration logloss then region shift with shrink500",
+  "comparison": "separate raw vs pooled raw isolates training; separate calibrated vs pooled candidate compares complete pipelines",
+  "aggregate": "Same eligible industries per quarter; n-weighted Brier and logloss; excluded industries recorded",
+  "warning": "Post-hoc experiment on reused evaluation data, not independent confirmation; no parameter search"
+}

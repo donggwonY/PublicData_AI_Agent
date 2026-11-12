@@ -1,0 +1,117 @@
+{
+  "summary": [
+    {
+      "variant": "uniform",
+      "scope": "all",
+      "model": "raw",
+      "quarters": 96,
+      "better": 35,
+      "worse": 54,
+      "mixed": 7
+    },
+    {
+      "variant": "uniform",
+      "scope": "all",
+      "model": "candidate",
+      "quarters": 96,
+      "better": 45,
+      "worse": 27,
+      "mixed": 24
+    },
+    {
+      "variant": "uniform",
+      "scope": "since2013",
+      "model": "raw",
+      "quarters": 52,
+      "better": 24,
+      "worse": 28,
+      "mixed": 0
+    },
+    {
+      "variant": "uniform",
+      "scope": "since2013",
+      "model": "candidate",
+      "quarters": 52,
+      "better": 26,
+      "worse": 22,
+      "mixed": 4
+    },
+    {
+      "variant": "uniform",
+      "scope": "recent",
+      "model": "raw",
+      "quarters": 12,
+      "better": 7,
+      "worse": 5,
+      "mixed": 0
+    },
+    {
+      "variant": "uniform",
+      "scope": "recent",
+      "model": "candidate",
+      "quarters": 12,
+      "better": 10,
+      "worse": 2,
+      "mixed": 0
+    },
+    {
+      "variant": "recent",
+      "scope": "all",
+      "model": "raw",
+      "quarters": 96,
+      "better": 49,
+      "worse": 39,
+      "mixed": 8
+    },
+    {
+      "variant": "recent",
+      "scope": "all",
+      "model": "candidate",
+      "quarters": 96,
+      "better": 56,
+      "worse": 29,
+      "mixed": 11
+    },
+    {
+      "variant": "recent",
+      "scope": "since2013",
+      "model": "raw",
+      "quarters": 52,
+      "better": 32,
+      "worse": 17,
+      "mixed": 3
+    },
+    {
+      "variant": "recent",
+      "scope": "since2013",
+      "model": "candidate",
+      "quarters": 52,
+      "better": 33,
+      "worse": 17,
+      "mixed": 2
+    },
+    {
+      "variant": "recent",
+      "scope": "recent",
+      "model": "raw",
+      "quarters": 12,
+      "better": 10,
+      "worse": 1,
+      "mixed": 1
+    },
+    {
+      "variant": "recent",
+      "scope": "recent",
+      "model": "candidate",
+      "quarters": 12,
+      "better": 10,
+      "worse": 2,
+      "mixed": 0
+    }
+  ],
+  "hashes": {
+    "uniform": "356442d334f62def7626b40f8ccbe2c81b0047a7ee15a5e669dccdc42742cf76",
+    "recent": "2f6ef542f13f375905c69f24de2b192b7182a424469ce2d6b3e709465bc644f1"
+  },
+  "script_hash": "135179830e74a768612c892cdfce384ccfa0933e75690e4317260500fc7bebfc"
+}

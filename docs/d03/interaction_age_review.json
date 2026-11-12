@@ -1,0 +1,54 @@
+{
+  "summary": [
+    {
+      "scope": "all",
+      "model": "raw",
+      "quarters": 96,
+      "better": 24,
+      "worse": 55,
+      "mixed": 17
+    },
+    {
+      "scope": "all",
+      "model": "candidate",
+      "quarters": 96,
+      "better": 29,
+      "worse": 53,
+      "mixed": 14
+    },
+    {
+      "scope": "since2013",
+      "model": "raw",
+      "quarters": 52,
+      "better": 15,
+      "worse": 32,
+      "mixed": 5
+    },
+    {
+      "scope": "since2013",
+      "model": "candidate",
+      "quarters": 52,
+      "better": 16,
+      "worse": 29,
+      "mixed": 7
+    },
+    {
+      "scope": "recent",
+      "model": "raw",
+      "quarters": 12,
+      "better": 7,
+      "worse": 5,
+      "mixed": 0
+    },
+    {
+      "scope": "recent",
+      "model": "candidate",
+      "quarters": 12,
+      "better": 7,
+      "worse": 2,
+      "mixed": 3
+    }
+  ],
+  "source_hash": "588e96e640bf3f67e608c487eb624f3016ca26ba6bf2394c02a8c0d5490428a8",
+  "script_hash": "cf039567aea65030746aefb3ff674fe9f15777f549d7e731a8565ddef1f25d87"
+}

@@ -31,10 +31,19 @@ from agent import API_KEY_ENV, create_agent
 from core import tools as T
 from ui_permit_trends import render_permit_trends
 from ui_vacancy import render_vacancy_outlook
-from prediction_review_app import render_review
 from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_chart, _map, metric_value
 
 st.set_page_config(page_title="대구 상권 생애주기 AI 에이전트", page_icon="🏪", layout="wide")
+st.markdown("""<style>
+.block-container {max-width:1200px; padding-top:2rem; padding-bottom:3rem;}
+h1 {font-size:2rem !important; letter-spacing:-.04em;}
+h2,h3 {letter-spacing:-.025em;}
+[data-testid="stMetric"] {background:rgba(15,118,110,.045); border-radius:14px; padding:16px;}
+[data-testid="stMetricValue"] {font-size:1.8rem;}
+[data-testid="stSidebar"] {min-width:260px; max-width:290px;}
+@media(max-width:700px) {.block-container {padding:4rem 1rem 1rem;} h1 {font-size:1.5rem !important;}}
+</style>""", unsafe_allow_html=True)
+
 
 # 데이터 출처(core/datasource.py)는 환경변수로 고른다. 배포에서는 Secrets 의 같은 이름을 서버 환경변수로 옮긴다.
 # 운영자가 정한 서버 설정이라 os.environ 에 둬도 된다(방문자 값은 여기에 넣지 않는다).
@@ -128,43 +137,45 @@ def get_agent(api_key: str):
 
 # ─────────────────────────── 사이드바 ───────────────────────────
 with st.sidebar:
-    st.title("🏪 상권 생애주기 에이전트")
-    st.caption("그 자리의 과거를 데이터로 확인합니다")
+    st.subheader("대구 상권 길잡이")
+    st.caption("동네를 비교하고, 자리의 이력을 확인하세요.")
     rec = META["records"]["통합"]
     services = [k for k in META["records"] if k != "통합"]
     first_year = min(int(v["date_min"][:4]) for k, v in META["records"].items() if k != "통합")
     kpi_label = ('+'.join(s.replace('영업', '') for s in services) if len(services) <= 8
                  else f"점포형 {len(services)}개 업종")
-    st.metric(f"누적 인허가 ({kpi_label})", f"{rec['total']:,}")
-    if len(services) > 8:
-        with st.expander("포함 업종 보기"):
-            st.caption(" · ".join(services))
-    # 누적 수치를 '현재 점포 수'로 오해하기 쉬워 기간을 명시한다
-    st.caption(f"{first_year}년부터 {META['reference_date'][:4]}년까지 문을 연 전체 기록 (현재 점포 수가 아님)")
-    c1, c2 = st.columns(2)
-    c1.metric("그동안 폐업", f"{rec['closed']:,}")
-    c2.metric("현재 영업 중", f"{rec['active']:,}")
-    st.caption(f"기준일 {META['reference_date']} · 배치 {META['built_at']} · 데이터 {S.source}")
+    with st.expander("수록 데이터와 기준일"):
+        st.metric(f"누적 인허가 ({kpi_label})", f"{rec['total']:,}")
+        if len(services) > 8:
+            with st.expander("포함 업종 보기"):
+                st.caption(" · ".join(services))
+        # 누적 수치를 '현재 점포 수'로 오해하기 쉬워 기간을 명시한다
+        st.caption(f"{first_year}년부터 {META['reference_date'][:4]}년까지 문을 연 전체 기록 (현재 점포 수가 아님)")
+        c1, c2 = st.columns(2)
+        c1.metric("그동안 폐업", f"{rec['closed']:,}")
+        c2.metric("현재 영업 중", f"{rec['active']:,}")
+        st.caption(f"기준일 {META['reference_date']} · 배치 {META['built_at']} · 데이터 {S.source}")
     st.divider()
-    if OPERATOR_KEY:
-        left = MAX_PER_SESSION - st.session_state.get("questions_used", 0)
-        st.success(f"AI 상담 사용 가능 ({PROVIDER_LABEL})", icon="✅")
-        st.caption(f"이 세션 남은 질문 {max(left, 0)}회")
-    else:
-        # 방문자 키는 이 브라우저 세션(session_state)에만 보관 — 서버 환경변수에 넣지 않는다
-        st.text_input(f"내 {PROVIDER_LABEL} API 키", type="password", key="user_api_key",
-                      help=f"AI 상담 탭에만 필요합니다. {KEY_HELP}. 키는 이 브라우저 세션에만 보관됩니다.")
-    st.subheader("예시 질문")
-    for q in EXAMPLES:
-        if st.button(q, width="stretch"):
-            st.session_state.pending = q
-    if st.button("🔄 대화 초기화", width="stretch"):
-        st.session_state.pop("agent", None)
-        st.session_state.pop("agent_sig", None)
-        st.session_state.history = []
-        st.rerun()
+    with st.expander("AI 상담 설정 · 예시 질문"):
+        if OPERATOR_KEY:
+            left = MAX_PER_SESSION - st.session_state.get("questions_used", 0)
+            st.success(f"AI 상담 사용 가능 ({PROVIDER_LABEL})", icon="✅")
+            st.caption(f"이 세션 남은 질문 {max(left, 0)}회")
+        else:
+            # 방문자 키는 이 브라우저 세션(session_state)에만 보관 — 서버 환경변수에 넣지 않는다
+            st.text_input(f"내 {PROVIDER_LABEL} API 키", type="password", key="user_api_key",
+                          help=f"AI 상담 탭에만 필요합니다. {KEY_HELP}. 키는 이 브라우저 세션에만 보관됩니다.")
+        st.subheader("예시 질문")
+        for q in EXAMPLES:
+            if st.button(q, width="stretch"):
+                st.session_state.pending = q
+        if st.button("🔄 대화 초기화", width="stretch"):
+            st.session_state.pop("agent", None)
+            st.session_state.pop("agent_sig", None)
+            st.session_state.history = []
+            st.rerun()
 
-tab_chat, tab_dash, tab_unit, tab_prediction = st.tabs(["💬 AI 상담", "📊 대구 상권 대시보드", "🔎 자리 이력 조회", "🧪 폐업 예측 연구"])
+tab_dash, tab_unit, tab_chat = st.tabs(["📊 상권 둘러보기", "🔎 자리 이력", "💬 AI 상담"])
 
 
 # ─────────────────────────── 1. AI 상담 ───────────────────────────
@@ -249,117 +260,127 @@ with tab_chat:
 
 # ─────────────────────────── 2. 대시보드 ───────────────────────────
 with tab_dash:
-    st.subheader("대구 상권 한눈에 보기")
-    st.caption("지역을 선택해 상권 현황과 업종별 변화를 살펴보세요.")
-    gu_sel = st.selectbox("지역", ["대구 전체"] + GUS, key="dash_gu")
+    st.title("내 업종에 맞는 동네 살펴보기")
+    st.caption("지역과 업종을 고르면 영업 현황과 최근 변화를 비교할 수 있어요.")
+    st.caption(f"자료 기준 {S.ref:%Y-%m-%d} · 수록 인허가 기준")
+    gu_sel = st.selectbox("살펴볼 지역", ["대구 전체"] + GUS, key="dash_gu")
     gu = None if gu_sel == "대구 전체" else gu_sel
+    view = st.radio("살펴볼 내용", ["업종 비교", "동네·자리", "상세 통계"], horizontal=True, key="dash_view", label_visibility="collapsed")
+    if view == "업종 비교":
+        render_permit_trends(S.stores, S.ref, gu)
+    elif view == "동네·자리":
+        st.subheader("동네의 생활 여건과 자리 살펴보기")
+        st.caption("인구·집객시설을 확인하고, 관심 주소는 상단 ‘자리 이력’에서 이전 영업 이력을 확인하세요.")
+        vac = T.find_vacant_units(gu=gu, limit=1000)
+        if S.area_context is not None:
+            st.subheader("동네 프로필 (상가정보 · 인구 · 집객시설)")
+            ctx = S.area_context if not gu else S.area_context[S.area_context["gu"] == gu]
+            c1, c2 = st.columns([1, 2])
+            with c1:
+                dong_sel = st.selectbox("행정동", sorted(ctx["admin_dong"].unique()), key="dash_dong")
+                prof = T.get_area_profile(gu=ctx[ctx["admin_dong"] == dong_sel]["gu"].iat[0], dong=dong_sel)
+                st.metric("상권 유형", prof["market_type"])
+                st.caption(prof["market_type_basis"])
+                st.metric("업종 다양성 지수", f"{prof['diversity_index']}", f"대구 {prof['city_diversity_index']}", delta_color="off")
+                pop = prof["population"]
+                if pop.get("total"):
+                    st.metric("주민등록 인구", f"{int(pop['total']):,}명",
+                              f"15~29세 {pop['age_15_29_pct']}% · 65세+ {pop['age_65_plus_pct']}%", delta_color="off")
+                f = prof["facilities"]
+                st.caption(f"전통시장 {f['traditional_markets']}곳 · 주차장 {f['parking_lots']}곳({f['parking_slots']:,}면)")
+            with c2:
+                render_tool_result("get_area_profile", prof, key="dash-profile")
+                st.caption("현재 영업 점포 " + f"{prof['stores_now']:,}개 중 음식 {prof['food_stores_now']:,}개 · 주요 업종 "
+                           + ", ".join(f"{k} {v}" for k, v in prof["top_categories"].items()))
 
-    cyc = T.get_market_cycle(gu)
-    surv = T.get_survival_curve(gu=gu)
-    vac = T.find_vacant_units(gu=gu, limit=1000)
-    k1, k2, k3, k4 = st.columns(4)
-    k1.metric("상권 사이클", cyc["stage"], f"개업/폐업 {cyc['open_close_ratio_recent']} (직전 {cyc['open_close_ratio_prev']})", delta_color="off", border=True)
-    k2.metric("중앙생존기간 (2010~ 개업)", metric_value(surv["median_survival_years"], "년", "관찰기간 내 미도달"), "대구 " + metric_value(surv["daegu_baseline_same_cohort"]["median_survival_years"], "년", "관찰기간 내 미도달"), delta_color="off", border=True)
-    k3.metric("1년 내 폐업 신고 추정치", metric_value(surv["close_within_1y_pct"], "%"), f"n={surv['n']:,}", delta_color="off", border=True)
-    k4.metric("인허가 공백 후보 (90일~3년)", f"{vac['total_vacant']:,}곳", border=True)
+            types = ctx.groupby("market_type").size().sort_values(ascending=False)
+            st.caption("상권 유형 분포: " + " · ".join(f"{k} {v}곳" for k, v in types.items()))
 
-    st.caption(f"기준일: {surv['basis']['reference_date']} · 대상: {surv['target']} · {surv['basis']['cohort']} · 표본 {surv['n']:,}건")
-    st.caption("1년 내 폐업 신고 추정치는 100%−Kaplan–Meier 1년 생존율입니다. 표본 전체 중 신고 건수의 단순 비율이나 새 점포의 개별 예측 확률이 아닙니다.")
-    st.caption("폐업 신고는 실제 사업 실패와 같지 않으며 행사장 영업 종료 등이 포함될 수 있습니다. 인허가 공백 후보는 실제 공실·임대 매물 여부를 확인한 결과가 아닙니다.")
-    with st.expander("집계 대상과 기준 자세히 보기"):
-        _n_src = len(services)
-        _n_grp = len({"의원·병원" if s in ("의원", "병원") else s for s in services})
-        st.caption(f"원천 업종명은 {_n_src}개이며, 분석 보고서는 의원·병원을 합쳐 {_n_grp}그룹으로 집계합니다. "
-                   "서비스의 원천 업종 조회에서는 의원·병원을 각각 유지합니다.")
-        _se = META.get("quality", {}).get("short_event_excluded_from_stats")
-        if _se:
-            st.caption(f"백화점·마트 식품관 등 다점포 자리에서 {C.SHORT_EVENT_MAX_DAYS}일 이내 폐업한 단기 행사·팝업 등록 "
-                       f"{_se['occupants']:,}곳은 생존율·상권 사이클·개폐업 통계에서 제외했습니다(자리 이력에는 표시).")
-        if META.get("quality", {}).get("occupants"):
-            st.caption("같은 자리·같은 상호로 기간이 겹치는 인허가(예: 편의점의 담배소매업+휴게음식점)는 한 가게로 묶어 "
-                       "자리·공백·생존·교체를 계산합니다. 누적 인허가 수는 묶기 전 건수입니다.")
+        if S.station is not None and not gu:
+            st.subheader("도시철도 역별 일평균 승하차 (유동인구 대리지표)")
+            render_tool_result("get_station_traffic", T.get_station_traffic(top_n=15), key="dash-station")
 
-    st.divider()
-    render_permit_trends(S.stores, S.ref, gu)
-    st.divider()
+        st.subheader("인허가 공백 후보 지도")
+        st.caption(f"전체 후보 {vac['total_vacant']:,}곳 중 목록 {vac['shown']:,}곳을 조회했습니다. 지도에서는 좌표가 없는 기록이 빠질 수 있습니다.")
+        st.caption(safe_markdown(vac["basis"]["definition"] + " · " + vac["basis"]["caveat"]))
+        _map(vac["units"], "vacant_days", ["last_store", "last_category", "vacant_days", "closures_since_2010"], key="dash-map")
 
-    left, right = st.columns(2)
-    with left:
-        st.subheader("업태별 중앙생존기간")
-        survival_chart(T.get_survival_curve(gu=gu, group_by="category", min_n=100 if gu else 300), key="dash-surv")
-    with right:
-        st.subheader("연도별 개업·폐업")
-        cycle_chart(cyc, key="dash-cycle")
-
-    st.subheader("구·군 비교" if not gu else f"{gu} 동별 비교 (표본 상위)")
-    if not gu:
-        render_tool_result("compare_areas", T.compare_areas(GUS), key="dash-compare")
     else:
-        rank = T.get_survival_curve(gu=gu, group_by="dong", min_n=150, top_n=40)
-        vac_d = S.vacancy[(S.vacancy["level"] == "동") & (S.vacancy["gu"] == gu)][["dong", "units_3y", "vacancy_rate_pct"]]
-        cyc_d = S.cycle[(S.cycle["level"] == "동") & (S.cycle["gu"] == gu)][["dong", "stage", "open_close_ratio_recent"]]
-        df = (pd.DataFrame(rank["ranking_by_median_survival"])[["dong", "n", "median_survival_years", "survival_1y_pct", "survival_3y_pct"]]
-              .merge(vac_d, on="dong", how="left").merge(cyc_d, on="dong", how="left"))
-        df.columns = ["동", "표본", "중앙생존(년)", "1년 생존%", "3년 생존%", "최근3년 자리", "인허가 공백 후보율%", "사이클", "개폐업비"]
-        st.dataframe(df, hide_index=True, width="stretch")
+        st.subheader("지역 전체의 과거 영업 통계")
+        st.caption("이 화면은 선택 지역의 전체 업종 기준입니다. 앞 화면의 관심 업종 선택은 적용되지 않습니다.")
+        cyc = T.get_market_cycle(gu)
+        surv = T.get_survival_curve(gu=gu)
+        vac = T.find_vacant_units(gu=gu, limit=1000)
+        k1, k2, k3, k4 = st.columns(4)
+        k1.metric("상권 사이클", cyc["stage"], f"개업/폐업 {cyc['open_close_ratio_recent']} (직전 {cyc['open_close_ratio_prev']})", delta_color="off", border=True)
+        k2.metric("중앙생존기간 (2010~ 개업)", metric_value(surv["median_survival_years"], "년", "관찰기간 내 미도달"), "대구 " + metric_value(surv["daegu_baseline_same_cohort"]["median_survival_years"], "년", "관찰기간 내 미도달"), delta_color="off", border=True)
+        k3.metric("1년 내 폐업 신고 추정치", metric_value(surv["close_within_1y_pct"], "%"), f"n={surv['n']:,}", delta_color="off", border=True)
+        k4.metric("인허가 공백 후보 (90일~3년)", f"{vac['total_vacant']:,}곳", border=True)
 
-    if S.area_context is not None:
-        st.subheader("동네 프로필 (상가정보 · 인구 · 집객시설)")
-        ctx = S.area_context if not gu else S.area_context[S.area_context["gu"] == gu]
-        c1, c2 = st.columns([1, 2])
-        with c1:
-            dong_sel = st.selectbox("행정동", sorted(ctx["admin_dong"].unique()), key="dash_dong")
-            prof = T.get_area_profile(gu=ctx[ctx["admin_dong"] == dong_sel]["gu"].iat[0], dong=dong_sel)
-            st.metric("상권 유형", prof["market_type"])
-            st.caption(prof["market_type_basis"])
-            st.metric("업종 다양성 지수", f"{prof['diversity_index']}", f"대구 {prof['city_diversity_index']}", delta_color="off")
-            pop = prof["population"]
-            if pop.get("total"):
-                st.metric("주민등록 인구", f"{int(pop['total']):,}명",
-                          f"15~29세 {pop['age_15_29_pct']}% · 65세+ {pop['age_65_plus_pct']}%", delta_color="off")
-            f = prof["facilities"]
-            st.caption(f"전통시장 {f['traditional_markets']}곳 · 주차장 {f['parking_lots']}곳({f['parking_slots']:,}면)")
-        with c2:
-            render_tool_result("get_area_profile", prof, key="dash-profile")
-            st.caption("현재 영업 점포 " + f"{prof['stores_now']:,}개 중 음식 {prof['food_stores_now']:,}개 · 주요 업종 "
-                       + ", ".join(f"{k} {v}" for k, v in prof["top_categories"].items()))
+        st.caption(f"기준일: {surv['basis']['reference_date']} · 대상: {surv['target']} · {surv['basis']['cohort']} · 표본 {surv['n']:,}건")
+        st.caption("1년 내 폐업 신고 추정치는 100%−Kaplan–Meier 1년 생존율입니다. 표본 전체 중 신고 건수의 단순 비율이나 새 점포의 개별 예측 확률이 아닙니다.")
+        st.caption("폐업 신고는 실제 사업 실패와 같지 않으며 행사장 영업 종료 등이 포함될 수 있습니다. 인허가 공백 후보는 실제 공실·임대 매물 여부를 확인한 결과가 아닙니다.")
+        with st.expander("집계 대상과 기준 자세히 보기"):
+            _n_src = len(services)
+            _n_grp = len({"의원·병원" if s in ("의원", "병원") else s for s in services})
+            st.caption(f"원천 업종명은 {_n_src}개이며, 분석 보고서는 의원·병원을 합쳐 {_n_grp}그룹으로 집계합니다. "
+                       "서비스의 원천 업종 조회에서는 의원·병원을 각각 유지합니다.")
+            _se = META.get("quality", {}).get("short_event_excluded_from_stats")
+            if _se:
+                st.caption(f"백화점·마트 식품관 등 다점포 자리에서 {C.SHORT_EVENT_MAX_DAYS}일 이내 폐업한 단기 행사·팝업 등록 "
+                           f"대구 전체 {_se['occupants']:,}곳은 생존율·상권 사이클·개폐업 통계에서 제외했습니다(자리 이력에는 표시).")
+            if META.get("quality", {}).get("occupants"):
+                st.caption("같은 자리·같은 상호로 기간이 겹치는 인허가(예: 편의점의 담배소매업+휴게음식점)는 한 가게로 묶어 "
+                           "자리·공백·생존·교체를 계산합니다. 누적 인허가 수는 묶기 전 건수입니다.")
 
-        types = ctx.groupby("market_type").size().sort_values(ascending=False)
-        st.caption("상권 유형 분포: " + " · ".join(f"{k} {v}곳" for k, v in types.items()))
+        left, right = st.columns(2)
+        with left:
+            st.subheader("업태별 중앙생존기간")
+            survival_chart(T.get_survival_curve(gu=gu, group_by="category", min_n=100 if gu else 300), key="dash-surv")
+        with right:
+            st.subheader("연도별 개업·폐업")
+            cycle_chart(cyc, key="dash-cycle")
 
-    if S.station is not None and not gu:
-        st.subheader("도시철도 역별 일평균 승하차 (유동인구 대리지표)")
-        render_tool_result("get_station_traffic", T.get_station_traffic(top_n=15), key="dash-station")
+        st.subheader("구·군 비교" if not gu else f"{gu} 동별 비교 (표본 상위)")
+        if not gu:
+            render_tool_result("compare_areas", T.compare_areas(GUS), key="dash-compare")
+        else:
+            rank = T.get_survival_curve(gu=gu, group_by="dong", min_n=150, top_n=40)
+            vac_d = S.vacancy[(S.vacancy["level"] == "동") & (S.vacancy["gu"] == gu)][["dong", "units_3y", "vacancy_rate_pct"]]
+            cyc_d = S.cycle[(S.cycle["level"] == "동") & (S.cycle["gu"] == gu)][["dong", "stage", "open_close_ratio_recent"]]
+            df = (pd.DataFrame(rank["ranking_by_median_survival"])[["dong", "n", "median_survival_years", "survival_1y_pct", "survival_3y_pct"]]
+                  .merge(vac_d, on="dong", how="left").merge(cyc_d, on="dong", how="left"))
+            df.columns = ["동", "표본", "중앙생존(년)", "1년 생존%", "3년 생존%", "최근3년 자리", "인허가 공백 후보율%", "사이클", "개폐업비"]
+            st.dataframe(df, hide_index=True, width="stretch")
 
-    st.subheader("인허가 공백 후보 지도")
-    st.caption(f"전체 후보 {vac['total_vacant']:,}곳 중 목록 {vac['shown']:,}곳을 조회했습니다. 지도에서는 좌표가 없는 기록이 빠질 수 있습니다.")
-    st.caption(safe_markdown(vac["basis"]["definition"] + " · " + vac["basis"]["caveat"]))
-    _map(vac["units"], "vacant_days", ["last_store", "last_category", "vacant_days", "closures_since_2010"], key="dash-map")
+        with st.expander("데이터 품질과 산출 방법"):
+            q = META["quality"]
+            st.markdown(safe_markdown(f"""
+    - **레코드**: 원본 {q['raw_rows']:,}건 · 중복 제거 {q['duplicates_removed']}건 · 인허가일 결측 {q['missing_license_date']}건 · 날짜 모순 {q['date_contradiction']}건 · 대구 외 주소 {q['non_daegu_address']}건 제외
+    - **좌표 채움률**: {', '.join(f'{k} {v}%' for k, v in q['coord_fill_pct'].items())} (EPSG:5174 → WGS84 변환)
+    - **문제1 공실 과대판정**: 공실 상태 자리의 공백기간 분포 {META['vacancy_buckets_all_vacant_units']} → 90일~3년 인허가 공백 후보 **{META['recent_vacancy_units']:,}곳**
+    - **문제2 다점포 건물**: 동시영업 수로 판별, 단일 점포 자리 비율 **{META['single_unit_ratio_pct']}%** · 전체 최다 폐업 {META['max_closures_all_units_top5'][0]['n_closed']}건({META['max_closures_all_units_top5'][0]['addr']}) → 단일 점포 기준 최다 {META['max_closures_single_units_top5'][0]['n_closed']}건
+    - **문제4 업종 확장**: 업종 간 전환(예: 일반음식점 → 휴게음식점)으로 현재 영업 중인 자리 **{META['service_switch_units']:,}곳** (한 업종만 봤다면 공실로 오판)
+    """))
+            if S.poi is not None:
+                poi_food = int((S.poi["cat_l"] == "음식").sum())
+                poi_bakery = int(S.poi["cat_s"].fillna("").str.contains("제과|베이커리|빵").sum())
+                st.markdown(safe_markdown(
+                    f"- **출처별 수록 범위**: 인허가 자료의 전체 업종 영업 중 기록은 {rec['active']:,}건, "
+                    f"소상공인 상가정보 2026-06의 음식·제과·베이커리 점포는 {poi_food + poi_bakery:,}개입니다. "
+                    "업종 범위·집계 단위·수집 시점이 달라 두 수치의 일치 여부로 정확도를 판단할 수 없습니다.\n"
+                    f"- **누적과 현재**: 누적 인허가 {rec['total']:,}건에는 과거 폐업 신고 {rec['closed']:,}건도 포함됩니다. "
+                    "개업 시기별 관찰기간이 다르므로 단순 폐업 비율을 같은 조건의 위험도로 비교하지 않습니다."))
+            st.markdown("**문제3 생존편향** — 개업 연대별 1년 생존율 (그래서 생존분석은 2010년 이후 개업만)")
+            st.dataframe(pd.DataFrame(META["survival_by_decade_1y"]), hide_index=True)
 
-    with st.expander("데이터 품질과 산출 방법"):
-        q = META["quality"]
-        st.markdown(safe_markdown(f"""
-- **레코드**: 원본 {q['raw_rows']:,}건 · 중복 제거 {q['duplicates_removed']}건 · 인허가일 결측 {q['missing_license_date']}건 · 날짜 모순 {q['date_contradiction']}건 · 대구 외 주소 {q['non_daegu_address']}건 제외
-- **좌표 채움률**: {', '.join(f'{k} {v}%' for k, v in q['coord_fill_pct'].items())} (EPSG:5174 → WGS84 변환)
-- **문제1 공실 과대판정**: 공실 상태 자리의 공백기간 분포 {META['vacancy_buckets_all_vacant_units']} → 90일~3년 인허가 공백 후보 **{META['recent_vacancy_units']:,}곳**
-- **문제2 다점포 건물**: 동시영업 수로 판별, 단일 점포 자리 비율 **{META['single_unit_ratio_pct']}%** · 전체 최다 폐업 {META['max_closures_all_units_top5'][0]['n_closed']}건({META['max_closures_all_units_top5'][0]['addr']}) → 단일 점포 기준 최다 {META['max_closures_single_units_top5'][0]['n_closed']}건
-- **문제4 업종 확장**: 업종 간 전환(예: 일반음식점 → 휴게음식점)으로 현재 영업 중인 자리 **{META['service_switch_units']:,}곳** (한 업종만 봤다면 공실로 오판)
-"""))
-        if S.poi is not None:
-            poi_food = int((S.poi["cat_l"] == "음식").sum())
-            poi_bakery = int(S.poi["cat_s"].fillna("").str.contains("제과|베이커리|빵").sum())
-            st.markdown(safe_markdown(
-                f"- **출처별 수록 범위**: 인허가 자료의 전체 업종 영업 중 기록은 {rec['active']:,}건, "
-                f"소상공인 상가정보 2026-06의 음식·제과·베이커리 점포는 {poi_food + poi_bakery:,}개입니다. "
-                "업종 범위·집계 단위·수집 시점이 달라 두 수치의 일치 여부로 정확도를 판단할 수 없습니다.\n"
-                f"- **누적과 현재**: 누적 인허가 {rec['total']:,}건에는 과거 폐업 신고 {rec['closed']:,}건도 포함됩니다. "
-                "개업 시기별 관찰기간이 다르므로 단순 폐업 비율을 같은 조건의 위험도로 비교하지 않습니다."))
-        st.markdown("**문제3 생존편향** — 개업 연대별 1년 생존율 (그래서 생존분석은 2010년 이후 개업만)")
-        st.dataframe(pd.DataFrame(META["survival_by_decade_1y"]), hide_index=True)
+
 
 
 # ─────────────────────────── 3. 자리 이력 ───────────────────────────
 with tab_unit:
+    st.title("관심 있는 자리의 이력 확인")
+    st.caption("주소나 상호로 찾아보세요. 이전 업종과 영업기간, 해당하는 경우 재입점 전망을 함께 확인할 수 있어요.")
     addr = st.text_input("주소 또는 상호", placeholder="예) 대구 중구 동성로5길 83 / 삼덕동1가 28-6 / 빽다방 대구군위점")
     whole = st.checkbox("층 구분 없이 건물 전체 보기")
     h = None
@@ -400,7 +421,3 @@ with tab_unit:
             if h["other_candidates"]:
                 st.markdown("**다른 후보 자리**")
                 st.dataframe(pd.DataFrame(h["other_candidates"])[["address", "floor", "records", "status"]], hide_index=True)
-
-
-with tab_prediction:
-    render_review()

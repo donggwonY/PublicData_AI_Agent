@@ -1,0 +1,6 @@
+{
+  "selection": "Use all four quarterly evaluations of year y-2; all outcomes complete before Jan1 y",
+  "rule": "Separate model only if all four past quarters exist, each n>=200/events>=20, and separate calibrated beats pooled calibrated on BOTH Brier/logloss in ALL four. Otherwise pooled.",
+  "scope": "All saved quarters; no per-result threshold tuning; unavailable separate models fall back to pooled",
+  "limitations": "Rule proposed after inspecting past project results; retrospective analysis, not pristine holdout. Not operational validation."
+}

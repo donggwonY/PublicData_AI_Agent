@@ -1,0 +1,6875 @@
+{
+  "comparison": "fixed candidate versus age_shrink500",
+  "summary": [
+    {
+      "scope": "전체",
+      "selection": "해당 분기 충분표본 업종",
+      "quarters": 96,
+      "industry_min": 9,
+      "industry_max": 25,
+      "weighted_wins": 70,
+      "equal_wins": 54,
+      "same_period_common_industries": null
+    },
+    {
+      "scope": "전체",
+      "selection": "기간 공통 충분표본 업종",
+      "quarters": 96,
+      "industry_min": 7,
+      "industry_max": 7,
+      "weighted_wins": 80,
+      "equal_wins": 83,
+      "same_period_common_industries": [
+        "담배소매업",
+        "미용업",
+        "이용업",
+        "일반음식점",
+        "즉석판매제조가공업",
+        "축산판매업",
+        "휴게음식점"
+      ]
+    },
+    {
+      "scope": "2013년 이후",
+      "selection": "해당 분기 충분표본 업종",
+      "quarters": 52,
+      "industry_min": 18,
+      "industry_max": 25,
+      "weighted_wins": 52,
+      "equal_wins": 43,
+      "same_period_common_industries": null
+    },
+    {
+      "scope": "2013년 이후",
+      "selection": "기간 공통 충분표본 업종",
+      "quarters": 52,
+      "industry_min": 15,
+      "industry_max": 15,
+      "weighted_wins": 52,
+      "equal_wins": 48,
+      "same_period_common_industries": [
+        "건강기능식품일반판매업",
+        "노래연습장업",
+        "담배소매업",
+        "미용업",
+        "세탁업",
+        "약국",
+        "의원·병원",
+        "이용업",
+        "인터넷컴퓨터게임시설제공업",
+        "일반음식점",
+        "제과점영업",
+        "즉석판매제조가공업",
+        "청소년게임제공업",
+        "축산판매업",
+        "휴게음식점"
+      ]
+    },
+    {
+      "scope": "최근3년",
+      "selection": "해당 분기 충분표본 업종",
+      "quarters": 12,
+      "industry_min": 21,
+      "industry_max": 24,
+      "weighted_wins": 12,
+      "equal_wins": 10,
+      "same_period_common_industries": null
+    },
+    {
+      "scope": "최근3년",
+      "selection": "기간 공통 충분표본 업종",
+      "quarters": 12,
+      "industry_min": 19,
+      "industry_max": 19,
+      "weighted_wins": 12,
+      "equal_wins": 11,
+      "same_period_common_industries": [
+        "건강기능식품일반판매업",
+        "노래연습장업",
+        "담배소매업",
+        "동물미용업",
+        "동물위탁관리업",
+        "미용업",
+        "세탁업",
+        "약국",
+        "유흥주점영업",
+        "의원·병원",
+        "이용업",
+        "인터넷컴퓨터게임시설제공업",
+        "일반음식점",
+        "제과점영업",
+        "즉석판매제조가공업",
+        "청소년게임제공업",
+        "체육도장업",
+        "축산판매업",
+        "휴게음식점"
+      ]
+    }
+  ],
+  "details": [
+    {
+      "scope": "전체",
+      "selection": "해당 분기 충분표본 업종",
+      "quarters": [
+        {
+          "landmark": "2002-01-01",
+          "industries": 9,
+          "n": 49247,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 2.5651918891601842e-05,
+                "log_loss": 0.004991795383223483
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00020267921685640858,
+                "log_loss": 0.011954940937178408
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2002-04-01",
+          "industries": 10,
+          "n": 52673,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 5.7212752565172276e-05,
+                "log_loss": 0.00878763570320033
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -3.900012680465442e-07,
+                "log_loss": 0.01418680619311068
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2002-07-01",
+          "industries": 12,
+          "n": 55382,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 9.443084910388568e-05,
+                "log_loss": -0.0015000333120948645
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 8.33616677768069e-05,
+                "log_loss": -0.09413384832908282
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2002-10-01",
+          "industries": 12,
+          "n": 56959,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 9.774125936622882e-05,
+                "log_loss": -0.019028390378315094
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00010564586710454296,
+                "log_loss": -0.2548162299814861
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2003-01-01",
+          "industries": 13,
+          "n": 58339,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.000521327530971993,
+                "log_loss": 0.0020759586096626968
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.000254198391641816,
+                "log_loss": 0.010169039691272412
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2003-04-01",
+          "industries": 15,
+          "n": 61829,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00048131164237520424,
+                "log_loss": -0.026886408556133844
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 5.1294254461992093e-05,
+                "log_loss": -0.1330270443514354
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2003-07-01",
+          "industries": 13,
+          "n": 61706,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00041344122055375377,
+                "log_loss": -0.039776246698997535
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 7.715645537705334e-05,
+                "log_loss": -0.22346892840416624
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2003-10-01",
+          "industries": 13,
+          "n": 63095,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0003889410861933155,
+                "log_loss": -0.05514418235563073
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 3.251062368935552e-05,
+                "log_loss": -0.30560477924982155
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2004-01-01",
+          "industries": 14,
+          "n": 63216,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0018832226618853835,
+                "log_loss": -0.008817970197995269
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.001515491553518261,
+                "log_loss": -0.04033041084122051
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2004-04-01",
+          "industries": 15,
+          "n": 62997,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0018465460260351882,
+                "log_loss": -0.011555167789195088
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0018607710910355385,
+                "log_loss": -0.04027363196934594
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2004-07-01",
+          "industries": 16,
+          "n": 63814,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0017331079324747203,
+                "log_loss": -0.015988359782233615
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0018026596241515426,
+                "log_loss": -0.04500483385173315
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2004-10-01",
+          "industries": 18,
+          "n": 65530,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0014520257132272564,
+                "log_loss": -0.015623135015436418
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.001294505651087141,
+                "log_loss": -0.04177637339965127
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2005-01-01",
+          "industries": 18,
+          "n": 65466,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0001910072078586664,
+                "log_loss": 0.0013774239728356992
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00023974035834509747,
+                "log_loss": 0.00036322060211306365
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2005-04-01",
+          "industries": 18,
+          "n": 64859,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00033345826256361757,
+                "log_loss": 0.0016917381935258825
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00037263853313492467,
+                "log_loss": -0.0008729254827929134
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2005-07-01",
+          "industries": 18,
+          "n": 64826,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00019682118116084483,
+                "log_loss": 0.0007470198691607643
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 1.9621921722638946e-05,
+                "log_loss": -0.003250505793562738
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2005-10-01",
+          "industries": 18,
+          "n": 64834,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0003302873885783265,
+                "log_loss": 0.0010075010400498589
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -3.768648177306736e-05,
+                "log_loss": -0.004608775790635394
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2006-01-01",
+          "industries": 18,
+          "n": 64343,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0003009869430760742,
+                "log_loss": 0.0028513750212199327
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0015172350638553312,
+                "log_loss": 0.012248026696982144
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2006-04-01",
+          "industries": 18,
+          "n": 63441,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.000496019098138132,
+                "log_loss": 0.003729155087421786
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0021402735128603894,
+                "log_loss": 0.015271266695319387
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2006-07-01",
+          "industries": 18,
+          "n": 63103,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0004984349866924525,
+                "log_loss": 0.0035801300095137487
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0025359885833559762,
+                "log_loss": 0.01663508095090181
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2006-10-01",
+          "industries": 18,
+          "n": 63121,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0004264911271445381,
+                "log_loss": 0.0031831371439343024
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0028098735949450937,
+                "log_loss": 0.017368400539564937
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2007-01-01",
+          "industries": 18,
+          "n": 62893,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0005219832212005434,
+                "log_loss": 0.0018769070911008481
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0025420471464940395,
+                "log_loss": 0.01033388734741749
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2007-04-01",
+          "industries": 16,
+          "n": 61320,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00020210436033542964,
+                "log_loss": 0.0003695615648171794
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0024201523891731512,
+                "log_loss": 0.009426800017830505
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2007-07-01",
+          "industries": 16,
+          "n": 61450,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0003337034449631083,
+                "log_loss": 0.00117825820899205
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0034488841089324743,
+                "log_loss": 0.014579359340975807
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2007-10-01",
+          "industries": 18,
+          "n": 64896,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0004159296472757045,
+                "log_loss": 0.0014414473685258225
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.005257395432629178,
+                "log_loss": 0.021893906223255856
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2008-01-01",
+          "industries": 18,
+          "n": 65424,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 6.72106650612847e-05,
+                "log_loss": -0.015692258709086644
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.004168590503000714,
+                "log_loss": -0.04320684045519749
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2008-04-01",
+          "industries": 19,
+          "n": 65777,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 1.7915442881796185e-05,
+                "log_loss": -0.031830728382471675
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00415198005733116,
+                "log_loss": -0.09031059186000533
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2008-07-01",
+          "industries": 19,
+          "n": 65930,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004858031781271785,
+                "log_loss": -0.05747366073890105
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00034664283952199785,
+                "log_loss": -0.21143799827957985
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2008-10-01",
+          "industries": 21,
+          "n": 67025,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00040597914229442315,
+                "log_loss": -0.08205641020416335
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0007450666093433501,
+                "log_loss": -0.2618118558594661
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2009-01-01",
+          "industries": 21,
+          "n": 67261,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.008756184175759218,
+                "log_loss": -0.3650222654594769
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.035472410428981034,
+                "log_loss": -1.56870165126431
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2009-04-01",
+          "industries": 18,
+          "n": 66125,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.009016803599410449,
+                "log_loss": -0.387478202652806
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.038320793101209075,
+                "log_loss": -1.7175349840914655
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2009-07-01",
+          "industries": 20,
+          "n": 67414,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.008965622593015329,
+                "log_loss": -0.3936411192492557
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.03257935447576431,
+                "log_loss": -1.531478537517315
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2009-10-01",
+          "industries": 19,
+          "n": 67880,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.009301572045637509,
+                "log_loss": -0.39763661727757077
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.03686362318774672,
+                "log_loss": -1.6546759040906214
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2010-01-01",
+          "industries": 19,
+          "n": 68139,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00045227843572141085,
+                "log_loss": -0.002268939553261275
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005167923668663526,
+                "log_loss": -0.003835776056477999
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2010-04-01",
+          "industries": 20,
+          "n": 68496,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004586114579032245,
+                "log_loss": -0.002238519955415668
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 2.6896098727629755e-05,
+                "log_loss": -0.00029347018930182616
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2010-07-01",
+          "industries": 20,
+          "n": 69038,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004721282818812308,
+                "log_loss": -0.002208750825310383
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -2.512464405848673e-05,
+                "log_loss": -0.0006742999480751106
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2010-10-01",
+          "industries": 19,
+          "n": 69088,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00044867468346306607,
+                "log_loss": -0.002001186956262158
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -2.2233876276650083e-05,
+                "log_loss": -0.0004833203455118755
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2011-01-01",
+          "industries": 19,
+          "n": 69267,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00032139889589491406,
+                "log_loss": -0.001900007092952047
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0009359418754001367,
+                "log_loss": 0.0020167557823064903
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2011-04-01",
+          "industries": 18,
+          "n": 67953,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00029458293051799826,
+                "log_loss": -0.001652270041747365
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0006310135554349036,
+                "log_loss": 0.0013436672928591573
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2011-07-01",
+          "industries": 18,
+          "n": 68205,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003140320722013102,
+                "log_loss": -0.0017066245378877312
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00031840664926451837,
+                "log_loss": 0.000563325132239627
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2011-10-01",
+          "industries": 19,
+          "n": 70223,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00038522433559691987,
+                "log_loss": -0.001990553971003407
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00032597047499423754,
+                "log_loss": -0.0014888210163678682
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2012-01-01",
+          "industries": 17,
+          "n": 68201,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002725813419202134,
+                "log_loss": -0.0013991340484393743
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00013928442565464016,
+                "log_loss": -0.000710077868089664
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2012-04-01",
+          "industries": 17,
+          "n": 68033,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002738830983721213,
+                "log_loss": -0.0015186926252941705
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 1.5846112591499153e-05,
+                "log_loss": -0.00045682654329291724
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2012-07-01",
+          "industries": 17,
+          "n": 68307,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0001804128815652055,
+                "log_loss": -0.0011610337140657762
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0009951773492636404,
+                "log_loss": 0.0024376271987951764
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2012-10-01",
+          "industries": 19,
+          "n": 70296,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00010998896436539553,
+                "log_loss": -0.0008973178462078457
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0008044696523807196,
+                "log_loss": 0.0019603951452964344
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2013-01-01",
+          "industries": 18,
+          "n": 69915,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003958468661554093,
+                "log_loss": -0.0022764550651067036
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007157009287776877,
+                "log_loss": -0.003355114337334439
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-04-01",
+          "industries": 20,
+          "n": 70574,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00037512148981533056,
+                "log_loss": -0.002030027334279388
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00048398553396350794,
+                "log_loss": -0.0018999942917174591
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-07-01",
+          "industries": 21,
+          "n": 71284,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004687244543557657,
+                "log_loss": -0.0024995240733695534
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000746407001404049,
+                "log_loss": -0.003184474676871642
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-10-01",
+          "industries": 20,
+          "n": 71314,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00045305578857913835,
+                "log_loss": -0.002405962332449782
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007316060593377416,
+                "log_loss": -0.0031248834485696603
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-01-01",
+          "industries": 20,
+          "n": 71494,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003744921700045389,
+                "log_loss": -0.0017529713584003921
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006368500579974311,
+                "log_loss": -0.0015550741760651764
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-04-01",
+          "industries": 21,
+          "n": 71819,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00042125793489531705,
+                "log_loss": -0.0019212696912907638
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0008530531188320481,
+                "log_loss": -0.002349435067452485
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-07-01",
+          "industries": 23,
+          "n": 72665,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000322552461357798,
+                "log_loss": -0.016399856073161377
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.001585397739392235,
+                "log_loss": -0.23872307362270445
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-10-01",
+          "industries": 23,
+          "n": 73066,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003068236755902249,
+                "log_loss": -0.017690417124871745
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0017591667336175078,
+                "log_loss": -0.25499383073626875
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-01-01",
+          "industries": 22,
+          "n": 72556,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003885389918029307,
+                "log_loss": -0.0022054841285495497
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007305922395917798,
+                "log_loss": -0.0030699388692608004
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-04-01",
+          "industries": 21,
+          "n": 72527,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000392839331269908,
+                "log_loss": -0.0022727821732995072
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000851520903713371,
+                "log_loss": -0.0035661324512713095
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-07-01",
+          "industries": 21,
+          "n": 72933,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003680098853172255,
+                "log_loss": -0.0021807874336577265
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0010621566350984457,
+                "log_loss": -0.0045772020184787245
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-10-01",
+          "industries": 19,
+          "n": 71467,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003669206825177236,
+                "log_loss": -0.0022028639783130462
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0009240918171102742,
+                "log_loss": -0.00426513719977816
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-01-01",
+          "industries": 20,
+          "n": 73153,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00036336487794305747,
+                "log_loss": -0.002135834532058354
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0009776011136960853,
+                "log_loss": -0.004425131025998972
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-04-01",
+          "industries": 20,
+          "n": 73485,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004168822953340199,
+                "log_loss": -0.0022908789429343726
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0008918208946167353,
+                "log_loss": -0.003994717342975223
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-07-01",
+          "industries": 20,
+          "n": 74128,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00033326288758490143,
+                "log_loss": -0.0019054876364585287
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0008307667653084585,
+                "log_loss": -0.003630251083909578
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-10-01",
+          "industries": 22,
+          "n": 75626,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00018725968090707742,
+                "log_loss": -0.0011489854531655701
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00037842494153251925,
+                "log_loss": -0.0009050620168534373
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-01-01",
+          "industries": 21,
+          "n": 75943,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00020170706884011714,
+                "log_loss": -0.0010341602749540544
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 5.4857450278236247e-05,
+                "log_loss": 0.00023052891767272188
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2017-04-01",
+          "industries": 21,
+          "n": 76370,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003203516485007301,
+                "log_loss": -0.0016138244587390745
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00011660549590787126,
+                "log_loss": -0.00042679258725442093
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-07-01",
+          "industries": 21,
+          "n": 77233,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002875614728915345,
+                "log_loss": -0.0014749643355616343
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -2.350447078151075e-05,
+                "log_loss": -0.00012095934833737004
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-10-01",
+          "industries": 21,
+          "n": 77941,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00020092908198184614,
+                "log_loss": -0.0011232413555735089
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0002381480343406157,
+                "log_loss": 0.0007584794927790501
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2018-01-01",
+          "industries": 22,
+          "n": 78368,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00029663003394322907,
+                "log_loss": -0.001514393461959674
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00015222676023783144,
+                "log_loss": -0.0010005603227405018
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-04-01",
+          "industries": 22,
+          "n": 78353,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000247514130427248,
+                "log_loss": -0.0012742867478198372
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -1.1572419876660054e-05,
+                "log_loss": -0.00040444146341818486
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-07-01",
+          "industries": 24,
+          "n": 79991,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003153629788106831,
+                "log_loss": -0.0013937600645633104
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00033069002560693375,
+                "log_loss": -0.001077891218049895
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-10-01",
+          "industries": 22,
+          "n": 79504,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00031324506095820336,
+                "log_loss": -0.0013079658846640624
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005269778625846593,
+                "log_loss": -0.0009151453817511809
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-01-01",
+          "industries": 24,
+          "n": 80149,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000380469853402931,
+                "log_loss": -0.002123065878373909
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005632515444566967,
+                "log_loss": -0.002159134818601078
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-04-01",
+          "industries": 25,
+          "n": 80797,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003746055221816473,
+                "log_loss": -0.002142483613179903
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006245524291341475,
+                "log_loss": -0.002631231268965495
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-07-01",
+          "industries": 23,
+          "n": 80363,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00017177931755707693,
+                "log_loss": -0.0012367153624117276
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -4.718465675767701e-05,
+                "log_loss": -0.0005111905972866447
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-10-01",
+          "industries": 25,
+          "n": 81683,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0001412433667517876,
+                "log_loss": -0.0011512391514897045
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 5.239878201322809e-05,
+                "log_loss": -0.0005496296163167525
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2020-01-01",
+          "industries": 23,
+          "n": 80856,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00011267520834023845,
+                "log_loss": -0.0005402558539630821
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00024310651326971074,
+                "log_loss": 0.0012858494275356405
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2020-04-01",
+          "industries": 22,
+          "n": 80439,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -8.966055405697736e-05,
+                "log_loss": -0.000392800610967919
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0002322252041254885,
+                "log_loss": 0.0017175690234533822
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2020-07-01",
+          "industries": 22,
+          "n": 81124,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00016641155052057213,
+                "log_loss": -0.0006987215202059992
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00014838150581827504,
+                "log_loss": 0.001969564461668707
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2020-10-01",
+          "industries": 22,
+          "n": 81548,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0001472929000562754,
+                "log_loss": -0.0007076744736572145
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -5.923137756117443e-06,
+                "log_loss": 0.0007859880334809845
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2021-01-01",
+          "industries": 24,
+          "n": 81941,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00023538634619062795,
+                "log_loss": -0.0011905782802128578
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000536684904117644,
+                "log_loss": -0.0014734483968484105
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-04-01",
+          "industries": 23,
+          "n": 82095,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00019124893644069718,
+                "log_loss": -0.0011693746670021605
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005244976341247206,
+                "log_loss": -0.001808237918954783
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-07-01",
+          "industries": 22,
+          "n": 82369,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00014891529347832243,
+                "log_loss": -0.0010651790334827735
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007555070859627263,
+                "log_loss": -0.003215758327637036
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-10-01",
+          "industries": 21,
+          "n": 82600,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00017950843864926705,
+                "log_loss": -0.0012223054487908952
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000898833634479671,
+                "log_loss": -0.0038301526253519316
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-01-01",
+          "industries": 24,
+          "n": 83471,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00024965220063136347,
+                "log_loss": -0.0016447639566706895
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00023737780814469468,
+                "log_loss": -0.0021446882258246533
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-04-01",
+          "industries": 23,
+          "n": 83650,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00025309532016515296,
+                "log_loss": -0.0015950684238824847
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000320266586842334,
+                "log_loss": -0.00284766501820385
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-07-01",
+          "industries": 20,
+          "n": 82879,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00031618096140988145,
+                "log_loss": -0.001856893588953006
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00044211671742069354,
+                "log_loss": -0.003150731710128247
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-10-01",
+          "industries": 20,
+          "n": 83295,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003040462976920025,
+                "log_loss": -0.0017435836895902015
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00020953156841741743,
+                "log_loss": -0.0020125148710342785
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-01-01",
+          "industries": 21,
+          "n": 83364,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00028224545806825106,
+                "log_loss": -0.0012735427787746968
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0002742611282740508,
+                "log_loss": 0.0020545318526277575
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2023-04-01",
+          "industries": 22,
+          "n": 83639,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004301687212758575,
+                "log_loss": -0.002144314161816777
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 3.518804454187184e-05,
+                "log_loss": 0.0004874494060271755
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2023-07-01",
+          "industries": 21,
+          "n": 83339,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00043981297158322786,
+                "log_loss": -0.00226170180502442
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000334874120860485,
+                "log_loss": -0.001657467784598082
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-10-01",
+          "industries": 21,
+          "n": 83717,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004689990591088655,
+                "log_loss": -0.002388285876491343
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004781580224833411,
+                "log_loss": -0.002285820132901323
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-01-01",
+          "industries": 22,
+          "n": 83131,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005215127652367659,
+                "log_loss": -0.0028478637430103975
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00047812038415035086,
+                "log_loss": -0.0019828343413428014
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-04-01",
+          "industries": 23,
+          "n": 83709,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004918750133056404,
+                "log_loss": -0.002411995838890524
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00047426812861663483,
+                "log_loss": -0.0016129333192844617
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-07-01",
+          "industries": 22,
+          "n": 83357,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004827846494861793,
+                "log_loss": -0.0023362923054240647
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0002784061390877907,
+                "log_loss": -0.0010874761002764527
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-10-01",
+          "industries": 22,
+          "n": 83837,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004471924202242674,
+                "log_loss": -0.0021715822861728047
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -9.985232764553494e-05,
+                "log_loss": -0.0001257557035835009
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-01-01",
+          "industries": 22,
+          "n": 82750,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005115952016027408,
+                "log_loss": -0.0024523844244596724
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00044609025450832837,
+                "log_loss": -0.0026797663538900797
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-04-01",
+          "industries": 23,
+          "n": 83064,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004914570201813471,
+                "log_loss": -0.0025175331210454
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000346445335382688,
+                "log_loss": -0.0022118687321588055
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-07-01",
+          "industries": 24,
+          "n": 83694,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004543663016498742,
+                "log_loss": -0.0024784453027921483
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00028307015595500587,
+                "log_loss": -0.0022772517931217025
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-10-01",
+          "industries": 24,
+          "n": 84006,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00044443974253866004,
+                "log_loss": -0.0024120298015639324
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00034285242684545204,
+                "log_loss": -0.002495845086312532
+              },
+              "both_improved": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "전체",
+      "selection": "기간 공통 충분표본 업종",
+      "quarters": [
+        {
+          "landmark": "2002-01-01",
+          "industries": 7,
+          "n": 48011,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 2.6919031545851242e-05,
+                "log_loss": 0.005147152950532161
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0002612487943438567,
+                "log_loss": 0.011864103773064651
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2002-04-01",
+          "industries": 7,
+          "n": 49545,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 7.111209981945142e-05,
+                "log_loss": 0.009412948552278309
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0002827952530831441,
+                "log_loss": 0.019699098187957953
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2002-07-01",
+          "industries": 7,
+          "n": 51188,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00011114540872648158,
+                "log_loss": 0.012088749371053618
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0003388222907354204,
+                "log_loss": 0.02398552054819374
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2002-10-01",
+          "industries": 7,
+          "n": 52383,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00012146654958239928,
+                "log_loss": 0.012560938359086367
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00037116842255967286,
+                "log_loss": 0.029145386938431158
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2003-01-01",
+          "industries": 7,
+          "n": 53346,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0005935151155293571,
+                "log_loss": 0.003891278112094646
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0008102446653117121,
+                "log_loss": 0.02704854944623795
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2003-04-01",
+          "industries": 7,
+          "n": 53973,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0006019274076506382,
+                "log_loss": 0.004563862944746015
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0007296540598287692,
+                "log_loss": 0.02778550753793252
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2003-07-01",
+          "industries": 7,
+          "n": 54491,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0005123980774918352,
+                "log_loss": 0.004389340770457966
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0006053382228406853,
+                "log_loss": 0.027419678822844223
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2003-10-01",
+          "industries": 7,
+          "n": 55418,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0004950958496017021,
+                "log_loss": 0.006576643202288874
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0005467575866036158,
+                "log_loss": 0.030741552354554773
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2004-01-01",
+          "industries": 7,
+          "n": 54945,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0021863976236977975,
+                "log_loss": 0.009676745889215263
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.003427569857577758,
+                "log_loss": 0.017541972654228268
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2004-04-01",
+          "industries": 7,
+          "n": 54577,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0021214434466977723,
+                "log_loss": 0.009151765252075254
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0032911790541456354,
+                "log_loss": 0.016169548976567503
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2004-07-01",
+          "industries": 7,
+          "n": 54732,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.0019788714009109213,
+                "log_loss": 0.009075310045378862
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.002855667576372904,
+                "log_loss": 0.014689864817415046
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2004-10-01",
+          "industries": 7,
+          "n": 54813,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.001728346868922217,
+                "log_loss": 0.008747547552229847
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.002423892114552242,
+                "log_loss": 0.013773102635971146
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2005-01-01",
+          "industries": 7,
+          "n": 54587,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00017712924058572318,
+                "log_loss": 0.0018413792687560437
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0002648284738980921,
+                "log_loss": 0.00032990222996115426
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2005-04-01",
+          "industries": 7,
+          "n": 53915,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00032633734097944206,
+                "log_loss": 0.0026423987346028415
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00035163744789987384,
+                "log_loss": -0.00031577142985933504
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2005-07-01",
+          "industries": 7,
+          "n": 53690,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00022032649207521696,
+                "log_loss": 0.0020665865541541115
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006126575813204428,
+                "log_loss": -0.0016482365976113824
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2005-10-01",
+          "industries": 7,
+          "n": 53598,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": 0.00046450175656329566,
+                "log_loss": 0.0031686658175166357
+              },
+              "both_improved": false
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00026549139638392235,
+                "log_loss": -0.00036746300058662244
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2006-01-01",
+          "industries": 7,
+          "n": 53036,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -9.564128779203082e-05,
+                "log_loss": -0.00011760126912934262
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005869965733876532,
+                "log_loss": -0.0027637896252551103
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2006-04-01",
+          "industries": 7,
+          "n": 52196,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -7.699778407825756e-05,
+                "log_loss": -0.00014836740863119778
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004664649086135691,
+                "log_loss": -0.002281034104470122
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2006-07-01",
+          "industries": 7,
+          "n": 51867,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00020457136281688156,
+                "log_loss": -0.0008235904240524627
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005665858413250477,
+                "log_loss": -0.002717337371418866
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2006-10-01",
+          "industries": 7,
+          "n": 51883,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00038275013926754146,
+                "log_loss": -0.001658226034337678
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007300474651239706,
+                "log_loss": -0.00351958730267325
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2007-01-01",
+          "industries": 7,
+          "n": 51749,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -6.931454072886275e-05,
+                "log_loss": -0.000642717798988281
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -8.968444014345402e-05,
+                "log_loss": -0.0011151084550593074
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2007-04-01",
+          "industries": 7,
+          "n": 51115,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00021092564364964838,
+                "log_loss": -0.0014086553146337112
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00022800700892315222,
+                "log_loss": -0.0018584697583158799
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2007-07-01",
+          "industries": 7,
+          "n": 51332,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -9.513490939787393e-05,
+                "log_loss": -0.0007370031017686508
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00018391653716852915,
+                "log_loss": -0.0015925575682517496
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2007-10-01",
+          "industries": 7,
+          "n": 51675,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00015929230144182696,
+                "log_loss": -0.0009842673448964556
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0003119586158223991,
+                "log_loss": -0.002131815038907981
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2008-01-01",
+          "industries": 7,
+          "n": 51510,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00029908633233533097,
+                "log_loss": -0.0016126872296931332
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004735587801163276,
+                "log_loss": -0.002728981393336327
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2008-04-01",
+          "industries": 7,
+          "n": 51331,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00032234656798070196,
+                "log_loss": -0.001715844088831596
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0003705470271489466,
+                "log_loss": -0.0021216100411149408
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2008-07-01",
+          "industries": 7,
+          "n": 51023,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005682420381689516,
+                "log_loss": -0.003042029280584588
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004960691252518999,
+                "log_loss": -0.0027835319350691784
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2008-10-01",
+          "industries": 7,
+          "n": 51106,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005825880310401987,
+                "log_loss": -0.0031604791136542578
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004887559021162482,
+                "log_loss": -0.0028509679986721747
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2009-01-01",
+          "industries": 7,
+          "n": 51209,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003436417487487403,
+                "log_loss": -0.001791710921477958
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000424297356919381,
+                "log_loss": -0.002231207767703985
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2009-04-01",
+          "industries": 7,
+          "n": 51024,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00034837450317575907,
+                "log_loss": -0.0019050232130537294
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00043801813329705924,
+                "log_loss": -0.0024961891481691573
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2009-07-01",
+          "industries": 7,
+          "n": 51329,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003937054868538418,
+                "log_loss": -0.0022188159681045534
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00048634538268612894,
+                "log_loss": -0.003004543482225417
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2009-10-01",
+          "industries": 7,
+          "n": 51759,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00038531312120013644,
+                "log_loss": -0.0022278575310369407
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000488769223097707,
+                "log_loss": -0.003076584318553225
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2010-01-01",
+          "industries": 7,
+          "n": 51896,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000509336248510489,
+                "log_loss": -0.0022572666487989243
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006845290030965619,
+                "log_loss": -0.0035163247465914388
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2010-04-01",
+          "industries": 7,
+          "n": 51911,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000561453151230954,
+                "log_loss": -0.0024488607673822933
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007155620059476253,
+                "log_loss": -0.003491979696875908
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2010-07-01",
+          "industries": 7,
+          "n": 52296,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005910544866020266,
+                "log_loss": -0.0025116173987602478
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000782317147832262,
+                "log_loss": -0.0036972751171387075
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2010-10-01",
+          "industries": 7,
+          "n": 52685,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000553665329637553,
+                "log_loss": -0.0023277429784261425
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007042473041383278,
+                "log_loss": -0.0032294982292688274
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2011-01-01",
+          "industries": 7,
+          "n": 52830,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004394546100377806,
+                "log_loss": -0.0023916158124466275
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006441204607211626,
+                "log_loss": -0.0035209483130170527
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2011-04-01",
+          "industries": 7,
+          "n": 52924,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00038183770811450697,
+                "log_loss": -0.0020024362011107745
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005279690642746056,
+                "log_loss": -0.0028083161824119123
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2011-07-01",
+          "industries": 7,
+          "n": 53159,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00038874549501506466,
+                "log_loss": -0.0020008441581465977
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000499934694937495,
+                "log_loss": -0.002583557704582954
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2011-10-01",
+          "industries": 7,
+          "n": 53625,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00044388989888091126,
+                "log_loss": -0.0022168180730602763
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005649932280299905,
+                "log_loss": -0.002881581810522917
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2012-01-01",
+          "industries": 7,
+          "n": 53489,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003087071506102622,
+                "log_loss": -0.001565703073630376
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004191348456728389,
+                "log_loss": -0.002032933117611899
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2012-04-01",
+          "industries": 7,
+          "n": 53336,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003225417256721678,
+                "log_loss": -0.0017496585724571141
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00048269006140420505,
+                "log_loss": -0.002635577320945528
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2012-07-01",
+          "industries": 7,
+          "n": 53649,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00027369760567390853,
+                "log_loss": -0.001494171906667853
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00043018402796291585,
+                "log_loss": -0.0024115201762021127
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2012-10-01",
+          "industries": 7,
+          "n": 53822,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0001912864059089126,
+                "log_loss": -0.0012222978287715989
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0002837132250736759,
+                "log_loss": -0.0017792292919925584
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-01-01",
+          "industries": 7,
+          "n": 53824,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003758550169261489,
+                "log_loss": -0.0023105165549898695
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005684541279612844,
+                "log_loss": -0.0035823062354855906
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-04-01",
+          "industries": 7,
+          "n": 53608,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003971665968805169,
+                "log_loss": -0.002316610033767107
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005767281620709901,
+                "log_loss": -0.003280910388481356
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-07-01",
+          "industries": 7,
+          "n": 53883,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004641293716465994,
+                "log_loss": -0.002595028228081155
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006658457046812173,
+                "log_loss": -0.003656448475182868
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-10-01",
+          "industries": 7,
+          "n": 54222,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00044817081608154583,
+                "log_loss": -0.002536376145553435
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007406867277091582,
+                "log_loss": -0.004178006806413809
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-01-01",
+          "industries": 7,
+          "n": 54356,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004149562548099132,
+                "log_loss": -0.0021867969246768143
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007563007036680201,
+                "log_loss": -0.0035096181378023767
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-04-01",
+          "industries": 7,
+          "n": 54377,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004331993161036451,
+                "log_loss": -0.002200942310591528
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007632344717062599,
+                "log_loss": -0.0034622380892173304
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-07-01",
+          "industries": 7,
+          "n": 54704,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00022775991310782946,
+                "log_loss": -0.0013989485855850053
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004721809807399789,
+                "log_loss": -0.0024061205171430583
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-10-01",
+          "industries": 7,
+          "n": 55039,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00016367625899632105,
+                "log_loss": -0.0011690990185614426
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0003511783895147009,
+                "log_loss": -0.0018850919408575798
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-01-01",
+          "industries": 7,
+          "n": 54976,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00024013267347582068,
+                "log_loss": -0.0017539454767329908
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004557961140334864,
+                "log_loss": -0.0029211532233904586
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-04-01",
+          "industries": 7,
+          "n": 55105,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00024675481630972307,
+                "log_loss": -0.0018258462256191144
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00046442206740311486,
+                "log_loss": -0.0030935991578406874
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-07-01",
+          "industries": 7,
+          "n": 55501,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00020517193635472355,
+                "log_loss": -0.0016746751284853019
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00046374740763512653,
+                "log_loss": -0.003363995629657993
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-10-01",
+          "industries": 7,
+          "n": 55996,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00022397600944221128,
+                "log_loss": -0.001630119267421979
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004655412298506572,
+                "log_loss": -0.0031937941041615563
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-01-01",
+          "industries": 7,
+          "n": 56366,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003027815663394862,
+                "log_loss": -0.0019027663358026324
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006085290083928921,
+                "log_loss": -0.0038847841723150017
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-04-01",
+          "industries": 7,
+          "n": 56747,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004321482835799122,
+                "log_loss": -0.0023730217678457287
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000804611068938554,
+                "log_loss": -0.004430470950932769
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-07-01",
+          "industries": 7,
+          "n": 57420,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003220351240811307,
+                "log_loss": -0.0018660690988152773
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006548704080594185,
+                "log_loss": -0.0037017000152285034
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-10-01",
+          "industries": 7,
+          "n": 57887,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00021289840641525165,
+                "log_loss": -0.0015231490243961569
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00043431402560461775,
+                "log_loss": -0.002860154247106022
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-01-01",
+          "industries": 7,
+          "n": 58409,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002904424907052987,
+                "log_loss": -0.0016769244916396604
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004769724769289409,
+                "log_loss": -0.0026146993503189664
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-04-01",
+          "industries": 7,
+          "n": 58733,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00044405836033863035,
+                "log_loss": -0.0024320304824537423
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007304032701790939,
+                "log_loss": -0.003756279952994954
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-07-01",
+          "industries": 7,
+          "n": 59519,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004991359980291648,
+                "log_loss": -0.002743871184651615
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007957087842672544,
+                "log_loss": -0.004131778066015378
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-10-01",
+          "industries": 7,
+          "n": 60119,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004114139128476022,
+                "log_loss": -0.0023017326532253912
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006467167061477777,
+                "log_loss": -0.0034380936329575507
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-01-01",
+          "industries": 7,
+          "n": 60370,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004096129098100473,
+                "log_loss": -0.0022365649358122154
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006706158777177035,
+                "log_loss": -0.003574221127933454
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-04-01",
+          "industries": 7,
+          "n": 60587,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003999897620809329,
+                "log_loss": -0.0022575165233971583
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007070550332333349,
+                "log_loss": -0.0039534090143828705
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-07-01",
+          "industries": 7,
+          "n": 61171,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00044588378558625864,
+                "log_loss": -0.0024314779202893933
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007943608041250482,
+                "log_loss": -0.004453930041952131
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-10-01",
+          "industries": 7,
+          "n": 61496,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004349956469915638,
+                "log_loss": -0.002519676159571983
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0008053843714342844,
+                "log_loss": -0.004663479386563406
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-01-01",
+          "industries": 7,
+          "n": 61629,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005178539148781123,
+                "log_loss": -0.0028093572731628653
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0009305086333410062,
+                "log_loss": -0.0050065907458469805
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-04-01",
+          "industries": 7,
+          "n": 61948,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00045663443517360205,
+                "log_loss": -0.0025047826930544356
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007319400584478164,
+                "log_loss": -0.003925586221240027
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-07-01",
+          "industries": 7,
+          "n": 62526,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00029976731211793023,
+                "log_loss": -0.0017051767512200934
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005278141342601402,
+                "log_loss": -0.0029081278733223415
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-10-01",
+          "industries": 7,
+          "n": 63074,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00025815650692592073,
+                "log_loss": -0.001521937989241865
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005413124345354296,
+                "log_loss": -0.0031303017262021165
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2020-01-01",
+          "industries": 7,
+          "n": 63345,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00017254947389422505,
+                "log_loss": -0.0009762907812289407
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00034398157165491106,
+                "log_loss": -0.002150325365656216
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2020-04-01",
+          "industries": 7,
+          "n": 63439,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00014441036533540484,
+                "log_loss": -0.0008838321736535819
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0003523611077402259,
+                "log_loss": -0.0022401171624454636
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2020-07-01",
+          "industries": 7,
+          "n": 63931,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00022118134648606177,
+                "log_loss": -0.0012978091566929622
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004891869022745582,
+                "log_loss": -0.0028971963006982466
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2020-10-01",
+          "industries": 7,
+          "n": 64449,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00018615658015641058,
+                "log_loss": -0.001123863868283204
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00042182664262924066,
+                "log_loss": -0.0025541925469736043
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-01-01",
+          "industries": 7,
+          "n": 64440,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0001950054750488663,
+                "log_loss": -0.0011921727464747549
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00028657957175567565,
+                "log_loss": -0.001709149184962483
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-04-01",
+          "industries": 7,
+          "n": 64983,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002006149048492029,
+                "log_loss": -0.0013103278021902173
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00032654043016454304,
+                "log_loss": -0.002008154416393071
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-07-01",
+          "industries": 7,
+          "n": 65717,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00013776949178290738,
+                "log_loss": -0.0010219108843323493
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00023866182452823452,
+                "log_loss": -0.0016375664155651012
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-10-01",
+          "industries": 7,
+          "n": 66253,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00013635403777573912,
+                "log_loss": -0.0010437323879096078
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00021628079253862526,
+                "log_loss": -0.001480264388121627
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-01-01",
+          "industries": 7,
+          "n": 66206,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000265661695283476,
+                "log_loss": -0.001711628244875881
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004269736323199852,
+                "log_loss": -0.002587036414666804
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-04-01",
+          "industries": 7,
+          "n": 66685,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002662124914763928,
+                "log_loss": -0.0016193783770255086
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004561004789723657,
+                "log_loss": -0.0026616669394373444
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-07-01",
+          "industries": 7,
+          "n": 67408,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00033414365092310265,
+                "log_loss": -0.0019575332350967333
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005150672065659469,
+                "log_loss": -0.002855990698161321
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-10-01",
+          "industries": 7,
+          "n": 67778,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003570117323438834,
+                "log_loss": -0.0020009321785171823
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005131691318316942,
+                "log_loss": -0.002778158154064942
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-01-01",
+          "industries": 7,
+          "n": 67216,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003531404778236011,
+                "log_loss": -0.0017111235401230183
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004238576499213456,
+                "log_loss": -0.001767279940810218
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-04-01",
+          "industries": 7,
+          "n": 67132,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004955185481128233,
+                "log_loss": -0.002531560568756132
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006094752936534688,
+                "log_loss": -0.0028751732542559505
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-07-01",
+          "industries": 7,
+          "n": 67372,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00043294238843927664,
+                "log_loss": -0.0022071338769986395
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005824828494933479,
+                "log_loss": -0.0028261196684298113
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-10-01",
+          "industries": 7,
+          "n": 67693,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000440022304234652,
+                "log_loss": -0.002262850986056351
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000589579813903031,
+                "log_loss": -0.0029220454418831415
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-01-01",
+          "industries": 7,
+          "n": 66936,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005091419527509334,
+                "log_loss": -0.0028997947162530562
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006286261285149876,
+                "log_loss": -0.0034083455371797878
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-04-01",
+          "industries": 7,
+          "n": 66839,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004939864637780871,
+                "log_loss": -0.0025489018334198654
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000570898986033401,
+                "log_loss": -0.002720431665499401
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-07-01",
+          "industries": 7,
+          "n": 67118,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005070389660937551,
+                "log_loss": -0.0025432952766766227
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005764522744173957,
+                "log_loss": -0.002665917670631346
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-10-01",
+          "industries": 7,
+          "n": 67273,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000510864037501918,
+                "log_loss": -0.0026113943999105083
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005474701598432689,
+                "log_loss": -0.002482230770778582
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-01-01",
+          "industries": 7,
+          "n": 66277,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005438947666424817,
+                "log_loss": -0.0026643278448453666
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006554751240302291,
+                "log_loss": -0.0031746090622460604
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-04-01",
+          "industries": 7,
+          "n": 66104,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005415761403008576,
+                "log_loss": -0.002839096760977295
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006190124317922251,
+                "log_loss": -0.0032463304012831967
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-07-01",
+          "industries": 7,
+          "n": 66231,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005264969614418972,
+                "log_loss": -0.002840812171619438
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000620168079582345,
+                "log_loss": -0.003399844231127384
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-10-01",
+          "industries": 7,
+          "n": 66137,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005368316641350757,
+                "log_loss": -0.002857695247579562
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000696345746414463,
+                "log_loss": -0.0037823770481369623
+              },
+              "both_improved": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "2013년 이후",
+      "selection": "해당 분기 충분표본 업종",
+      "quarters": [
+        {
+          "landmark": "2013-01-01",
+          "industries": 18,
+          "n": 69915,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003958468661554093,
+                "log_loss": -0.0022764550651067036
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007157009287776877,
+                "log_loss": -0.003355114337334439
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-04-01",
+          "industries": 20,
+          "n": 70574,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00037512148981533056,
+                "log_loss": -0.002030027334279388
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00048398553396350794,
+                "log_loss": -0.0018999942917174591
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-07-01",
+          "industries": 21,
+          "n": 71284,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004687244543557657,
+                "log_loss": -0.0024995240733695534
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000746407001404049,
+                "log_loss": -0.003184474676871642
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-10-01",
+          "industries": 20,
+          "n": 71314,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00045305578857913835,
+                "log_loss": -0.002405962332449782
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007316060593377416,
+                "log_loss": -0.0031248834485696603
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-01-01",
+          "industries": 20,
+          "n": 71494,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003744921700045389,
+                "log_loss": -0.0017529713584003921
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006368500579974311,
+                "log_loss": -0.0015550741760651764
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-04-01",
+          "industries": 21,
+          "n": 71819,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00042125793489531705,
+                "log_loss": -0.0019212696912907638
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0008530531188320481,
+                "log_loss": -0.002349435067452485
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-07-01",
+          "industries": 23,
+          "n": 72665,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000322552461357798,
+                "log_loss": -0.016399856073161377
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.001585397739392235,
+                "log_loss": -0.23872307362270445
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-10-01",
+          "industries": 23,
+          "n": 73066,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003068236755902249,
+                "log_loss": -0.017690417124871745
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0017591667336175078,
+                "log_loss": -0.25499383073626875
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-01-01",
+          "industries": 22,
+          "n": 72556,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003885389918029307,
+                "log_loss": -0.0022054841285495497
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007305922395917798,
+                "log_loss": -0.0030699388692608004
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-04-01",
+          "industries": 21,
+          "n": 72527,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000392839331269908,
+                "log_loss": -0.0022727821732995072
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000851520903713371,
+                "log_loss": -0.0035661324512713095
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-07-01",
+          "industries": 21,
+          "n": 72933,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003680098853172255,
+                "log_loss": -0.0021807874336577265
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0010621566350984457,
+                "log_loss": -0.0045772020184787245
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-10-01",
+          "industries": 19,
+          "n": 71467,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003669206825177236,
+                "log_loss": -0.0022028639783130462
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0009240918171102742,
+                "log_loss": -0.00426513719977816
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-01-01",
+          "industries": 20,
+          "n": 73153,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00036336487794305747,
+                "log_loss": -0.002135834532058354
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0009776011136960853,
+                "log_loss": -0.004425131025998972
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-04-01",
+          "industries": 20,
+          "n": 73485,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004168822953340199,
+                "log_loss": -0.0022908789429343726
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0008918208946167353,
+                "log_loss": -0.003994717342975223
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-07-01",
+          "industries": 20,
+          "n": 74128,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00033326288758490143,
+                "log_loss": -0.0019054876364585287
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0008307667653084585,
+                "log_loss": -0.003630251083909578
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-10-01",
+          "industries": 22,
+          "n": 75626,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00018725968090707742,
+                "log_loss": -0.0011489854531655701
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00037842494153251925,
+                "log_loss": -0.0009050620168534373
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-01-01",
+          "industries": 21,
+          "n": 75943,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00020170706884011714,
+                "log_loss": -0.0010341602749540544
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 5.4857450278236247e-05,
+                "log_loss": 0.00023052891767272188
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2017-04-01",
+          "industries": 21,
+          "n": 76370,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003203516485007301,
+                "log_loss": -0.0016138244587390745
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00011660549590787126,
+                "log_loss": -0.00042679258725442093
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-07-01",
+          "industries": 21,
+          "n": 77233,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002875614728915345,
+                "log_loss": -0.0014749643355616343
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -2.350447078151075e-05,
+                "log_loss": -0.00012095934833737004
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-10-01",
+          "industries": 21,
+          "n": 77941,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00020092908198184614,
+                "log_loss": -0.0011232413555735089
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0002381480343406157,
+                "log_loss": 0.0007584794927790501
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2018-01-01",
+          "industries": 22,
+          "n": 78368,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00029663003394322907,
+                "log_loss": -0.001514393461959674
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00015222676023783144,
+                "log_loss": -0.0010005603227405018
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-04-01",
+          "industries": 22,
+          "n": 78353,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000247514130427248,
+                "log_loss": -0.0012742867478198372
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -1.1572419876660054e-05,
+                "log_loss": -0.00040444146341818486
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-07-01",
+          "industries": 24,
+          "n": 79991,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003153629788106831,
+                "log_loss": -0.0013937600645633104
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00033069002560693375,
+                "log_loss": -0.001077891218049895
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-10-01",
+          "industries": 22,
+          "n": 79504,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00031324506095820336,
+                "log_loss": -0.0013079658846640624
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005269778625846593,
+                "log_loss": -0.0009151453817511809
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-01-01",
+          "industries": 24,
+          "n": 80149,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000380469853402931,
+                "log_loss": -0.002123065878373909
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005632515444566967,
+                "log_loss": -0.002159134818601078
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-04-01",
+          "industries": 25,
+          "n": 80797,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003746055221816473,
+                "log_loss": -0.002142483613179903
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006245524291341475,
+                "log_loss": -0.002631231268965495
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-07-01",
+          "industries": 23,
+          "n": 80363,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00017177931755707693,
+                "log_loss": -0.0012367153624117276
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -4.718465675767701e-05,
+                "log_loss": -0.0005111905972866447
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-10-01",
+          "industries": 25,
+          "n": 81683,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0001412433667517876,
+                "log_loss": -0.0011512391514897045
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 5.239878201322809e-05,
+                "log_loss": -0.0005496296163167525
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2020-01-01",
+          "industries": 23,
+          "n": 80856,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00011267520834023845,
+                "log_loss": -0.0005402558539630821
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00024310651326971074,
+                "log_loss": 0.0012858494275356405
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2020-04-01",
+          "industries": 22,
+          "n": 80439,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -8.966055405697736e-05,
+                "log_loss": -0.000392800610967919
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0002322252041254885,
+                "log_loss": 0.0017175690234533822
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2020-07-01",
+          "industries": 22,
+          "n": 81124,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00016641155052057213,
+                "log_loss": -0.0006987215202059992
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00014838150581827504,
+                "log_loss": 0.001969564461668707
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2020-10-01",
+          "industries": 22,
+          "n": 81548,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0001472929000562754,
+                "log_loss": -0.0007076744736572145
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -5.923137756117443e-06,
+                "log_loss": 0.0007859880334809845
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2021-01-01",
+          "industries": 24,
+          "n": 81941,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00023538634619062795,
+                "log_loss": -0.0011905782802128578
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000536684904117644,
+                "log_loss": -0.0014734483968484105
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-04-01",
+          "industries": 23,
+          "n": 82095,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00019124893644069718,
+                "log_loss": -0.0011693746670021605
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005244976341247206,
+                "log_loss": -0.001808237918954783
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-07-01",
+          "industries": 22,
+          "n": 82369,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00014891529347832243,
+                "log_loss": -0.0010651790334827735
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007555070859627263,
+                "log_loss": -0.003215758327637036
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-10-01",
+          "industries": 21,
+          "n": 82600,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00017950843864926705,
+                "log_loss": -0.0012223054487908952
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000898833634479671,
+                "log_loss": -0.0038301526253519316
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-01-01",
+          "industries": 24,
+          "n": 83471,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00024965220063136347,
+                "log_loss": -0.0016447639566706895
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00023737780814469468,
+                "log_loss": -0.0021446882258246533
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-04-01",
+          "industries": 23,
+          "n": 83650,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00025309532016515296,
+                "log_loss": -0.0015950684238824847
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000320266586842334,
+                "log_loss": -0.00284766501820385
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-07-01",
+          "industries": 20,
+          "n": 82879,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00031618096140988145,
+                "log_loss": -0.001856893588953006
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00044211671742069354,
+                "log_loss": -0.003150731710128247
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-10-01",
+          "industries": 20,
+          "n": 83295,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003040462976920025,
+                "log_loss": -0.0017435836895902015
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00020953156841741743,
+                "log_loss": -0.0020125148710342785
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-01-01",
+          "industries": 21,
+          "n": 83364,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00028224545806825106,
+                "log_loss": -0.0012735427787746968
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0002742611282740508,
+                "log_loss": 0.0020545318526277575
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2023-04-01",
+          "industries": 22,
+          "n": 83639,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004301687212758575,
+                "log_loss": -0.002144314161816777
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 3.518804454187184e-05,
+                "log_loss": 0.0004874494060271755
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2023-07-01",
+          "industries": 21,
+          "n": 83339,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00043981297158322786,
+                "log_loss": -0.00226170180502442
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000334874120860485,
+                "log_loss": -0.001657467784598082
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-10-01",
+          "industries": 21,
+          "n": 83717,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004689990591088655,
+                "log_loss": -0.002388285876491343
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004781580224833411,
+                "log_loss": -0.002285820132901323
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-01-01",
+          "industries": 22,
+          "n": 83131,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005215127652367659,
+                "log_loss": -0.0028478637430103975
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00047812038415035086,
+                "log_loss": -0.0019828343413428014
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-04-01",
+          "industries": 23,
+          "n": 83709,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004918750133056404,
+                "log_loss": -0.002411995838890524
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00047426812861663483,
+                "log_loss": -0.0016129333192844617
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-07-01",
+          "industries": 22,
+          "n": 83357,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004827846494861793,
+                "log_loss": -0.0023362923054240647
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0002784061390877907,
+                "log_loss": -0.0010874761002764527
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-10-01",
+          "industries": 22,
+          "n": 83837,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004471924202242674,
+                "log_loss": -0.0021715822861728047
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -9.985232764553494e-05,
+                "log_loss": -0.0001257557035835009
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-01-01",
+          "industries": 22,
+          "n": 82750,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005115952016027408,
+                "log_loss": -0.0024523844244596724
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00044609025450832837,
+                "log_loss": -0.0026797663538900797
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-04-01",
+          "industries": 23,
+          "n": 83064,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004914570201813471,
+                "log_loss": -0.0025175331210454
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000346445335382688,
+                "log_loss": -0.0022118687321588055
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-07-01",
+          "industries": 24,
+          "n": 83694,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004543663016498742,
+                "log_loss": -0.0024784453027921483
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00028307015595500587,
+                "log_loss": -0.0022772517931217025
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-10-01",
+          "industries": 24,
+          "n": 84006,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00044443974253866004,
+                "log_loss": -0.0024120298015639324
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00034285242684545204,
+                "log_loss": -0.002495845086312532
+              },
+              "both_improved": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "2013년 이후",
+      "selection": "기간 공통 충분표본 업종",
+      "quarters": [
+        {
+          "landmark": "2013-01-01",
+          "industries": 15,
+          "n": 66965,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003995619735043999,
+                "log_loss": -0.0023119625038746172
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007700770523683562,
+                "log_loss": -0.003599361904091275
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-04-01",
+          "industries": 15,
+          "n": 66810,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004057081569317165,
+                "log_loss": -0.0022360996381812237
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007242645352798044,
+                "log_loss": -0.003295218640625248
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-07-01",
+          "industries": 15,
+          "n": 67145,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004947360371520133,
+                "log_loss": -0.0026479258511557433
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0010283167009768662,
+                "log_loss": -0.004419563355344418
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2013-10-01",
+          "industries": 15,
+          "n": 67542,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00048189862393742215,
+                "log_loss": -0.002583990748102422
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0010022463062738937,
+                "log_loss": -0.004535035211984415
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-01-01",
+          "industries": 15,
+          "n": 67704,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00041935448215022316,
+                "log_loss": -0.0020979855331008713
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0010129542631922349,
+                "log_loss": -0.003783814452108238
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-04-01",
+          "industries": 15,
+          "n": 67717,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004544907433076535,
+                "log_loss": -0.0021752175947167673
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0012660395839610501,
+                "log_loss": -0.004502920542208396
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-07-01",
+          "industries": 15,
+          "n": 68108,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002855387116811218,
+                "log_loss": -0.0015525404066949564
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0008779642306092535,
+                "log_loss": -0.003447098639081815
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2014-10-01",
+          "industries": 15,
+          "n": 68518,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002588387956109179,
+                "log_loss": -0.0014914163913245237
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0009760900651940151,
+                "log_loss": -0.003951431022602869
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-01-01",
+          "industries": 15,
+          "n": 68463,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004206387168051112,
+                "log_loss": -0.0024102795853550925
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0011470479806471624,
+                "log_loss": -0.005129682276243827
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-04-01",
+          "industries": 15,
+          "n": 68538,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00042562036912682804,
+                "log_loss": -0.0024798094108614897
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0012583055053218772,
+                "log_loss": -0.005566045791754273
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-07-01",
+          "industries": 15,
+          "n": 68960,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003941351803093043,
+                "log_loss": -0.00233569052314728
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0014753142815146607,
+                "log_loss": -0.006330458855532839
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2015-10-01",
+          "industries": 15,
+          "n": 69434,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00038273130664215116,
+                "log_loss": -0.0023023156216495284
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.001186129517857892,
+                "log_loss": -0.005671626314482866
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-01-01",
+          "industries": 15,
+          "n": 69694,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003748355241292602,
+                "log_loss": -0.0021959304136654717
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0012330893683444961,
+                "log_loss": -0.005493064708921474
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-04-01",
+          "industries": 15,
+          "n": 70021,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00043612239025137554,
+                "log_loss": -0.0023684475686825386
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0011616919770119514,
+                "log_loss": -0.004936558052909787
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-07-01",
+          "industries": 15,
+          "n": 70726,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00035064702778664,
+                "log_loss": -0.0019758979943845694
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.001111536192729652,
+                "log_loss": -0.004625091647916764
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2016-10-01",
+          "industries": 15,
+          "n": 71276,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002217390216831428,
+                "log_loss": -0.0013806038792544774
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0008329862284640115,
+                "log_loss": -0.0033004204656769415
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-01-01",
+          "industries": 15,
+          "n": 71921,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00022100975497348953,
+                "log_loss": -0.0012391034229182567
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -4.643717938638802e-05,
+                "log_loss": -0.0013307516229233058
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-04-01",
+          "industries": 15,
+          "n": 72332,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003493956260717082,
+                "log_loss": -0.0018666880051640732
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00024767330722546833,
+                "log_loss": -0.0021356411571242574
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-07-01",
+          "industries": 15,
+          "n": 73173,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003163082445812086,
+                "log_loss": -0.0017211948811241308
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -3.379833695660884e-05,
+                "log_loss": -0.0011944836938011304
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2017-10-01",
+          "industries": 15,
+          "n": 73790,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002294962913562486,
+                "log_loss": -0.001332735788881865
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.00016699373651543799,
+                "log_loss": -0.00043377243924966336
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2018-01-01",
+          "industries": 15,
+          "n": 73742,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003070801496119566,
+                "log_loss": -0.001589173253516301
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00014913604435742484,
+                "log_loss": -0.0011679575227199423
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-04-01",
+          "industries": 15,
+          "n": 73968,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00025143961012298203,
+                "log_loss": -0.0013440609683907556
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 8.113226256950499e-05,
+                "log_loss": -0.00033318498298437195
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2018-07-01",
+          "industries": 15,
+          "n": 74562,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003344930249432273,
+                "log_loss": -0.0015355046016259193
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000494348374566509,
+                "log_loss": -0.001827031844524929
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2018-10-01",
+          "industries": 15,
+          "n": 74915,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00033538294857133027,
+                "log_loss": -0.0015644294922074204
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000776427607637769,
+                "log_loss": -0.002447039656000662
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-01-01",
+          "industries": 15,
+          "n": 74917,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00041889172935124163,
+                "log_loss": -0.0024377965828519406
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0010536999082985778,
+                "log_loss": -0.00506594945704617
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-04-01",
+          "industries": 15,
+          "n": 75117,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00039423816191398395,
+                "log_loss": -0.002320580300949691
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0009827313850240145,
+                "log_loss": -0.004678637710249669
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-07-01",
+          "industries": 15,
+          "n": 75591,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00019496766942530796,
+                "log_loss": -0.0014608307550606383
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00019685285072713356,
+                "log_loss": -0.00201660809400205
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2019-10-01",
+          "industries": 15,
+          "n": 76064,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0001680330789752703,
+                "log_loss": -0.001318481539114157
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00016403456998585267,
+                "log_loss": -0.0019244066923724248
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2020-01-01",
+          "industries": 15,
+          "n": 76189,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00015875529617965682,
+                "log_loss": -0.0008873635006271152
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -1.3903483007433881e-05,
+                "log_loss": -0.0007018263491817556
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2020-04-01",
+          "industries": 15,
+          "n": 76250,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00014540478112423744,
+                "log_loss": -0.0008341899920343314
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00015878464378062929,
+                "log_loss": -0.0012261114750627994
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2020-07-01",
+          "industries": 15,
+          "n": 76776,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002392739559697556,
+                "log_loss": -0.0012563082915290245
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00041911305121949125,
+                "log_loss": -0.0021071232080004713
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2020-10-01",
+          "industries": 15,
+          "n": 77254,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0001850275808252342,
+                "log_loss": -0.0010458232586889923
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0003234141826201379,
+                "log_loss": -0.0018608450679981792
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-01-01",
+          "industries": 15,
+          "n": 77097,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0002100556332459775,
+                "log_loss": -0.0011721827608961873
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005032190354716158,
+                "log_loss": -0.0020502627904896266
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-04-01",
+          "industries": 15,
+          "n": 77720,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00015284487078161133,
+                "log_loss": -0.0010549958947091722
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00034099715045799193,
+                "log_loss": -0.0014351619481115703
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-07-01",
+          "industries": 15,
+          "n": 78432,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -8.882136585330115e-05,
+                "log_loss": -0.0007930382983114554
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0003850269903767062,
+                "log_loss": -0.0014138987408041138
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2021-10-01",
+          "industries": 15,
+          "n": 78980,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00011006134344640345,
+                "log_loss": -0.0009084177264493654
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00042390076224261343,
+                "log_loss": -0.0015396487741270457
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-01-01",
+          "industries": 15,
+          "n": 78768,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00025521588859048,
+                "log_loss": -0.001610070313757499
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00016093486560459432,
+                "log_loss": -0.0011810993802332443
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-04-01",
+          "industries": 15,
+          "n": 79252,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00024917863034650694,
+                "log_loss": -0.0014921217246360047
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -9.039459374414841e-05,
+                "log_loss": -0.0008434962563239824
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-07-01",
+          "industries": 15,
+          "n": 79972,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00030875108223077195,
+                "log_loss": -0.0017557310030271213
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00020876640642822608,
+                "log_loss": -0.001142855750589669
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2022-10-01",
+          "industries": 15,
+          "n": 80352,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00030156340262103826,
+                "log_loss": -0.0016771365977201913
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 2.2551878425082265e-05,
+                "log_loss": -0.00018335855791992613
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2023-01-01",
+          "industries": 15,
+          "n": 79596,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0003423175443521789,
+                "log_loss": -0.001659969870948506
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0001950887145857415,
+                "log_loss": -0.000926447855825674
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-04-01",
+          "industries": 15,
+          "n": 79471,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004889799657101018,
+                "log_loss": -0.002519817801631938
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0003630915939072346,
+                "log_loss": -0.0020086496911187143
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-07-01",
+          "industries": 15,
+          "n": 79705,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004638972562432495,
+                "log_loss": -0.0024017570784509077
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005672699981679553,
+                "log_loss": -0.002910542810831568
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-10-01",
+          "industries": 15,
+          "n": 80070,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004942690347376206,
+                "log_loss": -0.0025263436328966087
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007520459575282191,
+                "log_loss": -0.0036325874449764112
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-01-01",
+          "industries": 15,
+          "n": 79176,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005545085827124452,
+                "log_loss": -0.003056576019348278
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0008823801022070608,
+                "log_loss": -0.004133889406177435
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-04-01",
+          "industries": 15,
+          "n": 79072,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005272120594468394,
+                "log_loss": -0.0026610450391859365
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0007932125425168494,
+                "log_loss": -0.003461386930474624
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-07-01",
+          "industries": 15,
+          "n": 79320,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005088829935347986,
+                "log_loss": -0.00252011551936385
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00041360151933136403,
+                "log_loss": -0.0020891082378368415
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-10-01",
+          "industries": 15,
+          "n": 79494,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.000481340491605502,
+                "log_loss": -0.0024291419902224714
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00023704946498067693,
+                "log_loss": -0.0013221194750114794
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-01-01",
+          "industries": 15,
+          "n": 78380,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005143845723532251,
+                "log_loss": -0.002452336038967113
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00023743176638604002,
+                "log_loss": -0.0015465969301445706
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-04-01",
+          "industries": 15,
+          "n": 78225,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004963681550242231,
+                "log_loss": -0.002525164889960687
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00015219236437782915,
+                "log_loss": -0.0011660802494300145
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-07-01",
+          "industries": 15,
+          "n": 78435,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00045317945025864857,
+                "log_loss": -0.002433770284763588
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -3.768252864035301e-05,
+                "log_loss": -0.0009155729278312578
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-10-01",
+          "industries": 15,
+          "n": 78711,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00043387475481367126,
+                "log_loss": -0.0023540954983422434
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 1.76682158539584e-05,
+                "log_loss": -0.0009776352119061544
+              },
+              "both_improved": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "최근3년",
+      "selection": "해당 분기 충분표본 업종",
+      "quarters": [
+        {
+          "landmark": "2023-01-01",
+          "industries": 21,
+          "n": 83364,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00028224545806825106,
+                "log_loss": -0.0012735427787746968
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 0.0002742611282740508,
+                "log_loss": 0.0020545318526277575
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2023-04-01",
+          "industries": 22,
+          "n": 83639,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004301687212758575,
+                "log_loss": -0.002144314161816777
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 3.518804454187184e-05,
+                "log_loss": 0.0004874494060271755
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2023-07-01",
+          "industries": 21,
+          "n": 83339,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00043981297158322786,
+                "log_loss": -0.00226170180502442
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000334874120860485,
+                "log_loss": -0.001657467784598082
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-10-01",
+          "industries": 21,
+          "n": 83717,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004689990591088655,
+                "log_loss": -0.002388285876491343
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004781580224833411,
+                "log_loss": -0.002285820132901323
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-01-01",
+          "industries": 22,
+          "n": 83131,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005215127652367659,
+                "log_loss": -0.0028478637430103975
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00047812038415035086,
+                "log_loss": -0.0019828343413428014
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-04-01",
+          "industries": 23,
+          "n": 83709,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004918750133056404,
+                "log_loss": -0.002411995838890524
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00047426812861663483,
+                "log_loss": -0.0016129333192844617
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-07-01",
+          "industries": 22,
+          "n": 83357,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004827846494861793,
+                "log_loss": -0.0023362923054240647
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0002784061390877907,
+                "log_loss": -0.0010874761002764527
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-10-01",
+          "industries": 22,
+          "n": 83837,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004471924202242674,
+                "log_loss": -0.0021715822861728047
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -9.985232764553494e-05,
+                "log_loss": -0.0001257557035835009
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-01-01",
+          "industries": 22,
+          "n": 82750,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005115952016027408,
+                "log_loss": -0.0024523844244596724
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00044609025450832837,
+                "log_loss": -0.0026797663538900797
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-04-01",
+          "industries": 23,
+          "n": 83064,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004914570201813471,
+                "log_loss": -0.0025175331210454
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.000346445335382688,
+                "log_loss": -0.0022118687321588055
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-07-01",
+          "industries": 24,
+          "n": 83694,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004543663016498742,
+                "log_loss": -0.0024784453027921483
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00028307015595500587,
+                "log_loss": -0.0022772517931217025
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-10-01",
+          "industries": 24,
+          "n": 84006,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00044443974253866004,
+                "log_loss": -0.0024120298015639324
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00034285242684545204,
+                "log_loss": -0.002495845086312532
+              },
+              "both_improved": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "최근3년",
+      "selection": "기간 공통 충분표본 업종",
+      "quarters": [
+        {
+          "landmark": "2023-01-01",
+          "industries": 19,
+          "n": 82319,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00031544721061029993,
+                "log_loss": -0.0014808462887599763
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": 5.410185088283525e-05,
+                "log_loss": 0.0006910860822023371
+              },
+              "both_improved": false
+            }
+          }
+        },
+        {
+          "landmark": "2023-04-01",
+          "industries": 19,
+          "n": 82175,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00045630856598146286,
+                "log_loss": -0.002299661037721455
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -9.869575959431607e-05,
+                "log_loss": -0.0002879800230793862
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-07-01",
+          "industries": 19,
+          "n": 82443,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00043431679165426,
+                "log_loss": -0.002212596643574718
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00026427621923211773,
+                "log_loss": -0.001078496576888403
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2023-10-01",
+          "industries": 19,
+          "n": 82810,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00046487751977298164,
+                "log_loss": -0.0023333828093826405
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0004391678532137069,
+                "log_loss": -0.0017560741713931766
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-01-01",
+          "industries": 19,
+          "n": 81890,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005270538358092304,
+                "log_loss": -0.0028778194814126526
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0005269868665970096,
+                "log_loss": -0.002140904882929467
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-04-01",
+          "industries": 19,
+          "n": 81809,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005097018328091815,
+                "log_loss": -0.0025412110903468474
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0006162574086895554,
+                "log_loss": -0.00247469139862363
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-07-01",
+          "industries": 19,
+          "n": 82092,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004922601115068503,
+                "log_loss": -0.002402604980215962
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0003417337366645922,
+                "log_loss": -0.0015348873260098179
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2024-10-01",
+          "industries": 19,
+          "n": 82284,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.00046230987556646736,
+                "log_loss": -0.0022824420868802365
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0001576016565466594,
+                "log_loss": -0.0005879705402638093
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-01-01",
+          "industries": 19,
+          "n": 81174,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0005170767049162139,
+                "log_loss": -0.0024503296718500654
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.00044769457312849236,
+                "log_loss": -0.0023081800031653156
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-04-01",
+          "industries": 19,
+          "n": 81028,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004995639205165506,
+                "log_loss": -0.002528814714657297
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0003619296063795685,
+                "log_loss": -0.001977636838993783
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-07-01",
+          "industries": 19,
+          "n": 81249,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004587211218984444,
+                "log_loss": -0.0024459921064138505
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0002640926619664257,
+                "log_loss": -0.0017536402564694298
+              },
+              "both_improved": true
+            }
+          }
+        },
+        {
+          "landmark": "2025-10-01",
+          "industries": 19,
+          "n": 81534,
+          "modes": {
+            "점포수 가중": {
+              "delta": {
+                "brier": -0.0004532662888690844,
+                "log_loss": -0.0024363193861112113
+              },
+              "both_improved": true
+            },
+            "업종 동일가중": {
+              "delta": {
+                "brier": -0.0003861056032647011,
+                "log_loss": -0.0025869554718813428
+              },
+              "both_improved": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_hash": "6f28e8a6d49052b5a64e0c247d7be55b8130cfa6cbd5b75381cc9127ebf0f1be",
+  "script_hash": "8c920009ed5fd02bac889b7e0537646152b5cadf77c497da1fa9e1a0067f4a50",
+  "limitations": [
+    "Post-hoc descriptive sensitivity; no significance test or causal attribution.",
+    "Sufficient sample n>=200 and events>=20; common-industry intersection uses evaluation labels, not deployable eligibility.",
+    "Identical selected cohorts for weighted/equal comparison, but differs from full-sample score.",
+    "Overlapping horizons and repeated permits; no independent-trial claims or model change."
+  ]
+}
