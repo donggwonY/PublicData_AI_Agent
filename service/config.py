@@ -100,6 +100,11 @@ SURVIVAL_START_YEAR = 2010        # 문제3: 전산화 이전 생존편향 → 2
 VACANCY_MIN_DAYS = 90             # 문제1: 최근 3개월~3년 공실만 '유효 매물'
 VACANCY_MAX_DAYS = 365 * 3
 HANDOVER_TOLERANCE_DAYS = 60      # 문제2: 양도·양수 시 신·구 인허가가 잠깐 겹치는 것은 동시영업으로 보지 않음
+# 공실 재입점 점수 카드(E-03, docs/e03/level_compare.md). 1년 확률 고정 경계 → 5단계, 단계별 과거 실제 1년 재입점(백테스트 22,024건)
+VACANCY_SCORE_CUTS = (0.02, 0.035, 0.055, 0.08)
+VACANCY_SCORE_LEVEL_OBS = (0.013, 0.024, 0.039, 0.059, 0.111)
+VACANCY_SCORE_COMPARE = (0.7, 1.3)  # 같은 공백 기간대 평균 대비 이하=낮음, 이상=높음(표시용 구간, 검증 기준 아님)
+VACANCY_SCORE_THIN_DAYS = 730       # 2년 넘은 공백은 평가 사례가 적어 '근거 적음'
 CYCLE_WINDOW_YEARS = 3            # 사이클 판정: 최근 3년 vs 직전 3년
 CYCLE_MIN_EVENTS = 20             # 개·폐업 이벤트가 이보다 적으면 판정 보류
 MIN_GROUP_N = 30                  # 생존곡선 최소 표본

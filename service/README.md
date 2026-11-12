@@ -264,3 +264,7 @@ Tool 11종:
 ### 메인 앱 연결
 
 `app.py`에 **폐업 예측 연구** 탭을 연결했습니다. 기존 단독 검토 화면도 실행할 수 있습니다. 현재 데이터용 예측이 아닌 고정 과거모델의 연구용 시뮬레이션임을 표시합니다. 업종·지역별 연초 및 전체 분기 검증, CSV 다운로드, 입력 계산과 보류 사유를 제공합니다. 배포 시 `data/research/closure_validation.json`과 `closure_preview_model.json`을 포함해야 합니다. 전자는 `scripts/package_d03_prediction_evidence.py`로 재생성할 수 있습니다.
+
+### 공실 재입점 점수 카드 (E-03, 2026-11-12)
+
+자리 이력 조회에서 공백 후보 자리를 고르면 앞으로 1년 재입점 가능성 카드 3개(확률 · 대구 전체 기준 5단계 · 같은 공백 기간 평균 대비)를 보여 줍니다. 점수는 `data/processed/vacancy_scores.parquet`(오프라인 모델 결과, 4,536곳, 기준일 2026-11-06)에서 읽기만 하며 기준일이 다르면 숨깁니다. 현재는 parquet 모드에서만 보이고, 공개 앱(DB 모드)은 운영 반영 전까지 변화가 없습니다. 테스트 `tests/test_vacancy_outlook.py`.

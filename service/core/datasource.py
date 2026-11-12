@@ -27,7 +27,8 @@ log = logging.getLogger(__name__)
 
 SCHEMA = "app"
 REQUIRED = ["stores", "units", "transitions", "area_cycle", "area_year", "survival", "vacancy_area"]
-OPTIONAL = ["poi", "area_context", "legal_admin_map", "station_traffic", "parking", "market"]
+OPTIONAL = ["poi", "area_context", "legal_admin_map", "station_traffic", "parking", "market",
+            "vacancy_scores"]  # E-03 공실 재입점 점수(오프라인 모델 결과, docs/e03). DB 에 없으면 None → 카드 숨김
 TABLES = REQUIRED + OPTIONAL
 
 

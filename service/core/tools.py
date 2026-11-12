@@ -76,6 +76,11 @@ class DataStore:
         self.station = f["station_traffic"]
         self.parking = f["parking"]
         self.market = f["market"]
+        # 공실 재입점 점수(E-03): 오프라인에서 계산한 조건부 1년 확률. 없으면 None → 카드를 보이지 않는다.
+        vs = f.get("vacancy_scores")
+        self.vacancy_scores = vs.set_index("uid", drop=False) if vs is not None and len(vs) else None
+        self.vacancy_band_avg = (vs.groupby("vacant_band")["p_fill_1y"].mean().to_dict()
+                                 if self.vacancy_scores is not None else {})
 
         self.ref = pd.Timestamp(self.meta["reference_date"])          # 분석 기준일
         self.categories = sorted(self.stores["category"].unique())     # 실제 존재하는 업태 목록(입력 검증용)
@@ -385,6 +390,46 @@ def _pick_unit(address: str) -> tuple[pd.Series, dict]:
 
 
 # ─────────────────────────── Tool 2. get_unit_history ───────────────────────────
+def score_level(p: float) -> int:
+    """1년 확률 → 대구 공실 후보 전체 기준 5단계(고정 경계)."""
+    return int(sum(p >= c for c in C.VACANCY_SCORE_CUTS)) + 1
+
+
+def vacancy_outlook(u: pd.Series) -> dict | None:
+    """공백 후보 자리의 앞으로 1년 재입점 점수(E-03). 점수가 없거나 자리 상태·기준일이 점수와 다르면 None.
+
+    점수는 오프라인 모델(E-05 M3+상가정보) 결과를 그대로 읽기만 한다 — 앱에서 새로 계산하지 않는다.
+    """
+    s = store()
+    vs = s.vacancy_scores
+    if vs is None or u["uid"] not in vs.index:
+        return None
+    r = vs.loc[u["uid"]]
+    if isinstance(r, pd.DataFrame):
+        r = r.iloc[0]
+    if (str(r["data_reference_date"]) != str(s.ref.date()) or not bool(u["vacant"])
+            or pd.isna(u["vacant_days"]) or int(u["vacant_days"]) != int(r["vacant_days"])):
+        return None
+    p = float(r["p_fill_1y"])
+    lv = score_level(p)
+    avg = s.vacancy_band_avg.get(r["vacant_band"])
+    lo, hi = C.VACANCY_SCORE_COMPARE
+    ratio = p / avg if avg else None
+    compare = None if ratio is None else ("높음" if ratio >= hi else "낮음" if ratio <= lo else "비슷")
+    return {
+        "p_fill_1y": p, "level": lv, "level_observed_1y": C.VACANCY_SCORE_LEVEL_OBS[lv - 1],
+        "vacant_days": int(r["vacant_days"]), "vacant_band": r["vacant_band"],
+        "band_avg_p_fill_1y": avg, "compare_to_band": compare,
+        "thin_evidence": bool(r["thin_evidence"]) or int(r["vacant_days"]) > C.VACANCY_SCORE_THIN_DAYS,
+        "reference_date": str(r["data_reference_date"]), "generated": str(r["generated"]),
+        "model_version": str(r["model_version"]),
+        "definition": "이미 비어 있던 기간을 반영한, 앞으로 1년 안에 같은 자리에 점포형 42개 업종 인허가가 다시 생길 확률"
+                      "(오프라인 모델 E-05 M3+상가정보의 저장된 점수). 자유업 입점은 잡히지 않음.",
+        "caveat": "확률은 실제보다 약 1%p 높게 나오는 경향이 있어 정수로만 안내한다. 같은 업종·층 안 구분력은 제한적이다. "
+                  "단계는 대구 공실 후보 전체 기준 고정 경계(2·3.5·5.5·8%)이며, 비교는 같은 공백 기간대 평균 대비 표시용 구간이다.",
+    }
+
+
 def get_unit_history(address: str, whole_building: bool = False, max_records: int = 40) -> dict:
     """한 자리의 업종 변천 이력 + 업태별 존속기간."""
     s = store()
@@ -436,6 +481,7 @@ def get_unit_history(address: str, whole_building: bool = False, max_records: in
         "timeline": timeline[-max_records:],
         "timeline_truncated": len(timeline) > max_records,
         "other_candidates": res["matches"][1:],
+        "vacancy_outlook": None if whole_building else vacancy_outlook(u),
         "floor_note": None if whole_building else res["floor_note"],
         "basis": _basis(definition="같은 자리(건물+층)의 인허가 레코드를 인허가일 순으로 정렬. gap = 직전 폐업일~이번 인허가일(음수는 양도·양수로 인한 중첩)."),
     })

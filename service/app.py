@@ -30,6 +30,7 @@ import config as C
 from agent import API_KEY_ENV, create_agent
 from core import tools as T
 from ui_permit_trends import render_permit_trends
+from ui_vacancy import render_vacancy_outlook
 from prediction_review_app import render_review
 from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_chart, _map, metric_value
 
@@ -392,6 +393,7 @@ with tab_unit:
             c[3].metric("최대 동시영업", u["max_concurrent_stores"])
             st.caption("업태 변천: " + s["category_path"])
             history_chart(h, key="unit-tl")
+            render_vacancy_outlook(h.get("vacancy_outlook"))
             st.markdown("**업태별 존속기간 (이 자리 vs 대구 중앙생존)**")
             st.dataframe(pd.DataFrame(h["by_category"]), hide_index=True, width="stretch")
             st.dataframe(pd.DataFrame(h["timeline"]), hide_index=True, width="stretch")

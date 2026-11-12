@@ -113,3 +113,12 @@ service/prediction_review_app.py는 연속 연도 평가 결과를 읽는 별도
 `service/app.py`의 ‘폐업 예측 연구’ 탭이 `prediction_review_app.render_review()`를 호출합니다. 단독 실행도 유지합니다. 2021학습/2023보정/2025평가 고정 모델의 연구용 계산이며 현재 시점 갱신 모델이 아닙니다. 입력 범위와 보류 사유는 기존 검토안을 유지합니다.
 
 `package_d03_prediction_evidence.py`가 연초13시점과 전체96분기 검증을 `service/data/research/closure_validation.json`으로 묶어 docs 없이도 조회됩니다. 전체분기 시작일268개 중 평가조건 충족96개라는 범위를 화면에 표시합니다. 별도 widget key와 캐시를 사용하며 자료 오류 시 해당 영역만 오류를 표시합니다. 배포에는 이 파일과 `closure_preview_model.json`이 함께 필요합니다. 운영DB 변경·공개 배포 없음.
+
+## 2026-11-12 공실 재입점 점수 카드 (E-03)
+
+자리 이력 조회 탭에서 공백 후보 자리(공백 90일~3년, 단일 점포)를 조회하면 "앞으로 1년 안에 점포형 가게가 다시 들어올 가능성" 카드 3개를 보여 준다: ① 조건부 1년 확률(정수 %) · ② 대구 공실 후보 전체 기준 5단계(고정 경계 2·3.5·5.5·8%, 단계별 과거 실제 비율) · ③ 같은 공백 기간대 평균 대비 높음/비슷/낮음.
+
+- 점수는 앱에서 계산하지 않는다. 오프라인 모델(E-05 M3+상가정보, 2016–2023 재학습) 결과를 `scripts/e03_vacancy_scores/export_service_scores.py`가 `data/processed/vacancy_scores.parquet`로 내보내고, `core/tools.vacancy_outlook`이 읽기만 한다. `get_unit_history` 결과의 `vacancy_outlook`으로 AI 상담에도 같은 값이 전달된다.
+- 안전장치: 점수의 데이터 기준일이 앱 기준일과 다르거나 자리의 공백 일수가 점수와 다르면 카드를 숨긴다. 건물 전체 보기·영업 중 자리·점수 없는 자리는 카드 없음.
+- 데이터 출처: `vacancy_scores`는 datasource 의 선택 표다. parquet 모드에서만 읽히며, DB(app 스키마)에는 아직 없어 공개 앱(DB 모드)은 카드를 보이지 않는다. 운영 반영 때 `pipeline/load_supabase.py`의 표 목록에 추가해 데이터 버전과 함께 올린다(별도 요청 시).
+- 근거: [docs/e03](e03/) 1~4단계 기록, 수준 기준 [백테스트](e03/level_compare.md), 조건부 확률 [사후 점검](e05/conditional_check.md). 설정값은 `config.VACANCY_SCORE_*`.
