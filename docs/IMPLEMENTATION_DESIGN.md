@@ -122,3 +122,4 @@ service/prediction_review_app.py는 연속 연도 평가 결과를 읽는 별도
 - 안전장치: 점수의 데이터 기준일이 앱 기준일과 다르거나 자리의 공백 일수가 점수와 다르면 카드를 숨긴다. 건물 전체 보기·영업 중 자리·점수 없는 자리는 카드 없음.
 - 데이터 출처: `vacancy_scores`는 datasource 의 선택 표다. parquet 모드에서만 읽히며, DB(app 스키마)에는 아직 없어 공개 앱(DB 모드)은 카드를 보이지 않는다. 운영 반영 때 `pipeline/load_supabase.py`의 표 목록에 추가해 데이터 버전과 함께 올린다(별도 요청 시).
 - 근거: [docs/e03](e03/) 1~4단계 기록, 수준 기준 [백테스트](e03/level_compare.md), 조건부 확률 [사후 점검](e05/conditional_check.md). 설정값은 `config.VACANCY_SCORE_*`.
+- 2026-11-12 운영 반영(데이터): `pipeline/load_supabase.py` 표 목록에 `vacancy_scores`(기본키 uid)를 추가하고 공유 DB `app`에 **v6**(v5와 같은 42종 데이터 + 점수 4,536행)를 적재·검증 후 `current_version`을 v6로 전환. v5는 retired로 남아 `--activate-version 5`로 되돌릴 수 있다. 적재 상한은 DB가 이미 576MB여서 `--max-db-mb 1200`으로 실행(적재 후 786MB). 공개 앱 코드(`deploy`)는 아직 이전 커밋이라 카드 없음.
