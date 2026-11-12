@@ -1,0 +1,32 @@
+﻿{
+ "target": {
+  "project": "uoiamnbkzlvlskngataq",
+  "host": "aws-0-ap-southeast-2.pooler.supabase.com",
+  "role": "postgres",
+  "db_user": "postgres"
+ },
+ "table": "analysis.e03_vacancy_scores",
+ "batch_id": "2026-11-11|E05-M3sangga-train2016_2023-obs2026-11-06",
+ "file_sha256": "87e68cfc3565e44578ca04930f5264e7fa00451b284a75fd405cbb30e2ac1cb7",
+ "already_present": false,
+ "rows": {
+  "db": 4536,
+  "local": 4536,
+  "distinct_uid_db": 4536
+ },
+ "sum_p_fill_1y": {
+  "db": 226.800521,
+  "local": 226.800521
+ },
+ "sum_p_fill_2y": {
+  "db": 378.918508,
+  "local": 378.918508
+ },
+ "level_in_band_counts_equal": true,
+ "data_reference_date": "2026-11-06",
+ "table_size": "2672 kB",
+ "table_grantees": [
+  "postgres"
+ ],
+ "verified": true
+}
