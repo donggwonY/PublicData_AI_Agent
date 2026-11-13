@@ -395,6 +395,18 @@ def score_level(p: float) -> int:
     return int(sum(p >= c for c in C.VACANCY_SCORE_CUTS)) + 1
 
 
+def pct_text(p: float) -> str:
+    """확률을 정수 %로(약 1%p 치우침이 있어 소수점은 보이지 않는다). 카드와 AI 답변이 같은 표현을 쓴다."""
+    return "1% 미만" if p * 100 < 0.5 else f"약 {round(p * 100)}%"
+
+
+def per100_text(p: float) -> str:
+    return "100곳 중 1곳 미만" if p * 100 < 0.5 else f"100곳 중 약 {round(p * 100)}곳"
+
+
+COMPARE_TEXT = {"높음": "평균보다 높음", "비슷": "평균과 비슷", "낮음": "평균보다 낮음"}
+
+
 def vacancy_outlook(u: pd.Series) -> dict | None:
     """공백 후보 자리의 앞으로 1년 재입점 점수(E-03). 점수가 없거나 자리 상태·기준일이 점수와 다르면 None.
 
@@ -416,17 +428,33 @@ def vacancy_outlook(u: pd.Series) -> dict | None:
     lo, hi = C.VACANCY_SCORE_COMPARE
     ratio = p / avg if avg else None
     compare = None if ratio is None else ("높음" if ratio >= hi else "낮음" if ratio <= lo else "비슷")
+    days, band = int(r["vacant_days"]), r["vacant_band"]
+    thin = bool(r["thin_evidence"]) or days > C.VACANCY_SCORE_THIN_DAYS
+    # AI 답변은 이 문장들을 그대로 쓴다(자리 이력 카드와 같은 정수 표현). 아래 원시 값은 카드 계산용.
+    display = {
+        "probability_1y": f"{pct_text(p)} ({per100_text(p)}꼴, 이미 {days:,}일 비어 있던 점 반영)",
+        "level": f"대구 공실 후보 전체 기준 5단계 중 {lv}단계 "
+                 f"(과거 이 수준 자리의 실제 1년 재입점 약 {round(C.VACANCY_SCORE_LEVEL_OBS[lv - 1] * 100)}%)",
+        "compare_to_same_vacancy_period": (None if avg is None else
+                                           f"같은 공백 기간({band}) 빈 자리 평균({pct_text(avg)})"
+                                           + {"높음": "보다 높음", "비슷": "과 비슷", "낮음": "보다 낮음"}[compare]),
+        "thin_evidence_note": "2년 넘게 빈 자리는 평가 사례가 적어 참고용입니다." if thin else None,
+        "basis": f"데이터 기준일 {r['data_reference_date']} · 점수 생성 {r['generated']} · 오프라인 예측 모델(E-05)의 저장된 점수",
+    }
     return {
+        "display": display,
         "p_fill_1y": p, "level": lv, "level_observed_1y": C.VACANCY_SCORE_LEVEL_OBS[lv - 1],
-        "vacant_days": int(r["vacant_days"]), "vacant_band": r["vacant_band"],
+        "vacant_days": days, "vacant_band": band,
         "band_avg_p_fill_1y": avg, "compare_to_band": compare,
-        "thin_evidence": bool(r["thin_evidence"]) or int(r["vacant_days"]) > C.VACANCY_SCORE_THIN_DAYS,
+        "thin_evidence": thin,
         "reference_date": str(r["data_reference_date"]), "generated": str(r["generated"]),
         "model_version": str(r["model_version"]),
         "definition": "이미 비어 있던 기간을 반영한, 앞으로 1년 안에 같은 자리에 점포형 42개 업종 인허가가 다시 생길 확률"
                       "(오프라인 모델 E-05 M3+상가정보의 저장된 점수). 자유업 입점은 잡히지 않음.",
-        "caveat": "확률은 실제보다 약 1%p 높게 나오는 경향이 있어 정수로만 안내한다. 같은 업종·층 안 구분력은 제한적이다. "
-                  "단계는 대구 공실 후보 전체 기준 고정 경계(2·3.5·5.5·8%)이며, 비교는 같은 공백 기간대 평균 대비 표시용 구간이다.",
+        "caveat": "확률은 실제보다 약 1%p 높게 나오는 경향이 있습니다. 같은 업종·같은 층 자리끼리의 구분력은 제한적입니다. "
+                  "입력은 폐업 후 90일 시점의 인허가·주변 상권·인구·지하철·상가정보뿐이며 임대료·매출·건물 상태·현재 임대 여부는 반영하지 않습니다. "
+                  "단계는 대구 공실 후보 전체 기준 고정 경계(1년 확률 2·3.5·5.5·8%), 비교는 같은 공백 기간대 평균 대비 표시용 구간입니다. "
+                  "입지 추천이나 임대 가능 여부를 뜻하지 않습니다.",
     }
 
 

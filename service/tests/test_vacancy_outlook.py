@@ -52,6 +52,18 @@ class VacancyOutlookTests(unittest.TestCase):
             s.vacancy_scores = orig
         self.assertIsNotNone(T.vacancy_outlook(s.units.loc[self.uid]))
 
+    def test_ai_display_matches_card_and_has_no_decimals(self):
+        import re
+        v = T.get_unit_history(self.uid)["vacancy_outlook"]
+        d = v["display"]
+        self.assertTrue(d["probability_1y"].startswith(pct_text(v["p_fill_1y"])))
+        self.assertIn(f"5단계 중 {v['level']}단계", d["level"])
+        self.assertIn(pct_text(v["band_avg_p_fill_1y"]), d["compare_to_same_vacancy_period"])
+        text = " ".join(x for x in d.values() if x)
+        self.assertIsNone(re.search(r"\d+\.\d+\s*%", text))       # 소수점 확률 없음
+        self.assertNotIn("p_fill", text)
+        self.assertEqual(d["thin_evidence_note"] is not None, v["thin_evidence"])
+
     def test_display_text(self):
         self.assertEqual(pct_text(0.0862), "약 9%")
         self.assertEqual(pct_text(0.004), "1% 미만")

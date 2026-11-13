@@ -6,16 +6,7 @@ from __future__ import annotations
 
 import streamlit as st
 
-COMPARE_TEXT = {"높음": "평균보다 높음", "비슷": "평균과 비슷", "낮음": "평균보다 낮음"}
-
-
-def pct_text(p: float) -> str:
-    """확률을 정수 %로(약 1%p 치우침이 있어 소수점은 보이지 않는다)."""
-    return "1% 미만" if p * 100 < 0.5 else f"약 {round(p * 100)}%"
-
-
-def per100_text(p: float) -> str:
-    return "100곳 중 1곳 미만" if p * 100 < 0.5 else f"100곳 중 약 {round(p * 100)}곳"
+from core.tools import COMPARE_TEXT, pct_text, per100_text  # noqa: F401  카드와 AI 답변이 같은 문구를 쓰도록 공유
 
 
 def level_dots(level: int) -> str:
