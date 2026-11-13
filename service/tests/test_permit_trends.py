@@ -86,3 +86,9 @@ render_permit_trends(fixture(),'2023-01-01',region)
         self.assertTrue(any('한 곳 이상' in i.value for i in app.info))
 
 if __name__=='__main__':unittest.main()
+
+
+class MetricArrowTests(unittest.TestCase):
+    def test_arrow_follows_sign_of_change(self):
+        from ui_permit_trends import arrow
+        self.assertEqual([arrow(-474), arrow(159), arrow(0)], ['down', 'up', 'off'])

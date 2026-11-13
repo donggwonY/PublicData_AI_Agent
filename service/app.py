@@ -281,11 +281,11 @@ with tab_dash:
                 prof = T.get_area_profile(gu=ctx[ctx["admin_dong"] == dong_sel]["gu"].iat[0], dong=dong_sel)
                 st.metric("상권 유형", prof["market_type"])
                 st.caption(prof["market_type_basis"])
-                st.metric("업종 다양성 지수", f"{prof['diversity_index']}", f"대구 {prof['city_diversity_index']}", delta_color="off")
+                st.metric("업종 다양성 지수", f"{prof['diversity_index']}", f"대구 {prof['city_diversity_index']}", delta_color="off", delta_arrow="off")
                 pop = prof["population"]
                 if pop.get("total"):
                     st.metric("주민등록 인구", f"{int(pop['total']):,}명",
-                              f"15~29세 {pop['age_15_29_pct']}% · 65세+ {pop['age_65_plus_pct']}%", delta_color="off")
+                              f"15~29세 {pop['age_15_29_pct']}% · 65세+ {pop['age_65_plus_pct']}%", delta_color="off", delta_arrow="off")
                 f = prof["facilities"]
                 st.caption(f"전통시장 {f['traditional_markets']}곳 · 주차장 {f['parking_lots']}곳({f['parking_slots']:,}면)")
             with c2:
@@ -312,9 +312,9 @@ with tab_dash:
         surv = T.get_survival_curve(gu=gu)
         vac = T.find_vacant_units(gu=gu, limit=1000)
         k1, k2, k3, k4 = st.columns(4)
-        k1.metric("상권 사이클", cyc["stage"], f"개업/폐업 {cyc['open_close_ratio_recent']} (직전 {cyc['open_close_ratio_prev']})", delta_color="off", border=True)
-        k2.metric("중앙생존기간 (2010~ 개업)", metric_value(surv["median_survival_years"], "년", "관찰기간 내 미도달"), "대구 " + metric_value(surv["daegu_baseline_same_cohort"]["median_survival_years"], "년", "관찰기간 내 미도달"), delta_color="off", border=True)
-        k3.metric("1년 내 폐업 신고 추정치", metric_value(surv["close_within_1y_pct"], "%"), f"n={surv['n']:,}", delta_color="off", border=True)
+        k1.metric("상권 사이클", cyc["stage"], f"개업/폐업 {cyc['open_close_ratio_recent']} (직전 {cyc['open_close_ratio_prev']})", delta_color="off", delta_arrow="off", border=True)
+        k2.metric("중앙생존기간 (2010~ 개업)", metric_value(surv["median_survival_years"], "년", "관찰기간 내 미도달"), "대구 " + metric_value(surv["daegu_baseline_same_cohort"]["median_survival_years"], "년", "관찰기간 내 미도달"), delta_color="off", delta_arrow="off", border=True)
+        k3.metric("1년 내 폐업 신고 추정치", metric_value(surv["close_within_1y_pct"], "%"), f"n={surv['n']:,}", delta_color="off", delta_arrow="off", border=True)
         k4.metric("인허가 공백 후보 (90일~3년)", f"{vac['total_vacant']:,}곳", border=True)
 
         st.caption(f"기준일: {surv['basis']['reference_date']} · 대상: {surv['target']} · {surv['basis']['cohort']} · 표본 {surv['n']:,}건")

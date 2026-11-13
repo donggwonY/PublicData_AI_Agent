@@ -5,6 +5,11 @@ import plotly.express as px
 from core.permit_trends import summarize_permit_trends, permit_trends_csv, compare_industry_regions
 
 
+def arrow(diff: int) -> str:
+    """증감 화살표 방향. 변화값을 '이전 1년보다 …' 문장으로 넘기면 Streamlit 이 항상 ↑로 그리므로 부호로 직접 정한다."""
+    return 'up' if diff > 0 else 'down' if diff < 0 else 'off'
+
+
 def _bar(frame, x, y, key, color=None):
     fig=px.bar(frame,x=x,y=y,color=color,orientation='h',barmode='group',
         color_discrete_map={'개업':'#0f766e','폐업 신고':'#c2410c'},
@@ -40,8 +45,10 @@ def render_permit_trends(stores, reference_date, gu=None):
     previous_opened=int(shown.previous_opened.sum());previous_closed=int(shown.previous_closure_reports.sum())
     left,middle,right=st.columns(3)
     left.metric('영업 중인 인허가',f'{active:,}건',border=True)
-    middle.metric('최근 1년 개업',f'{opened:,}건',f'이전 1년보다 {opened-previous_opened:+,}건',delta_color='off',border=True)
-    right.metric('최근 1년 폐업 신고',f'{closed:,}건',f'이전 1년보다 {closed-previous_closed:+,}건',delta_color='off',border=True)
+    middle.metric('최근 1년 개업',f'{opened:,}건',f'이전 1년보다 {opened-previous_opened:+,}건',delta_color='off',
+                  delta_arrow=arrow(opened-previous_opened),border=True)
+    right.metric('최근 1년 폐업 신고',f'{closed:,}건',f'이전 1년보다 {closed-previous_closed:+,}건',delta_color='off',
+                 delta_arrow=arrow(closed-previous_closed),border=True)
     st.caption('실제 고유 점포 수와 다를 수 있으며, 폐업 신고는 사업 실패를 뜻하지 않습니다.')
     if shown.empty:
         st.info('이 지역의 유효 자료에서는 해당 업종 기록을 찾지 못했어요. 다른 지역 비교는 아래에서 확인할 수 있어요.')
