@@ -128,7 +128,7 @@ def history_chart(out: dict, key: str):
     tl["end"] = tl["close"].where(tl["close"] != "영업중", ref)
     tl["label"] = tl["name"] + " [" + tl["category"] + "]"
     fig = px.timeline(tl, x_start="open", x_end="end", y="label", color="category", hover_data=["years", "service"],
-                      height=max(260, 34 * len(tl)))
+                      height=max(150, 70 + 34 * len(tl)))  # 기록이 적으면 낮게(2026-11-14, 기존 최소 260)
     fig.update_yaxes(autorange="reversed", title="")
     fig.update_layout(margin=dict(l=0, r=0, t=10, b=0), showlegend=False)
     st.plotly_chart(fig, width="stretch", key=key)

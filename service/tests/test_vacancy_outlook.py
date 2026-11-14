@@ -64,6 +64,34 @@ class VacancyOutlookTests(unittest.TestCase):
         self.assertNotIn("p_fill", text)
         self.assertEqual(d["thin_evidence_note"] is not None, v["thin_evidence"])
 
+    def test_level_name_on_card_and_ai_text(self):
+        v = T.get_unit_history(self.uid)["vacancy_outlook"]
+        self.assertEqual(v["level_name"], C.VACANCY_SCORE_LEVEL_NAMES[v["level"] - 1])
+        self.assertIn(f"({v['level_name']})", v["display"]["level"])
+
+    def test_unit_summary_by_state(self):
+        from ui_vacancy import unit_summary
+        h = T.get_unit_history(self.uid)
+        s = unit_summary(h)
+        self.assertTrue(s["title"].startswith("인허가 공백") and s["no_score_reason"] is None)
+        self.assertTrue(s["detail"].startswith("마지막 가게:"))
+        self.assertIn("건물 전체", unit_summary(T.get_unit_history(self.uid, whole_building=True), True)["title"])
+        active_uid = self.s.units[~self.s.units["vacant"] & self.s.units["is_single_unit"]].iloc[0]["uid"]
+        self.assertTrue(unit_summary(T.get_unit_history(active_uid))["title"].startswith("현재 영업 중"))
+        # 물결표는 마크다운 취소선이 되므로 요약 문장에 쓰지 않는다(여러 가게가 나열되는 자리에서 발생)
+        multi = unit_summary(T.get_unit_history("대구 중구 동성로5길 83 1층"))
+        self.assertNotIn("~", multi["detail"] + multi["title"])
+
+    def test_korean_table_columns(self):
+        from ui_vacancy import BY_CATEGORY_COLS, TIMELINE_COLS, korean_table
+        h = T.get_unit_history(self.uid)
+        t = korean_table(h["timeline"], TIMELINE_COLS)
+        self.assertEqual(list(t.columns), [n for k, n in TIMELINE_COLS.items() if k in h["timeline"][0]])
+        self.assertFalse(any(c.isascii() for c in t.columns))
+        self.assertTrue(t["개업일"].str.fullmatch(r"\d{4}-\d{2}-\d{2}").all())
+        self.assertNotIn("None", t.astype(str).to_string())
+        self.assertEqual(list(korean_table(h["by_category"], BY_CATEGORY_COLS).columns)[0], "업태")
+
     def test_display_text(self):
         self.assertEqual(pct_text(0.0862), "약 9%")
         self.assertEqual(pct_text(0.004), "1% 미만")

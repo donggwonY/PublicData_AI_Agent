@@ -30,7 +30,8 @@ import config as C
 from agent import API_KEY_ENV, create_agent
 from core import tools as T
 from ui_permit_trends import render_permit_trends
-from ui_vacancy import render_vacancy_outlook
+from ui_vacancy import (BY_CATEGORY_COLS, CANDIDATE_COLS, TIMELINE_COLS, korean_table, render_unit_summary,
+                        render_vacancy_outlook)
 from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_chart, _map, metric_value
 
 st.set_page_config(page_title="대구 상권 생애주기 AI 에이전트", page_icon="🏪", layout="wide")
@@ -406,6 +407,10 @@ with tab_unit:
                 st.info(h["floor_note"] + " (아래 '다른 후보 자리' 참고)")
             if not u["is_single_unit"]:
                 st.info(u["single_unit_note"])
+            # 요약을 맨 위로(2026-11-14): 지금 상태 → 재입점 카드 → 과거 이력 → 상세 표(접기)
+            render_unit_summary(h, whole_building=whole)
+            render_vacancy_outlook(h.get("vacancy_outlook"))
+            st.markdown("#### 이 자리의 과거")
             s = h["summary"]
             c = st.columns(4)
             c[0].metric("인허가 레코드", s["total_records"])
@@ -414,10 +419,12 @@ with tab_unit:
             c[3].metric("최대 동시영업", u["max_concurrent_stores"])
             st.caption("업태 변천: " + s["category_path"])
             history_chart(h, key="unit-tl")
-            render_vacancy_outlook(h.get("vacancy_outlook"))
+            st.markdown("#### 상세 기록")
             st.markdown("**업태별 존속기간 (이 자리 vs 대구 중앙생존)**")
-            st.dataframe(pd.DataFrame(h["by_category"]), hide_index=True, width="stretch")
-            st.dataframe(pd.DataFrame(h["timeline"]), hide_index=True, width="stretch")
+            st.dataframe(korean_table(h["by_category"], BY_CATEGORY_COLS), hide_index=True, width="stretch")
+            st.markdown("**전체 인허가 기록**")
+            # 기본 height="auto" = 최대 10줄 높이, 기록이 많은 자리는 표 안에서 스크롤
+            st.dataframe(korean_table(h["timeline"], TIMELINE_COLS), hide_index=True, width="stretch")
             if h["other_candidates"]:
                 st.markdown("**다른 후보 자리**")
-                st.dataframe(pd.DataFrame(h["other_candidates"])[["address", "floor", "records", "status"]], hide_index=True)
+                st.dataframe(korean_table(h["other_candidates"], CANDIDATE_COLS), hide_index=True)

@@ -433,7 +433,7 @@ def vacancy_outlook(u: pd.Series) -> dict | None:
     # AI 답변은 이 문장들을 그대로 쓴다(자리 이력 카드와 같은 정수 표현). 아래 원시 값은 카드 계산용.
     display = {
         "probability_1y": f"{pct_text(p)} ({per100_text(p)}꼴, 이미 {days:,}일 비어 있던 점 반영)",
-        "level": f"대구 공실 후보 전체 기준 5단계 중 {lv}단계 "
+        "level": f"대구 공실 후보 전체 기준 5단계 중 {lv}단계({C.VACANCY_SCORE_LEVEL_NAMES[lv - 1]}) "
                  f"(과거 이 수준 자리의 실제 1년 재입점 약 {round(C.VACANCY_SCORE_LEVEL_OBS[lv - 1] * 100)}%)",
         "compare_to_same_vacancy_period": (None if avg is None else
                                            f"같은 공백 기간({band}) 빈 자리 평균({pct_text(avg)})"
@@ -443,7 +443,8 @@ def vacancy_outlook(u: pd.Series) -> dict | None:
     }
     return {
         "display": display,
-        "p_fill_1y": p, "level": lv, "level_observed_1y": C.VACANCY_SCORE_LEVEL_OBS[lv - 1],
+        "p_fill_1y": p, "level": lv, "level_name": C.VACANCY_SCORE_LEVEL_NAMES[lv - 1],
+        "level_observed_1y": C.VACANCY_SCORE_LEVEL_OBS[lv - 1],
         "vacant_days": days, "vacant_band": band,
         "band_avg_p_fill_1y": avg, "compare_to_band": compare,
         "thin_evidence": thin,
@@ -492,6 +493,8 @@ def get_unit_history(address: str, whole_building: bool = False, max_records: in
         "unit": _unit_brief(u) | {
             "max_concurrent_stores": int(u["max_concurrent"]),
             "is_single_unit": bool(u["is_single_unit"]),
+            "vacant": bool(u["vacant"]), "n_active": int(u["n_active"]),
+            "vacant_days": None if pd.isna(u["vacant_days"]) else int(u["vacant_days"]),
             "single_unit_note": None if u["is_single_unit"] else "동시에 여러 점포가 영업한 다점포 건물/층(푸드코트·백화점 등)이라 '한 자리'의 교체 이력으로 해석하면 안 됨",
         },
         "summary": {

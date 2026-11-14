@@ -103,6 +103,8 @@ HANDOVER_TOLERANCE_DAYS = 60      # 문제2: 양도·양수 시 신·구 인허�
 # 공실 재입점 점수 카드(E-03, docs/e03/level_compare.md). 1년 확률 고정 경계 → 5단계, 단계별 과거 실제 1년 재입점(백테스트 22,024건)
 VACANCY_SCORE_CUTS = (0.02, 0.035, 0.055, 0.08)
 VACANCY_SCORE_LEVEL_OBS = (0.013, 0.024, 0.039, 0.059, 0.111)
+# 단계 이름: 절대 수준이 아니라 대구 공실 후보 사이의 상대 위치(가장 높은 5단계도 실제 약 11%)
+VACANCY_SCORE_LEVEL_NAMES = ("가장 낮은 편", "낮은 편", "중간", "높은 편", "가장 높은 편")
 VACANCY_SCORE_COMPARE = (0.7, 1.3)  # 같은 공백 기간대 평균 대비 이하=낮음, 이상=높음(표시용 구간, 검증 기준 아님)
 VACANCY_SCORE_THIN_DAYS = 730       # 2년 넘은 공백은 평가 사례가 적어 '근거 적음'
 CYCLE_WINDOW_YEARS = 3            # 사이클 판정: 최근 3년 vs 직전 3년
