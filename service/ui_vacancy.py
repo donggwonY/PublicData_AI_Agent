@@ -78,6 +78,42 @@ def korean_table(rows: list[dict], names: dict) -> "pd.DataFrame":
     return df
 
 
+def _tenure_label(pct: float | None, beyond: int | None) -> str:
+    """대구에서 이 기간 이상 영업한 비율 → 짧은/중간/긴 편(같은 업태 가게 사이의 상대 위치)."""
+    if beyond is not None:
+        return "긴 편"
+    return "짧은 편" if pct >= 75 else "긴 편" if pct < 25 else "중간"
+
+
+def tenure_sentences(h: dict) -> list[str]:
+    """가게별 영업기간을 대구 같은 업태(또는 업종) 가게의 생존곡선과 같은 잣대로 비교한 한 줄 문장(2026-11-14).
+
+    '이 자리 평균 vs 대구 중앙생존'처럼 서로 다른 통계를 나란히 두지 않고, 가게마다
+    '대구 같은 업태 가게 중 이만큼 이상 영업한 비율'을 말한다. 최근 개업 순.
+    """
+    from core.tools import tenure_vs_daegu
+    out = []
+    for r in sorted(h.get("timeline") or [], key=lambda r: str(r["open"]), reverse=True):
+        y = r.get("years")
+        t = tenure_vs_daegu(r["service"], r["category"], y)
+        if y is None or not t:
+            continue
+        active = r["close"] == "영업중"
+        head = f"**{r['name']}**({r['category']}) " + (f"{y}년째 영업 중" if active else f"{y}년 영업")
+        basis = t["basis"].replace(" (2010년 이후 개업)", "")
+        if t["beyond_curve_years"] is not None:
+            body = f"{basis} 가게 중 {t['beyond_curve_years']}년 넘게 영업한 곳은 약 {round(t['pct_at_curve_end'])}%"
+            label = _tenure_label(None, t["beyond_curve_years"])
+        elif active:
+            body = f"{basis} 가게 중 약 {round(t['pct_lasted_this_long'])}%만 이만큼 영업했어요"
+            label = _tenure_label(t["pct_lasted_this_long"], None)
+        else:
+            body = f"{basis} 가게의 약 {round(t['pct_lasted_this_long'])}%가 이보다 오래 영업했어요"
+            label = _tenure_label(t["pct_lasted_this_long"], None)
+        out.append(f"{head} — {body} · **{label}**" + (" (진행 중)" if active else ""))
+    return out
+
+
 def render_unit_summary(h: dict, whole_building: bool = False) -> None:
     s = unit_summary(h, whole_building)
     with st.container(border=True):

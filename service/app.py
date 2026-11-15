@@ -30,8 +30,8 @@ import config as C
 from agent import API_KEY_ENV, create_agent
 from core import tools as T
 from ui_permit_trends import render_permit_trends
-from ui_vacancy import (BY_CATEGORY_COLS, CANDIDATE_COLS, TIMELINE_COLS, korean_table, render_unit_summary,
-                        render_vacancy_outlook)
+from ui_vacancy import (CANDIDATE_COLS, TIMELINE_COLS, korean_table, render_unit_summary, render_vacancy_outlook,
+                        tenure_sentences)
 from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_chart, _map, metric_value
 
 st.set_page_config(page_title="대구 상권 생애주기 AI 에이전트", page_icon="🏪", layout="wide")
@@ -419,12 +419,28 @@ with tab_unit:
             c[3].metric("최대 동시영업", u["max_concurrent_stores"])
             st.caption("업태 변천: " + s["category_path"])
             history_chart(h, key="unit-tl")
+            # 가게별 영업기간을 대구 같은 업태 가게와 같은 잣대로 비교(문장). 최근 5곳, 나머지는 접기
+            _ts = tenure_sentences(h)
+            if _ts:
+                st.markdown("**대구 같은 업태 가게와 비교하면**")
+                st.markdown("\n".join(f"- {x}" for x in _ts[:5]))
+                if len(_ts) > 5:
+                    with st.expander(f"나머지 {len(_ts) - 5}곳 더 보기"):
+                        st.markdown("\n".join(f"- {x}" for x in _ts[5:]))
+                st.caption("비율은 대구 같은 업태(2010년 이후 개업) 가게의 생존율입니다. 짧은 편: 75% 이상이 더 오래 영업, "
+                           "긴 편: 더 오래 영업한 가게가 25% 미만. 영업 중인 가게는 아직 진행 중인 기간입니다.")
             st.markdown("#### 상세 기록")
-            st.markdown("**업태별 존속기간 (이 자리 vs 대구 중앙생존)**")
-            st.dataframe(korean_table(h["by_category"], BY_CATEGORY_COLS), hide_index=True, width="stretch")
             st.markdown("**전체 인허가 기록**")
+            _tl = korean_table(h["timeline"], TIMELINE_COLS)
+            if "영업기간(년)" in _tl.columns:          # 영업 중인 가게는 기준일까지의 진행 중 기간
+                _tl["영업기간(년)"] = [f"{y} (영업 중)" if c == "영업 중" else f"{y}" for y, c in zip(_tl["영업기간(년)"], _tl["폐업일"])]
+            if not u["is_single_unit"] and "직전 폐업 후 공백(일)" in _tl.columns:
+                _tl = _tl.drop(columns="직전 폐업 후 공백(일)")
+                st.caption("여러 가게가 함께 있던 자리라 다른 가게가 영업 중일 때도 '공백'으로 계산되므로 직전 폐업 후 공백은 표시하지 않아요.")
+            if "단기 행사 등록" in _tl.columns and not _tl["단기 행사 등록"].astype(bool).any():
+                _tl = _tl.drop(columns="단기 행사 등록")
             # 기본 height="auto" = 최대 10줄 높이, 기록이 많은 자리는 표 안에서 스크롤
-            st.dataframe(korean_table(h["timeline"], TIMELINE_COLS), hide_index=True, width="stretch")
+            st.dataframe(_tl, hide_index=True, width="stretch")
             if h["other_candidates"]:
                 st.markdown("**다른 후보 자리**")
                 st.dataframe(korean_table(h["other_candidates"], CANDIDATE_COLS), hide_index=True)

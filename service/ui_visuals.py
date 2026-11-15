@@ -129,9 +129,26 @@ def history_chart(out: dict, key: str):
     tl["label"] = tl["name"] + " [" + tl["category"] + "]"
     fig = px.timeline(tl, x_start="open", x_end="end", y="label", color="category", hover_data=["years", "service"],
                       height=max(150, 70 + 34 * len(tl)))  # 기록이 적으면 낮게(2026-11-14, 기존 최소 260)
+    # 대구 같은 업태(없으면 같은 업종) 가게의 중앙생존기간 눈금: 개업일 + 중간값(2026-11-14).
+    # 막대가 눈금을 넘었으면 대구 같은 업태 가게 절반보다 오래 영업한 것.
+    from core.tools import tenure_vs_daegu
+    mx, my, mtext = [], [], []
+    for _, r in tl.iterrows():
+        t = tenure_vs_daegu(r["service"], r["category"], None)
+        if t and t["median_years"] is not None:
+            mx.append(pd.Timestamp(r["open"]) + pd.Timedelta(days=round(t["median_years"] * 365.25)))
+            my.append(r["label"])
+            mtext.append(f"{t['basis']} 중앙생존 {t['median_years']}년")
+    if mx:
+        fig.add_scatter(x=mx, y=my, mode="markers", name="대구 같은 업태 중간값",
+                        marker=dict(symbol="line-ns", size=22, line=dict(width=3, color="#1f2430")),
+                        hovertext=mtext, hoverinfo="text")
     fig.update_yaxes(autorange="reversed", title="")
     fig.update_layout(margin=dict(l=0, r=0, t=10, b=0), showlegend=False)
     st.plotly_chart(fig, width="stretch", key=key)
+    if mx:
+        st.caption("│ 눈금 = 대구 같은 업태(2010년 이후 개업) 가게의 절반이 문을 닫은 시점(중앙생존기간). "
+                   "막대가 눈금을 넘었으면 절반보다 오래 영업한 것입니다.")
 
 
 def profile_chart(out: dict, key: str):

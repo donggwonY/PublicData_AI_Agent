@@ -459,6 +459,35 @@ def vacancy_outlook(u: pd.Series) -> dict | None:
     }
 
 
+def tenure_vs_daegu(service: str, category: str, years: float | None) -> dict | None:
+    """한 가게의 영업기간을 대구 같은 업태(없으면 같은 업종) 가게의 KM 생존곡선 위에 놓는다(2026-11-14).
+
+    반환: 비교 기준·표본·중앙생존·'대구에서 이 기간 이상 영업한 비율(%)'. 곡선은 2010년 이후 개업, 0~10년 연 단위라
+    사이 값은 선형 보간하고 10년을 넘으면 비율 대신 10년 시점 값을 함께 준다.
+    """
+    sv = store().survival
+    row = sv[(sv["level"] == "업태") & (sv["category"] == category)]
+    # 같은 업태 이름이 여러 업종에 걸치면(예: '기타') 대표 업종이 다를 수 있다 → 그럴 땐 같은 업종 곡선으로
+    if row.empty or row.iloc[0]["service"] != service:
+        row, basis = sv[(sv["level"] == "업종") & (sv["service"] == service)], f"대구 {service}"
+    else:
+        basis = f"대구 {category}"
+    if row.empty:
+        return None
+    r = row.iloc[0]
+    curve = json.loads(r["curve_json"])
+    xs = [p["year"] for p in curve]
+    ys = [p["survival_pct"] for p in curve]
+    has_years = years is not None and not pd.isna(years)
+    beyond = has_years and years > xs[-1]
+    pct = float(np.interp(years, xs, ys)) if has_years and not beyond else None
+    med = r["median_survival_years"]
+    return {"basis": basis + " (2010년 이후 개업)", "n": int(r["n"]),
+            "median_years": None if med is None or pd.isna(med) else float(med),
+            "pct_lasted_this_long": None if pct is None else round(pct, 1),
+            "beyond_curve_years": xs[-1] if beyond else None, "pct_at_curve_end": ys[-1]}
+
+
 def get_unit_history(address: str, whole_building: bool = False, max_records: int = 40) -> dict:
     """한 자리의 업종 변천 이력 + 업태별 존속기간."""
     s = store()

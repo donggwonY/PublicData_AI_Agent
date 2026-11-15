@@ -92,6 +92,39 @@ class VacancyOutlookTests(unittest.TestCase):
         self.assertNotIn("None", t.astype(str).to_string())
         self.assertEqual(list(korean_table(h["by_category"], BY_CATEGORY_COLS).columns)[0], "업태")
 
+    def test_tenure_vs_daegu(self):
+        sv = self.s.survival
+        r = sv[sv["level"] == "업태"].iloc[0]
+        curve = __import__("json").loads(r["curve_json"])
+        t0 = T.tenure_vs_daegu(r["service"], r["category"], 0.0)
+        self.assertTrue(t0["basis"].startswith(f"대구 {r['category']}"))
+        self.assertAlmostEqual(t0["pct_lasted_this_long"], curve[0]["survival_pct"], places=1)
+        t_mid = T.tenure_vs_daegu(r["service"], r["category"], 1.5)   # 1·2년 사이 보간
+        lo, hi = sorted((curve[1]["survival_pct"], curve[2]["survival_pct"]))
+        self.assertTrue(lo - 0.1 <= t_mid["pct_lasted_this_long"] <= hi + 0.1)
+        far = T.tenure_vs_daegu(r["service"], r["category"], curve[-1]["year"] + 3)
+        self.assertIsNone(far["pct_lasted_this_long"])
+        self.assertEqual(far["beyond_curve_years"], curve[-1]["year"])
+        self.assertIsNone(T.tenure_vs_daegu(r["service"], r["category"], None)["pct_lasted_this_long"])
+        self.assertIsNone(T.tenure_vs_daegu("없는업종", "없는업태", 1.0))
+
+    def test_tenure_sentences(self):
+        from ui_vacancy import _tenure_label, tenure_sentences
+        h = T.get_unit_history("대구 중구 동성로5길 83 1층")
+        lines = tenure_sentences(h)
+        self.assertTrue(lines)
+        opens = sorted((r for r in h["timeline"] if r.get("years") is not None),
+                       key=lambda r: str(r["open"]), reverse=True)
+        self.assertTrue(lines[0].startswith(f"**{opens[0]['name']}**"))      # 최근 개업 순
+        for ln in lines:
+            self.assertRegex(ln, r"· \*\*(짧은 편|중간|긴 편)\*\*")
+            self.assertNotIn("~", ln)
+            self.assertIsNone(__import__("re").search(r"\d+\.\d+\s*%", ln))
+        self.assertTrue(any("(진행 중)" in ln for ln in lines))
+        self.assertEqual([_tenure_label(p, None) for p in (80, 75, 50, 25, 10)],
+                         ["짧은 편", "짧은 편", "중간", "중간", "긴 편"])
+        self.assertEqual(_tenure_label(None, 10), "긴 편")
+
     def test_display_text(self):
         self.assertEqual(pct_text(0.0862), "약 9%")
         self.assertEqual(pct_text(0.004), "1% 미만")
