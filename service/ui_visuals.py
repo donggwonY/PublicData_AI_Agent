@@ -184,6 +184,55 @@ def station_chart(out: dict, key: str):
     st.plotly_chart(fig, width="stretch", key=key)
 
 
+# AI 상담 도구 기록을 사람이 읽는 말로(2026-11-15). 개발용 함수 이름·JSON 대신 '무엇을 · 어떤 조건으로'.
+TOOL_LABELS = {
+    "get_survival_curve": "업종 생존 기간 조회", "get_market_cycle": "상권 흐름 조회",
+    "find_vacant_units": "빈 자리 찾기", "get_unit_history": "자리 이력 조회",
+    "find_risk_spots": "폐업이 잦은 자리 찾기", "compare_areas": "지역 비교",
+    "transition_matrix": "업종 전환 흐름 조회", "get_area_profile": "동네 프로필 조회",
+    "find_nearby": "주변 가게 찾기", "get_station_traffic": "역 이용객 조회",
+    "normalize_address": "주소 확인",
+}
+_GROUP_BY = {"category": "업태별", "gu": "구·군별", "dong": "동별", "service": "업종별"}
+
+
+def tool_label(name: str, args: dict | None) -> str:
+    """'업종 생존 기간 조회 · 수성구 · 휴게음식점' 같은 한 줄. 표시용 조건만 고르고 내부 옵션(표본 하한 등)은 뺀다."""
+    parts = []
+    for k, v in (args or {}).items():
+        if v is None or v == "" or v is False:
+            continue
+        if k == "radius_m":
+            parts.append(f"반경 {v}m")
+        elif k == "since_year":
+            parts.append(f"{v}년 이후 개업")
+        elif k == "group_by":
+            parts.append(_GROUP_BY.get(v, str(v)))
+        elif k == "whole_building":
+            parts.append("건물 전체")
+        elif isinstance(v, (list, tuple)):
+            parts.append(" vs ".join(map(str, v)))
+        elif isinstance(v, str):
+            parts.append(v)
+    return " · ".join([TOOL_LABELS.get(name, name)] + parts)
+
+
+def render_tool_steps(tool_events: list[dict]) -> None:
+    """도구 기록을 접힌 '데이터 n번 확인' 한 줄로. 펼치면 단계별 조건과 원자료(JSON)."""
+    if not tool_events:
+        return
+    n_err = sum(1 for e in tool_events if e.get("error"))
+    label = f"데이터 {len(tool_events)}번 확인" + (f" · 오류 {n_err}건" if n_err else "")
+    with st.status(label, type="compact", state="error" if n_err == len(tool_events) else "complete"):
+        for ev in tool_events:
+            with st.status(tool_label(ev["name"], ev.get("input")), type="step",
+                           state="error" if ev.get("error") else "complete"):
+                if ev.get("error"):
+                    st.caption(str(ev["error"]))
+                else:
+                    st.json(ev["output"], expanded=False)
+
+
 def render_tool_result(name: str, out: dict | None, key: str):
     """Tool 이름에 맞는 시각화를 고른다. key 는 Streamlit 이 차트를 구분하는 고유 id (중복되면 오류)."""
     if not out:

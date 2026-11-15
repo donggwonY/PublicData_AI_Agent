@@ -30,8 +30,13 @@ class SidebarQuotaTests(unittest.TestCase):
         with patch.dict(os.environ, env), patch.object(agent, "create_agent", lambda *a, **k: _FakeAgent()):
             app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py")).run(timeout=90)
             self.assertFalse(app.exception)
+            self.assertEqual(len(app.chat_input), 0)          # 다른 탭에서는 하단 입력창이 없다
+            app.session_state["main_tab"] = "💬 AI 상담"      # AI 상담 탭을 연다
+            app.run(timeout=90)
+            self.assertEqual(len(app.chat_input), 1)
             start = _left(app)
             self.assertIsNotNone(start)
+            app.session_state["main_tab"] = "💬 AI 상담"      # 테스트 도구는 탭 선택을 기억하지 않아 매번 지정
             app.chat_input[0].set_value("수성구 요즘 어때?").run(timeout=90)
             self.assertFalse(app.exception)
             self.assertEqual(_left(app), start - 1)          # 같은 실행에서 바로 반영

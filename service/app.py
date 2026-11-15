@@ -16,7 +16,6 @@ Streamlit 을 읽기 전에 알아야 할 것
 from __future__ import annotations
 
 import hashlib
-import json
 import os
 import threading
 import time
@@ -32,7 +31,8 @@ from core import tools as T
 from ui_permit_trends import industry_choices, render_permit_trends
 from ui_vacancy import (CANDIDATE_COLS, TIMELINE_COLS, korean_table, render_unit_summary, render_vacancy_outlook,
                         tenure_sentences)
-from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_chart, _map, metric_value
+from ui_visuals import (cycle_chart, history_chart, render_tool_result, render_tool_steps, survival_chart, tool_label,
+                        _map, metric_value)
 
 st.set_page_config(page_title="대구 상권 생애주기 AI 에이전트", page_icon="🏪", layout="wide")
 st.markdown("""<style>
@@ -303,22 +303,40 @@ def safe_markdown(text: str) -> str:
 
 
 def render_tools(tool_events: list[dict], msg_id: str):
+    """접힌 '데이터 n번 확인'(단계·원자료) 다음에 차트·지도 등 결과 그림을 보여 준다."""
+    render_tool_steps(tool_events)
     for i, ev in enumerate(tool_events):
-        args = json.dumps(ev["input"], ensure_ascii=False)
-        with st.expander(f"🔧 {ev['name']} {args}", expanded=False):
-            if ev["error"]:
-                st.warning(ev["error"])
-            else:
-                st.json(ev["output"], expanded=False)
         if not ev["error"]:
             render_tool_result(ev["name"], ev["output"], key=f"{msg_id}-{i}")
 
 
+# AI 상담 화면(2026-11-15): 대화는 위에서 아래로 쌓이고, 입력창은 화면 아래에 고정한다.
+# 탭 상태(main_tab)를 추적하므로 AI 상담 탭이 열려 있을 때만 하단 입력창을 그린다(다른 탭에는 보이지 않음).
+chat_prompt = None
+if tab_chat.open:
+    with st.bottom:
+        chat_prompt = st.chat_input("상권·자리에 대해 물어보세요. 예) 수성구 범어동에서 치킨집 하면 어때?",
+                                    submit_mode="disable", key="chat_box")
+        st.caption(f"답변은 {PROVIDER_LABEL} API로 생성됩니다"
+                   + ("(무료 등급 입력은 제공사의 서비스 개선에 쓰일 수 있음)" if PROVIDER == "gemini" else "")
+                   + ". 수치는 인허가 데이터 분석 도구의 반환값만 쓰며, 창업 판단의 참고 자료입니다.")
+
 with tab_chat:
-    st.caption(f"질문은 {PROVIDER_LABEL} API로 전달되어 답변이 생성됩니다"
-               + (" (무료 등급 입력은 제공사의 서비스 개선에 쓰일 수 있음)" if PROVIDER == "gemini" else "")
-               + ". 수치는 인허가 데이터 분석 도구의 반환값만 사용하며, 창업 판단의 참고 자료입니다.")
     st.session_state.setdefault("history", [])
+    prompt = chat_prompt or st.session_state.pop("pending", None)
+    # 첫 화면 자리는 항상 만든다: 첫 질문을 보내는 실행에서 빈 자리로 바뀌어 예전 버튼이 흐리게 남지 않는다
+    welcome = st.empty()
+    if not st.session_state.history and not prompt:
+        with welcome.container():
+            # 첫 화면: 무엇을 물을 수 있는지 보여 주고 예시 질문을 바로 누를 수 있게 한다
+            st.markdown("### 무엇을 알아볼까요?")
+            st.caption("동네 비교, 업종 생존 기간, 빈 자리, 한 자리의 과거 이력을 인허가 기록으로 답해 드려요.")
+            qs = fav_examples(st.session_state.get("fav_gu", "대구 전체"), st.session_state.get("fav_industry", "전체 업종"))
+            qs = [q for q in qs if not q.startswith(("그럼", "그 동네"))]   # 앞 대화가 필요한 질문은 첫 화면에서 뺀다
+            cols = st.columns(2)
+            for i, q in enumerate(qs[:4]):
+                cols[i % 2].button(q, key=f"start-{i}", icon=":material/chat_bubble:", width="stretch",
+                                   on_click=go_tab, args=(TAB_CHAT,), kwargs={"pending": q})
     for m in st.session_state.history:
         with st.chat_message(m["role"]):
             if m["role"] == "assistant":
@@ -327,7 +345,6 @@ with tab_chat:
             if m.get("model"):
                 st.caption(f"모델: {m['model']}")
 
-    prompt = st.chat_input("예) 수성구 범어동에서 치킨집 하면 어때?") or st.session_state.pop("pending", None)
     if prompt:
         api_key = OPERATOR_KEY
         with st.chat_message("user"):
@@ -343,16 +360,18 @@ with tab_chat:
             st.session_state.history.append({"role": "user", "content": prompt})
             agent = get_agent(api_key)
             msg_id = uuid.uuid4().hex[:8]
-            tool_box = st.container()
+            tool_box = st.empty()   # 진행 중에는 단계 목록, 끝나면 접힌 기록+그림으로 바꿔 그린다
             text_box = st.empty()
-            text, tool_events, model = "", [], None
+            text, tool_events, model, live = "", [], None, []
             with st.spinner("데이터 확인 중…"):
                 for ev in agent.ask(prompt):
                     if ev["type"] == "text":
                         text += ev["text"]
                         text_box.markdown(safe_markdown(text) + "▌")
                     elif ev["type"] == "tool_call":
-                        tool_box.caption(f"🔧 `{ev['name']}` 호출")
+                        live.append(tool_label(ev["name"], ev.get("input")))
+                        tool_box.markdown("  \n".join([f":material/check: {x}" for x in live[:-1]]
+                                                       + [f":shimmer[{live[-1]}]"]))
                     elif ev["type"] == "tool_result":
                         tool_events.append(ev)
                     elif ev["type"] == "done":
@@ -360,7 +379,7 @@ with tab_chat:
                     elif ev["type"] == "error":
                         text += f"\n\n⚠️ {ev['message']}"
             text_box.empty()
-            with tool_box:
+            with tool_box.container():
                 render_tools(tool_events, msg_id)
             st.markdown(safe_markdown(text))
             if model:
