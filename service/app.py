@@ -398,7 +398,7 @@ with tab_dash:
     gu = None if gu_sel == "대구 전체" else gu_sel
     view = st.radio("살펴볼 내용", ["업종 비교", "동네·자리", "상세 통계"], horizontal=True, key="dash_view", label_visibility="collapsed")
     if view == "업종 비교":
-        render_permit_trends(S.stores, S.ref, gu)
+        render_permit_trends(S.stores, S.ref, gu, S.legal_admin)
     elif view == "동네·자리":
         st.subheader("동네의 생활 여건과 자리 살펴보기")
         st.caption("인구·집객시설을 확인하고, 관심 주소는 상단 ‘자리 이력’에서 이전 영업 이력을 확인하세요.")

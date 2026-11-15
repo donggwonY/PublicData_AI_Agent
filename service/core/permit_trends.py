@@ -73,3 +73,23 @@ def compare_industry_regions(stores: pd.DataFrame, reference_date, industry: str
             closure_change=row['closure_reports']-row['previous_closure_reports'],
             region_active_total=total))
     return pd.DataFrame(records)
+
+
+def compare_industry_dongs(stores, reference_date, industry, gu, legal_admin):
+    """Exact source-name matches only; never allocate legal records to admin dongs."""
+    local=stores[stores.gu.eq(gu)]
+    if legal_admin is None or not {'gu','legal_dong'}.issubset(legal_admin.columns) or 'dong' not in stores:
+        return {'rows':[], 'unmatched_rows':len(local), 'source_rows':len(local), 'available':False}
+    names=set(legal_admin.loc[legal_admin.gu.eq(gu),'legal_dong'].dropna())
+    matched=local[local.dong.isin(names)]
+    records=[]
+    for dong,frame in matched.groupby('dong'):
+        summary=summarize_permit_trends(frame,reference_date,gu)
+        total=sum(r['active_permits'] for r in summary['rows'])
+        row=next((r for r in summary['rows'] if r['industry']==industry),None)
+        row=row or dict(active_permits=0,opened=0,closure_reports=0,previous_opened=0,previous_closure_reports=0,active_share_pct=0.)
+        records.append(dict(region=dong,active_permits=row['active_permits'],
+            active_share_pct=row['active_share_pct'] if total else None,opened=row['opened'],
+            closure_reports=row['closure_reports'],opened_change=row['opened']-row['previous_opened'],
+            closure_change=row['closure_reports']-row['previous_closure_reports'],region_active_total=total))
+    return {'rows':records,'unmatched_rows':len(local)-len(matched),'source_rows':len(local),'available':True}

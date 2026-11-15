@@ -1,7 +1,7 @@
 import unittest
 import io
 import pandas as pd
-from core.permit_trends import summarize_permit_trends, permit_trends_csv, compare_industry_regions
+from core.permit_trends import summarize_permit_trends, permit_trends_csv, compare_industry_regions, compare_industry_dongs
 from streamlit.testing.v1 import AppTest
 
 def fixture():
@@ -59,6 +59,20 @@ class PermitTrendTests(unittest.TestCase):
         result=compare_industry_regions(f, '2023-01-01', '의원·병원').set_index('region')
         self.assertTrue(pd.isna(result.loc['남구','active_share_pct']))
 
+    def test_dong_scope_and_unmatched_records(self):
+        f=fixture();f['dong']=['가동','가동','나동','나동','가동','오기동']
+        names=pd.DataFrame({'gu':['중구','중구','중구','남구'], 'legal_dong':['가동','가동','나동','가동']})
+        r=compare_industry_dongs(f,'2023-01-01','의원·병원','중구',names)
+        self.assertEqual(r['source_rows'],5)
+        self.assertEqual(r['unmatched_rows'],1)
+        rows={x['region']:x for x in r['rows']}
+        self.assertEqual(set(rows),{'가동','나동'})
+        self.assertEqual(rows['가동']['active_permits'],1)
+        self.assertEqual(rows['가동']['closure_reports'],1)
+        self.assertEqual(rows['가동']['active_share_pct'],100)
+        self.assertIsNone(rows['나동']['active_share_pct'])
+        self.assertFalse(compare_industry_dongs(f,'2023-01-01','의원·병원','중구',None)['available'])
+
     def test_unknown_region_empty(self):
         self.assertEqual(summarize_permit_trends(fixture(),'2023-01-01','없는지역')['rows'],[])
 
@@ -76,7 +90,7 @@ render_permit_trends(fixture(),'2023-01-01',region)
         self.assertEqual([x.value for x in app.metric],['1건','1건','1건'])
         comparison=[d.value for d in app.dataframe if '지역' in d.value.columns][0]
         self.assertIn('지역 내 업종 비중(%)', comparison.columns)
-        self.assertEqual(len(comparison), 1)
+        self.assertEqual(len(comparison), 2)
         app.selectbox[0].select('남구').run()
         self.assertFalse(app.exception)
         self.assertEqual(app.selectbox[1].value,'의원·병원')
