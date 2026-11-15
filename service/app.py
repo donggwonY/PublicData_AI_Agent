@@ -29,7 +29,7 @@ import streamlit as st
 import config as C
 from agent import API_KEY_ENV, create_agent
 from core import tools as T
-from ui_permit_trends import render_permit_trends
+from ui_permit_trends import industry_choices, render_permit_trends
 from ui_vacancy import (CANDIDATE_COLS, TIMELINE_COLS, korean_table, render_unit_summary, render_vacancy_outlook,
                         tenure_sentences)
 from ui_visuals import cycle_chart, history_chart, render_tool_result, survival_chart, _map, metric_value
@@ -146,6 +146,29 @@ GLOSSARY = [
 ]
 
 
+def fav_examples(gu: str, ind: str) -> list[str]:
+    """사이드바 '내 관심 조건'으로 만든 예시 질문. 조건이 없으면 기본 예시."""
+    if gu == "대구 전체" and ind == "전체 업종":
+        return EXAMPLES
+    where = "대구" if gu == "대구 전체" else gu
+    if ind == "전체 업종":
+        return [f"{where} 요즘 상권 분위기는?", f"{where}에서 오래 가는 업종은 뭐야?",
+                f"{where}에 최근 빈자리 있어?", "그럼 뭐가 더 오래 가?"]
+    out = [f"{where}에서 {ind} 열려는데 어때?", f"{ind} 가게는 보통 얼마나 오래 영업해?"]
+    if gu != "대구 전체":
+        out.append(f"{gu}에 최근 빈자리 있어?")
+    return out + ["그럼 뭐가 더 오래 가?"]
+
+
+def set_fav(gu: str | None = None, ind: str | None = None) -> None:
+    """사이드바 '내 관심 조건' 콜백: 상권 둘러보기의 지역·관심 업종 선택도 같이 바꾼다(양방향 연동)."""
+    gu = gu or st.session_state.fav_gu
+    ind = ind or st.session_state.fav_industry
+    st.session_state.fav_gu = st.session_state.dash_gu = gu
+    st.session_state.fav_industry = st.session_state.dash_trend_industry = ind
+    st.session_state.saved_dash_trend_industry = ind
+
+
 def go_tab(tab: str, **state) -> None:
     """사이드바 버튼 콜백: 탭을 바꾸고 필요한 입력값을 미리 채운다(위젯이 그려지기 전이라 안전)."""
     st.session_state.main_tab = tab
@@ -203,6 +226,22 @@ with st.sidebar:
             c2.metric("현재 영업 중", f"{rec['active']:,}")
             st.caption(f"배치 {META['built_at']} · 데이터 {S.source}")
 
+    # 내 관심 조건(2026-11-15): 한 번 고르면 상권 둘러보기 지역·관심 업종과 예시 질문에 함께 적용
+    IND_CHOICES = industry_choices(S.stores)
+    st.session_state.setdefault("fav_gu", st.session_state.get("dash_gu", "대구 전체"))
+    st.session_state.setdefault("fav_industry", st.session_state.get("saved_dash_trend_industry", "전체 업종"))
+    st.markdown("**내 관심 조건**")
+    with st.container(border=True):
+        st.selectbox("지역", ["대구 전체"] + GUS, key="fav_gu", on_change=set_fav)
+        st.selectbox("업종", IND_CHOICES, key="fav_industry", on_change=set_fav)
+        fav_on = st.session_state.fav_gu != "대구 전체" or st.session_state.fav_industry != "전체 업종"
+        if fav_on:
+            st.caption("상권 둘러보기와 AI 예시 질문에 적용 중이에요.")
+            st.button("조건 해제", icon=":material/close:", type="tertiary",
+                      on_click=set_fav, args=("대구 전체", "전체 업종"))
+        else:
+            st.caption("고르면 상권 둘러보기와 AI 예시 질문에 함께 적용돼요.")
+
     st.markdown("**바로 가기**")
     cur = st.session_state.get("main_tab", TAB_DASH)
     for tab, icon, desc in NAV:
@@ -223,8 +262,8 @@ with st.sidebar:
             # 방문자 키 입력은 두지 않는다(2026-11-15). 운영 키가 없으면 안내만 한다.
             st.markdown(":material/block: 지금은 이용할 수 없어요")
             st.caption("상권 둘러보기·자리 이력은 그대로 이용할 수 있어요.")
-        with st.expander("예시 질문 (누르면 바로 질문)"):
-            for q in EXAMPLES:
+        with st.expander("예시 질문 (누르면 바로 질문)", expanded=fav_on):
+            for q in fav_examples(st.session_state.fav_gu, st.session_state.fav_industry):
                 st.button(q, key=f"ex-{q}", type="tertiary", icon=":material/chat_bubble:",
                           on_click=go_tab, args=(TAB_CHAT,), kwargs={"pending": q})
         if st.button("대화 초기화", icon=":material/refresh:", width="stretch"):
@@ -324,7 +363,8 @@ with tab_dash:
     st.title("내 업종에 맞는 동네 살펴보기")
     st.caption("지역과 업종을 고르면 영업 현황과 최근 변화를 비교할 수 있어요.")
     st.caption(f"자료 기준 {S.ref:%Y-%m-%d} · 수록 인허가 기준")
-    gu_sel = st.selectbox("살펴볼 지역", ["대구 전체"] + GUS, key="dash_gu")
+    gu_sel = st.selectbox("살펴볼 지역", ["대구 전체"] + GUS, key="dash_gu",
+                          on_change=lambda: st.session_state.update(fav_gu=st.session_state.dash_gu))
     gu = None if gu_sel == "대구 전체" else gu_sel
     view = st.radio("살펴볼 내용", ["업종 비교", "동네·자리", "상세 통계"], horizontal=True, key="dash_view", label_visibility="collapsed")
     if view == "업종 비교":

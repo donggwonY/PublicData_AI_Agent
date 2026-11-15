@@ -26,14 +26,25 @@ def _remember(key):
     st.session_state["saved_"+key]=st.session_state[key]
 
 
+def industry_choices(stores):
+    """관심 업종 선택지. 사이드바 '내 관심 조건'과 업종 비교 화면이 같은 목록을 쓴다."""
+    return ['전체 업종']+sorted(stores.service.dropna().replace({'의원':'의원·병원','병원':'의원·병원'}).unique())
+
+
+def _sync_industry():
+    """업종 비교에서 바꾼 관심 업종을 기억하고 사이드바 '내 관심 조건'에도 반영한다."""
+    _remember('dash_trend_industry')
+    st.session_state['fav_industry']=st.session_state['dash_trend_industry']
+
+
 def render_permit_trends(stores, reference_date, gu=None):
     result=summarize_permit_trends(stores,reference_date,gu)
     rows=pd.DataFrame(result['rows'])
-    choices=['전체 업종']+sorted(stores.service.dropna().replace({'의원':'의원·병원','병원':'의원·병원'}).unique())
+    choices=industry_choices(stores)
     if st.session_state.get('dash_trend_industry') not in choices:
         saved=st.session_state.get('saved_dash_trend_industry',choices[0])
         st.session_state['dash_trend_industry']=saved if saved in choices else choices[0]
-    selected=st.selectbox('관심 업종',choices,key='dash_trend_industry',on_change=_remember,args=('dash_trend_industry',),help='업종을 선택하면 다른 구·군과 같은 조건으로 비교할 수 있어요.')
+    selected=st.selectbox('관심 업종',choices,key='dash_trend_industry',on_change=_sync_industry,help='업종을 선택하면 다른 구·군과 같은 조건으로 비교할 수 있어요.')
     if rows.empty:
         st.info('선택 지역에 집계 가능한 인허가 기록이 없습니다.')
         return
