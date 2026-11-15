@@ -200,11 +200,11 @@ def remember_unit(label: str, query: str, whole: bool) -> None:
 
 
 with st.sidebar:
-    st.subheader("대구 상권 길잡이")
-    st.caption("동네를 비교하고, 자리의 이력을 확인하세요.")
     rec = META["records"]["통합"]
     services = [k for k in META["records"] if k != "통합"]
     first_year = min(int(v["date_min"][:4]) for k, v in META["records"].items() if k != "통합")
+    st.subheader("인허가로 보는 대구 상권")
+    st.caption(f"{first_year}년부터 쌓인 영업 인허가 기록으로 동네와 자리를 살펴봐요.")
     kpi_label = ('+'.join(s.replace('영업', '') for s in services) if len(services) <= 8
                  else f"점포형 {len(services)}개 업종")
     ref = pd.Timestamp(META["reference_date"]).date()
