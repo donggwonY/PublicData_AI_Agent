@@ -1,0 +1,616 @@
+{
+ "input_sha256": "e011e410c8779e2d5a37c1bce169e56d70efde292e943d92ec5f8338fab24091",
+ "baseline": "B2(직전 3년 평균 × 기간)",
+ "runs": [
+  {
+   "region": "법정동",
+   "industry": "세부업종",
+   "horizon_years": 1,
+   "val_years": [
+    2020,
+    2021,
+    2022
+   ],
+   "rows_dropped_no_region": 10940,
+   "cells": 22071,
+   "mean_opens": 0.98,
+   "opens_wape": 0.659,
+   "opens_cov80_poisson": 0.912,
+   "opens_rate_spearman": 0.514,
+   "net_mae_B2_over_B0": 1.142,
+   "net_sign_acc": 0.608,
+   "net_increase_share": 0.479,
+   "focus": {
+    "한식": {
+     "cells": 600,
+     "mean_opens": 4.61,
+     "opens_wape": 0.4,
+     "opens_cov80_poisson": 0.832,
+     "opens_rate_spearman": 0.544,
+     "net_mae_B2_over_B0": 1.105,
+     "net_sign_acc": 0.573,
+     "net_increase_share": 0.356
+    },
+    "커피숍": {
+     "cells": 535,
+     "mean_opens": 4.04,
+     "opens_wape": 0.395,
+     "opens_cov80_poisson": 0.834,
+     "opens_rate_spearman": 0.354,
+     "net_mae_B2_over_B0": 0.873,
+     "net_sign_acc": 0.697,
+     "net_increase_share": 0.714
+    },
+    "일반미용업": {
+     "cells": 490,
+     "mean_opens": 2.63,
+     "opens_wape": 0.474,
+     "opens_cov80_poisson": 0.835,
+     "opens_rate_spearman": 0.209,
+     "net_mae_B2_over_B0": 1.2,
+     "net_sign_acc": 0.564,
+     "net_increase_share": 0.614
+    },
+    "편의점": {
+     "cells": 412,
+     "mean_opens": 1.73,
+     "opens_wape": 0.646,
+     "opens_cov80_poisson": 0.867,
+     "opens_rate_spearman": 0.234,
+     "net_mae_B2_over_B0": 0.862,
+     "net_sign_acc": 0.828,
+     "net_increase_share": 0.833
+    },
+    "호프/통닭": {
+     "cells": 455,
+     "mean_opens": 1.21,
+     "opens_wape": 0.713,
+     "opens_cov80_poisson": 0.89,
+     "opens_rate_spearman": 0.44,
+     "net_mae_B2_over_B0": 1.105,
+     "net_sign_acc": 0.64,
+     "net_increase_share": 0.314
+    }
+   }
+  },
+  {
+   "region": "법정동",
+   "industry": "세부업종",
+   "horizon_years": 2,
+   "val_years": [
+    2020,
+    2021
+   ],
+   "rows_dropped_no_region": 10940,
+   "cells": 14699,
+   "mean_opens": 1.97,
+   "opens_wape": 0.574,
+   "opens_cov80_poisson": 0.85,
+   "opens_rate_spearman": 0.584,
+   "net_mae_B2_over_B0": 1.142,
+   "net_sign_acc": 0.62,
+   "net_increase_share": 0.466,
+   "focus": {
+    "한식": {
+     "cells": 400,
+     "mean_opens": 9.18,
+     "opens_wape": 0.346,
+     "opens_cov80_poisson": 0.735,
+     "opens_rate_spearman": 0.594,
+     "net_mae_B2_over_B0": 1.213,
+     "net_sign_acc": 0.585,
+     "net_increase_share": 0.342
+    },
+    "커피숍": {
+     "cells": 353,
+     "mean_opens": 8.26,
+     "opens_wape": 0.334,
+     "opens_cov80_poisson": 0.737,
+     "opens_rate_spearman": 0.458,
+     "net_mae_B2_over_B0": 0.82,
+     "net_sign_acc": 0.704,
+     "net_increase_share": 0.76
+    },
+    "일반미용업": {
+     "cells": 326,
+     "mean_opens": 5.29,
+     "opens_wape": 0.395,
+     "opens_cov80_poisson": 0.798,
+     "opens_rate_spearman": 0.314,
+     "net_mae_B2_over_B0": 1.166,
+     "net_sign_acc": 0.587,
+     "net_increase_share": 0.61
+    },
+    "편의점": {
+     "cells": 267,
+     "mean_opens": 3.53,
+     "opens_wape": 0.546,
+     "opens_cov80_poisson": 0.772,
+     "opens_rate_spearman": 0.21,
+     "net_mae_B2_over_B0": 0.73,
+     "net_sign_acc": 0.82,
+     "net_increase_share": 0.831
+    },
+    "호프/통닭": {
+     "cells": 303,
+     "mean_opens": 2.41,
+     "opens_wape": 0.623,
+     "opens_cov80_poisson": 0.828,
+     "opens_rate_spearman": 0.5,
+     "net_mae_B2_over_B0": 1.116,
+     "net_sign_acc": 0.656,
+     "net_increase_share": 0.273
+    }
+   }
+  },
+  {
+   "region": "법정동",
+   "industry": "인허가종류",
+   "horizon_years": 1,
+   "val_years": [
+    2020,
+    2021,
+    2022
+   ],
+   "rows_dropped_no_region": 10940,
+   "cells": 11006,
+   "mean_opens": 2.0,
+   "opens_wape": 0.431,
+   "opens_cov80_poisson": 0.901,
+   "opens_rate_spearman": 0.525,
+   "net_mae_B2_over_B0": 1.115,
+   "net_sign_acc": 0.617,
+   "net_increase_share": 0.495
+  },
+  {
+   "region": "법정동",
+   "industry": "인허가종류",
+   "horizon_years": 2,
+   "val_years": [
+    2020,
+    2021
+   ],
+   "rows_dropped_no_region": 10940,
+   "cells": 7354,
+   "mean_opens": 4.02,
+   "opens_wape": 0.373,
+   "opens_cov80_poisson": 0.833,
+   "opens_rate_spearman": 0.59,
+   "net_mae_B2_over_B0": 1.104,
+   "net_sign_acc": 0.627,
+   "net_increase_share": 0.479
+  },
+  {
+   "region": "구",
+   "industry": "세부업종",
+   "horizon_years": 1,
+   "val_years": [
+    2020,
+    2021,
+    2022
+   ],
+   "rows_dropped_no_region": 41,
+   "cells": 2403,
+   "mean_opens": 9.72,
+   "opens_wape": 0.325,
+   "opens_cov80_poisson": 0.775,
+   "opens_rate_spearman": 0.618,
+   "net_mae_B2_over_B0": 0.829,
+   "net_sign_acc": 0.683,
+   "net_increase_share": 0.495,
+   "focus": {}
+  },
+  {
+   "region": "구",
+   "industry": "세부업종",
+   "horizon_years": 2,
+   "val_years": [
+    2020,
+    2021
+   ],
+   "rows_dropped_no_region": 41,
+   "cells": 1602,
+   "mean_opens": 19.62,
+   "opens_wape": 0.321,
+   "opens_cov80_poisson": 0.671,
+   "opens_rate_spearman": 0.683,
+   "net_mae_B2_over_B0": 0.802,
+   "net_sign_acc": 0.696,
+   "net_increase_share": 0.494,
+   "focus": {}
+  },
+  {
+   "region": "구",
+   "industry": "인허가종류",
+   "horizon_years": 1,
+   "val_years": [
+    2020,
+    2021,
+    2022
+   ],
+   "rows_dropped_no_region": 41,
+   "cells": 933,
+   "mean_opens": 25.07,
+   "opens_wape": 0.189,
+   "opens_cov80_poisson": 0.705,
+   "opens_rate_spearman": 0.629,
+   "net_mae_B2_over_B0": 0.857,
+   "net_sign_acc": 0.688,
+   "net_increase_share": 0.51
+  },
+  {
+   "region": "구",
+   "industry": "인허가종류",
+   "horizon_years": 2,
+   "val_years": [
+    2020,
+    2021
+   ],
+   "rows_dropped_no_region": 41,
+   "cells": 622,
+   "mean_opens": 50.61,
+   "opens_wape": 0.177,
+   "opens_cov80_poisson": 0.585,
+   "opens_rate_spearman": 0.706,
+   "net_mae_B2_over_B0": 0.809,
+   "net_sign_acc": 0.698,
+   "net_increase_share": 0.52
+  },
+  {
+   "region": "격자500m",
+   "industry": "세부업종",
+   "horizon_years": 1,
+   "val_years": [
+    2020,
+    2021,
+    2022
+   ],
+   "rows_dropped_no_region": 12383,
+   "cells": 63023,
+   "mean_opens": 0.33,
+   "opens_wape": 1.14,
+   "opens_cov80_poisson": 0.939,
+   "opens_rate_spearman": 0.388,
+   "net_mae_B2_over_B0": 1.392,
+   "net_sign_acc": 0.557,
+   "net_increase_share": 0.463,
+   "focus": {
+    "한식": {
+     "cells": 3265,
+     "mean_opens": 0.83,
+     "opens_wape": 0.78,
+     "opens_cov80_poisson": 0.909,
+     "opens_rate_spearman": 0.414,
+     "net_mae_B2_over_B0": 1.216,
+     "net_sign_acc": 0.577,
+     "net_increase_share": 0.382
+    },
+    "커피숍": {
+     "cells": 2120,
+     "mean_opens": 0.96,
+     "opens_wape": 0.782,
+     "opens_cov80_poisson": 0.895,
+     "opens_rate_spearman": 0.163,
+     "net_mae_B2_over_B0": 1.22,
+     "net_sign_acc": 0.56,
+     "net_increase_share": 0.653
+    },
+    "일반미용업": {
+     "cells": 1929,
+     "mean_opens": 0.65,
+     "opens_wape": 1.008,
+     "opens_cov80_poisson": 0.895,
+     "opens_rate_spearman": 0.12,
+     "net_mae_B2_over_B0": 1.3,
+     "net_sign_acc": 0.511,
+     "net_increase_share": 0.537
+    },
+    "편의점": {
+     "cells": 1445,
+     "mean_opens": 0.4,
+     "opens_wape": 1.382,
+     "opens_cov80_poisson": 0.922,
+     "opens_rate_spearman": 0.248,
+     "net_mae_B2_over_B0": 1.527,
+     "net_sign_acc": 0.664,
+     "net_increase_share": 0.782
+    },
+    "호프/통닭": {
+     "cells": 1705,
+     "mean_opens": 0.3,
+     "opens_wape": 1.403,
+     "opens_cov80_poisson": 0.93,
+     "opens_rate_spearman": 0.203,
+     "net_mae_B2_over_B0": 1.376,
+     "net_sign_acc": 0.562,
+     "net_increase_share": 0.325
+    }
+   }
+  },
+  {
+   "region": "격자500m",
+   "industry": "세부업종",
+   "horizon_years": 2,
+   "val_years": [
+    2020,
+    2021
+   ],
+   "rows_dropped_no_region": 12383,
+   "cells": 41880,
+   "mean_opens": 0.66,
+   "opens_wape": 0.982,
+   "opens_cov80_poisson": 0.893,
+   "opens_rate_spearman": 0.468,
+   "net_mae_B2_over_B0": 1.433,
+   "net_sign_acc": 0.57,
+   "net_increase_share": 0.446,
+   "focus": {
+    "한식": {
+     "cells": 2185,
+     "mean_opens": 1.65,
+     "opens_wape": 0.666,
+     "opens_cov80_poisson": 0.845,
+     "opens_rate_spearman": 0.48,
+     "net_mae_B2_over_B0": 1.289,
+     "net_sign_acc": 0.592,
+     "net_increase_share": 0.361
+    },
+    "커피숍": {
+     "cells": 1395,
+     "mean_opens": 1.97,
+     "opens_wape": 0.631,
+     "opens_cov80_poisson": 0.806,
+     "opens_rate_spearman": 0.228,
+     "net_mae_B2_over_B0": 1.234,
+     "net_sign_acc": 0.559,
+     "net_increase_share": 0.691
+    },
+    "일반미용업": {
+     "cells": 1287,
+     "mean_opens": 1.31,
+     "opens_wape": 0.824,
+     "opens_cov80_poisson": 0.826,
+     "opens_rate_spearman": 0.224,
+     "net_mae_B2_over_B0": 1.367,
+     "net_sign_acc": 0.531,
+     "net_increase_share": 0.526
+    },
+    "편의점": {
+     "cells": 928,
+     "mean_opens": 0.8,
+     "opens_wape": 1.136,
+     "opens_cov80_poisson": 0.873,
+     "opens_rate_spearman": 0.15,
+     "net_mae_B2_over_B0": 1.375,
+     "net_sign_acc": 0.68,
+     "net_increase_share": 0.817
+    },
+    "호프/통닭": {
+     "cells": 1139,
+     "mean_opens": 0.6,
+     "opens_wape": 1.224,
+     "opens_cov80_poisson": 0.88,
+     "opens_rate_spearman": 0.23,
+     "net_mae_B2_over_B0": 1.453,
+     "net_sign_acc": 0.575,
+     "net_increase_share": 0.289
+    }
+   }
+  },
+  {
+   "region": "격자500m",
+   "industry": "인허가종류",
+   "horizon_years": 1,
+   "val_years": [
+    2020,
+    2021,
+    2022
+   ],
+   "rows_dropped_no_region": 12383,
+   "cells": 35811,
+   "mean_opens": 0.62,
+   "opens_wape": 0.796,
+   "opens_cov80_poisson": 0.928,
+   "opens_rate_spearman": 0.417,
+   "net_mae_B2_over_B0": 1.323,
+   "net_sign_acc": 0.56,
+   "net_increase_share": 0.49
+  },
+  {
+   "region": "격자500m",
+   "industry": "인허가종류",
+   "horizon_years": 2,
+   "val_years": [
+    2020,
+    2021
+   ],
+   "rows_dropped_no_region": 12383,
+   "cells": 23845,
+   "mean_opens": 1.25,
+   "opens_wape": 0.682,
+   "opens_cov80_poisson": 0.874,
+   "opens_rate_spearman": 0.508,
+   "net_mae_B2_over_B0": 1.378,
+   "net_sign_acc": 0.57,
+   "net_increase_share": 0.474
+  },
+  {
+   "region": "격자1km",
+   "industry": "세부업종",
+   "horizon_years": 1,
+   "val_years": [
+    2020,
+    2021,
+    2022
+   ],
+   "rows_dropped_no_region": 12383,
+   "cells": 32342,
+   "mean_opens": 0.68,
+   "opens_wape": 0.804,
+   "opens_cov80_poisson": 0.92,
+   "opens_rate_spearman": 0.482,
+   "net_mae_B2_over_B0": 1.255,
+   "net_sign_acc": 0.586,
+   "net_increase_share": 0.476,
+   "focus": {
+    "한식": {
+     "cells": 1460,
+     "mean_opens": 1.87,
+     "opens_wape": 0.497,
+     "opens_cov80_poisson": 0.897,
+     "opens_rate_spearman": 0.519,
+     "net_mae_B2_over_B0": 1.167,
+     "net_sign_acc": 0.602,
+     "net_increase_share": 0.357
+    },
+    "커피숍": {
+     "cells": 906,
+     "mean_opens": 2.32,
+     "opens_wape": 0.524,
+     "opens_cov80_poisson": 0.853,
+     "opens_rate_spearman": 0.288,
+     "net_mae_B2_over_B0": 1.055,
+     "net_sign_acc": 0.66,
+     "net_increase_share": 0.707
+    },
+    "일반미용업": {
+     "cells": 743,
+     "mean_opens": 1.71,
+     "opens_wape": 0.631,
+     "opens_cov80_poisson": 0.849,
+     "opens_rate_spearman": 0.198,
+     "net_mae_B2_over_B0": 1.215,
+     "net_sign_acc": 0.496,
+     "net_increase_share": 0.549
+    },
+    "편의점": {
+     "cells": 670,
+     "mean_opens": 1.04,
+     "opens_wape": 0.814,
+     "opens_cov80_poisson": 0.876,
+     "opens_rate_spearman": 0.19,
+     "net_mae_B2_over_B0": 1.053,
+     "net_sign_acc": 0.807,
+     "net_increase_share": 0.861
+    },
+    "호프/통닭": {
+     "cells": 686,
+     "mean_opens": 0.79,
+     "opens_wape": 0.903,
+     "opens_cov80_poisson": 0.915,
+     "opens_rate_spearman": 0.311,
+     "net_mae_B2_over_B0": 1.214,
+     "net_sign_acc": 0.624,
+     "net_increase_share": 0.318
+    }
+   }
+  },
+  {
+   "region": "격자1km",
+   "industry": "세부업종",
+   "horizon_years": 2,
+   "val_years": [
+    2020,
+    2021
+   ],
+   "rows_dropped_no_region": 12383,
+   "cells": 21473,
+   "mean_opens": 1.38,
+   "opens_wape": 0.7,
+   "opens_cov80_poisson": 0.862,
+   "opens_rate_spearman": 0.565,
+   "net_mae_B2_over_B0": 1.279,
+   "net_sign_acc": 0.598,
+   "net_increase_share": 0.466,
+   "focus": {
+    "한식": {
+     "cells": 975,
+     "mean_opens": 3.72,
+     "opens_wape": 0.438,
+     "opens_cov80_poisson": 0.821,
+     "opens_rate_spearman": 0.555,
+     "net_mae_B2_over_B0": 1.281,
+     "net_sign_acc": 0.599,
+     "net_increase_share": 0.34
+    },
+    "커피숍": {
+     "cells": 593,
+     "mean_opens": 4.77,
+     "opens_wape": 0.432,
+     "opens_cov80_poisson": 0.779,
+     "opens_rate_spearman": 0.368,
+     "net_mae_B2_over_B0": 1.005,
+     "net_sign_acc": 0.65,
+     "net_increase_share": 0.755
+    },
+    "일반미용업": {
+     "cells": 496,
+     "mean_opens": 3.43,
+     "opens_wape": 0.51,
+     "opens_cov80_poisson": 0.76,
+     "opens_rate_spearman": 0.303,
+     "net_mae_B2_over_B0": 1.296,
+     "net_sign_acc": 0.544,
+     "net_increase_share": 0.575
+    },
+    "편의점": {
+     "cells": 440,
+     "mean_opens": 2.11,
+     "opens_wape": 0.713,
+     "opens_cov80_poisson": 0.789,
+     "opens_rate_spearman": 0.215,
+     "net_mae_B2_over_B0": 0.878,
+     "net_sign_acc": 0.82,
+     "net_increase_share": 0.881
+    },
+    "호프/통닭": {
+     "cells": 457,
+     "mean_opens": 1.58,
+     "opens_wape": 0.768,
+     "opens_cov80_poisson": 0.847,
+     "opens_rate_spearman": 0.404,
+     "net_mae_B2_over_B0": 1.245,
+     "net_sign_acc": 0.64,
+     "net_increase_share": 0.273
+    }
+   }
+  },
+  {
+   "region": "격자1km",
+   "industry": "인허가종류",
+   "horizon_years": 1,
+   "val_years": [
+    2020,
+    2021,
+    2022
+   ],
+   "rows_dropped_no_region": 12383,
+   "cells": 17451,
+   "mean_opens": 1.3,
+   "opens_wape": 0.546,
+   "opens_cov80_poisson": 0.906,
+   "opens_rate_spearman": 0.506,
+   "net_mae_B2_over_B0": 1.22,
+   "net_sign_acc": 0.585,
+   "net_increase_share": 0.491
+  },
+  {
+   "region": "격자1km",
+   "industry": "인허가종류",
+   "horizon_years": 2,
+   "val_years": [
+    2020,
+    2021
+   ],
+   "rows_dropped_no_region": 12383,
+   "cells": 11607,
+   "mean_opens": 2.64,
+   "opens_wape": 0.469,
+   "opens_cov80_poisson": 0.845,
+   "opens_rate_spearman": 0.589,
+   "net_mae_B2_over_B0": 1.246,
+   "net_sign_acc": 0.6,
+   "net_increase_share": 0.48
+  }
+ ]
+}
