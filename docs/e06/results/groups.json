@@ -1,0 +1,1331 @@
+{
+ "plan": "docs/e06/models_plan.md#변경-기록 (2)",
+ "input_sha256": "e011e410c8779e2d5a37c1bce169e56d70efde292e943d92ec5f8338fab24091",
+ "groups": {
+  "카페류": {
+   "members_present": [
+    "커피숍",
+    "다방",
+    "전통찻집",
+    "라이브카페",
+    "키즈카페"
+   ],
+   "members_missing": [],
+   "group": {
+    "unit": "동",
+    "dev_mean_opens_dong": 3.77,
+    "dev_cov80_B4_dong": 0.79,
+    "dev_mean_opens_gu": 75.06,
+    "val_dong": {
+     "cells": 565,
+     "mean_opens": 3.91,
+     "wape": 0.375,
+     "cov80_poisson": 0.86,
+     "cov80_negbin": 0.927,
+     "alpha_dev": 0.1455,
+     "net_sign_acc": 0.732,
+     "net_majority": 0.67,
+     "net_nonzero": 370,
+     "show_direction": true
+    },
+    "val_gu": {
+     "cells": 27,
+     "mean_opens": 82.11,
+     "wape": 0.147,
+     "cov80_poisson": 0.519,
+     "cov80_negbin": 0.889,
+     "alpha_dev": 0.0675,
+     "net_sign_acc": 0.923,
+     "net_majority": 0.808,
+     "net_nonzero": 26,
+     "show_direction": true
+    }
+   },
+   "members": {
+    "커피숍": {
+     "unit": "동",
+     "dev_mean_opens_dong": 4.0,
+     "dev_cov80_B4_dong": 0.787,
+     "dev_mean_opens_gu": 71.26,
+     "val_dong": {
+      "cells": 535,
+      "mean_opens": 4.04,
+      "wape": 0.378,
+      "cov80_poisson": 0.852,
+      "cov80_negbin": 0.936,
+      "alpha_dev": 0.1447,
+      "net_sign_acc": 0.776,
+      "net_majority": 0.714,
+      "net_nonzero": 357,
+      "show_direction": true
+     },
+     "val_gu": {
+      "cells": 27,
+      "mean_opens": 80.48,
+      "wape": 0.162,
+      "cov80_poisson": 0.481,
+      "cov80_negbin": 0.852,
+      "alpha_dev": 0.0683,
+      "net_sign_acc": 0.926,
+      "net_majority": 0.815,
+      "net_nonzero": 27,
+      "show_direction": true
+     }
+    },
+    "다방": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.14,
+     "dev_cov80_B4_dong": 0.956,
+     "dev_mean_opens_gu": 1.89,
+     "val_dong": {
+      "cells": 337,
+      "mean_opens": 0.06,
+      "wape": 2.366,
+      "cov80_poisson": 0.973,
+      "cov80_negbin": 0.976,
+      "alpha_dev": 0.5414,
+      "net_sign_acc": 0.865,
+      "net_majority": 0.944,
+      "net_nonzero": 89,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 27,
+      "mean_opens": 0.78,
+      "wape": 1.238,
+      "cov80_poisson": 0.889,
+      "cov80_negbin": 0.926,
+      "alpha_dev": 0.5327,
+      "net_sign_acc": 0.923,
+      "net_majority": 1.0,
+      "net_nonzero": 26,
+      "show_direction": false
+     }
+    },
+    "전통찻집": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.06,
+     "dev_cov80_B4_dong": 0.984,
+     "dev_mean_opens_gu": 0.62,
+     "val_dong": {
+      "cells": 99,
+      "mean_opens": 0.03,
+      "wape": 4.87,
+      "cov80_poisson": 0.99,
+      "cov80_negbin": 0.99,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.5,
+      "net_majority": 0.625,
+      "net_nonzero": 8,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 26,
+      "mean_opens": 0.27,
+      "wape": 2.0,
+      "cov80_poisson": 0.923,
+      "cov80_negbin": 0.923,
+      "alpha_dev": 0.0671,
+      "net_sign_acc": 0.5,
+      "net_majority": 0.5,
+      "net_nonzero": 10,
+      "show_direction": false
+     }
+    },
+    "라이브카페": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.11,
+     "dev_cov80_B4_dong": 0.941,
+     "dev_mean_opens_gu": 0.63,
+     "val_dong": {
+      "cells": 69,
+      "mean_opens": 0.06,
+      "wape": 3.16,
+      "cov80_poisson": 0.971,
+      "cov80_negbin": 0.971,
+      "alpha_dev": 0.9345,
+      "net_sign_acc": 0.455,
+      "net_majority": 0.727,
+      "net_nonzero": 11,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 15,
+      "mean_opens": 0.53,
+      "wape": 1.5,
+      "cov80_poisson": 0.867,
+      "cov80_negbin": 0.933,
+      "alpha_dev": 0.5676,
+      "net_sign_acc": 0.545,
+      "net_majority": 0.545,
+      "net_nonzero": 11,
+      "show_direction": false
+     }
+    },
+    "키즈카페": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.16,
+     "dev_cov80_B4_dong": 0.989,
+     "dev_mean_opens_gu": 1.46,
+     "val_dong": {
+      "cells": 111,
+      "mean_opens": 0.04,
+      "wape": 6.883,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.615,
+      "net_majority": 0.846,
+      "net_nonzero": 13,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 24,
+      "mean_opens": 0.33,
+      "wape": 2.708,
+      "cov80_poisson": 0.875,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.7976,
+      "net_sign_acc": 0.545,
+      "net_majority": 0.727,
+      "net_nonzero": 11,
+      "show_direction": false
+     }
+    }
+   },
+   "newly_local": [
+    "다방",
+    "전통찻집",
+    "라이브카페",
+    "키즈카페"
+   ]
+  },
+  "디저트·빵": {
+   "members_present": [
+    "제과점영업",
+    "과자점",
+    "아이스크림",
+    "떡카페"
+   ],
+   "members_missing": [],
+   "group": {
+    "unit": "구",
+    "dev_mean_opens_dong": 1.04,
+    "dev_cov80_B4_dong": 0.901,
+    "dev_mean_opens_gu": 14.98,
+    "val_dong": {
+     "cells": 395,
+     "mean_opens": 0.87,
+     "wape": 0.872,
+     "cov80_poisson": 0.906,
+     "cov80_negbin": 0.916,
+     "alpha_dev": 0.2924,
+     "net_sign_acc": 0.472,
+     "net_majority": 0.538,
+     "net_nonzero": 199,
+     "show_direction": false
+    },
+    "val_gu": {
+     "cells": 27,
+     "mean_opens": 13.04,
+     "wape": 0.287,
+     "cov80_poisson": 0.741,
+     "cov80_negbin": 0.741,
+     "alpha_dev": 0.07,
+     "net_sign_acc": 0.481,
+     "net_majority": 0.778,
+     "net_nonzero": 27,
+     "show_direction": false
+    }
+   },
+   "members": {
+    "제과점영업": {
+     "unit": "구",
+     "dev_mean_opens_dong": 0.93,
+     "dev_cov80_B4_dong": 0.901,
+     "dev_mean_opens_gu": 13.31,
+     "val_dong": {
+      "cells": 390,
+      "mean_opens": 0.76,
+      "wape": 0.928,
+      "cov80_poisson": 0.91,
+      "cov80_negbin": 0.915,
+      "alpha_dev": 0.3124,
+      "net_sign_acc": 0.487,
+      "net_majority": 0.503,
+      "net_nonzero": 193,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 27,
+      "mean_opens": 11.44,
+      "wape": 0.318,
+      "cov80_poisson": 0.778,
+      "cov80_negbin": 0.852,
+      "alpha_dev": 0.0789,
+      "net_sign_acc": 0.577,
+      "net_majority": 0.654,
+      "net_nonzero": 26,
+      "show_direction": false
+     }
+    },
+    "과자점": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.09,
+     "dev_cov80_B4_dong": 0.988,
+     "dev_mean_opens_gu": 0.67,
+     "val_dong": {
+      "cells": 78,
+      "mean_opens": 0.0,
+      "wape": 0.0,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 1.0,
+      "net_majority": 1.0,
+      "net_nonzero": 9,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 21,
+      "mean_opens": 0.0,
+      "wape": 0.0,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.3462,
+      "net_sign_acc": 1.0,
+      "net_majority": 1.0,
+      "net_nonzero": 8,
+      "show_direction": false
+     }
+    },
+    "아이스크림": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.07,
+     "dev_cov80_B4_dong": 0.974,
+     "dev_mean_opens_gu": 0.97,
+     "val_dong": {
+      "cells": 127,
+      "mean_opens": 0.09,
+      "wape": 2.299,
+      "cov80_poisson": 0.945,
+      "cov80_negbin": 0.945,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.476,
+      "net_majority": 0.571,
+      "net_nonzero": 21,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 24,
+      "mean_opens": 1.25,
+      "wape": 0.678,
+      "cov80_poisson": 0.792,
+      "cov80_negbin": 0.833,
+      "alpha_dev": 0.4765,
+      "net_sign_acc": 0.667,
+      "net_majority": 0.722,
+      "net_nonzero": 18,
+      "show_direction": false
+     }
+    },
+    "떡카페": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.0,
+     "dev_cov80_B4_dong": 1.0,
+     "dev_mean_opens_gu": 0.53,
+     "val_dong": {
+      "cells": 25,
+      "mean_opens": 0.08,
+      "wape": 3.2,
+      "cov80_poisson": 0.96,
+      "cov80_negbin": 0.96,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.25,
+      "net_majority": 0.75,
+      "net_nonzero": 4,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 8,
+      "mean_opens": 0.75,
+      "wape": 1.111,
+      "cov80_poisson": 0.875,
+      "cov80_negbin": 0.875,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.333,
+      "net_majority": 0.667,
+      "net_nonzero": 3,
+      "show_direction": false
+     }
+    }
+   },
+   "newly_local": [
+    "과자점",
+    "아이스크림",
+    "떡카페"
+   ]
+  },
+  "분식·김밥": {
+   "members_present": [
+    "분식",
+    "김밥(도시락)"
+   ],
+   "members_missing": [],
+   "group": {
+    "unit": "구",
+    "dev_mean_opens_dong": 1.11,
+    "dev_cov80_B4_dong": 0.888,
+    "dev_mean_opens_gu": 18.17,
+    "val_dong": {
+     "cells": 450,
+     "mean_opens": 0.88,
+     "wape": 0.784,
+     "cov80_poisson": 0.931,
+     "cov80_negbin": 0.951,
+     "alpha_dev": 0.2452,
+     "net_sign_acc": 0.517,
+     "net_majority": 0.594,
+     "net_nonzero": 234,
+     "show_direction": false
+    },
+    "val_gu": {
+     "cells": 27,
+     "mean_opens": 15.04,
+     "wape": 0.312,
+     "cov80_poisson": 0.593,
+     "cov80_negbin": 0.889,
+     "alpha_dev": 0.1102,
+     "net_sign_acc": 0.519,
+     "net_majority": 0.63,
+     "net_nonzero": 27,
+     "show_direction": false
+    }
+   },
+   "members": {
+    "분식": {
+     "unit": "구",
+     "dev_mean_opens_dong": 1.01,
+     "dev_cov80_B4_dong": 0.892,
+     "dev_mean_opens_gu": 16.04,
+     "val_dong": {
+      "cells": 431,
+      "mean_opens": 0.8,
+      "wape": 0.813,
+      "cov80_poisson": 0.94,
+      "cov80_negbin": 0.951,
+      "alpha_dev": 0.2795,
+      "net_sign_acc": 0.516,
+      "net_majority": 0.594,
+      "net_nonzero": 217,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 27,
+      "mean_opens": 13.11,
+      "wape": 0.331,
+      "cov80_poisson": 0.704,
+      "cov80_negbin": 0.889,
+      "alpha_dev": 0.1213,
+      "net_sign_acc": 0.52,
+      "net_majority": 0.52,
+      "net_nonzero": 25,
+      "show_direction": false
+     }
+    },
+    "김밥(도시락)": {
+     "unit": "구",
+     "dev_mean_opens_dong": 0.17,
+     "dev_cov80_B4_dong": 0.962,
+     "dev_mean_opens_gu": 2.4,
+     "val_dong": {
+      "cells": 296,
+      "mean_opens": 0.15,
+      "wape": 1.498,
+      "cov80_poisson": 0.97,
+      "cov80_negbin": 0.97,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.697,
+      "net_majority": 0.591,
+      "net_nonzero": 66,
+      "show_direction": true
+     },
+     "val_gu": {
+      "cells": 24,
+      "mean_opens": 2.17,
+      "wape": 0.821,
+      "cov80_poisson": 0.708,
+      "cov80_negbin": 0.792,
+      "alpha_dev": 0.1968,
+      "net_sign_acc": 0.619,
+      "net_majority": 0.619,
+      "net_nonzero": 21,
+      "show_direction": false
+     }
+    }
+   },
+   "newly_local": []
+  },
+  "주점": {
+   "members_present": [
+    "호프/통닭",
+    "정종/대포집/소주방",
+    "감성주점"
+   ],
+   "members_missing": [],
+   "group": {
+    "unit": "동",
+    "dev_mean_opens_dong": 2.11,
+    "dev_cov80_B4_dong": 0.859,
+    "dev_mean_opens_gu": 36.87,
+    "val_dong": {
+     "cells": 475,
+     "mean_opens": 1.41,
+     "wape": 0.685,
+     "cov80_poisson": 0.897,
+     "cov80_negbin": 0.933,
+     "alpha_dev": 0.1583,
+     "net_sign_acc": 0.631,
+     "net_majority": 0.668,
+     "net_nonzero": 268,
+     "show_direction": false
+    },
+    "val_gu": {
+     "cells": 27,
+     "mean_opens": 25.0,
+     "wape": 0.318,
+     "cov80_poisson": 0.481,
+     "cov80_negbin": 0.778,
+     "alpha_dev": 0.0578,
+     "net_sign_acc": 0.704,
+     "net_majority": 0.741,
+     "net_nonzero": 27,
+     "show_direction": false
+    }
+   },
+   "members": {
+    "호프/통닭": {
+     "unit": "구",
+     "dev_mean_opens_dong": 1.74,
+     "dev_cov80_B4_dong": 0.874,
+     "dev_mean_opens_gu": 29.72,
+     "val_dong": {
+      "cells": 455,
+      "mean_opens": 1.21,
+      "wape": 0.718,
+      "cov80_poisson": 0.916,
+      "cov80_negbin": 0.941,
+      "alpha_dev": 0.1392,
+      "net_sign_acc": 0.678,
+      "net_majority": 0.686,
+      "net_nonzero": 258,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 27,
+      "mean_opens": 20.48,
+      "wape": 0.298,
+      "cov80_poisson": 0.519,
+      "cov80_negbin": 0.778,
+      "alpha_dev": 0.0554,
+      "net_sign_acc": 0.808,
+      "net_majority": 0.769,
+      "net_nonzero": 26,
+      "show_direction": false
+     }
+    },
+    "정종/대포집/소주방": {
+     "unit": "구",
+     "dev_mean_opens_dong": 0.61,
+     "dev_cov80_B4_dong": 0.89,
+     "dev_mean_opens_gu": 7.15,
+     "val_dong": {
+      "cells": 322,
+      "mean_opens": 0.33,
+      "wape": 1.539,
+      "cov80_poisson": 0.922,
+      "cov80_negbin": 0.935,
+      "alpha_dev": 0.4499,
+      "net_sign_acc": 0.581,
+      "net_majority": 0.674,
+      "net_nonzero": 129,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 27,
+      "mean_opens": 4.44,
+      "wape": 0.883,
+      "cov80_poisson": 0.444,
+      "cov80_negbin": 0.593,
+      "alpha_dev": 0.2715,
+      "net_sign_acc": 0.52,
+      "net_majority": 0.68,
+      "net_nonzero": 25,
+      "show_direction": false
+     }
+    },
+    "감성주점": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.0,
+     "dev_cov80_B4_dong": 1.0,
+     "dev_mean_opens_gu": 0.0,
+     "val_dong": {
+      "cells": 4,
+      "mean_opens": 0.0,
+      "wape": 0.333,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.0,
+      "net_majority": 1.0,
+      "net_nonzero": 1,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 3,
+      "mean_opens": 0.67,
+      "wape": 0.833,
+      "cov80_poisson": 0.667,
+      "cov80_negbin": 0.667,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.0,
+      "net_majority": 1.0,
+      "net_nonzero": 1,
+      "show_direction": false
+     }
+    }
+   },
+   "newly_local": [
+    "감성주점"
+   ]
+  },
+  "양식": {
+   "members_present": [
+    "경양식",
+    "패밀리레스트랑"
+   ],
+   "members_missing": [],
+   "group": {
+    "unit": "구",
+    "dev_mean_opens_dong": 1.64,
+    "dev_cov80_B4_dong": 0.832,
+    "dev_mean_opens_gu": 24.94,
+    "val_dong": {
+     "cells": 426,
+     "mean_opens": 1.31,
+     "wape": 0.748,
+     "cov80_poisson": 0.876,
+     "cov80_negbin": 0.918,
+     "alpha_dev": 0.3893,
+     "net_sign_acc": 0.496,
+     "net_majority": 0.509,
+     "net_nonzero": 228,
+     "show_direction": false
+    },
+    "val_gu": {
+     "cells": 27,
+     "mean_opens": 20.93,
+     "wape": 0.389,
+     "cov80_poisson": 0.63,
+     "cov80_negbin": 0.852,
+     "alpha_dev": 0.2671,
+     "net_sign_acc": 0.708,
+     "net_majority": 0.625,
+     "net_nonzero": 24,
+     "show_direction": true
+    }
+   },
+   "members": {
+    "경양식": {
+     "unit": "구",
+     "dev_mean_opens_dong": 1.63,
+     "dev_cov80_B4_dong": 0.833,
+     "dev_mean_opens_gu": 24.7,
+     "val_dong": {
+      "cells": 426,
+      "mean_opens": 1.31,
+      "wape": 0.745,
+      "cov80_poisson": 0.873,
+      "cov80_negbin": 0.915,
+      "alpha_dev": 0.3952,
+      "net_sign_acc": 0.5,
+      "net_majority": 0.513,
+      "net_nonzero": 228,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 27,
+      "mean_opens": 20.85,
+      "wape": 0.388,
+      "cov80_poisson": 0.556,
+      "cov80_negbin": 0.852,
+      "alpha_dev": 0.2697,
+      "net_sign_acc": 0.708,
+      "net_majority": 0.625,
+      "net_nonzero": 24,
+      "show_direction": true
+     }
+    },
+    "패밀리레스트랑": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.1,
+     "dev_cov80_B4_dong": 1.0,
+     "dev_mean_opens_gu": 0.67,
+     "val_dong": {
+      "cells": 25,
+      "mean_opens": 0.0,
+      "wape": 5.556,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.6,
+      "net_majority": 1.0,
+      "net_nonzero": 5,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 11,
+      "mean_opens": 0.09,
+      "wape": 6.0,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.5385,
+      "net_sign_acc": 0.5,
+      "net_majority": 1.0,
+      "net_nonzero": 4,
+      "show_direction": false
+     }
+    }
+   },
+   "newly_local": [
+    "패밀리레스트랑"
+   ]
+  },
+  "한식류": {
+   "members_present": [
+    "한식",
+    "냉면집",
+    "탕류(보신용)",
+    "복어취급"
+   ],
+   "members_missing": [],
+   "group": {
+    "unit": "동",
+    "dev_mean_opens_dong": 5.03,
+    "dev_cov80_B4_dong": 0.8,
+    "dev_mean_opens_gu": 113.48,
+    "val_dong": {
+     "cells": 609,
+     "mean_opens": 4.57,
+     "wape": 0.399,
+     "cov80_poisson": 0.854,
+     "cov80_negbin": 0.913,
+     "alpha_dev": 0.1157,
+     "net_sign_acc": 0.515,
+     "net_majority": 0.65,
+     "net_nonzero": 437,
+     "show_direction": false
+    },
+    "val_gu": {
+     "cells": 27,
+     "mean_opens": 103.04,
+     "wape": 0.199,
+     "cov80_poisson": 0.519,
+     "cov80_negbin": 0.889,
+     "alpha_dev": 0.0794,
+     "net_sign_acc": 0.407,
+     "net_majority": 0.63,
+     "net_nonzero": 27,
+     "show_direction": false
+    }
+   },
+   "members": {
+    "한식": {
+     "unit": "동",
+     "dev_mean_opens_dong": 5.04,
+     "dev_cov80_B4_dong": 0.8,
+     "dev_mean_opens_gu": 112.43,
+     "val_dong": {
+      "cells": 600,
+      "mean_opens": 4.61,
+      "wape": 0.398,
+      "cov80_poisson": 0.858,
+      "cov80_negbin": 0.915,
+      "alpha_dev": 0.1195,
+      "net_sign_acc": 0.516,
+      "net_majority": 0.644,
+      "net_nonzero": 436,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 27,
+      "mean_opens": 102.56,
+      "wape": 0.197,
+      "cov80_poisson": 0.519,
+      "cov80_negbin": 0.889,
+      "alpha_dev": 0.082,
+      "net_sign_acc": 0.407,
+      "net_majority": 0.63,
+      "net_nonzero": 27,
+      "show_direction": false
+     }
+    },
+    "냉면집": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.05,
+     "dev_cov80_B4_dong": 0.958,
+     "dev_mean_opens_gu": 0.64,
+     "val_dong": {
+      "cells": 105,
+      "mean_opens": 0.04,
+      "wape": 3.625,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.1417,
+      "net_sign_acc": 0.8,
+      "net_majority": 0.6,
+      "net_nonzero": 10,
+      "show_direction": true
+     },
+     "val_gu": {
+      "cells": 18,
+      "mean_opens": 0.33,
+      "wape": 1.944,
+      "cov80_poisson": 0.889,
+      "cov80_negbin": 0.944,
+      "alpha_dev": 0.521,
+      "net_sign_acc": 0.75,
+      "net_majority": 0.625,
+      "net_nonzero": 8,
+      "show_direction": true
+     }
+    },
+    "탕류(보신용)": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.05,
+     "dev_cov80_B4_dong": 0.979,
+     "dev_mean_opens_gu": 0.52,
+     "val_dong": {
+      "cells": 214,
+      "mean_opens": 0.0,
+      "wape": 8.0,
+      "cov80_poisson": 0.995,
+      "cov80_negbin": 0.995,
+      "alpha_dev": 0.0095,
+      "net_sign_acc": 0.926,
+      "net_majority": 1.0,
+      "net_nonzero": 27,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 27,
+      "mean_opens": 0.07,
+      "wape": 3.833,
+      "cov80_poisson": 0.963,
+      "cov80_negbin": 0.963,
+      "alpha_dev": 0.361,
+      "net_sign_acc": 0.875,
+      "net_majority": 1.0,
+      "net_nonzero": 16,
+      "show_direction": false
+     }
+    },
+    "복어취급": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.01,
+     "dev_cov80_B4_dong": 0.989,
+     "dev_mean_opens_gu": 0.19,
+     "val_dong": {
+      "cells": 138,
+      "mean_opens": 0.02,
+      "wape": 3.111,
+      "cov80_poisson": 0.986,
+      "cov80_negbin": 0.986,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.706,
+      "net_majority": 0.824,
+      "net_nonzero": 17,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 24,
+      "mean_opens": 0.21,
+      "wape": 1.6,
+      "cov80_poisson": 0.958,
+      "cov80_negbin": 0.958,
+      "alpha_dev": 3.375,
+      "net_sign_acc": 0.462,
+      "net_majority": 0.692,
+      "net_nonzero": 13,
+      "show_direction": false
+     }
+    }
+   },
+   "newly_local": [
+    "냉면집",
+    "탕류(보신용)",
+    "복어취급"
+   ]
+  },
+  "체육도장": {
+   "members_present": [
+    "태권도",
+    "합기도",
+    "검도",
+    "유도",
+    "권투",
+    "우슈",
+    "레슬링",
+    "체육도장업"
+   ],
+   "members_missing": [],
+   "group": {
+    "unit": "구",
+    "dev_mean_opens_dong": 0.38,
+    "dev_cov80_B4_dong": 0.919,
+    "dev_mean_opens_gu": 4.61,
+    "val_dong": {
+     "cells": 316,
+     "mean_opens": 0.51,
+     "wape": 1.2,
+     "cov80_poisson": 0.877,
+     "cov80_negbin": 0.886,
+     "alpha_dev": 0.3591,
+     "net_sign_acc": 0.398,
+     "net_majority": 0.626,
+     "net_nonzero": 123,
+     "show_direction": false
+    },
+    "val_gu": {
+     "cells": 27,
+     "mean_opens": 6.0,
+     "wape": 0.712,
+     "cov80_poisson": 0.481,
+     "cov80_negbin": 0.63,
+     "alpha_dev": 0.1728,
+     "net_sign_acc": 0.304,
+     "net_majority": 0.783,
+     "net_nonzero": 23,
+     "show_direction": false
+    }
+   },
+   "members": {
+    "태권도": {
+     "unit": "구",
+     "dev_mean_opens_dong": 0.25,
+     "dev_cov80_B4_dong": 0.917,
+     "dev_mean_opens_gu": 3.6,
+     "val_dong": {
+      "cells": 299,
+      "mean_opens": 0.16,
+      "wape": 1.666,
+      "cov80_poisson": 0.953,
+      "cov80_negbin": 0.957,
+      "alpha_dev": 0.7945,
+      "net_sign_acc": 0.63,
+      "net_majority": 0.616,
+      "net_nonzero": 73,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 24,
+      "mean_opens": 2.08,
+      "wape": 0.707,
+      "cov80_poisson": 0.917,
+      "cov80_negbin": 0.917,
+      "alpha_dev": 0.223,
+      "net_sign_acc": 0.7,
+      "net_majority": 0.5,
+      "net_nonzero": 20,
+      "show_direction": true
+     }
+    },
+    "합기도": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.0,
+     "dev_cov80_B4_dong": 1.0,
+     "dev_mean_opens_gu": 0.04,
+     "val_dong": {
+      "cells": 108,
+      "mean_opens": 0.09,
+      "wape": 5.267,
+      "cov80_poisson": 0.972,
+      "cov80_negbin": 0.972,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.333,
+      "net_majority": 0.5,
+      "net_nonzero": 12,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 25,
+      "mean_opens": 2.64,
+      "wape": 1.444,
+      "cov80_poisson": 0.52,
+      "cov80_negbin": 0.52,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.462,
+      "net_majority": 0.769,
+      "net_nonzero": 13,
+      "show_direction": false
+     }
+    },
+    "검도": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.01,
+     "dev_cov80_B4_dong": 0.993,
+     "dev_mean_opens_gu": 0.25,
+     "val_dong": {
+      "cells": 79,
+      "mean_opens": 0.01,
+      "wape": 4.056,
+      "cov80_poisson": 0.987,
+      "cov80_negbin": 0.987,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.5,
+      "net_majority": 1.0,
+      "net_nonzero": 2,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 18,
+      "mean_opens": 0.17,
+      "wape": 1.667,
+      "cov80_poisson": 0.944,
+      "cov80_negbin": 0.944,
+      "alpha_dev": 1.1224,
+      "net_sign_acc": 0.5,
+      "net_majority": 0.5,
+      "net_nonzero": 4,
+      "show_direction": false
+     }
+    },
+    "유도": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.01,
+     "dev_cov80_B4_dong": 0.99,
+     "dev_mean_opens_gu": 0.34,
+     "val_dong": {
+      "cells": 85,
+      "mean_opens": 0.05,
+      "wape": 3.528,
+      "cov80_poisson": 0.965,
+      "cov80_negbin": 0.965,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.25,
+      "net_majority": 1.0,
+      "net_nonzero": 4,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 20,
+      "mean_opens": 0.65,
+      "wape": 0.538,
+      "cov80_poisson": 0.95,
+      "cov80_negbin": 0.95,
+      "alpha_dev": 0.55,
+      "net_sign_acc": 0.889,
+      "net_majority": 1.0,
+      "net_nonzero": 9,
+      "show_direction": false
+     }
+    },
+    "권투": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.09,
+     "dev_cov80_B4_dong": 0.944,
+     "dev_mean_opens_gu": 0.98,
+     "val_dong": {
+      "cells": 138,
+      "mean_opens": 0.08,
+      "wape": 2.26,
+      "cov80_poisson": 0.949,
+      "cov80_negbin": 0.949,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.556,
+      "net_majority": 0.5,
+      "net_nonzero": 18,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 23,
+      "mean_opens": 0.74,
+      "wape": 1.078,
+      "cov80_poisson": 0.826,
+      "cov80_negbin": 0.87,
+      "alpha_dev": 0.5923,
+      "net_sign_acc": 0.286,
+      "net_majority": 0.643,
+      "net_nonzero": 14,
+      "show_direction": false
+     }
+    },
+    "우슈": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.0,
+     "dev_cov80_B4_dong": 1.0,
+     "dev_mean_opens_gu": 0.2,
+     "val_dong": {
+      "cells": 12,
+      "mean_opens": 0.08,
+      "wape": 1.333,
+      "cov80_poisson": 0.917,
+      "cov80_negbin": 0.917,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.0,
+      "net_majority": 1.0,
+      "net_nonzero": 1,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 9,
+      "mean_opens": 0.11,
+      "wape": 1.333,
+      "cov80_poisson": 0.889,
+      "cov80_negbin": 0.889,
+      "alpha_dev": 0.1724,
+      "net_sign_acc": 0.0,
+      "net_majority": 1.0,
+      "net_nonzero": 1,
+      "show_direction": false
+     }
+    },
+    "레슬링": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.0,
+     "dev_cov80_B4_dong": 1.0,
+     "dev_mean_opens_gu": 0.0,
+     "val_dong": {
+      "cells": 4,
+      "mean_opens": 0.0,
+      "wape": 0.667,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.0,
+      "net_sign_acc": null,
+      "net_majority": null,
+      "net_nonzero": 0,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 4,
+      "mean_opens": 0.0,
+      "wape": 0.667,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.0,
+      "net_sign_acc": null,
+      "net_majority": null,
+      "net_nonzero": 0,
+      "show_direction": false
+     }
+    },
+    "체육도장업": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.04,
+     "dev_cov80_B4_dong": 0.986,
+     "dev_mean_opens_gu": 0.28,
+     "val_dong": {
+      "cells": 40,
+      "mean_opens": 0.03,
+      "wape": 2.0,
+      "cov80_poisson": 0.975,
+      "cov80_negbin": 0.975,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.9,
+      "net_majority": 0.9,
+      "net_nonzero": 10,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 17,
+      "mean_opens": 0.06,
+      "wape": 2.0,
+      "cov80_poisson": 0.941,
+      "cov80_negbin": 0.941,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 1.0,
+      "net_majority": 1.0,
+      "net_nonzero": 5,
+      "show_direction": false
+     }
+    }
+   },
+   "newly_local": [
+    "합기도",
+    "검도",
+    "유도",
+    "권투",
+    "우슈",
+    "레슬링",
+    "체육도장업"
+   ]
+  },
+  "세탁": {
+   "members_present": [
+    "일반세탁업",
+    "빨래방업",
+    "운동화전문세탁업",
+    "세탁업 기타"
+   ],
+   "members_missing": [],
+   "group": {
+    "unit": "구",
+    "dev_mean_opens_dong": 0.24,
+    "dev_cov80_B4_dong": 0.955,
+    "dev_mean_opens_gu": 3.54,
+    "val_dong": {
+     "cells": 384,
+     "mean_opens": 0.11,
+     "wape": 1.898,
+     "cov80_poisson": 0.977,
+     "cov80_negbin": 0.977,
+     "alpha_dev": 0.0,
+     "net_sign_acc": 0.893,
+     "net_majority": 0.893,
+     "net_nonzero": 149,
+     "show_direction": false
+    },
+    "val_gu": {
+     "cells": 27,
+     "mean_opens": 1.7,
+     "wape": 0.703,
+     "cov80_poisson": 0.926,
+     "cov80_negbin": 0.926,
+     "alpha_dev": 0.0,
+     "net_sign_acc": 1.0,
+     "net_majority": 1.0,
+     "net_nonzero": 24,
+     "show_direction": false
+    }
+   },
+   "members": {
+    "일반세탁업": {
+     "unit": "구",
+     "dev_mean_opens_dong": 0.17,
+     "dev_cov80_B4_dong": 0.956,
+     "dev_mean_opens_gu": 2.5,
+     "val_dong": {
+      "cells": 382,
+      "mean_opens": 0.1,
+      "wape": 1.852,
+      "cov80_poisson": 0.974,
+      "cov80_negbin": 0.974,
+      "alpha_dev": 0.0363,
+      "net_sign_acc": 0.901,
+      "net_majority": 0.901,
+      "net_nonzero": 142,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 27,
+      "mean_opens": 1.48,
+      "wape": 0.708,
+      "cov80_poisson": 0.926,
+      "cov80_negbin": 0.926,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.96,
+      "net_majority": 0.96,
+      "net_nonzero": 25,
+      "show_direction": false
+     }
+    },
+    "빨래방업": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.0,
+     "dev_cov80_B4_dong": 1.0,
+     "dev_mean_opens_gu": 0.12,
+     "val_dong": {
+      "cells": 4,
+      "mean_opens": 0.0,
+      "wape": 1.167,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.0,
+      "net_sign_acc": null,
+      "net_majority": null,
+      "net_nonzero": 0,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 4,
+      "mean_opens": 0.0,
+      "wape": 1.333,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.0,
+      "net_sign_acc": null,
+      "net_majority": null,
+      "net_nonzero": 0,
+      "show_direction": false
+     }
+    },
+    "운동화전문세탁업": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.12,
+     "dev_cov80_B4_dong": 0.97,
+     "dev_mean_opens_gu": 0.83,
+     "val_dong": {
+      "cells": 72,
+      "mean_opens": 0.03,
+      "wape": 5.982,
+      "cov80_poisson": 0.986,
+      "cov80_negbin": 0.986,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.933,
+      "net_majority": 0.933,
+      "net_nonzero": 15,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 21,
+      "mean_opens": 0.14,
+      "wape": 3.111,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.0,
+      "net_sign_acc": 0.818,
+      "net_majority": 0.909,
+      "net_nonzero": 11,
+      "show_direction": false
+     }
+    },
+    "세탁업 기타": {
+     "unit": "대구 추세만",
+     "dev_mean_opens_dong": 0.11,
+     "dev_cov80_B4_dong": 0.933,
+     "dev_mean_opens_gu": 0.36,
+     "val_dong": {
+      "cells": 23,
+      "mean_opens": 0.0,
+      "wape": 5.5,
+      "cov80_poisson": 1.0,
+      "cov80_negbin": 1.0,
+      "alpha_dev": 0.2052,
+      "net_sign_acc": 1.0,
+      "net_majority": 1.0,
+      "net_nonzero": 6,
+      "show_direction": false
+     },
+     "val_gu": {
+      "cells": 13,
+      "mean_opens": 0.15,
+      "wape": 3.833,
+      "cov80_poisson": 0.846,
+      "cov80_negbin": 0.846,
+      "alpha_dev": 1.0,
+      "net_sign_acc": 0.75,
+      "net_majority": 1.0,
+      "net_nonzero": 4,
+      "show_direction": false
+     }
+    }
+   },
+   "newly_local": [
+    "빨래방업",
+    "운동화전문세탁업",
+    "세탁업 기타"
+   ]
+  }
+ }
+}
