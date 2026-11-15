@@ -2,7 +2,7 @@
 
 LLM 설정은 .streamlit/secrets.toml(배포 시 Streamlit Cloud Secrets) 또는 환경변수에서 읽는다.
   LLM_PROVIDER = "gemini" | "claude"
-  GEMINI_API_KEY / ANTHROPIC_API_KEY = 운영자 키 (없으면 방문자가 자기 키를 입력)
+  GEMINI_API_KEY / ANTHROPIC_API_KEY = 운영자 키 (없으면 AI 상담 탭은 이용 불가 안내만, 방문자 키 입력 없음)
 
 Streamlit 을 읽기 전에 알아야 할 것
     버튼을 누르거나 글자를 입력할 때마다 이 파일이 위에서 아래로 '통째로 다시 실행'된다.
@@ -92,10 +92,6 @@ KEY_NAME = API_KEY_ENV.get(PROVIDER, "API_KEY")
 OPERATOR_KEY = setting(KEY_NAME)
 MAX_PER_SESSION = int(setting("MAX_QUESTIONS_PER_SESSION", C.MAX_QUESTIONS_PER_SESSION))
 GLOBAL_PER_MINUTE = int(setting("GLOBAL_QUESTIONS_PER_MINUTE", C.GLOBAL_QUESTIONS_PER_MINUTE))
-KEY_HELP = {
-    "gemini": "https://aistudio.google.com/apikey 에서 무료로 발급",
-    "claude": "https://console.anthropic.com 에서 발급(유료 크레딧 필요)",
-}.get(PROVIDER, "")
 
 
 @st.cache_resource
@@ -109,9 +105,7 @@ def _rate_window() -> dict:
 
 
 def take_quota() -> str | None:
-    """질문 1회를 허용하면 None, 막아야 하면 안내 문구. 방문자 본인 키는 제한하지 않는다."""
-    if not OPERATOR_KEY:
-        return None
+    """질문 1회를 허용하면 None, 막아야 하면 안내 문구."""
     used = st.session_state.get("questions_used", 0)
     if used >= MAX_PER_SESSION:
         return f"이 세션의 무료 질문 {MAX_PER_SESSION}회를 모두 사용했습니다. 대시보드·자리 이력 조회 탭은 계속 이용할 수 있습니다."
@@ -137,6 +131,51 @@ def get_agent(api_key: str):
 
 
 # ─────────────────────────── 사이드바 ───────────────────────────
+# 사이드바 개편(2026-11-15): 기준일·바로 가기·최근 본 자리·AI 상담 상태·용어 도움말을 접지 않고 보여 준다.
+# 탭은 key 로 상태를 추적해 사이드바 버튼(바로 가기·최근 본 자리·예시 질문)이 해당 탭으로 옮겨 준다.
+TAB_DASH, TAB_UNIT, TAB_CHAT = "📊 상권 둘러보기", "🔎 자리 이력", "💬 AI 상담"
+NAV = [(TAB_DASH, ":material/storefront:", "동네·업종 비교"),
+       (TAB_UNIT, ":material/history:", "한 자리의 이력"),
+       (TAB_CHAT, ":material/forum:", "AI에게 물어보기")]
+GLOSSARY = [
+    ("인허가 기록", "지자체 영업 인허가 자료의 한 건. 한 점포가 업종을 바꾸면 기록이 여러 건일 수 있어요."),
+    ("폐업 신고", "인허가가 폐업 처리된 것. 이전·양도도 포함되며 사업 실패를 뜻하지 않아요."),
+    ("인허가 공백(공실)", "마지막 가게가 폐업한 뒤 같은 자리에 새 인허가가 없는 상태. 실제 빈 점포와 다를 수 있어요."),
+    ("재입점 가능성", "비어 있던 기간을 반영해, 1년 안에 같은 자리에 점포형 가게 인허가가 다시 생길 확률(과거 사례로 학습한 모델)."),
+    ("중앙생존기간", "대구 같은 업태 가게(2010년 이후 개업)의 절반이 문을 닫은 시점."),
+]
+
+
+def go_tab(tab: str, **state) -> None:
+    """사이드바 버튼 콜백: 탭을 바꾸고 필요한 입력값을 미리 채운다(위젯이 그려지기 전이라 안전)."""
+    st.session_state.main_tab = tab
+    for k, v in state.items():
+        st.session_state[k] = v
+
+
+def render_recent_units() -> None:
+    """사이드바 '최근 본 자리' 목록. 자리 조회 직후 같은 자리(st.empty)를 다시 그려 방금 본 자리도 바로 보인다."""
+    # 한 번의 실행에서 두 번 그려질 수 있어(조회 직후) 위젯 key 에 그리기 차례를 넣어 겹치지 않게 한다
+    draw = st.session_state["_recent_draw"] = st.session_state.get("_recent_draw", 0) + 1
+    with recent_slot.container():
+        recent = st.session_state.get("recent_units", [])
+        if not recent:
+            st.caption("자리 이력에서 조회한 주소가 여기 모여요.")
+        for i, r in enumerate(recent):
+            st.button(r["label"].replace("대구광역시 ", ""), icon=":material/location_on:", key=f"recent-{draw}-{i}",
+                      type="tertiary", on_click=go_tab, args=(TAB_UNIT,),
+                      kwargs={"unit_addr": r["query"], "unit_whole": r["whole"]})
+
+
+def remember_unit(label: str, query: str, whole: bool) -> None:
+    """자리 이력에서 조회에 성공한 자리를 최근 5곳까지 기억한다(이 브라우저 세션에만)."""
+    recent = [r for r in st.session_state.get("recent_units", []) if r["query"] != query or r["whole"] != whole]
+    new = ([{"label": label, "query": query, "whole": whole}] + recent)[:5]
+    if new != st.session_state.get("recent_units"):
+        st.session_state.recent_units = new
+        render_recent_units()
+
+
 with st.sidebar:
     st.subheader("대구 상권 길잡이")
     st.caption("동네를 비교하고, 자리의 이력을 확인하세요.")
@@ -145,38 +184,59 @@ with st.sidebar:
     first_year = min(int(v["date_min"][:4]) for k, v in META["records"].items() if k != "통합")
     kpi_label = ('+'.join(s.replace('영업', '') for s in services) if len(services) <= 8
                  else f"점포형 {len(services)}개 업종")
-    with st.expander("수록 데이터와 기준일"):
-        st.metric(f"누적 인허가 ({kpi_label})", f"{rec['total']:,}")
-        if len(services) > 8:
-            with st.expander("포함 업종 보기"):
-                st.caption(" · ".join(services))
-        # 누적 수치를 '현재 점포 수'로 오해하기 쉬워 기간을 명시한다
-        st.caption(f"{first_year}년부터 {META['reference_date'][:4]}년까지 문을 연 전체 기록 (현재 점포 수가 아님)")
-        c1, c2 = st.columns(2)
-        c1.metric("그동안 폐업", f"{rec['closed']:,}")
-        c2.metric("현재 영업 중", f"{rec['active']:,}")
-        st.caption(f"기준일 {META['reference_date']} · 배치 {META['built_at']} · 데이터 {S.source}")
-    st.divider()
-    with st.expander("AI 상담 설정 · 예시 질문"):
+    ref = pd.Timestamp(META["reference_date"]).date()
+    age = (pd.Timestamp.now(tz="Asia/Seoul").date() - ref).days
+    with st.container(border=True):
+        st.caption("자료 기준일")
+        day = f"{ref.year}년 {ref.month}월 {ref.day}일"
+        st.markdown(f"**{day}** <small>({age}일 전)</small>" if age > 0 else f"**{day}**", unsafe_allow_html=True)
+        st.caption(f"대구 {kpi_label} 인허가 · 현재 영업 중 {rec['active']:,}건")
+        with st.expander("수록 데이터 자세히"):
+            st.metric(f"누적 인허가 ({kpi_label})", f"{rec['total']:,}")
+            if len(services) > 8:
+                with st.expander("포함 업종 보기"):
+                    st.caption(" · ".join(services))
+            # 누적 수치를 '현재 점포 수'로 오해하기 쉬워 기간을 명시한다
+            st.caption(f"{first_year}년부터 {META['reference_date'][:4]}년까지 문을 연 전체 기록 (현재 점포 수가 아님)")
+            c1, c2 = st.columns(2)
+            c1.metric("그동안 폐업", f"{rec['closed']:,}")
+            c2.metric("현재 영업 중", f"{rec['active']:,}")
+            st.caption(f"배치 {META['built_at']} · 데이터 {S.source}")
+
+    st.markdown("**바로 가기**")
+    cur = st.session_state.get("main_tab", TAB_DASH)
+    for tab, icon, desc in NAV:
+        st.button(desc, icon=icon, width="stretch", key=f"nav-{tab}",
+                  type="primary" if tab == cur else "secondary", on_click=go_tab, args=(tab,))
+
+    st.markdown("**최근 본 자리**")
+    recent_slot = st.empty()
+    render_recent_units()
+
+    st.markdown("**AI 상담**")
+    with st.container(border=True):
         if OPERATOR_KEY:
             left = MAX_PER_SESSION - st.session_state.get("questions_used", 0)
-            st.success(f"AI 상담 사용 가능 ({PROVIDER_LABEL})", icon="✅")
-            st.caption(f"이 세션 남은 질문 {max(left, 0)}회")
+            st.markdown(f":material/check_circle: 사용 가능 · 남은 질문 **{max(left, 0)}회**")
+            st.caption(PROVIDER_LABEL)
         else:
-            # 방문자 키는 이 브라우저 세션(session_state)에만 보관 — 서버 환경변수에 넣지 않는다
-            st.text_input(f"내 {PROVIDER_LABEL} API 키", type="password", key="user_api_key",
-                          help=f"AI 상담 탭에만 필요합니다. {KEY_HELP}. 키는 이 브라우저 세션에만 보관됩니다.")
-        st.subheader("예시 질문")
-        for q in EXAMPLES:
-            if st.button(q, width="stretch"):
-                st.session_state.pending = q
-        if st.button("🔄 대화 초기화", width="stretch"):
+            # 방문자 키 입력은 두지 않는다(2026-11-15). 운영 키가 없으면 안내만 한다.
+            st.markdown(":material/block: 지금은 이용할 수 없어요")
+            st.caption("상권 둘러보기·자리 이력은 그대로 이용할 수 있어요.")
+        with st.expander("예시 질문 (누르면 바로 질문)"):
+            for q in EXAMPLES:
+                st.button(q, key=f"ex-{q}", type="tertiary", icon=":material/chat_bubble:",
+                          on_click=go_tab, args=(TAB_CHAT,), kwargs={"pending": q})
+        if st.button("대화 초기화", icon=":material/refresh:", width="stretch"):
             st.session_state.pop("agent", None)
             st.session_state.pop("agent_sig", None)
             st.session_state.history = []
             st.rerun()
 
-tab_dash, tab_unit, tab_chat = st.tabs(["📊 상권 둘러보기", "🔎 자리 이력", "💬 AI 상담"])
+    with st.expander("용어 도움말", icon=":material/help:"):
+        st.markdown("\n".join(f"- **{k}**: {v}" for k, v in GLOSSARY))
+
+tab_dash, tab_unit, tab_chat = st.tabs([TAB_DASH, TAB_UNIT, TAB_CHAT], key="main_tab", on_change="rerun")
 
 
 # ─────────────────────────── 1. AI 상담 ───────────────────────────
@@ -219,12 +279,12 @@ with tab_chat:
 
     prompt = st.chat_input("예) 수성구 범어동에서 치킨집 하면 어때?") or st.session_state.pop("pending", None)
     if prompt:
-        api_key = OPERATOR_KEY or st.session_state.get("user_api_key")
+        api_key = OPERATOR_KEY
         with st.chat_message("user"):
             st.markdown(prompt)
         with st.chat_message("assistant"):
             if not api_key:
-                st.error(f"사이드바에 {PROVIDER_LABEL} API 키를 입력하세요 ({KEY_HELP}). 대시보드·자리 이력 조회 탭은 키 없이 이용할 수 있습니다.")
+                st.error("지금은 AI 상담을 이용할 수 없어요. 상권 둘러보기·자리 이력 탭은 그대로 이용할 수 있습니다.")
                 st.stop()
             blocked = take_quota()
             if blocked:
@@ -382,8 +442,9 @@ with tab_dash:
 with tab_unit:
     st.title("관심 있는 자리의 이력 확인")
     st.caption("주소나 상호로 찾아보세요. 이전 업종과 영업기간, 해당하는 경우 재입점 전망을 함께 확인할 수 있어요.")
-    addr = st.text_input("주소 또는 상호", placeholder="예) 대구 중구 동성로5길 83 / 삼덕동1가 28-6 / 빽다방 대구군위점")
-    whole = st.checkbox("층 구분 없이 건물 전체 보기")
+    addr = st.text_input("주소 또는 상호", placeholder="예) 대구 중구 동성로5길 83 / 삼덕동1가 28-6 / 빽다방 대구군위점",
+                         key="unit_addr")
+    whole = st.checkbox("층 구분 없이 건물 전체 보기", key="unit_whole")
     h = None
     if addr:
         try:
@@ -401,6 +462,7 @@ with tab_unit:
             st.warning(str(e))
         if h:
             u = h["unit"]
+            remember_unit(u["address"] + (" (건물 전체)" if whole else ""), u["unit_id"], whole)
             st.markdown(f"### {u['address']}")
             st.caption(f"자리 ID: {u['unit_id']} · {u['status']}")
             if h.get("floor_note"):
@@ -444,3 +506,4 @@ with tab_unit:
             if h["other_candidates"]:
                 st.markdown("**다른 후보 자리**")
                 st.dataframe(korean_table(h["other_candidates"], CANDIDATE_COLS), hide_index=True)
+

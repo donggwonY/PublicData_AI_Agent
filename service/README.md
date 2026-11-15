@@ -39,7 +39,7 @@ python -m pipeline.external       # 보조 데이터 배치 → 상가정보·�
 야간 배치 `run_batch.ps1` 도 `.venv` 의 Python 만 쓰고, 종료 코드를 로그에 남긴다.
 
 - **AI 상담** 탭은 LLM API 키가 필요하다. 기본은 **Google Gemini 무료 등급**(`LLM_PROVIDER="gemini"`), 설정 하나로 Claude 로 전환.
-  키는 `.streamlit/secrets.toml`(예: `secrets.toml.example`) 또는 환경변수 `GEMINI_API_KEY` 에 두거나, 비워 두면 방문자가 사이드바에 자기 키를 입력한다.
+  키는 `.streamlit/secrets.toml`(예: `secrets.toml.example`) 또는 환경변수 `GEMINI_API_KEY` 에 둔다. 비워 두면 AI 상담 탭은 '이용할 수 없음' 안내만 보인다(방문자 키 입력은 2026-11-15 제거).
   **대시보드 / 자리 이력 조회** 탭은 키 없이 동작한다.
 - 터미널 대화: `python agent.py gemini` 또는 `python agent.py claude`
 - MCP 서버(Claude Desktop·Claude Code 연결): `python mcp_server.py` (아래 MCP 절)
@@ -71,7 +71,7 @@ python -m pipeline.external       # 보조 데이터 배치 → 상가정보·�
 
 **운영자 키 보호 장치** — 운영자 키를 Secrets 에 넣으면 세션당 질문 수(`MAX_QUESTIONS_PER_SESSION`, 기본 20)와
 전체 방문자 합산 분당 질문 수(`GLOBAL_QUESTIONS_PER_MINUTE`, 기본 3)를 제한한다. 무료 한도(429)에 걸리면 `config.GEMINI_MODELS`
-순서대로 다음 모델을 시도한다(모델별 한도가 따로 잡힘). 방문자 키는 그 브라우저 세션에만 보관하고 서버 환경변수에 쓰지 않는다.
+순서대로 다음 모델을 시도한다(모델별 한도가 따로 잡힘). 방문자가 키를 입력하는 칸은 없다(2026-11-15 제거).
 
 ## API 키 없이 대화형 시연 — Claude Desktop + MCP
 

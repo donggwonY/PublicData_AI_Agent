@@ -78,7 +78,7 @@ deploy 브랜치 (염동권이 main 커밋을 fast-forward) → Streamlit Cloud 
 
 | 이름 | 비밀 | 두는 곳 | 없을 때 |
 | --- | --- | --- | --- |
-| `GEMINI_API_KEY` | 비밀 | Streamlit Secrets (운영자 키) | 방문자가 사이드바에 자기 키 입력. 그 브라우저 세션에만 보관 |
+| `GEMINI_API_KEY` | 비밀 | Streamlit Secrets (운영자 키) | 없으면 AI 상담 이용 불가 안내(방문자 키 입력은 2026-11-15 제거) |
 | `LLM_PROVIDER` | 설정 | Secrets | `config.py` 기본값 `"gemini"` |
 | `APP_DATABASE_URL` | 비밀 | Secrets. 읽기 전용 `app_reader` 접속 정보만 ([E-02 2-3절](../e02/README.md#2-3-권한)) | parquet로 읽음 |
 | `APP_DATA_SOURCE`, `APP_DATA_VERSION` | 설정 | Secrets (필요할 때만) | `auto`, `current_version`이 가리키는 버전 |
@@ -146,7 +146,7 @@ streamlit run app.py
 | 대시보드, 지역 "대구 전체" | 상권 사이클 "쇠퇴 진입기" |
 | 자리 이력 조회 `대구 중구 동성로5길 83` | "대구광역시 중구 동성로5길 83 1층", 인허가 레코드 6 |
 
-**AI 상담 탭**은 Gemini API 키가 있어야 답한다. [Google AI Studio](https://aistudio.google.com/apikey)에서 본인 키를 받아 사이드바에 넣거나, `service\.streamlit\secrets.toml.example`을 `secrets.toml`로 복사해 채운다. 키를 코드·커밋·채팅·문서에 붙여넣지 않고, 공개 앱의 운영자 키는 공유하지 않는다.
+**AI 상담 탭**은 Gemini API 키가 있어야 답한다. [Google AI Studio](https://aistudio.google.com/apikey)에서 키를 받아 `service\.streamlit\secrets.toml.example`을 `secrets.toml`로 복사해 채운다. 키를 코드·커밋·채팅·문서에 붙여넣지 않고, 공개 앱의 운영자 키는 공유하지 않는다.
 
 ### 3-5. 배치 재계산 (선택, 원본 CSV 필요)
 
