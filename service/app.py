@@ -104,6 +104,16 @@ def _rate_window() -> dict:
     return {"lock": threading.Lock(), "times": deque()}
 
 
+quota_slot = None   # 사이드바 '남은 질문' 줄(st.empty). 사이드바에서 만든다.
+
+
+def render_quota() -> None:
+    """사이드바 남은 질문 수. 질문 처리 중 횟수를 올린 직후 같은 자리를 다시 그려 바로 줄어든 값이 보인다."""
+    if quota_slot is not None:
+        left = MAX_PER_SESSION - st.session_state.get("questions_used", 0)
+        quota_slot.markdown(f":material/check_circle: 사용 가능 · 남은 질문 **{max(left, 0)}회**")
+
+
 def take_quota() -> str | None:
     """질문 1회를 허용하면 None, 막아야 하면 안내 문구."""
     used = st.session_state.get("questions_used", 0)
@@ -118,6 +128,7 @@ def take_quota() -> str | None:
             return f"지금 이용자가 많아 잠시 대기가 필요합니다. 약 {wait}초 뒤에 다시 질문해 주세요."
         w["times"].append(now)
     st.session_state.questions_used = used + 1
+    render_quota()
     return None
 
 
@@ -255,8 +266,8 @@ with st.sidebar:
     st.markdown("**AI 상담**")
     with st.container(border=True):
         if OPERATOR_KEY:
-            left = MAX_PER_SESSION - st.session_state.get("questions_used", 0)
-            st.markdown(f":material/check_circle: 사용 가능 · 남은 질문 **{max(left, 0)}회**")
+            quota_slot = st.empty()
+            render_quota()
             st.caption(PROVIDER_LABEL)
         else:
             # 방문자 키 입력은 두지 않는다(2026-11-15). 운영 키가 없으면 안내만 한다.
