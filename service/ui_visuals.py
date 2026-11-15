@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import math
+import re
 
 import pandas as pd
 import plotly.express as px
@@ -182,6 +183,25 @@ def station_chart(out: dict, key: str):
         return
     fig.update_layout(margin=dict(l=0, r=0, t=40, b=0))
     st.plotly_chart(fig, width="stretch", key=key)
+
+
+_BOLD = re.compile(r"\*\*(?=\S)(.+?)(?<=\S)\*\*")
+
+
+def ai_markdown(text: str) -> str:
+    """AI 답변을 화면용 마크다운으로(2026-11-15). st.markdown(..., unsafe_allow_html=True) 와 함께 쓴다.
+
+    1) '**46.8%**입니다'·'**…(…)**를'처럼 문장부호로 끝난 굵은 글씨 뒤에 조사가 붙으면 마크다운 규칙상
+       굵게 처리되지 않고 별표가 보인다 → '**…**' 짝을 <strong>…</strong> 으로 바꾼다.
+    2) HTML 을 허용하므로 답변 속 '<' 는 모두 &lt; 로 바꿔 우리가 넣은 <strong> 외의 태그는 그려지지 않게 한다.
+    3) '15~29세, 30~49세'가 취소선이 되지 않게 물결표를 escape 한다(safe_markdown 과 같은 처리).
+    코드 블록(```) 안은 건드리지 않는다.
+    """
+    parts = text.split("```")
+    for i in range(0, len(parts), 2):  # 짝수 인덱스 = 코드 블록 바깥
+        t = parts[i].replace("<", "&lt;").replace("~", "\\~")
+        parts[i] = _BOLD.sub(r"<strong>\1</strong>", t)
+    return "```".join(parts)
 
 
 # AI 상담 도구 기록을 사람이 읽는 말로(2026-11-15). 개발용 함수 이름·JSON 대신 '무엇을 · 어떤 조건으로'.

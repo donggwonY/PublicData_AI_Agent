@@ -31,7 +31,7 @@ from core import tools as T
 from ui_permit_trends import industry_choices, render_permit_trends
 from ui_vacancy import (CANDIDATE_COLS, TIMELINE_COLS, korean_table, render_unit_summary, render_vacancy_outlook,
                         tenure_sentences)
-from ui_visuals import (cycle_chart, history_chart, render_tool_result, render_tool_steps, survival_chart, tool_label,
+from ui_visuals import (ai_markdown, cycle_chart, history_chart, render_tool_result, render_tool_steps, survival_chart, tool_label,
                         _map, metric_value)
 
 st.set_page_config(page_title="대구 상권 생애주기 AI 에이전트", page_icon="🏪", layout="wide")
@@ -341,7 +341,7 @@ with tab_chat:
         with st.chat_message(m["role"]):
             if m["role"] == "assistant":
                 render_tools(m.get("tools", []), m["id"])
-            st.markdown(safe_markdown(m["content"]))
+            st.markdown(ai_markdown(m["content"]), unsafe_allow_html=True)
             if m.get("model"):
                 st.caption(f"모델: {m['model']}")
 
@@ -367,7 +367,7 @@ with tab_chat:
                 for ev in agent.ask(prompt):
                     if ev["type"] == "text":
                         text += ev["text"]
-                        text_box.markdown(safe_markdown(text) + "▌")
+                        text_box.markdown(ai_markdown(text) + "▌", unsafe_allow_html=True)
                     elif ev["type"] == "tool_call":
                         live.append(tool_label(ev["name"], ev.get("input")))
                         tool_box.markdown("  \n".join([f":material/check: {x}" for x in live[:-1]]
@@ -381,7 +381,7 @@ with tab_chat:
             text_box.empty()
             with tool_box.container():
                 render_tools(tool_events, msg_id)
-            st.markdown(safe_markdown(text))
+            st.markdown(ai_markdown(text), unsafe_allow_html=True)
             if model:
                 st.caption(f"모델: {model}")
         st.session_state.history.append({"role": "assistant", "content": text, "tools": tool_events,
