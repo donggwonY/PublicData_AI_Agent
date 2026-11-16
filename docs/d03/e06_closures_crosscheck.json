@@ -1,0 +1,46 @@
+{
+  "scope": "Read-only replication of fixed G1 validation and test metrics; not a new independent test, no retuning. G2 and other targets not rerun.",
+  "validation_mae": 2.5035,
+  "test_mae": {
+    "G1": 2.5137,
+    "B1": 3.0092,
+    "B2": 2.889,
+    "B3": 3.1187
+  },
+  "test_year_G1": {
+    "2023": 2.7272,
+    "2024": 2.5661,
+    "2025": 2.2492
+  },
+  "test_cells": 2288,
+  "interval_coverage": 0.844,
+  "bootstrap_ci95": [
+    -0.6034,
+    -0.1584
+  ],
+  "checks": {
+    "saved_input_hash": true,
+    "metrics_match": true,
+    "future_event_perturbation_through2022": true,
+    "poisson_quantiles_scipy_match": true
+  },
+  "quality": {
+    "retained_records": 244027,
+    "closed_missing_date": 0,
+    "closure_before_open": 0,
+    "missing_gu": 0
+  },
+  "notes": [
+    "Historical snapshot category, location and is_primary are not proven point-in-time; future-event perturbation does not remove these limitations.",
+    "Feature category levels and panel keys derived from full snapshot; eligibility depends on lagged activity.",
+    "Trend denominator in code is years y-2..y-4, numerator y-1; report wording previous3 mean is ambiguous.",
+    "Observed80% coverage is aggregate, not guarantee per district/category.",
+    "Review reruns fixed published model only; does not create a fresh holdout."
+  ],
+  "hashes": {
+    "source": "e011e410c8779e2d5a37c1bce169e56d70efde292e943d92ec5f8338fab24091",
+    "models_script": "97047c8e22bf22686fb93d137482b01342d2b49739231089e4ccc65562277ad9",
+    "saved_test": "813182a1dddce312f7c91695664229ef99b2f6c9d48f2247779314ffab90626b",
+    "review_script": "e448584d176468d63c1be84ce515316c173114718ef3ee234bbea65438adf7fb"
+  }
+}
