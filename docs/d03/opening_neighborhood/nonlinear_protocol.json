@@ -1,0 +1,24 @@
+{
+  "model": "HistGradientBoostingClassifier",
+  "config": {
+    "max_iter": 200,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 100,
+    "l2_regularization": 10,
+    "early_stopping": false,
+    "random_state": 20261116
+  },
+  "comparisons": "Within-tree density vs permit composition; building density vs building composition. Also report tree vs prior linear, not attributed to context.",
+  "weighted": "same inverse building training/evaluation weights as previous",
+  "years": [
+    2022,
+    2023,
+    2024
+  ],
+  "radii": [
+    300,
+    500
+  ],
+  "validation": "Previously inspected evaluation years; exploratory, no tuning. No subtype features, unverified historical subtype deliberately omitted."
+}

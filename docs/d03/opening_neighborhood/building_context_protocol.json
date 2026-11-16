@@ -1,0 +1,25 @@
+{
+  "scope": "Fixed exploratory building representation follow-up, no outcome-driven parameter search.",
+  "primary": "Building-weighted same-cohort comparison; old permit context vs fractional building context and context excluding focal building.",
+  "composition": "One unit per unique building; split equally among unique eligible industries present in that building. Repeated building-industry records contribute once.",
+  "same_building": "included and excluded variants both reported",
+  "models": "LR C1 max_iter1500; industry-region-year baseline plus industry interactions with context; no calibration tuning",
+  "years": [
+    2022,
+    2023,
+    2024
+  ],
+  "radii": [
+    300,
+    500
+  ],
+  "train": "five opening cohorts y-6 through y-2, fully observed365day outcomes",
+  "subtype": "separate exploratory sensitivity using current recorded category, historical availability unverified",
+  "limitations": [
+    "Building is not a unique storefront. Different floors/shops remain distinct real businesses.",
+    "Building keys and coordinates are current snapshot values; historical relocation unknown.",
+    "Fractional industry shares reflect building occupancy mix, not store market shares.",
+    "Same outcomes inspected in previous experiments; not an untouched test.",
+    "Building sample weights change estimand and do not establish causal effects."
+  ]
+}
