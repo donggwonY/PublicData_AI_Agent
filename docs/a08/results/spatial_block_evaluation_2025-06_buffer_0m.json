@@ -1,0 +1,787 @@
+{
+  "month": "2025-06",
+  "counts": {
+    "source_rows": 114924,
+    "invalid_records": 0,
+    "missing_population_join": 0,
+    "analysis_rows": 114924,
+    "unmatched_admin_codes": []
+  },
+  "stores_sha256": "78bdf792da502ffc185170401f773c359eb6ce626e8b3a05f939eb3390e26cbd",
+  "population_sha256": "13db2e3cc967206cdcfbc2bfc6b3e1cbe380393f412d46aeae649a3249b2c116",
+  "test_blocks": 307,
+  "prediction_grid_origins_m": [
+    0,
+    125
+  ],
+  "buffer_meters": 0,
+  "folds": [
+    {
+      "test_rows": 22985,
+      "test_blocks": 61,
+      "fit_rows": 42490,
+      "reference_rows": 42544,
+      "buffer_rows": 6905,
+      "metrics": {
+        "regional_mean": {
+          "shop_log_loss": 1.846794094562465,
+          "weighted_250m_composition_error": 0.265302197226251,
+          "macro_250m_error_min_10": 0.2750701316380723,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "district_mean": {
+          "shop_log_loss": 1.851097391522925,
+          "weighted_250m_composition_error": 0.2706150461171098,
+          "macro_250m_error_min_10": 0.28027356944898774,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "admin_mean": {
+          "shop_log_loss": 1.8612026242897832,
+          "weighted_250m_composition_error": 0.27118508617098674,
+          "macro_250m_error_min_10": 0.28459909850878934,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "admin_origin_0_neighbors": {
+          "shop_log_loss": 1.9313635584746078,
+          "weighted_250m_composition_error": 0.2963686991482859,
+          "macro_250m_error_min_10": 0.3015991992829082,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "admin_origin_0_shops": {
+          "shop_log_loss": 1.8996175901641614,
+          "weighted_250m_composition_error": 0.2840182865781122,
+          "macro_250m_error_min_10": 0.28890436779096784,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "admin_origin_0_shops_population": {
+          "shop_log_loss": 1.8848842073594236,
+          "weighted_250m_composition_error": 0.28162283271875904,
+          "macro_250m_error_min_10": 0.2875882333422468,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_250_origin_0_neighbors": {
+          "shop_log_loss": 1.9278958189815,
+          "weighted_250m_composition_error": 0.2964662345377131,
+          "macro_250m_error_min_10": 0.3037518152738613,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_250_origin_0_shops": {
+          "shop_log_loss": 1.9219735510151748,
+          "weighted_250m_composition_error": 0.29416939955308313,
+          "macro_250m_error_min_10": 0.2974112542324205,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_250_origin_0_shops_population": {
+          "shop_log_loss": 1.9490857793531975,
+          "weighted_250m_composition_error": 0.297847528259678,
+          "macro_250m_error_min_10": 0.29880988438416944,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_250_origin_125_neighbors": {
+          "shop_log_loss": 1.9299724812940948,
+          "weighted_250m_composition_error": 0.2948632078311988,
+          "macro_250m_error_min_10": 0.30234326310387405,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_250_origin_125_shops": {
+          "shop_log_loss": 1.9105231419079358,
+          "weighted_250m_composition_error": 0.294327877762129,
+          "macro_250m_error_min_10": 0.2982478045498763,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_250_origin_125_shops_population": {
+          "shop_log_loss": 1.9205279206784216,
+          "weighted_250m_composition_error": 0.2952895536135662,
+          "macro_250m_error_min_10": 0.2978638686571698,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_500_origin_0_neighbors": {
+          "shop_log_loss": 1.9323101077722504,
+          "weighted_250m_composition_error": 0.30168885848804633,
+          "macro_250m_error_min_10": 0.3064248091126483,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_500_origin_0_shops": {
+          "shop_log_loss": 1.896237906157259,
+          "weighted_250m_composition_error": 0.29358304514425104,
+          "macro_250m_error_min_10": 0.29863393873569666,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_500_origin_0_shops_population": {
+          "shop_log_loss": 1.8988188878519903,
+          "weighted_250m_composition_error": 0.2947693298806588,
+          "macro_250m_error_min_10": 0.29774642495741666,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_500_origin_125_neighbors": {
+          "shop_log_loss": 1.9239987253600324,
+          "weighted_250m_composition_error": 0.2920749136130508,
+          "macro_250m_error_min_10": 0.3019659209820107,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_500_origin_125_shops": {
+          "shop_log_loss": 1.8999344596024386,
+          "weighted_250m_composition_error": 0.28899949530760977,
+          "macro_250m_error_min_10": 0.295933790928745,
+          "cells": 813,
+          "cells_min_10": 388
+        },
+        "grid_500_origin_125_shops_population": {
+          "shop_log_loss": 1.9094522251513242,
+          "weighted_250m_composition_error": 0.2901275305375999,
+          "macro_250m_error_min_10": 0.29643736238063817,
+          "cells": 813,
+          "cells_min_10": 388
+        }
+      }
+    },
+    {
+      "test_rows": 22985,
+      "test_blocks": 61,
+      "fit_rows": 39959,
+      "reference_rows": 39797,
+      "buffer_rows": 12183,
+      "metrics": {
+        "regional_mean": {
+          "shop_log_loss": 1.8238717812965939,
+          "weighted_250m_composition_error": 0.27234057159065406,
+          "macro_250m_error_min_10": 0.2764295229069,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "district_mean": {
+          "shop_log_loss": 1.8321168890959088,
+          "weighted_250m_composition_error": 0.2789232579477989,
+          "macro_250m_error_min_10": 0.2791084659942246,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "admin_mean": {
+          "shop_log_loss": 1.8413810461270355,
+          "weighted_250m_composition_error": 0.28146374009866976,
+          "macro_250m_error_min_10": 0.28157184609907454,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "admin_origin_0_neighbors": {
+          "shop_log_loss": 1.941573050468626,
+          "weighted_250m_composition_error": 0.30687746206575933,
+          "macro_250m_error_min_10": 0.30135917734428586,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "admin_origin_0_shops": {
+          "shop_log_loss": 1.8623161350970148,
+          "weighted_250m_composition_error": 0.29237414134332873,
+          "macro_250m_error_min_10": 0.2885754717903057,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "admin_origin_0_shops_population": {
+          "shop_log_loss": 1.863956614468684,
+          "weighted_250m_composition_error": 0.28745078867075397,
+          "macro_250m_error_min_10": 0.2857407937906176,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_250_origin_0_neighbors": {
+          "shop_log_loss": 1.967128165345104,
+          "weighted_250m_composition_error": 0.31409064504290823,
+          "macro_250m_error_min_10": 0.3094555121988942,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_250_origin_0_shops": {
+          "shop_log_loss": 2.0141363949542552,
+          "weighted_250m_composition_error": 0.32285210370709494,
+          "macro_250m_error_min_10": 0.3091564383218406,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_250_origin_0_shops_population": {
+          "shop_log_loss": 2.011033918187264,
+          "weighted_250m_composition_error": 0.319605771176545,
+          "macro_250m_error_min_10": 0.30680762994031924,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_250_origin_125_neighbors": {
+          "shop_log_loss": 1.9649134560148345,
+          "weighted_250m_composition_error": 0.30968293160777427,
+          "macro_250m_error_min_10": 0.30668663126942336,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_250_origin_125_shops": {
+          "shop_log_loss": 2.0385293823745294,
+          "weighted_250m_composition_error": 0.31726710253651724,
+          "macro_250m_error_min_10": 0.30709710315811456,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_250_origin_125_shops_population": {
+          "shop_log_loss": 2.003677589901312,
+          "weighted_250m_composition_error": 0.31224700985092074,
+          "macro_250m_error_min_10": 0.3038223238122421,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_500_origin_0_neighbors": {
+          "shop_log_loss": 1.9730648839996745,
+          "weighted_250m_composition_error": 0.3162978014457343,
+          "macro_250m_error_min_10": 0.3103192510291805,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_500_origin_0_shops": {
+          "shop_log_loss": 1.9302031116453442,
+          "weighted_250m_composition_error": 0.31240175306025736,
+          "macro_250m_error_min_10": 0.30374428508915485,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_500_origin_0_shops_population": {
+          "shop_log_loss": 1.9370885621867762,
+          "weighted_250m_composition_error": 0.3100872733497993,
+          "macro_250m_error_min_10": 0.30085387480889747,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_500_origin_125_neighbors": {
+          "shop_log_loss": 1.9677317986698584,
+          "weighted_250m_composition_error": 0.3077660363407795,
+          "macro_250m_error_min_10": 0.30278989008594687,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_500_origin_125_shops": {
+          "shop_log_loss": 1.9928528493646411,
+          "weighted_250m_composition_error": 0.3079629852272356,
+          "macro_250m_error_min_10": 0.297998906926977,
+          "cells": 832,
+          "cells_min_10": 387
+        },
+        "grid_500_origin_125_shops_population": {
+          "shop_log_loss": 1.9638148502151014,
+          "weighted_250m_composition_error": 0.30415215802397794,
+          "macro_250m_error_min_10": 0.2949323996172149,
+          "cells": 832,
+          "cells_min_10": 387
+        }
+      }
+    },
+    {
+      "test_rows": 22985,
+      "test_blocks": 62,
+      "fit_rows": 42774,
+      "reference_rows": 42428,
+      "buffer_rows": 6737,
+      "metrics": {
+        "regional_mean": {
+          "shop_log_loss": 1.8053436539655559,
+          "weighted_250m_composition_error": 0.311313243981861,
+          "macro_250m_error_min_10": 0.2830275345868644,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "district_mean": {
+          "shop_log_loss": 1.778026581036875,
+          "weighted_250m_composition_error": 0.29800631633011104,
+          "macro_250m_error_min_10": 0.2759417785716071,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "admin_mean": {
+          "shop_log_loss": 1.790737722658994,
+          "weighted_250m_composition_error": 0.303728899815391,
+          "macro_250m_error_min_10": 0.27341460771942583,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "admin_origin_0_neighbors": {
+          "shop_log_loss": 1.857655136809428,
+          "weighted_250m_composition_error": 0.3208205788304501,
+          "macro_250m_error_min_10": 0.2929980302294125,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "admin_origin_0_shops": {
+          "shop_log_loss": 1.8086285741728907,
+          "weighted_250m_composition_error": 0.31227164158066867,
+          "macro_250m_error_min_10": 0.28835764874974734,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "admin_origin_0_shops_population": {
+          "shop_log_loss": 1.839277519028657,
+          "weighted_250m_composition_error": 0.3085532499296044,
+          "macro_250m_error_min_10": 0.28273942265966107,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_250_origin_0_neighbors": {
+          "shop_log_loss": 1.8693232255577508,
+          "weighted_250m_composition_error": 0.32107578366207096,
+          "macro_250m_error_min_10": 0.28961274881002536,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_250_origin_0_shops": {
+          "shop_log_loss": 1.9259106656831648,
+          "weighted_250m_composition_error": 0.32992372722774166,
+          "macro_250m_error_min_10": 0.2919369025864835,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_250_origin_0_shops_population": {
+          "shop_log_loss": 1.90710442486711,
+          "weighted_250m_composition_error": 0.3277238319703351,
+          "macro_250m_error_min_10": 0.28891711601676145,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_250_origin_125_neighbors": {
+          "shop_log_loss": 1.8660541838882054,
+          "weighted_250m_composition_error": 0.3194679354972813,
+          "macro_250m_error_min_10": 0.2885451973694523,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_250_origin_125_shops": {
+          "shop_log_loss": 1.9002233310927392,
+          "weighted_250m_composition_error": 0.32766179280063035,
+          "macro_250m_error_min_10": 0.2911373406333143,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_250_origin_125_shops_population": {
+          "shop_log_loss": 1.8871724871668432,
+          "weighted_250m_composition_error": 0.3234910432742823,
+          "macro_250m_error_min_10": 0.28711775371377685,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_500_origin_0_neighbors": {
+          "shop_log_loss": 1.8621325001571527,
+          "weighted_250m_composition_error": 0.32127498758701645,
+          "macro_250m_error_min_10": 0.2918283649171874,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_500_origin_0_shops": {
+          "shop_log_loss": 1.86691767436033,
+          "weighted_250m_composition_error": 0.3200469627119115,
+          "macro_250m_error_min_10": 0.28953864377451927,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_500_origin_0_shops_population": {
+          "shop_log_loss": 1.8568368451970014,
+          "weighted_250m_composition_error": 0.3156813254767393,
+          "macro_250m_error_min_10": 0.28557485505595204,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_500_origin_125_neighbors": {
+          "shop_log_loss": 1.8641435275728646,
+          "weighted_250m_composition_error": 0.31920883053314425,
+          "macro_250m_error_min_10": 0.2890728168132623,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_500_origin_125_shops": {
+          "shop_log_loss": 1.8735909387584915,
+          "weighted_250m_composition_error": 0.3174433776332605,
+          "macro_250m_error_min_10": 0.2873220442778148,
+          "cells": 791,
+          "cells_min_10": 385
+        },
+        "grid_500_origin_125_shops_population": {
+          "shop_log_loss": 1.859318605278583,
+          "weighted_250m_composition_error": 0.31592690106231835,
+          "macro_250m_error_min_10": 0.2852656834533002,
+          "cells": 791,
+          "cells_min_10": 385
+        }
+      }
+    },
+    {
+      "test_rows": 22985,
+      "test_blocks": 62,
+      "fit_rows": 42236,
+      "reference_rows": 41758,
+      "buffer_rows": 7945,
+      "metrics": {
+        "regional_mean": {
+          "shop_log_loss": 1.8659736524503603,
+          "weighted_250m_composition_error": 0.2705003134555563,
+          "macro_250m_error_min_10": 0.2754595816982215,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "district_mean": {
+          "shop_log_loss": 1.853663654599067,
+          "weighted_250m_composition_error": 0.2640436505617532,
+          "macro_250m_error_min_10": 0.2704384637821015,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "admin_mean": {
+          "shop_log_loss": 1.8592867610400488,
+          "weighted_250m_composition_error": 0.2656318077820231,
+          "macro_250m_error_min_10": 0.2751179260161459,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "admin_origin_0_neighbors": {
+          "shop_log_loss": 1.9273437209076234,
+          "weighted_250m_composition_error": 0.293645023014127,
+          "macro_250m_error_min_10": 0.2982777956381591,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "admin_origin_0_shops": {
+          "shop_log_loss": 1.9461467356518394,
+          "weighted_250m_composition_error": 0.27695640251024134,
+          "macro_250m_error_min_10": 0.28589779254371356,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "admin_origin_0_shops_population": {
+          "shop_log_loss": 1.9362400801743338,
+          "weighted_250m_composition_error": 0.2785061830543686,
+          "macro_250m_error_min_10": 0.2876144805771204,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_250_origin_0_neighbors": {
+          "shop_log_loss": 1.9211638370819095,
+          "weighted_250m_composition_error": 0.2951738228625045,
+          "macro_250m_error_min_10": 0.2988776432535123,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_250_origin_0_shops": {
+          "shop_log_loss": 1.9904620734024236,
+          "weighted_250m_composition_error": 0.30843320216435444,
+          "macro_250m_error_min_10": 0.30743190701243045,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_250_origin_0_shops_population": {
+          "shop_log_loss": 1.9699795053799878,
+          "weighted_250m_composition_error": 0.30740440151092235,
+          "macro_250m_error_min_10": 0.30745000633391056,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_250_origin_125_neighbors": {
+          "shop_log_loss": 1.9237432934912286,
+          "weighted_250m_composition_error": 0.29274000544905837,
+          "macro_250m_error_min_10": 0.2971601050076958,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_250_origin_125_shops": {
+          "shop_log_loss": 2.003243361731576,
+          "weighted_250m_composition_error": 0.31067308573571883,
+          "macro_250m_error_min_10": 0.30838438560324033,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_250_origin_125_shops_population": {
+          "shop_log_loss": 1.9882482539769506,
+          "weighted_250m_composition_error": 0.3090574998410951,
+          "macro_250m_error_min_10": 0.30779168024052367,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_500_origin_0_neighbors": {
+          "shop_log_loss": 1.9360274461504368,
+          "weighted_250m_composition_error": 0.2973189729466218,
+          "macro_250m_error_min_10": 0.2994837808155505,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_500_origin_0_shops": {
+          "shop_log_loss": 1.936639215794682,
+          "weighted_250m_composition_error": 0.29737329889489467,
+          "macro_250m_error_min_10": 0.29801574152981725,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_500_origin_0_shops_population": {
+          "shop_log_loss": 1.945823631865724,
+          "weighted_250m_composition_error": 0.2977197707712912,
+          "macro_250m_error_min_10": 0.29841350510545644,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_500_origin_125_neighbors": {
+          "shop_log_loss": 1.9213025327854762,
+          "weighted_250m_composition_error": 0.29300958422629403,
+          "macro_250m_error_min_10": 0.29779697513206704,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_500_origin_125_shops": {
+          "shop_log_loss": 1.9673543288241353,
+          "weighted_250m_composition_error": 0.2983937482277538,
+          "macro_250m_error_min_10": 0.2970394549505975,
+          "cells": 896,
+          "cells_min_10": 424
+        },
+        "grid_500_origin_125_shops_population": {
+          "shop_log_loss": 1.9640237456206528,
+          "weighted_250m_composition_error": 0.2989843483091219,
+          "macro_250m_error_min_10": 0.29810031699254863,
+          "cells": 896,
+          "cells_min_10": 424
+        }
+      }
+    },
+    {
+      "test_rows": 22984,
+      "test_blocks": 61,
+      "fit_rows": 41631,
+      "reference_rows": 41554,
+      "buffer_rows": 8755,
+      "metrics": {
+        "regional_mean": {
+          "shop_log_loss": 1.8464916774196,
+          "weighted_250m_composition_error": 0.26786789669877414,
+          "macro_250m_error_min_10": 0.2744573730997241,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "district_mean": {
+          "shop_log_loss": 1.8517398136207885,
+          "weighted_250m_composition_error": 0.2670018339395853,
+          "macro_250m_error_min_10": 0.27225321936304075,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "admin_mean": {
+          "shop_log_loss": 1.8662415011346973,
+          "weighted_250m_composition_error": 0.2733910219487356,
+          "macro_250m_error_min_10": 0.27843258412116406,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "admin_origin_0_neighbors": {
+          "shop_log_loss": 1.9856712060680126,
+          "weighted_250m_composition_error": 0.2960124860564536,
+          "macro_250m_error_min_10": 0.2937571315876905,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "admin_origin_0_shops": {
+          "shop_log_loss": 1.8903391475027282,
+          "weighted_250m_composition_error": 0.2781196171936952,
+          "macro_250m_error_min_10": 0.2798478245140257,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "admin_origin_0_shops_population": {
+          "shop_log_loss": 1.8880908483450798,
+          "weighted_250m_composition_error": 0.2755929206024143,
+          "macro_250m_error_min_10": 0.28017146935281423,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_250_origin_0_neighbors": {
+          "shop_log_loss": 1.9459510834272866,
+          "weighted_250m_composition_error": 0.2899547594586807,
+          "macro_250m_error_min_10": 0.29399840057597926,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_250_origin_0_shops": {
+          "shop_log_loss": 2.015554166313229,
+          "weighted_250m_composition_error": 0.2974397556055356,
+          "macro_250m_error_min_10": 0.2942946956264998,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_250_origin_0_shops_population": {
+          "shop_log_loss": 2.0532618134452725,
+          "weighted_250m_composition_error": 0.2992145775166323,
+          "macro_250m_error_min_10": 0.29589093141578954,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_250_origin_125_neighbors": {
+          "shop_log_loss": 1.9493271155187188,
+          "weighted_250m_composition_error": 0.28749170219027836,
+          "macro_250m_error_min_10": 0.29125916061850265,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_250_origin_125_shops": {
+          "shop_log_loss": 1.963797918279723,
+          "weighted_250m_composition_error": 0.2967744306505314,
+          "macro_250m_error_min_10": 0.29367792556294914,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_250_origin_125_shops_population": {
+          "shop_log_loss": 1.9563766261416284,
+          "weighted_250m_composition_error": 0.2956360464777982,
+          "macro_250m_error_min_10": 0.29314306775014026,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_500_origin_0_neighbors": {
+          "shop_log_loss": 1.9470851260240642,
+          "weighted_250m_composition_error": 0.2932190427886531,
+          "macro_250m_error_min_10": 0.29552718064462496,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_500_origin_0_shops": {
+          "shop_log_loss": 1.960642209466016,
+          "weighted_250m_composition_error": 0.2898702271666861,
+          "macro_250m_error_min_10": 0.2891128744228746,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_500_origin_0_shops_population": {
+          "shop_log_loss": 1.9433491402918364,
+          "weighted_250m_composition_error": 0.2894189636827148,
+          "macro_250m_error_min_10": 0.2892153467729385,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_500_origin_125_neighbors": {
+          "shop_log_loss": 1.945968448665408,
+          "weighted_250m_composition_error": 0.2846943813176512,
+          "macro_250m_error_min_10": 0.29038487158954773,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_500_origin_125_shops": {
+          "shop_log_loss": 1.9354394011345353,
+          "weighted_250m_composition_error": 0.2826266529891268,
+          "macro_250m_error_min_10": 0.2838351588077994,
+          "cells": 813,
+          "cells_min_10": 396
+        },
+        "grid_500_origin_125_shops_population": {
+          "shop_log_loss": 1.9231371667842085,
+          "weighted_250m_composition_error": 0.2828529801768969,
+          "macro_250m_error_min_10": 0.2855944942900673,
+          "cells": 813,
+          "cells_min_10": 396
+        }
+      }
+    }
+  ],
+  "summary": {
+    "regional_mean": {
+      "shop_log_loss": 1.8376948953952386,
+      "weighted_250m_composition_error": 0.27746492809752726,
+      "macro_250m_error_min_10": 0.27684394931516254
+    },
+    "district_mean": {
+      "shop_log_loss": 1.833328705774044,
+      "weighted_250m_composition_error": 0.2757180968223248,
+      "macro_250m_error_min_10": 0.27549337855930106
+    },
+    "admin_mean": {
+      "shop_log_loss": 1.843769735515932,
+      "weighted_250m_composition_error": 0.27908016066621727,
+      "macro_250m_error_min_10": 0.27856903160432217
+    },
+    "admin_origin_0_neighbors": {
+      "shop_log_loss": 1.9287208390018955,
+      "weighted_250m_composition_error": 0.30274490840402324,
+      "macro_250m_error_min_10": 0.2976001727533514
+    },
+    "admin_origin_0_shops": {
+      "shop_log_loss": 1.881409558818456,
+      "weighted_250m_composition_error": 0.28874811032320297,
+      "macro_250m_error_min_10": 0.2862786361618613
+    },
+    "admin_origin_0_shops_population": {
+      "shop_log_loss": 1.8824898051387275,
+      "weighted_250m_composition_error": 0.2863452885550491,
+      "macro_250m_error_min_10": 0.28480658640714335
+    },
+    "grid_250_origin_0_neighbors": {
+      "shop_log_loss": 1.9262922550208168,
+      "weighted_250m_composition_error": 0.3033523656897277,
+      "macro_250m_error_min_10": 0.29912292081144803
+    },
+    "grid_250_origin_0_shops": {
+      "shop_log_loss": 1.9736070052776866,
+      "weighted_250m_composition_error": 0.3105637518477442,
+      "macro_250m_error_min_10": 0.30016497162115763
+    },
+    "grid_250_origin_0_shops_population": {
+      "shop_log_loss": 1.9780924341732204,
+      "weighted_250m_composition_error": 0.3103593190608625,
+      "macro_250m_error_min_10": 0.29971590359628547
+    },
+    "grid_250_origin_125_neighbors": {
+      "shop_log_loss": 1.926801910042239,
+      "weighted_250m_composition_error": 0.30084927274370693,
+      "macro_250m_error_min_10": 0.29718248762676724
+    },
+    "grid_250_origin_125_shops": {
+      "shop_log_loss": 1.9632634224264773,
+      "weighted_250m_composition_error": 0.3093409672426489,
+      "macro_250m_error_min_10": 0.2998515359848839
+    },
+    "grid_250_origin_125_shops_population": {
+      "shop_log_loss": 1.9512005305341311,
+      "weighted_250m_composition_error": 0.30714433074887654,
+      "macro_250m_error_min_10": 0.2981207488813946
+    },
+    "grid_500_origin_0_neighbors": {
+      "shop_log_loss": 1.9301238652352402,
+      "weighted_250m_composition_error": 0.3059600435148274,
+      "macro_250m_error_min_10": 0.30068191069605177
+    },
+    "grid_500_origin_0_shops": {
+      "shop_log_loss": 1.918127653551675,
+      "weighted_250m_composition_error": 0.302655168641556,
+      "macro_250m_error_min_10": 0.2958276550970929
+    },
+    "grid_500_origin_0_shops_population": {
+      "shop_log_loss": 1.9163831788390182,
+      "weighted_250m_composition_error": 0.3015354380616458,
+      "macro_250m_error_min_10": 0.2944237298575049
+    },
+    "grid_500_origin_125_neighbors": {
+      "shop_log_loss": 1.9246288209276499,
+      "weighted_250m_composition_error": 0.29935087673714256,
+      "macro_250m_error_min_10": 0.296411023173154
+    },
+    "grid_500_origin_125_shops": {
+      "shop_log_loss": 1.9338343815710486,
+      "weighted_250m_composition_error": 0.29908539508989357,
+      "macro_250m_error_min_10": 0.2924799629772696
+    },
+    "grid_500_origin_125_shops_population": {
+      "shop_log_loss": 1.9239493256768336,
+      "weighted_250m_composition_error": 0.29840891897929256,
+      "macro_250m_error_min_10": 0.2921584734993827
+    }
+  }
+}
