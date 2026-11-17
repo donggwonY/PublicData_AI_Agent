@@ -30,6 +30,10 @@ CASES = [
     ("get_station_traffic", {"station": "반월당"}),
     ("get_station_traffic", {}),
     ("find_nearby", {"address": "없는주소 999"}),                       # 오류 경로
+    # E-06 폐업 예측
+    ("get_competition_outlook", {"category": "카페", "gu": "수성구"}),
+    ("get_competition_outlook", {"category": "치킨"}),
+    ("get_competition_outlook", {"category": "한식", "dong": "범어동"}),
 ]
 
 

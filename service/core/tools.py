@@ -81,6 +81,9 @@ class DataStore:
         self.vacancy_scores = vs.set_index("uid", drop=False) if vs is not None and len(vs) else None
         self.vacancy_band_avg = (vs.groupby("vacant_band")["p_fill_1y"].mean().to_dict()
                                  if self.vacancy_scores is not None else {})
+        # 구×업종 앞으로 1년 폐업 예측(E-06): 오프라인 포아송 회귀 결과. 없으면 None → 도구가 '예측 없음' 안내.
+        cf = f.get("competition_forecast")
+        self.competition = cf if cf is not None and len(cf) else None
 
         self.ref = pd.Timestamp(self.meta["reference_date"])          # 분석 기준일
         self.categories = sorted(self.stores["category"].unique())     # 실제 존재하는 업태 목록(입력 검증용)
@@ -1104,6 +1107,94 @@ def get_station_traffic(station: str | None = None, top_n: int = 10) -> dict:
                 "other_matches": hit["station"].tolist()[1:], "basis": basis})
 
 
+# ── E-06 구×업종 앞으로 1년 폐업 예측 ─────────────────────────────────
+# 예측표는 분류가 바뀐 업태를 합쳐 만들었다(2016년 이름 변경). 앱 업태 이름을 예측표 이름으로 옮긴다.
+FORECAST_MERGE = {"통닭(치킨)": "호프/통닭", "까페": "커피숍"}
+FORECAST_RANGE_NOTE = "과거 7개 기간 점검에서 실제 값의 약 85%가 이 범위에 들었습니다"
+FORECAST_CAVEAT = ("구·군 × 세부 업태 단위의 폐업 신고 수 예측이며, 동네·개별 가게의 폐업 가능성이 아닙니다. "
+                   "과거 7개 기간 점검에서 평균 오차는 칸마다 약 2.5곳이었고, 직전 3년 평균보다 약 14% 정확했습니다. "
+                   "입력은 인허가 기록(직전 개업·폐업 수, 영업 수, 대구·구 개업 추세)뿐이며 매출·임대료·경기는 반영하지 않습니다. "
+                   "개업 수는 예측하지 않고 최근 실제 기록만 보여 줍니다. "
+                   "건수는 겸업을 한 가게로 세고 법정동이 없는 기록을 뺀 값이라 다른 조회의 개업·폐업 건수와 조금 다를 수 있습니다.")
+
+
+def _forecast_period_text(start: str, end: str) -> str:
+    a, b = pd.Timestamp(start), pd.Timestamp(end)
+    return f"앞으로 1년({a:%Y.%m.%d}~{b:%Y.%m.%d})"
+
+
+def _recent_periods(end: str) -> list[str]:
+    """예측 기간 직전 12개월 단위 3개 기간 이름(오래된 순). end 는 예측 기간 끝."""
+    e = pd.Timestamp(end)
+    out = []
+    for k in (3, 2, 1):
+        pe = e - pd.DateOffset(years=k)
+        ps = pe - pd.DateOffset(years=1) + pd.Timedelta(days=1)
+        out.append(f"{ps:%Y.%m}~{pe:%Y.%m}")
+    return out
+
+
+def get_competition_outlook(category: str, gu: str | None = None, dong: str | None = None, top_n: int = 10) -> dict:
+    """구·군 × 업태의 앞으로 1년 폐업 수 예측(E-06 오프라인 모델의 저장값)과 최근 3년 실제 개업·폐업 기록."""
+    s = store()
+    cf = s.competition
+    if cf is None:
+        return _py({"available": False, "reason": "폐업 예측표가 이 데이터 버전에 없습니다. 예측 수치는 데이터로 확인되지 않습니다.",
+                    "basis": _basis()})
+    if str(cf["reference_date"].iat[0]) != str(s.ref.date()):
+        return _py({"available": False, "reason": "폐업 예측표의 기준일이 현재 데이터 기준일과 달라 사용하지 않습니다.",
+                    "basis": _basis(forecast_reference_date=str(cf["reference_date"].iat[0]))})
+    g, d, area_label = _resolve_area(gu, dong)
+    service, cats, cat_label = _resolve_category(category)
+    if service:
+        cats = sorted(s.stores.loc[s.stores["service"] == service, "category"].unique())
+    cats = list(dict.fromkeys(FORECAST_MERGE.get(c, c) for c in cats or []))
+    rows = cf[cf["category"].isin(cats)]
+    if g:
+        rows = rows[rows["gu"] == g]
+    rows = rows.sort_values("closes_pred", ascending=False)
+    shown = rows.head(max(1, int(top_n)))
+    start, end = str(cf["period_start"].iat[0]), str(cf["period_end"].iat[0])
+    period = _forecast_period_text(start, end)
+    names = _recent_periods(end)
+
+    def item(r) -> dict:
+        p = float(r["closes_pred"])
+        n = "1곳 미만" if p < 1 else f"약 {round(p):,}곳"
+        c_hist = [int(r[f"closes_{k}y_ago"]) for k in (3, 2, 1)]
+        o_hist = [int(r[f"opens_{k}y_ago"]) for k in (3, 2, 1)]
+        return {
+            "gu": r["gu"], "category": r["category"],
+            "display": {
+                "forecast": f"{period} {r['gu']} {r['category']} 폐업 예상: {n} (범위 {int(r['closes_lo']):,}~{int(r['closes_hi']):,}곳)",
+                "active_now": f"기준일 현재 인허가상 영업 {int(r['active_now']):,}곳",
+                "recent_actual": (f"최근 실제 기록({' / '.join(names)}): 폐업 {' → '.join(f'{v:,}' for v in c_hist)}곳, "
+                                  f"개업 {' → '.join(f'{v:,}' for v in o_hist)}곳"),
+            },
+            "closes_pred": round(p, 1), "closes_range": [int(r["closes_lo"]), int(r["closes_hi"])],
+            "active_now": int(r["active_now"]),
+            "recent_closes": dict(zip(names, c_hist)), "recent_opens": dict(zip(names, o_hist)),
+        }
+
+    notes = []
+    if d:
+        notes.append(f"동 단위 예측은 없어 {g} 전체 기준으로 답합니다.")
+    if not g and len(cats) == 1 and len(rows):
+        notes.append(f"대구 9개 구·군 합계 예상 약 {round(float(rows['closes_pred'].sum())):,}곳(구·군 값의 합, 범위는 구·군별로만 제공).")
+    if len(rows) > len(shown):
+        notes.append(f"예상 폐업이 많은 순으로 {len(shown)}개만 보여 줍니다(전체 {len(rows)}개).")
+    if not len(rows):
+        notes.append("이 지역·업태 조합은 최근 영업·개업 기록이 없어 예측 대상이 아닙니다. 예측 수치는 데이터로 확인되지 않습니다.")
+    return _py({
+        "available": bool(len(rows)), "area": g or "대구 전체", "category": cat_label, "period": period,
+        "items": [item(r) for _, r in shown.iterrows()],
+        "range_note": FORECAST_RANGE_NOTE, "notes": notes, "caveat": FORECAST_CAVEAT,
+        "basis": _basis(model="E-06 포아송 회귀(오프라인 계산 후 저장한 값)",
+                        definition="기준일 다음 날부터 12개월 동안 해당 구·군·업태에서 새로 접수될 폐업 신고 수(겸업은 한 가게, 단기 행사 제외)",
+                        forecast_period=[start, end]),
+    })
+
+
 TOOL_FUNCTIONS = {
     "get_market_cycle": get_market_cycle,
     "find_vacant_units": find_vacant_units,
@@ -1116,4 +1207,5 @@ TOOL_FUNCTIONS = {
     "get_area_profile": get_area_profile,
     "find_nearby": find_nearby,
     "get_station_traffic": get_station_traffic,
+    "get_competition_outlook": get_competition_outlook,
 }

@@ -29,9 +29,11 @@ import pandas as pd
 SCHEMA = "app"
 TABLES = ["stores", "units", "transitions", "area_year", "area_cycle", "survival", "vacancy_area",
           "poi", "area_context", "legal_admin_map", "station_traffic", "parking", "market",
-          "vacancy_scores"]  # E-03 공실 재입점 점수(오프라인 모델 결과, 2026-11-12 v6부터)
+          "vacancy_scores",  # E-03 공실 재입점 점수(오프라인 모델 결과, 2026-11-12 v6부터)
+          "competition_forecast"]  # E-06 구×업종 앞으로 1년 폐업 예측(오프라인 모델 결과, docs/e06)
 # 기본 키(version_id 와 함께). D-02 결합 계약: 인허가는 org_code + service + mgmt_no, 자리는 uid.
-PRIMARY_KEYS = {"stores": ["org_code", "service", "mgmt_no"], "units": ["uid"], "vacancy_scores": ["uid"]}
+PRIMARY_KEYS = {"stores": ["org_code", "service", "mgmt_no"], "units": ["uid"], "vacancy_scores": ["uid"],
+                "competition_forecast": ["gu", "category"]}
 INDEXES = {"stores": [["uid"], ["gu", "dong"]], "units": [["gu", "dong"]], "transitions": [["uid"]]}
 
 

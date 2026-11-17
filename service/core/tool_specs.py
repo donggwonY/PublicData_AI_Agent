@@ -179,6 +179,24 @@ TOOL_SPECS = [
         },
     },
     {
+        "name": "get_competition_outlook",
+        "description": (
+            "구·군 × 업태의 앞으로 1년(기준일 다음 날부터 12개월) 폐업 신고 수 예측과 최근 3년 실제 개업·폐업 기록. "
+            "'내년에 수성구 카페 몇 곳이나 문 닫을까?', '이 업종 경쟁이 줄어들까?', '어느 구에서 치킨집이 많이 닫을까?'처럼 "
+            "앞으로의 경쟁 점포 변화를 물을 때 쓴다. 예측은 오프라인 포아송 회귀 모델의 저장값이며 구·군 단위뿐이다(동 단위 없음). "
+            "개업 수는 예측하지 않는다. gu 를 생략하면 구·군별로 예상 폐업이 많은 순으로 반환한다."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "category": {"type": "string", "description": _CATEGORY_DESC},
+                **_AREA,
+                "top_n": {"type": "integer", "default": 10},
+            },
+            "required": ["category"],
+        },
+    },
+    {
         "name": "normalize_address",
         "description": (
             "주소·상호 문자열을 분석 단위인 '자리'(건물 지번 + 층) 후보로 정규화하고 각 후보의 현재 상태(영업중/공백일수)를 반환. "

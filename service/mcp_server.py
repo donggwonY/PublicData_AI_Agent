@@ -92,6 +92,11 @@ def get_station_traffic(station: str | None = None, top_n: int = 10) -> dict:
     return T.get_station_traffic(station, top_n)
 
 
+@mcp.tool(description=_DESC["get_competition_outlook"])
+def get_competition_outlook(category: str, gu: str | None = None, dong: str | None = None, top_n: int = 10) -> dict:
+    return T.get_competition_outlook(category, gu, dong, top_n)
+
+
 @mcp.prompt(name="startup_consult", title="대구 창업 상권 상담 시작",
             description="에이전트 시스템 프롬프트(숫자 원칙·해석 원칙)를 적용하고 첫 질문으로 상담을 시작")
 def startup_consult(question: str = "대구에서 카페 창업을 준비 중이에요. 어디서부터 확인하면 좋을까요?") -> str:
