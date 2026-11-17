@@ -52,6 +52,17 @@ class CompetitionOutlookTests(unittest.TestCase):
         self.assertIsNone(re.search(r"\d+\.\d+곳", d["forecast"]))
         self.assertNotIn("80%", d["forecast"] + T.FORECAST_RANGE_NOTE)
 
+    def test_dashboard_category_choices(self):
+        from ui_forecast import forecast_categories
+        food = forecast_categories(self.s.stores, "일반음식점")
+        self.assertEqual(food[0], "한식")
+        self.assertIn("호프/통닭", food)
+        self.assertNotIn("통닭(치킨)", food)
+        cafe = forecast_categories(self.s.stores, "휴게음식점")
+        self.assertIn("커피숍", cafe)
+        self.assertNotIn("까페", cafe)
+        self.assertTrue(set(forecast_categories(self.s.stores, "의원·병원")) <= set(self.cf.category))
+
     def test_stale_or_missing_table_returns_unavailable(self):
         s, orig = self.s, self.s.competition
         try:

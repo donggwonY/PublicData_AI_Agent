@@ -77,6 +77,8 @@ def render_permit_trends(stores, reference_date, gu=None, legal_admin=None):
         else:
             st.caption('표시할 해당 업종 기록이 없습니다.')
     if selected!=choices[0]:
+        from ui_forecast import render_closure_forecast
+        render_closure_forecast(stores,selected,gu)
         with st.container(border=True):
             st.markdown('#### 지역별 비교')
             gu_tab,dong_tab=st.tabs(['구·군 비교','동·읍·면 비교'])
