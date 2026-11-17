@@ -1,0 +1,336 @@
+{
+  "source": "shared app.stores read-only",
+  "version": 6,
+  "reference_date": "2026-11-06",
+  "raw_rows": 286896,
+  "retained_rows": 254967,
+  "rules": "is_primary=true; short_event=false; valid opening date <=reference; floor unknown retained separately; 2026 incomplete excluded from completed-year screening",
+  "bands": {
+    "basement": 7838,
+    "ground": 71075,
+    "unknown": 153254,
+    "upper": 22800
+  },
+  "recent_annual": [
+    {
+      "year": 2015,
+      "n": 7265,
+      "known": 4115,
+      "upper": 965,
+      "coverage_pct": 56.64,
+      "upper_among_known_pct": 23.45
+    },
+    {
+      "year": 2016,
+      "n": 8419,
+      "known": 4855,
+      "upper": 1218,
+      "coverage_pct": 57.67,
+      "upper_among_known_pct": 25.09
+    },
+    {
+      "year": 2017,
+      "n": 8463,
+      "known": 5467,
+      "upper": 1227,
+      "coverage_pct": 64.6,
+      "upper_among_known_pct": 22.44
+    },
+    {
+      "year": 2018,
+      "n": 8268,
+      "known": 5967,
+      "upper": 1142,
+      "coverage_pct": 72.17,
+      "upper_among_known_pct": 19.14
+    },
+    {
+      "year": 2019,
+      "n": 8559,
+      "known": 6675,
+      "upper": 1211,
+      "coverage_pct": 77.99,
+      "upper_among_known_pct": 18.14
+    },
+    {
+      "year": 2020,
+      "n": 7753,
+      "known": 6105,
+      "upper": 1096,
+      "coverage_pct": 78.74,
+      "upper_among_known_pct": 17.95
+    },
+    {
+      "year": 2021,
+      "n": 8089,
+      "known": 6319,
+      "upper": 1052,
+      "coverage_pct": 78.12,
+      "upper_among_known_pct": 16.65
+    },
+    {
+      "year": 2022,
+      "n": 7552,
+      "known": 6040,
+      "upper": 1125,
+      "coverage_pct": 79.98,
+      "upper_among_known_pct": 18.63
+    },
+    {
+      "year": 2023,
+      "n": 7267,
+      "known": 5898,
+      "upper": 1096,
+      "coverage_pct": 81.16,
+      "upper_among_known_pct": 18.58
+    },
+    {
+      "year": 2024,
+      "n": 6738,
+      "known": 5354,
+      "upper": 971,
+      "coverage_pct": 79.46,
+      "upper_among_known_pct": 18.14
+    },
+    {
+      "year": 2025,
+      "n": 6304,
+      "known": 4696,
+      "upper": 890,
+      "coverage_pct": 74.49,
+      "upper_among_known_pct": 18.95
+    },
+    {
+      "year": 2026,
+      "n": 5190,
+      "known": 4094,
+      "upper": 734,
+      "coverage_pct": 78.88,
+      "upper_among_known_pct": 17.93
+    }
+  ],
+  "top_services": [
+    {
+      "service": "일반음식점",
+      "n": 15460,
+      "known": 14050,
+      "upper": 1703,
+      "coverage_pct": 90.88,
+      "upper_among_known_pct": 12.12
+    },
+    {
+      "service": "휴게음식점",
+      "n": 8371,
+      "known": 7192,
+      "upper": 785,
+      "coverage_pct": 85.92,
+      "upper_among_known_pct": 10.91
+    },
+    {
+      "service": "미용업",
+      "n": 5651,
+      "known": 5084,
+      "upper": 1374,
+      "coverage_pct": 89.97,
+      "upper_among_known_pct": 27.03
+    },
+    {
+      "service": "즉석판매제조가공업",
+      "n": 3469,
+      "known": 2980,
+      "upper": 399,
+      "coverage_pct": 85.9,
+      "upper_among_known_pct": 13.39
+    },
+    {
+      "service": "담배소매업",
+      "n": 2622,
+      "known": 1188,
+      "upper": 42,
+      "coverage_pct": 45.31,
+      "upper_among_known_pct": 3.54
+    },
+    {
+      "service": "의원",
+      "n": 809,
+      "known": 702,
+      "upper": 636,
+      "coverage_pct": 86.77,
+      "upper_among_known_pct": 90.6
+    },
+    {
+      "service": "제과점영업",
+      "n": 618,
+      "known": 553,
+      "upper": 71,
+      "coverage_pct": 89.48,
+      "upper_among_known_pct": 12.84
+    },
+    {
+      "service": "체력단련장업",
+      "n": 450,
+      "known": 376,
+      "upper": 315,
+      "coverage_pct": 83.56,
+      "upper_among_known_pct": 83.78
+    },
+    {
+      "service": "인터넷컴퓨터게임시설제공업",
+      "n": 412,
+      "known": 371,
+      "upper": 72,
+      "coverage_pct": 90.05,
+      "upper_among_known_pct": 19.41
+    },
+    {
+      "service": "축산판매업",
+      "n": 1040,
+      "known": 344,
+      "upper": 93,
+      "coverage_pct": 33.08,
+      "upper_among_known_pct": 27.03
+    },
+    {
+      "service": "약국",
+      "n": 330,
+      "known": 218,
+      "upper": 22,
+      "coverage_pct": 66.06,
+      "upper_among_known_pct": 10.09
+    },
+    {
+      "service": "이용업",
+      "n": 221,
+      "known": 203,
+      "upper": 65,
+      "coverage_pct": 91.86,
+      "upper_among_known_pct": 32.02
+    },
+    {
+      "service": "체육도장업",
+      "n": 265,
+      "known": 199,
+      "upper": 168,
+      "coverage_pct": 75.09,
+      "upper_among_known_pct": 84.42
+    },
+    {
+      "service": "청소년게임제공업",
+      "n": 213,
+      "known": 180,
+      "upper": 42,
+      "coverage_pct": 84.51,
+      "upper_among_known_pct": 23.33
+    },
+    {
+      "service": "당구장업",
+      "n": 112,
+      "known": 93,
+      "upper": 91,
+      "coverage_pct": 83.04,
+      "upper_among_known_pct": 97.85
+    }
+  ],
+  "cell_count": 1322,
+  "screened_cells": 158,
+  "pairs_passing_all_six_years": 18,
+  "passing_pairs": [
+    {
+      "gu": "남구",
+      "service": "미용업",
+      "year": 6
+    },
+    {
+      "gu": "남구",
+      "service": "일반음식점",
+      "year": 6
+    },
+    {
+      "gu": "남구",
+      "service": "휴게음식점",
+      "year": 6
+    },
+    {
+      "gu": "달서구",
+      "service": "미용업",
+      "year": 6
+    },
+    {
+      "gu": "달서구",
+      "service": "일반음식점",
+      "year": 6
+    },
+    {
+      "gu": "달서구",
+      "service": "즉석판매제조가공업",
+      "year": 6
+    },
+    {
+      "gu": "달서구",
+      "service": "휴게음식점",
+      "year": 6
+    },
+    {
+      "gu": "동구",
+      "service": "미용업",
+      "year": 6
+    },
+    {
+      "gu": "동구",
+      "service": "일반음식점",
+      "year": 6
+    },
+    {
+      "gu": "동구",
+      "service": "즉석판매제조가공업",
+      "year": 6
+    },
+    {
+      "gu": "동구",
+      "service": "휴게음식점",
+      "year": 6
+    },
+    {
+      "gu": "서구",
+      "service": "일반음식점",
+      "year": 6
+    },
+    {
+      "gu": "수성구",
+      "service": "미용업",
+      "year": 6
+    },
+    {
+      "gu": "수성구",
+      "service": "일반음식점",
+      "year": 6
+    },
+    {
+      "gu": "수성구",
+      "service": "즉석판매제조가공업",
+      "year": 6
+    },
+    {
+      "gu": "수성구",
+      "service": "휴게음식점",
+      "year": 6
+    },
+    {
+      "gu": "중구",
+      "service": "미용업",
+      "year": 6
+    },
+    {
+      "gu": "중구",
+      "service": "일반음식점",
+      "year": 6
+    }
+  ],
+  "limitations": [
+    "floor extracted from latest address; opening-time floor not verified",
+    "missingness and floor parsing can bias upper-floor share",
+    "registered stores do not cover all commercial premises",
+    "upper-floor entry is not success, demand, suitability, or rent affordability",
+    "no forecast evaluated; >=30 and >=80% are screening only"
+  ]
+}
