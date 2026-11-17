@@ -1,0 +1,17 @@
+{
+ "decision": "docs/e06/service_backtest.md",
+ "input_sha256": "e011e410c8779e2d5a37c1bce169e56d70efde292e943d92ec5f8338fab24091",
+ "precheck_2026_mae": 2.7142,
+ "model": "G1 포아송 회귀 λ=0.3, 학습 기간 연도 ≤ 2026 (11-06 기준 12개월)",
+ "period": [
+  "2026-11-07",
+  "2027-11-06"
+ ],
+ "rows": 777,
+ "gu": 9,
+ "categories": 117,
+ "dropped_gu_values": [],
+ "closes_pred_sum": 6716.1,
+ "last_period_actual_closes_sum": 7158,
+ "parquet_sha256": "9faf0f5878a7d5351edd30ce3d2b1fdb121dda3decc3133dbcbde9342ac663e1"
+}
