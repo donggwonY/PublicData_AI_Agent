@@ -37,21 +37,56 @@ def _sync_industry():
     st.session_state['fav_industry']=st.session_state['dash_trend_industry']
 
 
+def _recent_change_chart(shown,previous_opened,opened,previous_closed,closed):
+    if len(shown)==1:
+        trend=pd.DataFrame({'기간':['이전 1년','최근 1년']*2,'구분':['개업']*2+['폐업 신고']*2,
+                            '인허가 기록(건)':[previous_opened,opened,previous_closed,closed]})
+        _bar(trend,'인허가 기록(건)','기간','dash-permit-trends','구분')
+    elif not shown.empty:
+        chart=shown.head(10).melt(id_vars='industry',value_vars=['opened','closure_reports'],var_name='구분',value_name='인허가 기록(건)')
+        chart['구분']=chart['구분'].replace({'opened':'개업','closure_reports':'폐업 신고'})
+        _bar(chart,'인허가 기록(건)','industry','dash-permit-trends','구분')
+        st.caption('현재 영업 인허가 수가 많은 상위 10개 업종입니다. 관심 업종을 선택하면 이전 1년과 직접 비교할 수 있어요.')
+    else:
+        st.caption('표시할 해당 업종 기록이 없습니다.')
+
+
 def render_permit_trends(stores, reference_date, gu=None, legal_admin=None):
-    result=summarize_permit_trends(stores,reference_date,gu)
-    rows=pd.DataFrame(result['rows'])
+    from ui_forecast import render_flow_with_forecast, render_sub_forecast_table, scoped_stores, sub_category_choices, sub_label
     choices=industry_choices(stores)
     if st.session_state.get('dash_trend_industry') not in choices:
         saved=st.session_state.get('saved_dash_trend_industry',choices[0])
         st.session_state['dash_trend_industry']=saved if saved in choices else choices[0]
-    selected=st.selectbox('관심 업종',choices,key='dash_trend_industry',on_change=_sync_industry,help='업종을 선택하면 다른 구·군과 같은 조건으로 비교할 수 있어요.')
+    pick_industry,pick_sub=st.columns(2)
+    with pick_industry:
+        selected=st.selectbox('관심 업종',choices,key='dash_trend_industry',on_change=_sync_industry,help='업종을 선택하면 다른 구·군과 같은 조건으로 비교할 수 있어요.')
+    # 세부 업태(2026-11-17): 고르면 이 화면 전체(요약·그래프·지역 비교·다운로드)가 그 업태 기준이 된다.
+    sub=None
+    subs=sub_category_choices(stores,selected) if selected!=choices[0] else []
+    with pick_sub:
+        if subs:
+            whole=f'{selected} 전체'
+            sub_key='dash_trend_sub_'+selected
+            if st.session_state.get(sub_key) not in [whole]+subs:
+                st.session_state[sub_key]=whole
+            picked_sub=st.selectbox('세부 업태',[whole]+subs,key=sub_key,
+                help='예: 휴게음식점 안의 커피숍. 세부 업태는 인허가 종류와 관계없이 합산하며, 앞으로 1년 폐업 예측은 세부 업태에서 볼 수 있어요.')
+            sub=None if picked_sub==whole else picked_sub
+        else:
+            st.selectbox('세부 업태',['관심 업종을 먼저 골라 주세요'],disabled=True,key='dash_trend_sub_disabled')
+    scope=scoped_stores(stores,sub) if sub else stores
+    label=sub_label(sub) if sub else selected
+    shown_name=sub or selected
+    result=summarize_permit_trends(scope,reference_date,gu)
+    rows=pd.DataFrame(result['rows'])
     if rows.empty:
         st.info('선택 지역에 집계 가능한 인허가 기록이 없습니다.')
         return
-    shown=rows if selected==choices[0] else rows[rows.industry.eq(selected)]
-    title=f"{gu or '대구 전체'} · {selected}"
+    shown=rows if selected==choices[0] else rows[rows.industry.eq(label)]
+    title=f"{gu or '대구 전체'} · {shown_name}"
     st.subheader(title)
-    st.caption(f"최근 1년 {result['window_first_day']}~{result['reference_date']} · 인허가 기록 기준")
+    st.caption(f"최근 1년 {result['window_first_day']}~{result['reference_date']} · 인허가 기록 기준"
+               +(f" · {sub}은(는) 인허가 종류와 관계없이 합산" if sub else ''))
     active=int(shown.active_permits.sum());opened=int(shown.opened.sum());closed=int(shown.closure_reports.sum())
     previous_opened=int(shown.previous_opened.sum());previous_closed=int(shown.previous_closure_reports.sum())
     left,middle,right=st.columns(3)
@@ -63,27 +98,25 @@ def render_permit_trends(stores, reference_date, gu=None, legal_admin=None):
     st.caption('실제 고유 점포 수와 다를 수 있으며, 폐업 신고는 사업 실패를 뜻하지 않습니다.')
     if shown.empty:
         st.info('이 지역의 유효 자료에서는 해당 업종 기록을 찾지 못했어요. 다른 지역 비교는 아래에서 확인할 수 있어요.')
-    with st.container(border=True):
-        st.markdown('#### 최근 변화 한눈에')
-        if len(shown)==1:
-            trend=pd.DataFrame({'기간':['이전 1년','최근 1년']*2,'구분':['개업']*2+['폐업 신고']*2,
-                                '인허가 기록(건)':[previous_opened,opened,previous_closed,closed]})
-            _bar(trend,'인허가 기록(건)','기간','dash-permit-trends','구분')
-        elif not shown.empty:
-            chart=shown.head(10).melt(id_vars='industry',value_vars=['opened','closure_reports'],var_name='구분',value_name='인허가 기록(건)')
-            chart['구분']=chart['구분'].replace({'opened':'개업','closure_reports':'폐업 신고'})
-            _bar(chart,'인허가 기록(건)','industry','dash-permit-trends','구분')
-            st.caption('현재 영업 인허가 수가 많은 상위 10개 업종입니다. 관심 업종을 선택하면 이전 1년과 직접 비교할 수 있어요.')
-        else:
-            st.caption('표시할 해당 업종 기록이 없습니다.')
+    if sub:
+        with st.container(border=True):
+            st.markdown('#### 최근 흐름과 앞으로 1년 폐업 예측')
+            # 예측이 있으면 실제 3기간 + 예측 그래프가 '최근 변화' 그래프를 대신한다
+            if not render_flow_with_forecast(sub,gu):
+                st.caption('이 세부 업태·지역은 폐업 예측이 없어 최근 1년 변화만 보여 드려요.')
+                _recent_change_chart(shown,previous_opened,opened,previous_closed,closed)
+    else:
+        with st.container(border=True):
+            st.markdown('#### 최근 변화 한눈에')
+            _recent_change_chart(shown,previous_opened,opened,previous_closed,closed)
+            if selected!=choices[0]:
+                render_sub_forecast_table(stores,selected,gu)
     if selected!=choices[0]:
-        from ui_forecast import render_closure_forecast
-        render_closure_forecast(stores,selected,gu)
         with st.container(border=True):
             st.markdown('#### 지역별 비교')
             gu_tab,dong_tab=st.tabs(['구·군 비교','동·읍·면 비교'])
             with gu_tab:
-                comparison=compare_industry_regions(stores,reference_date,selected)
+                comparison=compare_industry_regions(scope,reference_date,label)
                 if not comparison.empty:
                     regions=comparison.region.tolist()
                     default=regions
@@ -93,7 +126,7 @@ def render_permit_trends(stores, reference_date, gu=None, legal_admin=None):
                     st.session_state['dash_compare_regions']=[r for r in st.session_state['dash_compare_regions'] if r in regions]
                     with st.expander(f"비교 지역 선택 · {len(st.session_state['dash_compare_regions'])}곳"):
                         picked=st.multiselect('비교할 구·군',regions,max_selections=9,key='dash_compare_regions',on_change=_remember,args=('dash_compare_regions',))
-                    st.caption(f'{selected} · 선택한 구·군을 같은 기준으로 비교합니다.')
+                    st.caption(f'{shown_name} · 선택한 구·군을 같은 기준으로 비교합니다.')
                     selected_rows=comparison[comparison.region.isin(picked)].copy()
                     labels={'region':'지역','active_permits':'영업 인허가(건)','active_share_pct':'지역 내 업종 비중(%)',
                             'opened':'최근 1년 개업(건)','closure_reports':'최근 1년 폐업 신고(건)',
@@ -110,7 +143,7 @@ def render_permit_trends(stores, reference_date, gu=None, legal_admin=None):
                     with st.expander('구·군 비교 기준'):
                         st.caption('상단 요약은 선택 지역, 이 그래프는 비교 대상으로 선택한 구·군 기준입니다. 비중의 분모는 각 지역의 수록 업종 전체 영업 인허가입니다. 지역명 미연결은 제외하며 건수·비중은 수요나 창업 성공률을 뜻하지 않습니다.')
             with dong_tab:
-                _render_dong_comparison(stores,reference_date,selected,gu,legal_admin)
+                _render_dong_comparison(scope,reference_date,label,gu,legal_admin,shown_name)
 
     else:
         st.info('관심 업종을 선택하면 이전 1년 변화와 구·군별·동별 현황을 비교할 수 있어요.')
@@ -118,7 +151,7 @@ def render_permit_trends(stores, reference_date, gu=None, legal_admin=None):
         table=shown.rename(columns={'industry':'업종','active_permits':'영업 인허가(건)','opened':'최근 1년 개업(건)',
             'closure_reports':'최근 1년 폐업 신고(건)','previous_opened':'이전 1년 개업(건)','previous_closure_reports':'이전 1년 폐업 신고(건)','active_share_pct':'지역 내 업종 비중(%)'})
         st.dataframe(table,hide_index=True,width='stretch')
-        st.download_button('선택한 지역·업종 CSV',data=permit_trends_csv(result,gu,None if selected==choices[0] else selected),
+        st.download_button('선택한 지역·업종 CSV',data=permit_trends_csv(result,gu,None if selected==choices[0] else label),
             file_name=f"permit_trends_{result['reference_date']}.csv",mime='text/csv',key='dash_trend_download')
         st.caption(f"이전 1년: {result['previous_window_first_day']}~{result['previous_window_last_day']} · 두 기간 모두 365일입니다.")
         st.caption(f"원천 {result['source_service_count']}개 업종, 의원·병원을 묶어 {result['analysis_group_count']}개 그룹입니다. 전체 상업시설을 포괄하지 않습니다.")
@@ -126,13 +159,14 @@ def render_permit_trends(stores, reference_date, gu=None, legal_admin=None):
         st.caption(f"선택 지역 제외: 단기 행사·팝업 인허가 {result.get('excluded_short_event_rows',0):,}건 · 날짜 누락·모순 {result['excluded_date_rows']:,}건")
 
 
-def _render_dong_comparison(stores,reference_date,industry,gu,legal_admin):
+def _render_dong_comparison(stores,reference_date,industry,gu,legal_admin,display=None):
+    display=display or industry
     regions=sorted(set(stores.gu.dropna()) & {'중구','동구','서구','남구','북구','수성구','달서구','달성군','군위군'})
     if not regions:
         st.info('비교할 구·군 자료가 없습니다.');return
     if gu in regions:
         chosen=gu
-        st.markdown(f'**{chosen} · {industry}**')
+        st.markdown(f'**{chosen} · {display}**')
     else:
         if st.session_state.get('dash_dong_compare_gu') not in regions:
             st.session_state['dash_dong_compare_gu']='중구' if '중구' in regions else regions[0]

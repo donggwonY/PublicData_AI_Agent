@@ -52,16 +52,34 @@ class CompetitionOutlookTests(unittest.TestCase):
         self.assertIsNone(re.search(r"\d+\.\d+곳", d["forecast"]))
         self.assertNotIn("80%", d["forecast"] + T.FORECAST_RANGE_NOTE)
 
-    def test_dashboard_category_choices(self):
-        from ui_forecast import forecast_categories
-        food = forecast_categories(self.s.stores, "일반음식점")
+    def test_dashboard_sub_categories_and_scope(self):
+        from ui_forecast import scoped_stores, sub_category_choices, sub_label
+        food = sub_category_choices(self.s.stores, "일반음식점")
         self.assertEqual(food[0], "한식")
         self.assertIn("호프/통닭", food)
         self.assertNotIn("통닭(치킨)", food)
-        cafe = forecast_categories(self.s.stores, "휴게음식점")
+        self.assertNotIn("기타", food)
+        cafe = sub_category_choices(self.s.stores, "휴게음식점")
         self.assertIn("커피숍", cafe)
         self.assertNotIn("까페", cafe)
-        self.assertTrue(set(forecast_categories(self.s.stores, "의원·병원")) <= set(self.cf.category))
+        scope = scoped_stores(self.s.stores, "커피숍")
+        m = scope["service"].eq(sub_label("커피숍"))
+        # 인허가 종류와 관계없이 커피숍(옛 이름 까페 포함)을 모두 묶고, 다른 기록은 그대로 둔다
+        self.assertEqual(int(m.sum()), int(self.s.stores["category"].isin(["커피숍", "까페"]).sum()))
+        self.assertEqual(len(scope), len(self.s.stores))
+        self.assertTrue(scope.loc[~m, "service"].equals(self.s.stores.loc[~m, "service"].astype(object)))
+        self.assertEqual(sub_category_choices(self.s.stores.drop(columns=["category"]), "일반음식점"), [])
+
+    def test_forecast_area_shows_all_gu_table_for_selected_gu(self):
+        from streamlit.testing.v1 import AppTest
+        app = AppTest.from_string(
+            "from ui_forecast import render_flow_with_forecast\n"
+            "render_flow_with_forecast('커피숍', '수성구')\n", default_timeout=60).run()
+        self.assertFalse(app.exception)
+        self.assertTrue(any(e.label.startswith("구·군별 예측") for e in app.expander))
+        table = app.dataframe[0].value
+        self.assertEqual(len(table), 9)
+        self.assertIn("수성구 (선택)", set(table["구·군"]))
 
     def test_stale_or_missing_table_returns_unavailable(self):
         s, orig = self.s, self.s.competition
