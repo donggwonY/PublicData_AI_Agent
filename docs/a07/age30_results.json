@@ -1,0 +1,300 @@
+{
+ "plan": "docs/a07/age30_plan.md",
+ "periods": {
+  "development": [
+   "2019-11",
+   "2022-10"
+  ],
+  "reference": [
+   "2023-11",
+   "2025-10"
+  ]
+ },
+ "bands": {
+  "age_30_39": {
+   "a07_reproduced_R0_R1": [
+    118.88,
+    79.59
+   ],
+   "settings": {
+    "C1_k": "inf",
+    "C1_k_dev": {
+     "0": 140.373,
+     "100": 135.547,
+     "1000": 119.165,
+     "inf": 115.793
+    },
+    "C2_k": "inf",
+    "C2_k_dev": {
+     "0": 139.549,
+     "100": 135.03,
+     "1000": 120.316,
+     "inf": 116.967
+    },
+    "B2_dev": {
+     "alpha=1": 108.04,
+     "alpha=10": 108.885,
+     "alpha=100": 112.084
+    },
+    "B2_pick": "alpha=1",
+    "B3_base": "C2",
+    "B3_dev": {
+     "alpha=1": 111.723,
+     "alpha=10": 113.344,
+     "alpha=100": 114.408
+    },
+    "B3_pick": "alpha=1",
+    "H3_dev": {
+     "hgb_fixed": 123.513
+    },
+    "H3_pick": "hgb_fixed"
+   },
+   "development": {
+    "R0": {
+     "mae_people": 133.099,
+     "direction_accuracy": 0.7608,
+     "pair_order_accuracy": 0.6724,
+     "rows": 4180
+    },
+    "R1": {
+     "mae_people": 109.4495,
+     "direction_accuracy": 0.7962,
+     "pair_order_accuracy": 0.6954,
+     "rows": 4180
+    },
+    "C1": {
+     "mae_people": 115.7931,
+     "direction_accuracy": 0.7031,
+     "pair_order_accuracy": 0.6324,
+     "rows": 4180
+    },
+    "C2": {
+     "mae_people": 116.9665,
+     "direction_accuracy": 0.6524,
+     "pair_order_accuracy": 0.6642,
+     "rows": 4180
+    },
+    "B2": {
+     "mae_people": 108.0404,
+     "direction_accuracy": 0.7931,
+     "pair_order_accuracy": 0.6944,
+     "rows": 4180
+    },
+    "B3": {
+     "mae_people": 111.723,
+     "direction_accuracy": 0.7624,
+     "pair_order_accuracy": 0.6707,
+     "rows": 4180
+    },
+    "H3": {
+     "mae_people": 123.5127,
+     "direction_accuracy": 0.7139,
+     "pair_order_accuracy": 0.6524,
+     "rows": 4180
+    }
+   },
+   "reference": {
+    "R0": {
+     "mae_people": 135.4149,
+     "direction_accuracy": 0.751,
+     "pair_order_accuracy": 0.7162,
+     "rows": 3562
+    },
+    "R1": {
+     "mae_people": 91.5247,
+     "direction_accuracy": 0.6892,
+     "pair_order_accuracy": 0.7036,
+     "rows": 3562
+    },
+    "C1": {
+     "mae_people": 127.3192,
+     "direction_accuracy": 0.5065,
+     "pair_order_accuracy": 0.5509,
+     "rows": 3562
+    },
+    "C2": {
+     "mae_people": 129.3557,
+     "direction_accuracy": 0.4947,
+     "pair_order_accuracy": 0.5922,
+     "rows": 3562
+    },
+    "B2": {
+     "mae_people": 104.5348,
+     "direction_accuracy": 0.6193,
+     "pair_order_accuracy": 0.7123,
+     "rows": 3562
+    },
+    "B3": {
+     "mae_people": 107.1628,
+     "direction_accuracy": 0.6168,
+     "pair_order_accuracy": 0.7209,
+     "rows": 3562
+    },
+    "H3": {
+     "mae_people": 140.2209,
+     "direction_accuracy": 0.621,
+     "pair_order_accuracy": 0.6734,
+     "rows": 3562
+    }
+   },
+   "pick_on_dev": "B2",
+   "reference_improvement_vs_R0_ci95": [
+    -44.244,
+    -18.525
+   ],
+   "provisional_pass": false
+  },
+  "age_00_09": {
+   "a07_reproduced_R0_R1": [
+    61.3,
+    39.7
+   ],
+   "settings": {
+    "C1_k": "inf",
+    "C1_k_dev": {
+     "0": 98.398,
+     "100": 91.344,
+     "1000": 79.643,
+     "inf": 79.073
+    },
+    "C2_k": "inf",
+    "C2_k_dev": {
+     "0": 95.802,
+     "100": 88.022,
+     "1000": 74.582,
+     "inf": 73.496
+    },
+    "C3_k": "inf",
+    "C3_k_dev": {
+     "0": 98.048,
+     "100": 90.317,
+     "1000": 76.103,
+     "inf": 73.905
+    },
+    "B2_dev": {
+     "alpha=1": 70.942,
+     "alpha=10": 70.669,
+     "alpha=100": 71.648
+    },
+    "B2_pick": "alpha=10",
+    "B3_base": "C2",
+    "B3_dev": {
+     "alpha=1": 72.345,
+     "alpha=10": 72.164,
+     "alpha=100": 72.136
+    },
+    "B3_pick": "alpha=100",
+    "H3_dev": {
+     "hgb_fixed": 80.33
+    },
+    "H3_pick": "hgb_fixed"
+   },
+   "development": {
+    "R0": {
+     "mae_people": 87.239,
+     "direction_accuracy": 0.8211,
+     "pair_order_accuracy": 0.7365,
+     "rows": 4180
+    },
+    "R1": {
+     "mae_people": 73.1672,
+     "direction_accuracy": 0.8538,
+     "pair_order_accuracy": 0.7646,
+     "rows": 4180
+    },
+    "C1": {
+     "mae_people": 79.0734,
+     "direction_accuracy": 0.8596,
+     "pair_order_accuracy": 0.7469,
+     "rows": 4180
+    },
+    "C2": {
+     "mae_people": 73.4962,
+     "direction_accuracy": 0.8567,
+     "pair_order_accuracy": 0.7455,
+     "rows": 4180
+    },
+    "C3": {
+     "mae_people": 73.9048,
+     "direction_accuracy": 0.8388,
+     "pair_order_accuracy": 0.7339,
+     "rows": 4180
+    },
+    "B2": {
+     "mae_people": 70.6691,
+     "direction_accuracy": 0.8421,
+     "pair_order_accuracy": 0.7558,
+     "rows": 4180
+    },
+    "B3": {
+     "mae_people": 72.1356,
+     "direction_accuracy": 0.8411,
+     "pair_order_accuracy": 0.7321,
+     "rows": 4180
+    },
+    "H3": {
+     "mae_people": 80.3304,
+     "direction_accuracy": 0.788,
+     "pair_order_accuracy": 0.7183,
+     "rows": 4180
+    }
+   },
+   "reference": {
+    "R0": {
+     "mae_people": 70.5267,
+     "direction_accuracy": 0.8425,
+     "pair_order_accuracy": 0.8242,
+     "rows": 3562
+    },
+    "R1": {
+     "mae_people": 50.6965,
+     "direction_accuracy": 0.8279,
+     "pair_order_accuracy": 0.8299,
+     "rows": 3562
+    },
+    "C1": {
+     "mae_people": 69.817,
+     "direction_accuracy": 0.7572,
+     "pair_order_accuracy": 0.7098,
+     "rows": 3562
+    },
+    "C2": {
+     "mae_people": 64.6634,
+     "direction_accuracy": 0.7743,
+     "pair_order_accuracy": 0.7603,
+     "rows": 3562
+    },
+    "C3": {
+     "mae_people": 65.4761,
+     "direction_accuracy": 0.7718,
+     "pair_order_accuracy": 0.7757,
+     "rows": 3562
+    },
+    "B2": {
+     "mae_people": 51.8535,
+     "direction_accuracy": 0.8133,
+     "pair_order_accuracy": 0.8216,
+     "rows": 3562
+    },
+    "B3": {
+     "mae_people": 53.6743,
+     "direction_accuracy": 0.8156,
+     "pair_order_accuracy": 0.8031,
+     "rows": 3562
+    },
+    "H3": {
+     "mae_people": 68.9663,
+     "direction_accuracy": 0.7277,
+     "pair_order_accuracy": 0.801,
+     "rows": 3562
+    }
+   },
+   "pick_on_dev": "B2",
+   "reference_improvement_vs_R0_ci95": [
+    -24.713,
+    -13.182
+   ],
+   "provisional_pass": false
+  }
+ }
+}
