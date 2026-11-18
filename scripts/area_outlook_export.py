@@ -2,6 +2,7 @@
 
 입력(저장소 문서, 바꾸지 않는다):
   docs/a07/population_forecast_2027-10_cohort.csv  (A-07 C안 연령대별 예측표, cohort_results_c.md)
+  docs/a07/net_move_2026-10.csv                    (최근 1년 연령대별 이사로 바뀐 인원, net_move_2026.py)
   docs/a09/similar_areas.json                      (A-09 추천 결과, 김선경)
 출력(앱은 읽기만): service/data/processed/population_forecast.parquet, similar_areas.parquet
 연결 키: 행정기관코드. 앱의 동네 프로필(area_context)은 코드가 없어 구·행정동 이름으로 잇는다.
@@ -20,6 +21,8 @@ OUT = ROOT / "service/data/processed"
 A07 = ROOT / "docs/a07/population_forecast_2027-10_cohort.csv"
 A09 = ROOT / "docs/a09/similar_areas.json"
 A07_SHA = "6bb99bca26d24161e562cdc199200ab11eb02ac398ee35cf48663dbe2b5d125e"  # cohort_results_c.md 기록값
+MOVE = ROOT / "docs/a07/net_move_2026-10.csv"
+MOVE_SHA = "bafb48a12f356dc5de3f3054196ebd44976c664bf7c55c8b4a217cc8095bc5cf"  # cohort_results_c.md 기록값
 ALIAS = {("달성군", "구지읍"): ("달성군", "구지면")}  # 원자료 이름 → 동네 프로필 이름
 BANDS = ["total", "age_00_09", "age_10_19", "age_20_29", "age_30_39", "age_40_49", "age_50_59",
          "age_60_69", "age_70_79", "age_80_89", "age_90_99", "age_100_plus"]
@@ -47,6 +50,15 @@ def population(ctx_keys):
                     "status": r["status"], "method": r["method"], "change_display": r["change_display"]})
     df = pd.DataFrame(out)
     assert len(df) == 1824 and df.groupby("admin_code").size().eq(12).all()
+    if hashlib.sha256(MOVE.read_bytes()).hexdigest() != MOVE_SHA:
+        raise ValueError("최근 1년 이사 인원표가 기록된 SHA-256 과 다르다")
+    mv = pd.read_csv(MOVE, encoding="utf-8-sig", dtype={"admin_code": str})
+    mv = mv.rename(columns={"to_month": "move_to_month", "from_month": "move_from_month"})
+    df = df.merge(mv[["admin_code", "age_band", "move_from_month", "move_to_month", "net_move_12m", "includes_deaths"]],
+                  on=["admin_code", "age_band"], how="left", validate="one_to_one")
+    assert df["net_move_12m"].notna().sum() == 141 * 11 and df.loc[df.age_band == "total", "net_move_12m"].isna().all()
+    assert (df["net_move_12m"].notna() == ((df["status"] == "available") & (df["age_band"] != "total"))).all()
+    df["includes_deaths"] = df["includes_deaths"].fillna(0).astype(int)
     assert set(df["age_band"]) == set(BANDS) and (df["status"] == "available").sum() == 1692
     ok = df.dropna(subset=["forecast_population"])
     assert (ok["forecast_population"] - ok["current_population"] == ok["forecast_change"]).all()

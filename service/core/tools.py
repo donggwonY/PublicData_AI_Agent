@@ -1217,8 +1217,30 @@ def _pop_change_text(v: float, recent: bool) -> str:
     return f"최근 1년 동안 {abs(n):,}명 {'늘었어요' if n > 0 else '줄었어요'}"
 
 
+MOVE_MIN = 10  # 이사로 바뀐 인원이 이보다 작으면 '가장 많이 들어온·빠져나간 연령대'로 꼽지 않는다
+
+
+def _net_move(r) -> dict:
+    """최근 1년 이사로 바뀐 인원(순이동). 전체 행·보류 지역·이전 데이터 버전은 None."""
+    v = r.get("net_move_12m")
+    if v is None or pd.isna(v):
+        return {"net_move": None, "move_includes_deaths": False, "net_move_text": "-"}
+    n, deaths = int(v), bool(r.get("includes_deaths", 0))
+    text = "변화 없음" if n == 0 else f"{n:+,}명"
+    return {"net_move": n, "move_includes_deaths": deaths, "net_move_text": text + (" (사망 포함)" if deaths else "")}
+
+
+def _move_period(rows) -> str:
+    m = rows.dropna(subset=["net_move_12m"]).iloc[0]
+    return f"{m['move_from_month']} → {m['move_to_month']}"
+
+
 def get_population_outlook(gu: str, dong: str) -> dict:
-    """행정동의 연령대별 현재 거주자와 1년 뒤 추정(A-07). 30대·0~9세는 증감을 최근 1년 실제 기록으로 보여 준다."""
+    """행정동의 연령대별 현재 거주자와 1년 뒤 추정(A-07), 최근 1년 연령대별 이사로 바뀐 인원.
+
+    이사 인원은 나이를 한 살씩 밀어 비교한 순이동(들어온 사람 - 나간 사람)이다. 70대 이상은 사망이 섞여
+    가장 많이 들어온·빠져나간 연령대(top_in·top_out) 순위에서 뺀다. MOVE_MIN 명 미만의 변화는 꼽지 않는다.
+    change_kind='recent_actual'(30대·0~9세)은 A-07 표시 규칙의 값으로 남겨 두되 화면 카드에는 쓰지 않는다."""
     pf = store().population_forecast
     if pf is None:
         return {"available": False, "reason": "1년 뒤 인구 추정 자료가 이 데이터 버전에 없어요."}
@@ -1241,9 +1263,19 @@ def get_population_outlook(gu: str, dong: str) -> dict:
                       "forecast": int(r["forecast_population"]) if has else None,
                       "change_value": (None if not has else int(r["recent_change_12m"] if recent else r["forecast_change"])),
                       "change_kind": "withheld" if not has else ("recent_actual" if recent else "forecast"),
-                      "change_text": change})
+                      "change_text": change, **_net_move(r)})
+    ranked = [i for i in items if i["net_move"] is not None and not i["move_includes_deaths"]]
+    top_in = max(ranked, key=lambda i: i["net_move"], default=None)
+    top_out = min(ranked, key=lambda i: i["net_move"], default=None)
+
+    def pick(i, ok):
+        return {"age_band": i["age_band"], "label": i["label"], "net_move": i["net_move"]} if ok else None
+
     return _py({"available": bool((rows["status"] == "available").any()), "area": f"{gu} {dong}",
                 "base_month": first["base_month"], "target_month": first["target_month"],
+                "move_period": _move_period(rows) if ranked else None,
+                "top_in": pick(top_in, top_in is not None and top_in["net_move"] >= MOVE_MIN),
+                "top_out": pick(top_out, top_out is not None and top_out["net_move"] <= -MOVE_MIN),
                 "items": items, "basis": POPULATION_BASIS,
                 "reason": None if (rows["status"] == "available").any()
                 else "최근 1년 이력이 부족해 1년 뒤 인구를 추정하지 않았어요."})

@@ -1,4 +1,4 @@
-"""동네·자리: A-07 1년 뒤 거주 인구·A-09 비슷한 동네 5곳 (조회 함수, 표시 규칙, 화면 흐름)."""
+"""동네·자리: A-07 1년 뒤 거주 인구·최근 1년 연령대 이사 인원·A-09 비슷한 동네 5곳 (조회 함수, 표시 규칙, 화면 흐름)."""
 import os
 import unittest
 from pathlib import Path
@@ -39,15 +39,37 @@ class AreaOutlookToolTests(unittest.TestCase):
             else:
                 self.assertEqual(i["change_kind"], "forecast")
                 self.assertEqual(i["change_value"], int(r.forecast_change))
+            if i["age_band"] == "total":
+                self.assertIsNone(i["net_move"])
+            else:
+                self.assertEqual(i["net_move"], int(r.net_move_12m))
         text = " ".join(str(v) for i in out["items"] for v in i.values())
         self.assertNotIn("검증", text)
         self.assertNotIn("이사", text)
+
+    def test_net_move_top_bands(self):
+        # 나이를 한 살씩 밀어 본 순이동: 성내1동 30대는 단순 증감 +103명이지만 이사로는 -12명
+        out = T.get_population_outlook("중구", "성내1동")
+        self.assertEqual(out["move_period"], "2025-10 → 2026-10")
+        self.assertEqual(out["top_in"], {"age_band": "age_20_29", "label": "20대", "net_move": 213})
+        self.assertEqual(out["top_out"], {"age_band": "age_30_39", "label": "30대", "net_move": -12})
+        items = {i["age_band"]: i for i in out["items"]}
+        self.assertEqual(items["age_80_89"]["net_move_text"], "-15명 (사망 포함)")   # 70대 이상은 순위에서 제외
+        out = T.get_population_outlook("북구", "산격3동")
+        self.assertEqual((out["top_in"]["label"], out["top_in"]["net_move"]), ("20대", 278))
+        self.assertEqual((out["top_out"]["label"], out["top_out"]["net_move"]), ("30대", -122))
+        # 모든 계산 지역에서 1~69세 순이동 + 나이 드는 효과 = 10세 구간 단순 증감은 net_move_2026.py 가 점검한다
+        ok = self.pf[self.pf.status == "available"]
+        self.assertEqual(ok["net_move_12m"].notna().sum(), 141 * 11)
 
     def test_withheld_area_keeps_current_population(self):
         out = T.get_population_outlook("달성군", "구지면")   # 원자료 이름은 구지읍
         self.assertFalse(out["available"])
         self.assertTrue(all(i["forecast"] is None and i["change_kind"] == "withheld" for i in out["items"]))
         self.assertGreater(out["items"][0]["current"], 0)
+        self.assertIsNone(out["move_period"])
+        self.assertIsNone(out["top_in"])
+        self.assertIsNone(out["top_out"])
 
     def test_similar_areas_follow_stored_order(self):
         out = T.get_similar_areas("중구", "성내1동")
@@ -81,14 +103,17 @@ class AreaOutlookScreenTests(unittest.TestCase):
         app.selectbox(key="dash_gu").select("중구").run(timeout=90)
         app.selectbox(key="dash_dong").select("성내1동").run(timeout=90)
         self.assertFalse(app.exception)
-        labels = [m.label for m in app.metric]
-        self.assertIn("전체 1년 뒤 추정", labels)
-        self.assertIn("30대 1년 뒤 추정", labels)
-        thirty = next(m for m in app.metric if m.label == "30대 1년 뒤 추정")
-        self.assertIn("최근 1년", thirty.delta)
-        self.assertIn("(실제)", thirty.delta)
-        total = next(m for m in app.metric if m.label == "전체 1년 뒤 추정")
-        self.assertTrue(total.delta.startswith("1년 뒤 "))
+        cards = {m.label: m for m in app.metric}
+        self.assertNotIn("30대 1년 뒤 추정", cards)   # 특정 연령대만 따로 카드로 보여 주지 않는다
+        self.assertEqual(cards["전체 1년 뒤 추정"].value, "5,653명")
+        self.assertEqual(cards["전체 1년 뒤 추정"].delta, "1년 뒤 +141명")
+        self.assertEqual((cards["많이 들어온 연령대"].value, cards["많이 들어온 연령대"].delta),
+                         ("20대", "최근 1년 +213명"))
+        self.assertEqual((cards["많이 나간 연령대"].value, cards["많이 나간 연령대"].delta),
+                         ("30대", "최근 1년 -12명"))
+        captions = " ".join(c.value for c in app.caption)
+        self.assertIn("나이 드는 효과를 빼고", captions)
+        self.assertNotIn("30대·0~9세는", captions)
         first = T.get_similar_areas("중구", "성내1동")["items"][0]
         app.button(key="dash_similar_go_combined_1").click().run(timeout=90)
         self.assertFalse(app.exception)
