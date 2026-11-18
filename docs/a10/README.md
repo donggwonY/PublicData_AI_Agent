@@ -105,3 +105,6 @@
 `python scripts/evaluate_a10_cafe_concentration.py`로 행정동별 추정 CSV와 요약 JSON을 Git 제외 경로 `data/raw/a10/`에 생성한다. `python scripts/audit_a10_cafe_comparison.py`로 구·군과 규모별 오차, 두 시점 방향 일치 결과를 다시 계산한다.
 
 [앱 연동 자료](app_handoff.md)에 4개 업종의 조회용 CSV, 표시 규칙과 확인 사례를 정리했다. 다음 단계는 앱의 행정동·업종 코드 매핑과 후보지 조회를 연결해 검증하는 것이다.
+
+
+[개선 단계 계획](improvement_plan.md)에 오차 사례 점검, 평가 고정, 다른 모델 비교, 주변 정보·보조자료 추가와 연동 자료 갱신 순서를 정리했다. 다음 분석은 네 업종의 큰 오차 사례와 원천 집계 대조다.
