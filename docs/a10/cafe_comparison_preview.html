@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>창업 후보지 업종별 점포 수 비교</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f3f6f4; color: #172822; font: 16px/1.6 system-ui, sans-serif; }
+    main { max-width: 1080px; margin: auto; padding: clamp(20px, 5vw, 64px); }
+    h1 { margin: 0 0 6px; font-size: clamp(25px, 4vw, 36px); line-height: 1.25; }
+    h2 { margin: 0 0 20px; font-size: 19px; }
+    .date, .notes { color: #445951; }
+    label { display: block; font-weight: 650; }
+    select { min-width: min(100%, 230px); margin-top: 4px; padding: 8px 12px; border: 1px solid #768d82; border-radius: 8px; background: white; color: inherit; font: inherit; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0 16px; }
+    article { background: #fff; border: 1px solid #d4dfd9; border-radius: 16px; padding: 20px; }
+    dl, dd { margin: 0; }
+    .metric + .metric { margin-top: 14px; }
+    .metric { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 5px 8px; align-items: baseline; }
+    dt { font-size: 14px; color: #334a40; }
+    dd { font-weight: 650; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .track { grid-column: 1 / -1; height: 8px; background: #edf2ef; border-radius: 10px; overflow: hidden; }
+    .bar { display: block; height: 100%; background: #276953; border-radius: inherit; }
+    .reference { background: #7f9fa5; }
+    .notes { max-width: 66ch; font-size: 14px; }
+    .notes p { margin: 6px 0; }
+    @media (max-width: 760px) { .cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>동네 여건을 감안하면 점포가 많은 편일까요?</h1>
+    <p>창업하려는 업종을 골라 후보지의 실제 점포 수와 동네 여건으로 추정한 수를 비교해 보세요. 현장에서 경쟁 점포와 고객 동선을 살펴볼 때 참고할 수 있어요.</p>
+    <p class="date">대구 행정동 · 2026년 9월 기준</p>
+    <label for="industry">비교할 업종</label>
+    <select id="industry">
+      <option value="I21201">카페</option>
+      <option value="S20701">미용실</option>
+      <option value="I20101">백반·한정식</option>
+      <option value="P10501">입시·교과학원</option>
+    </select>
+    <div class="cards" aria-live="polite">
+      <article>
+        <h2>중구 성내1동</h2>
+        <dl>
+          <div class="metric"><dt>실제 카페 수</dt><dd>231곳</dd><dd class="track" aria-hidden="true"><span class="bar" style="width: 92.4%"></span></dd></div>
+          <div class="metric"><dt>동네 여건으로 추정한 점포 수</dt><dd>약 150곳</dd><dd class="track" aria-hidden="true"><span class="bar reference" style="width: 60%"></span></dd></div>
+        </dl>
+      </article>
+      <article>
+        <h2>수성구 범어3동</h2>
+        <dl>
+          <div class="metric"><dt>실제 카페 수</dt><dd>51곳</dd><dd class="track" aria-hidden="true"><span class="bar" style="width: 20.4%"></span></dd></div>
+          <div class="metric"><dt>동네 여건으로 추정한 점포 수</dt><dd>약 68곳</dd><dd class="track" aria-hidden="true"><span class="bar reference" style="width: 27.2%"></span></dd></div>
+        </dl>
+      </article>
+      <article>
+        <h2>달서구 월성1동</h2>
+        <dl>
+          <div class="metric"><dt>실제 카페 수</dt><dd>71곳</dd><dd class="track" aria-hidden="true"><span class="bar" style="width: 28.4%"></span></dd></div>
+          <div class="metric"><dt>동네 여건으로 추정한 점포 수</dt><dd>약 70곳</dd><dd class="track" aria-hidden="true"><span class="bar reference" style="width: 28%"></span></dd></div>
+        </dl>
+      </article>
+    </div>
+    <div class="notes">
+      <p><strong>실제 점포 수</strong>는 상가업소 자료에 기록된 해당 업종의 점포를 센 값이에요. 막대는 모두 0~250곳 기준이에요.</p>
+      <p><strong>동네 여건으로 추정한 점포 수</strong>는 같은 달의 거주인구, 연령 분포, 다른 업종의 점포 구성으로 계산한 비교용 수치예요. 지역별로 추정 오차가 다르므로 차이가 큰 곳은 유동인구와 경쟁 점포를 함께 살펴보세요.</p>
+    </div>
+  </main>
+  <script>
+    // Actual count and rounded model estimate, in the same order as the three cards.
+    const counts = {
+      I21201: [[231, 150], [51, 68], [71, 70]],
+      S20701: [[128, 123], [41, 39], [107, 93]],
+      I20101: [[199, 148], [63, 74], [93, 58]],
+      P10501: [[17, 22], [40, 28], [136, 244]],
+    };
+    const industry = document.querySelector("#industry");
+    const cards = document.querySelectorAll(".cards article");
+
+    function updateCards() {
+      cards.forEach((card, index) => {
+        const [actual, estimate] = counts[industry.value][index];
+        const actualLabel = card.querySelector("dt");
+        const [actualValue, estimateValue] = card.querySelectorAll("dd:not(.track)");
+        const [actualBar, estimateBar] = card.querySelectorAll(".bar");
+        const name = industry.selectedOptions[0].textContent;
+        actualLabel.textContent = `실제 ${name} 점포 수`;
+        actualValue.textContent = `${actual}곳`;
+        estimateValue.textContent = `약 ${estimate}곳`;
+        actualBar.style.width = `${actual / 250 * 100}%`;
+        estimateBar.style.width = `${estimate / 250 * 100}%`;
+      });
+    }
+    industry.addEventListener("change", updateCards);
+    updateCards();
+  </script>
+</body>
+</html>
