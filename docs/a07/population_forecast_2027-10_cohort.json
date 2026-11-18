@@ -1,0 +1,120 @@
+{
+ "base_month": "2026-10",
+ "target_month": "2027-10",
+ "methods_from": "docs/a07/cohort_results_c.json",
+ "train_base_months": "2017-01..2025-10",
+ "areas": 152,
+ "rows": 1824,
+ "available_rows": 1692,
+ "csv_sha256": "6bb99bca26d24161e562cdc199200ab11eb02ac398ee35cf48663dbe2b5d125e",
+ "bands": {
+  "total": {
+   "method": "R1",
+   "available": 141,
+   "current_sum": 2087010,
+   "forecast_sum": 2075952,
+   "areas_up": 37,
+   "areas_down": 104,
+   "same_as_existing_r1": "141/141"
+  },
+  "age_00_09": {
+   "method": "R1",
+   "available": 141,
+   "current_sum": 109933,
+   "forecast_sum": 105323,
+   "areas_up": 33,
+   "areas_down": 108,
+   "same_as_existing_r1": "141/141"
+  },
+  "age_10_19": {
+   "method": "B",
+   "available": 141,
+   "current_sum": 184743,
+   "forecast_sum": 182583,
+   "areas_up": 57,
+   "areas_down": 83,
+   "same_as_existing_r1": null
+  },
+  "age_20_29": {
+   "method": "C2",
+   "available": 141,
+   "current_sum": 221697,
+   "forecast_sum": 213548,
+   "areas_up": 24,
+   "areas_down": 116,
+   "same_as_existing_r1": null
+  },
+  "age_30_39": {
+   "method": "R1",
+   "available": 141,
+   "current_sum": 254426,
+   "forecast_sum": 254803,
+   "areas_up": 71,
+   "areas_down": 69,
+   "same_as_existing_r1": "141/141"
+  },
+  "age_40_49": {
+   "method": "R1",
+   "available": 141,
+   "current_sum": 285104,
+   "forecast_sum": 277810,
+   "areas_up": 31,
+   "areas_down": 109,
+   "same_as_existing_r1": "141/141"
+  },
+  "age_50_59": {
+   "method": "B2",
+   "available": 141,
+   "current_sum": 363602,
+   "forecast_sum": 356524,
+   "areas_up": 29,
+   "areas_down": 112,
+   "same_as_existing_r1": null
+  },
+  "age_60_69": {
+   "method": "B2",
+   "available": 141,
+   "current_sum": 342861,
+   "forecast_sum": 344980,
+   "areas_up": 66,
+   "areas_down": 73,
+   "same_as_existing_r1": null
+  },
+  "age_70_79": {
+   "method": "B2",
+   "available": 141,
+   "current_sum": 214006,
+   "forecast_sum": 224290,
+   "areas_up": 140,
+   "areas_down": 1,
+   "same_as_existing_r1": null
+  },
+  "age_80_89": {
+   "method": "B2",
+   "available": 141,
+   "current_sum": 94758,
+   "forecast_sum": 100436,
+   "areas_up": 137,
+   "areas_down": 3,
+   "same_as_existing_r1": null
+  },
+  "age_90_99": {
+   "method": "C2",
+   "available": 141,
+   "current_sum": 15613,
+   "forecast_sum": 17220,
+   "areas_up": 135,
+   "areas_down": 5,
+   "same_as_existing_r1": null
+  },
+  "age_100_plus": {
+   "method": "B2",
+   "available": 141,
+   "current_sum": 267,
+   "forecast_sum": 320,
+   "areas_up": 55,
+   "areas_down": 16,
+   "same_as_existing_r1": null
+  }
+ }
+}
