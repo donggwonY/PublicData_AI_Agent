@@ -22,7 +22,7 @@ py -3.12 -m venv .venv                # 최초 1회. Python 3.12 가 없으면 �
 pip install -r requirements-dev.txt   # 웹만 돌릴 땐 requirements.txt
 
 python -m unittest tests.test_core_units   # 주소 정규화·사이클 판정 단위 테스트 (데이터 불필요)
-python -m tests.smoke_test                  # Tool 12종 점검 (API 키 불필요)
+python -m tests.smoke_test                  # Tool 14종 점검 (API 키 불필요)
 streamlit run app.py                        # 웹 UI → http://localhost:8501
 ```
 
@@ -75,7 +75,7 @@ python -m pipeline.external       # 보조 데이터 배치 → 상가정보·�
 
 ## API 키 없이 대화형 시연 — Claude Desktop + MCP
 
-Claude Desktop 앱이 claude.ai 계정으로 대화를 처리하고, 이 프로젝트의 Tool 12종을 MCP 로 호출한다(API 결제 불필요).
+Claude Desktop 앱이 claude.ai 계정으로 대화를 처리하고, 이 프로젝트의 Tool 14종을 MCP 로 호출한다(API 결제 불필요).
 설정 후 앱을 **완전히 종료했다가 재실행** → 채팅 입력창 `+` 메뉴에서 `daegu-lifecycle` 연결 확인 →
 프롬프트 **"대구 창업 상권 상담 시작"**(`startup_consult`)을 선택하면 숫자 원칙이 적용된 상태로 상담을 시작한다.
 
@@ -107,24 +107,25 @@ core/datasource.py        데이터 출처 선택 (DB / parquet, 실패 시 대�
 core/address.py           주소 정규화 (지번·도로명 파싱, 층 추출)
 core/survival.py          Kaplan-Meier (영업 중 = 중도절단)
 core/cycle.py             사이클 단계 판정 규칙
-core/tools.py             Tool 12종 (근거 수치·정의·기준일을 반환값에 포함) + DataStore
+core/tools.py             Tool 14종 (근거 수치·정의·기준일을 반환값에 포함) + DataStore
 core/tool_specs.py        LLM 에 보여 줄 Tool 스키마
 agent.py                  공통(시스템 프롬프트·Tool 실행) + Claude 도구 호출 루프 + create_agent(provider)
 agent_gemini.py           Gemini 도구 호출 루프 (무료 등급, 모델 자동 대체)
-mcp_server.py             같은 Tool 12종과 상담 시작 프롬프트를 MCP 로 노출
+mcp_server.py             같은 Tool 14종과 상담 시작 프롬프트를 MCP 로 노출
 app.py, ui_visuals.py     Streamlit UI (상담 · 대시보드 · 자리 이력)
 config.py                 업종 목록(SERVICES)·분석 기준값·LLM 모델·질문 제한
 run_batch.ps1             작업 스케줄러용 야간 배치 스크립트
 tests/                    test_core_units(주소·사이클 단위), smoke_test(Tool), agent_loop_test·gemini_loop_test(가짜 클라이언트로 루프), mcp_check(MCP stdio)
 ```
 
-Tool 12종:
+Tool 14종:
 
 | 묶음 | Tool |
 | --- | --- |
 | 인허가 분석 8종 | `get_market_cycle`, `find_vacant_units`, `get_survival_curve`, `get_unit_history`, `find_risk_spots`, `compare_areas`, `transition_matrix`, `normalize_address` |
 | 보조 데이터 3종 | `get_area_profile`, `find_nearby`, `get_station_traffic` |
 | 오프라인 예측 1종 | `get_competition_outlook` (구·군×업태 앞으로 1년 폐업 예측, E-06) |
+| 동네·자리 2종 | `get_resident_outlook` (행정동 거주자 1년 뒤 추정·최근 1년 연령대별 이사 인원, A-07), `find_similar_areas` (구성이 비슷한 동네 5곳, A-09) |
 
 ## 현재 데이터 (15업종, 기준일 2026-10-13 · 배치 2026-10-16)
 

@@ -1199,7 +1199,7 @@ def get_competition_outlook(category: str, gu: str | None = None, dong: str | No
     })
 
 
-# ─────────────────────── 동네·자리 화면 조회 (AI 도구 아님) ───────────────────────
+# ─────────── 동네·자리 화면 조회 (AI 도구는 아래 get_resident_outlook·find_similar_areas가 감싼다) ───────────
 AGE_BAND_LABEL = {"total": "전체", "age_00_09": "0~9세", "age_10_19": "10대", "age_20_29": "20대",
                   "age_30_39": "30대", "age_40_49": "40대", "age_50_59": "50대", "age_60_69": "60대",
                   "age_70_79": "70대", "age_80_89": "80대", "age_90_99": "90대", "age_100_plus": "100세 이상"}
@@ -1322,6 +1322,183 @@ def get_similar_areas(gu: str, dong: str, option: str = "combined") -> dict:
                 "items": items})
 
 
+# ─────────────────────── 동네·자리 AI 상담 도구 (화면과 같은 조회 함수를 쓴다) ───────────────────────
+_MAX_AREAS = 12
+
+
+def _admin_candidates(gu: str | None, dong: str) -> pd.DataFrame:
+    """행정동 후보. '범어동'처럼 번호 붙은 행정동 여러 개(범어1~4동)에 걸친 이름은 그 후보를 모두 돌려준다.
+
+    정확한 행정동 이름이 아니고 번호 붙은 행정동도 없으면 기존 법정동→행정동 연결(_resolve_admin_dong)을 쓴다.
+    """
+    ctx = _require(store().area_context, "동네 맥락")
+    g = A.normalize_gu(gu) if gu else None
+    text = dong.replace(A.SIDO, "").replace("대구", "").strip()
+    parts = text.split()
+    if len(parts) > 1 and A.normalize_gu(parts[0]):
+        g = g or A.normalize_gu(parts[0])
+    text = parts[-1] if parts else text
+    pool = ctx[ctx["gu"] == g] if g else ctx
+    hit = pool[pool["admin_dong"] == text]
+    if hit.empty:
+        stem = text.rstrip("동읍면")
+        hit = pool[pool["admin_dong"].str.fullmatch(rf"{re.escape(stem)}\d+(?:·\d+)?가?동")]
+    if hit.empty:
+        hit = _resolve_admin_dong(g, text)
+    if hit["gu"].nunique() > 1:
+        raise ToolError(f"'{dong}'이(가) 여러 구에 있습니다: {sorted(hit['gu'].unique())}. 구를 함께 지정하세요.")
+    hit = hit[["gu", "admin_dong"]].drop_duplicates()
+    num = hit["admin_dong"].str.extract(r"(\d+)", expand=False).fillna("0").astype(int)
+    return hit.assign(_n=num).sort_values(["gu", "_n", "admin_dong"]).drop(columns="_n")
+
+
+def _resident_display(res: dict) -> list[str]:
+    area, items = res["area"], {i["age_band"]: i for i in res["items"]}
+    t = items.get("total")
+    if not res["available"]:
+        return [f"{area}: {res['reason']} {res['base_month']} 현재 거주자는 {t['current']:,}명입니다."]
+    out = [f"{area} 거주자: {res['base_month']} 현재 {t['current']:,}명 → {res['target_month']} 추정 "
+           f"{t['forecast']:,}명({t['change_value']:+,}명)."]
+    if res["move_period"]:
+        lead = f"최근 1년({res['move_period']}) 나이 드는 효과를 빼고 이사로 바뀐 인원(들어온 사람 − 나간 사람) 기준"
+        ti, to = res["top_in"], res["top_out"]
+        out.append(f"{lead}, 가장 많이 들어온 연령대는 {ti['label']}({ti['net_move']:+,}명)입니다." if ti else
+                   f"{lead}, {MOVE_MIN}명 이상 들어온 연령대는 없습니다(70대 이상 제외).")
+        out.append(f"가장 많이 빠져나간 연령대는 {to['label']}({to['net_move']:+,}명)입니다." if to else
+                   f"{MOVE_MIN}명 이상 빠져나간 연령대는 없습니다(70대 이상 제외).")
+    return out
+
+
+def get_resident_outlook(dong: str, gu: str | None = None) -> dict:
+    """AI 상담: 행정동 거주자 1년 뒤 추정(A-07)과 최근 1년 연령대별 이사 인원. 화면 '1년 뒤 거주 인구'와 같은 값."""
+    if not dong:
+        raise ToolError("동네(행정동) 이름이 필요합니다 (예: 성내1동, 범어3동, 다사읍).")
+    if store().population_forecast is None:
+        return {"available": False, "reason": "1년 뒤 인구 추정 자료가 이 데이터 버전에 없습니다. 수치는 데이터로 확인되지 않습니다."}
+    cand = _admin_candidates(gu, dong)
+    if len(cand) > _MAX_AREAS:
+        raise ToolError(f"'{dong}'에 해당하는 행정동이 {len(cand)}곳이라 너무 많습니다. 행정동을 지정하세요: "
+                        f"{', '.join(cand['admin_dong'].head(_MAX_AREAS))} …")
+    areas = []
+    for g, d in cand.itertuples(index=False):
+        res = get_population_outlook(g, d)
+        if not res.get("items"):
+            areas.append({"area": f"{g} {d}", "available": False, "reason": res["reason"]})
+            continue
+        entry = {"area": res["area"], "available": res["available"], "display": _resident_display(res),
+                 "top_in": res["top_in"], "top_out": res["top_out"]}
+        if len(cand) == 1:
+            entry["by_age"] = [{
+                "age_band": i["label"], "current": i["current"], "forecast": i["forecast"],
+                # 30대·0~9세는 증감 방향을 예측으로 말하지 않는다(A-07 표시 규칙). 추정 인구만 준다.
+                "forecast_change": i["change_value"] if i["change_kind"] == "forecast" else None,
+                "net_move_12m": i["net_move"], "net_move_note": "사망 포함" if i["move_includes_deaths"] else None,
+            } for i in res["items"]]
+        areas.append(entry)
+    first = next((a for a in areas if a.get("available")), None)
+    note = (f"'{dong}'은(는) 행정동 {len(cand)}곳에 걸쳐 있어 각각 보여 줍니다." if len(cand) > 1 else None)
+    return _py({
+        "available": first is not None, "query": dong, "note": note, "areas": areas,
+        "basis": {
+            "source": POPULATION_BASIS + " 월별 연령별 인구(10세 구간·1세 단위)",
+            "current_month": "2026-10", "forecast_month": "2027-10", "move_period": "2025-10 → 2026-10",
+            "forecast_model": "A-07 연령대별 추정(오프라인 계산 후 저장한 값, 연령대마다 개발 구간에서 고른 방법)",
+            "net_move_definition": "올해 a세 인원 − 작년 (a−1)세 인원. 나이 드는 효과를 뺀 순이동(들어온 사람 − 나간 사람). "
+                                   "0~9세는 올해 태어난 0세를 빼고 1~9세만.",
+        },
+        "caveat": [
+            "1년 뒤 인구는 저장된 추정값이며 확정된 미래 인구가 아닙니다.",
+            "30대·0~9세는 증감 방향의 예측 정확도가 단순 기준선보다 낮아 forecast_change를 주지 않습니다. 증감을 예측으로 말하지 않습니다.",
+            "이사 인원은 순이동이라 들어온 사람과 나간 사람 수를 각각 알 수 없습니다.",
+            "70대 이상은 사망이 섞여 빠져나간 인원이 커 보이므로 가장 많이 들어온·빠져나간 연령대 순위에서 뺐습니다.",
+            "연령대마다 따로 추정해 연령대 합이 전체와 조금 다를 수 있습니다.",
+        ],
+    })
+
+
+_BUSINESS_ALIAS = {"음식점": "음식", "식당": "음식", "외식": "음식", "학원": "교육", "병원": "보건의료", "의료": "보건의료",
+                   "약국": "보건의료", "가게": "소매", "판매": "소매", "부동산중개": "부동산", "모텔": "숙박", "호텔": "숙박",
+                   "미용": "수리·개인", "세탁": "수리·개인", "운동": "예술·스포츠", "헬스": "예술·스포츠", "임대": "시설관리·임대"}
+_AGE_ALIAS = {"어린이": "age_00_09", "아이": "age_00_09", "영유아": "age_00_09", "0~9": "age_00_09", "0-9": "age_00_09",
+              "10대": "age_10_19", "20대": "age_20_29", "30대": "age_30_39", "40대": "age_40_49", "50대": "age_50_59",
+              "60대": "age_60_69", "70대": "age_70_79", "80대": "age_80_89", "90대": "age_90_99", "100세": "age_100_plus"}
+
+
+def _similar_option(criterion: str | None) -> str:
+    """'30대 비중', '음식 업종', '규모' 같은 말 → 저장된 비교 기준(option)."""
+    c = (criterion or "").replace(" ", "")
+    if not c or any(k in c for k in ("구성", "종합", "기본", "전체")):
+        return "combined"
+    if any(k in c for k in ("규모", "상가수", "점포수", "인구수", "거주자수")):
+        return "size"
+    sa = store().similar_areas
+    opts = sa[["option", "option_group", "option_key"]].drop_duplicates()
+    for alias, band in _AGE_ALIAS.items():
+        if alias in c:
+            return opts.loc[(opts["option_group"] == "population") & (opts["option_key"] == band), "option"].iat[0]
+    biz = opts[opts["option_group"] == "business"]
+    for _, o in biz.iterrows():
+        if o["option_key"].replace("·", "") in c.replace("·", ""):
+            return o["option"]
+    for alias, key in _BUSINESS_ALIAS.items():
+        if alias in c:
+            return biz.loc[biz["option_key"] == key, "option"].iat[0]
+    raise ToolError(f"비교 기준 '{criterion}'을(를) 알 수 없습니다. 고를 수 있는 기준: 업종·연령 구성(기본), 상가·거주자 규모, "
+                    f"업종 비중({', '.join(biz['option_key'])}), 연령대 비중(0~9세, 10대~90대, 100세 이상).")
+
+
+def find_similar_areas(dong: str, gu: str | None = None, criterion: str | None = None) -> dict:
+    """AI 상담: 구성이 비슷한 동네 5곳(A-09). 화면 '비슷한 동네 5곳'과 같은 값."""
+    if not dong:
+        raise ToolError("기준이 될 동네(행정동) 이름이 필요합니다 (예: 성내1동, 범어3동).")
+    if store().similar_areas is None:
+        return {"available": False, "reason": "비슷한 동네 자료가 이 데이터 버전에 없습니다. 수치는 데이터로 확인되지 않습니다."}
+    cand = _admin_candidates(gu, dong)
+    if len(cand) > 1:
+        raise ToolError(f"'{dong}'은(는) 행정동 {len(cand)}곳에 걸쳐 있습니다. 어느 동네를 기준으로 할지 고르세요: "
+                        f"{', '.join(cand['admin_dong'].head(_MAX_AREAS))}.")
+    g, d = cand.iloc[0]["gu"], cand.iloc[0]["admin_dong"]
+    option = _similar_option(criterion)
+    res = get_similar_areas(g, d, option)
+    if not res["available"]:
+        return _py({"available": False, "area": f"{g} {d}", "reason": res["reason"]})
+    share = bool(res["option_group"])
+    lines = []
+    for i in res["items"]:
+        facts = [f"상가 {i['shops']:,}곳({res['shops_month']})"]
+        if i["residents"] is not None:
+            facts.append(f"거주자 {i['residents']:,}명({res['residents_month']})")
+        if share:
+            facts.append(f"{res['option_label']} {i['option_share_pct']}%({res['shops_month']})")
+        pc = i["population_change"]
+        facts.append("1년 뒤 인구 추정 보류" if pc is None else f"1년 뒤 전체 거주자 추정 {pc:+,}명")
+        lines.append(f"{i['rank']}. {i['gu']} {i['dong']} — " + " · ".join(facts))
+    # 기준 동네 자신의 상가 수(다른 동네 추천에 나온 값)와 거주자 수(A-07). 없으면 None — AI 가 빈칸을 지어내지 않게 명시한다.
+    sa, pf = store().similar_areas, store().population_forecast
+    code = sa.loc[(sa["gu"] == g) & (sa["admin_dong"] == d), "admin_code"].iat[0]
+    as_rec = sa.loc[sa["rec_code"] == code, "rec_shops"]
+    base_shops = int(as_rec.iat[0]) if len(as_rec) else None
+    tot = pf[(pf["gu"] == g) & (pf["admin_dong"] == d) & (pf["age_band"] == "total")]
+    base_residents = int(tot["current_population"].iat[0]) if len(tot) else None
+    base = [f"상가 {base_shops:,}곳({res['shops_month']})" if base_shops is not None else "상가 수 자료 없음",
+            f"거주자 {base_residents:,}명({res['residents_month']})" if base_residents is not None else "거주자 수 자료 없음"]
+    if share:
+        base.append(f"{res['option_label']} {res['base_share_pct']}%({res['shops_month']})")
+    head = f"기준 동네 {res['area']} — " + " · ".join(base) + f" / 비교 기준 {res['option_label']}, 비슷한 순서 5곳:"
+    return _py({
+        "available": True, "area": res["area"], "criterion": res["option_label"],
+        "base": {"shops": base_shops, "residents": base_residents,
+                 "share_pct": res["base_share_pct"] if share else None},
+        "display": [head] + lines, "items": res["items"],
+        "basis": {"source": f"{res['shops_month']} 소상공인 상가정보 업종 구성 · 주민등록 거주자 연령 구성(A-09 추천)",
+                  "residents_month": res["residents_month"],
+                  "method": "기준 동네와 업종·연령 구성(또는 고른 기준)이 가까운 순서. 상가 50곳 미만 동네는 비교하지 않음."},
+        "caveat": ["구성이 비슷한 순서일 뿐, 장사가 잘되는 동네나 창업 성과를 비교한 결과가 아닙니다.",
+                   f"상가 수와 업종·연령대 비중(비교 기준)은 {res['shops_month']}, 거주자 수와 1년 뒤 인구는 "
+                   f"{res['residents_month']} 기준입니다. 비중의 기준월을 거주자 수 기준월로 바꿔 쓰지 않습니다."],
+    })
+
+
 TOOL_FUNCTIONS = {
     "get_market_cycle": get_market_cycle,
     "find_vacant_units": find_vacant_units,
@@ -1335,4 +1512,6 @@ TOOL_FUNCTIONS = {
     "find_nearby": find_nearby,
     "get_station_traffic": get_station_traffic,
     "get_competition_outlook": get_competition_outlook,
+    "get_resident_outlook": get_resident_outlook,
+    "find_similar_areas": find_similar_areas,
 }

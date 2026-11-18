@@ -34,6 +34,11 @@ CASES = [
     ("get_competition_outlook", {"category": "카페", "gu": "수성구"}),
     ("get_competition_outlook", {"category": "치킨"}),
     ("get_competition_outlook", {"category": "한식", "dong": "범어동"}),
+    # 동네·자리 (A-07 거주 인구, A-09 비슷한 동네)
+    ("get_resident_outlook", {"dong": "성내1동"}),
+    ("get_resident_outlook", {"dong": "범어동"}),
+    ("find_similar_areas", {"dong": "성내1동", "criterion": "30대 비중"}),
+    ("find_similar_areas", {"dong": "범어동"}),                          # 되묻기 경로
 ]
 
 

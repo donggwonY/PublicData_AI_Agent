@@ -94,6 +94,75 @@ class AreaOutlookToolTests(unittest.TestCase):
         self.assertIn("비교할 자료가 부족", out["reason"])
 
 
+class AreaOutlookAIToolTests(unittest.TestCase):
+    """AI 상담 도구 get_resident_outlook·find_similar_areas: 화면과 같은 값, 이름 해석, 되묻기."""
+
+    @classmethod
+    def setUpClass(cls):
+        s = T.store()
+        if s.population_forecast is None or s.similar_areas is None:
+            raise unittest.SkipTest("population_forecast·similar_areas parquet 없음")
+
+    def test_registered_everywhere(self):
+        from core.tool_specs import TOOL_SPECS
+        from ui_visuals import TOOL_LABELS
+        for name in ("get_resident_outlook", "find_similar_areas"):
+            self.assertIn(name, T.TOOL_FUNCTIONS)
+            self.assertIn(name, {t["name"] for t in TOOL_SPECS})
+            self.assertIn(name, TOOL_LABELS)
+
+    def test_resident_same_as_screen(self):
+        out = T.get_resident_outlook("성내1동")
+        self.assertEqual(len(out["areas"]), 1)
+        a, screen = out["areas"][0], T.get_population_outlook("중구", "성내1동")
+        self.assertEqual((a["top_in"], a["top_out"]), (screen["top_in"], screen["top_out"]))
+        self.assertIn("5,512명 → 2027-10 추정 5,653명(+141명)", a["display"][0])
+        self.assertIn("20대(+213명)", a["display"][1])
+        self.assertIn("30대(-12명)", a["display"][2])
+        ages = {r["age_band"]: r for r in a["by_age"]}
+        self.assertIsNone(ages["30대"]["forecast_change"])     # 30대·0~9세는 증감 방향을 예측으로 주지 않는다
+        self.assertIsNone(ages["0~9세"]["forecast_change"])
+        self.assertEqual(ages["30대"]["forecast"], 1115)
+        self.assertEqual(ages["80대"]["net_move_note"], "사망 포함")
+
+    def test_resident_name_handling(self):
+        out = T.get_resident_outlook("범어동")          # 행정동 여러 곳 → 모두
+        self.assertEqual([a["area"] for a in out["areas"]], [f"수성구 범어{i}동" for i in range(1, 5)])
+        self.assertIsNotNone(out["note"])
+        self.assertNotIn("by_age", out["areas"][0])
+        out = T.get_resident_outlook("대명동")          # 번호 순서
+        self.assertEqual(out["areas"][0]["area"], "남구 대명1동")
+        self.assertEqual(T.get_resident_outlook("삼덕동1가")["areas"][0]["area"], "중구 삼덕동")   # 법정동 → 행정동
+        held = T.get_resident_outlook("구지면")
+        self.assertFalse(held["available"])
+        self.assertTrue(all(r["forecast"] is None for r in held["areas"][0]["by_age"]))
+        with self.assertRaises(T.ToolError):
+            T.get_resident_outlook("없는동")
+
+    def test_similar_same_as_screen_and_criteria(self):
+        out = T.find_similar_areas("성내1동")
+        screen = T.get_similar_areas("중구", "성내1동")
+        self.assertEqual(out["items"], screen["items"])
+        self.assertEqual(len(out["display"]), 6)
+        self.assertIn("1. 중구 성내2동", out["display"][1])
+        # 기준 동네 자신의 값도 준다(없으면 AI 가 표 빈칸을 지어낸 사례가 있었음): 상가는 A-09, 거주자는 A-07
+        self.assertEqual(out["base"], {"shops": 3377, "residents": 5512, "share_pct": None})
+        self.assertIn("상가 3,377곳(2026-09) · 거주자 5,512명(2026-10)", out["display"][0])
+        share = T.find_similar_areas("성내1동", criterion="30대 비중")
+        self.assertIn("30대 비중 19.5%(2026-09)", share["display"][0])
+        self.assertIn("(2026-09)", share["display"][1].split("30대 비중")[1])
+        self.assertEqual(T.find_similar_areas("성내1동", criterion="30대 비중")["criterion"], "30대 비중")
+        self.assertEqual(T.find_similar_areas("성내1동", criterion="식당 많은 곳")["criterion"], "음식 업종 비중")
+        self.assertEqual(T.find_similar_areas("성내1동", criterion="상가 규모")["criterion"], "상가·거주자 규모")
+        self.assertEqual(T.find_similar_areas("성내1동", criterion="어린이")["criterion"], "0~9세 비중")
+        self.assertIn("창업 성과", " ".join(out["caveat"]))
+        with self.assertRaises(T.ToolError):
+            T.find_similar_areas("성내1동", criterion="날씨")
+        with self.assertRaises(T.ToolError):                    # 행정동 여러 곳이면 되묻는다
+            T.find_similar_areas("범어동")
+        self.assertFalse(T.find_similar_areas("우보면")["available"])
+
+
 class AreaOutlookScreenTests(unittest.TestCase):
     def test_cards_and_go_to_similar_area(self):
         if T.store().similar_areas is None:

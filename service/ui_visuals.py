@@ -212,6 +212,7 @@ TOOL_LABELS = {
     "transition_matrix": "업종 전환 흐름 조회", "get_area_profile": "동네 프로필 조회",
     "find_nearby": "주변 가게 찾기", "get_station_traffic": "역 이용객 조회",
     "normalize_address": "주소 확인", "get_competition_outlook": "앞으로 1년 폐업 예측",
+    "get_resident_outlook": "1년 뒤 거주 인구 조회", "find_similar_areas": "비슷한 동네 찾기",
 }
 _GROUP_BY = {"category": "업태별", "gu": "구·군별", "dong": "동별", "service": "업종별"}
 
