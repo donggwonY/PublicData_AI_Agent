@@ -84,6 +84,10 @@ class DataStore:
         # 구×업종 앞으로 1년 폐업 예측(E-06): 오프라인 포아송 회귀 결과. 없으면 None → 도구가 '예측 없음' 안내.
         cf = f.get("competition_forecast")
         self.competition = cf if cf is not None and len(cf) else None
+        # 동네·자리 화면(A-07 1년 뒤 거주 인구, A-09 비슷한 동네). 없으면 None → 카드를 보이지 않는다.
+        pf, sa = f.get("population_forecast"), f.get("similar_areas")
+        self.population_forecast = pf if pf is not None and len(pf) else None
+        self.similar_areas = sa if sa is not None and len(sa) else None
 
         self.ref = pd.Timestamp(self.meta["reference_date"])          # 분석 기준일
         self.categories = sorted(self.stores["category"].unique())     # 실제 존재하는 업태 목록(입력 검증용)
@@ -1193,6 +1197,97 @@ def get_competition_outlook(category: str, gu: str | None = None, dong: str | No
                         definition="기준일 다음 날부터 12개월 동안 해당 구·군·업태에서 새로 접수될 폐업 신고 수(겸업은 한 가게, 단기 행사 제외)",
                         forecast_period=[start, end]),
     })
+
+
+# ─────────────────────── 동네·자리 화면 조회 (AI 도구 아님) ───────────────────────
+AGE_BAND_LABEL = {"total": "전체", "age_00_09": "0~9세", "age_10_19": "10대", "age_20_29": "20대",
+                  "age_30_39": "30대", "age_40_49": "40대", "age_50_59": "50대", "age_60_69": "60대",
+                  "age_70_79": "70대", "age_80_89": "80대", "age_90_99": "90대", "age_100_plus": "100세 이상"}
+SIMILAR_OPTION_LABEL = {"combined": "업종·연령 구성", "size": "상가·거주자 규모"}
+POPULATION_BASIS = "행정안전부 주민등록 거주자 기준"
+
+
+def _pop_change_text(v: float, recent: bool) -> str:
+    """예측 증감은 '+120명', 30대·0~9세는 '최근 1년 동안 45명 늘었어요'(실제 기록)."""
+    n = int(round(v))
+    if not recent:
+        return "변화 없음" if n == 0 else f"{n:+,}명"
+    if n == 0:
+        return "최근 1년 동안 변화 없었어요"
+    return f"최근 1년 동안 {abs(n):,}명 {'늘었어요' if n > 0 else '줄었어요'}"
+
+
+def get_population_outlook(gu: str, dong: str) -> dict:
+    """행정동의 연령대별 현재 거주자와 1년 뒤 추정(A-07). 30대·0~9세는 증감을 최근 1년 실제 기록으로 보여 준다."""
+    pf = store().population_forecast
+    if pf is None:
+        return {"available": False, "reason": "1년 뒤 인구 추정 자료가 이 데이터 버전에 없어요."}
+    rows = pf[(pf["gu"] == gu) & (pf["admin_dong"] == dong)]
+    if rows.empty:
+        return {"available": False, "reason": "이 동네는 1년 뒤 인구 추정 자료가 없어요."}
+    first = rows.iloc[0]
+    items = []
+    for _, r in rows.set_index("age_band").reindex(list(AGE_BAND_LABEL)).dropna(how="all").reset_index().iterrows():
+        has = r["status"] == "available"
+        recent = r["change_display"] == "recent_actual"
+        if not has:
+            change = "최근 1년 이력이 부족해 추정하지 않았어요"
+        elif recent:
+            change = _pop_change_text(r["recent_change_12m"], True)
+        else:
+            change = _pop_change_text(r["forecast_change"], False)
+        items.append({"age_band": r["age_band"], "label": AGE_BAND_LABEL[r["age_band"]],
+                      "current": int(r["current_population"]),
+                      "forecast": int(r["forecast_population"]) if has else None,
+                      "change_value": (None if not has else int(r["recent_change_12m"] if recent else r["forecast_change"])),
+                      "change_kind": "withheld" if not has else ("recent_actual" if recent else "forecast"),
+                      "change_text": change})
+    return _py({"available": bool((rows["status"] == "available").any()), "area": f"{gu} {dong}",
+                "base_month": first["base_month"], "target_month": first["target_month"],
+                "items": items, "basis": POPULATION_BASIS,
+                "reason": None if (rows["status"] == "available").any()
+                else "최근 1년 이력이 부족해 1년 뒤 인구를 추정하지 않았어요."})
+
+
+def similar_option_label(option: str) -> str:
+    if option in SIMILAR_OPTION_LABEL:
+        return SIMILAR_OPTION_LABEL[option]
+    sa = store().similar_areas
+    r = sa[sa["option"] == option].iloc[0] if sa is not None and (sa["option"] == option).any() else None
+    if r is None:
+        return option
+    key = r["option_key"]
+    return f"{AGE_BAND_LABEL.get(key, key)} 비중" if r["option_group"] == "population" else f"{key} 업종 비중"
+
+
+def get_similar_areas(gu: str, dong: str, option: str = "combined") -> dict:
+    """구성이 비슷한 동네 5곳(A-09). 거주자 수는 1년 뒤 인구 카드와 같은 A-07 2026-10 거주자로 맞춘다."""
+    s = store()
+    sa = s.similar_areas
+    if sa is None:
+        return {"available": False, "reason": "비슷한 동네 자료가 이 데이터 버전에 없어요."}
+    rows = sa[(sa["gu"] == gu) & (sa["admin_dong"] == dong) & (sa["option"] == option)].sort_values("rank")
+    if rows.empty:
+        return {"available": False, "reason": "상가가 50곳 미만이거나 거주 인구 자료가 없어 비교할 자료가 부족해요."}
+    pf = s.population_forecast
+    total = (pf[pf["age_band"] == "total"].set_index("admin_code") if pf is not None else None)
+    group, key = rows["option_group"].iat[0], rows["option_key"].iat[0]
+    items = []
+    for _, r in rows.iterrows():
+        t = total.loc[r["rec_code"]] if total is not None and r["rec_code"] in total.index else None
+        item = {"rank": int(r["rank"]), "gu": r["rec_gu"], "dong": r["rec_admin_dong"],
+                "shops": int(r["rec_shops"]),
+                "residents": int(t["current_population"]) if t is not None else None,
+                "population_change": (int(t["forecast_change"]) if t is not None and t["status"] == "available" else None)}
+        if group:
+            item["option_share_pct"] = round(100 * float(r["rec_share"]), 1)
+        items.append(item)
+    return _py({"available": True, "area": f"{gu} {dong}", "option": option, "option_label": similar_option_label(option),
+                "base_share_pct": round(100 * float(rows["base_share"].iat[0]), 1) if group else None,
+                "option_group": group, "option_key": key,
+                "shops_month": rows["base_month"].iat[0],
+                "residents_month": pf["base_month"].iat[0] if pf is not None else None,
+                "items": items})
 
 
 TOOL_FUNCTIONS = {

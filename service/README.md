@@ -272,6 +272,10 @@ Tool 12종:
 
 자리 이력 조회에서 공백 후보 자리를 고르면 앞으로 1년 재입점 가능성 카드 3개(확률 · 대구 전체 기준 5단계 · 같은 공백 기간 평균 대비)를 보여 줍니다. 점수는 `data/processed/vacancy_scores.parquet`(오프라인 모델 결과, 4,536곳, 기준일 2026-11-06)에서 읽기만 하며 기준일이 다르면 숨깁니다. 현재는 parquet 모드에서만 보이고, 공개 앱(DB 모드)은 운영 반영 전까지 변화가 없습니다. 테스트 `tests/test_vacancy_outlook.py`.
 
+### 동네·자리: 1년 뒤 거주 인구·비슷한 동네 5곳 (A-07·A-09, 2026-11-18)
+
+상권 둘러보기 › 동네·자리에서 행정동을 고르면 동네 프로필 아래에 '1년 뒤 거주 인구'(A-07, 2026-10 → 2027-10 추정, 주민등록 거주자)와 '비슷한 동네 5곳'(A-09, 업종·연령 구성 등 23개 기준)이 나옵니다(`ui_area_outlook.py`). 30대·0~9세는 증감 대신 최근 1년 실제 변화를 보여 줍니다. '이 동네 보기'를 누르면 그 동네로 이동합니다. 표는 저장소 루트에서 `service/.venv/Scripts/python scripts/area_outlook_export.py`로 `data/processed/population_forecast.parquet`·`similar_areas.parquet`를 만들고 앱은 읽기만 합니다. 공개 앱(DB 모드)은 운영 반영 전까지 두 카드를 숨깁니다. 테스트 `tests/test_area_outlook.py`. 설계: `docs/IMPLEMENTATION_DESIGN.md`.
+
 ### 구·군 × 업태 앞으로 1년 폐업 예측 (E-06, 2026-11-17)
 
 AI 상담 도구 `get_competition_outlook(category, gu, dong)`이 기준일 다음 날부터 12개월 동안의 구·군 × 업태 폐업 신고 수 예측(포아송 회귀, 범위는 과거 7개 기간 점검에서 실제 값의 약 85%가 들어간 범위)과 최근 3년 실제 개업·폐업 기록을 돌려줍니다. 예측은 `data/processed/competition_forecast.parquet`(777행, 기준일 2026-11-06)에서 읽기만 하며 기준일이 다르면 '예측 없음'으로 답합니다. 개업 수는 예측하지 않습니다. 같은 값을 상권 둘러보기 › 업종 비교에서도 보여 줍니다(`ui_forecast.py`): '관심 업종' 옆에서 '세부 업태'를 고르면 화면 전체가 그 업태 기준이 되고, 최근 3개 기간 실제 개업·폐업과 앞으로 1년 폐업 예측이 한 그래프로 나옵니다. 공개 앱(DB 모드)은 운영 반영 전까지 이 표가 없어 '예측 없음'으로 답하고 화면의 예측 부분을 숨깁니다. 테스트 `tests/test_competition_outlook.py`.

@@ -28,6 +28,7 @@ import streamlit as st
 import config as C
 from agent import API_KEY_ENV, create_agent
 from core import tools as T
+from ui_area_outlook import render_population_outlook, render_similar_areas
 from ui_permit_trends import industry_choices, render_permit_trends
 from ui_vacancy import (CANDIDATE_COLS, TIMELINE_COLS, korean_table, render_unit_summary, render_vacancy_outlook,
                         tenure_sentences)
@@ -423,6 +424,13 @@ with tab_dash:
                 render_tool_result("get_area_profile", prof, key="dash-profile")
                 st.caption("현재 영업 점포 " + f"{prof['stores_now']:,}개 중 음식 {prof['food_stores_now']:,}개 · 주요 업종 "
                            + ", ".join(f"{k} {v}" for k, v in prof["top_categories"].items()))
+
+            # A-07 1년 뒤 거주 인구 · A-09 비슷한 동네(자료가 없는 버전이면 카드를 숨긴다)
+            dong_gu = ctx[ctx["admin_dong"] == dong_sel]["gu"].iat[0]
+            if S.population_forecast is not None:
+                render_population_outlook(dong_gu, dong_sel)
+            if S.similar_areas is not None:
+                render_similar_areas(dong_gu, dong_sel)
 
             types = ctx.groupby("market_type").size().sort_values(ascending=False)
             st.caption("상권 유형 분포: " + " · ".join(f"{k} {v}곳" for k, v in types.items()))
