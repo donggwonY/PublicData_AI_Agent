@@ -136,6 +136,7 @@ service/prediction_review_app.py는 연속 연도 평가 결과를 읽는 별도
 - 비슷한 동네: 비교 기준은 업종·연령 구성(기본)·상가·거주자 규모·업종 비중(10개)·연령대 비중(11개). 거주자 수와 1년 뒤 전체 인구 변화는 위 카드와 같은 A-07 2026-10 거주자 값으로 맞추고, 상가 수와 비중은 A-09 2026-09 값을 쓴다(기준월을 화면에 적는다). "이 동네 보기"는 행정동 선택을 그 동네로 바꾸고, 다른 구를 보고 있었다면 지역 선택도 그 구로 바꾼다. 추천은 구성의 유사도 순서이며 창업 성과 비교가 아니라고 적는다.
 - 조회 함수: `core/tools.get_population_outlook`, `get_similar_areas`(AI 상담 도구에는 아직 등록하지 않음, 후속).
 - 데이터 출처: 두 표는 datasource의 선택 표다. `pipeline/load_supabase.py` 표 목록에 추가했다(기본키 admin_code·age_band, admin_code·option·rank). DB(app) 운영 반영(v8)은 별도 요청 시 한다. 그 전까지 공개 앱(DB 모드)은 두 카드를 숨긴다.
+- 2026-11-18 운영 반영(데이터, 전환 전): 공유 DB `app`에 **v8**(v7와 같은 15개 표 + `population_forecast` 1,824행·`similar_areas` 16,790행)을 적재·검증(`validated`). 상한 `--max-db-mb 1500`, 적재 후 1,344MB. 적재 끝에 디스크 95% 도달로 프로젝트가 잠시 읽기 전용이 되어 상태 기록만 실패했고, Supabase 디스크 자동 확장 후 행 수 재확인을 거쳐 `validated`로 기록. 같은 날 `--activate-version 8`로 전환(current v8, v7 retired). 되돌리기는 `--activate-version 7`. 다음 적재 전에는 디스크 여유(대시보드)를 먼저 확인한다.
 - 검사: `tests/test_area_outlook.py`(저장값·표시 규칙·보류·추천 순서·작은 동네·화면 이동). `service/` 89개 통과.
 
 ## 2026-11-17 구·군 × 업태 앞으로 1년 폐업 예측 도구 (E-06)
