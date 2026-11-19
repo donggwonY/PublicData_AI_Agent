@@ -1,0 +1,33 @@
+{
+ "input_sha256": "cd72ce01351d5e8894a2f1b9079223604cfffcd221a9f3d5584e2f84b6b0e476",
+ "best_baseline": "B2",
+ "best_model": "M1",
+ "params": {
+  "M1": {
+   "C": 0.01
+  },
+  "M2": {
+   "n_estimators": 150,
+   "num_leaves": 7,
+   "min_child_samples": 20
+  }
+ },
+ "fixed": "2026-11-19 3단계, 평가 구간 미사용",
+ "importance_train_fit": {
+  "s_area_m2_na": 0.064,
+  "svc_묶음:운동": 0.04,
+  "h_years_since_first": 0.0349,
+  "o_nb_active_same": 0.0347,
+  "svc_묶음:의료·약": 0.0295,
+  "svc_묶음:오락": 0.027,
+  "svc_휴게음식점": 0.0258,
+  "gu_북구": 0.0248,
+  "p_cat_식육(숯불구이)": 0.0227,
+  "svc_묶음:미용·이용": 0.0203,
+  "p_area_m2_na": 0.0197,
+  "svc_묶음:식품판매": 0.0192,
+  "svc_묶음:동물": 0.0188,
+  "gu_남구": 0.0187,
+  "p_cat_일반조리판매": 0.0184
+ }
+}
