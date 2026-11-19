@@ -1,0 +1,46 @@
+{
+  "baseline": "last_available",
+  "model": "ridge",
+  "development": {
+    "damped_trend": {
+      "cells": 554,
+      "brands": 319,
+      "mean_abs_log": 0.3985266724559106,
+      "mape_pct": 113.83633451035118,
+      "range_distance_pct": 108.14473296785741,
+      "within_disclosed_range": 0.12093862815884476
+    },
+    "hgb": {
+      "cells": 554,
+      "brands": 319,
+      "mean_abs_log": 0.34086893426923714,
+      "mape_pct": 101.60998110449822,
+      "range_distance_pct": 95.99726657375555,
+      "within_disclosed_range": 0.13537906137184116
+    },
+    "last_available": {
+      "cells": 554,
+      "brands": 319,
+      "mean_abs_log": 0.3075543633300898,
+      "mape_pct": 91.78542485397962,
+      "range_distance_pct": 86.27211219395178,
+      "within_disclosed_range": 0.20397111913357402
+    },
+    "ridge": {
+      "cells": 554,
+      "brands": 319,
+      "mean_abs_log": 0.32938685689695923,
+      "mape_pct": 123.94015500012539,
+      "range_distance_pct": 118.32890958257877,
+      "within_disclosed_range": 0.1407942238267148
+    },
+    "two_year_mean": {
+      "cells": 554,
+      "brands": 319,
+      "mean_abs_log": 0.31992635479844966,
+      "mape_pct": 94.37013564107697,
+      "range_distance_pct": 88.77863959801499,
+      "within_disclosed_range": 0.1624548736462094
+    }
+  }
+}

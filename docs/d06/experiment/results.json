@@ -1,0 +1,204 @@
+{
+  "selection": {
+    "baseline": "last_available",
+    "model": "ridge",
+    "development": {
+      "damped_trend": {
+        "cells": 554,
+        "brands": 319,
+        "mean_abs_log": 0.3985266724559106,
+        "mape_pct": 113.83633451035118,
+        "range_distance_pct": 108.14473296785741,
+        "within_disclosed_range": 0.12093862815884476
+      },
+      "hgb": {
+        "cells": 554,
+        "brands": 319,
+        "mean_abs_log": 0.34086893426923714,
+        "mape_pct": 101.60998110449822,
+        "range_distance_pct": 95.99726657375555,
+        "within_disclosed_range": 0.13537906137184116
+      },
+      "last_available": {
+        "cells": 554,
+        "brands": 319,
+        "mean_abs_log": 0.3075543633300898,
+        "mape_pct": 91.78542485397962,
+        "range_distance_pct": 86.27211219395178,
+        "within_disclosed_range": 0.20397111913357402
+      },
+      "ridge": {
+        "cells": 554,
+        "brands": 319,
+        "mean_abs_log": 0.32938685689695923,
+        "mape_pct": 123.94015500012539,
+        "range_distance_pct": 118.32890958257877,
+        "within_disclosed_range": 0.1407942238267148
+      },
+      "two_year_mean": {
+        "cells": 554,
+        "brands": 319,
+        "mean_abs_log": 0.31992635479844966,
+        "mape_pct": 94.37013564107697,
+        "range_distance_pct": 88.77863959801499,
+        "within_disclosed_range": 0.1624548736462094
+      }
+    }
+  },
+  "evaluation_baseline": {
+    "cells": 587,
+    "brands": 347,
+    "mean_abs_log": 0.24234334007795175,
+    "mape_pct": 26.813697833064342,
+    "range_distance_pct": 21.38136714638661,
+    "within_disclosed_range": 0.23168654173764908
+  },
+  "evaluation_model": {
+    "cells": 587,
+    "brands": 347,
+    "mean_abs_log": 0.2827912723781369,
+    "mape_pct": 28.0497742842766,
+    "range_distance_pct": 22.426605640660256,
+    "within_disclosed_range": 0.16524701873935263
+  },
+  "relative_primary_improvement": -0.16690342011121384,
+  "gate_passed": false,
+  "evaluation_by_year": {
+    "2023": {
+      "damped_trend": {
+        "cells": 275,
+        "brands": 275,
+        "mean_abs_log": 0.3237192279339303,
+        "mape_pct": 37.65109467482022,
+        "range_distance_pct": 32.026300221022055,
+        "within_disclosed_range": 0.17454545454545456
+      },
+      "hgb": {
+        "cells": 275,
+        "brands": 275,
+        "mean_abs_log": 0.3045494331340739,
+        "mape_pct": 30.21927085632245,
+        "range_distance_pct": 24.40759392078244,
+        "within_disclosed_range": 0.13818181818181818
+      },
+      "last_available": {
+        "cells": 275,
+        "brands": 275,
+        "mean_abs_log": 0.2444547239269179,
+        "mape_pct": 26.780484163404672,
+        "range_distance_pct": 21.259371441870393,
+        "within_disclosed_range": 0.23272727272727273
+      },
+      "ridge": {
+        "cells": 275,
+        "brands": 275,
+        "mean_abs_log": 0.29908692339905696,
+        "mape_pct": 28.72450829876034,
+        "range_distance_pct": 22.964595558358067,
+        "within_disclosed_range": 0.14181818181818182
+      },
+      "two_year_mean": {
+        "cells": 275,
+        "brands": 275,
+        "mean_abs_log": 0.25171224649526946,
+        "mape_pct": 28.432472146783244,
+        "range_distance_pct": 22.934942248905163,
+        "within_disclosed_range": 0.22545454545454546
+      }
+    },
+    "2024": {
+      "damped_trend": {
+        "cells": 312,
+        "brands": 312,
+        "mean_abs_log": 0.2959917167126511,
+        "mape_pct": 34.16137085256574,
+        "range_distance_pct": 28.672923390885458,
+        "within_disclosed_range": 0.20192307692307693
+      },
+      "hgb": {
+        "cells": 312,
+        "brands": 312,
+        "mean_abs_log": 0.2694033961726786,
+        "mape_pct": 27.852214735160796,
+        "range_distance_pct": 22.40969639403963,
+        "within_disclosed_range": 0.1794871794871795
+      },
+      "last_available": {
+        "cells": 312,
+        "brands": 312,
+        "mean_abs_log": 0.24048234469825408,
+        "mape_pct": 26.842972702155404,
+        "range_distance_pct": 21.488895411585204,
+        "within_disclosed_range": 0.23076923076923078
+      },
+      "ridge": {
+        "cells": 312,
+        "brands": 312,
+        "mean_abs_log": 0.2684281184334157,
+        "mape_pct": 27.455056803561778,
+        "range_distance_pct": 21.952415809356104,
+        "within_disclosed_range": 0.1858974358974359
+      },
+      "two_year_mean": {
+        "cells": 312,
+        "brands": 312,
+        "mean_abs_log": 0.2580925651226295,
+        "mape_pct": 29.616031380048202,
+        "range_distance_pct": 24.130755923257187,
+        "within_disclosed_range": 0.20512820512820512
+      }
+    }
+  },
+  "provisional_2025": {
+    "damped_trend": {
+      "cells": 253,
+      "brands": 253,
+      "mean_abs_log": 0.32253759565224593,
+      "mape_pct": 38.775778642603406,
+      "range_distance_pct": 33.18724240477785,
+      "within_disclosed_range": 0.16600790513833993
+    },
+    "hgb": {
+      "cells": 253,
+      "brands": 253,
+      "mean_abs_log": 0.2570689860860762,
+      "mape_pct": 28.972057384817802,
+      "range_distance_pct": 23.582530693532362,
+      "within_disclosed_range": 0.22134387351778656
+    },
+    "last_available": {
+      "cells": 253,
+      "brands": 253,
+      "mean_abs_log": 0.2482855739903911,
+      "mape_pct": 29.349474244096974,
+      "range_distance_pct": 23.896319215851275,
+      "within_disclosed_range": 0.24110671936758893
+    },
+    "ridge": {
+      "cells": 253,
+      "brands": 253,
+      "mean_abs_log": 0.24262093516385955,
+      "mape_pct": 27.719070973938997,
+      "range_distance_pct": 22.36135286613516,
+      "within_disclosed_range": 0.24110671936758893
+    },
+    "two_year_mean": {
+      "cells": 253,
+      "brands": 253,
+      "mean_abs_log": 0.25621142401422115,
+      "mape_pct": 31.11799332428646,
+      "range_distance_pct": 25.584296836539277,
+      "within_disclosed_range": 0.2015810276679842
+    }
+  },
+  "source_sha256": "7b0b29fb2f8e5aa992af026211c7fd4769c754d767a98459418340ea146963a0",
+  "eligible_by_year": {
+    "2019": 236,
+    "2020": 249,
+    "2021": 268,
+    "2022": 286,
+    "2023": 275,
+    "2024": 312,
+    "2025": 253
+  }
+}

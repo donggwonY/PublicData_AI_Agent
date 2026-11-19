@@ -1,0 +1,72 @@
+[
+  {
+    "year": 2021,
+    "cells": 268,
+    "midpoint_coverage": 0.753731343283582,
+    "whole_reported_range_coverage": 0.6753731343283582,
+    "any_overlap_coverage": 0.7985074626865671,
+    "median_relative_width": 0.7451159298218154,
+    "same_industry_pairs": 2154,
+    "actual_resolved_pairs": 1955,
+    "ordering_accuracy": 0.8982097186700767,
+    "prediction_separated_pairs": 1096,
+    "separated_resolved_pairs": 1077,
+    "separated_order_accuracy": 0.9702878365831012
+  },
+  {
+    "year": 2022,
+    "cells": 286,
+    "midpoint_coverage": 0.6993006993006993,
+    "whole_reported_range_coverage": 0.6293706293706294,
+    "any_overlap_coverage": 0.7587412587412588,
+    "median_relative_width": 0.7010275406753296,
+    "same_industry_pairs": 2521,
+    "actual_resolved_pairs": 2276,
+    "ordering_accuracy": 0.9228910369068541,
+    "prediction_separated_pairs": 1252,
+    "separated_resolved_pairs": 1238,
+    "separated_order_accuracy": 0.9927302100161551
+  },
+  {
+    "year": 2023,
+    "cells": 275,
+    "midpoint_coverage": 0.76,
+    "whole_reported_range_coverage": 0.7054545454545454,
+    "any_overlap_coverage": 0.8,
+    "median_relative_width": 0.7181330115790757,
+    "same_industry_pairs": 2343,
+    "actual_resolved_pairs": 2112,
+    "ordering_accuracy": 0.8941761363636364,
+    "prediction_separated_pairs": 1138,
+    "separated_resolved_pairs": 1119,
+    "separated_order_accuracy": 0.9722966934763181
+  },
+  {
+    "year": 2024,
+    "cells": 312,
+    "midpoint_coverage": 0.8461538461538461,
+    "whole_reported_range_coverage": 0.8076923076923077,
+    "any_overlap_coverage": 0.8782051282051282,
+    "median_relative_width": 0.7947018892800362,
+    "same_industry_pairs": 3077,
+    "actual_resolved_pairs": 2745,
+    "ordering_accuracy": 0.907103825136612,
+    "prediction_separated_pairs": 1272,
+    "separated_resolved_pairs": 1255,
+    "separated_order_accuracy": 0.9737051792828685
+  },
+  {
+    "year": 2025,
+    "cells": 253,
+    "midpoint_coverage": 0.8379446640316206,
+    "whole_reported_range_coverage": 0.8260869565217391,
+    "any_overlap_coverage": 0.8853754940711462,
+    "median_relative_width": 0.8099074838548004,
+    "same_industry_pairs": 2101,
+    "actual_resolved_pairs": 1877,
+    "ordering_accuracy": 0.9091635588705381,
+    "prediction_separated_pairs": 928,
+    "separated_resolved_pairs": 919,
+    "separated_order_accuracy": 0.9771490750816104
+  }
+]

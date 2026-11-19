@@ -1,0 +1,917 @@
+[
+  {
+    "year": 2017,
+    "total": 103986,
+    "daegu": 5777,
+    "pages": [
+      {
+        "page": 1,
+        "rows": 10000,
+        "sha256": "572102f7b6d2136beecfbbbcacc4ceeebf9d8b70be40d64d5c9c81705dd19805"
+      },
+      {
+        "page": 2,
+        "rows": 10000,
+        "sha256": "992c350107224238531733da2c77f3c1698b7536e2f77f953b62912ed013d1c1"
+      },
+      {
+        "page": 3,
+        "rows": 10000,
+        "sha256": "09feada154e6c5c8183cee3a2a411bbd7766947989963f4e008a956cc6c959d0"
+      },
+      {
+        "page": 4,
+        "rows": 10000,
+        "sha256": "c3971b9ebb837c760d347523d15cf78ea40153d2d394427d5b02af623ce287fc"
+      },
+      {
+        "page": 5,
+        "rows": 10000,
+        "sha256": "19f27d0119d72c1b4ce3d70979a7576ae5b5e74e8576b7637c47219bc4ab9001"
+      },
+      {
+        "page": 6,
+        "rows": 10000,
+        "sha256": "29f395cbb518f4e16be52b370e2a82febd157cf39f6139a9ff66b3ae342d26c8"
+      },
+      {
+        "page": 7,
+        "rows": 10000,
+        "sha256": "35377692fa42ca47ec087b245400c6d2b68a468fcb90b4580d7491fcc316a6b1"
+      },
+      {
+        "page": 8,
+        "rows": 10000,
+        "sha256": "471eec54e80bf707ec4223a8315e76194feb70742a7b24210d3f256550251935"
+      },
+      {
+        "page": 9,
+        "rows": 10000,
+        "sha256": "9c8b2e378a5b81c609b1f75f8ebaf2ffcebbb3ad45dac0fa33a0b7e9f98faccb"
+      },
+      {
+        "page": 10,
+        "rows": 10000,
+        "sha256": "a55d6fe1f47965778cd9f62336fa02e82bc5dd0b704914413b9e51a56b4f8555"
+      },
+      {
+        "page": 11,
+        "rows": 3986,
+        "sha256": "6730ba0a3e2dacc585e6ba50911e77596b03625531f58eb759d8ffd3ac01aac3"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "total": 110844,
+    "daegu": 6158,
+    "pages": [
+      {
+        "page": 1,
+        "rows": 10000,
+        "sha256": "dd23bc074d08ef7c30ef0a869302f8c5f4b13d2e376f59e077234a7d96988750"
+      },
+      {
+        "page": 2,
+        "rows": 10000,
+        "sha256": "fcaccdc89f5dcaf025a85adf02ecdef385b1ccacfa33cca773bb4ce7e6beda78"
+      },
+      {
+        "page": 3,
+        "rows": 10000,
+        "sha256": "ca082d49bcb053fa6f1b06258802589fb8a4ad83c3d1151406a311e02fb05c27"
+      },
+      {
+        "page": 4,
+        "rows": 10000,
+        "sha256": "0f7488edf9ab2d15bc9998ff8ff5aa3b64bf9405e45ebad5bf2a6fd6b29eb398"
+      },
+      {
+        "page": 5,
+        "rows": 10000,
+        "sha256": "c0f393d720b9d73b57aab385fa65303f6257e8828d092c234dae283f4c6e8e3d"
+      },
+      {
+        "page": 6,
+        "rows": 10000,
+        "sha256": "61e6e33ac41bfc9c1f47a8a795dff468eef73da537392dbcab37b34bdce82206"
+      },
+      {
+        "page": 7,
+        "rows": 10000,
+        "sha256": "0a78a3cd808c2a5998c3eaef0e1949f581455af9cdb421472553130b567f9ad4"
+      },
+      {
+        "page": 8,
+        "rows": 10000,
+        "sha256": "4f3ca4611c203d229401e28f7cc61a4ec105a93739f12395eeaa2dc19bd9534e"
+      },
+      {
+        "page": 9,
+        "rows": 10000,
+        "sha256": "3b74d291199db29db041dec875ee9b77e9919848c3bb58f8ddba230f5cb63dee"
+      },
+      {
+        "page": 10,
+        "rows": 10000,
+        "sha256": "e776aad22c61f6ee1ca4198cddaa49cc29810fef1270d8f468b6e8e794fefbc7"
+      },
+      {
+        "page": 11,
+        "rows": 10000,
+        "sha256": "2254c13773d65acc8d1d787c21d8aa06308d7f6bb94b8d88408ed8c7576495fa"
+      },
+      {
+        "page": 12,
+        "rows": 844,
+        "sha256": "507db0715f6584284e1a0ebae9ff120083ad7bfea19dec0f2ff92cb49938945d"
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "total": 113346,
+    "daegu": 6297,
+    "pages": [
+      {
+        "page": 1,
+        "rows": 10000,
+        "sha256": "71c1db651cb5a5b8e5443353246cc06db8282164e9488d4bf2bd70898d43b743"
+      },
+      {
+        "page": 2,
+        "rows": 10000,
+        "sha256": "289fc2604cc0c818adbd50ab63bd93a3b7c7629f25322ee43b5db67d303be530"
+      },
+      {
+        "page": 3,
+        "rows": 10000,
+        "sha256": "5b77929fd4442fac4371ef809f5172b7fec7066f552f899e3e9629de9a246edb"
+      },
+      {
+        "page": 4,
+        "rows": 10000,
+        "sha256": "474281fa0464a4137d0f0c90e4c3407afb82638a5a0ae5462337fd23bc240975"
+      },
+      {
+        "page": 5,
+        "rows": 10000,
+        "sha256": "87502a2df0b3f577256622311489e022c716a66c29ca998f7fab394b0841fa53"
+      },
+      {
+        "page": 6,
+        "rows": 10000,
+        "sha256": "7f3fd2badaa40f6e6d5688c932a322b2d3dfe93de19dc33e4693671eb23a9883"
+      },
+      {
+        "page": 7,
+        "rows": 10000,
+        "sha256": "425951972246f0eb65ea51f970ce6fc0c4de81df57a36b6ad1a93b57f2ac6db6"
+      },
+      {
+        "page": 8,
+        "rows": 10000,
+        "sha256": "fa39698473a30ee018cf8812537955f9ab61ad9c514f7f891933c5414a0eca09"
+      },
+      {
+        "page": 9,
+        "rows": 10000,
+        "sha256": "ca31e4f6be24e33a3b47a0adf6056f0b690e03828242f7f5c8b7af1e680101ea"
+      },
+      {
+        "page": 10,
+        "rows": 10000,
+        "sha256": "6e27e0eabffb3571b62d7b28cd3e5f9556c6f6a15b3c8fa592e99f125082527e"
+      },
+      {
+        "page": 11,
+        "rows": 10000,
+        "sha256": "9892d3f2d6deb21aaf2c35f80c5adb7bf268f7894162e3f4c6b2e4bd847afe02"
+      },
+      {
+        "page": 12,
+        "rows": 3346,
+        "sha256": "9372e74ef77febb6ee1b7de7d5a8e6dee85baf914272a6f96e69a7a82c713d10"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "total": 132138,
+    "daegu": 7341,
+    "pages": [
+      {
+        "page": 1,
+        "rows": 10000,
+        "sha256": "5854fd37d32a05d55341673890b235c3f684fcd5bb3fdb2e35c4386912db641c"
+      },
+      {
+        "page": 2,
+        "rows": 10000,
+        "sha256": "6af66ca5928f98e667ef1f4f061ecaae060718862e7ddedb877ffdd854a15df6"
+      },
+      {
+        "page": 3,
+        "rows": 10000,
+        "sha256": "bb01455ce2aa0063bef499e718991fbb87601ad5fe04e9e8aa6326369a4c5601"
+      },
+      {
+        "page": 4,
+        "rows": 10000,
+        "sha256": "748cde8ff71deff57ddf01852e65519ec781ce8e1763849dae885081d40b5830"
+      },
+      {
+        "page": 5,
+        "rows": 10000,
+        "sha256": "e9dd70e3be9ed6e375977c241f8f671434227930b14f0e9472b552fb71ba3fd2"
+      },
+      {
+        "page": 6,
+        "rows": 10000,
+        "sha256": "7618f334f656d8b0c6f0b1f3a0d97743f533fa28acdd1d69f7b522a9424f1212"
+      },
+      {
+        "page": 7,
+        "rows": 10000,
+        "sha256": "36e78ef646aa88dc33b0a67cb67897a43e394f0889ba1109b560ce1381c22556"
+      },
+      {
+        "page": 8,
+        "rows": 10000,
+        "sha256": "32a7d01187e467a4f05bc07c0cbbc096d79302dd3a7fc19327eb77826d31e722"
+      },
+      {
+        "page": 9,
+        "rows": 10000,
+        "sha256": "b3610d80710e1ed935d661e8ebc04a7b50bd02716ceceb75cf0d87a820c40de4"
+      },
+      {
+        "page": 10,
+        "rows": 10000,
+        "sha256": "f7872e0ef56b3a07a0ca84e6ef231e6f69747c923abd6100e103f39453f516d8"
+      },
+      {
+        "page": 11,
+        "rows": 10000,
+        "sha256": "2dfbfab919e854e896f8084d92b8d5ce6ffff100429237930d7eff11aee15df0"
+      },
+      {
+        "page": 12,
+        "rows": 10000,
+        "sha256": "0070c1e4dae9d4646bdd7b26037e3cdfb3d0772d0784a235007e8efdcdef5d13"
+      },
+      {
+        "page": 13,
+        "rows": 10000,
+        "sha256": "0ef6ad2ebd24ad4727fa737988416fbf49a74980417aab8645bbf23f80f1a113"
+      },
+      {
+        "page": 14,
+        "rows": 2138,
+        "sha256": "ffb2943eac17ab1dcbaa19da38aea0a410e9e2ca14247b57762448e4557ae0c4"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "total": 214693,
+    "daegu": 11928,
+    "pages": [
+      {
+        "page": 1,
+        "rows": 10000,
+        "sha256": "11d269f8c8684a315a472dd5e140bf2c5adf1b80ee7f6a4d3958eb5db0d1f269"
+      },
+      {
+        "page": 2,
+        "rows": 10000,
+        "sha256": "d07b59cb54657d629a6a6f38d8980d1ff20e0ecdbc58d993a3a1506898065d3e"
+      },
+      {
+        "page": 3,
+        "rows": 10000,
+        "sha256": "10291b137ec0cfa62dfe57d56befe8367bb4602035893645d72cf1fb4ffb9981"
+      },
+      {
+        "page": 4,
+        "rows": 10000,
+        "sha256": "f7b49c8a419571fc1da8723cdaf63b1342400b0c2686d150c306b0d885b55116"
+      },
+      {
+        "page": 5,
+        "rows": 10000,
+        "sha256": "1a4a46f10242498eb3ab54a8a6ba59ffc2237deb8d7456a529c3ff156478dcf6"
+      },
+      {
+        "page": 6,
+        "rows": 10000,
+        "sha256": "3a43700a86a8b8edd9da7c9f33a8df016a27a80bc7b877d4ec491caf6d21a625"
+      },
+      {
+        "page": 7,
+        "rows": 10000,
+        "sha256": "e3e9785a73b2903aa7c718cba2a025e91ec154f869d688540f026e83f74f1dc5"
+      },
+      {
+        "page": 8,
+        "rows": 10000,
+        "sha256": "47af25dce27b34e838f5ea2c5ffd585a4fda8a201604a7f9c1f069e65cbd2194"
+      },
+      {
+        "page": 9,
+        "rows": 10000,
+        "sha256": "aa1bc6ccd760a1dad97a19bfaff0c59873d88abafc85b5842929a8b03d5b0ae1"
+      },
+      {
+        "page": 10,
+        "rows": 10000,
+        "sha256": "a58ea88463218c38638d386e3e8a2e29502a8e431f53651d8967bdb2694a7dee"
+      },
+      {
+        "page": 11,
+        "rows": 10000,
+        "sha256": "9336ba37f72369a6d3f2c756d605cb2dcfa1331ed6c2b33382deb11469a74078"
+      },
+      {
+        "page": 12,
+        "rows": 10000,
+        "sha256": "0b7208127dd407cb79f8512f4fc5de8a70151869b0ee4093e47f10af6383f0a5"
+      },
+      {
+        "page": 13,
+        "rows": 10000,
+        "sha256": "1a6bed61efc8e7c4b1d65b3a5881b99427f3f455cf413c4a744f0acca8acbf0a"
+      },
+      {
+        "page": 14,
+        "rows": 10000,
+        "sha256": "0690ba0e61de517237ceee04236e7c8505b09002972aedd80664c61c5bfff511"
+      },
+      {
+        "page": 15,
+        "rows": 10000,
+        "sha256": "129e017fdef57a22cccba3f1575cc11f530d0d2d74126153b4e6ffbb02013bee"
+      },
+      {
+        "page": 16,
+        "rows": 10000,
+        "sha256": "0fcb22c2ca3c702a55cdefc0ec37c1615611d65635e8e0016c95aa1a9b2eed9e"
+      },
+      {
+        "page": 17,
+        "rows": 10000,
+        "sha256": "a6c1441d6ae2497a84cd99292e03c75c7dcaed4496d97ff588a461ebd72ba46c"
+      },
+      {
+        "page": 18,
+        "rows": 10000,
+        "sha256": "f1a5651d4f2bcc664a46fb787b80b0e83649c2efb92a03b38fc7a5ce44941336"
+      },
+      {
+        "page": 19,
+        "rows": 10000,
+        "sha256": "0cc2e21435e5868c8c7e6a91c4e93fedd9ae1d20ad98177fdac095d2249cffc3"
+      },
+      {
+        "page": 20,
+        "rows": 10000,
+        "sha256": "a477eaafcdfa97da0d3dbb8caba09f79866925ec6cb2aacd8c3a151fee2dd637"
+      },
+      {
+        "page": 21,
+        "rows": 10000,
+        "sha256": "d2de67d90f69470ef0782455200e67eab2872312f275066ca2024a329f09cbb3"
+      },
+      {
+        "page": 22,
+        "rows": 4693,
+        "sha256": "5ec44f8ba006c8688cc81429f2cde52ee1cfdec2c048f54c0c82c8dad239a774"
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "total": 203526,
+    "daegu": 11307,
+    "pages": [
+      {
+        "page": 1,
+        "rows": 10000,
+        "sha256": "f034ca3c2cbf8e89b1d90242e180324e001267b986fd17b01c2b32efefab2b10"
+      },
+      {
+        "page": 2,
+        "rows": 10000,
+        "sha256": "b3d2f4706c9165354a149f47aea6da2e8ddded585bc61acf9bbe937489f4d1fb"
+      },
+      {
+        "page": 3,
+        "rows": 10000,
+        "sha256": "53ff9e90d0aa590acfe1baf4292a798672b7c899108fae26e58326d44bf36ccc"
+      },
+      {
+        "page": 4,
+        "rows": 10000,
+        "sha256": "d34e53ed7374ab99d036ecf42efe15e5b2152859ca7e6e263875bf3220ec526e"
+      },
+      {
+        "page": 5,
+        "rows": 10000,
+        "sha256": "ba524987d582147c110c1762077c767e38e52bcbc18283d413920a21104539af"
+      },
+      {
+        "page": 6,
+        "rows": 10000,
+        "sha256": "a9412abb2dc207b68057b03f55a010da7199f1f3d9c1c3be344dbc8e2e4c9686"
+      },
+      {
+        "page": 7,
+        "rows": 10000,
+        "sha256": "c04025da465c270262ede1f39930a36c77f6a0b1e3b1cd7fd81a89c59a3ee7a0"
+      },
+      {
+        "page": 8,
+        "rows": 10000,
+        "sha256": "76442f36a4512fb14b152373c35596da5effdc40b13ce7b8416688ca141068bf"
+      },
+      {
+        "page": 9,
+        "rows": 10000,
+        "sha256": "31add3f0fa2f8cca11c2308a9780b7fe6a08512083d9876bf5c870de0af8d8bb"
+      },
+      {
+        "page": 10,
+        "rows": 10000,
+        "sha256": "ed29cee4f46d5fbfac9d17cd7191a25fcf2960722259e5df5ae6f16c8e7a8a42"
+      },
+      {
+        "page": 11,
+        "rows": 10000,
+        "sha256": "547435662702c7ab3eca916eb2d66cd287531581a305a2587368f378b5084c73"
+      },
+      {
+        "page": 12,
+        "rows": 10000,
+        "sha256": "07fc32fdabf0254d2fb31f78c2789eda050e2c2fe745f6153fd5b8e7e4b4315f"
+      },
+      {
+        "page": 13,
+        "rows": 10000,
+        "sha256": "5a5e74c0fe0e8cdac731c32fe934642de9ad88a86e89a4055794cf0ce91c8a87"
+      },
+      {
+        "page": 14,
+        "rows": 10000,
+        "sha256": "3a62f49404fb1a802e43b422d2bcdd46cdc42302b14da8f22fe60c8ab9ed8436"
+      },
+      {
+        "page": 15,
+        "rows": 10000,
+        "sha256": "d38e400873a3729048631ee7e49e16a7aa24ff5bf160c9447dca348bdbda4745"
+      },
+      {
+        "page": 16,
+        "rows": 10000,
+        "sha256": "1971c17f381de386caf37fa0cf543f339025f6de56e8ef05963a8021dec2642e"
+      },
+      {
+        "page": 17,
+        "rows": 10000,
+        "sha256": "dab35a37620e1b1de1a6453fc261d9dfd139f77c01eb8ce8ea41ee8555916c80"
+      },
+      {
+        "page": 18,
+        "rows": 10000,
+        "sha256": "297e42a51d2c7c598a65accc53b3ae45ea24fd5199f210522d4ac4eaacbbef5c"
+      },
+      {
+        "page": 19,
+        "rows": 10000,
+        "sha256": "30a4dc0d615e060b81e1b8820fa5071f51694c505354f0ec5c17278ede4d5bc8"
+      },
+      {
+        "page": 20,
+        "rows": 10000,
+        "sha256": "2c38819383ed0e251cc2350ddeb9349384be4ebd40e1f61e6c495ec2587d78ec"
+      },
+      {
+        "page": 21,
+        "rows": 3526,
+        "sha256": "7f481369dab3da8b61a26bd5dd331f74806fe99b05da241f003ab41e04331aa3"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "total": 187927,
+    "daegu": 10441,
+    "pages": [
+      {
+        "page": 1,
+        "rows": 10000,
+        "sha256": "fb08ca8ee4675f7f069ff7290d68d37e12ab4045a284efe9ca669276fb79915a"
+      },
+      {
+        "page": 2,
+        "rows": 10000,
+        "sha256": "e9f7df45b68512b05b68045ac7a7d50d68d76e972bd789aca5d08592f6779c4e"
+      },
+      {
+        "page": 3,
+        "rows": 10000,
+        "sha256": "caa9631f2cbf17b0077a18e4070b27eeeb234a32cf16465af8ba358d654d2085"
+      },
+      {
+        "page": 4,
+        "rows": 10000,
+        "sha256": "28323c9a12cf2e7a39bab2f716be9f0ac501aad37701656b57d5950e70b936cb"
+      },
+      {
+        "page": 5,
+        "rows": 10000,
+        "sha256": "303775b2194e0dc804f1bf7d38a0f8b79687788e3dde39e5ca0b8e3938066dc9"
+      },
+      {
+        "page": 6,
+        "rows": 10000,
+        "sha256": "48c67d7a27bf61da6000b7e85376b4617a45b20ae33411e328f662e5007a3c3d"
+      },
+      {
+        "page": 7,
+        "rows": 10000,
+        "sha256": "01707914716c0661be9b03b6a4a8092fc0bf09a24c469dd3068c0287100adf56"
+      },
+      {
+        "page": 8,
+        "rows": 10000,
+        "sha256": "5c02afd77c88a175a1149db4fb3b9176d605237d4c3044ea3e22f940e360a0b0"
+      },
+      {
+        "page": 9,
+        "rows": 10000,
+        "sha256": "19e2f850e961411542447433b5061c676e782c737b053e8d9b280aacff50c11b"
+      },
+      {
+        "page": 10,
+        "rows": 10000,
+        "sha256": "595deed50e8fff1930c107513904122937be0829a1a7cdfaffc9a0a47c83c001"
+      },
+      {
+        "page": 11,
+        "rows": 10000,
+        "sha256": "f431bb6113a1255e817a382a78e243903fe2921713c2f1c4faf77ce4dcf291a0"
+      },
+      {
+        "page": 12,
+        "rows": 10000,
+        "sha256": "aeea2d55ee414ee809238a06a4c82be64693d02bb44c269081e48924b68dc8f1"
+      },
+      {
+        "page": 13,
+        "rows": 10000,
+        "sha256": "496ff6c92ab4e4d89a3293efee445c68e50bd8cafff4a449fcd48476a758e187"
+      },
+      {
+        "page": 14,
+        "rows": 10000,
+        "sha256": "f6c1819c8e90ee24bbdca975ac87c8bc594c87cd8b4a3f17bf2d21bb2cf615e6"
+      },
+      {
+        "page": 15,
+        "rows": 10000,
+        "sha256": "fce1072d73ddc23f8659286f5fc8c3bd7973687fde9f70441271fdcc65d6ee0c"
+      },
+      {
+        "page": 16,
+        "rows": 10000,
+        "sha256": "569b3e5ded4e05b686039bc09ab26e8239725b853c24e6cf6eb2f40cedbfe9a8"
+      },
+      {
+        "page": 17,
+        "rows": 10000,
+        "sha256": "75192ab6549d9196dfd32a3ccc168f770a58dd6e93c90da387c8befb86242027"
+      },
+      {
+        "page": 18,
+        "rows": 10000,
+        "sha256": "dc3672c3bb6e935f7c5ddf0c2e8fa4f49b56cc004ecf77a4b6aa0c0b67816c04"
+      },
+      {
+        "page": 19,
+        "rows": 7927,
+        "sha256": "244ef8f4febc1762aebaa197863825f31ec17fbdf5de97542cbcc63ea03b8492"
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "total": 187920,
+    "daegu": 10440,
+    "pages": [
+      {
+        "page": 1,
+        "rows": 10000,
+        "sha256": "b3dc132de54fadb88d538773d1d396498b7d04238a6f2af7e014bf7127010b0b"
+      },
+      {
+        "page": 2,
+        "rows": 10000,
+        "sha256": "c65c5b0106e548b9840aa672bd3c7b6c0a02dc84983af87ee29af7080c4865ab"
+      },
+      {
+        "page": 3,
+        "rows": 10000,
+        "sha256": "c7eb3c1d0eb4298a8b6a6c4c93e07881026bd26ed0387c2971e9483169dbd01f"
+      },
+      {
+        "page": 4,
+        "rows": 10000,
+        "sha256": "49f63d6a68654a17af1e55fdebfce0b3ca6d3e3a3fa3fcbfab4d652198cdd114"
+      },
+      {
+        "page": 5,
+        "rows": 10000,
+        "sha256": "cfee8b99aea9d35827b097458b079ac178e240dbe9827795730ece653cb0ef87"
+      },
+      {
+        "page": 6,
+        "rows": 10000,
+        "sha256": "5eaee6a6e01d77663d6814dd4a416ff6a8917c8a6a25a2b7b785964bb20b856b"
+      },
+      {
+        "page": 7,
+        "rows": 10000,
+        "sha256": "129e737814d5ead5dba0ad82af7fb3b58ae7594e345f3ca2f0ece565929929b8"
+      },
+      {
+        "page": 8,
+        "rows": 10000,
+        "sha256": "fb7d5b665649351b16dfb602380cec82bda294e26ade1588763855a22c305501"
+      },
+      {
+        "page": 9,
+        "rows": 10000,
+        "sha256": "66450a36471bd44fa01dbfebc104c7a8ed90096591dcac7f42c8b79c2e16cc61"
+      },
+      {
+        "page": 10,
+        "rows": 10000,
+        "sha256": "e5c5d0bd1f5fdea5e35dab5c0e063ee15c9172123646c3ab097040e1a3272142"
+      },
+      {
+        "page": 11,
+        "rows": 10000,
+        "sha256": "9c8427f41484c42ddf2a4ae7a6bd5ada5a76a2090a560004502def9f0f0da4b5"
+      },
+      {
+        "page": 12,
+        "rows": 10000,
+        "sha256": "61c1240c1b3166c3b1baba56b409f590441131e9e8f307d7bca56d44b52d8d05"
+      },
+      {
+        "page": 13,
+        "rows": 10000,
+        "sha256": "fe63d75e887dac13f524bd8c006697c29198603a9be91acfac68437693a65f82"
+      },
+      {
+        "page": 14,
+        "rows": 10000,
+        "sha256": "cfaf250f5dfc1944ac1c85081a886acef0cb91d64bed0bf510c197c40f6d5614"
+      },
+      {
+        "page": 15,
+        "rows": 10000,
+        "sha256": "9189e1c37ad353981c58eb796c1562a28906a0e7a7ce357d11276239d7f71565"
+      },
+      {
+        "page": 16,
+        "rows": 10000,
+        "sha256": "96810b1544120b5cc7d3f178ed93e624e7931252c8b1911b3d83562c9f8e69d5"
+      },
+      {
+        "page": 17,
+        "rows": 10000,
+        "sha256": "20edb7ae775ad13112e8cf699357a1fbea61a340254526a7c01241a656bc7b92"
+      },
+      {
+        "page": 18,
+        "rows": 10000,
+        "sha256": "81caa55115737934f3e18a7ec4592b7b6122e0a4b03029354ed29f4c998b1c6d"
+      },
+      {
+        "page": 19,
+        "rows": 7920,
+        "sha256": "3b38af7a7d30de83a59c7a7004362dbae4a9e642418bb18d170d14f5fabbf3c9"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "total": 200106,
+    "daegu": 11117,
+    "pages": [
+      {
+        "page": 1,
+        "rows": 10000,
+        "sha256": "a8e21d3c135ce6a85cd31b0bd12d7e4b4964798d41aaff5b41082740883c2127"
+      },
+      {
+        "page": 2,
+        "rows": 10000,
+        "sha256": "e0c7b4b434f4ea9e96b8174b497cc731f15f1b20ca697ef8b9d72a4b9a3cd41a"
+      },
+      {
+        "page": 3,
+        "rows": 10000,
+        "sha256": "589490ed205e8b5f534d00b7fc03ec039a5e18df6e8cda58c2be60f8b265079e"
+      },
+      {
+        "page": 4,
+        "rows": 10000,
+        "sha256": "1960ab4cf9a377610666d554539f7dced9015bb1fe9503b26deadde556bb95fd"
+      },
+      {
+        "page": 5,
+        "rows": 10000,
+        "sha256": "46d40ddb54af0af4cf36079a854c2938318cf30cd9809aac460ccfb95ceb67b8"
+      },
+      {
+        "page": 6,
+        "rows": 10000,
+        "sha256": "5c707dc58d1a9c618f1ec0011dec8b4d9b849d6fa98629638ec083cf4c4155ee"
+      },
+      {
+        "page": 7,
+        "rows": 10000,
+        "sha256": "b45f1c4efa6aa512374ad5512ca46d8feb47a04f8ac75957adc54e765f6290b8"
+      },
+      {
+        "page": 8,
+        "rows": 10000,
+        "sha256": "d245ea0c6c3b67a20b0f013ed3a316e3564c379324d63b05b86a31ab0f7f8c81"
+      },
+      {
+        "page": 9,
+        "rows": 10000,
+        "sha256": "d8babe5aedc109a8784df78aaed23c3290773ec54f7283a0301d31ef824102d6"
+      },
+      {
+        "page": 10,
+        "rows": 10000,
+        "sha256": "600ac23d30f6e20093d49165bb61a52ee9967eba44044899b9e6b526eb9c2e85"
+      },
+      {
+        "page": 11,
+        "rows": 10000,
+        "sha256": "3405169aa93b914480251df6523f2f1edeb10097aa13e8ba1fca6683b0d5beb0"
+      },
+      {
+        "page": 12,
+        "rows": 10000,
+        "sha256": "ffb717d68b856fd8620f2bbe7d1af48f3da5f9ef564518ed2c8351c4d90a1164"
+      },
+      {
+        "page": 13,
+        "rows": 10000,
+        "sha256": "cefc0bed562a275292439077580aabd1d272e8dcf1f4fe8df1a621479a6d67f4"
+      },
+      {
+        "page": 14,
+        "rows": 10000,
+        "sha256": "bf053f988a1953d9fc9a951dc2efb320cd620cb329ae13ffa46ac1eeb6aa64e2"
+      },
+      {
+        "page": 15,
+        "rows": 10000,
+        "sha256": "3a4dbc7b30834b96a503c0f6b7574c28b23ce1a3b498c82f3e363976138baf20"
+      },
+      {
+        "page": 16,
+        "rows": 10000,
+        "sha256": "02a0a3a73097fca3b31c2e912a213eb3e08ebdcdd5c9b823df459807c0cf395f"
+      },
+      {
+        "page": 17,
+        "rows": 10000,
+        "sha256": "47271e3bde5b57e63132557c8d4455a8e36982973738010c93265a6bc067d8ed"
+      },
+      {
+        "page": 18,
+        "rows": 10000,
+        "sha256": "6e3d34944c558096a81708eded442f39ec6dd5f6fc52e9c6c74a0c9a71de87bb"
+      },
+      {
+        "page": 19,
+        "rows": 10000,
+        "sha256": "f1e404e0ffbc097dafe36939d75b9d2ba9d35d08e2263843a2eaa049b42a3f99"
+      },
+      {
+        "page": 20,
+        "rows": 10000,
+        "sha256": "06d2c1612b9eff7b26624bd14c6b3f32680cc2accadfba08fb392f5383b6913b"
+      },
+      {
+        "page": 21,
+        "rows": 106,
+        "sha256": "f706729200766271f5d88474d76dbbb68b5f5bb868482af76ae1160e6789bfae"
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "total": 176526,
+    "daegu": 9807,
+    "pages": [
+      {
+        "page": 1,
+        "rows": 10000,
+        "sha256": "55951f34a7a8a1d773b834d7f837f5eb30969571b0e80fe3c6d9a1ff73e89fc6"
+      },
+      {
+        "page": 2,
+        "rows": 10000,
+        "sha256": "b10e48724a0d8a88cb4aeb99ff3098cb7623e573f7ae9ef1ae725ac4f8e0edec"
+      },
+      {
+        "page": 3,
+        "rows": 10000,
+        "sha256": "b09d9ee0ab8c64f19dc9a767562d2054a548bc7acc67e9915f3871e07ca913e0"
+      },
+      {
+        "page": 4,
+        "rows": 10000,
+        "sha256": "407026fef78210fd4abd204af94c00ac4218af99b83720911b7c14a0565143bc"
+      },
+      {
+        "page": 5,
+        "rows": 10000,
+        "sha256": "3e9ae3e90e823143098f049352172f41813e05b4dc7357a7f565bc9b236f4a74"
+      },
+      {
+        "page": 6,
+        "rows": 10000,
+        "sha256": "b94b24a5e09883224405d87bdbd49d44021845259687b018ad6d16c3d0137940"
+      },
+      {
+        "page": 7,
+        "rows": 10000,
+        "sha256": "12b6126cce088688ddb477967de7a7deadab82a80293c562c8d04c7e450191bc"
+      },
+      {
+        "page": 8,
+        "rows": 10000,
+        "sha256": "b99fc44ee0945b7d852eca7404b38bce6c26865812dde9d7aa957e8acd658d62"
+      },
+      {
+        "page": 9,
+        "rows": 10000,
+        "sha256": "032090dcc6ad6818f234f6b65609905d9d0480beb09da6d0814bb608ece74a46"
+      },
+      {
+        "page": 10,
+        "rows": 10000,
+        "sha256": "52fa43c8e972de73e51dbc35718c760f64329d796996e224b7e2b58b5e904d52"
+      },
+      {
+        "page": 11,
+        "rows": 10000,
+        "sha256": "5d699ecfdf3e7420b435a5aa14e60dd0aa163b8fe9a4b3271904772044d63c39"
+      },
+      {
+        "page": 12,
+        "rows": 10000,
+        "sha256": "e1951238384d6f2acbacfffc0a1580be6059711c6e01ea195e862f74c229d6c3"
+      },
+      {
+        "page": 13,
+        "rows": 10000,
+        "sha256": "84d88007080f37d430fb150f1dc0ff65ebd693fe80772489426ceb7c2af67192"
+      },
+      {
+        "page": 14,
+        "rows": 10000,
+        "sha256": "e8c525d30ba6a0f5dbbf609e7f34772d6bfd9bfaff60b18ad585be70250324c1"
+      },
+      {
+        "page": 15,
+        "rows": 10000,
+        "sha256": "bc57f8eb8440aaf8069adc4d76191842f1ee2a293591cb1c61e190cb072562be"
+      },
+      {
+        "page": 16,
+        "rows": 10000,
+        "sha256": "a0962dafdb2df87d3e7354a2ad76d5c50db5f867e99007080bb33405c6aab204"
+      },
+      {
+        "page": 17,
+        "rows": 10000,
+        "sha256": "e4e4396cd1f07f2af35413031bd44cb1400d333b35aa616453baedf8c4489ab1"
+      },
+      {
+        "page": 18,
+        "rows": 6526,
+        "sha256": "7c1aa870f3eb9f535f53ea36776b4fffbaad534abda8a81b070bb509a0328d75"
+      }
+    ]
+  }
+]

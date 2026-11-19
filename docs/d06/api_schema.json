@@ -1,0 +1,483 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "이 API는 프랜차이즈 브랜드의 가맹점 평균 매출 현황과 단위면적당 매출 정보를 제공하는 공공데이터 서비스입니다.\n가맹사업 기준년도와 브랜드 관리번호를 이용하여 지역별 가맹점 수, 연간 평균 매출액, 단위면적당 연간 평균 매출액 등의 정보를 확인할 수 있습니다.\n또한 업종 분류 정보와 지역 정보를 함께 제공하여 프랜차이즈 브랜드의 매출 규모와 매장 운영 효율을 분석 가능하며,\n창업 예정자, 가맹 희망자, 연구기관 및 기업이 브랜드별 매출 수준을 비교하고 지역별 시장 현황과 상권 특성을 분석하는 데 활용할 수 있습니다.",
+    "version": "1.0.0",
+    "title": "공정거래위원회_가맹정보_브랜드 가맹점 단위면적당 평균 매출액정보 제공 서비스"
+  },
+  "host": "apis.data.go.kr/1130000/FftcBrandFrcsUnitAvrSalInfo3_Service",
+  "basePath": "",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/getbrandFrcsBzmnAvrgsls2": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "성공",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "resultCode": {
+                  "type": "string",
+                  "description": "결과코드",
+                  "properties": {}
+                },
+                "resultMsg": {
+                  "type": "string",
+                  "description": "결과메시지",
+                  "properties": {}
+                },
+                "numOfRows": {
+                  "type": "string",
+                  "description": "한 페이지 결과 수",
+                  "properties": {}
+                },
+                "pageNo": {
+                  "type": "string",
+                  "description": "페이지번호",
+                  "properties": {}
+                },
+                "totalCount": {
+                  "type": "string",
+                  "description": "전체 결과 수",
+                  "properties": {}
+                },
+                "items": {
+                  "type": "object",
+                  "description": "items",
+                  "properties": {
+                    "item": {
+                      "type": "object",
+                      "description": "item",
+                      "properties": {
+                        "arFyerAvrgSlsAmtScopeVal": {
+                          "type": "string",
+                          "description": "면적연간평균매출금액범위값 (편차 5%)",
+                          "properties": {}
+                        },
+                        "jngBizCrtraYr": {
+                          "type": "string",
+                          "description": "가맹사업기준년도",
+                          "properties": {}
+                        },
+                        "brandMnno": {
+                          "type": "string",
+                          "description": "브랜드관리번호",
+                          "properties": {}
+                        },
+                        "jnghdqrtrsMnno": {
+                          "type": "string",
+                          "description": "가맹본부관리번호",
+                          "properties": {}
+                        },
+                        "acntgYr": {
+                          "type": "string",
+                          "description": "회계년도",
+                          "properties": {}
+                        },
+                        "indutyLclasNm": {
+                          "type": "string",
+                          "description": "업종대분류명",
+                          "properties": {}
+                        },
+                        "indutyMlsfcNm": {
+                          "type": "string",
+                          "description": "업종중분류명",
+                          "properties": {}
+                        },
+                        "areaNm": {
+                          "type": "string",
+                          "description": "지역명",
+                          "properties": {}
+                        },
+                        "frcsCnt": {
+                          "type": "string",
+                          "description": "가맹점수",
+                          "properties": {}
+                        },
+                        "fyerAvrgSlsAmtScopeVal": {
+                          "type": "string",
+                          "description": "연간평균매출금액범위값 (편차 5%)",
+                          "properties": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "xml": {
+                "name": "response"
+              }
+            }
+          },
+          "INVALID_REQUEST_PARAMETER_ERROR": {
+            "description": "유효하지 않은 요청 파라미터"
+          },
+          "ESSENTIAL_PARAMETER_ERROR": {
+            "description": "필수 입력 파라미터 누락"
+          }
+        },
+        "tags": [
+          "API 목록"
+        ],
+        "summary": "브랜드가맹점단위면적평균매출액조회",
+        "description": "브랜드 가맹점 단위면적당 평균 매출액에 대한 기준년도, 브랜드관리번호를 이용하여 지역명, 가맹점수, 연간평균매출액 등 정보 조회 기능",
+        "operationId": "getbrandFrcsBzmnAvrgsls2",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "serviceKey",
+          "description": "공공데이터포털에서 받은 인증키",
+          "type": "string",
+          "required": true,
+          "in": "query"
+        },
+        {
+          "name": "pageNo",
+          "description": "페이지번호",
+          "type": "string",
+          "required": true,
+          "in": "query"
+        },
+        {
+          "name": "numOfRows",
+          "description": "한 페이지 결과 수",
+          "type": "string",
+          "required": true,
+          "in": "query"
+        },
+        {
+          "name": "resultType",
+          "description": "결과형식(xml/json)",
+          "type": "string",
+          "required": true,
+          "in": "query"
+        },
+        {
+          "name": "jngBizCrtraYr",
+          "description": "가맹사업기준년도",
+          "type": "string",
+          "required": true,
+          "in": "query"
+        },
+        {
+          "name": "brandMnno",
+          "description": "브랜드관리번호",
+          "type": "string",
+          "required": false,
+          "in": "query"
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "getbrandFrcsBzmnAvrgsls2_response": {
+      "type": "object",
+      "properties": {
+        "resultCode": {
+          "type": "string",
+          "description": "결과코드"
+        },
+        "resultMsg": {
+          "type": "string",
+          "description": "결과메시지"
+        },
+        "numOfRows": {
+          "type": "string",
+          "description": "한 페이지 결과 수"
+        },
+        "pageNo": {
+          "type": "string",
+          "description": "페이지번호"
+        },
+        "totalCount": {
+          "type": "string",
+          "description": "전체 결과 수"
+        },
+        "items": {
+          "type": "object",
+          "description": "items",
+          "properties": {
+            "item": {
+              "type": "object",
+              "description": "item",
+              "properties": {
+                "arFyerAvrgSlsAmtScopeVal": {
+                  "type": "string",
+                  "description": "면적연간평균매출금액범위값 (편차 5%)"
+                },
+                "jngBizCrtraYr": {
+                  "type": "string",
+                  "description": "가맹사업기준년도"
+                },
+                "brandMnno": {
+                  "type": "string",
+                  "description": "브랜드관리번호"
+                },
+                "jnghdqrtrsMnno": {
+                  "type": "string",
+                  "description": "가맹본부관리번호"
+                },
+                "acntgYr": {
+                  "type": "string",
+                  "description": "회계년도"
+                },
+                "indutyLclasNm": {
+                  "type": "string",
+                  "description": "업종대분류명"
+                },
+                "indutyMlsfcNm": {
+                  "type": "string",
+                  "description": "업종중분류명"
+                },
+                "areaNm": {
+                  "type": "string",
+                  "description": "지역명"
+                },
+                "frcsCnt": {
+                  "type": "string",
+                  "description": "가맹점수"
+                },
+                "fyerAvrgSlsAmtScopeVal": {
+                  "type": "string",
+                  "description": "연간평균매출금액범위값 (편차 5%)"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "swaggerOprtinVOs": [
+    {
+      "oprtinUrl": "http://openapi.ftc.go.kr/FftcBrandFrcsUnitAvrSalInfo2_Service/getbrandFrcsBzmnAvrgsls",
+      "oprtinNm": "브랜드가맹점단위면적평균매출액조회",
+      "oprtinDc": "브랜드 가맹점 단위면적당 평균 매출액에 대한 기준년도, 브랜드관리번호를 이용하여 지역명, 가맹점수, 연간평균매출액 등 정보 조회 기능",
+      "gwSvcNm": "getbrandFrcsBzmnAvrgsls",
+      "operationId": "getbrandFrcsBzmnAvrgsls",
+      "publicDataTyDetailCode": "PRDE02",
+      "reqList": [
+        {
+          "paramtrNm": "serviceKey",
+          "paramtrDc": "공공데이터포털에서 받은 인증키",
+          "paramtrBassValue": "-",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        },
+        {
+          "paramtrNm": "pageNo",
+          "paramtrDc": "페이지번호",
+          "paramtrBassValue": "1",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        },
+        {
+          "paramtrNm": "numOfRows",
+          "paramtrDc": "한 페이지 결과 수",
+          "paramtrBassValue": "10",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        },
+        {
+          "paramtrNm": "resultType",
+          "paramtrDc": "결과형식(xml/json)",
+          "paramtrBassValue": "json",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        },
+        {
+          "paramtrNm": "jngBizCrtraYr",
+          "paramtrDc": "가맹사업기준년도",
+          "paramtrBassValue": "2017",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        },
+        {
+          "paramtrNm": "brandMnno",
+          "paramtrDc": "브랜드관리번호",
+          "paramtrBassValue": "BRD_20080100006",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        }
+      ],
+      "resList": [
+        {
+          "paramtrNm": "resultCode",
+          "paramtrDc": "결과코드",
+          "arrayYn": "N",
+          "paramtrDefNm": "",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        },
+        {
+          "paramtrNm": "resultMsg",
+          "paramtrDc": "결과메시지",
+          "arrayYn": "N",
+          "paramtrDefNm": "",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        },
+        {
+          "paramtrNm": "numOfRows",
+          "paramtrDc": "한 페이지 결과 수",
+          "arrayYn": "N",
+          "paramtrDefNm": "",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        },
+        {
+          "paramtrNm": "pageNo",
+          "paramtrDc": "페이지번호",
+          "arrayYn": "N",
+          "paramtrDefNm": "",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        },
+        {
+          "paramtrNm": "totalCount",
+          "paramtrDc": "전체 결과 수",
+          "arrayYn": "N",
+          "paramtrDefNm": "",
+          "paramtrTy": "string",
+          "paramtrDivision": "필수",
+          "ck": true
+        },
+        {
+          "paramtrNm": "items",
+          "paramtrDc": "items",
+          "arrayYn": "N",
+          "paramtrDefNm": "#/definitions/getbrandFrcsBzmnAvrgsls_items",
+          "subDefNm": "getbrandFrcsBzmnAvrgsls_items",
+          "paramtrTy": "object",
+          "paramtrDivision": "필수",
+          "ck": true,
+          "subParam": [
+            {
+              "paramtrNm": "item",
+              "paramtrDc": "item",
+              "arrayYn": "N",
+              "paramtrDefNm": "#/definitions/getbrandFrcsBzmnAvrgsls_item",
+              "subDefNm": "getbrandFrcsBzmnAvrgsls_item",
+              "paramtrTy": "object",
+              "paramtrDivision": "필수",
+              "ck": true,
+              "subParam": [
+                {
+                  "paramtrNm": "arFyerAvrgSlsAmtScopeVal",
+                  "paramtrDc": "면적연간평균매출금액범위값 (편차 5%)",
+                  "arrayYn": "N",
+                  "paramtrDefNm": "",
+                  "paramtrTy": "string",
+                  "paramtrDivision": "필수",
+                  "ck": true
+                },
+                {
+                  "paramtrNm": "jngBizCrtraYr",
+                  "paramtrDc": "가맹사업기준년도",
+                  "arrayYn": "N",
+                  "paramtrDefNm": "",
+                  "paramtrTy": "string",
+                  "paramtrDivision": "필수",
+                  "ck": true
+                },
+                {
+                  "paramtrNm": "brandMnno",
+                  "paramtrDc": "브랜드관리번호",
+                  "arrayYn": "N",
+                  "paramtrDefNm": "",
+                  "paramtrTy": "string",
+                  "paramtrDivision": "필수",
+                  "ck": true
+                },
+                {
+                  "paramtrNm": "jnghdqrtrsMnno",
+                  "paramtrDc": "가맹본부관리번호",
+                  "arrayYn": "N",
+                  "paramtrDefNm": "",
+                  "paramtrTy": "string",
+                  "paramtrDivision": "필수",
+                  "ck": true
+                },
+                {
+                  "paramtrNm": "acntgYr",
+                  "paramtrDc": "회계년도",
+                  "arrayYn": "N",
+                  "paramtrDefNm": "",
+                  "paramtrTy": "string",
+                  "paramtrDivision": "필수",
+                  "ck": true
+                },
+                {
+                  "paramtrNm": "indutyLclasNm",
+                  "paramtrDc": "업종대분류명",
+                  "arrayYn": "N",
+                  "paramtrDefNm": "",
+                  "paramtrTy": "string",
+                  "paramtrDivision": "필수",
+                  "ck": true
+                },
+                {
+                  "paramtrNm": "indutyMlsfcNm",
+                  "paramtrDc": "업종중분류명",
+                  "arrayYn": "N",
+                  "paramtrDefNm": "",
+                  "paramtrTy": "string",
+                  "paramtrDivision": "필수",
+                  "ck": true
+                },
+                {
+                  "paramtrNm": "areaNm",
+                  "paramtrDc": "지역명",
+                  "arrayYn": "N",
+                  "paramtrDefNm": "",
+                  "paramtrTy": "string",
+                  "paramtrDivision": "필수",
+                  "ck": true
+                },
+                {
+                  "paramtrNm": "frcsCnt",
+                  "paramtrDc": "가맹점수",
+                  "arrayYn": "N",
+                  "paramtrDefNm": "",
+                  "paramtrTy": "string",
+                  "paramtrDivision": "필수",
+                  "ck": true
+                },
+                {
+                  "paramtrNm": "fyerAvrgSlsAmtScopeVal",
+                  "paramtrDc": "연간평균매출금액범위값 (편차 5%)",
+                  "arrayYn": "N",
+                  "paramtrDefNm": "",
+                  "paramtrTy": "string",
+                  "paramtrDivision": "필수",
+                  "ck": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

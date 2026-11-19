@@ -1,0 +1,102 @@
+[
+  {
+    "year": 2017,
+    "status": "ok",
+    "total": 103986,
+    "returned": 10000,
+    "daegu": 556,
+    "accounting_years": [
+      "2016"
+    ]
+  },
+  {
+    "year": 2018,
+    "status": "ok",
+    "total": 110844,
+    "returned": 10000,
+    "daegu": 555,
+    "accounting_years": [
+      "2017"
+    ]
+  },
+  {
+    "year": 2019,
+    "status": "ok",
+    "total": 113346,
+    "returned": 10000,
+    "daegu": 556,
+    "accounting_years": [
+      "2018"
+    ]
+  },
+  {
+    "year": 2020,
+    "status": "ok",
+    "total": 132138,
+    "returned": 10000,
+    "daegu": 555,
+    "accounting_years": [
+      "2019"
+    ]
+  },
+  {
+    "year": 2021,
+    "status": "ok",
+    "total": 214693,
+    "returned": 10000,
+    "daegu": 556,
+    "accounting_years": [
+      "2020"
+    ]
+  },
+  {
+    "year": 2022,
+    "status": "ok",
+    "total": 203526,
+    "returned": 10000,
+    "daegu": 556,
+    "accounting_years": [
+      "2021"
+    ]
+  },
+  {
+    "year": 2023,
+    "status": "ok",
+    "total": 187927,
+    "returned": 10000,
+    "daegu": 556,
+    "accounting_years": [
+      "2022"
+    ]
+  },
+  {
+    "year": 2024,
+    "status": "ok",
+    "total": 187920,
+    "returned": 10000,
+    "daegu": 555,
+    "accounting_years": [
+      "2023"
+    ]
+  },
+  {
+    "year": 2025,
+    "status": "ok",
+    "total": 200106,
+    "returned": 10000,
+    "daegu": 556,
+    "accounting_years": [
+      "2024"
+    ]
+  },
+  {
+    "year": 2026,
+    "status": "ok",
+    "total": 176526,
+    "returned": 10000,
+    "daegu": 556,
+    "accounting_years": [
+      "2025"
+    ]
+  }
+]

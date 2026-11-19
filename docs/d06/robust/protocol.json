@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-19",
+  "source": "frozen first experiment eligible_cells.csv",
+  "scope": "Previously evaluated periods reused; exploratory follow-up, not new independent final validation",
+  "development": [
+    2021,
+    2022
+  ],
+  "evaluation": [
+    2023,
+    2024
+  ],
+  "provisional": [
+    2025
+  ],
+  "training_labels": "year <= target-2",
+  "primary": "mean absolute log error against midpoint proxy",
+  "methods": {
+    "huber": {
+      "epsilon": 1.35,
+      "alpha": 1,
+      "max_iter": 1000
+    },
+    "absolute_boosting": {
+      "loss": "absolute_error",
+      "max_iter": 100,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 20,
+      "l2_regularization": 10,
+      "learning_rate": 0.05
+    },
+    "industry_median": {
+      "minimum_history": 20,
+      "shrink_weight": 0.5
+    }
+  },
+  "selection": "lowest development mean absolute log error; do not select using evaluated periods",
+  "data_rule": "No target-outlier deletion or manual scale correction; all methods on same cells"
+}

@@ -1,0 +1,37 @@
+{
+  "target": "Daegu brand annual average sales range midpoint proxy; not exact sales",
+  "forecast_origin": "before target accounting year; latest input accounting year t-2, report year t-1",
+  "publication_limit": "Actual historical publication dates/vintages unavailable; report-year lag is an approximation, retrospective experiment only",
+  "development_years": [
+    2021,
+    2022
+  ],
+  "evaluation_years": [
+    2023,
+    2024
+  ],
+  "provisional_latest_year": [
+    2025
+  ],
+  "train_labels": "accounting years <= target year - 2",
+  "features": "two consecutive prior positive ranges t-2/t-3, their store counts and prior industry; no target metadata",
+  "models": {
+    "ridge_alpha": 10,
+    "hgb": {
+      "max_iter": 150,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 20,
+      "l2_regularization": 10,
+      "learning_rate": 0.05
+    }
+  },
+  "primary_metric": "mean absolute log(midpoint prediction/observed midpoint)",
+  "secondary_metrics": [
+    "MAPE midpoint proxy",
+    "relative distance to disclosed target range",
+    "mean absolute log change direction"
+  ],
+  "selection": "best baseline and best model on development only; both frozen before evaluation",
+  "adoption_gate": "at least 5% primary error reduction pooled 2023/2024, improvement in each year and no worse relative range-distance overall; even passing requires data/publication checks before service",
+  "range_note": "midpoints are proxies; zero/missing ranges excluded, no zero imputation; no guarantee for new/undisclosed brands"
+}

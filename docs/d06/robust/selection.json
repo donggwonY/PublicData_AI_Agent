@@ -1,0 +1,33 @@
+{
+  "chosen": "industry_median",
+  "development": {
+    "absolute_boosting": {
+      "cells": 554,
+      "log_error": 0.3186519980191517,
+      "mape_pct": 87.4499677481135,
+      "median_ape_pct": 20.895351557890226,
+      "range_distance_pct": 81.7945583337283
+    },
+    "huber": {
+      "cells": 554,
+      "log_error": 0.3332195021844086,
+      "mape_pct": 100.8017260676476,
+      "median_ape_pct": 23.001288490857306,
+      "range_distance_pct": 95.1426901286899
+    },
+    "industry_median": {
+      "cells": 554,
+      "log_error": 0.3119366081755326,
+      "mape_pct": 90.2726240710265,
+      "median_ape_pct": 19.99273965022888,
+      "range_distance_pct": 84.69740140306365
+    },
+    "last_available": {
+      "cells": 554,
+      "log_error": 0.3075543633300898,
+      "mape_pct": 91.78542485397962,
+      "median_ape_pct": 19.595588235294116,
+      "range_distance_pct": 86.27211219395178
+    }
+  }
+}

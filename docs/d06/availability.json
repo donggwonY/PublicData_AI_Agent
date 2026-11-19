@@ -1,0 +1,87 @@
+{
+  "source_sha256": "328af9b28ecb6e61bfb0cf44ae945ccc0db25d5173a25cd2d334303f47ef614d",
+  "rows": 90613,
+  "exact_duplicate_keys": 0,
+  "conflicting_keys": 0,
+  "brands": 23516,
+  "positive_sales_rows": 4563,
+  "positive_brands": 1137,
+  "brands_with_at_least_5_years": 405,
+  "brands_with_all_10_years": 91,
+  "report_minus_accounting_year": [
+    1
+  ],
+  "zero_sales_field": 61888,
+  "annual": [
+    {
+      "year": 2016,
+      "rows": 5777,
+      "brands": 5777,
+      "positive_ranges": 358,
+      "active_brands": 1288
+    },
+    {
+      "year": 2017,
+      "rows": 6158,
+      "brands": 6158,
+      "positive_ranges": 383,
+      "active_brands": 1420
+    },
+    {
+      "year": 2018,
+      "rows": 6297,
+      "brands": 6297,
+      "positive_ranges": 404,
+      "active_brands": 1446
+    },
+    {
+      "year": 2019,
+      "rows": 7341,
+      "brands": 7341,
+      "positive_ranges": 431,
+      "active_brands": 1535
+    },
+    {
+      "year": 2020,
+      "rows": 11928,
+      "brands": 11928,
+      "positive_ranges": 434,
+      "active_brands": 1712
+    },
+    {
+      "year": 2021,
+      "rows": 11307,
+      "brands": 11307,
+      "positive_ranges": 489,
+      "active_brands": 1928
+    },
+    {
+      "year": 2022,
+      "rows": 10441,
+      "brands": 10441,
+      "positive_ranges": 522,
+      "active_brands": 1975
+    },
+    {
+      "year": 2023,
+      "rows": 10440,
+      "brands": 10440,
+      "positive_ranges": 538,
+      "active_brands": 2066
+    },
+    {
+      "year": 2024,
+      "rows": 11117,
+      "brands": 11117,
+      "positive_ranges": 549,
+      "active_brands": 2133
+    },
+    {
+      "year": 2025,
+      "rows": 9807,
+      "brands": 9807,
+      "positive_ranges": 455,
+      "active_brands": 1801
+    }
+  ]
+}
