@@ -1,0 +1,211 @@
+{
+ "rows": 4328,
+ "sha256": "cd72ce01351d5e8894a2f1b9079223604cfffcd221a9f3d5584e2f84b6b0e476",
+ "input_episodes_sha256": "e3700bbe52b1c975916d24de2dba00c71abf6cfe67fee55e21f30ddfaed25558",
+ "input_stores_sha256": "48b9789968ce0e1ff65a2fe0d1a93f96c256044c60a5c39660384dd23d78d314",
+ "input_units_sha256": "7f8407306c0ab5ed11774d668a58d39aeb887629c80564f0d1becd4a4cd15870",
+ "input_lmap_sha256": "b8ea8ebf7765237996015339dfe3e2ad3f39d62914a010dd0515b354f60ed270",
+ "reference_date": "2026-11-06",
+ "takeovers_all_years": 5330,
+ "open_year_range": [
+  2011,
+  2023
+ ],
+ "by_split": {
+  "train": {
+   "n": 2542,
+   "pos": 1008,
+   "rate": 0.397,
+   "uids": 2136
+  },
+  "valid": {
+   "n": 816,
+   "pos": 243,
+   "rate": 0.298,
+   "uids": 777
+  },
+  "test": {
+   "n": 970,
+   "pos": 361,
+   "rate": 0.372,
+   "uids": 908
+  }
+ },
+ "by_split_service": {
+  "train": {
+   "그 밖": [
+    205,
+    0.332
+   ],
+   "담배소매업": [
+    1045,
+    0.468
+   ],
+   "미용업": [
+    216,
+    0.366
+   ],
+   "일반음식점": [
+    845,
+    0.284
+   ],
+   "즉석판매제조가공업": [
+    58,
+    0.741
+   ],
+   "휴게음식점": [
+    173,
+    0.514
+   ]
+  },
+  "valid": {
+   "그 밖": [
+    52,
+    0.231
+   ],
+   "담배소매업": [
+    209,
+    0.378
+   ],
+   "미용업": [
+    85,
+    0.341
+   ],
+   "일반음식점": [
+    354,
+    0.234
+   ],
+   "즉석판매제조가공업": [
+    20,
+    0.65
+   ],
+   "휴게음식점": [
+    96,
+    0.281
+   ]
+  },
+  "test": {
+   "그 밖": [
+    72,
+    0.319
+   ],
+   "담배소매업": [
+    77,
+    0.481
+   ],
+   "미용업": [
+    121,
+    0.289
+   ],
+   "일반음식점": [
+    534,
+    0.328
+   ],
+   "즉석판매제조가공업": [
+    32,
+    0.906
+   ],
+   "휴게음식점": [
+    134,
+    0.463
+   ]
+  }
+ },
+ "by_split_tenure_band": {
+  "train": {
+   "1~3년": [
+    744,
+    0.442
+   ],
+   "3~10년": [
+    804,
+    0.326
+   ],
+   ">10년": [
+    436,
+    0.317
+   ],
+   "≤1년": [
+    558,
+    0.5
+   ]
+  },
+  "valid": {
+   "1~3년": [
+    263,
+    0.331
+   ],
+   "3~10년": [
+    257,
+    0.268
+   ],
+   ">10년": [
+    161,
+    0.149
+   ],
+   "≤1년": [
+    135,
+    0.467
+   ]
+  },
+  "test": {
+   "1~3년": [
+    292,
+    0.435
+   ],
+   "3~10년": [
+    357,
+    0.305
+   ],
+   ">10년": [
+    147,
+    0.245
+   ],
+   "≤1년": [
+    174,
+    0.511
+   ]
+  }
+ },
+ "overlap_n": 656,
+ "same_category_share": 0.69,
+ "missing_rate": {
+  "s_category": 0.0,
+  "s_area_m2": 0.3743,
+  "s_floor_class": 0.0,
+  "p_tenure_years": 0.0,
+  "p_area_m2": 0.3898,
+  "area_ratio": 0.3993,
+  "gap_days": 0.0,
+  "h_n_occ": 0.0,
+  "h_n_closed": 0.0,
+  "h_n_turnover": 0.0,
+  "h_mean_gap_days": 0.6497,
+  "h_years_since_first": 0.0,
+  "h_n_groups": 0.0,
+  "o_nb_active": 0.0081,
+  "o_nb_active_same": 0.0081,
+  "o_nb_open_12m": 0.0081,
+  "o_nb_close_12m": 0.0081,
+  "o_nb_net_12m": 0.0081,
+  "o_nb_net_same_12m": 0.0081,
+  "o_nb_vacant": 0.0081,
+  "o_nb_vacancy_rate": 0.0081,
+  "o_dong_vacancy_rate": 0.0,
+  "o_dong_live_change_3y": 0.0002,
+  "o_sub_dist_m": 0.0081,
+  "o_sub_board_12m": 0.0081,
+  "o_sub_board_yoy": 0.0384,
+  "o_pop": 0.0125,
+  "o_pop_2039_share": 0.0125,
+  "o_pop_60plus_share": 0.0125,
+  "o_pop_change_12m": 0.0125,
+  "o_pop_is_dong": 0.0
+ },
+ "asserts": [
+  "successor unique",
+  "successor uid = predecessor uid",
+  "successor ld > history t0",
+  "successor open month > lookup month"
+ ]
+}
