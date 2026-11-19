@@ -121,3 +121,11 @@
   - 테스트: `tests/test_next_tenant_outlook.py` 8개를 추가해 `service/` 102개와 smoke가 통과했다.
   - 로컬 앱(parquet)에서 남구 대명동 자리 화면을 확인했다: 음식점 45%·카페·제과 25%·미용·이용 19%, 비교선, "높은 편" 문장. 서버 오류는 없었다.
   - 공유 DB·공개 앱은 아직 바꾸지 않았다.
+- 2026-11-19 분석용 보관: `analysis.e09_next_tenant_scores`([결과](results/store_analysis.json))
+  - batch `2026-11-19|E09-vacant-M2-lm_to_2024-11-06-ref2026-11-06`, 4,536행
+  - 묶음별 확률 합·1순위 분포가 로컬과 같다. 2,808kB.
+  - 권한은 관리자만이다(`app_reader`·`anon` 없음). 운영 current v9는 그대로다.
+- 2026-11-19 DB **v10** 적재·검증(`validated`, 전환 안 함)
+  - v9의 17개 표에 `next_tenant_scores` 4,536행을 더했다. 적재 후 DB 1,914MB.
+  - `app_reader`로 v10을 읽어 화면 함수 결과를 확인했다. 대명동 예시 문장이 같고 parquet와 확률 최대 차이는 0이다.
+- 2026-11-19 `--activate-version 10` 전환(current v10, v9 retired, `app_reader` 읽기 권한 적용). 공개 앱은 `deploy` 반영 뒤 블록이 보인다.

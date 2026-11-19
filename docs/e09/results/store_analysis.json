@@ -1,0 +1,35 @@
+{
+ "target": {
+  "project": "uoiamnbkzlvlskngataq",
+  "host": "aws-0-ap-southeast-2.pooler.supabase.com",
+  "role": "postgres",
+  "db_user": "postgres"
+ },
+ "table": "analysis.e09_next_tenant_scores",
+ "batch_id": "2026-11-19|E09-vacant-M2-lm_to_2024-11-06-ref2026-11-06",
+ "file_sha256": "249d5ac980091f12a0f0ad8ebe8bb0a980366371c7e7498601981f4c16ef1dca",
+ "already_present": false,
+ "rows": {
+  "db": 4536,
+  "local": 4536,
+  "distinct_uid_db": 4536
+ },
+ "data_reference_date": "2026-11-06",
+ "sum_p_equal": true,
+ "top1_counts_equal": true,
+ "top1_counts": {
+  "beauty": 536,
+  "tobacco": 84,
+  "entertainment": 53,
+  "cafe": 607,
+  "food": 2468,
+  "food_retail": 392,
+  "other": 396
+ },
+ "table_size": "2808 kB",
+ "table_grantees": [
+  "postgres"
+ ],
+ "app_current_version_after": 9,
+ "verified": true
+}

@@ -145,6 +145,11 @@ service/prediction_review_app.py는 연속 연도 평가 결과를 읽는 별도
   - AI 상담: `get_unit_history`의 `next_tenant_outlook`(display·caveat)으로 같은 값을 받는다. `agent.py` 규칙: '들어온다면' 조건 유지, 재입점 확률과 곱하지 않기, 1순위 단정 금지.
   - 저장: datasource 선택 표이고 `pipeline/load_supabase.py` 표 목록에 추가했다(기본키 uid). 공개 앱에는 이 표가 든 DB 새 버전 적재·전환 뒤 보인다(요청 시).
   - 테스트: `tests/test_next_tenant_outlook.py`. 설계: [e09/serve_design.md](e09/serve_design.md).
+  - 2026-11-19 운영 반영(데이터, 전환 전): 공유 DB `app`에 **v10**(v9와 같은 17개 표 + `next_tenant_scores` 4,536행)을 적재·검증했다.
+    - 상태는 `validated`. 상한 `--max-db-mb 2100`, 적재 후 1,914MB.
+    - 공개 앱 계정(`app_reader`)으로 v10을 읽어 화면 함수 결과가 parquet와 같음을 확인했다(확률 최대 차이 0).
+    - 같은 날 `--activate-version 10`으로 전환했다(current v10, v9 retired). 되돌리기는 `--activate-version 9`.
+    - 같은 날 1년 뒤 검증용 고정본을 `analysis.e09_next_tenant_scores`(관리자만, 4,536행)에 보관했다(`scripts/e09_next_tenant/store_analysis.py`).
 - 검사: `tests/test_area_outlook.py`(저장값·표시 규칙·이사 인원 순위·보류·추천 순서·작은 동네·화면 카드와 이동). `service/` 90개 통과.
 
 ## 2026-11-17 구·군 × 업태 앞으로 1년 폐업 예측 도구 (E-06)
