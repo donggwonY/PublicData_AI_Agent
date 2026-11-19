@@ -1,0 +1,205 @@
+{
+  "brand_list_2017.jsonl.gz": {
+    "api": "brand_list",
+    "year": 2017,
+    "rows": 5886,
+    "sha256": "5e1e89c0b62ead62b8f548b323aa03c9ac96733f1d4dbc45c6ffb29842d887ab",
+    "downloaded_at": "2026-11-19T02:07:51.472709+00:00"
+  },
+  "brand_list_2018.jsonl.gz": {
+    "api": "brand_list",
+    "year": 2018,
+    "rows": 6252,
+    "sha256": "904d2697ccde8795c3bf8f323b132168667c64e33a6e90a354f4968981978b3b",
+    "downloaded_at": "2026-11-19T02:07:51.521147+00:00"
+  },
+  "brand_list_2019.jsonl.gz": {
+    "api": "brand_list",
+    "year": 2019,
+    "rows": 6435,
+    "sha256": "b538018ffb36e1a7e1ea49571a1a6aa530ca0428e1aa998bc7dafa3cf4518ddd",
+    "downloaded_at": "2026-11-19T02:07:51.434143+00:00"
+  },
+  "brand_list_2020.jsonl.gz": {
+    "api": "brand_list",
+    "year": 2020,
+    "rows": 7491,
+    "sha256": "31f2053813dd76356de0591ee8ab8977510827ed97f58b01eb637435e09d1fcd",
+    "downloaded_at": "2026-11-19T02:07:53.684834+00:00"
+  },
+  "brand_list_2021.jsonl.gz": {
+    "api": "brand_list",
+    "year": 2021,
+    "rows": 12163,
+    "sha256": "ccc36c0e9412e007005fc8e86173421fceab73f9a3b41eedf9717524e09b5a23",
+    "downloaded_at": "2026-11-19T02:07:54.859466+00:00"
+  },
+  "brand_list_2022.jsonl.gz": {
+    "api": "brand_list",
+    "year": 2022,
+    "rows": 11846,
+    "sha256": "377a4546ecb2de789047fe49b96c80dd7c38b4edc4b8a0f8f804692473e208e6",
+    "downloaded_at": "2026-11-19T02:07:54.947078+00:00"
+  },
+  "brand_list_2023.jsonl.gz": {
+    "api": "brand_list",
+    "year": 2023,
+    "rows": 11421,
+    "sha256": "1749640d09b147a96ac822a117a19a7a354e219a07267b5b57e0f27194883026",
+    "downloaded_at": "2026-11-19T02:07:56.521666+00:00"
+  },
+  "brand_list_2024.jsonl.gz": {
+    "api": "brand_list",
+    "year": 2024,
+    "rows": 11683,
+    "sha256": "b5a798f6124772de1c9ba52767acc27901658107bb8565e280c3f4d564fdb58e",
+    "downloaded_at": "2026-11-19T02:07:58.373408+00:00"
+  },
+  "brand_list_2025.jsonl.gz": {
+    "api": "brand_list",
+    "year": 2025,
+    "rows": 11164,
+    "sha256": "bd6f8294627f8e91d062700981bee4e6550e5a914a975802d4362e1d747fbe27",
+    "downloaded_at": "2026-11-19T02:07:58.214082+00:00"
+  },
+  "brand_list_2026.jsonl.gz": {
+    "api": "brand_list",
+    "year": 2026,
+    "rows": 10206,
+    "sha256": "e43964091f91b138565e9edd794bf24e116acf33c99c7d86031d9dcfe031f2a9",
+    "downloaded_at": "2026-11-19T02:07:59.501292+00:00"
+  },
+  "brand_stats_2017.jsonl.gz": {
+    "api": "brand_stats",
+    "year": 2017,
+    "rows": 4823,
+    "sha256": "72ffad953eba551a25262807ba2a1f98ad98171224a21a871c52ef2828c81887",
+    "downloaded_at": "2026-11-19T02:07:59.638196+00:00"
+  },
+  "brand_stats_2018.jsonl.gz": {
+    "api": "brand_stats",
+    "year": 2018,
+    "rows": 5134,
+    "sha256": "d1ac26208ce3ca6c605e02f7801ef6a9a56e242ac92cff873c5b7a1b9e664048",
+    "downloaded_at": "2026-11-19T02:07:59.557672+00:00"
+  },
+  "brand_stats_2019.jsonl.gz": {
+    "api": "brand_stats",
+    "year": 2019,
+    "rows": 5399,
+    "sha256": "0bbe21330c191ca2230188d4e2f6ca063c513ce89b7177b8ed8e6efc478aff82",
+    "downloaded_at": "2026-11-19T02:08:00.680836+00:00"
+  },
+  "brand_stats_2020.jsonl.gz": {
+    "api": "brand_stats",
+    "year": 2020,
+    "rows": 6338,
+    "sha256": "108d249891b36c6b345c25f60eb7461460ddab2ab3104a47d13a13bb93387685",
+    "downloaded_at": "2026-11-19T02:08:01.140117+00:00"
+  },
+  "brand_stats_2021.jsonl.gz": {
+    "api": "brand_stats",
+    "year": 2021,
+    "rows": 10242,
+    "sha256": "4cfd4ec811acbedc21d6b4760ccda0dbf8b7ed9a4f43042f8c8cba62a7c90391",
+    "downloaded_at": "2026-11-19T02:08:01.721657+00:00"
+  },
+  "brand_stats_2022.jsonl.gz": {
+    "api": "brand_stats",
+    "year": 2022,
+    "rows": 10185,
+    "sha256": "7bd3feabcaf02508bb2aab8c9964f5ccc8658ed28911b24355c7f393cb4eafeb",
+    "downloaded_at": "2026-11-19T02:08:02.893745+00:00"
+  },
+  "brand_stats_2023.jsonl.gz": {
+    "api": "brand_stats",
+    "year": 2023,
+    "rows": 11167,
+    "sha256": "65831ceaa72fa4fdfdbd68b6774bfb248dd96a7f67ef7b4290c0bdeb0d33c81b",
+    "downloaded_at": "2026-11-19T02:08:03.721844+00:00"
+  },
+  "brand_stats_2024.jsonl.gz": {
+    "api": "brand_stats",
+    "year": 2024,
+    "rows": 11834,
+    "sha256": "e65c337fac705be1d75859ab95bbd75016ea8d4b05e15a54b9a17e2de9b922b5",
+    "downloaded_at": "2026-11-19T02:08:04.044716+00:00"
+  },
+  "brand_stats_2025.jsonl.gz": {
+    "api": "brand_stats",
+    "year": 2025,
+    "rows": 11724,
+    "sha256": "2577d3d11cedf8e7d70bf6b41fe405132b66da923b86c0dd07b589d9dac273cb",
+    "downloaded_at": "2026-11-19T02:08:05.458724+00:00"
+  },
+  "brand_region_2017.jsonl.gz": {
+    "api": "brand_region",
+    "year": 2017,
+    "rows": 103986,
+    "sha256": "1593b8c177dd0fd30186330d77a3dadc73ee8779c201d2a0fe00b37b7627e4f3",
+    "downloaded_at": "2026-11-19T02:08:18.219523+00:00"
+  },
+  "brand_region_2018.jsonl.gz": {
+    "api": "brand_region",
+    "year": 2018,
+    "rows": 110844,
+    "sha256": "fe140e38b222b8f803575d74affc34b00e5cf9a680c116621dcb9364b07d80d3",
+    "downloaded_at": "2026-11-19T02:08:20.505405+00:00"
+  },
+  "brand_region_2019.jsonl.gz": {
+    "api": "brand_region",
+    "year": 2019,
+    "rows": 113346,
+    "sha256": "c592d4ad97ad670dc860461f5beea3a84d6eff43a729dd17aa40c8930026b68e",
+    "downloaded_at": "2026-11-19T02:08:25.810496+00:00"
+  },
+  "brand_region_2020.jsonl.gz": {
+    "api": "brand_region",
+    "year": 2020,
+    "rows": 132138,
+    "sha256": "990f7bb516382e0ab9dacfca8ba6c4c6c76cd366b134d7970b68ab9c7072eb98",
+    "downloaded_at": "2026-11-19T02:08:40.992301+00:00"
+  },
+  "brand_region_2021.jsonl.gz": {
+    "api": "brand_region",
+    "year": 2021,
+    "rows": 214689,
+    "sha256": "c24c63cc74c11fb4359b9607178dae2d363fd92f26720f65109772e9e644a50e",
+    "downloaded_at": "2026-11-19T02:08:54.945471+00:00"
+  },
+  "brand_region_2022.jsonl.gz": {
+    "api": "brand_region",
+    "year": 2022,
+    "rows": 203526,
+    "sha256": "ce1426b8b603ea635e2aa02e8fcdfa0aef5dcdea0268cd1a6657cc5959d97b2a",
+    "downloaded_at": "2026-11-19T02:08:58.982664+00:00"
+  },
+  "brand_region_2023.jsonl.gz": {
+    "api": "brand_region",
+    "year": 2023,
+    "rows": 185166,
+    "sha256": "21b4bc567536372dba2ba1498a97c2460622ef6faaa6180aa919fe30275b0aa1",
+    "downloaded_at": "2026-11-19T02:09:16.013346+00:00"
+  },
+  "brand_region_2024.jsonl.gz": {
+    "api": "brand_region",
+    "year": 2024,
+    "rows": 179154,
+    "sha256": "3b7abab9e93f62d5104fc59f4f3e1dc81c2725e2e6fe2c0bc1899d6ae4347743",
+    "downloaded_at": "2026-11-19T02:09:25.705540+00:00"
+  },
+  "brand_region_2025.jsonl.gz": {
+    "api": "brand_region",
+    "year": 2025,
+    "rows": 200196,
+    "sha256": "37b1851d615a9ba591023305d5bc55708cbd39c6a2eafc947434e66fa4598424",
+    "downloaded_at": "2026-11-19T02:09:33.695694+00:00"
+  },
+  "brand_region_2026.jsonl.gz": {
+    "api": "brand_region",
+    "year": 2026,
+    "rows": 180000,
+    "sha256": "2533f8a3ceac720dce9f77f8ffdf5ec514f40a86163586936440da8a7efb79fe",
+    "downloaded_at": "2026-11-19T02:09:46.429471+00:00"
+  }
+}

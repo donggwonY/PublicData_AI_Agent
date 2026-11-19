@@ -1,0 +1,11 @@
+{
+  "fit": 2022,
+  "validation": 2023,
+  "evaluation": 2024,
+  "provisional": 2025,
+  "scope": "exploratory reused years",
+  "rule": "per size maximize recall with precision>=.60 and alerts>=20 in2022; otherwise threshold .5",
+  "validation_gate": "2023 precision >=.60 and recall greater than fixed .5 per size; otherwise keep .5",
+  "reference": ".5 pre-existing fixed threshold; .51 is not independent because selected on pooled2022/2023",
+  "grid": ".10 to .90 step .01"
+}

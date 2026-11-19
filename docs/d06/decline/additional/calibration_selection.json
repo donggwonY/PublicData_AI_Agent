@@ -1,0 +1,13 @@
+{
+  "selected": "raw",
+  "validation_raw": 0.22359396967017897,
+  "validation_sigmoid": 0.22490745639312873,
+  "coefficient": [
+    [
+      0.9069483918641126
+    ]
+  ],
+  "intercept": [
+    -0.0971180226683497
+  ]
+}

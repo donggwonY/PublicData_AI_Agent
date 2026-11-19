@@ -1,0 +1,23 @@
+{
+  "rows": 1485,
+  "brands": 930,
+  "years": [
+    2024,
+    2025
+  ],
+  "missing": {
+    "brand_name": 50,
+    "national_frcsCnt": 182,
+    "national_newFrcsRgsCnt": 182,
+    "national_ctrtEndCnt": 182,
+    "national_ctrtCncltnCnt": 182,
+    "national_nmChgCnt": 182
+  },
+  "files": {},
+  "checks": [
+    "unique brand/year",
+    "probabilities within0..1",
+    "actual outcomes separated",
+    "missing distinct from observed zero"
+  ]
+}

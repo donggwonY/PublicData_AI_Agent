@@ -1,0 +1,122 @@
+[
+  {
+    "report_year": 2017,
+    "daegu_rows": 5777,
+    "ambiguous_brand_rows_excluded": 187,
+    "brand_name_matched": 5684,
+    "stats_matched": 4601,
+    "ambiguous_national_rows_excluded": 0,
+    "active_three_plus": 603,
+    "accounting_years": [
+      "2016"
+    ]
+  },
+  {
+    "report_year": 2018,
+    "daegu_rows": 6158,
+    "ambiguous_brand_rows_excluded": 169,
+    "brand_name_matched": 6074,
+    "stats_matched": 4946,
+    "ambiguous_national_rows_excluded": 2,
+    "active_three_plus": 647,
+    "accounting_years": [
+      "2017"
+    ]
+  },
+  {
+    "report_year": 2019,
+    "daegu_rows": 6297,
+    "ambiguous_brand_rows_excluded": 249,
+    "brand_name_matched": 6173,
+    "stats_matched": 5200,
+    "ambiguous_national_rows_excluded": 0,
+    "active_three_plus": 673,
+    "accounting_years": [
+      "2018"
+    ]
+  },
+  {
+    "report_year": 2020,
+    "daegu_rows": 7341,
+    "ambiguous_brand_rows_excluded": 286,
+    "brand_name_matched": 7194,
+    "stats_matched": 6076,
+    "ambiguous_national_rows_excluded": 4,
+    "active_three_plus": 711,
+    "accounting_years": [
+      "2019"
+    ]
+  },
+  {
+    "report_year": 2021,
+    "daegu_rows": 11927,
+    "ambiguous_brand_rows_excluded": 437,
+    "brand_name_matched": 11699,
+    "stats_matched": 9665,
+    "ambiguous_national_rows_excluded": 2,
+    "active_three_plus": 760,
+    "accounting_years": [
+      "2020"
+    ]
+  },
+  {
+    "report_year": 2022,
+    "daegu_rows": 11307,
+    "ambiguous_brand_rows_excluded": 937,
+    "brand_name_matched": 10840,
+    "stats_matched": 9292,
+    "ambiguous_national_rows_excluded": 2,
+    "active_three_plus": 835,
+    "accounting_years": [
+      "2021"
+    ]
+  },
+  {
+    "report_year": 2023,
+    "daegu_rows": 10287,
+    "ambiguous_brand_rows_excluded": 1190,
+    "brand_name_matched": 10008,
+    "stats_matched": 9127,
+    "ambiguous_national_rows_excluded": 4,
+    "active_three_plus": 814,
+    "accounting_years": [
+      "2022"
+    ]
+  },
+  {
+    "report_year": 2024,
+    "daegu_rows": 9953,
+    "ambiguous_brand_rows_excluded": 1283,
+    "brand_name_matched": 9818,
+    "stats_matched": 8501,
+    "ambiguous_national_rows_excluded": 24,
+    "active_three_plus": 834,
+    "accounting_years": [
+      "2023"
+    ]
+  },
+  {
+    "report_year": 2025,
+    "daegu_rows": 11122,
+    "ambiguous_brand_rows_excluded": 24,
+    "brand_name_matched": 11110,
+    "stats_matched": 10479,
+    "ambiguous_national_rows_excluded": 6,
+    "active_three_plus": 897,
+    "accounting_years": [
+      "2024"
+    ]
+  },
+  {
+    "report_year": 2026,
+    "daegu_rows": 10000,
+    "ambiguous_brand_rows_excluded": 391,
+    "brand_name_matched": 9805,
+    "stats_matched": 0,
+    "ambiguous_national_rows_excluded": 0,
+    "active_three_plus": 769,
+    "accounting_years": [
+      "2025"
+    ]
+  }
+]

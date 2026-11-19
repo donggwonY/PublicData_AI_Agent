@@ -1,0 +1,17 @@
+{
+  "scope": "exploratory reused evaluation, not independent validation",
+  "development": [
+    2022,
+    2023
+  ],
+  "evaluation": [
+    2024
+  ],
+  "provisional": [
+    2025
+  ],
+  "rule": "maximize recall subject to development precision>=0.60 and >=50 alerts; threshold grid0.10..0.90 step0.01; ties prefer higher precision then higher threshold",
+  "meaning": "60% is a trial warning policy, not team-approved service cutoff",
+  "fallback": "no eligible threshold -> no candidate",
+  "reference_threshold": 0.5
+}

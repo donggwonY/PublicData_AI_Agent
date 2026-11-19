@@ -1,0 +1,44 @@
+{
+  "11+": {
+    "candidate": 0.5,
+    "training": {
+      "n": 238,
+      "threshold": 0.5,
+      "alerts": 78,
+      "true_alerts": 48,
+      "false_alerts": 30,
+      "missed": 48,
+      "precision": 0.6153846153846154,
+      "recall": 0.5
+    },
+    "qualified": true
+  },
+  "3-5": {
+    "candidate": 0.5,
+    "training": {
+      "n": 308,
+      "threshold": 0.5,
+      "alerts": 44,
+      "true_alerts": 20,
+      "false_alerts": 24,
+      "missed": 77,
+      "precision": 0.45454545454545453,
+      "recall": 0.20618556701030927
+    },
+    "qualified": false
+  },
+  "6-10": {
+    "candidate": 0.41,
+    "training": {
+      "n": 179,
+      "threshold": 0.41,
+      "alerts": 65,
+      "true_alerts": 39,
+      "false_alerts": 26,
+      "missed": 37,
+      "precision": 0.6,
+      "recall": 0.5131578947368421
+    },
+    "qualified": true
+  }
+}

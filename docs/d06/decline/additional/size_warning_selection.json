@@ -1,0 +1,110 @@
+{
+  "11+": {
+    "candidate": 0.5,
+    "training": {
+      "n": 238,
+      "threshold": 0.5,
+      "alerts": 78,
+      "true_alerts": 48,
+      "false_alerts": 30,
+      "missed": 48,
+      "precision": 0.6153846153846154,
+      "recall": 0.5
+    },
+    "qualified": true,
+    "validation_candidate": {
+      "n": 240,
+      "threshold": 0.5,
+      "alerts": 81,
+      "true_alerts": 50,
+      "false_alerts": 31,
+      "missed": 59,
+      "precision": 0.6172839506172839,
+      "recall": 0.45871559633027525
+    },
+    "validation_reference": {
+      "n": 240,
+      "threshold": 0.5,
+      "alerts": 81,
+      "true_alerts": 50,
+      "false_alerts": 31,
+      "missed": 59,
+      "precision": 0.6172839506172839,
+      "recall": 0.45871559633027525
+    },
+    "accepted": false,
+    "final_threshold": 0.5
+  },
+  "3-5": {
+    "candidate": 0.5,
+    "training": {
+      "n": 308,
+      "threshold": 0.5,
+      "alerts": 44,
+      "true_alerts": 20,
+      "false_alerts": 24,
+      "missed": 77,
+      "precision": 0.45454545454545453,
+      "recall": 0.20618556701030927
+    },
+    "qualified": false,
+    "validation_candidate": {
+      "n": 312,
+      "threshold": 0.5,
+      "alerts": 40,
+      "true_alerts": 27,
+      "false_alerts": 13,
+      "missed": 97,
+      "precision": 0.675,
+      "recall": 0.21774193548387097
+    },
+    "validation_reference": {
+      "n": 312,
+      "threshold": 0.5,
+      "alerts": 40,
+      "true_alerts": 27,
+      "false_alerts": 13,
+      "missed": 97,
+      "precision": 0.675,
+      "recall": 0.21774193548387097
+    },
+    "accepted": false,
+    "final_threshold": 0.5
+  },
+  "6-10": {
+    "candidate": 0.41,
+    "training": {
+      "n": 179,
+      "threshold": 0.41,
+      "alerts": 65,
+      "true_alerts": 39,
+      "false_alerts": 26,
+      "missed": 37,
+      "precision": 0.6,
+      "recall": 0.5131578947368421
+    },
+    "qualified": true,
+    "validation_candidate": {
+      "n": 193,
+      "threshold": 0.41,
+      "alerts": 81,
+      "true_alerts": 47,
+      "false_alerts": 34,
+      "missed": 34,
+      "precision": 0.5802469135802469,
+      "recall": 0.5802469135802469
+    },
+    "validation_reference": {
+      "n": 193,
+      "threshold": 0.5,
+      "alerts": 57,
+      "true_alerts": 34,
+      "false_alerts": 23,
+      "missed": 47,
+      "precision": 0.5964912280701754,
+      "recall": 0.41975308641975306
+    },
+    "accepted": false,
+    "final_threshold": 0.5
+  }
+}

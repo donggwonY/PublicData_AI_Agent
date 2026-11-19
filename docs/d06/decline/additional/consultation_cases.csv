@@ -1,0 +1,5 @@
+brand,year,label,model,probability,last,previous,actual,industry,log_count,growth,brandNm,feature_accounting_year,source_count,source_count_matches,national_frcsCnt,national_newFrcsRgsCnt,national_ctrtEndCnt,national_ctrtCncltnCnt,signal,case_type
+BRD_20181184,2024,1,additional,0.3553630327165527,5.0,5.0,3.0,기타 서비스,1.791759469228055,0.0,포텐스터디카페,2023,5.0,True,40.0,2.0,4.0,0.0,False,decline_without_signal
+BRD_20201898,2024,0,additional,0.3005999906448728,5.0,5.0,5.0,커피,1.791759469228055,0.0,무인다방,2023,5.0,True,17.0,7.0,0.0,0.0,False,no_signal_no_decline
+BRD_20190812,2024,1,additional,0.5865999469116399,7.0,9.0,6.0,분식,2.079441541679836,-0.2231435513142101,신마녀떡볶이,2023,7.0,True,18.0,6.0,1.0,1.0,True,signal_and_decline
+BRD_20161004,2024,0,additional,0.5592348865758054,11.0,12.0,12.0,스포츠 관련,2.4849066497880004,-0.0800427076735363,점핑하이,2023,11.0,True,412.0,53.0,33.0,10.0,True,signal_without_decline

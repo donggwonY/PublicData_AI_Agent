@@ -1,0 +1,27 @@
+{
+  "target": "count[t+1]<count[t], count[t]>=3",
+  "scope": "retrospective next-accounting-year change, not real-time next-12-month forecast; publication dates unknown",
+  "development_target_accounting_years": [
+    2022,
+    2023
+  ],
+  "evaluation_target_accounting_year": [
+    2024
+  ],
+  "provisional_target_accounting_year": [
+    2025
+  ],
+  "training": "target labels <= forecast feature accounting year",
+  "features": [
+    "prior count",
+    "prior annual growth",
+    "prior industry"
+  ],
+  "missing": "missing target excluded, observed zero retained",
+  "unavailable": [
+    "national opening/termination/cancellation counts",
+    "brand name and age"
+  ],
+  "selection": "development Brier score only, threshold .5 fixed",
+  "prior_use": "2024 and 2025 source years already explored for other targets; not untouched holdout"
+}

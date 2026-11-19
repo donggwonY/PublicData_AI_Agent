@@ -1,0 +1,17 @@
+{
+  "year": 2024,
+  "total": 813,
+  "source_count_discrepancies": 0,
+  "source_rows_missing": 49,
+  "known_name": 763,
+  "national_records": 721,
+  "selection": "one median probability case per outcome among records with name and national counts, retrospective illustration not representative performance",
+  "reference_threshold": 0.5,
+  "case_counts": {
+    "no_signal_no_decline": 399,
+    "decline_without_signal": 209,
+    "signal_and_decline": 128,
+    "signal_without_decline": 77
+  },
+  "historical_only": true
+}

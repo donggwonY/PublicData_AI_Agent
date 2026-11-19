@@ -1,0 +1,18 @@
+{
+  "scope": "exploratory calibration of frozen predictions, reused test years",
+  "fit_year": [
+    2022
+  ],
+  "validation_year": [
+    2023
+  ],
+  "evaluation_year": [
+    2024
+  ],
+  "provisional_year": [
+    2025
+  ],
+  "selection": "retain raw unless sigmoid fitted on2022 improves Brier on2023; freeze mapping without refit",
+  "method": "logistic C1 on clipped logit probability, unweighted",
+  "no_service_decision": true
+}

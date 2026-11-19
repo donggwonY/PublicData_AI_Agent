@@ -1,0 +1,119 @@
+{
+  "selection": {
+    "n": 1470,
+    "threshold": 0.51,
+    "alerts": 321,
+    "true_alerts": 193,
+    "false_alerts": 128,
+    "missed_declines": 390,
+    "precision": 0.6012461059190031,
+    "recall": 0.33104631217838765
+  },
+  "annual": [
+    {
+      "year": 2022,
+      "policy": "fixed_05",
+      "n": 725,
+      "threshold": 0.5,
+      "alerts": 169,
+      "true_alerts": 95,
+      "false_alerts": 74,
+      "missed_declines": 174,
+      "precision": 0.5621301775147929,
+      "recall": 0.35315985130111527
+    },
+    {
+      "year": 2022,
+      "policy": "development_selected",
+      "n": 725,
+      "threshold": 0.51,
+      "alerts": 158,
+      "true_alerts": 90,
+      "false_alerts": 68,
+      "missed_declines": 179,
+      "precision": 0.569620253164557,
+      "recall": 0.3345724907063197
+    },
+    {
+      "year": 2023,
+      "policy": "fixed_05",
+      "n": 745,
+      "threshold": 0.5,
+      "alerts": 178,
+      "true_alerts": 111,
+      "false_alerts": 67,
+      "missed_declines": 203,
+      "precision": 0.6235955056179775,
+      "recall": 0.3535031847133758
+    },
+    {
+      "year": 2023,
+      "policy": "development_selected",
+      "n": 745,
+      "threshold": 0.51,
+      "alerts": 163,
+      "true_alerts": 103,
+      "false_alerts": 60,
+      "missed_declines": 211,
+      "precision": 0.6319018404907976,
+      "recall": 0.32802547770700635
+    },
+    {
+      "year": 2024,
+      "policy": "fixed_05",
+      "n": 813,
+      "threshold": 0.5,
+      "alerts": 205,
+      "true_alerts": 128,
+      "false_alerts": 77,
+      "missed_declines": 209,
+      "precision": 0.624390243902439,
+      "recall": 0.3798219584569733
+    },
+    {
+      "year": 2024,
+      "policy": "development_selected",
+      "n": 813,
+      "threshold": 0.51,
+      "alerts": 192,
+      "true_alerts": 124,
+      "false_alerts": 68,
+      "missed_declines": 213,
+      "precision": 0.6458333333333334,
+      "recall": 0.36795252225519287
+    },
+    {
+      "year": 2025,
+      "policy": "fixed_05",
+      "n": 672,
+      "threshold": 0.5,
+      "alerts": 204,
+      "true_alerts": 124,
+      "false_alerts": 80,
+      "missed_declines": 172,
+      "precision": 0.6078431372549019,
+      "recall": 0.4189189189189189
+    },
+    {
+      "year": 2025,
+      "policy": "development_selected",
+      "n": 672,
+      "threshold": 0.51,
+      "alerts": 190,
+      "true_alerts": 116,
+      "false_alerts": 74,
+      "missed_declines": 180,
+      "precision": 0.6105263157894737,
+      "recall": 0.3918918918918919
+    }
+  ],
+  "pooled_2024_2025_includes_provisional": {
+    "brier_difference": -0.003518135569212299,
+    "brand_bootstrap_ci": [
+      -0.008044199691846271,
+      0.0007177339539157529
+    ],
+    "brands": 930,
+    "rows": 1485
+  }
+}

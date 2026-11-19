@@ -1,0 +1,57 @@
+[
+  {
+    "api": "brand_list",
+    "status": "00",
+    "total": 11683,
+    "fields": [
+      "jngBizCrtraYr",
+      "brandMnno",
+      "jnghdqrtrsMnno",
+      "brno",
+      "crno",
+      "jnghdqrtrsRprsvNm",
+      "brandNm",
+      "indutyLclasNm",
+      "indutyMlsfcNm",
+      "majrGdsNm",
+      "jngBizStrtDate",
+      "corpNm"
+    ]
+  },
+  {
+    "api": "brand_stats",
+    "status": "00",
+    "total": 11834,
+    "fields": [
+      "yr",
+      "indutyLclasNm",
+      "indutyMlsfcNm",
+      "corpNm",
+      "brandNm",
+      "frcsCnt",
+      "newFrcsRgsCnt",
+      "ctrtEndCnt",
+      "ctrtCncltnCnt",
+      "nmChgCnt",
+      "avrgSlsAmt",
+      "arUnitAvrgSlsAmt"
+    ]
+  },
+  {
+    "api": "brand_region",
+    "status": "00",
+    "total": 179154,
+    "fields": [
+      "jngBizCrtraYr",
+      "brandMnno",
+      "jnghdqrtrsMnno",
+      "acntgYr",
+      "indutyLclasNm",
+      "indutyMlsfcNm",
+      "areaNm",
+      "frcsCnt",
+      "dmsCnt",
+      "allFrcsDmsCnt"
+    ]
+  }
+]

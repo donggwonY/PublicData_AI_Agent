@@ -1,0 +1,162 @@
+[
+  {
+    "brand": "포텐스터디카페",
+    "context": "2024년 예측을 확인하는 과거 연구 사례예요. 현재 상태를 뜻하지 않아요.",
+    "regional_accounting_years": [
+      2022,
+      2023
+    ],
+    "national_report_year": 2023,
+    "national_scope": "전국 자료이며 대구 건수가 아닙니다.",
+    "message": "당시 대구 가맹점 수는 같은 수준이었어요. 예측에서 감소 신호가 강하게 나타나지는 않았지만, 매장 수는 달라질 수 있어요. 관심 있는 브랜드라면 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "fields": [
+      {
+        "value": 5,
+        "status": "observed",
+        "text": "2022년 대구 가맹점 수 5개"
+      },
+      {
+        "value": 5,
+        "status": "observed",
+        "text": "2023년 대구 가맹점 수 5개"
+      },
+      {
+        "value": 2,
+        "status": "observed",
+        "text": "전국 신규 개점 2건"
+      },
+      {
+        "value": 4,
+        "status": "observed",
+        "text": "전국 계약 종료 4건"
+      },
+      {
+        "value": 0,
+        "status": "observed",
+        "text": "전국 계약 해지 0건"
+      }
+    ],
+    "source": "공정거래위원회 가맹정보 API",
+    "limitations": "실제 공개 시점은 확인 중이며, 계약 종료·해지가 사업 실패를 뜻하지는 않습니다."
+  },
+  {
+    "brand": "무인다방",
+    "context": "2024년 예측을 확인하는 과거 연구 사례예요. 현재 상태를 뜻하지 않아요.",
+    "regional_accounting_years": [
+      2022,
+      2023
+    ],
+    "national_report_year": 2023,
+    "national_scope": "전국 자료이며 대구 건수가 아닙니다.",
+    "message": "당시 대구 가맹점 수는 같은 수준이었어요. 예측에서 감소 신호가 강하게 나타나지는 않았지만, 매장 수는 달라질 수 있어요. 관심 있는 브랜드라면 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "fields": [
+      {
+        "value": 5,
+        "status": "observed",
+        "text": "2022년 대구 가맹점 수 5개"
+      },
+      {
+        "value": 5,
+        "status": "observed",
+        "text": "2023년 대구 가맹점 수 5개"
+      },
+      {
+        "value": 7,
+        "status": "observed",
+        "text": "전국 신규 개점 7건"
+      },
+      {
+        "value": 0,
+        "status": "observed",
+        "text": "전국 계약 종료 0건"
+      },
+      {
+        "value": 0,
+        "status": "observed",
+        "text": "전국 계약 해지 0건"
+      }
+    ],
+    "source": "공정거래위원회 가맹정보 API",
+    "limitations": "실제 공개 시점은 확인 중이며, 계약 종료·해지가 사업 실패를 뜻하지는 않습니다."
+  },
+  {
+    "brand": "신마녀떡볶이",
+    "context": "2024년 예측을 확인하는 과거 연구 사례예요. 현재 상태를 뜻하지 않아요.",
+    "regional_accounting_years": [
+      2022,
+      2023
+    ],
+    "national_report_year": 2023,
+    "national_scope": "전국 자료이며 대구 건수가 아닙니다.",
+    "message": "당시 대구 가맹점 수는 줄었어요. 예측에서도 감소 가능성을 함께 살펴볼 신호가 나타났어요. 관심 있는 브랜드라면 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "fields": [
+      {
+        "value": 9,
+        "status": "observed",
+        "text": "2022년 대구 가맹점 수 9개"
+      },
+      {
+        "value": 7,
+        "status": "observed",
+        "text": "2023년 대구 가맹점 수 7개"
+      },
+      {
+        "value": 6,
+        "status": "observed",
+        "text": "전국 신규 개점 6건"
+      },
+      {
+        "value": 1,
+        "status": "observed",
+        "text": "전국 계약 종료 1건"
+      },
+      {
+        "value": 1,
+        "status": "observed",
+        "text": "전국 계약 해지 1건"
+      }
+    ],
+    "source": "공정거래위원회 가맹정보 API",
+    "limitations": "실제 공개 시점은 확인 중이며, 계약 종료·해지가 사업 실패를 뜻하지는 않습니다."
+  },
+  {
+    "brand": "점핑하이",
+    "context": "2024년 예측을 확인하는 과거 연구 사례예요. 현재 상태를 뜻하지 않아요.",
+    "regional_accounting_years": [
+      2022,
+      2023
+    ],
+    "national_report_year": 2023,
+    "national_scope": "전국 자료이며 대구 건수가 아닙니다.",
+    "message": "당시 대구 가맹점 수는 줄었어요. 예측에서도 감소 가능성을 함께 살펴볼 신호가 나타났어요. 관심 있는 브랜드라면 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "fields": [
+      {
+        "value": 12,
+        "status": "observed",
+        "text": "2022년 대구 가맹점 수 12개"
+      },
+      {
+        "value": 11,
+        "status": "observed",
+        "text": "2023년 대구 가맹점 수 11개"
+      },
+      {
+        "value": 53,
+        "status": "observed",
+        "text": "전국 신규 개점 53건"
+      },
+      {
+        "value": 33,
+        "status": "observed",
+        "text": "전국 계약 종료 33건"
+      },
+      {
+        "value": 10,
+        "status": "observed",
+        "text": "전국 계약 해지 10건"
+      }
+    ],
+    "source": "공정거래위원회 가맹정보 API",
+    "limitations": "실제 공개 시점은 확인 중이며, 계약 종료·해지가 사업 실패를 뜻하지는 않습니다."
+  }
+]
