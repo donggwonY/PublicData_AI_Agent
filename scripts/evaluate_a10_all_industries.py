@@ -13,7 +13,7 @@ from snapshot_hashes import snapshot_sha256
 OUTPUT = ROOT / "a10"
 
 
-def evaluate_month(month):
+def evaluate_month(month, codes=None):
     path, stores, population = load_inputs(month)
     label_columns = ["상권업종소분류코드", "상권업종소분류명"]
     labels = pd.read_csv(path, usecols=label_columns, dtype=str, encoding="utf-8-sig").drop_duplicates()
@@ -37,6 +37,8 @@ def evaluate_month(month):
     summaries = []
     details = []
     for code, parent in groups.sort_index().items():
+        if codes is not None and code not in codes:
+            continue
         target = subclasses[code]
         other = industry_counts.copy()
         other[parent] -= target
