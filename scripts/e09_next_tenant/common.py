@@ -17,9 +17,10 @@ RECENT_DAYS, RECENT_MIN = 3 * 365, 30
 B3_PRIOR = 5.0
 
 
-def load():
-    path = DATA / "cases.parquet"
-    meta = json.loads((DATA / "cases_meta.json").read_text(encoding="utf-8"))
+def load(name: str = "cases"):
+    """name='cases'(1차, 폐업 시점) 또는 'vacant_cases'(2차, 랜드마크)."""
+    path = DATA / f"{name}.parquet"
+    meta = json.loads((DATA / f"{name}_meta.json").read_text(encoding="utf-8"))
     if hashlib.sha256(path.read_bytes()).hexdigest() != meta["sha256"]:
         raise SystemExit("cases.parquet 해시가 기록과 다릅니다.")
     d = pd.read_parquet(path).reset_index(drop=True)
@@ -88,7 +89,8 @@ def metrics(yi, p):
     return {"logloss": float(-np.mean(np.log(p[np.arange(n), yi]))),
             "brier": float(np.mean(((p - onehot(yi)) ** 2).sum(1))),
             "accuracy": float(np.mean(top[:, 0] == yi)),
-            "top2": float(np.mean((top[:, 0] == yi) | (top[:, 1] == yi)))}
+            "top2": float(np.mean((top[:, 0] == yi) | (top[:, 1] == yi))),
+            "top3": float(np.mean((top[:, :3] == yi[:, None]).any(1)))}
 
 
 def per_class(yi, p):
@@ -97,6 +99,35 @@ def per_class(yi, p):
                          "obs_rate": round(float((yi == k).mean()), 4),
                          "recall": None if (yi == k).sum() == 0 else round(float((pred[yi == k] == k).mean()), 4),
                          "predicted_n": int((pred == k).sum())} for k in range(K)}
+
+
+def b1l(tr, te, col="L"):
+    """직전 묶음 × 공백 기간(랜드마크) 이동표. 칸 표본 n < 30이면 B1과 섞음(가중 n/30)."""
+    p1 = b1(tr, te)
+    cnt = tr.groupby(["prev7", col])["yi"].value_counts().unstack(fill_value=0).reindex(columns=range(K), fill_value=0)
+    out = p1.copy()
+    for i, key in enumerate(zip(te["prev7"], te[col])):
+        if key in cnt.index:
+            c = cnt.loc[key].values.astype(float)
+            n = c.sum()
+            w = min(n / RECENT_MIN, 1.0)
+            out[i] = w * c / n + (1 - w) * p1[i]
+    return out
+
+
+def boot_diff_top3(uid, yi, pa, pb):
+    """자리 단위 부트스트랩: a − b 상위 3개 적중 차이 95% 구간."""
+    rng = np.random.default_rng(SEED)
+    idx = pd.Series(np.arange(len(uid))).groupby(np.asarray(uid)).indices
+    units = list(idx)
+    ha = (np.argsort(-pa, 1)[:, :3] == yi[:, None]).any(1)
+    hb = (np.argsort(-pb, 1)[:, :3] == yi[:, None]).any(1)
+    dv = []
+    for _ in range(BOOT):
+        rows = np.concatenate([idx[units[j]] for j in rng.integers(0, len(units), len(units))])
+        dv.append(ha[rows].mean() - hb[rows].mean())
+    return {"top3_diff": float(ha.mean() - hb.mean()),
+            "top3_ci": [float(np.percentile(dv, 2.5)), float(np.percentile(dv, 97.5))]}
 
 
 def boot_diff(uid, yi, pa, pb):
