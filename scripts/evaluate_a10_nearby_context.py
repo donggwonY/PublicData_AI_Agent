@@ -36,7 +36,7 @@ def nearby_weights(stores, coordinates, code, areas):
     return weights, int((~valid).sum()), centers.index[~located].tolist()
 
 
-def evaluate(month, holdout_size=1):
+def evaluate(month, holdout_size=1, codes=None, prefix=None, full_fit=True):
     if holdout_size not in (1, 2):
         raise ValueError("Expected one or two held-out districts")
     source, stores, population = load_inputs(month)
@@ -50,7 +50,7 @@ def evaluate(month, holdout_size=1):
     totals = pd.crosstab(stores.admin_code, stores.industry).reindex(population.index, fill_value=0)
     saved = pd.read_csv(OUTPUT / f"industry_comparison_{month}.csv", dtype={"admin_code": str})
     parts, summaries, audits = [], [], []
-    for code in CODES:
+    for code in CODES if codes is None else codes:
         if holdout_size == 2 and code not in ("I20101", "P10501"):
             continue
         target = stores.loc[stores.subclass.eq(code)]
@@ -90,13 +90,16 @@ def evaluate(month, holdout_size=1):
             train = ~results.district.isin(districts)
             predictions = results.loc[~train].copy()
             for name, columns in configs.items():
+                if not counts.loc[train].any():
+                    predictions[name] = 0.0
+                    continue
                 model = make_pipeline(StandardScaler(), PoissonRegressor(alpha=0.1, max_iter=1000))
                 model.fit(features.loc[train, columns], counts.loc[train])
                 predictions[name] = model.predict(features.loc[~train, columns])
             predictions["heldout_districts"] = "+".join(map(str, districts))
             folds.append(predictions)
         results = pd.concat(folds)
-        if holdout_size == 1:
+        if holdout_size == 1 and full_fit:
             selected = {"I20101": "nearby_scale", "P10501": "nearby_industries"}.get(
                 code, "reproduced_context"
             )
@@ -127,7 +130,9 @@ def evaluate(month, holdout_size=1):
         audits.append({"industry_code": code, "non_target_shops_without_valid_coordinates": missing,
                        "areas_without_non_target_shop_coordinates": missing_areas})
         parts.append(results)
-    prefix = "nearby" if holdout_size == 1 else "nearby_two_districts"
+        if codes is not None:
+            print(f"{month}: {code} ({len(parts)}/{len(codes)})", flush=True)
+    prefix = prefix or ("nearby" if holdout_size == 1 else "nearby_two_districts")
     pd.concat(parts).to_csv(OUTPUT / f"{prefix}_predictions_{month}.csv", index_label="admin_code", encoding="utf-8-sig")
     return {"source_sha256": snapshot_sha256(source), "location_audit": audits, "summary": summaries}
 

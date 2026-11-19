@@ -12,7 +12,7 @@
     h2 { margin: 0 0 20px; font-size: 19px; }
     .date, .notes { color: #445951; }
     label { display: block; font-weight: 650; }
-    select { min-width: min(100%, 230px); margin-top: 4px; padding: 8px 12px; border: 1px solid #768d82; border-radius: 8px; background: white; color: inherit; font: inherit; }
+    select { width: min(100%, 560px); margin-top: 4px; padding: 8px 12px; border: 1px solid #768d82; border-radius: 8px; background: white; color: inherit; font: inherit; }
     .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0 16px; }
     article { background: #fff; border: 1px solid #d4dfd9; border-radius: 16px; padding: 20px; }
     dl, dd { margin: 0; }
@@ -37,8 +37,87 @@
     <select id="industry">
       <option value="I21201">카페</option>
       <option value="S20701">미용실</option>
-      <option value="I20101">백반·한정식</option>
+      <option value="I20101">백반/한정식</option>
       <option value="P10501">입시·교과학원</option>
+      <option value="R10406">PC방</option>
+      <option value="S20501">가전제품 수리업</option>
+      <option value="G21403">가정용 연료 소매업</option>
+      <option value="M10901">건축 설계 및 관련 서비스업</option>
+      <option value="N10201">건축물 일반 청소업</option>
+      <option value="M10703">경영 컨설팅업</option>
+      <option value="N10401">고용 알선업</option>
+      <option value="R10311">골프 연습장</option>
+      <option value="M10501">광고 대행업</option>
+      <option value="M10504">광고물 설계/제작업</option>
+      <option value="P10701">교육컨설팅업</option>
+      <option value="I20102">국/탕/찌개류</option>
+      <option value="I20105">국수/칼국수</option>
+      <option value="I21099">그 외 기타 간이 음식점</option>
+      <option value="S20699">그 외 기타 개인/가정용품 수리업</option>
+      <option value="P10629">그 외 기타 교육기관</option>
+      <option value="G22199">그 외 기타 상품 전문 소매업</option>
+      <option value="G20499">그 외 기타 종합 소매업</option>
+      <option value="G21802">기념품점</option>
+      <option value="P10799">기타 교육지원 서비스업</option>
+      <option value="P10625">기타 기술/직업 훈련학원</option>
+      <option value="P10613">기타 예술/스포츠 교육기관</option>
+      <option value="I21007">김밥/만두/분식</option>
+      <option value="G21901">꽃집</option>
+      <option value="Q10201">내과/소아과 의원</option>
+      <option value="R10407">노래방</option>
+      <option value="I20110">닭/오리고기 구이/찜</option>
+      <option value="G20701">담배/전자담배 소매업</option>
+      <option value="R10310">당구장</option>
+      <option value="R10202">독서실/스터디 카페</option>
+      <option value="I20107">돼지고기 구이/찜</option>
+      <option value="I21002">떡/한과</option>
+      <option value="S20801">목욕탕/사우나</option>
+      <option value="P10611">미술학원</option>
+      <option value="G21002">벽지/장판/마루 소매업</option>
+      <option value="R10410">복권 발행/판매업</option>
+      <option value="L10203">부동산 중개/대리업</option>
+      <option value="I21001">빵/도넛</option>
+      <option value="N10101">사업시설 유지·관리 서비스업</option>
+      <option value="M11301">사진촬영업</option>
+      <option value="N10202">산업설비; 운송장비 및 공공장소 청소업</option>
+      <option value="I21103">생맥주 전문</option>
+      <option value="G21301">서점</option>
+      <option value="G20404">슈퍼마켓</option>
+      <option value="M11203">시각 디자인업</option>
+      <option value="G21701">시계/귀금속 소매업</option>
+      <option value="G21602">안경렌즈 소매업</option>
+      <option value="G22001">애완동물/애완용품 소매업</option>
+      <option value="G20907">액세서리/잡화 소매업</option>
+      <option value="G21501">약국</option>
+      <option value="I10102">여관/모텔</option>
+      <option value="G20902">여성 의류 소매업</option>
+      <option value="P10615">외국어학원</option>
+      <option value="P10603">요가/필라테스 학원</option>
+      <option value="I21104">요리 주점</option>
+      <option value="Q10402">유사 의료업</option>
+      <option value="G20903">유아용 의류 소매업</option>
+      <option value="P10609">음악학원</option>
+      <option value="M11201">인테리어 디자인업</option>
+      <option value="G20202">자동차 부품 소매업</option>
+      <option value="S20302">자동차 세차장</option>
+      <option value="S20301">자동차 정비소</option>
+      <option value="G20503">정육점</option>
+      <option value="G21202">주방/가정용품 소매업</option>
+      <option value="G21401">주유소</option>
+      <option value="I20201">중국집</option>
+      <option value="G20506">채소/과일 소매업</option>
+      <option value="G21001">철물/공구 소매업</option>
+      <option value="Q10210">치과의원</option>
+      <option value="I21006">치킨</option>
+      <option value="G20906">침구류/커튼 소매업</option>
+      <option value="S20101">컴퓨터/노트북/프린터 수리업</option>
+      <option value="I10103">펜션</option>
+      <option value="G20405">편의점</option>
+      <option value="Q10204">피부/비뇨기과 의원</option>
+      <option value="Q10211">한의원</option>
+      <option value="I20112">해산물 구이/찜</option>
+      <option value="R10307">헬스장</option>
+      <option value="I20111">횟집</option>
     </select>
     <div class="cards" aria-live="polite">
       <article>
@@ -64,34 +143,33 @@
       </article>
     </div>
     <div class="notes">
-      <p><strong>실제 점포 수</strong>는 상가업소 자료에 기록된 해당 업종의 점포를 센 값이에요. 막대는 모두 0~250곳 기준이에요.</p>
-      <p><strong>동네 여건으로 추정한 점포 수</strong>는 같은 달의 거주인구, 연령 분포, 다른 업종의 점포 구성으로 계산한 비교용 수치예요. 백반·한정식과 학원은 가까운 동네의 여건도 반영했어요. 지역별로 추정 오차가 다르므로 차이가 큰 곳은 유동인구와 경쟁 점포를 함께 살펴보세요.</p>
+      <p><strong>실제 점포 수</strong>는 상가업소 자료에 기록된 해당 업종의 점포를 센 값이에요. <span id="scale-note">막대는 세 후보지 모두 0~250곳 기준이에요.</span></p>
+      <p><strong>동네 여건으로 추정한 점포 수</strong>는 같은 달의 거주인구, 연령 분포, 다른 업종의 점포 구성으로 계산한 비교용 수치예요. <span id="nearby-note"></span> 지역별로 추정 오차가 다르므로 차이가 큰 곳은 유동인구와 경쟁 점포를 함께 살펴보세요.</p>
     </div>
   </main>
+  <script id="a10-data" type="application/json">{"G20202": {"name": "자동차 부품 소매업", "uses_nearby": false, "counts": [[0, 1], [0, 3], [2, 2]]}, "G20404": {"name": "슈퍼마켓", "uses_nearby": false, "counts": [[34, 18], [12, 19], [27, 21]]}, "G20405": {"name": "편의점", "uses_nearby": true, "counts": [[32, 57], [15, 15], [21, 21]]}, "G20499": {"name": "그 외 기타 종합 소매업", "uses_nearby": false, "counts": [[20, 7], [0, 2], [2, 2]]}, "G20503": {"name": "정육점", "uses_nearby": false, "counts": [[1, 2], [6, 5], [13, 12]]}, "G20506": {"name": "채소/과일 소매업", "uses_nearby": false, "counts": [[3, 5], [2, 3], [4, 6]]}, "G20701": {"name": "담배/전자담배 소매업", "uses_nearby": false, "counts": [[10, 13], [0, 1], [1, 1]]}, "G20902": {"name": "여성 의류 소매업", "uses_nearby": true, "counts": [[141, 195], [7, 17], [13, 42]]}, "G20903": {"name": "유아용 의류 소매업", "uses_nearby": true, "counts": [[2, 18], [0, 3], [7, 3]]}, "G20906": {"name": "침구류/커튼 소매업", "uses_nearby": false, "counts": [[4, 11], [1, 1], [0, 4]]}, "G20907": {"name": "액세서리/잡화 소매업", "uses_nearby": false, "counts": [[27, 10], [5, 1], [3, 3]]}, "G21001": {"name": "철물/공구 소매업", "uses_nearby": true, "counts": [[7, 5], [1, 1], [2, 3]]}, "G21002": {"name": "벽지/장판/마루 소매업", "uses_nearby": false, "counts": [[0, 4], [1, 1], [0, 1]]}, "G21202": {"name": "주방/가정용품 소매업", "uses_nearby": false, "counts": [[16, 22], [2, 2], [6, 4]]}, "G21301": {"name": "서점", "uses_nearby": false, "counts": [[9, 10], [2, 3], [3, 5]]}, "G21401": {"name": "주유소", "uses_nearby": false, "counts": [[0, 1], [0, 3], [2, 2]]}, "G21403": {"name": "가정용 연료 소매업", "uses_nearby": false, "counts": [[0, 1], [0, 1], [0, 1]]}, "G21501": {"name": "약국", "uses_nearby": false, "counts": [[26, 26], [11, 8], [16, 24]]}, "G21602": {"name": "안경렌즈 소매업", "uses_nearby": false, "counts": [[16, 19], [2, 4], [7, 9]]}, "G21701": {"name": "시계/귀금속 소매업", "uses_nearby": false, "counts": [[268, 15], [1, 2], [6, 4]]}, "G21802": {"name": "기념품점", "uses_nearby": false, "counts": [[5, 9], [1, 1], [1, 2]]}, "G21901": {"name": "꽃집", "uses_nearby": false, "counts": [[10, 31], [8, 6], [6, 8]]}, "G22001": {"name": "애완동물/애완용품 소매업", "uses_nearby": true, "counts": [[15, 12], [4, 3], [5, 6]]}, "G22199": {"name": "그 외 기타 상품 전문 소매업", "uses_nearby": false, "counts": [[15, 11], [1, 4], [5, 5]]}, "I10102": {"name": "여관/모텔", "uses_nearby": false, "counts": [[3, 15], [4, 1], [0, 1]]}, "I10103": {"name": "펜션", "uses_nearby": false, "counts": [[34, 22], [1, 4], [0, 0]]}, "I20101": {"name": "백반/한정식", "uses_nearby": true, "counts": [[199, 163], [63, 70], [93, 55]]}, "I20102": {"name": "국/탕/찌개류", "uses_nearby": false, "counts": [[7, 21], [9, 6], [5, 14]]}, "I20105": {"name": "국수/칼국수", "uses_nearby": true, "counts": [[10, 13], [5, 6], [10, 12]]}, "I20107": {"name": "돼지고기 구이/찜", "uses_nearby": true, "counts": [[38, 32], [27, 22], [38, 32]]}, "I20110": {"name": "닭/오리고기 구이/찜", "uses_nearby": true, "counts": [[10, 13], [4, 2], [8, 6]]}, "I20111": {"name": "횟집", "uses_nearby": false, "counts": [[11, 17], [2, 5], [10, 8]]}, "I20112": {"name": "해산물 구이/찜", "uses_nearby": true, "counts": [[2, 6], [1, 5], [6, 4]]}, "I20201": {"name": "중국집", "uses_nearby": false, "counts": [[27, 33], [13, 8], [13, 10]]}, "I21001": {"name": "빵/도넛", "uses_nearby": false, "counts": [[48, 72], [16, 16], [20, 31]]}, "I21002": {"name": "떡/한과", "uses_nearby": false, "counts": [[4, 5], [1, 2], [3, 6]]}, "I21006": {"name": "치킨", "uses_nearby": false, "counts": [[4, 20], [8, 14], [22, 29]]}, "I21007": {"name": "김밥/만두/분식", "uses_nearby": false, "counts": [[51, 70], [14, 15], [29, 36]]}, "I21099": {"name": "그 외 기타 간이 음식점", "uses_nearby": false, "counts": [[12, 14], [0, 2], [7, 5]]}, "I21103": {"name": "생맥주 전문", "uses_nearby": false, "counts": [[7, 14], [6, 7], [11, 9]]}, "I21104": {"name": "요리 주점", "uses_nearby": false, "counts": [[67, 97], [30, 9], [14, 26]]}, "I21201": {"name": "카페", "uses_nearby": false, "counts": [[231, 150], [51, 68], [71, 70]]}, "L10203": {"name": "부동산 중개/대리업", "uses_nearby": false, "counts": [[52, 62], [49, 51], [38, 63]]}, "M10501": {"name": "광고 대행업", "uses_nearby": false, "counts": [[31, 75], [17, 23], [6, 7]]}, "M10504": {"name": "광고물 설계/제작업", "uses_nearby": false, "counts": [[10, 7], [1, 12], [0, 1]]}, "M10703": {"name": "경영 컨설팅업", "uses_nearby": false, "counts": [[33, 45], [26, 30], [8, 11]]}, "M10901": {"name": "건축 설계 및 관련 서비스업", "uses_nearby": true, "counts": [[15, 34], [13, 13], [3, 5]]}, "M11201": {"name": "인테리어 디자인업", "uses_nearby": false, "counts": [[6, 18], [4, 5], [6, 11]]}, "M11203": {"name": "시각 디자인업", "uses_nearby": false, "counts": [[23, 37], [4, 7], [2, 2]]}, "M11301": {"name": "사진촬영업", "uses_nearby": false, "counts": [[71, 76], [4, 10], [15, 7]]}, "N10101": {"name": "사업시설 유지·관리 서비스업", "uses_nearby": true, "counts": [[4, 2], [5, 5], [2, 2]]}, "N10201": {"name": "건축물 일반 청소업", "uses_nearby": false, "counts": [[12, 36], [7, 8], [3, 6]]}, "N10202": {"name": "산업설비; 운송장비 및 공공장소 청소업", "uses_nearby": false, "counts": [[0, 2], [0, 1], [0, 1]]}, "N10401": {"name": "고용 알선업", "uses_nearby": false, "counts": [[2, 16], [3, 1], [0, 1]]}, "P10501": {"name": "입시·교과학원", "uses_nearby": true, "counts": [[17, 12], [40, 33], [136, 148]]}, "P10603": {"name": "요가/필라테스 학원", "uses_nearby": false, "counts": [[15, 26], [27, 14], [26, 44]]}, "P10609": {"name": "음악학원", "uses_nearby": false, "counts": [[4, 3], [4, 11], [16, 21]]}, "P10611": {"name": "미술학원", "uses_nearby": false, "counts": [[2, 2], [7, 9], [12, 14]]}, "P10613": {"name": "기타 예술/스포츠 교육기관", "uses_nearby": true, "counts": [[13, 3], [3, 7], [6, 6]]}, "P10615": {"name": "외국어학원", "uses_nearby": false, "counts": [[5, 2], [5, 4], [8, 10]]}, "P10625": {"name": "기타 기술/직업 훈련학원", "uses_nearby": false, "counts": [[31, 37], [6, 9], [3, 10]]}, "P10629": {"name": "그 외 기타 교육기관", "uses_nearby": false, "counts": [[14, 13], [5, 5], [4, 7]]}, "P10701": {"name": "교육컨설팅업", "uses_nearby": false, "counts": [[5, 8], [2, 4], [2, 4]]}, "P10799": {"name": "기타 교육지원 서비스업", "uses_nearby": true, "counts": [[27, 11], [4, 4], [1, 5]]}, "Q10201": {"name": "내과/소아과 의원", "uses_nearby": false, "counts": [[6, 7], [1, 2], [4, 4]]}, "Q10204": {"name": "피부/비뇨기과 의원", "uses_nearby": false, "counts": [[26, 16], [5, 3], [6, 6]]}, "Q10210": {"name": "치과의원", "uses_nearby": true, "counts": [[23, 22], [7, 7], [9, 11]]}, "Q10211": {"name": "한의원", "uses_nearby": false, "counts": [[8, 3], [5, 3], [4, 10]]}, "Q10402": {"name": "유사 의료업", "uses_nearby": true, "counts": [[1, 5], [2, 1], [2, 2]]}, "R10202": {"name": "독서실/스터디 카페", "uses_nearby": false, "counts": [[12, 16], [7, 5], [26, 26]]}, "R10307": {"name": "헬스장", "uses_nearby": false, "counts": [[6, 22], [15, 13], [22, 23]]}, "R10310": {"name": "당구장", "uses_nearby": true, "counts": [[6, 10], [1, 2], [4, 4]]}, "R10311": {"name": "골프 연습장", "uses_nearby": false, "counts": [[0, 6], [4, 5], [17, 10]]}, "R10406": {"name": "PC방", "uses_nearby": true, "counts": [[7, 7], [2, 1], [2, 4]]}, "R10407": {"name": "노래방", "uses_nearby": false, "counts": [[14, 33], [13, 5], [5, 11]]}, "R10410": {"name": "복권 발행/판매업", "uses_nearby": false, "counts": [[3, 5], [2, 1], [2, 2]]}, "S20101": {"name": "컴퓨터/노트북/프린터 수리업", "uses_nearby": true, "counts": [[5, 7], [1, 2], [1, 2]]}, "S20301": {"name": "자동차 정비소", "uses_nearby": false, "counts": [[0, 2], [2, 13], [10, 9]]}, "S20302": {"name": "자동차 세차장", "uses_nearby": true, "counts": [[0, 2], [2, 5], [14, 7]]}, "S20501": {"name": "가전제품 수리업", "uses_nearby": false, "counts": [[13, 6], [2, 2], [1, 3]]}, "S20699": {"name": "그 외 기타 개인/가정용품 수리업", "uses_nearby": true, "counts": [[4, 4], [0, 1], [0, 2]]}, "S20701": {"name": "미용실", "uses_nearby": false, "counts": [[128, 123], [41, 39], [107, 93]]}, "S20801": {"name": "목욕탕/사우나", "uses_nearby": false, "counts": [[1, 3], [0, 1], [1, 1]]}}</script>
   <script>
-    // Actual count and rounded model estimate, in the same order as the three cards.
-    const counts = {
-      I21201: [[231, 150], [51, 68], [71, 70]],
-      S20701: [[128, 123], [41, 39], [107, 93]],
-      I20101: [[199, 163], [63, 70], [93, 55]],
-      P10501: [[17, 12], [40, 33], [136, 148]],
-    };
+    const industries = JSON.parse(document.querySelector("#a10-data").textContent);
     const industry = document.querySelector("#industry");
     const cards = document.querySelectorAll(".cards article");
-
     function updateCards() {
+      const selected = industries[industry.value];
+      const maximum = Math.max(...selected.counts.flat());
+      const scale = Math.max(50, Math.ceil(maximum / 50) * 50);
       cards.forEach((card, index) => {
-        const [actual, estimate] = counts[industry.value][index];
-        const actualLabel = card.querySelector("dt");
+        const [actual, estimate] = selected.counts[index];
         const [actualValue, estimateValue] = card.querySelectorAll("dd:not(.track)");
         const [actualBar, estimateBar] = card.querySelectorAll(".bar");
-        const name = industry.selectedOptions[0].textContent;
-        actualLabel.textContent = `실제 ${name} 점포 수`;
+        card.querySelector("dt").textContent = `실제 ${selected.name} 점포 수`;
         actualValue.textContent = `${actual}곳`;
         estimateValue.textContent = `약 ${estimate}곳`;
-        actualBar.style.width = `${actual / 250 * 100}%`;
-        estimateBar.style.width = `${estimate / 250 * 100}%`;
+        actualBar.style.width = `${actual / scale * 100}%`;
+        estimateBar.style.width = `${estimate / scale * 100}%`;
       });
+      document.querySelector("#scale-note").textContent =
+        `막대는 세 후보지 모두 0~${scale}곳 기준이에요.`;
+      document.querySelector("#nearby-note").textContent = selected.uses_nearby
+        ? "이 업종은 가까운 동네의 여건도 반영했어요." : "";
     }
     industry.addEventListener("change", updateCards);
     updateCards();
