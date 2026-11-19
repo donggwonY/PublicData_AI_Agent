@@ -1227,7 +1227,7 @@ def _net_move(r) -> dict:
         return {"net_move": None, "move_includes_deaths": False, "net_move_text": "-"}
     n, deaths = int(v), bool(r.get("includes_deaths", 0))
     text = "변화 없음" if n == 0 else f"{n:+,}명"
-    return {"net_move": n, "move_includes_deaths": deaths, "net_move_text": text + (" (사망 포함)" if deaths else "")}
+    return {"net_move": n, "move_includes_deaths": deaths, "net_move_text": text}
 
 
 def _move_period(rows) -> str:
@@ -1403,7 +1403,8 @@ def get_resident_outlook(dong: str, gu: str | None = None) -> dict:
             "source": POPULATION_BASIS + " 월별 연령별 인구(10세 구간·1세 단위)",
             "current_month": "2026-10", "forecast_month": "2027-10", "move_period": "2025-10 → 2026-10",
             "forecast_model": "A-07 연령대별 추정(오프라인 계산 후 저장한 값, 연령대마다 개발 구간에서 고른 방법)",
-            "net_move_definition": "올해 a세 인원 − 작년 (a−1)세 인원. 나이 드는 효과를 뺀 순이동(들어온 사람 − 나간 사람). "
+            "net_move_definition": "화면 표기 '최근 1년 인구 변화'. 올해 a세 인원 − 작년 (a−1)세 인원, 즉 1년 전과 같은 사람들의 증감. "
+                                   "나이 드는 효과는 빠지고 대부분 이사(들어온 사람 − 나간 사람)이며 고령층은 사망도 포함. "
                                    "0~9세는 올해 태어난 0세를 빼고 1~9세만.",
         },
         "caveat": [

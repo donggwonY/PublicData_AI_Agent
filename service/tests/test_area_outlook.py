@@ -54,7 +54,7 @@ class AreaOutlookToolTests(unittest.TestCase):
         self.assertEqual(out["top_in"], {"age_band": "age_20_29", "label": "20대", "net_move": 213})
         self.assertEqual(out["top_out"], {"age_band": "age_30_39", "label": "30대", "net_move": -12})
         items = {i["age_band"]: i for i in out["items"]}
-        self.assertEqual(items["age_80_89"]["net_move_text"], "-15명 (사망 포함)")   # 70대 이상은 순위에서 제외
+        self.assertEqual(items["age_80_89"]["net_move_text"], "-15명")   # 70대 이상은 순위에서 제외
         out = T.get_population_outlook("북구", "산격3동")
         self.assertEqual((out["top_in"]["label"], out["top_in"]["net_move"]), ("20대", 278))
         self.assertEqual((out["top_out"]["label"], out["top_out"]["net_move"]), ("30대", -122))
@@ -183,7 +183,11 @@ class AreaOutlookScreenTests(unittest.TestCase):
         captions = " ".join(c.value for c in app.caption)
         self.assertIn("나이 드는 효과를 빼고", captions)
         self.assertNotIn("30대·0~9세는", captions)
-        first = T.get_similar_areas("중구", "성내1동")["items"][0]
+        self.assertIn("같은 사람들과 비교한 증감", captions)
+        table = app.dataframe[0].value
+        self.assertIn("최근 1년 인구 변화", table.columns)
+        self.assertFalse(table["최근 1년 인구 변화"].str.contains("사망").any())
+        first =T.get_similar_areas("중구", "성내1동")["items"][0]
         app.button(key="dash_similar_go_combined_1").click().run(timeout=90)
         self.assertFalse(app.exception)
         self.assertEqual(app.selectbox(key="dash_dong").value, first["dong"])

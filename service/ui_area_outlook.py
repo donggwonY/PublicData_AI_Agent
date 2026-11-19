@@ -56,10 +56,11 @@ def render_population_outlook(gu: str, dong: str) -> None:
     with st.expander("연령대별로 모두 보기"):
         df = pd.DataFrame([{"연령대": i["label"], f"{res['base_month']} 현재": f"{i['current']:,}명",
                             f"{res['target_month']} 추정": "-" if i["forecast"] is None else f"{i['forecast']:,}명",
-                            "최근 1년 이사로 바뀐 인원": i.get("net_move_text", "-")} for i in res["items"]])
+                            "최근 1년 인구 변화": i.get("net_move_text", "-")} for i in res["items"]])
         st.dataframe(df, hide_index=True, width="stretch", height=35 * (len(df) + 1) + 3)
-        st.caption("연령대마다 따로 추정해 연령대 합이 전체와 조금 다를 수 있어요. "
-                   "0\\~9세의 이사 인원은 올해 태어난 아기를 빼고 1\\~9세만 셌어요.")
+        st.caption("최근 1년 인구 변화는 작년에 한 살 어렸던 같은 사람들과 비교한 증감이에요(이사, 고령층은 사망도 포함). "
+                   "연령대마다 따로 추정해 합이 전체와 조금 다를 수 있어요. "
+                   "0\\~9세는 올해 태어난 아기를 빼고 1\\~9세만 셌어요.")
 
 
 def _option_picker(gu: str, dong: str) -> str:
