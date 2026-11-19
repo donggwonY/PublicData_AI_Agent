@@ -1,0 +1,147 @@
+{
+ "batch_id": "2026-11-19|E09-vacant-M2-lm_to_2024-11-06-ref2026-11-06",
+ "file_sha256": "249d5ac980091f12a0f0ad8ebe8bb0a980366371c7e7498601981f4c16ef1dca",
+ "rows": 4536,
+ "uids": 4536,
+ "train_rows": 9907,
+ "train_uids": 4410,
+ "train_last_landmark": "2024-11-06",
+ "train_by_landmark": {
+  "90": 3432,
+  "180": 2634,
+  "365": 1830,
+  "730": 1188,
+  "1095": 823
+ },
+ "train_class_share": {
+  "음식점": 0.4026,
+  "카페·제과": 0.1705,
+  "미용·이용": 0.1329,
+  "식품판매": 0.1078,
+  "담배": 0.0585,
+  "오락": 0.0561,
+  "기타": 0.0715
+ },
+ "inputs_sha256": {
+  "asof_episodes_2026": "e3700bbe52b1c975916d24de2dba00c71abf6cfe67fee55e21f30ddfaed25558",
+  "candidate_links": "7a4434fa274fdc5279ecabdee7a02e0d6d15bf4d8a56c1e77147f02204a1fefb",
+  "stores": "48b9789968ce0e1ff65a2fe0d1a93f96c256044c60a5c39660384dd23d78d314",
+  "units": "7f8407306c0ab5ed11774d668a58d39aeb887629c80564f0d1becd4a4cd15870"
+ },
+ "score_mean": {
+  "음식점": 0.3817,
+  "카페·제과": 0.1783,
+  "미용·이용": 0.1498,
+  "식품판매": 0.1298,
+  "담배": 0.0396,
+  "오락": 0.0255,
+  "기타": 0.0953
+ },
+ "typical_mean": {
+  "음식점": 0.3861,
+  "카페·제과": 0.1743,
+  "미용·이용": 0.1324,
+  "식품판매": 0.1125,
+  "담배": 0.0809,
+  "오락": 0.0342,
+  "기타": 0.0795
+ },
+ "top1_counts": {
+  "음식점": 2468,
+  "카페·제과": 607,
+  "미용·이용": 536,
+  "식품판매": 392,
+  "담배": 84,
+  "오락": 53,
+  "기타": 396
+ },
+ "top1_p_quantiles": {
+  "0.1": 0.326,
+  "0.5": 0.522,
+  "0.9": 0.699
+ },
+ "by_band_top1_counts": {
+  "90~180일": {
+   "음식점": 199,
+   "카페·제과": 41,
+   "미용·이용": 30,
+   "식품판매": 36,
+   "담배": 5,
+   "오락": 7,
+   "기타": 25
+  },
+  "180일~1년": {
+   "음식점": 622,
+   "카페·제과": 108,
+   "미용·이용": 133,
+   "식품판매": 84,
+   "담배": 13,
+   "오락": 9,
+   "기타": 87
+  },
+  "1~2년": {
+   "음식점": 834,
+   "카페·제과": 238,
+   "미용·이용": 204,
+   "식품판매": 131,
+   "담배": 29,
+   "오락": 16,
+   "기타": 129
+  },
+  "2~3년": {
+   "음식점": 813,
+   "카페·제과": 220,
+   "미용·이용": 169,
+   "식품판매": 141,
+   "담배": 37,
+   "오락": 21,
+   "기타": 155
+  }
+ },
+ "vs_evaluated_model": {
+  "top1_agree": 0.8183,
+  "mean_abs_diff": 0.0367,
+  "max_abs_diff": 0.4575
+ },
+ "missing_rate_candidates": {
+  "s1_nb_active": 0.0223,
+  "s1_nb_active_same": 0.0223,
+  "s1_nb_open_12m": 0.0223,
+  "s1_nb_close_12m": 0.0223,
+  "s1_nb_net_12m": 0.0223,
+  "s1_nb_net_same_12m": 0.0223,
+  "s1_nb_vacant": 0.0223,
+  "s1_nb_vacancy_rate": 0.0223,
+  "s1_sub_dist_m": 0.0223,
+  "s1_sub_board_12m": 0.0223,
+  "s1_sub_board_yoy": 0.0223,
+  "s1_pop": 0.0004,
+  "s1_pop_2039_share": 0.0004,
+  "s1_pop_60plus_share": 0.0004,
+  "s1_pop_change_12m": 0.0004,
+  "nb_act_share_음식점": 0.0276,
+  "nb_open12_share_음식점": 0.0672,
+  "since_close_open_share_음식점": 0.06,
+  "nb_act_share_카페_제과": 0.0276,
+  "nb_open12_share_카페_제과": 0.0672,
+  "since_close_open_share_카페_제과": 0.06,
+  "nb_act_share_미용_이용": 0.0276,
+  "nb_open12_share_미용_이용": 0.0672,
+  "since_close_open_share_미용_이용": 0.06,
+  "nb_act_share_식품판매": 0.0276,
+  "nb_open12_share_식품판매": 0.0672,
+  "since_close_open_share_식품판매": 0.06,
+  "nb_act_share_담배": 0.0276,
+  "nb_open12_share_담배": 0.0672,
+  "since_close_open_share_담배": 0.06,
+  "nb_act_share_오락": 0.0276,
+  "nb_open12_share_오락": 0.0672,
+  "since_close_open_share_오락": 0.06,
+  "nb_act_share_기타": 0.0276,
+  "nb_open12_share_기타": 0.0672,
+  "since_close_open_share_기타": 0.06,
+  "nb_open12_total": 0.0223,
+  "since_close_open_total": 0.0223,
+  "nb_active_change_since_close": 0.0223
+ }
+}
