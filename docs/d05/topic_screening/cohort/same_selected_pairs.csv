@@ -1,0 +1,4 @@
+model,count,mean
+pooled_three_mature_cohorts,182,0.8021978021978022
+ridge_alpha_100,182,0.8021978021978022
+service_shrink_30,182,0.8021978021978022

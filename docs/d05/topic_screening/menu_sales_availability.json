@@ -1,0 +1,18 @@
+{
+  "prd_id": "PMU_36895107-2d01-4f4b-a1d0-15b84dbc4ba9",
+  "prd_title": "주요상권 단위 메뉴 판매동향 데이터",
+  "prd_source": "나이스지니데이타(주)",
+  "summary_info": "2023년 07월 ~ 2024년 12월 기간 동안 월, 지역(시도, 시군구), 상권, 음식업종(대,중,소), 메뉴별 매출액, 판매건수, 판매단가 집계 데이터.\n단위별 데이터 커스터마이징이 필요할 경우 문의 바랍니다.",
+  "prd_charge": 40000000,
+  "prd_update_date": "2025-08-21",
+  "sample_data": "FILE_000000000020696",
+  "data_file_format": "CSV",
+  "options": [
+    {
+      "name": "주요상권 단위 메뉴 판매동향 데이터",
+      "charge": 40000000
+    }
+  ],
+  "checked_date": "2026-11-18",
+  "source": "https://kadx.co.kr/opmk/frn/pmumkproductDetail/PMU_36895107-2d01-4f4b-a1d0-15b84dbc4ba9/5"
+}

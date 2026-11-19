@@ -1,0 +1,61 @@
+{
+  "scope": "Brands with positive count at t-2 and observed t-3; target t counts, two-year change from latest available, NOT t-1 to t annual change. Missing target excluded and counted separately; observed zero retained.",
+  "annual": [
+    {
+      "year": 2019,
+      "eligible": 1056,
+      "missing_target_rows": 234,
+      "increase": 255,
+      "unchanged": 347,
+      "decrease": 454
+    },
+    {
+      "year": 2020,
+      "eligible": 1127,
+      "missing_target_rows": 220,
+      "increase": 275,
+      "unchanged": 399,
+      "decrease": 453
+    },
+    {
+      "year": 2021,
+      "eligible": 1222,
+      "missing_target_rows": 174,
+      "increase": 289,
+      "unchanged": 438,
+      "decrease": 495
+    },
+    {
+      "year": 2022,
+      "eligible": 1369,
+      "missing_target_rows": 259,
+      "increase": 338,
+      "unchanged": 475,
+      "decrease": 556
+    },
+    {
+      "year": 2023,
+      "eligible": 1469,
+      "missing_target_rows": 350,
+      "increase": 353,
+      "unchanged": 502,
+      "decrease": 614
+    },
+    {
+      "year": 2024,
+      "eligible": 1655,
+      "missing_target_rows": 246,
+      "increase": 354,
+      "unchanged": 553,
+      "decrease": 748
+    },
+    {
+      "year": 2025,
+      "eligible": 1433,
+      "missing_target_rows": 526,
+      "increase": 245,
+      "unchanged": 528,
+      "decrease": 660
+    }
+  ]
+}

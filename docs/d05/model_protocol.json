@@ -1,0 +1,32 @@
+{
+  "created": "2026-11-17",
+  "target": "Next-year upper-floor share among unambiguous floor-known new primary permits",
+  "unit": "gu x source service x opening year",
+  "source": "shared app.stores current v6, 2010-2025",
+  "train_target_start": 2015,
+  "evaluation_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "selection": "prior 3 years known >=60 and known/all >=0.8; past only; test n>0 required to measure share, report exclusions",
+  "models": [
+    "previous year proportion",
+    "pooled previous 3 years proportion",
+    "previous 3 years smoothed toward city service proportion, strength 30",
+    "binomial logistic C=1",
+    "hist gradient boosting regression max_iter=100,max_leaf_nodes=7,min_samples_leaf=15,l2=10,learning_rate=.05,random_state=17"
+  ],
+  "features": "past 1/2/3-year proportions, previous3 count and coverage, city service and gu prior3 proportion, gu/service onehot; training-only imputation/scaling",
+  "evaluation": "equal-cell MAE percentage points primary, known-count weighted MAE, aggregated record Brier, yearly, service-level; paired gu/service cluster bootstrap 2000 for model minus 3y baseline",
+  "decision": "exploratory; do not adopt unless both MAEs improve across all six years and paired primary interval below zero; compare all baselines, do not tune on evaluation",
+  "caveats": [
+    "2025 aggregate already seen, not untouched test",
+    "latest-address historical uncertainty",
+    "not success or site suitability",
+    "no app update"
+  ]
+}

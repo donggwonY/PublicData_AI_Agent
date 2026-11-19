@@ -1,0 +1,122 @@
+{
+  "files": [
+    {
+      "file": "임대동향 지역별 임대료(2019년)_소규모 상가.csv",
+      "sha256": "d6a8c66272ae98024c85f1c6be309adf6e07acb57b06c062a1f27d190ec17d74",
+      "quarters": [
+        "2019년 1분기",
+        "2019년 2분기",
+        "2019년 3분기",
+        "2019년 4분기"
+      ],
+      "daegu_rows": 9
+    },
+    {
+      "file": "임대동향 지역별 임대료(2020년)_소규모 상가.csv",
+      "sha256": "62aad18e01388393356ba0200691cf319d5cba29b59793b9e07864c98403482a",
+      "quarters": [
+        "2020년 1분기",
+        "2020년 2분기",
+        "2020년 3분기",
+        "2020년 4분기"
+      ],
+      "daegu_rows": 11
+    },
+    {
+      "file": "임대동향 지역별 임대료(2021년)_소규모 상가.csv",
+      "sha256": "257e65005d23d5dbf7094e1bb89761cc881024395986d0126ab913d3b623ad35",
+      "quarters": [
+        "2021년 1분기",
+        "2021년 2분기",
+        "2021년 3분기",
+        "2021년 4분기"
+      ],
+      "daegu_rows": 13
+    },
+    {
+      "file": "임대동향 지역별 임대료(2022년~)_소규모 상가.csv",
+      "sha256": "00924e3308ea45eb37903eb7998cdd5360566c560f0857cfc2cc48ee22d6c359",
+      "quarters": [
+        "2022년 1분기",
+        "2022년 2분기",
+        "2022년 3분기",
+        "2022년 4분기",
+        "2023년 1분기",
+        "2023년 2분기",
+        "2023년 3분기",
+        "2023년 4분기",
+        "2024년 1분기",
+        "2024년 2분기"
+      ],
+      "daegu_rows": 12
+    },
+    {
+      "file": "임대동향 지역별 임대료(2024년3분기~)_소규모 상가.csv",
+      "sha256": "6a98fca77de088c709ca8c1f50ba8ba4f905690dd7dc5836884a7949189c4048",
+      "quarters": [
+        "2024년 3분기",
+        "2024년 4분기",
+        "2025년 1분기",
+        "2025년 2분기",
+        "2025년 3분기",
+        "2025년 4분기",
+        "2026년 1분기",
+        "2026년 2분기"
+      ],
+      "daegu_rows": 14
+    }
+  ],
+  "metrics": [
+    {
+      "file": "임대동향 지역별 임대료(2022년~)_소규모 상가.csv",
+      "model": "four_quarter_linear",
+      "n": 72,
+      "mae": 0.10624999999999998
+    },
+    {
+      "file": "임대동향 지역별 임대료(2022년~)_소규모 상가.csv",
+      "model": "four_quarter_mean",
+      "n": 72,
+      "mae": 0.1281250000000001
+    },
+    {
+      "file": "임대동향 지역별 임대료(2022년~)_소규모 상가.csv",
+      "model": "last_quarter",
+      "n": 72,
+      "mae": 0.06111111111111107
+    },
+    {
+      "file": "임대동향 지역별 임대료(2022년~)_소규모 상가.csv",
+      "model": "same_quarter_last_year",
+      "n": 72,
+      "mae": 0.20138888888888898
+    },
+    {
+      "file": "임대동향 지역별 임대료(2024년3분기~)_소규모 상가.csv",
+      "model": "four_quarter_linear",
+      "n": 56,
+      "mae": 0.051785714285714386
+    },
+    {
+      "file": "임대동향 지역별 임대료(2024년3분기~)_소규모 상가.csv",
+      "model": "four_quarter_mean",
+      "n": 56,
+      "mae": 0.10937499999999988
+    },
+    {
+      "file": "임대동향 지역별 임대료(2024년3분기~)_소규모 상가.csv",
+      "model": "last_quarter",
+      "n": 56,
+      "mae": 0.03571428571428565
+    },
+    {
+      "file": "임대동향 지역별 임대료(2024년3분기~)_소규모 상가.csv",
+      "model": "same_quarter_last_year",
+      "n": 56,
+      "mae": 0.18749999999999994
+    }
+  ],
+  "unit": "thousand KRW per square metre",
+  "scope": "Exploratory current-vintage within-file backtest; no historical release/vintage validation, no independent final holdout; rows may include regional aggregates and are not independent",
+  "rule": "Four prior quarters only; fixed models; never join files across redesign boundaries"
+}

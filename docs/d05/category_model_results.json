@@ -1,0 +1,480 @@
+{
+  "overall": {
+    "blend30": {
+      "cells": 479,
+      "known": 21679,
+      "mae_pp": 6.62943645240468,
+      "weighted_mae_pp": 4.711545870452447
+    },
+    "boosting": {
+      "cells": 479,
+      "known": 21679,
+      "mae_pp": 6.976819022426055,
+      "weighted_mae_pp": 5.043014424691224
+    },
+    "city_shrink": {
+      "cells": 479,
+      "known": 21679,
+      "mae_pp": 6.6413234849574305,
+      "weighted_mae_pp": 4.738131601750197
+    },
+    "detail3": {
+      "cells": 479,
+      "known": 21679,
+      "mae_pp": 6.7329070636639905,
+      "weighted_mae_pp": 4.7868518634546176
+    },
+    "logistic": {
+      "cells": 479,
+      "known": 21679,
+      "mae_pp": 6.723798268063761,
+      "weighted_mae_pp": 4.867016866642058
+    },
+    "recency": {
+      "cells": 479,
+      "known": 21679,
+      "mae_pp": 6.7367613452992465,
+      "weighted_mae_pp": 4.796535232720047
+    },
+    "residual_ridge": {
+      "cells": 479,
+      "known": 21679,
+      "mae_pp": 6.720983196968894,
+      "weighted_mae_pp": 4.74909215060059
+    }
+  },
+  "annual": [
+    {
+      "year": 2020,
+      "model": "blend30",
+      "cells": 64,
+      "known": 3066,
+      "mae_pp": 7.880191606792848,
+      "weighted_mae_pp": 4.661047082529468
+    },
+    {
+      "year": 2020,
+      "model": "boosting",
+      "cells": 64,
+      "known": 3066,
+      "mae_pp": 8.955560646734474,
+      "weighted_mae_pp": 5.882908532103781
+    },
+    {
+      "year": 2020,
+      "model": "city_shrink",
+      "cells": 64,
+      "known": 3066,
+      "mae_pp": 7.885417928594936,
+      "weighted_mae_pp": 4.773244277577587
+    },
+    {
+      "year": 2020,
+      "model": "detail3",
+      "cells": 64,
+      "known": 3066,
+      "mae_pp": 7.786231689868966,
+      "weighted_mae_pp": 4.714715864631952
+    },
+    {
+      "year": 2020,
+      "model": "logistic",
+      "cells": 64,
+      "known": 3066,
+      "mae_pp": 8.983469575712615,
+      "weighted_mae_pp": 6.240849240461024
+    },
+    {
+      "year": 2020,
+      "model": "recency",
+      "cells": 64,
+      "known": 3066,
+      "mae_pp": 7.904594678040578,
+      "weighted_mae_pp": 4.705716589745159
+    },
+    {
+      "year": 2020,
+      "model": "residual_ridge",
+      "cells": 64,
+      "known": 3066,
+      "mae_pp": 7.996141369626104,
+      "weighted_mae_pp": 4.660229241170713
+    },
+    {
+      "year": 2021,
+      "model": "blend30",
+      "cells": 82,
+      "known": 4122,
+      "mae_pp": 6.817895898288975,
+      "weighted_mae_pp": 5.3114073382942415
+    },
+    {
+      "year": 2021,
+      "model": "boosting",
+      "cells": 82,
+      "known": 4122,
+      "mae_pp": 6.659511414796226,
+      "weighted_mae_pp": 5.373206647711203
+    },
+    {
+      "year": 2021,
+      "model": "city_shrink",
+      "cells": 82,
+      "known": 4122,
+      "mae_pp": 6.421000613359376,
+      "weighted_mae_pp": 5.143308105584084
+    },
+    {
+      "year": 2021,
+      "model": "detail3",
+      "cells": 82,
+      "known": 4122,
+      "mae_pp": 6.8560963037242475,
+      "weighted_mae_pp": 5.313361479930206
+    },
+    {
+      "year": 2021,
+      "model": "logistic",
+      "cells": 82,
+      "known": 4122,
+      "mae_pp": 6.1467164236243095,
+      "weighted_mae_pp": 4.61983031581781
+    },
+    {
+      "year": 2021,
+      "model": "recency",
+      "cells": 82,
+      "known": 4122,
+      "mae_pp": 6.900010912816625,
+      "weighted_mae_pp": 5.097379181677591
+    },
+    {
+      "year": 2021,
+      "model": "residual_ridge",
+      "cells": 82,
+      "known": 4122,
+      "mae_pp": 6.62000772741928,
+      "weighted_mae_pp": 4.816514835637868
+    },
+    {
+      "year": 2022,
+      "model": "blend30",
+      "cells": 85,
+      "known": 3898,
+      "mae_pp": 5.945099431900978,
+      "weighted_mae_pp": 3.9818175189066856
+    },
+    {
+      "year": 2022,
+      "model": "boosting",
+      "cells": 85,
+      "known": 3898,
+      "mae_pp": 6.280130049069345,
+      "weighted_mae_pp": 4.299611929908958
+    },
+    {
+      "year": 2022,
+      "model": "city_shrink",
+      "cells": 85,
+      "known": 3898,
+      "mae_pp": 5.632004062989641,
+      "weighted_mae_pp": 3.929642744944923
+    },
+    {
+      "year": 2022,
+      "model": "detail3",
+      "cells": 85,
+      "known": 3898,
+      "mae_pp": 6.0719890126100555,
+      "weighted_mae_pp": 4.067037250166602
+    },
+    {
+      "year": 2022,
+      "model": "logistic",
+      "cells": 85,
+      "known": 3898,
+      "mae_pp": 5.775881653898513,
+      "weighted_mae_pp": 4.144228408904293
+    },
+    {
+      "year": 2022,
+      "model": "recency",
+      "cells": 85,
+      "known": 3898,
+      "mae_pp": 6.019584870565108,
+      "weighted_mae_pp": 4.147106101530094
+    },
+    {
+      "year": 2022,
+      "model": "residual_ridge",
+      "cells": 85,
+      "known": 3898,
+      "mae_pp": 5.871019719493968,
+      "weighted_mae_pp": 4.238214557839632
+    },
+    {
+      "year": 2023,
+      "model": "blend30",
+      "cells": 84,
+      "known": 3935,
+      "mae_pp": 7.096559989438085,
+      "weighted_mae_pp": 5.01576834293023
+    },
+    {
+      "year": 2023,
+      "model": "boosting",
+      "cells": 84,
+      "known": 3935,
+      "mae_pp": 6.897083671701688,
+      "weighted_mae_pp": 5.128976038417453
+    },
+    {
+      "year": 2023,
+      "model": "city_shrink",
+      "cells": 84,
+      "known": 3935,
+      "mae_pp": 7.151565115588428,
+      "weighted_mae_pp": 5.033525670521288
+    },
+    {
+      "year": 2023,
+      "model": "detail3",
+      "cells": 84,
+      "known": 3935,
+      "mae_pp": 7.051023785284849,
+      "weighted_mae_pp": 4.973062165658284
+    },
+    {
+      "year": 2023,
+      "model": "logistic",
+      "cells": 84,
+      "known": 3935,
+      "mae_pp": 7.266951544242488,
+      "weighted_mae_pp": 5.2229973281272315
+    },
+    {
+      "year": 2023,
+      "model": "recency",
+      "cells": 84,
+      "known": 3935,
+      "mae_pp": 6.858974560187872,
+      "weighted_mae_pp": 5.019339200073288
+    },
+    {
+      "year": 2023,
+      "model": "residual_ridge",
+      "cells": 84,
+      "known": 3935,
+      "mae_pp": 7.027287522651214,
+      "weighted_mae_pp": 5.087562410198395
+    },
+    {
+      "year": 2024,
+      "model": "blend30",
+      "cells": 79,
+      "known": 3489,
+      "mae_pp": 5.297508120973959,
+      "weighted_mae_pp": 4.248672199577664
+    },
+    {
+      "year": 2024,
+      "model": "boosting",
+      "cells": 79,
+      "known": 3489,
+      "mae_pp": 5.798586781076721,
+      "weighted_mae_pp": 4.383590935523663
+    },
+    {
+      "year": 2024,
+      "model": "city_shrink",
+      "cells": 79,
+      "known": 3489,
+      "mae_pp": 5.697219889579414,
+      "weighted_mae_pp": 4.506844915933585
+    },
+    {
+      "year": 2024,
+      "model": "detail3",
+      "cells": 79,
+      "known": 3489,
+      "mae_pp": 5.775190481755201,
+      "weighted_mae_pp": 4.630202731835074
+    },
+    {
+      "year": 2024,
+      "model": "logistic",
+      "cells": 79,
+      "known": 3489,
+      "mae_pp": 5.581409958881401,
+      "weighted_mae_pp": 4.407714009218706
+    },
+    {
+      "year": 2024,
+      "model": "recency",
+      "cells": 79,
+      "known": 3489,
+      "mae_pp": 5.911761433369205,
+      "weighted_mae_pp": 4.731065691820833
+    },
+    {
+      "year": 2024,
+      "model": "residual_ridge",
+      "cells": 79,
+      "known": 3489,
+      "mae_pp": 5.779853777844958,
+      "weighted_mae_pp": 4.570661720777658
+    },
+    {
+      "year": 2025,
+      "model": "blend30",
+      "cells": 85,
+      "known": 3169,
+      "mae_pp": 6.966502374424451,
+      "weighted_mae_pp": 5.009599589649484
+    },
+    {
+      "year": 2025,
+      "model": "boosting",
+      "cells": 85,
+      "known": 3169,
+      "mae_pp": 7.663600659281011,
+      "weighted_mae_pp": 5.334615829468419
+    },
+    {
+      "year": 2025,
+      "model": "city_shrink",
+      "cells": 85,
+      "known": 3169,
+      "mae_pp": 7.299681943867569,
+      "weighted_mae_pp": 5.059456984248405
+    },
+    {
+      "year": 2025,
+      "model": "detail3",
+      "cells": 85,
+      "known": 3169,
+      "mae_pp": 7.057631133454188,
+      "weighted_mae_pp": 4.998446996595594
+    },
+    {
+      "year": 2025,
+      "model": "logistic",
+      "cells": 85,
+      "known": 3169,
+      "mae_pp": 7.052015456121963,
+      "weighted_mae_pp": 4.812074255798365
+    },
+    {
+      "year": 2025,
+      "model": "recency",
+      "cells": 85,
+      "known": 3169,
+      "mae_pp": 7.0631294101505455,
+      "weighted_mae_pp": 5.087332194474162
+    },
+    {
+      "year": 2025,
+      "model": "residual_ridge",
+      "cells": 85,
+      "known": 3169,
+      "mae_pp": 7.280235218049499,
+      "weighted_mae_pp": 5.151932645174714
+    }
+  ],
+  "paired_vs_detail3": {
+    "blend30": {
+      "delta_pp": -0.10347061125930983,
+      "ci95": [
+        -0.2700099234656914,
+        0.06648794132685042
+      ],
+      "better_years": 4
+    },
+    "boosting": {
+      "delta_pp": 0.2439119587620649,
+      "ci95": [
+        -0.1576979906955929,
+        0.7032395046109183
+      ],
+      "better_years": 2
+    },
+    "city_shrink": {
+      "delta_pp": -0.09158357870655925,
+      "ci95": [
+        -0.2778336093176995,
+        0.11159171822808876
+      ],
+      "better_years": 3
+    },
+    "logistic": {
+      "delta_pp": -0.009108795600229471,
+      "ci95": [
+        -0.31675215140253554,
+        0.29125891482414173
+      ],
+      "better_years": 4
+    },
+    "recency": {
+      "delta_pp": 0.0038542816352570342,
+      "ci95": [
+        -0.135123390386081,
+        0.14276422916352782
+      ],
+      "better_years": 2
+    },
+    "residual_ridge": {
+      "delta_pp": -0.011923866695095715,
+      "ci95": [
+        -0.14484621287176647,
+        0.12152377919256115
+      ],
+      "better_years": 3
+    }
+  },
+  "posthoc_quality_subset": {
+    "blend30": {
+      "cells": 283,
+      "known": 18790,
+      "mae_pp": 5.1735674977849,
+      "weighted_mae_pp": 4.289352016818073
+    },
+    "boosting": {
+      "cells": 283,
+      "known": 18790,
+      "mae_pp": 5.452472902667477,
+      "weighted_mae_pp": 4.581736515972742
+    },
+    "city_shrink": {
+      "cells": 283,
+      "known": 18790,
+      "mae_pp": 5.403945613076692,
+      "weighted_mae_pp": 4.387052035861154
+    },
+    "detail3": {
+      "cells": 283,
+      "known": 18790,
+      "mae_pp": 5.322936717884398,
+      "weighted_mae_pp": 4.376885584876073
+    },
+    "logistic": {
+      "cells": 283,
+      "known": 18790,
+      "mae_pp": 5.392954762802741,
+      "weighted_mae_pp": 4.513333253272503
+    },
+    "recency": {
+      "cells": 283,
+      "known": 18790,
+      "mae_pp": 5.404316498284949,
+      "weighted_mae_pp": 4.405113056696968
+    },
+    "residual_ridge": {
+      "cells": 283,
+      "known": 18790,
+      "mae_pp": 5.338450124212099,
+      "weighted_mae_pp": 4.344277046199759
+    }
+  },
+  "source_hash": "1f235f1b32edacac901d901dd04259b5fc987627563095edb3e72730bb306cf1",
+  "limitations": "Exploratory; previously seen years; latest addresses/category may not match opening time; no multi-comparison correction; posthoc subset not an adoption criterion."
+}

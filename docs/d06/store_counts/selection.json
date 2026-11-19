@@ -1,0 +1,121 @@
+{
+  "baseline": "past_direction",
+  "model": "logistic",
+  "development": {
+    "hgb": {
+      "cells": 2591,
+      "brands": 1602,
+      "accuracy": 0.513315322269394,
+      "balanced_accuracy": 0.4893631374218453,
+      "confusion_decrease_same_increase": [
+        [
+          595,
+          322,
+          134
+        ],
+        [
+          321,
+          541,
+          51
+        ],
+        [
+          281,
+          152,
+          194
+        ]
+      ]
+    },
+    "logistic": {
+      "cells": 2591,
+      "brands": 1602,
+      "accuracy": 0.4870706291007333,
+      "balanced_accuracy": 0.49094432746563427,
+      "confusion_decrease_same_increase": [
+        [
+          395,
+          380,
+          276
+        ],
+        [
+          210,
+          572,
+          131
+        ],
+        [
+          157,
+          175,
+          295
+        ]
+      ]
+    },
+    "past_direction": {
+      "cells": 2591,
+      "brands": 1602,
+      "accuracy": 0.47472018525665766,
+      "balanced_accuracy": 0.49861431500924525,
+      "confusion_decrease_same_increase": [
+        [
+          297,
+          375,
+          379
+        ],
+        [
+          124,
+          550,
+          239
+        ],
+        [
+          68,
+          176,
+          383
+        ]
+      ]
+    },
+    "training_majority": {
+      "cells": 2591,
+      "brands": 1602,
+      "accuracy": 0.4056348900038595,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          1051,
+          0,
+          0
+        ],
+        [
+          913,
+          0,
+          0
+        ],
+        [
+          627,
+          0,
+          0
+        ]
+      ]
+    },
+    "unchanged": {
+      "cells": 2591,
+      "brands": 1602,
+      "accuracy": 0.3523736009262833,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          0,
+          1051,
+          0
+        ],
+        [
+          0,
+          913,
+          0
+        ],
+        [
+          0,
+          627,
+          0
+        ]
+      ]
+    }
+  }
+}

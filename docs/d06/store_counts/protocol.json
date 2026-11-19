@@ -1,0 +1,38 @@
+{
+  "target": "sign(count[t]-count[t-2]); latest available count to target, NOT one-year t-1 to t change",
+  "population": "positive count at t-2; t-3 observed; missing target excluded, observed zero retained",
+  "training": "target labels <= evaluation year-2",
+  "development": [
+    2021,
+    2022
+  ],
+  "evaluation": [
+    2023,
+    2024
+  ],
+  "provisional": [
+    2025
+  ],
+  "primary": "balanced accuracy over decrease/unchanged/increase",
+  "selection": "choose baseline and model on development only",
+  "gate": "at least 0.03 balanced accuracy gain pooled and positive gain in both evaluation years",
+  "limitations": [
+    "historical release dates/vintages unknown",
+    "missing target rows selection bias",
+    "brand count growth is not profit or recommendation"
+  ],
+  "models": {
+    "logistic": {
+      "C": 1,
+      "max_iter": 1000,
+      "class_weight": "balanced"
+    },
+    "hgb": {
+      "max_iter": 100,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 30,
+      "l2_regularization": 10,
+      "learning_rate": 0.05
+    }
+  }
+}

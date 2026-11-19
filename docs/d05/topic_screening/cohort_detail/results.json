@@ -1,0 +1,28 @@
+{
+  "metrics": [
+    {
+      "model": "broad_service_history",
+      "cells": 496,
+      "mae_pp": 5.532309227661253,
+      "weighted_mae_pp": 4.279375466449538
+    },
+    {
+      "model": "detail_shrink30_city_category",
+      "cells": 496,
+      "mae_pp": 5.374579032301356,
+      "weighted_mae_pp": 4.164627334089963
+    },
+    {
+      "model": "detailed_history",
+      "cells": 496,
+      "mae_pp": 5.486351629962268,
+      "weighted_mae_pp": 4.2685486319003045
+    }
+  ],
+  "cluster_difference_ci_pp": [
+    -0.4039910703286919,
+    0.06270609381454138
+  ],
+  "source_sha256": "e011e410c8779e2d5a37c1bce169e56d70efde292e943d92ec5f8338fab24091",
+  "scope": "same target cells for all methods; category split effect, not proven AI gain; previously inspected periods"
+}

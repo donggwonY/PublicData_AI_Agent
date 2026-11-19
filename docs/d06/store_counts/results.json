@@ -1,0 +1,751 @@
+{
+  "baseline": "past_direction",
+  "model": "logistic",
+  "evaluation": {
+    "hgb": {
+      "cells": 3124,
+      "brands": 1873,
+      "accuracy": 0.5236875800256082,
+      "balanced_accuracy": 0.5062524086510997,
+      "confusion_decrease_same_increase": [
+        [
+          654,
+          494,
+          214
+        ],
+        [
+          241,
+          751,
+          63
+        ],
+        [
+          253,
+          223,
+          231
+        ]
+      ]
+    },
+    "logistic": {
+      "cells": 3124,
+      "brands": 1873,
+      "accuracy": 0.499359795134443,
+      "balanced_accuracy": 0.5121080067527033,
+      "confusion_decrease_same_increase": [
+        [
+          477,
+          500,
+          385
+        ],
+        [
+          183,
+          741,
+          131
+        ],
+        [
+          157,
+          208,
+          342
+        ]
+      ]
+    },
+    "past_direction": {
+      "cells": 3124,
+      "brands": 1873,
+      "accuracy": 0.45422535211267606,
+      "balanced_accuracy": 0.4937740054864115,
+      "confusion_decrease_same_increase": [
+        [
+          336,
+          521,
+          505
+        ],
+        [
+          120,
+          637,
+          298
+        ],
+        [
+          77,
+          184,
+          446
+        ]
+      ]
+    },
+    "training_majority": {
+      "cells": 3124,
+      "brands": 1873,
+      "accuracy": 0.4359795134443022,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          1362,
+          0,
+          0
+        ],
+        [
+          1055,
+          0,
+          0
+        ],
+        [
+          707,
+          0,
+          0
+        ]
+      ]
+    },
+    "unchanged": {
+      "cells": 3124,
+      "brands": 1873,
+      "accuracy": 0.33770806658130603,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          0,
+          1362,
+          0
+        ],
+        [
+          0,
+          1055,
+          0
+        ],
+        [
+          0,
+          707,
+          0
+        ]
+      ]
+    }
+  },
+  "annual": [
+    {
+      "year": 2021,
+      "model": "hgb",
+      "cells": 1222,
+      "brands": 1222,
+      "accuracy": 0.5196399345335515,
+      "balanced_accuracy": 0.49014687488878134,
+      "confusion_decrease_same_increase": [
+        [
+          293,
+          143,
+          59
+        ],
+        [
+          157,
+          259,
+          22
+        ],
+        [
+          143,
+          63,
+          83
+        ]
+      ]
+    },
+    {
+      "year": 2021,
+      "model": "logistic",
+      "cells": 1222,
+      "brands": 1222,
+      "accuracy": 0.48527004909983634,
+      "balanced_accuracy": 0.4861768209021373,
+      "confusion_decrease_same_increase": [
+        [
+          184,
+          186,
+          125
+        ],
+        [
+          97,
+          279,
+          62
+        ],
+        [
+          79,
+          80,
+          130
+        ]
+      ]
+    },
+    {
+      "year": 2021,
+      "model": "past_direction",
+      "cells": 1222,
+      "brands": 1222,
+      "accuracy": 0.4844517184942717,
+      "balanced_accuracy": 0.5048289853712425,
+      "confusion_decrease_same_increase": [
+        [
+          155,
+          180,
+          160
+        ],
+        [
+          65,
+          264,
+          109
+        ],
+        [
+          36,
+          80,
+          173
+        ]
+      ]
+    },
+    {
+      "year": 2021,
+      "model": "training_majority",
+      "cells": 1222,
+      "brands": 1222,
+      "accuracy": 0.40507364975450083,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          495,
+          0,
+          0
+        ],
+        [
+          438,
+          0,
+          0
+        ],
+        [
+          289,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "year": 2021,
+      "model": "unchanged",
+      "cells": 1222,
+      "brands": 1222,
+      "accuracy": 0.35842880523731585,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          0,
+          495,
+          0
+        ],
+        [
+          0,
+          438,
+          0
+        ],
+        [
+          0,
+          289,
+          0
+        ]
+      ]
+    },
+    {
+      "year": 2022,
+      "model": "hgb",
+      "cells": 1369,
+      "brands": 1369,
+      "accuracy": 0.5076698319941563,
+      "balanced_accuracy": 0.4884173483387068,
+      "confusion_decrease_same_increase": [
+        [
+          302,
+          179,
+          75
+        ],
+        [
+          164,
+          282,
+          29
+        ],
+        [
+          138,
+          89,
+          111
+        ]
+      ]
+    },
+    {
+      "year": 2022,
+      "model": "logistic",
+      "cells": 1369,
+      "brands": 1369,
+      "accuracy": 0.48867786705624544,
+      "balanced_accuracy": 0.49483472953807617,
+      "confusion_decrease_same_increase": [
+        [
+          211,
+          194,
+          151
+        ],
+        [
+          113,
+          293,
+          69
+        ],
+        [
+          78,
+          95,
+          165
+        ]
+      ]
+    },
+    {
+      "year": 2022,
+      "model": "past_direction",
+      "cells": 1369,
+      "brands": 1369,
+      "accuracy": 0.4660336011687363,
+      "balanced_accuracy": 0.49293424058635366,
+      "confusion_decrease_same_increase": [
+        [
+          142,
+          195,
+          219
+        ],
+        [
+          59,
+          286,
+          130
+        ],
+        [
+          32,
+          96,
+          210
+        ]
+      ]
+    },
+    {
+      "year": 2022,
+      "model": "training_majority",
+      "cells": 1369,
+      "brands": 1369,
+      "accuracy": 0.40613586559532505,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          556,
+          0,
+          0
+        ],
+        [
+          475,
+          0,
+          0
+        ],
+        [
+          338,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "year": 2022,
+      "model": "unchanged",
+      "cells": 1369,
+      "brands": 1369,
+      "accuracy": 0.34696859021183346,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          0,
+          556,
+          0
+        ],
+        [
+          0,
+          475,
+          0
+        ],
+        [
+          0,
+          338,
+          0
+        ]
+      ]
+    },
+    {
+      "year": 2023,
+      "model": "hgb",
+      "cells": 1469,
+      "brands": 1469,
+      "accuracy": 0.517358747447243,
+      "balanced_accuracy": 0.5007022811057431,
+      "confusion_decrease_same_increase": [
+        [
+          301,
+          203,
+          110
+        ],
+        [
+          127,
+          343,
+          32
+        ],
+        [
+          133,
+          104,
+          116
+        ]
+      ]
+    },
+    {
+      "year": 2023,
+      "model": "logistic",
+      "cells": 1469,
+      "brands": 1469,
+      "accuracy": 0.4996596324029952,
+      "balanced_accuracy": 0.5103147832277452,
+      "confusion_decrease_same_increase": [
+        [
+          211,
+          227,
+          176
+        ],
+        [
+          91,
+          350,
+          61
+        ],
+        [
+          84,
+          96,
+          173
+        ]
+      ]
+    },
+    {
+      "year": 2023,
+      "model": "past_direction",
+      "cells": 1469,
+      "brands": 1469,
+      "accuracy": 0.4622191967324711,
+      "balanced_accuracy": 0.4939852662689894,
+      "confusion_decrease_same_increase": [
+        [
+          160,
+          221,
+          233
+        ],
+        [
+          62,
+          296,
+          144
+        ],
+        [
+          32,
+          98,
+          223
+        ]
+      ]
+    },
+    {
+      "year": 2023,
+      "model": "training_majority",
+      "cells": 1469,
+      "brands": 1469,
+      "accuracy": 0.4179714091218516,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          614,
+          0,
+          0
+        ],
+        [
+          502,
+          0,
+          0
+        ],
+        [
+          353,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "year": 2023,
+      "model": "unchanged",
+      "cells": 1469,
+      "brands": 1469,
+      "accuracy": 0.3417290673927842,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          0,
+          614,
+          0
+        ],
+        [
+          0,
+          502,
+          0
+        ],
+        [
+          0,
+          353,
+          0
+        ]
+      ]
+    },
+    {
+      "year": 2024,
+      "model": "hgb",
+      "cells": 1655,
+      "brands": 1655,
+      "accuracy": 0.5293051359516616,
+      "balanced_accuracy": 0.5115259141566296,
+      "confusion_decrease_same_increase": [
+        [
+          353,
+          291,
+          104
+        ],
+        [
+          114,
+          408,
+          31
+        ],
+        [
+          120,
+          119,
+          115
+        ]
+      ]
+    },
+    {
+      "year": 2024,
+      "model": "logistic",
+      "cells": 1655,
+      "brands": 1655,
+      "accuracy": 0.4990936555891239,
+      "balanced_accuracy": 0.513356181478397,
+      "confusion_decrease_same_increase": [
+        [
+          266,
+          273,
+          209
+        ],
+        [
+          92,
+          391,
+          70
+        ],
+        [
+          73,
+          112,
+          169
+        ]
+      ]
+    },
+    {
+      "year": 2024,
+      "model": "past_direction",
+      "cells": 1655,
+      "brands": 1655,
+      "accuracy": 0.4471299093655589,
+      "balanced_accuracy": 0.49395804950028355,
+      "confusion_decrease_same_increase": [
+        [
+          176,
+          300,
+          272
+        ],
+        [
+          58,
+          341,
+          154
+        ],
+        [
+          45,
+          86,
+          223
+        ]
+      ]
+    },
+    {
+      "year": 2024,
+      "model": "training_majority",
+      "cells": 1655,
+      "brands": 1655,
+      "accuracy": 0.45196374622356494,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          748,
+          0,
+          0
+        ],
+        [
+          553,
+          0,
+          0
+        ],
+        [
+          354,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "year": 2024,
+      "model": "unchanged",
+      "cells": 1655,
+      "brands": 1655,
+      "accuracy": 0.3341389728096677,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          0,
+          748,
+          0
+        ],
+        [
+          0,
+          553,
+          0
+        ],
+        [
+          0,
+          354,
+          0
+        ]
+      ]
+    },
+    {
+      "year": 2025,
+      "model": "hgb",
+      "cells": 1433,
+      "brands": 1433,
+      "accuracy": 0.5450104675505931,
+      "balanced_accuracy": 0.4956606885178314,
+      "confusion_decrease_same_increase": [
+        [
+          349,
+          254,
+          57
+        ],
+        [
+          132,
+          368,
+          28
+        ],
+        [
+          103,
+          78,
+          64
+        ]
+      ]
+    },
+    {
+      "year": 2025,
+      "model": "logistic",
+      "cells": 1433,
+      "brands": 1433,
+      "accuracy": 0.5122121423586881,
+      "balanced_accuracy": 0.5135616367759225,
+      "confusion_decrease_same_increase": [
+        [
+          261,
+          241,
+          158
+        ],
+        [
+          94,
+          359,
+          75
+        ],
+        [
+          58,
+          73,
+          114
+        ]
+      ]
+    },
+    {
+      "year": 2025,
+      "model": "past_direction",
+      "cells": 1433,
+      "brands": 1433,
+      "accuracy": 0.42847173761339846,
+      "balanced_accuracy": 0.47833694083694084,
+      "confusion_decrease_same_increase": [
+        [
+          171,
+          256,
+          233
+        ],
+        [
+          71,
+          289,
+          168
+        ],
+        [
+          31,
+          60,
+          154
+        ]
+      ]
+    },
+    {
+      "year": 2025,
+      "model": "training_majority",
+      "cells": 1433,
+      "brands": 1433,
+      "accuracy": 0.4605722260990928,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          660,
+          0,
+          0
+        ],
+        [
+          528,
+          0,
+          0
+        ],
+        [
+          245,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "year": 2025,
+      "model": "unchanged",
+      "cells": 1433,
+      "brands": 1433,
+      "accuracy": 0.3684577808792743,
+      "balanced_accuracy": 0.3333333333333333,
+      "confusion_decrease_same_increase": [
+        [
+          0,
+          660,
+          0
+        ],
+        [
+          0,
+          528,
+          0
+        ],
+        [
+          0,
+          245,
+          0
+        ]
+      ]
+    }
+  ],
+  "gain": 0.01833400126629181,
+  "gate_passed": false,
+  "source_sha256": "7b0b29fb2f8e5aa992af026211c7fd4769c754d767a98459418340ea146963a0"
+}

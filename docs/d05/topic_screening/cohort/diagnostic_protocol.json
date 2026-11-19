@@ -1,0 +1,12 @@
+{
+  "pairing": "same service and opening year, different gu; all eligible pairs",
+  "ties": "actual ties excluded and counted; prediction ties score 0.5",
+  "fixed_gap_pp": 5,
+  "interval": "90th percentile absolute historical shrink forecast errors, cohort years <= y-2, higher quantile, >=50 calibration cells; pooled descriptive coverage, no conditional guarantee",
+  "history_bands": [
+    60,
+    150,
+    300
+  ],
+  "scope": "post-hoc diagnostic on already inspected years; fixed rules before this diagnostic, no threshold search"
+}

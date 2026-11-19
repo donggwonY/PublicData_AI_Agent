@@ -1,0 +1,12 @@
+{
+  "independent_baseline_check": "passed",
+  "cluster_bootstrap_delta_pp": [
+    -0.1811335137468612,
+    -0.03705923047854769
+  ],
+  "groups": 74,
+  "target_n_median": 65.0,
+  "cells_under_20": 37,
+  "within_5pp": 0.6534653465346535,
+  "within_10pp": 0.8679867986798679
+}

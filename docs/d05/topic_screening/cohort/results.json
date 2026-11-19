@@ -1,0 +1,45 @@
+{
+  "protocol": {
+    "target": "share of an opening-year gu/service cohort with reported closure within 365 days",
+    "asof": "2026-11-06",
+    "evaluation_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "training": "opening years <= forecast year - 2; no partially observed last cohort",
+    "history": "three latest mature opening cohorts",
+    "min_history": 60,
+    "min_target": 1,
+    "models": [
+      "pooled_three_mature_cohorts",
+      "service_shrink_30",
+      "ridge_alpha_100"
+    ],
+    "scope": "Exploratory reuse of previously inspected years; not untouched final test. Current snapshot historical reconstruction. Not individual failure or causal location recommendation."
+  },
+  "source_sha256": "e011e410c8779e2d5a37c1bce169e56d70efde292e943d92ec5f8338fab24091",
+  "source_rows": 114236,
+  "metrics": [
+    {
+      "model": "pooled_three_mature_cohorts",
+      "cells": 303,
+      "mae_pp": 4.984370884101486,
+      "weighted_mae_pp": 3.3726588826379897
+    },
+    {
+      "model": "ridge_alpha_100",
+      "cells": 303,
+      "mae_pp": 5.031241187877271,
+      "weighted_mae_pp": 3.284194986001367
+    },
+    {
+      "model": "service_shrink_30",
+      "cells": 303,
+      "mae_pp": 4.875430276593755,
+      "weighted_mae_pp": 3.3192253641637754
+    }
+  ]
+}

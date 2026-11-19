@@ -1,0 +1,189 @@
+{
+  "overall": {
+    "blended": {
+      "cells": 479,
+      "known": 21679,
+      "mae_pp": 6.62943645240468,
+      "weighted_mae_pp": 4.711545870452447
+    },
+    "broad": {
+      "cells": 479,
+      "known": 21679,
+      "mae_pp": 8.04102886836167,
+      "weighted_mae_pp": 5.923753560701087
+    },
+    "detailed": {
+      "cells": 479,
+      "known": 21679,
+      "mae_pp": 6.7329070636639905,
+      "weighted_mae_pp": 4.7868518634546176
+    }
+  },
+  "annual": [
+    {
+      "year": 2020,
+      "model": "blended",
+      "cells": 64,
+      "known": 3066,
+      "mae_pp": 7.880191606792848,
+      "weighted_mae_pp": 4.661047082529468
+    },
+    {
+      "year": 2020,
+      "model": "broad",
+      "cells": 64,
+      "known": 3066,
+      "mae_pp": 9.856238306823503,
+      "weighted_mae_pp": 6.479694100358365
+    },
+    {
+      "year": 2020,
+      "model": "detailed",
+      "cells": 64,
+      "known": 3066,
+      "mae_pp": 7.786231689868966,
+      "weighted_mae_pp": 4.714715864631952
+    },
+    {
+      "year": 2021,
+      "model": "blended",
+      "cells": 82,
+      "known": 4122,
+      "mae_pp": 6.817895898288975,
+      "weighted_mae_pp": 5.3114073382942415
+    },
+    {
+      "year": 2021,
+      "model": "broad",
+      "cells": 82,
+      "known": 4122,
+      "mae_pp": 8.427467320805313,
+      "weighted_mae_pp": 6.632301587922759
+    },
+    {
+      "year": 2021,
+      "model": "detailed",
+      "cells": 82,
+      "known": 4122,
+      "mae_pp": 6.8560963037242475,
+      "weighted_mae_pp": 5.313361479930206
+    },
+    {
+      "year": 2022,
+      "model": "blended",
+      "cells": 85,
+      "known": 3898,
+      "mae_pp": 5.945099431900978,
+      "weighted_mae_pp": 3.9818175189066856
+    },
+    {
+      "year": 2022,
+      "model": "broad",
+      "cells": 85,
+      "known": 3898,
+      "mae_pp": 7.3010489632666955,
+      "weighted_mae_pp": 5.415144077643322
+    },
+    {
+      "year": 2022,
+      "model": "detailed",
+      "cells": 85,
+      "known": 3898,
+      "mae_pp": 6.0719890126100555,
+      "weighted_mae_pp": 4.067037250166602
+    },
+    {
+      "year": 2023,
+      "model": "blended",
+      "cells": 84,
+      "known": 3935,
+      "mae_pp": 7.096559989438085,
+      "weighted_mae_pp": 5.01576834293023
+    },
+    {
+      "year": 2023,
+      "model": "broad",
+      "cells": 84,
+      "known": 3935,
+      "mae_pp": 8.547438241555167,
+      "weighted_mae_pp": 6.080516580963611
+    },
+    {
+      "year": 2023,
+      "model": "detailed",
+      "cells": 84,
+      "known": 3935,
+      "mae_pp": 7.051023785284849,
+      "weighted_mae_pp": 4.973062165658284
+    },
+    {
+      "year": 2024,
+      "model": "blended",
+      "cells": 79,
+      "known": 3489,
+      "mae_pp": 5.297508120973959,
+      "weighted_mae_pp": 4.248672199577664
+    },
+    {
+      "year": 2024,
+      "model": "broad",
+      "cells": 79,
+      "known": 3489,
+      "mae_pp": 6.435580539628807,
+      "weighted_mae_pp": 4.875875786101096
+    },
+    {
+      "year": 2024,
+      "model": "detailed",
+      "cells": 79,
+      "known": 3489,
+      "mae_pp": 5.775190481755201,
+      "weighted_mae_pp": 4.630202731835074
+    },
+    {
+      "year": 2025,
+      "model": "blended",
+      "cells": 85,
+      "known": 3169,
+      "mae_pp": 6.966502374424451,
+      "weighted_mae_pp": 5.009599589649484
+    },
+    {
+      "year": 2025,
+      "model": "broad",
+      "cells": 85,
+      "known": 3169,
+      "mae_pp": 8.033134343570838,
+      "weighted_mae_pp": 6.048901611508458
+    },
+    {
+      "year": 2025,
+      "model": "detailed",
+      "cells": 85,
+      "known": 3169,
+      "mae_pp": 7.057631133454188,
+      "weighted_mae_pp": 4.998446996595594
+    }
+  ],
+  "paired_vs_broad": {
+    "detailed": {
+      "delta_pp": -1.30812180469768,
+      "ci95": [
+        -2.021835909774424,
+        -0.6526305978844351
+      ],
+      "better_years": 6
+    },
+    "blended": {
+      "delta_pp": -1.41159241595699,
+      "ci95": [
+        -2.022609457024597,
+        -0.8442422606429246
+      ],
+      "better_years": 6
+    }
+  },
+  "missing_category_rows": 0,
+  "snapshot_sha256": "d60d2fbb23d8e63869612bc98afd277a90d6a71b488b4f4d7a3ccfaf488b789f",
+  "note": "Same detailed targets for all comparisons. Different target cells from earlier broad experiments; not direct MAE comparison. No independent test or causal interpretation."
+}

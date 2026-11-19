@@ -1,0 +1,22 @@
+{
+  "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "history": "y-4 through y-2",
+  "minimum_mature_history": 60,
+  "target": "365-day closure-report proportion among opening cohorts",
+  "aliases": {
+    "통닭(치킨)": "호프/통닭",
+    "까페": "커피숍"
+  },
+  "methods": [
+    "broad_service_history",
+    "detailed_history",
+    "detail_shrink30_city_category"
+  ],
+  "scope": "same target cells for all methods; category split effect, not proven AI gain; previously inspected periods"
+}

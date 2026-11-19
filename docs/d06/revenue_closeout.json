@@ -1,0 +1,13 @@
+{
+  "initial_rows": 6970,
+  "robust_rows": 5576,
+  "baseline_mape_pct": 26.813697833064342,
+  "baseline_log_error": 0.2423433400779517,
+  "status": "Revenue experiment concluded within current data; prediction service not adopted",
+  "unresolved": [
+    "currency unit",
+    "historical publication dates and revisions",
+    "brand-name mapping",
+    "latest-year completeness"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "scope": "exploratory follow-up after first evaluation; reuse same 160 cells, frozen v6 snapshot",
+  "candidates": {
+    "recent_logistic": "last3 target years, C=.1",
+    "random_forest": "300 trees, min_samples_leaf=10,max_depth=4,seed17,counts weights",
+    "residual_ridge": "predict actual minus past3 proportion, alpha100, counts weights normalized mean1",
+    "recency_average": "past3 counts weighted .5,.3,.2",
+    "damped_trend": "past3 + .25*(lag1-lag3), clip01"
+  },
+  "no_hyperparameter_search": true,
+  "metrics": "equal cell and count-weighted MAE; yearly paired, cluster intervals; same targets as prior",
+  "selection": "no outcome-driven removal, no independent holdout claim"
+}

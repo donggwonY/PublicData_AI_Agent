@@ -1,0 +1,403 @@
+{
+  "group_counts": {
+    "stable": 255,
+    "insufficient_history": 161,
+    "changing": 63
+  },
+  "observed_mae_pp": 6.7329070636639905,
+  "constant_rate_noise_example": {
+    "mean_mae_pp": 5.469994466644101,
+    "simulation95": [
+      5.0516977608322255,
+      5.944438426621301
+    ],
+    "caveat": "Fixed fitted past rates treated as truth, independent binomial records. Ignores past estimation uncertainty, clustering and real changes; not a formal stationarity test."
+  },
+  "missing": {
+    "median_width_pp": 6.153846153846155,
+    "p90_width_pp": 20.0,
+    "mean_width_pp": 8.266760640561813,
+    "coverage_below80_cells": 46,
+    "coverage_fell10pp_cells": 55,
+    "spearman_error_vs_abs_coverage_change": -0.022010682533977782
+  },
+  "annual": [
+    {
+      "year": 2020,
+      "cells": 64,
+      "mean_abs_change_from_past_pp": 7.786231689868966,
+      "mean_missing_width_pp": 7.291869270421227,
+      "known_coverage_pct": 93.36175395858709
+    },
+    {
+      "year": 2021,
+      "cells": 82,
+      "mean_abs_change_from_past_pp": 6.856096303724245,
+      "mean_missing_width_pp": 9.651875171165694,
+      "known_coverage_pct": 90.71302816901408
+    },
+    {
+      "year": 2022,
+      "cells": 85,
+      "mean_abs_change_from_past_pp": 6.0719890126100555,
+      "mean_missing_width_pp": 8.300316039995025,
+      "known_coverage_pct": 91.45940872829658
+    },
+    {
+      "year": 2023,
+      "cells": 84,
+      "mean_abs_change_from_past_pp": 7.051023785284849,
+      "mean_missing_width_pp": 8.448435476608266,
+      "known_coverage_pct": 92.5229249941218
+    },
+    {
+      "year": 2024,
+      "cells": 79,
+      "mean_abs_change_from_past_pp": 5.775190481755201,
+      "mean_missing_width_pp": 8.725275853883481,
+      "known_coverage_pct": 91.8399578836536
+    },
+    {
+      "year": 2025,
+      "cells": 85,
+      "mean_abs_change_from_past_pp": 7.057631133454188,
+      "mean_missing_width_pp": 7.025326042295255,
+      "known_coverage_pct": 93.12371436967382
+    }
+  ],
+  "group_metrics": [
+    {
+      "group": "changing",
+      "model": "blend30",
+      "cells": 63,
+      "known": 2707,
+      "mae_pp": 6.802036497571213,
+      "weighted_mae_pp": 5.856756465320758
+    },
+    {
+      "group": "changing",
+      "model": "boosting",
+      "cells": 63,
+      "known": 2707,
+      "mae_pp": 7.1537118440257474,
+      "weighted_mae_pp": 6.5777507277933625
+    },
+    {
+      "group": "changing",
+      "model": "city_shrink",
+      "cells": 63,
+      "known": 2707,
+      "mae_pp": 6.791992450475337,
+      "weighted_mae_pp": 5.914884806140841
+    },
+    {
+      "group": "changing",
+      "model": "detail3",
+      "cells": 63,
+      "known": 2707,
+      "mae_pp": 6.830771486321533,
+      "weighted_mae_pp": 6.101408502950163
+    },
+    {
+      "group": "changing",
+      "model": "logistic",
+      "cells": 63,
+      "known": 2707,
+      "mae_pp": 6.47235412214926,
+      "weighted_mae_pp": 6.321385844799469
+    },
+    {
+      "group": "changing",
+      "model": "recency",
+      "cells": 63,
+      "known": 2707,
+      "mae_pp": 6.752375008687524,
+      "weighted_mae_pp": 6.01260071493645
+    },
+    {
+      "group": "changing",
+      "model": "residual_ridge",
+      "cells": 63,
+      "known": 2707,
+      "mae_pp": 6.62911164374231,
+      "weighted_mae_pp": 5.693550247227981
+    },
+    {
+      "group": "insufficient_history",
+      "model": "blend30",
+      "cells": 161,
+      "known": 2505,
+      "mae_pp": 8.708004845420236,
+      "weighted_mae_pp": 7.947210358295718
+    },
+    {
+      "group": "insufficient_history",
+      "model": "boosting",
+      "cells": 161,
+      "known": 2505,
+      "mae_pp": 9.061560912031,
+      "weighted_mae_pp": 8.312996073358988
+    },
+    {
+      "group": "insufficient_history",
+      "model": "city_shrink",
+      "cells": 161,
+      "known": 2505,
+      "mae_pp": 8.836906155918959,
+      "weighted_mae_pp": 8.360730970063953
+    },
+    {
+      "group": "insufficient_history",
+      "model": "detail3",
+      "cells": 161,
+      "known": 2505,
+      "mae_pp": 9.157294349774297,
+      "weighted_mae_pp": 8.582685341532597
+    },
+    {
+      "group": "insufficient_history",
+      "model": "logistic",
+      "cells": 161,
+      "known": 2505,
+      "mae_pp": 8.633534354393392,
+      "weighted_mae_pp": 7.969964243312134
+    },
+    {
+      "group": "insufficient_history",
+      "model": "recency",
+      "cells": 161,
+      "known": 2505,
+      "mae_pp": 9.035943488126165,
+      "weighted_mae_pp": 8.534804744123333
+    },
+    {
+      "group": "insufficient_history",
+      "model": "residual_ridge",
+      "cells": 161,
+      "known": 2505,
+      "mae_pp": 8.870980392408537,
+      "weighted_mae_pp": 8.203200029912564
+    },
+    {
+      "group": "stable",
+      "model": "blend30",
+      "cells": 255,
+      "known": 16467,
+      "mae_pp": 5.274443063694891,
+      "weighted_mae_pp": 4.031068271475347
+    },
+    {
+      "group": "stable",
+      "model": "boosting",
+      "cells": 255,
+      "known": 16467,
+      "mae_pp": 5.616867289143007,
+      "weighted_mae_pp": 4.293282524380892
+    },
+    {
+      "group": "stable",
+      "model": "city_shrink",
+      "cells": 255,
+      "known": 16467,
+      "mae_pp": 5.217868760045925,
+      "weighted_mae_pp": 3.993607259616754
+    },
+    {
+      "group": "stable",
+      "model": "detail3",
+      "cells": 255,
+      "known": 16467,
+      "mae_pp": 5.178037213894638,
+      "weighted_mae_pp": 3.9933213062371653
+    },
+    {
+      "group": "stable",
+      "model": "logistic",
+      "cells": 255,
+      "known": 16467,
+      "mae_pp": 5.5801648221560844,
+      "weighted_mae_pp": 4.155906160233444
+    },
+    {
+      "group": "stable",
+      "model": "recency",
+      "cells": 255,
+      "known": 16467,
+      "mae_pp": 5.281263361814558,
+      "weighted_mae_pp": 4.027952346558327
+    },
+    {
+      "group": "stable",
+      "model": "residual_ridge",
+      "cells": 255,
+      "known": 16467,
+      "mae_pp": 5.386231665155137,
+      "weighted_mae_pp": 4.068385992511876
+    }
+  ],
+  "paired": {
+    "changing/blend30": {
+      "delta_pp": -0.028734988750322064,
+      "ci95": [
+        -0.5717054026095715,
+        0.5971049366772896
+      ],
+      "years_improved": 5,
+      "years": 6
+    },
+    "changing/boosting": {
+      "delta_pp": 0.3229403577042135,
+      "ci95": [
+        -0.8163291963258318,
+        1.5079550061687799
+      ],
+      "years_improved": 3,
+      "years": 6
+    },
+    "changing/city_shrink": {
+      "delta_pp": -0.03877903584619807,
+      "ci95": [
+        -0.6145529663448381,
+        0.6769983409725221
+      ],
+      "years_improved": 4,
+      "years": 6
+    },
+    "changing/logistic": {
+      "delta_pp": -0.35841736417227416,
+      "ci95": [
+        -1.3007387575472344,
+        0.6848173787764699
+      ],
+      "years_improved": 4,
+      "years": 6
+    },
+    "changing/recency": {
+      "delta_pp": -0.07839647763400985,
+      "ci95": [
+        -0.6955147958509014,
+        0.5216376088842039
+      ],
+      "years_improved": 3,
+      "years": 6
+    },
+    "changing/residual_ridge": {
+      "delta_pp": -0.20165984257922395,
+      "ci95": [
+        -0.6674204658686214,
+        0.3152935023207542
+      ],
+      "years_improved": 5,
+      "years": 6
+    },
+    "insufficient_history/blend30": {
+      "delta_pp": -0.44928950435406,
+      "ci95": [
+        -0.8088577350242396,
+        -0.07291416413563902
+      ],
+      "years_improved": 4,
+      "years": 6
+    },
+    "insufficient_history/boosting": {
+      "delta_pp": -0.09573343774329565,
+      "ci95": [
+        -0.8879890723534917,
+        0.9199074338434878
+      ],
+      "years_improved": 4,
+      "years": 6
+    },
+    "insufficient_history/city_shrink": {
+      "delta_pp": -0.3203881938553386,
+      "ci95": [
+        -0.7708111013619396,
+        0.1400072905250705
+      ],
+      "years_improved": 4,
+      "years": 6
+    },
+    "insufficient_history/logistic": {
+      "delta_pp": -0.5237599953809036,
+      "ci95": [
+        -1.1151477648729233,
+        0.09389411198635104
+      ],
+      "years_improved": 4,
+      "years": 6
+    },
+    "insufficient_history/recency": {
+      "delta_pp": -0.12135086164813035,
+      "ci95": [
+        -0.36109766877294364,
+        0.14101610092169253
+      ],
+      "years_improved": 5,
+      "years": 6
+    },
+    "insufficient_history/residual_ridge": {
+      "delta_pp": -0.28631395736575815,
+      "ci95": [
+        -0.5061349984588517,
+        -0.028625428115850497
+      ],
+      "years_improved": 5,
+      "years": 6
+    },
+    "stable/blend30": {
+      "delta_pp": 0.09640584980025318,
+      "ci95": [
+        -0.061648173897606066,
+        0.2869163962975274
+      ],
+      "years_improved": 2,
+      "years": 6
+    },
+    "stable/boosting": {
+      "delta_pp": 0.4388300752483697,
+      "ci95": [
+        0.07027582793928358,
+        0.8642589914280708
+      ],
+      "years_improved": 1,
+      "years": 6
+    },
+    "stable/city_shrink": {
+      "delta_pp": 0.039831546151286666,
+      "ci95": [
+        -0.08955221808180473,
+        0.18699947932792813
+      ],
+      "years_improved": 3,
+      "years": 6
+    },
+    "stable/logistic": {
+      "delta_pp": 0.4021276082614462,
+      "ci95": [
+        0.07528936279262873,
+        0.765657382216361
+      ],
+      "years_improved": 2,
+      "years": 6
+    },
+    "stable/recency": {
+      "delta_pp": 0.10322614791992045,
+      "ci95": [
+        0.00376188858012801,
+        0.20710403429948024
+      ],
+      "years_improved": 1,
+      "years": 6
+    },
+    "stable/residual_ridge": {
+      "delta_pp": 0.20819445126049932,
+      "ci95": [
+        0.03194518849375038,
+        0.40549665633369253
+      ],
+      "years_improved": 1,
+      "years": 6
+    }
+  },
+  "limits": "Diagnostic exploratory reuse. Past groups fixed before scoring. Missing bounds worst case not probability intervals. Latest category/address histories cannot be established by these tables."
+}

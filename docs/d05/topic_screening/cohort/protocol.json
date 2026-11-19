@@ -1,0 +1,21 @@
+{
+  "target": "share of an opening-year gu/service cohort with reported closure within 365 days",
+  "asof": "2026-11-06",
+  "evaluation_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "training": "opening years <= forecast year - 2; no partially observed last cohort",
+  "history": "three latest mature opening cohorts",
+  "min_history": 60,
+  "min_target": 1,
+  "models": [
+    "pooled_three_mature_cohorts",
+    "service_shrink_30",
+    "ridge_alpha_100"
+  ],
+  "scope": "Exploratory reuse of previously inspected years; not untouched final test. Current snapshot historical reconstruction. Not individual failure or causal location recommendation."
+}

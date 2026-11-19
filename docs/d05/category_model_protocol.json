@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-18",
+  "source": "cached shared DB v6 category panel, no refetch",
+  "target": "same 479 detailed gu/service/category/year cells",
+  "training": "2015..year-1, rolling2020..2025, eligible using past3 only",
+  "candidates": [
+    "detail3 baseline",
+    "blend30 baseline",
+    "recent weighted .5/.3/.2 counts",
+    "city-category shrink30",
+    "binomial logistic C=.1",
+    "HistGradientBoostingRegressor 100 trees,7leaves,min15,l2=10,lr=.05,seed17",
+    "residual Ridge alpha100, normalized count weights"
+  ],
+  "features": "past category rates lags1/2/3,3year,coverage,count; parent rate,citycategory rate,gu/service/category onehot; train-only transformations",
+  "decision": "must beat detail3 and blend30 in both MAEs every year and paired cluster interval; no tuning on current results",
+  "diagnostics": "target-count>=20 and coverage>=.8 sensitivity posthoc not primary; bycategory; report worst cells; same targets for all",
+  "status": "exploratory post-results; not fresh heldout"
+}

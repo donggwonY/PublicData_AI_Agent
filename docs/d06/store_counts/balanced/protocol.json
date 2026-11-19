@@ -1,0 +1,35 @@
+{
+  "scope": "exploratory follow-up on reused evaluation years; no independent confirmation",
+  "target": "sign(count[t]-count[t-2]) unchanged",
+  "training": "labels <= t-2",
+  "development": [
+    2021,
+    2022
+  ],
+  "evaluation": [
+    2023,
+    2024
+  ],
+  "provisional": [
+    2025
+  ],
+  "selection": "best baseline and model on development balanced accuracy before evaluation",
+  "baselines": [
+    "past_direction",
+    "size_majority",
+    "size_balanced"
+  ],
+  "models": [
+    "weighted_hgb"
+  ],
+  "size_rule": "last observed count bins 1-2,3-5,6-10,11+; no future inputs",
+  "size_balanced_rule": "training within-bin class frequencies divided by global training class frequencies; fallback global if bin n<30",
+  "hgb": {
+    "max_iter": 100,
+    "max_leaf_nodes": 7,
+    "min_samples_leaf": 30,
+    "l2_regularization": 10,
+    "learning_rate": 0.05
+  },
+  "gate": "gain >=0.03 versus selected baseline and positive in both evaluation years"
+}

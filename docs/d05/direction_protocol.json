@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-18",
+  "scope": "diagnosis, not model tuning",
+  "stability": "descriptive same-pair consecutive-year differences; binomial simulation conditional on fixed past3 proportion and observed n; simulation is illustrative not proof of stationarity",
+  "missing": "current-minus-past known coverage, interval bounds upper/all to (upper+unknown)/all; correlation descriptive, no causal attribution",
+  "past_change_group": "abs(lag1-lag3)>=.10, each of 3 past years >=15 known; other eligible pairs stable or insufficient separately; classification uses past only",
+  "compare": "all previously evaluated models same subgroup; no new fitting; paired gu/service/category bootstrap2000",
+  "decision": "assess continuation without searching thresholds or cherry-picking categories"
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-17",
+  "source": "fixed DB version6, source service plus detailed category",
+  "eval": "2020-2025 rolling",
+  "eligible": "prior3 detailed category floor-known>=30 and coverage>=.8 plus parent original eligibility>=60 and .8; no target-based quality selection",
+  "compare": "same detailed category target: broad gu/service prior3 vs detailed gu/service/category prior3 vs blend detailed prior3 with broad strength30; aliases only existing cafe/chicken merges",
+  "metrics": "equal-cell MAE and count-weighted MAE, paired categorycluster CI; not directly comparable with previous broad-cell MAE",
+  "status": "exploratory after previous results; category historical validity unverified"
+}

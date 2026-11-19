@@ -1,0 +1,7 @@
+model,subset,pairs,actual_ties,accuracy,all_pair_coverage
+pooled_three_mature_cohorts,all,909,18,0.6127946127946128,1.0
+pooled_three_mature_cohorts,predicted_gap_ge_5pp,221,6,0.7441860465116279,0.24312431243124313
+ridge_alpha_100,all,909,18,0.6206509539842873,1.0
+ridge_alpha_100,predicted_gap_ge_5pp,68,0,0.8970588235294118,0.0748074807480748
+service_shrink_30,all,909,18,0.6060606060606061,1.0
+service_shrink_30,predicted_gap_ge_5pp,184,2,0.8021978021978022,0.20242024202420242
