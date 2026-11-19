@@ -88,6 +88,9 @@ class DataStore:
         pf, sa = f.get("population_forecast"), f.get("similar_areas")
         self.population_forecast = pf if pf is not None and len(pf) else None
         self.similar_areas = sa if sa is not None and len(sa) else None
+        # 다음 가게 업종 확률(E-09 2차): 오프라인 LightGBM 결과. 없으면 None → 블록을 보이지 않는다.
+        nt = f.get("next_tenant_scores")
+        self.next_tenant_scores = nt.set_index("uid", drop=False) if nt is not None and len(nt) else None
 
         self.ref = pd.Timestamp(self.meta["reference_date"])          # 분석 기준일
         self.categories = sorted(self.stores["category"].unique())     # 실제 존재하는 업태 목록(입력 검증용)
@@ -466,6 +469,65 @@ def vacancy_outlook(u: pd.Series) -> dict | None:
     }
 
 
+def _josa(word: str, pair: tuple[str, str]) -> str:
+    """받침 여부로 조사 선택(예: ('이', '가'))."""
+    ch = word[-1]
+    has = "가" <= ch <= "힣" and (ord(ch) - 0xAC00) % 28 != 0
+    return word + (pair[0] if has else pair[1])
+
+
+def next_tenant_outlook(u: pd.Series) -> dict | None:
+    """공백 후보 자리에 다음 가게가 '들어온다면' 업종 묶음 확률(E-09 2차). 점수가 없거나 자리 상태·기준일이 다르면 None.
+
+    점수는 오프라인 모델 결과를 읽기만 한다. 좌표가 없는 자리는 주변 변수가 비어 있어 이동표(보통 비율)만 준다.
+    """
+    s = store()
+    nt = s.next_tenant_scores
+    if nt is None or u["uid"] not in nt.index:
+        return None
+    r = nt.loc[u["uid"]]
+    if isinstance(r, pd.DataFrame):
+        r = r.iloc[0]
+    if (str(r["data_reference_date"]) != str(s.ref.date()) or not bool(u["vacant"])
+            or pd.isna(u["vacant_days"]) or int(u["vacant_days"]) != int(r["vacant_days"])):
+        return None
+    no_coords = bool(r["no_coords"])
+    rows = [{"key": k, "group": name, "p": float(r[f"p_{k}"]), "typical": float(r[f"typical_{k}"])}
+            for k, name in C.NEXT_TENANT_GROUPS]
+    src = "typical" if no_coords else "p"
+    ranked = sorted(rows, key=lambda x: -x[src])
+    top3, rest = ranked[:3], sum(x[src] for x in ranked[3:])
+    prev = str(r["prev_group"])
+    lead = top3[0]
+    diff = lead["p"] - lead["typical"]
+    compare = (None if no_coords or abs(diff) < C.NEXT_TENANT_COMPARE_PP else ("높은 편" if diff > 0 else "낮은 편"))
+    typical_sorted = sorted(rows, key=lambda x: -x["typical"])[:3]
+    list_text = ", ".join(f"{x['group']} {pct_text(x[src])}" for x in top3)
+    display = {
+        "if_next_store_opens": (f"앞으로 2년 안에 다음 가게가 들어온다면 업종은 {list_text} 순으로 가능성이 높아요"
+                                f"(나머지 묶음 합 {pct_text(rest)})."
+                                if not no_coords else
+                                f"이 자리는 위치 정보가 없어 모델 대신 직전 업종 기준 보통 비율만 보여 줘요: {list_text}."),
+        "typical_after_same_previous": (f"직전 업종이 {prev}인 대구 빈 자리 뒤에 보통 들어온 비율: "
+                                        + ", ".join(f"{x['group']} {pct_text(x['typical'])}" for x in typical_sorted) + "."),
+        "compare": (None if compare is None else
+                    f"직전 업종이 같은 대구 빈 자리보다 {_josa(lead['group'], ('이', '가'))} 들어올 가능성이 {compare}이에요."),
+        "basis": f"데이터 기준일 {r['data_reference_date']} · 점수 생성 {r['generated']} · 오프라인 예측 모델(E-09)의 저장된 점수",
+    }
+    return {
+        "display": display, "top3": [{"group": x["group"], "p": x[src], "typical": x["typical"]} for x in top3],
+        "rest_p": rest, "by_group": rows, "prev_group": prev, "compare": compare, "no_coords": no_coords,
+        "vacant_days": int(r["vacant_days"]), "reference_date": str(r["data_reference_date"]),
+        "generated": str(r["generated"]), "model_version": str(r["model_version"]),
+        "definition": "앞으로 2년 안에 이 자리에 점포형 42개 업종 가게가 들어온다고 할 때, 그 가게의 업종 묶음(7가지) 확률. "
+                      "들어올지 자체는 재입점 점수(vacancy_outlook)가 답한다.",
+        "caveat": "'들어온다면'이라는 조건이 붙은 확률이라 재입점 확률과 곱하거나 '○○가 들어온다'고 단정하지 않습니다. "
+                  "옷가게·사무실처럼 인허가가 없는 업종은 반영되지 않고, 음식점 안의 세부 업종은 구분하지 않습니다. "
+                  "과거 평가(2022–23년)에서 직전 업종 기준 보통 비율보다 확률 오차가 작았지만(상위 3개 적중 86% vs 83%), "
+                  "연도에 따라 카페 비중을 높거나 낮게 잡는 쏠림이 있었습니다. 업종 추천이나 임대 가능 여부를 뜻하지 않습니다.",
+    }
+
+
 def tenure_vs_daegu(service: str, category: str, years: float | None) -> dict | None:
     """한 가게의 영업기간을 대구 같은 업태(없으면 같은 업종) 가게의 KM 생존곡선 위에 놓는다(2026-11-14).
 
@@ -549,6 +611,7 @@ def get_unit_history(address: str, whole_building: bool = False, max_records: in
         "timeline_truncated": len(timeline) > max_records,
         "other_candidates": res["matches"][1:],
         "vacancy_outlook": None if whole_building else vacancy_outlook(u),
+        "next_tenant_outlook": None if whole_building else next_tenant_outlook(u),
         "floor_note": None if whole_building else res["floor_note"],
         "basis": _basis(definition="같은 자리(건물+층)의 인허가 레코드를 인허가일 순으로 정렬. gap = 직전 폐업일~이번 인허가일(음수는 양도·양수로 인한 중첩)."),
     })

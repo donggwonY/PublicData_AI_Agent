@@ -31,7 +31,8 @@ OPTIONAL = ["poi", "area_context", "legal_admin_map", "station_traffic", "parkin
             "vacancy_scores",  # E-03 공실 재입점 점수(오프라인 모델 결과, docs/e03). DB 에 없으면 None → 카드 숨김
             "competition_forecast",  # E-06 구×업종 앞으로 1년 폐업 예측(오프라인 모델 결과, docs/e06). 없으면 도구가 '없음' 안내
             "population_forecast",   # A-07 행정동×연령대 1년 뒤 거주 인구(docs/a07). 없으면 동네·자리 카드 숨김
-            "similar_areas"]         # A-09 비슷한 동네 5곳(docs/a09). 없으면 카드 숨김
+            "similar_areas",         # A-09 비슷한 동네 5곳(docs/a09). 없으면 카드 숨김
+            "next_tenant_scores"]    # E-09 다음 가게 업종 확률(오프라인 모델 결과, docs/e09). 없으면 블록 숨김
 TABLES = REQUIRED + OPTIONAL
 
 

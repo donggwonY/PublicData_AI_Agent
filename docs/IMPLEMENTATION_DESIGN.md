@@ -139,6 +139,12 @@ service/prediction_review_app.py는 연속 연도 평가 결과를 읽는 별도
 - AI 상담 도구(2026-11-18): `get_resident_outlook(dong, gu=None)`, `find_similar_areas(dong, gu=None, criterion=None)`가 화면용 함수를 감싸 같은 값을 준다. 행정동 이름이 정확하지 않으면 번호 붙은 행정동(범어동 → 범어1~4동)을 모두 찾고, 없으면 법정동→행정동 연결을 쓴다. 인구 도구는 여러 행정동을 각각 요약해 주고(12곳 초과 시 되묻기), 비슷한 동네 도구는 하나를 고르라고 되묻는다. 비교 기준은 말로 받아(예: '30대 비중', '식당' → 음식 업종 비중) 저장된 23개 기준 중 하나로 바꾸고, 못 알아들으면 기준 목록과 함께 되묻는다. 결과에 숫자가 든 완성 문장(display)·basis·caveat를 함께 준다. 30대·0~9세는 forecast_change를 주지 않는다(A-07 표시 규칙). AI 답변 규칙은 `agent.py` 시스템 안내(추정값 단정 금지, 30대·0~9세 증감 예측 금지, 순이동 표현, 70대 이상 사망 포함, 비슷한 동네는 성과 비교 아님). 도구 설명 `core/tool_specs.py`, MCP `mcp_server.py`, 화면 이름 '1년 뒤 거주 인구 조회'·'비슷한 동네 찾기'. DB 변경 없음(v9 값 사용).
 - 데이터 출처: 두 표는 datasource의 선택 표다. `pipeline/load_supabase.py` 표 목록에 추가했다(기본키 admin_code·age_band, admin_code·option·rank). DB(app) 운영 반영(v8)은 별도 요청 시 한다. 그 전까지 공개 앱(DB 모드)은 두 카드를 숨긴다.
 - 2026-11-18 운영 반영(데이터, 전환 전): 공유 DB `app`에 **v8**(v7와 같은 15개 표 + `population_forecast` 1,824행·`similar_areas` 16,790행)을 적재·검증(`validated`). 상한 `--max-db-mb 1500`, 적재 후 1,344MB. 적재 끝에 디스크 95% 도달로 프로젝트가 잠시 읽기 전용이 되어 상태 기록만 실패했고, Supabase 디스크 자동 확장 후 행 수 재확인을 거쳐 `validated`로 기록. 같은 날 `--activate-version 8`로 전환(current v8, v7 retired). 되돌리기는 `--activate-version 7`. 다음 적재 전에는 디스크 여유(대시보드)를 먼저 확인한다.
+- **다음 가게 업종 확률(E-09, 2026-11-19)**: 자리 이력 재입점 카드 아래에 "다음 가게가 들어온다면" 블록을 두었다(화면 안 A).
+  - 계산: 앱에서 하지 않는다. 오프라인 LightGBM(E-09 2차, 예측 시점 ≤ 2024-11-06 재학습)이 현재 공백 후보 4,536곳의 7묶음 확률과 이동표 비교선을 만든다. `scripts/e09_next_tenant/export_service_scores.py`가 SHA·기준일을 확인한 뒤 `data/processed/next_tenant_scores.parquet`로 내보낸다.
+  - 읽기: `core/tools.next_tenant_outlook`이 기준일·공백 일수가 같을 때만 읽는다. 좌표 없는 자리는 이동표만 쓴다. '높은/낮은 편'은 1순위 ±10%p일 때만 쓴다(`config.NEXT_TENANT_COMPARE_PP`).
+  - AI 상담: `get_unit_history`의 `next_tenant_outlook`(display·caveat)으로 같은 값을 받는다. `agent.py` 규칙: '들어온다면' 조건 유지, 재입점 확률과 곱하지 않기, 1순위 단정 금지.
+  - 저장: datasource 선택 표이고 `pipeline/load_supabase.py` 표 목록에 추가했다(기본키 uid). 공개 앱에는 이 표가 든 DB 새 버전 적재·전환 뒤 보인다(요청 시).
+  - 테스트: `tests/test_next_tenant_outlook.py`. 설계: [e09/serve_design.md](e09/serve_design.md).
 - 검사: `tests/test_area_outlook.py`(저장값·표시 규칙·이사 인원 순위·보류·추천 순서·작은 동네·화면 카드와 이동). `service/` 90개 통과.
 
 ## 2026-11-17 구·군 × 업태 앞으로 1년 폐업 예측 도구 (E-06)

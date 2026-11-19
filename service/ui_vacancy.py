@@ -157,3 +157,44 @@ def render_vacancy_outlook(v: dict | None) -> None:
             f"- **한계**: {v['caveat']} 공백 기간 중 주변 변화는 반영하지 않습니다(폐업 후 90일 시점 정보).\n"
             f"- **기준**: 데이터 기준일 {v['reference_date']} · 점수 생성 {v['generated']} · 모델 {v['model_version']}\n"
             "- 공실은 인허가 기준이라 실제 빈 점포와 다를 수 있습니다. 임대 가능 여부나 입지 추천을 뜻하지 않습니다.")
+
+
+def next_tenant_bars_html(v: dict) -> str:
+    """상위 3개 막대(정수 %) + 막대 위 이동표 비교선. 화면 테마와 무관한 중립 색."""
+    rows = []
+    for x in v["top3"]:
+        w = max(0.0, min(100.0, x["p"] * 100))
+        ref = max(0.0, min(100.0, x["typical"] * 100))
+        rows.append(
+            '<div style="display:grid;grid-template-columns:84px 1fr 64px;align-items:center;gap:8px;margin:4px 0">'
+            f'<span>{x["group"]}</span>'
+            '<div style="position:relative;height:12px;border-radius:6px;background:rgba(128,128,128,.22)">'
+            f'<div style="width:{w:.1f}%;height:100%;border-radius:6px;background:#4f7fd1"></div>'
+            + ("" if v["no_coords"] else
+               f'<div title="보통 비율" style="position:absolute;left:{ref:.1f}%;top:-3px;width:2px;height:18px;'
+               'background:currentColor;opacity:.55"></div>')
+            + '</div>'
+            f'<span style="text-align:right">{pct_text(x["p"])}</span></div>')
+    return "".join(rows)
+
+
+def render_next_tenant(v: dict | None) -> None:
+    """재입점 카드 아래 '다음 가게가 들어온다면' 블록(E-09 2차, 화면 안 A)."""
+    if not v:
+        return
+    with st.container(border=True):
+        st.markdown("**다음 가게가 들어온다면, 어떤 업종일까**")
+        st.markdown(next_tenant_bars_html(v), unsafe_allow_html=True)
+        if v["no_coords"]:
+            st.caption("⚠️ 이 자리는 위치 정보가 없어 모델 대신 직전 업종 기준 보통 비율을 보여 줘요.")
+        else:
+            st.caption(f"상위 3개 · 나머지 묶음 합 {pct_text(v['rest_p'])} · 세로선은 {v['display']['typical_after_same_previous']}")
+        if v["display"]["compare"]:
+            st.markdown(v["display"]["compare"])
+        with st.expander("이 숫자는 무엇인가요? (정의 · 근거 · 한계)"):
+            st.markdown(
+                f"- **정의**: {v['definition']}\n"
+                "- **근거**: 2022–23년 이미 비어 있던 자리 1,542건 평가에서 직전 업종 기준 보통 비율보다 확률 오차가 작았어요"
+                "(상위 3개 적중 86% vs 83%). 같은 시기를 앞선 실험에서도 써서 완전히 독립된 평가는 아니에요.\n"
+                f"- **한계**: {v['caveat']}\n"
+                f"- **기준**: 데이터 기준일 {v['reference_date']} · 점수 생성 {v['generated']} · 모델 {v['model_version']}")

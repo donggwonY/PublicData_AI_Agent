@@ -273,6 +273,16 @@ Tool 14종:
 
 자리 이력 조회에서 공백 후보 자리를 고르면 앞으로 1년 재입점 가능성 카드 3개(확률 · 대구 전체 기준 5단계 · 같은 공백 기간 평균 대비)를 보여 줍니다. 점수는 `data/processed/vacancy_scores.parquet`(오프라인 모델 결과, 4,536곳, 기준일 2026-11-06)에서 읽기만 하며 기준일이 다르면 숨깁니다. 현재는 parquet 모드에서만 보이고, 공개 앱(DB 모드)은 운영 반영 전까지 변화가 없습니다. 테스트 `tests/test_vacancy_outlook.py`.
 
+### 다음 가게가 들어온다면 어떤 업종일까 (E-09, 2026-11-19)
+
+자리 이력 조회에서 공백 후보 자리를 고르면 재입점 카드 아래에 "다음 가게가 들어온다면" 업종 묶음 상위 3개 확률 막대와 직전 업종 기준 보통 비율(세로선)을 보여 줍니다(화면 안 A).
+- 점수: `data/processed/next_tenant_scores.parquet`(오프라인 LightGBM 결과, 재입점 점수와 같은 4,536곳, 기준일 2026-11-06)에서 읽기만 합니다. 기준일·공백 일수가 다르면 숨깁니다.
+- 위치 정보가 없는 자리(101곳)는 보통 비율만 보여 줍니다.
+- 1순위 확률이 보통 비율보다 ±10%p 이상일 때만 "높은 편/낮은 편" 문장을 씁니다.
+- AI 상담은 `get_unit_history` 결과의 `next_tenant_outlook`으로 같은 값을 받습니다.
+- 공개 앱(DB 모드)은 이 표가 든 DB 버전을 적재한 뒤에 보입니다.
+- 테스트 `tests/test_next_tenant_outlook.py`. 근거는 `docs/e09/results_vacant.md`, 설계는 `docs/e09/serve_design.md`.
+
 ### 동네·자리: 1년 뒤 거주 인구·비슷한 동네 5곳 (A-07·A-09, 2026-11-18)
 
 상권 둘러보기 › 동네·자리에서 행정동을 고르면 동네 프로필 아래에 '1년 뒤 거주 인구'(A-07, 2026-10 → 2027-10 추정, 주민등록 거주자)와 '비슷한 동네 5곳'(A-09, 업종·연령 구성 등 23개 기준)이 나옵니다(`ui_area_outlook.py`). 30대·0~9세는 증감 대신 최근 1년 실제 변화를 보여 줍니다. '이 동네 보기'를 누르면 그 동네로 이동합니다. 표는 저장소 루트에서 `service/.venv/Scripts/python scripts/area_outlook_export.py`로 `data/processed/population_forecast.parquet`·`similar_areas.parquet`를 만들고 앱은 읽기만 합니다. 공개 앱(DB 모드)은 운영 반영 전까지 두 카드를 숨깁니다. 테스트 `tests/test_area_outlook.py`. 설계: `docs/IMPLEMENTATION_DESIGN.md`.

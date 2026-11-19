@@ -30,7 +30,7 @@ from agent import API_KEY_ENV, create_agent
 from core import tools as T
 from ui_area_outlook import render_population_outlook, render_similar_areas
 from ui_permit_trends import industry_choices, render_permit_trends
-from ui_vacancy import (CANDIDATE_COLS, TIMELINE_COLS, korean_table, render_unit_summary, render_vacancy_outlook,
+from ui_vacancy import (CANDIDATE_COLS, TIMELINE_COLS, korean_table, render_next_tenant, render_unit_summary, render_vacancy_outlook,
                         tenure_sentences)
 from ui_visuals import (ai_markdown, cycle_chart, history_chart, render_tool_result, render_tool_steps, survival_chart, tool_label,
                         _map, metric_value)
@@ -550,6 +550,7 @@ with tab_unit:
             # 요약을 맨 위로(2026-11-14): 지금 상태 → 재입점 카드 → 과거 이력 → 상세 표(접기)
             render_unit_summary(h, whole_building=whole)
             render_vacancy_outlook(h.get("vacancy_outlook"))
+            render_next_tenant(h.get("next_tenant_outlook"))
             st.markdown("#### 이 자리의 과거")
             s = h["summary"]
             c = st.columns(4)

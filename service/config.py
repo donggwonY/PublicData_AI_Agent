@@ -107,6 +107,10 @@ VACANCY_SCORE_LEVEL_OBS = (0.013, 0.024, 0.039, 0.059, 0.111)
 VACANCY_SCORE_LEVEL_NAMES = ("가장 낮은 편", "낮은 편", "중간", "높은 편", "가장 높은 편")
 VACANCY_SCORE_COMPARE = (0.7, 1.3)  # 같은 공백 기간대 평균 대비 이하=낮음, 이상=높음(표시용 구간, 검증 기준 아님)
 VACANCY_SCORE_THIN_DAYS = 730       # 2년 넘은 공백은 평가 사례가 적어 '근거 적음'
+# 다음 가게 업종 확률(E-09 2차, docs/e09/serve_design.md). 점수표 열 키 → 화면 이름(모델 묶음 순서)
+NEXT_TENANT_GROUPS = (("food", "음식점"), ("cafe", "카페·제과"), ("beauty", "미용·이용"), ("food_retail", "식품판매"),
+                      ("tobacco", "담배"), ("entertainment", "오락"), ("other", "기타"))
+NEXT_TENANT_COMPARE_PP = 0.10       # 1순위 묶음 확률이 이동표(보통 비율)보다 ±10%p 이상일 때만 '높은/낮은 편'(표시용, 검증 기준 아님)
 CYCLE_WINDOW_YEARS = 3            # 사이클 판정: 최근 3년 vs 직전 3년
 CYCLE_MIN_EVENTS = 20             # 개·폐업 이벤트가 이보다 적으면 판정 보류
 MIN_GROUP_N = 30                  # 생존곡선 최소 표본

@@ -102,3 +102,22 @@
    - 추천: E-03처럼 재학습 모델
    - 이유: 최신 2022~2024 시점 반영
    - 남는 점: 재학습 모델에는 따로 평가받은 구간이 없다
+
+## 진행 기록
+
+- 2026-11-19 결정(염동권: 추천안대로 진행)
+  - 좌표 없는 자리는 이동표만 보여 준다.
+  - "높은/낮은 편"은 1순위 묶음 ±10%p일 때만 쓴다.
+  - 운영에는 재학습 모델을 쓴다.
+- 2026-11-19 로컬 앱 연결
+  - `export_service_scores.py`로 `service/data/processed/next_tenant_scores.parquet`를 만들었다.
+    - 4,536행으로 재입점 점수와 같은 자리이고, 앱 공백 일수와 100% 일치한다. 좌표 없음은 101곳이다.
+  - 서비스 코드
+    - `core/tools.next_tenant_outlook`
+    - `ui_vacancy.render_next_tenant`(안 A)
+    - `get_unit_history.next_tenant_outlook`
+    - `agent.py` 답변 규칙, `tool_specs` 설명
+    - datasource·loader 표 목록
+  - 테스트: `tests/test_next_tenant_outlook.py` 8개를 추가해 `service/` 102개와 smoke가 통과했다.
+  - 로컬 앱(parquet)에서 남구 대명동 자리 화면을 확인했다: 음식점 45%·카페·제과 25%·미용·이용 19%, 비교선, "높은 편" 문장. 서버 오류는 없었다.
+  - 공유 DB·공개 앱은 아직 바꾸지 않았다.
