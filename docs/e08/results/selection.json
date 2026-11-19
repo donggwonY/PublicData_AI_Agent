@@ -1,0 +1,15 @@
+{
+ "best_baseline": "B1",
+ "best_model": "M2",
+ "params": {
+  "M1": {
+   "C": 0.1
+  },
+  "M2": {
+   "n_estimators": 150,
+   "num_leaves": 7,
+   "min_child_samples": 20
+  }
+ },
+ "panel_sha256": "30b8d006a2fff38e21422528643df7f9a9af8e3085e0467c171eff94c35833f8"
+}
