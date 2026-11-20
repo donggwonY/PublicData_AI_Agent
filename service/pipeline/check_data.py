@@ -48,9 +48,9 @@ UID_JOINS = ["stores", "transitions", "vacancy_scores", "next_tenant_scores"]
 PROB_COLS = {"vacancy_scores": ["p_fill_1y"],
              "next_tenant_scores": ["p_food", "p_cafe", "p_beauty", "p_food_retail", "p_tobacco",
                                     "p_entertainment", "p_other"]}
-# 행정동 미연결 비율. 15업종 v3 1.33%(데이터 계약 3절) → 42종 v5 이후 5.08%(동 결측 11,646건이 대부분,
-# docs/e04/README.md). 지금 수준에서 1%p 넘게 늘면 원인 확인 대상.
-ADMIN_UNMATCHED_WARN = 0.061
+# 행정동 미연결 비율. 15업종 v3 1.33%(데이터 계약 3절) → 42종 v5~v10 5.08%(번지 가림 주소의 동 결측) →
+# E-12 수정 뒤 1.49%(docs/e12/README.md). 지금 수준에서 1%p 넘게 늘면 원인 확인 대상.
+ADMIN_UNMATCHED_WARN = 0.025
 # 확률 합 허용 오차: 결과 표는 반올림해 저장한다(최대 오차 2e-5 관측).
 PROB_SUM_TOL = 1e-3
 # DB 현재 버전과 비교할 때 행 수가 이보다 크게 줄면 경고
@@ -127,8 +127,21 @@ def check_frames(frames: dict[str, pd.DataFrame | None], meta: dict, where: str,
             df = present.get(t)
             if df is None:
                 continue
-            bad = int((~df["uid"].isin(uids)).sum())
-            (rep.fail if bad else rep.ok)(where, f"{t} → units (uid)", f"연결 실패 {bad:,} / {len(df):,}")
+            # 번지가 가려진 인허가(E-12)는 자리 키가 없다. 그 밖의 빈 uid 는 실패로 본다.
+            no_uid = df["uid"].isna()
+            masked = df["addr_masked"].fillna(False).astype(bool) if "addr_masked" in df.columns else no_uid & False
+            bad = int((~df["uid"].isin(uids) & ~(no_uid & masked)).sum())
+            note = f" · 번지 가림(자리 없음) {int((no_uid & masked).sum()):,}" if masked.any() else ""
+            (rep.fail if bad else rep.ok)(where, f"{t} → units (uid)", f"연결 실패 {bad:,} / {len(df):,}{note}")
+
+
+    # 3-1. 번지가 가려진 주소로 만든 가짜 자리 키(E-12): 서로 다른 가게가 한 자리로 합쳐진다
+    for t in ["units"] + UID_JOINS:
+        df = present.get(t)
+        if df is None:
+            continue
+        fake = int(df["uid"].dropna().astype(str).str.contains("*", regex=False).sum())
+        (rep.fail if fake else rep.ok)(where, f"{t} 가려진 번지 자리 키 없음", f"{fake:,}행")
 
     # 4. 행정동 미연결 비율 (stores → legal_admin_map → area_context)
     stores, lam, ac = present.get("stores"), present.get("legal_admin_map"), present.get("area_context")

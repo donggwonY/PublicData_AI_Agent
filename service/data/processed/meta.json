@@ -1,6 +1,6 @@
 {
   "reference_date": "2026-11-06",
-  "built_at": "2026-11-09 22:50:11",
+  "built_at": "2026-11-20 16:58:50",
   "quality": {
     "raw_rows": 299362,
     "duplicates_removed": 0,
@@ -24,6 +24,7 @@
     "non_storefront_excluded": {
       "건강기능식품일반판매업": 11278
     },
+    "address_masked": 11337,
     "address_unparsed": 11640,
     "coord_fill_pct": {
       "건강기능식품일반판매업": 98.0,
@@ -73,28 +74,30 @@
     "occupants": 272128,
     "merged_multi_license_occupants": 11016,
     "short_event_excluded_from_stats": {
-      "occupants": 17161,
-      "licenses": 17899,
+      "occupants": 17023,
+      "licenses": 17761,
       "by_service": {
         "즉석판매제조가공업": 11770,
         "일반음식점": 2294,
         "휴게음식점": 1861,
         "제과점영업": 502,
         "담배소매업": 261,
-        "건강기능식품일반판매업": 135,
         "축산판매업": 133,
         "미용업": 102,
         "이용업": 24,
-        "인터넷컴퓨터게임시설제공업": 17
+        "인터넷컴퓨터게임시설제공업": 17,
+        "약국": 13
       }
-    }
+    },
+    "vacancy_scores_dropped_missing_units": 220,
+    "next_tenant_scores_dropped_missing_units": 220
   },
   "records": {
     "건강기능식품일반판매업": {
       "total": 9577,
       "closed": 7114,
       "active": 2463,
-      "unique_units": 3265,
+      "unique_units": 0,
       "date_min": "2004-02-04",
       "date_max": "2026-11-06"
     },
@@ -158,7 +161,7 @@
       "total": 835,
       "closed": 240,
       "active": 595,
-      "unique_units": 482,
+      "unique_units": 0,
       "date_min": "2018-04-06",
       "date_max": "2026-11-04"
     },
@@ -182,7 +185,7 @@
       "total": 504,
       "closed": 196,
       "active": 308,
-      "unique_units": 338,
+      "unique_units": 0,
       "date_min": "2018-04-07",
       "date_max": "2026-11-04"
     },
@@ -190,7 +193,7 @@
       "total": 421,
       "closed": 305,
       "active": 116,
-      "unique_units": 271,
+      "unique_units": 0,
       "date_min": "2008-02-19",
       "date_max": "2026-10-23"
     },
@@ -430,7 +433,7 @@
       "total": 286896,
       "closed": 202452,
       "active": 84444,
-      "unique_units": 95861
+      "unique_units": 92279
     }
   },
   "records_by_gu": {
@@ -446,14 +449,14 @@
     "님구": 1
   },
   "vacancy_buckets_all_vacant_units": {
-    "10년 이상": 23211,
-    "3~10년": 12747,
-    "1~3년": 4216,
-    "3개월~1년": 1983,
-    "3개월 미만": 644
+    "10년 이상": 22186,
+    "3~10년": 11897,
+    "1~3년": 4032,
+    "3개월~1년": 1907,
+    "3개월 미만": 615
   },
-  "recent_vacancy_units": 6199,
-  "single_unit_ratio_pct": 65.9,
+  "recent_vacancy_units": 5939,
+  "single_unit_ratio_pct": 65.5,
   "max_closures_all_units_top5": [
     {
       "addr": "대구광역시 중구 달구벌대로 2077 지하1층",
@@ -503,12 +506,12 @@
       "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 기타 휴게음식점"
     },
     {
-      "addr": "대구광역시 동구 경안로 722 2층",
+      "addr": "대구광역시 수성구 달구벌대로650길 47 1층",
       "n_closed": 11,
-      "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업"
+      "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
     }
   ],
-  "service_switch_units": 3999,
+  "service_switch_units": 3975,
   "survival_by_decade_1y": [
     {
       "decade": "1980년대",
@@ -522,18 +525,18 @@
     },
     {
       "decade": "2000년대",
-      "n": 91418,
-      "survival_1y_pct": 89.9
+      "n": 91452,
+      "survival_1y_pct": 89.8
     },
     {
       "decade": "2010년대",
-      "n": 76935,
-      "survival_1y_pct": 88.7
+      "n": 76981,
+      "survival_1y_pct": 88.6
     },
     {
       "decade": "2020년대",
-      "n": 48555,
-      "survival_1y_pct": 89.5
+      "n": 48613,
+      "survival_1y_pct": 89.4
     }
   ],
   "params": {

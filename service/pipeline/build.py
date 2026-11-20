@@ -205,6 +205,15 @@ def build_address(df: pd.DataFrame, quality: dict) -> pd.DataFrame:
     dong_j = jb.map(lambda x: (x["eup"] or x["dong"]) if x else None)
     dong_r = rd.map(lambda x: (x["eup"] or x["dong"]) if x else None)
     df["dong"] = dong_j.fillna(dong_r)
+    # 번지가 '*' 로 가려진 주소(E-12, 2026-11-20): 자리는 특정할 수 없지만 구·동은 읽어 가게 단위 집계에 넣는다.
+    # 자리 키(uid)는 main 에서 비운다 → units·전이·공실·자리 이력에서 빠진다.
+    mj, mr = df["지번주소"].map(A.parse_masked), df["도로명주소"].map(A.parse_masked)
+    area = mj.where(mj.notna(), mr)
+    df["addr_masked"] = df["jibun_key"].isna() & df["road_key"].isna() & area.notna()
+    m = df["addr_masked"]
+    df.loc[m, "gu"] = df.loc[m, "gu"].fillna(area[m].map(lambda x: x["gu"]))
+    df.loc[m, "dong"] = df.loc[m, "dong"].fillna(area[m].map(lambda x: x["eup"] or x["dong"]))
+    quality["address_masked"] = int(m.sum())
     df["floor"] = [A.extract_floor(r, j) for r, j in zip(df["도로명주소"], df["지번주소"])]
     df["building_key"] = df["uid"]      # 층을 붙이기 전 = 건물 단위 키 (자리 이력의 '건물 전체 보기'에 쓴다)
     df["uid"] = assign_floor_units(df)  # 최종 자리 키 = 건물 + 층
@@ -518,7 +527,8 @@ def main(argv: list[str] | None = None) -> None:
     df = build_address(df, quality)
 
     keep = ["uid", "building_key", "service", "category", "name", "ld", "cd", "closed", "dur_days", "end", "gu", "dong",
-            "floor", "도로명주소", "지번주소", "road_key", "lat", "lon", "area_m2", "관리번호", "개방자치단체코드"]
+            "floor", "도로명주소", "지번주소", "road_key", "lat", "lon", "area_m2", "관리번호", "개방자치단체코드",
+            "addr_masked"]
     st = df[keep].rename(columns={"도로명주소": "road_addr_raw", "지번주소": "jibun_addr_raw",
                                   "관리번호": "mgmt_no", "개방자치단체코드": "org_code"})
     # 겸업 묶기: stores 에는 인허가 전부를 남기고, 이후 계산은 점유자(occ) 기준으로 한다
@@ -529,8 +539,14 @@ def main(argv: list[str] | None = None) -> None:
     log(f"    겸업 묶기: 인허가 {len(st):,}건 → 가게 {len(occ):,}곳 (2건 이상 묶인 가게 "
         f"{quality['merged_multi_license_occupants']:,}곳)")
 
+    # 번지 가림 인허가는 자리가 없다. 같은 동의 가려진 주소가 한 키로 합쳐져 가짜 자리가 생기던 문제(E-12).
+    # 겸업 묶기(같은 가려진 주소·같은 상호·겹치는 기간)까지는 원래 문자열로 하고, 그 뒤 자리 키를 비운다.
+    for f in (st, occ):
+        f.loc[f["addr_masked"], ["uid", "building_key"]] = None
+    log(f"    번지 가림 인허가 {int(st['addr_masked'].sum()):,}건 → 자리 키 없음(가게 단위 집계에만 포함)")
+
     log("4/8 자리(unit) 집계 · 동시영업 수 계산")
-    units = build_units(occ, ref)
+    units = build_units(occ[occ["uid"].notna()], ref)
     # 단기 행사 등록(2026-11-09): 다점포 자리(백화점·마트 식품관 등)에서 30일 이내 폐업한 가게.
     # 행사·팝업 판매대라 생존·사이클·개폐업 통계에서는 빼고, 자리 이력에는 표시와 함께 남긴다.
     occ, st = flag_short_events(occ, st, units)
@@ -587,6 +603,17 @@ def main(argv: list[str] | None = None) -> None:
     area_year.to_parquet(out_dir / "area_year.parquet", index=False)
     surv.to_parquet(out_dir / "survival.parquet", index=False)
     vac.to_parquet(out_dir / "vacancy_area.parquet", index=False)
+    # 오프라인 모델 결과 표(E-03 공실 점수·E-09 다음 업종)는 이 배치가 만들지 않는다. 새 units 에 없는 자리
+    # (예: E-12 로 없앤 번지 가림 가짜 자리)는 다시 학습하지 않고 행만 뺀다.
+    for t in ("vacancy_scores", "next_tenant_scores"):
+        p = out_dir / f"{t}.parquet"
+        if p.exists():
+            sc = pd.read_parquet(p)
+            ok = sc["uid"].isin(units["uid"])
+            if not ok.all():
+                sc[ok].to_parquet(p, index=False)
+                log(f"    {t}: units 에 없는 자리 {int((~ok).sum()):,}행 제외 → {int(ok.sum()):,}행")
+            meta["quality"][f"{t}_dropped_missing_units"] = int((~ok).sum())
     (out_dir / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2, default=str),
                                                encoding="utf-8")
     log(f"완료 ({time.time() - t_start:.0f}초) → {out_dir}")

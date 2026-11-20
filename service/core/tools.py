@@ -321,7 +321,7 @@ def _find_units(q: str) -> tuple[pd.DataFrame, str | None]:
                 m &= hay.str.contains(t, regex=False)
         hits, method = u.index[m], "주소 토큰 포함 검색"
     if hits.empty and len(q) >= 2:
-        uids = s.stores.loc[s.stores["name"].str.contains(q, regex=False), "uid"].unique()
+        uids = s.stores.loc[s.stores["name"].str.contains(q, regex=False), "uid"].dropna().unique()  # 번지 가림은 자리 없음
         hits, method = pd.Index(uids), "상호명 검색(과거 상호 포함)"
     if hits.empty:
         return u.iloc[0:0], None

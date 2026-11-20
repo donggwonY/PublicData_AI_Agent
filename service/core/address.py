@@ -27,6 +27,18 @@ _ROAD = re.compile(
     r"(?P<road>\S+?(?:로|길))\s+"
     r"(?P<under>지하\s*)?(?P<main>\d+)(?:\s*-\s*(?P<sub>\d+))?"
 )
+# 번지를 '*' 로 가린 원본 주소(2026-11-20 E-12: 건강기능식품·동물 업종 11,335건, 예 "대구광역시 남구 대명동 ****-*").
+# 자리를 특정할 수 없으므로 자리 키는 만들지 않고, 구·읍면·동만 읽는다.
+_MASKED_JIBUN = re.compile(
+    r"^대구광역시\s+(?P<gu>\S+?[구군])\s+"
+    r"(?:(?P<eup>\S+?[읍면])\s+)?"
+    r"(?P<dong>\S+?(?:동|가|리))\s+(?:산\s*)?\*[\d*]*(?:\s*-\s*[\d*]+)?"  # '로'로 끝나면 도로명으로 본다
+)
+_MASKED_ROAD = re.compile(
+    r"^대구광역시\s+(?P<gu>\S+?[구군])\s+"
+    r"(?:(?P<eup>\S+?[읍면])\s+)?"
+    r"(?P<road>\S+?(?:로|길))\s+(?:지하\s*)?\*[\d*]*(?:\s*-\s*[\d*]+)?"
+)
 _PAREN_DONG = re.compile(r"\((?P<dong>[^,()]+?(?:동|가|리))(?:,|\))")
 _FLOOR = re.compile(r"(지하\s*\d+\s*층|\d+\s*층)")
 
@@ -95,6 +107,23 @@ def parse_road(addr: str | None) -> dict | None:
     pd_ = _PAREN_DONG.search(s)
     dong = pd_["dong"].strip() if pd_ else None
     return {"key": " ".join(parts), "gu": m["gu"], "eup": m["eup"], "dong": dong, "road": m["road"]}
+
+
+def parse_masked(addr: str | None) -> dict | None:
+    """번지가 '*' 로 가려진 주소 → 구·읍면·동(자리 키 없음). 가려진 주소가 아니면 None.
+
+    예) "대구광역시 남구 대명동 ****-*" → gu=남구, eup=None, dong=대명동
+        "대구광역시 군위군 군위읍 중앙길 ***-*" → gu=군위군, eup=군위읍, dong=None(도로명은 괄호 법정동이 있을 때만)
+    """
+    s = _clean(addr)
+    m = _MASKED_JIBUN.match(s)
+    if m:
+        return {"gu": m["gu"], "eup": m["eup"], "dong": m["dong"]}
+    m = _MASKED_ROAD.match(s)
+    if m:
+        pd_ = _PAREN_DONG.search(s)
+        return {"gu": m["gu"], "eup": m["eup"], "dong": pd_["dong"].strip() if pd_ else None}
+    return None
 
 
 def extract_floor(*addrs: str | None) -> str | None:

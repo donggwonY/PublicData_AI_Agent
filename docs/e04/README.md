@@ -33,7 +33,8 @@ python -m pipeline.check_data --db               # + 공유 DB 현재 버전, pa
 | 18개 표 존재·0행 아님 | 필수 7개 없으면 FAIL, 선택 표 없으면 WARN | 새로 추가 |
 | 키 유일성·결측 (14개 표) | 중복 있으면 FAIL. 미확정 키 표(transitions·poi·parking·market)는 제외 | 수동 → 자동 |
 | `stores`·`transitions`·`vacancy_scores`·`next_tenant_scores` → `units` (uid) | 연결 실패 있으면 FAIL | 수동 → 자동(결과 표 2개 추가) |
-| 행정동 미연결 비율 | 6.1% 넘으면 WARN | 수동 → 자동 |
+| 행정동 미연결 비율 | 2.5% 넘으면 WARN (E-12 수정 뒤 1.50% 기준, 처음엔 6.1%) | 수동 → 자동 |
+| 자리 키에 `*`(가려진 번지) | 있으면 FAIL ([E-12](../e12/README.md)) | 새로 추가 |
 | 확률 열 0~1, 업종 확률 합 = 1 | 범위 밖·결측·합 오차 0.001 초과면 FAIL | 새로 추가 |
 | 결과 표 기준일 = 인허가 기준일 | 다르면 WARN | 새로 추가 |
 | `current_version` = 유일한 `current` 상태 | 아니면 FAIL | 새로 추가 |
