@@ -1,0 +1,29 @@
+{
+  "source": "eatout15165094; national industry medians, not brand-specific costs",
+  "no_anonymous_id_link": true,
+  "timing": "target-1 report only; actual release dates unknown",
+  "population": "same matched food-context subset for existing and context model",
+  "development": [
+    2022,
+    2023
+  ],
+  "evaluation": [
+    2024
+  ],
+  "provisional": [
+    2025
+  ],
+  "selection": "development Brier",
+  "features": [
+    "log_industry_jngBzmnJngAmt",
+    "log_industry_jngBzmnEduAmt",
+    "log_industry_jngBzmnGrnteAmt",
+    "log_industry_jngBzmnEtcAmt",
+    "log_industry_depstAmt",
+    "log_industry_intrrAmt",
+    "industry_frstCtrtYycnt",
+    "industry_prlgCtrtYycnt"
+  ],
+  "model": "same fixed HGB settings",
+  "scope": "exploratory reused evaluation years"
+}

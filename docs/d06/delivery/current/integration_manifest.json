@@ -1,0 +1,28 @@
+{
+  "selected_model": "additional_hgb_unadjusted",
+  "model_change": false,
+  "rows": 738,
+  "target_accounting_year": 2026,
+  "baseline_accounting_year": 2025,
+  "presentation": "2026년 말 가맹점 수 전망",
+  "lookup": "scripts/d06_franchise_lookup.py:lookup_franchise",
+  "exclude_from_this_release": [
+    "regional expansion predictions",
+    "expanded national sales/count feature model",
+    "eatout industry cost/contract context model"
+  ],
+  "checks": [
+    "unique brand IDs",
+    "probabilities in0..1",
+    "zero distinct from unavailable",
+    "exact brand search",
+    "unknown and empty query",
+    "correct2026 vs2025 period"
+  ],
+  "app_connection": "prepared; app integration and deployment not performed",
+  "files": {
+    "consultation_current.json": "decf69e825e2a3e12bc3f4358334c1424714d6c47e6ff06622bef91f345d272c",
+    "consultation_current.csv": "0008c476488cbeb4a1d214c31363307e49d6fd77bdf00cbfd8b00b1a20a1af0d",
+    "lookup_examples.json": "1a08a3eef0090c7ea73f5789062f66247a266d8b166079c7938293cdb3f99ba0"
+  }
+}

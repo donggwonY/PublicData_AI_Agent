@@ -1,0 +1,161 @@
+[
+  {
+    "status": "ok",
+    "brand_id": "BRD_20080100023",
+    "brand_name": "락휴노래연습장",
+    "industry": "오락",
+    "title": "2026년 말 가맹점 수 전망",
+    "generated_date": "2026-11-20",
+    "observed": {
+      "previous": {
+        "value": 4,
+        "status": "observed",
+        "display": "2024년 말 대구 가맹점 4개"
+      },
+      "baseline": {
+        "value": 4,
+        "status": "observed",
+        "display": "2025년 말 대구 가맹점 4개"
+      },
+      "regional_report_year": 2026,
+      "national_report_year": 2025,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": 124,
+          "status": "observed",
+          "display": "전국 가맹점 124개"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": 6,
+          "status": "observed",
+          "display": "전국 신규 개점 6건"
+        },
+        "national_ctrtEndCnt": {
+          "value": 0,
+          "status": "observed",
+          "display": "전국 계약 종료 0건"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": 5,
+          "status": "observed",
+          "display": "전국 계약 해지 5건"
+        }
+      }
+    },
+    "forecast": {
+      "target_accounting_year": 2026,
+      "baseline_accounting_year": 2025,
+      "decline_probability": 0.2159695758,
+      "period_text": "2025년 말 대비 2026년 말 감소 여부",
+      "meaning": "generation-date next12months forecast is not available"
+    },
+    "message": "2025년 말 대구 가맹점은 4개로, 전년과 비교하면 같은 수준이었어요. 과거 자료로 계산한 2026년 말 감소 가능성은 약 22%예요. 실제 매장 수는 달라질 수 있으니 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요."
+  },
+  {
+    "status": "ok",
+    "brand_id": "BRD_20080100084",
+    "brand_name": "풀무원녹즙",
+    "industry": "기타도소매",
+    "title": "2026년 말 가맹점 수 전망",
+    "generated_date": "2026-11-20",
+    "observed": {
+      "previous": {
+        "value": 17,
+        "status": "observed",
+        "display": "2024년 말 대구 가맹점 17개"
+      },
+      "baseline": {
+        "value": 17,
+        "status": "observed",
+        "display": "2025년 말 대구 가맹점 17개"
+      },
+      "regional_report_year": 2026,
+      "national_report_year": 2025,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": null,
+          "status": "unavailable",
+          "display": "전국 가맹점 정보는 아직 확인되지 않았어요."
+        },
+        "national_newFrcsRgsCnt": {
+          "value": null,
+          "status": "unavailable",
+          "display": "전국 신규 개점 정보는 아직 확인되지 않았어요."
+        },
+        "national_ctrtEndCnt": {
+          "value": null,
+          "status": "unavailable",
+          "display": "전국 계약 종료 정보는 아직 확인되지 않았어요."
+        },
+        "national_ctrtCncltnCnt": {
+          "value": null,
+          "status": "unavailable",
+          "display": "전국 계약 해지 정보는 아직 확인되지 않았어요."
+        }
+      }
+    },
+    "forecast": {
+      "target_accounting_year": 2026,
+      "baseline_accounting_year": 2025,
+      "decline_probability": 0.3934459481,
+      "period_text": "2025년 말 대비 2026년 말 감소 여부",
+      "meaning": "generation-date next12months forecast is not available"
+    },
+    "message": "2025년 말 대구 가맹점은 17개로, 전년과 비교하면 같은 수준이었어요. 과거 자료로 계산한 2026년 말 감소 가능성은 약 39%예요. 실제 매장 수는 달라질 수 있으니 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요."
+  },
+  {
+    "status": "ok",
+    "brand_id": "BRD_20080100037",
+    "brand_name": "온누리약국",
+    "industry": "약국",
+    "title": "2026년 말 가맹점 수 전망",
+    "generated_date": "2026-11-20",
+    "observed": {
+      "previous": {
+        "value": 79,
+        "status": "observed",
+        "display": "2024년 말 대구 가맹점 79개"
+      },
+      "baseline": {
+        "value": 79,
+        "status": "observed",
+        "display": "2025년 말 대구 가맹점 79개"
+      },
+      "regional_report_year": 2026,
+      "national_report_year": 2025,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": 2073,
+          "status": "observed",
+          "display": "전국 가맹점 2,073개"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": 86,
+          "status": "observed",
+          "display": "전국 신규 개점 86건"
+        },
+        "national_ctrtEndCnt": {
+          "value": 95,
+          "status": "observed",
+          "display": "전국 계약 종료 95건"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": 0,
+          "status": "observed",
+          "display": "전국 계약 해지 0건"
+        }
+      }
+    },
+    "forecast": {
+      "target_accounting_year": 2026,
+      "baseline_accounting_year": 2025,
+      "decline_probability": 0.3021071677,
+      "period_text": "2025년 말 대비 2026년 말 감소 여부",
+      "meaning": "generation-date next12months forecast is not available"
+    },
+    "message": "2025년 말 대구 가맹점은 79개로, 전년과 비교하면 같은 수준이었어요. 과거 자료로 계산한 2026년 말 감소 가능성은 약 30%예요. 실제 매장 수는 달라질 수 있으니 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요."
+  }
+]

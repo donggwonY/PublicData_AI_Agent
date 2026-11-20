@@ -1,0 +1,22 @@
+{
+  "scope": "same frozen Daegu3+ sample, exploratory reused years",
+  "development": [
+    2022,
+    2023
+  ],
+  "evaluation": [
+    2024
+  ],
+  "provisional": [
+    2025
+  ],
+  "added": [
+    "national count change",
+    "national sales level and change",
+    "national openings minus terminations and cancellations divided by national count"
+  ],
+  "source": "approved brand statistics source, previously collected unused fields; external eatout API returned403 and not used",
+  "timing": "national report year target-1 and target-2 only",
+  "selection": "development pooled Brier against stored additional HGB; no choice using2024/2025",
+  "model": "fixed HGB100 leaves7 min30 l2=10 lr=.05"
+}
