@@ -23,6 +23,7 @@ pip install -r requirements-dev.txt   # 웹만 돌릴 땐 requirements.txt
 
 python -m unittest tests.test_core_units   # 주소 정규화·사이클 판정 단위 테스트 (데이터 불필요)
 python -m tests.smoke_test                  # Tool 14종 점검 (API 키 불필요)
+python -m pipeline.check_data              # 데이터 점검: 키·연결·확률·기준일 (--db 면 공유 DB 현재 버전도)
 streamlit run app.py                        # 웹 UI → http://localhost:8501
 ```
 
