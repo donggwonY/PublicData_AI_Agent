@@ -314,23 +314,42 @@ def _find_units(q: str) -> tuple[pd.DataFrame, str | None]:
         return u.loc[[q]], "자리 ID 일치"
     floor = A.extract_floor(q)
     hits, method = pd.Index([]), None
+    q = A.clean(q)  # 줄표 변형·공백·'대구시' 표기 통일(E-12 10절)
+    full = q if q.startswith(A.SIDO) else f"{A.SIDO} {q}"
+    # 구를 빼고 쓴 주소('군위읍 동부리 142', '범어동 123')는 구마다 붙여 기본주소 일치를 먼저 본다.
+    # 그대로 단어 검색으로 가면 다른 건물의 도로명 번호(142)가 걸려 엉뚱한 자리를 준다.
+    has_gu = A.normalize_gu(full.replace(A.SIDO, "").strip().split(" ")[0] if " " in full else "") is not None
+    tries = [full] if has_gu else [f"{A.SIDO} {g} {q.replace(A.SIDO, '').strip()}" for g in A.GU_NAMES]
 
-    jb = A.parse_jibun(q if q.startswith("대구") else f"{A.SIDO} {q}")
-    if jb:
-        hits, method = u.index[u["building_key"] == jb["key"]], "지번 기본주소 일치"
-        legal = A.admin_to_legal_dong(jb["dong"])
-        if hits.empty and legal and not jb["eup"]:  # '대명10동 1225'처럼 행정동 이름으로 쓴 지번(E-12)
-            key = jb["key"].replace(f" {jb['dong']} ", f" {legal} ", 1)
-            hits, method = u.index[u["building_key"] == key], "지번 기본주소 일치(행정동 이름 → 법정동)"
+    jibun_like = False
+    for text in tries:
+        jb = A.parse_jibun(text)
+        if not jb:
+            continue
+        jibun_like = True
+        keys = [jb["key"]] + ([] if jb["eup"] else [jb["key"].replace(f" {jb['dong']} ", f" {c} ", 1)
+                                                    for c in A.legal_dong_candidates(jb["dong"])])
+        for i, key in enumerate(keys):
+            h = u.index[u["building_key"] == key]
+            if len(h):
+                note = "" if i == 0 else "(동 이름 보정: 행정동 이름·'…N가' 약식 → 법정동)"
+                hits = hits.append(h) if len(hits) else h
+                method = "지번 기본주소 일치" + ("(구 추정)" if not has_gu else "") + note
+                break
     if hits.empty:
-        rd = A.parse_road(q if q.startswith("대구") else f"{A.SIDO} {q}")
-        if rd:
-            uids = s.stores.loc[s.stores["road_key"] == rd["key"], "uid"].unique()
-            hits, method = pd.Index(uids), "도로명 기본주소 일치"
+        for text in tries:
+            rd = A.parse_road(text)
+            if rd:
+                uids = s.stores.loc[s.stores["road_key"] == rd["key"], "uid"].dropna().unique()
+                if len(uids):
+                    hits = hits.append(pd.Index(uids)) if len(hits) else pd.Index(uids)
+                    method = "도로명 기본주소 일치" + ("(구 추정)" if not has_gu else "")
     if hits.empty:
-        # 정규식이 실패한 주소(건물명만 있는 등)는 단어를 모두 포함하는 자리를 찾는다
-        tokens = [t for t in q.replace(",", " ").split() if t not in ("대구", "대구시", A.SIDO)]
-        hay = u["addr"] + " " + u["jibun_addr"]
+        # 정규식이 실패한 주소(건물명만 있는 등)는 단어를 모두 포함하는 자리를 찾는다.
+        # 지번처럼 보이는 입력('범어동 123')은 지번 칸에서만 찾는다(도로명 건물번호와 섞이지 않게).
+        tokens = [t.removesuffix("번지") for t in q.replace(",", " ").split() if t not in ("대구", "대구시", A.SIDO)]
+        tokens = [t for t in tokens if t]
+        hay = u["jibun_addr"] if jibun_like else u["addr"] + " " + u["jibun_addr"]
         m = pd.Series(True, index=u.index)
         for t in tokens:
             if re.fullmatch(r"\d+(?:-\d+)?", t):
@@ -345,7 +364,7 @@ def _find_units(q: str) -> tuple[pd.DataFrame, str | None]:
     if hits.empty:
         return u.iloc[0:0], None
 
-    cand = u.loc[hits]
+    cand = u.loc[hits.unique()]
     if floor:  # 질문에 "2층"이 있으면 같은 층을 우선하되, 없으면 후보를 버리지 않는다
         same = cand[cand["floor"] == floor]
         cand = same if not same.empty else cand
@@ -976,6 +995,8 @@ def _resolve_admin_dong(gu: str | None, dong: str | None) -> pd.DataFrame:
     """
     ctx = _require(store().area_context, "동네 맥락")
     g = A.normalize_gu(gu) if gu else None
+    if gu and not g:  # 잘못된 구 이름을 조용히 무시하면 엉뚱한 동네를 보여 준다(E-12 10절)
+        raise ToolError(f"'{gu}'는 대구의 구·군이 아닙니다 (중구, 동구, 서구, 남구, 북구, 수성구, 달서구, 달성군, 군위군).")
     if not dong:
         return ctx[ctx["gu"] == g] if g else ctx
     text = dong.replace(A.SIDO, "").replace("대구", "").strip().split()[-1]
@@ -987,6 +1008,12 @@ def _resolve_admin_dong(gu: str | None, dong: str | None) -> pd.DataFrame:
             if g:
                 names = names[names["gu"] == g]
             hit = ctx[ctx["admin_dong"].isin(names["admin_dong"]) & ctx["gu"].isin(names["gu"])]
+        # 법정동 하나가 행정동 여러 곳에 걸치면(대명동 → 대명1~11동) 대표 행정동 하나만 고르지 않고 모두 후보로 둔다
+        same = ctx[ctx["admin_dong"].map(A.admin_to_legal_dong) == text]
+        if g:
+            same = same[same["gu"] == g]
+        if len(same):
+            hit = pd.concat([hit, same]).drop_duplicates(["gu", "admin_dong"])
     if hit.empty:
         hit = ctx[ctx["admin_dong"].str.startswith(text.rstrip("동읍면"))]
     if g:
@@ -1001,13 +1028,19 @@ def _resolve_admin_dong(gu: str | None, dong: str | None) -> pd.DataFrame:
 def get_area_profile(gu: str | None = None, dong: str | None = None, top_n: int = 5) -> dict:
     """동네 프로필 — 상권 유형, 업종 구성·다양성, 인구·연령, 집객 시설, 인허가 기반 사이클·공실률."""
     s = store()
+    if not dong and not gu:
+        raise ToolError("동네(행정동) 이름을 지정하세요 (예: 삼덕동, 범어3동, 다사읍).")
     hit = _resolve_admin_dong(gu, dong)
-    if len(hit) > 1 and dong:
+    if len(hit) > 1:
+        # 동을 안 주었거나 여러 행정동에 걸치면 하나를 고르지 않는다. 예전에는 점포가 가장 많은 동을 말없이 골라
+        # '수성구' 프로필로 두산동 값을 보여 주었다(E-12 10절).
         rows = [{"gu": r["gu"], "admin_dong": r["admin_dong"], "poi_total": int(r["poi_total"]),
-                 "market_type": r["market_type"]} for _, r in hit.nlargest(8, "poi_total").iterrows()]
+                 "market_type": r["market_type"]} for _, r in hit.nlargest(12, "poi_total").iterrows()]
+        why = ("동을 지정하지 않았습니다" if not dong
+               else f"'{dong}'은(는) 행정동 {len(hit)}곳에 걸칩니다(법정동과 행정동 경계가 다름)")
         return _py({"matched": len(hit), "candidates": rows,
-                    "hint": "행정동이 여러 개입니다. 하나를 골라 다시 물어보세요."})
-    r = hit.nlargest(1, "poi_total").iloc[0] if len(hit) > 1 else hit.iloc[0]
+                    "hint": f"{why}. 사용자에게 후보를 보여 주고 하나를 골라 다시 물어보세요. 임의로 고르지 마세요."})
+    r = hit.iloc[0]
 
     profile = {
         "area": f"{r['gu']} {r['admin_dong']}",

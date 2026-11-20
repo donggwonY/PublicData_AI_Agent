@@ -1,6 +1,6 @@
 {
   "reference_date": "2026-11-06",
-  "built_at": "2026-11-20 19:33:06",
+  "built_at": "2026-11-20 20:26:22",
   "quality": {
     "raw_rows": 299362,
     "duplicates_removed": 0,
@@ -24,7 +24,7 @@
     "non_storefront_excluded": {
       "건강기능식품일반판매업": 11278
     },
-    "address_admin_dong_to_legal": 2799,
+    "address_admin_dong_to_legal": 2853,
     "address_masked": 11337,
     "address_road_as_dong_fixed": 10,
     "address_area_loose": 279,
@@ -78,8 +78,8 @@
       "resolved_by_coords": 1015
     },
     "licenses": 286896,
-    "occupants": 271988,
-    "merged_multi_license_occupants": 11121,
+    "occupants": 271984,
+    "merged_multi_license_occupants": 11123,
     "short_event_excluded_from_stats": {
       "occupants": 17043,
       "licenses": 17781,
@@ -96,8 +96,8 @@
         "약국": 12
       }
     },
-    "vacancy_scores_dropped_missing_units": 62,
-    "next_tenant_scores_dropped_missing_units": 62
+    "vacancy_scores_dropped_missing_units": 0,
+    "next_tenant_scores_dropped_missing_units": 0
   },
   "records": {
     "건강기능식품일반판매업": {
@@ -312,7 +312,7 @@
       "total": 3043,
       "closed": 1641,
       "active": 1402,
-      "unique_units": 2279,
+      "unique_units": 2269,
       "date_min": "1961-08-18",
       "date_max": "2026-11-05"
     },
@@ -440,7 +440,7 @@
       "total": 286896,
       "closed": 202452,
       "active": 84444,
-      "unique_units": 90723
+      "unique_units": 90683
     }
   },
   "records_by_gu": {
@@ -456,14 +456,14 @@
     "님구": 1
   },
   "vacancy_buckets_all_vacant_units": {
-    "10년 이상": 21228,
-    "3~10년": 11610,
+    "10년 이상": 21198,
+    "3~10년": 11607,
     "1~3년": 4000,
     "3개월~1년": 1896,
     "3개월 미만": 614
   },
   "recent_vacancy_units": 5896,
-  "single_unit_ratio_pct": 65.0,
+  "single_unit_ratio_pct": 64.9,
   "max_closures_all_units_top5": [
     {
       "addr": "대구광역시 중구 달구벌대로 2077 지하1층",
@@ -503,22 +503,22 @@
       "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업"
     },
     {
-      "addr": "대구광역시 달서구 달구벌대로 1467 3층",
-      "n_closed": 12,
-      "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 기타 휴게음식점"
-    },
-    {
       "addr": "대구광역시 남구 명덕로 228-17",
       "n_closed": 12,
       "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
     },
     {
-      "addr": "대구광역시 달성군 현풍읍 현풍중앙로 40 1층",
+      "addr": "대구광역시 달서구 달구벌대로 1467 3층",
+      "n_closed": 12,
+      "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 기타 휴게음식점"
+    },
+    {
+      "addr": "대구광역시 동구 경안로 722 2층",
       "n_closed": 11,
       "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업"
     }
   ],
-  "service_switch_units": 3969,
+  "service_switch_units": 3965,
   "survival_by_decade_1y": [
     {
       "decade": "1980년대",
@@ -527,17 +527,17 @@
     },
     {
       "decade": "1990년대",
-      "n": 30284,
+      "n": 30283,
       "survival_1y_pct": 99.8
     },
     {
       "decade": "2000년대",
-      "n": 91426,
+      "n": 91425,
       "survival_1y_pct": 89.8
     },
     {
       "decade": "2010년대",
-      "n": 76862,
+      "n": 76860,
       "survival_1y_pct": 88.6
     },
     {

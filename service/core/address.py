@@ -46,13 +46,16 @@ _GU_ANY = re.compile(r"^대구광역시\s*(?P<gu>" + "|".join(GU_NAMES) + r")")
 _AREA_TOKEN = re.compile(r"[가-힣]+(?:\s*[\d.·]+\s*)?(?:동\d*가|동|가|리|읍|면)")
 _PAREN_DONG = re.compile(r"\((?P<dong>[^,()]+?(?:동|가|리))(?:,|\))")
 _FLOOR = re.compile(r"(지하\s*\d+\s*층|\d+\s*층)")
+# 줄표 변형(‐ ‑ ‒ – — ― − －)은 '-'로 맞춘다. 그대로 두면 '28–6'의 부번을 버리고 '28' 자리를 찾는다(E-12 10절).
+_DASHES = re.compile("[‐-―−－]")
+_SHORT_GA = re.compile(r"^(?P<base>[가-힣]+?)(?P<ga>\d+가)$")
 
 
 def _clean(s: str | None) -> str:
     """공백을 하나로 줄이고 시·도 표기를 '대구광역시'로 통일한다."""
     if not isinstance(s, str):
         return ""  # None 이나 결측값이 들어와도 예외 없이 빈 문자열로 처리
-    s = _WS.sub(" ", s.replace("　", " ")).strip()
+    s = _WS.sub(" ", _DASHES.sub("-", s.replace("　", " "))).strip()
     # 사용자가 "대구 수성구 ..." 처럼 줄여 쓴 경우
     if s.startswith("대구시 "):
         s = SIDO + s[3:]
@@ -141,6 +144,27 @@ def admin_to_legal_dong(dong: str | None) -> str | None:
     """
     m = _ADMIN_DONG_NAME.match(dong or "")
     return m["base"] + "동" if m else None
+
+
+def short_ga_to_full(dong: str | None) -> str | None:
+    """'동'을 뺀 약식 표기 → 법정동 후보. '삼덕1가'→'삼덕동1가', '노원3가'→'노원동3가'. 아니면 None.
+
+    '동성로2가'·'종로1가'처럼 원래 '…로N가'인 법정동과 이미 '…동N가'인 이름은 해당 없다.
+    """
+    m = _SHORT_GA.match(dong or "")
+    if not m or m["base"].endswith(("동", "로")):
+        return None
+    return f"{m['base']}동{m['ga']}"
+
+
+def legal_dong_candidates(dong: str | None) -> list[str]:
+    """지번에 적힌 동 이름의 법정동 후보(행정동식 이름·약식 '…N가' 보정). 확인은 부르는 쪽에서 한다."""
+    return [c for c in (admin_to_legal_dong(dong), short_ga_to_full(dong)) if c]
+
+
+def clean(s: str | None) -> str:
+    """검색어 정리(공백·줄표·'대구시' 표기 통일). 공개용 이름."""
+    return _clean(s)
 
 
 def parse_area_loose(addr: str | None, known: dict[str, set[str]], area_gu: dict[str, str]) -> dict | None:

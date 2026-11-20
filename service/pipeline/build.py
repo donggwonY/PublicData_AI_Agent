@@ -176,7 +176,8 @@ def assign_floor_units(df: pd.DataFrame) -> pd.Series:
 
 
 def normalize_admin_jibun(jb: pd.Series, quality: dict) -> pd.Series:
-    """지번에 법정동 대신 행정동 이름이 적힌 경우(예: '대명10동 1225', '내당2.3동') → 법정동('대명동 1225').
+    """지번에 법정동 대신 행정동 이름이나 약식 이름이 적힌 경우 → 법정동.
+    예: '대명10동 1225'·'내당2.3동' → '대명동 1225'·'내당동', '노원3가 12' → '노원동3가 12'.
 
     같은 건물이 행정동식 키와 법정동 키로 나뉘어 이력이 갈라지고, 영업 중인 자리가 빈 자리로 보이던 문제(E-12 8절 A).
     번호를 뗀 이름이 그 구에서 정상 지번으로 20건 이상 확인된 법정동일 때만 바꾼다(예: 성내1동처럼
@@ -184,13 +185,14 @@ def normalize_admin_jibun(jb: pd.Series, quality: dict) -> pd.Series:
     """
     ok = [x for x in jb if x and not x["eup"]]
     cnt = pd.Series([(x["gu"], x["dong"]) for x in ok]).value_counts() if ok else pd.Series(dtype=int)
-    known = {k for k, n in cnt.items() if n >= 20 and A.admin_to_legal_dong(k[1]) is None}
+    known = {k for k, n in cnt.items() if n >= 20 and not A.legal_dong_candidates(k[1])}
 
     def fix(x):
         if not x or x["eup"]:
             return x
-        legal = A.admin_to_legal_dong(x["dong"])
-        if not legal or (x["gu"], legal) not in known:
+        # 행정동식 이름(대명10동→대명동)과 '동'을 뺀 약식 '…N가'(노원3가→노원동3가, E-12 10절)
+        legal = next((c for c in A.legal_dong_candidates(x["dong"]) if (x["gu"], c) in known), None)
+        if not legal:
             return x
         return {**x, "dong": legal, "key": x["key"].replace(f" {x['dong']} ", f" {legal} ", 1)}
 

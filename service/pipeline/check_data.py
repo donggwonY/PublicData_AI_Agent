@@ -160,10 +160,9 @@ def check_frames(frames: dict[str, pd.DataFrame | None], meta: dict, where: str,
         for k in keys:
             parts = k.split(" ")
             if len(parts) >= 4:
-                legal = A.admin_to_legal_dong(parts[2])
-                if legal and " ".join(parts[:2] + [legal] + parts[3:]) in keys:
+                if any(" ".join(parts[:2] + [c] + parts[3:]) in keys for c in A.legal_dong_candidates(parts[2])):
                     split += 1
-        (rep.fail if split else rep.ok)(where, "units 행정동식·법정동 키로 나뉜 건물 없음", f"{split:,}곳")
+        (rep.fail if split else rep.ok)(where, "units 행정동식·약식 이름과 법정동 키로 나뉜 건물 없음", f"{split:,}곳")
 
     # 4. 행정동 미연결 비율 (stores → legal_admin_map → area_context)
     stores, lam, ac = present.get("stores"), present.get("legal_admin_map"), present.get("area_context")
