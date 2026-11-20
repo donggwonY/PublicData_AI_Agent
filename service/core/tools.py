@@ -301,7 +301,7 @@ def _masked_name_note(q: str) -> str | None:
     if hit.empty:
         return None
     areas = (hit["gu"].fillna("") + " " + hit["dong"].fillna("")).str.strip().value_counts().index[:3].tolist()
-    return (f"'{q}' 상호의 인허가 {len(hit):,}건은 공개 원본 주소의 번지가 가려져 있어(예: 대명동 ***-*) "
+    return (f"'{q}' 상호의 인허가 {len(hit):,}건은 공개 원본 주소의 번지가 별표로 가려져 있어 "
             f"자리를 특정할 수 없습니다({', '.join(a for a in areas if a)}). 이런 가게는 자리 이력·빈 자리에는 없고 "
             "동네의 가게 수·개폐업 집계에만 들어갑니다. 정확한 도로명이나 지번 주소를 알면 그 주소로 다시 찾아 주세요.")
 
