@@ -1,0 +1,46 @@
+{
+  "scope": "exploratory reused source years and same sample as initial experiment",
+  "target": "new observed permit presence; not confirmed franchise entry",
+  "development": [
+    2021,
+    2022
+  ],
+  "evaluation": [
+    2023,
+    2024
+  ],
+  "provisional": [
+    2025
+  ],
+  "selection": "brandwise top1 hit on development entrants with >=2 absent districts",
+  "features": [
+    "log_total",
+    "growth",
+    "districts_present",
+    "local_log_active",
+    "local_open_rate",
+    "local_close_rate",
+    "local_growth",
+    "restaurant_share",
+    "restaurant_open_rate",
+    "cafe_share",
+    "cafe_open_rate",
+    "beauty_share",
+    "beauty_open_rate",
+    "retail_share",
+    "retail_open_rate",
+    "bakery_share",
+    "bakery_open_rate",
+    "gu",
+    "industry",
+    "industry_gu"
+  ],
+  "feature_time": "permit dates <= December31 target-1; no target-year flows",
+  "model": "fixed logistic C1 or HGB100 leaf7 min30 l2=10 lr=.05",
+  "definition": "local permit records, five service shares, prior-year opening/closure rates; not complete retail census",
+  "limits": [
+    "later revisions in snapshot",
+    "unverified brand-name links",
+    "publication timing unknown"
+  ]
+}

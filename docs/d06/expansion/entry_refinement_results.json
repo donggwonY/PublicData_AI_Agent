@@ -1,0 +1,10 @@
+{
+  "original_positive_candidates": 1108,
+  "status_counts": {
+    "stable_name_new_prefix": 1044,
+    "stable_name_new_nonprefix": 38,
+    "no_stable_alias": 26
+  },
+  "prefix_candidates_excluding_reentry": 1000,
+  "meaning": "stricter candidate audit only, not verified franchise affiliation; removed candidates remain unknown not negative labels"
+}

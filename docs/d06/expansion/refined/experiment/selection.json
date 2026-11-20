@@ -1,0 +1,38 @@
+{
+  "baseline": "district_rate",
+  "model": "logistic",
+  "development": {
+    "district_rate": {
+      "n": 6880,
+      "entries": 159,
+      "prevalence": 0.02311046511627907,
+      "average_precision": 0.030029104484858685,
+      "brier": 0.022527650403037083,
+      "auc": 0.5979867850602496
+    },
+    "global_rate": {
+      "n": 6880,
+      "entries": 159,
+      "prevalence": 0.02311046511627907,
+      "average_precision": 0.022375348329461288,
+      "brier": 0.022579671465987577,
+      "auc": 0.48255865638442913
+    },
+    "hgb": {
+      "n": 6880,
+      "entries": 159,
+      "prevalence": 0.02311046511627907,
+      "average_precision": 0.1436742847025359,
+      "brier": 0.021209373477155506,
+      "auc": 0.7902186800219718
+    },
+    "logistic": {
+      "n": 6880,
+      "entries": 159,
+      "prevalence": 0.02311046511627907,
+      "average_precision": 0.17776086361637414,
+      "brier": 0.02080062651880446,
+      "auc": 0.7823802051020036
+    }
+  }
+}

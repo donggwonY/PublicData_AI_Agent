@@ -1,0 +1,132 @@
+{
+  "selection_metric": "within-brand top1 hit on actual entrants with>=2 candidate districts; conditional retrospective diagnostic",
+  "development": {
+    "district_rate": 0.46808510638297873,
+    "global_rate": 0.26067629179331303,
+    "hgb": 0.4663120567375887,
+    "logistic": 0.4787234042553192
+  },
+  "selected": "logistic",
+  "annual": [
+    {
+      "year": 2021,
+      "model": "district_rate",
+      "brands": 90,
+      "hit": 0.5333333333333333
+    },
+    {
+      "year": 2021,
+      "model": "global_rate",
+      "brands": 90,
+      "hit": 0.27708994708994705
+    },
+    {
+      "year": 2021,
+      "model": "hgb",
+      "brands": 90,
+      "hit": 0.5296296296296296
+    },
+    {
+      "year": 2021,
+      "model": "logistic",
+      "brands": 90,
+      "hit": 0.5444444444444444
+    },
+    {
+      "year": 2022,
+      "model": "district_rate",
+      "brands": 98,
+      "hit": 0.40816326530612246
+    },
+    {
+      "year": 2022,
+      "model": "global_rate",
+      "brands": 98,
+      "hit": 0.24560252672497568
+    },
+    {
+      "year": 2022,
+      "model": "hgb",
+      "brands": 98,
+      "hit": 0.40816326530612246
+    },
+    {
+      "year": 2022,
+      "model": "logistic",
+      "brands": 98,
+      "hit": 0.41836734693877553
+    },
+    {
+      "year": 2023,
+      "model": "district_rate",
+      "brands": 84,
+      "hit": 0.36904761904761907
+    },
+    {
+      "year": 2023,
+      "model": "global_rate",
+      "brands": 84,
+      "hit": 0.23390022675736954
+    },
+    {
+      "year": 2023,
+      "model": "hgb",
+      "brands": 84,
+      "hit": 0.39285714285714285
+    },
+    {
+      "year": 2023,
+      "model": "logistic",
+      "brands": 84,
+      "hit": 0.36904761904761907
+    },
+    {
+      "year": 2024,
+      "model": "district_rate",
+      "brands": 99,
+      "hit": 0.45454545454545453
+    },
+    {
+      "year": 2024,
+      "model": "global_rate",
+      "brands": 99,
+      "hit": 0.2641654641654641
+    },
+    {
+      "year": 2024,
+      "model": "hgb",
+      "brands": 99,
+      "hit": 0.4595959595959596
+    },
+    {
+      "year": 2024,
+      "model": "logistic",
+      "brands": 99,
+      "hit": 0.45454545454545453
+    },
+    {
+      "year": 2025,
+      "model": "district_rate",
+      "brands": 71,
+      "hit": 0.5352112676056338
+    },
+    {
+      "year": 2025,
+      "model": "global_rate",
+      "brands": 71,
+      "hit": 0.27256874580818236
+    },
+    {
+      "year": 2025,
+      "model": "hgb",
+      "brands": 71,
+      "hit": 0.5211267605633803
+    },
+    {
+      "year": 2025,
+      "model": "logistic",
+      "brands": 71,
+      "hit": 0.5352112676056338
+    }
+  ]
+}

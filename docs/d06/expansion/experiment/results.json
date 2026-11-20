@@ -1,0 +1,206 @@
+{
+  "baseline": "district_rate",
+  "model": "logistic",
+  "annual": [
+    {
+      "year": 2021,
+      "model": "district_rate",
+      "n": 4311,
+      "entries": 115,
+      "prevalence": 0.02667594525632104,
+      "average_precision": 0.038295901793762514,
+      "brier": 0.025843748458229385,
+      "auc": 0.6233265636009451
+    },
+    {
+      "year": 2021,
+      "model": "global_rate",
+      "n": 4311,
+      "entries": 115,
+      "prevalence": 0.02667594525632104,
+      "average_precision": 0.02667594525632104,
+      "brier": 0.025970249245723245,
+      "auc": 0.5
+    },
+    {
+      "year": 2021,
+      "model": "hgb",
+      "n": 4311,
+      "entries": 115,
+      "prevalence": 0.02667594525632104,
+      "average_precision": 0.1460655373757614,
+      "brier": 0.024721194280657575,
+      "auc": 0.7969339329382019
+    },
+    {
+      "year": 2021,
+      "model": "logistic",
+      "n": 4311,
+      "entries": 115,
+      "prevalence": 0.02667594525632104,
+      "average_precision": 0.1458766159715538,
+      "brier": 0.024535545589469288,
+      "auc": 0.7760434368135284
+    },
+    {
+      "year": 2022,
+      "model": "district_rate",
+      "n": 4942,
+      "entries": 120,
+      "prevalence": 0.024281667341157425,
+      "average_precision": 0.03130496963270271,
+      "brier": 0.023639887926738608,
+      "auc": 0.6051767938614683
+    },
+    {
+      "year": 2022,
+      "model": "global_rate",
+      "n": 4942,
+      "entries": 120,
+      "prevalence": 0.024281667341157425,
+      "average_precision": 0.024281667341157425,
+      "brier": 0.023692806593346386,
+      "auc": 0.5
+    },
+    {
+      "year": 2022,
+      "model": "hgb",
+      "n": 4942,
+      "entries": 120,
+      "prevalence": 0.024281667341157425,
+      "average_precision": 0.1019444401130139,
+      "brier": 0.022780452454955087,
+      "auc": 0.7422179593529656
+    },
+    {
+      "year": 2022,
+      "model": "logistic",
+      "n": 4942,
+      "entries": 120,
+      "prevalence": 0.024281667341157425,
+      "average_precision": 0.10428662671075487,
+      "brier": 0.02292374419720204,
+      "auc": 0.7325003456380478
+    },
+    {
+      "year": 2023,
+      "model": "district_rate",
+      "n": 4671,
+      "entries": 101,
+      "prevalence": 0.021622778848212374,
+      "average_precision": 0.02920634802639736,
+      "brier": 0.02113186486044974,
+      "auc": 0.59969993717096
+    },
+    {
+      "year": 2023,
+      "model": "global_rate",
+      "n": 4671,
+      "entries": 101,
+      "prevalence": 0.021622778848212374,
+      "average_precision": 0.021622778848212374,
+      "brier": 0.021165881523913195,
+      "auc": 0.5
+    },
+    {
+      "year": 2023,
+      "model": "hgb",
+      "n": 4671,
+      "entries": 101,
+      "prevalence": 0.021622778848212374,
+      "average_precision": 0.06511205712383425,
+      "brier": 0.020870363917988154,
+      "auc": 0.7081916069068614
+    },
+    {
+      "year": 2023,
+      "model": "logistic",
+      "n": 4671,
+      "entries": 101,
+      "prevalence": 0.021622778848212374,
+      "average_precision": 0.06913443947953765,
+      "brier": 0.020898841287481453,
+      "auc": 0.6960428537383279
+    },
+    {
+      "year": 2024,
+      "model": "district_rate",
+      "n": 5044,
+      "entries": 134,
+      "prevalence": 0.02656621728786677,
+      "average_precision": 0.034741735182992596,
+      "brier": 0.025791102920318023,
+      "auc": 0.5938299844970666
+    },
+    {
+      "year": 2024,
+      "model": "global_rate",
+      "n": 5044,
+      "entries": 134,
+      "prevalence": 0.02656621728786677,
+      "average_precision": 0.02656621728786677,
+      "brier": 0.025866193037888546,
+      "auc": 0.5
+    },
+    {
+      "year": 2024,
+      "model": "hgb",
+      "n": 5044,
+      "entries": 134,
+      "prevalence": 0.02656621728786677,
+      "average_precision": 0.0780470673537355,
+      "brier": 0.025328862212019396,
+      "auc": 0.7296554397057482
+    },
+    {
+      "year": 2024,
+      "model": "logistic",
+      "n": 5044,
+      "entries": 134,
+      "prevalence": 0.02656621728786677,
+      "average_precision": 0.08150311087491531,
+      "brier": 0.025245653675325865,
+      "auc": 0.7337644770039822
+    },
+    {
+      "year": 2025,
+      "model": "district_rate",
+      "n": 4599,
+      "entries": 89,
+      "prevalence": 0.019352033050663187,
+      "average_precision": 0.025652960608842437,
+      "brier": 0.018996787146377227,
+      "auc": 0.5758526619995517
+    },
+    {
+      "year": 2025,
+      "model": "global_rate",
+      "n": 4599,
+      "entries": 89,
+      "prevalence": 0.019352033050663187,
+      "average_precision": 0.019352033050663187,
+      "brier": 0.019005378736682878,
+      "auc": 0.5
+    },
+    {
+      "year": 2025,
+      "model": "hgb",
+      "n": 4599,
+      "entries": 89,
+      "prevalence": 0.019352033050663187,
+      "average_precision": 0.0939606160059285,
+      "brier": 0.018395829795995994,
+      "auc": 0.7477490719748874
+    },
+    {
+      "year": 2025,
+      "model": "logistic",
+      "n": 4599,
+      "entries": 89,
+      "prevalence": 0.019352033050663187,
+      "average_precision": 0.07929250618063664,
+      "brier": 0.01871149934223871,
+      "auc": 0.7389110341563069
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+brand_id,year,gu,observed_active_buildings,previous_year,previous_count,entry_candidate,previous_city_linked_total,previous_city_official_total,previous_count_agrees,brandNm,brand_present_elsewhere,ever_before_previous,reentry_candidate
+BRD_20110600048,2025,남구,1,2024.0,0.0,True,6,6.0,True,오레시피,True,False,False
+BRD_20080200110,2020,달성군,1,2019.0,0.0,True,1,0.0,False,르뽀미에,True,True,True
+BRD_20080200306,2024,북구,1,2023.0,0.0,True,2,2.0,True,망향비빔국수,True,False,False
+BRD_20220132,2023,북구,1,2022.0,0.0,True,5,7.0,False,도리신닭도리탕,True,False,False
+BRD_20170439,2019,수성구,2,2018.0,0.0,True,4,3.0,False,후라이드참잘하는집,True,False,False
+BRD_20210482,2021,달서구,1,2020.0,0.0,True,2,0.0,False,츄러스1500,True,False,False
+BRD_20151228,2020,중구,1,2019.0,0.0,True,26,20.0,False,막창도둑,True,False,False
+BRD_20220768,2022,달성군,1,2021.0,0.0,True,3,1.0,False,대한콩국,True,False,False
+BRD_20090100126,2022,북구,1,2021.0,0.0,True,2,2.0,True,스쿨푸드,True,False,False
+BRD_20201556,2021,수성구,1,2020.0,0.0,True,1,,False,리 에스테틱,True,True,True
+BRD_20191275,2024,달서구,3,2023.0,0.0,True,1,0.0,False,찐이야숯불두마리치킨,True,False,False
+BRD_20213559,2023,북구,1,2022.0,0.0,True,4,0.0,False,정칼국수,True,False,False
+BRD_20201102,2020,서구,1,2019.0,0.0,True,4,0.0,False,동양족발,True,False,False
+BRD_20231474,2023,남구,1,2022.0,0.0,True,9,2.0,False,똥집대통령,True,False,False
+BRD_20190404,2019,달서구,2,2018.0,0.0,True,2,,False,신떡순 신천할매떡볶이,True,False,False
+BRD_20170519,2022,동구,1,2021.0,0.0,True,2,2.0,True,국제통닭,True,False,False
+BRD_20210991,2023,동구,1,2022.0,0.0,True,1,0.0,False,카페16온스,True,False,False
+BRD_20211203,2023,동구,1,2022.0,0.0,True,5,4.0,False,젓가락질 잘해야만 밥을 먹나요,True,False,False
+BRD_20240803,2025,수성구,1,2024.0,0.0,True,4,2.0,False,샤부마스터 ,True,False,False
+BRD_20190332,2019,남구,1,2018.0,0.0,True,1,,False,홍베이팡,True,False,False
+BRD_20180760,2019,중구,1,2018.0,0.0,True,6,11.0,False,신대장 떡볶이,True,False,False
+BRD_20211929,2021,수성구,1,2020.0,0.0,True,1,0.0,False,아이드블랑,True,False,False
+BRD_20200044,2020,북구,2,2019.0,0.0,True,2,3.0,False,갓샐러드,True,False,False
+BRD_20211178,2024,달성군,1,2023.0,0.0,True,1,1.0,True,메가후르츠,True,False,False
+BRD_20210826,2023,북구,1,2022.0,0.0,True,3,6.0,False,요거트아이스크림의정석,True,False,False
+BRD_20210816,2021,동구,1,2020.0,0.0,True,2,0.0,False,막창사냥꾼,True,False,False
+BRD_20150700,2019,중구,1,2018.0,0.0,True,10,7.0,False,청년다방,True,False,False
+BRD_20212508,2021,수성구,1,2020.0,0.0,True,1,,False,구름계란덮밥,True,False,False
+BRD_20210826,2024,중구,1,2023.0,0.0,True,3,7.0,False,요거트아이스크림의정석,True,False,False
+BRD_20250205,2025,동구,1,2024.0,0.0,True,1,0.0,False,모노폴리키친,True,False,False

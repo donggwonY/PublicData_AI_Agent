@@ -1,0 +1,13 @@
+{
+  "rows": 738,
+  "known_names": 727,
+  "national_known": 713,
+  "training_rows": 5451,
+  "training_target_max": 2025,
+  "target": 2026,
+  "baseline": 2025,
+  "meaning": "2026 year-end decline compared with2025, not next12months from generation date and not2027 forecast",
+  "mean_probability": 0.42568124563387816,
+  "model_settings": "same fixed additional HGB, no probability adjustment",
+  "source_limit": "latest2025 source may be incomplete; prospective outcome not yet validated"
+}

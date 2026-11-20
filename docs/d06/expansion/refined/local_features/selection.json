@@ -1,0 +1,13 @@
+{
+  "selected": "local_hgb",
+  "development": {
+    "local_hgb": {
+      "entrant_brands": 120,
+      "top1": 0.5166666666666667
+    },
+    "local_logistic": {
+      "entrant_brands": 120,
+      "top1": 0.4583333333333333
+    }
+  }
+}

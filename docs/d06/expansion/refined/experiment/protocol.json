@@ -1,0 +1,30 @@
+{
+  "target": "new linked active permit-building presence in an observed-zero district; not verified franchise entry",
+  "population": "brand has linked activity in other Daegu districts at t-1 and available t-2 counts; fixed8 districts excludes Gunwi",
+  "features": [
+    "log_total",
+    "growth",
+    "districts_present",
+    "gu",
+    "industry"
+  ],
+  "training": "target years < evaluation year; retrospective accounting-year origins, publication timing unavailable",
+  "development": [
+    2021,
+    2022
+  ],
+  "evaluation": [
+    2023,
+    2024
+  ],
+  "provisional": [
+    2025
+  ],
+  "primary": "average precision",
+  "data_limits": [
+    "provisional name substring matches",
+    "zero linked records not confirmed absence",
+    "source snapshots include later revisions",
+    "brand availability based on historical report year not release date"
+  ]
+}

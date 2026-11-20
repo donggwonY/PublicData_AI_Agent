@@ -1,0 +1,8 @@
+{
+  "sample_n": 30,
+  "sample_rule": "previously fixed seed20261120 sample30 from positive events with prior city presence; not manual ground-truth check",
+  "all_active_rows_new_permits": 28,
+  "events_with_older_permits": 2,
+  "alias_changed_events": 1,
+  "empty_reconstruction": 0
+}

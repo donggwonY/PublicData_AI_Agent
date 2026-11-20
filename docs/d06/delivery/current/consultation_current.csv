@@ -1,0 +1,739 @@
+﻿brand_id,brand_name,industry,prediction_kind,target_accounting_year,baseline_accounting_year,previous_accounting_year,regional_report_year,national_report_year,baseline_daegu_stores,previous_daegu_stores,decline_probability,generated_date,national_frcsCnt,national_frcsCnt_status,national_newFrcsRgsCnt,national_newFrcsRgsCnt_status,national_ctrtEndCnt,national_ctrtEndCnt_status,national_ctrtCncltnCnt,national_ctrtCncltnCnt_status,brand_name_status
+BRD_20080100023,락휴노래연습장,오락,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.2159695757807493,2026-11-20,124,observed,6,observed,0,observed,5,observed,observed
+BRD_20080100032,GS25,편의점,current_accounting_year_projection,2026,2025,2024,2026,2025,688.0,702.0,0.5169407063664838,2026-11-20,17989,observed,1785,observed,530,observed,538,observed,observed
+BRD_20080100037,온누리약국,약국,current_accounting_year_projection,2026,2025,2024,2026,2025,79.0,79.0,0.3021071676502576,2026-11-20,2073,observed,86,observed,95,observed,0,observed,observed
+BRD_20080100044,오토오아시스(autoOasis),자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,19.0,21.0,0.6549345698688802,2026-11-20,387,observed,7,observed,23,observed,29,observed,observed
+BRD_20080100052,치킨마루,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4068287718292963,2026-11-20,152,observed,7,observed,37,observed,0,observed,observed
+BRD_20080100061,네네치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,29.0,32.0,0.6421279251256545,2026-11-20,869,observed,12,observed,94,observed,0,observed,observed
+BRD_20080100069,씨스페이스24(CSPACE24),편의점,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,12.0,0.5103867701845353,2026-11-20,337,observed,79,observed,48,observed,18,observed,observed
+BRD_20080100077,맛깔참죽,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.5295189907924824,2026-11-20,73,observed,2,observed,0,observed,12,observed,observed
+BRD_20080100084,풀무원녹즙,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,17.0,17.0,0.39344594812738864,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20080100095,이니스프리(innisfree),화장품,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,9.0,0.6013239618087604,2026-11-20,190,observed,0,observed,44,observed,0,observed,observed
+BRD_20080100120,레디카,자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,14.0,0.2785135976842132,2026-11-20,116,observed,1,observed,1,observed,0,observed,observed
+BRD_20080100121,마스타,자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,22.0,28.0,0.5372000689108875,2026-11-20,577,observed,11,observed,9,observed,0,observed,observed
+BRD_20080100133,초록마을,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,28.0,0.6873523978284338,2026-11-20,242,observed,12,observed,13,observed,28,observed,observed
+BRD_20080100149,외대어학원,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.46777699483339547,2026-11-20,31,observed,2,observed,2,observed,6,observed,observed
+BRD_20080100162,기소야,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.3349888051429678,2026-11-20,26,observed,0,observed,2,observed,2,observed,observed
+BRD_20080100180,또래오래,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,12.0,0.6568369953167486,2026-11-20,527,observed,39,observed,66,observed,0,observed,observed
+BRD_20080100191,반딧불이,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.2230638028409995,2026-11-20,51,observed,3,observed,0,observed,2,observed,observed
+BRD_20080100199,할리스,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,19.0,0.6772274628913931,2026-11-20,402,observed,33,observed,23,observed,32,observed,observed
+BRD_20080100201,간이역,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,21.0,21.0,0.4596307693438899,2026-11-20,349,observed,13,observed,32,observed,0,observed,observed
+BRD_20080100210,홍콩반점0410,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.23130869047882904,2026-11-20,293,observed,18,observed,7,observed,0,observed,observed
+BRD_20080100240,봉추찜닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.26645855159359383,2026-11-20,120,observed,2,observed,8,observed,0,observed,observed
+BRD_20080100243,본죽,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,21.0,30.0,0.6355834511107168,2026-11-20,575,observed,0,observed,72,observed,0,observed,observed
+BRD_20080100262,멕시카나,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,40.0,44.0,0.6881895239349003,2026-11-20,738,observed,58,observed,67,observed,65,observed,observed
+BRD_20080100308,한솥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,69.0,68.0,0.30168453664810907,2026-11-20,811,observed,51,observed,33,observed,0,observed,observed
+BRD_20080100317,준코노래타운,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.25351298740119255,2026-11-20,60,observed,7,observed,0,observed,1,observed,observed
+BRD_20080100324,북창동순두부,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.32707457273334584,2026-11-20,79,observed,18,observed,9,observed,4,observed,observed
+BRD_20080100328,죽이야기,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,14.0,0.6146037772447297,2026-11-20,318,observed,15,observed,43,observed,0,observed,observed
+BRD_20080100359,삼성영어셀레나,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,65.0,71.0,0.477271283274139,2026-11-20,1625,observed,207,observed,182,observed,0,observed,observed
+BRD_20080100394,차일드유,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.3862215844281225,2026-11-20,56,observed,5,observed,6,observed,6,observed,observed
+BRD_20080100424,하늘교육학원,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,7.0,0.5681539995604487,2026-11-20,33,observed,0,observed,1,observed,5,observed,observed
+BRD_20080100430,미소야,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,7.0,0.5075389891837248,2026-11-20,180,observed,5,observed,0,observed,14,observed,observed
+BRD_20080100473,스테프핫도그(STEFF HOTDOG),패스트푸드,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.3995154567776849,2026-11-20,41,observed,2,observed,9,observed,0,observed,observed
+BRD_20080100484,윤선생영어교실,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.2874814901038064,2026-11-20,192,observed,1,observed,10,observed,5,observed,observed
+BRD_20080100487,부어치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,13.0,0.5776501279067598,2026-11-20,260,observed,51,observed,10,observed,10,observed,observed
+BRD_20080100492,홍익아트방문미술,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.23871576659882962,2026-11-20,132,observed,0,observed,0,observed,0,observed,observed
+BRD_20080100540,미샤,화장품,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.5914587914551016,2026-11-20,89,observed,2,observed,4,observed,0,observed,observed
+BRD_20080100542,블루클럽,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,11.0,0.2965089572253184,2026-11-20,323,observed,18,observed,12,observed,0,observed,observed
+BRD_20080100632,아담리즈수학,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.21746187095170755,2026-11-20,62,observed,4,observed,3,observed,0,observed,observed
+BRD_20080100646,앤티앤스(Auntie Anne’s),제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,18.0,20.0,0.528539897575061,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20080100655,비에이치씨(BHC),치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,86.0,84.0,0.3931040144736303,2026-11-20,2228,observed,92,observed,4,observed,136,observed,observed
+BRD_20080100666,석봉토스트,패스트푸드,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.4523722974301361,2026-11-20,36,observed,0,observed,12,observed,0,observed,observed
+BRD_20080100673,드림디포,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.22406189101523008,2026-11-20,307,observed,5,observed,11,observed,0,observed,observed
+BRD_20080100739,피자마루,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,18.0,17.0,0.40677325954693533,2026-11-20,498,observed,9,observed,35,observed,0,observed,observed
+BRD_20080100751,미래엔수학,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,69.0,68.0,0.5699744971023424,2026-11-20,1491,observed,396,observed,291,observed,0,observed,observed
+BRD_20080200019,투다리,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,42.0,43.0,0.6313692508535845,2026-11-20,1292,observed,32,observed,87,observed,0,observed,observed
+BRD_20080200033,조마루감자탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.18350346328727177,2026-11-20,157,observed,1,observed,0,observed,6,observed,observed
+BRD_20080200047,코리안바베큐,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2893702635839016,2026-11-20,100,observed,2,observed,9,observed,0,observed,observed
+BRD_20080200078,머리에그리는홍선생미술,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.33954029957243864,2026-11-20,107,observed,3,observed,10,observed,1,observed,observed
+BRD_20080200095,Speedmate,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,38.0,38.0,0.33911348692204923,2026-11-20,577,observed,7,observed,20,observed,0,observed,observed
+BRD_20080200106,처갓집양념치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,51.0,51.0,0.2947657230648755,2026-11-20,1254,observed,90,observed,60,observed,13,observed,observed
+BRD_20080200140,크린토피아,세탁,current_accounting_year_projection,2026,2025,2024,2026,2025,124.0,125.0,0.2991491758925992,2026-11-20,3052,observed,307,observed,115,observed,0,observed,observed
+BRD_20080200171,크린에이드,세탁,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.5313623944955542,2026-11-20,271,observed,23,observed,22,observed,19,observed,observed
+BRD_20080200188,쪽갈비전문점 예감,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.49644908149620937,2026-11-20,38,observed,2,observed,7,observed,0,observed,observed
+BRD_20080200203,카젠,자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,17.0,17.0,0.2712961416119255,2026-11-20,163,observed,0,observed,0,observed,4,observed,observed
+BRD_20080200276,맥시칸치킨,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.4945017238392076,2026-11-20,418,observed,17,observed,0,observed,33,observed,observed
+BRD_20080200306,망향비빔국수,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.33650089464850336,2026-11-20,61,observed,5,observed,6,observed,0,observed,observed
+BRD_20080300013,지코바양념치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,44.0,44.0,0.2789938582328673,2026-11-20,743,observed,13,observed,0,observed,6,observed,observed
+BRD_20080300030,이노티안경,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,5.0,0.1676226383267774,2026-11-20,112,observed,9,observed,2,observed,0,observed,observed
+BRD_20080400030,임실N치즈피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.39914128264206783,2026-11-20,44,observed,0,observed,4,observed,0,observed,observed
+BRD_20080500007,풀무원(냉장),기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,8.0,0.4926573819622713,2026-11-20,254,observed,10,observed,15,observed,1,observed,observed
+BRD_20080500009,풀무원샘물,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.32098340335553505,2026-11-20,243,observed,8,observed,12,observed,0,observed,observed
+BRD_20080500014,풀무원로하스,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.3319465591466619,2026-11-20,134,observed,2,observed,10,observed,0,observed,observed
+BRD_20080500019,원할머니,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,14.0,0.5224295106622587,2026-11-20,278,observed,5,observed,0,observed,22,observed,observed
+BRD_20080500020,박가부대,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,7.0,0.5660839168059866,2026-11-20,94,observed,19,observed,0,observed,15,observed,observed
+BRD_20080500022,정관장,(건강)식품,current_accounting_year_projection,2026,2025,2024,2026,2025,31.0,31.0,0.2656058741255013,2026-11-20,751,observed,0,observed,3,observed,0,observed,observed
+BRD_20080500031,이삭토스트,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,23.0,24.0,0.581079139015407,2026-11-20,894,observed,18,observed,41,observed,0,observed,observed
+BRD_20080500035,페리카나,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,30.0,31.0,0.5256257185289831,2026-11-20,995,observed,37,observed,61,observed,0,observed,observed
+BRD_20080500059,개미인력개발(주),기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,10.0,0.5701476473637166,2026-11-20,171,observed,47,observed,22,observed,0,observed,observed
+BRD_20080600001,신떡,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,5.0,0.26593257794951863,2026-11-20,21,observed,0,observed,0,observed,1,observed,observed
+BRD_20080600002,교촌치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,74.0,74.0,0.2789938582328673,2026-11-20,1361,observed,12,observed,28,observed,0,observed,observed
+BRD_20080600010,땅땅치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,37.0,44.0,0.7495539682528812,2026-11-20,177,observed,6,observed,37,observed,12,observed,observed
+BRD_20080600012,장원교육,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,13.0,0.2648082947724356,2026-11-20,156,observed,2,observed,4,observed,0,observed,observed
+BRD_20080600013,종국이두마리치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,13.0,0.5990895479398447,2026-11-20,31,observed,0,observed,4,observed,4,observed,observed
+BRD_20080600029,떡보의하루,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,10.0,0.2648082947724356,2026-11-20,156,observed,2,observed,0,observed,0,observed,observed
+BRD_20080600030,핸즈커피 (HANDS COFFEE),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,30.0,31.0,0.6179322222996552,2026-11-20,58,observed,2,observed,0,observed,10,observed,observed
+BRD_20090100062,폴리어학원,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.16812877772757248,2026-11-20,61,observed,3,observed,1,observed,0,observed,observed
+BRD_20090100089,오구피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.3552995932335612,2026-11-20,360,observed,4,observed,52,observed,0,observed,observed
+BRD_20090100120,소낙스 카케어,자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.3403310360203266,2026-11-20,96,observed,14,observed,5,observed,0,observed,observed
+BRD_20090100151,림스치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.33212689231213494,2026-11-20,68,observed,7,observed,3,observed,0,observed,observed
+BRD_20090100195,국수나무,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,16.0,16.0,0.39344594812738864,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20090100341,소노야,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.3664265129029025,2026-11-20,22,observed,4,observed,0,observed,2,observed,observed
+BRD_20090100397,미술로생각하기,유아 관련 (교육 외),current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.5771808593927175,2026-11-20,81,observed,0,observed,10,observed,0,observed,observed
+BRD_20090100487,센클영어도서관,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.5193352583277083,2026-11-20,53,observed,5,observed,4,observed,0,observed,observed
+BRD_20090100498,한신포차,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,8.0,0.5783425830847786,2026-11-20,124,observed,24,observed,16,observed,0,observed,observed
+BRD_20090100502,빽다방,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,83.0,79.0,0.21591122852023836,2026-11-20,1712,observed,286,observed,23,observed,0,observed,observed
+BRD_20090100577,한앤둘치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.34172719860523343,2026-11-20,35,observed,9,observed,0,observed,3,observed,observed
+BRD_20090100597,만복집,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,16.0,19.0,0.567972721566643,2026-11-20,85,observed,5,observed,9,observed,2,observed,observed
+BRD_20090100600,GS THE FRESH,종합소매점,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,11.0,0.2229393765751285,2026-11-20,418,observed,111,observed,1,observed,5,observed,observed
+BRD_20090300004,7번가피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.5779945767789466,2026-11-20,191,observed,8,observed,18,observed,0,observed,observed
+BRD_20090400025,현대옥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.20327194500201543,2026-11-20,179,observed,32,observed,4,observed,2,observed,observed
+BRD_20090600019,커피명가,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,19.0,19.0,0.49007599059297935,2026-11-20,37,observed,0,observed,0,observed,4,observed,observed
+BRD_20090600040,현가네33족발,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.3532043119314123,2026-11-20,6,observed,0,observed,1,observed,0,observed,observed
+BRD_20090600054,봉대박스파게티,서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,7.0,0.6239540459434252,2026-11-20,18,observed,0,observed,3,observed,0,observed,observed
+BRD_20090600074,개정,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,18.0,0.5885327264787976,2026-11-20,23,observed,0,observed,0,observed,0,observed,observed
+BRD_201001002121,대구반야월막창,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,13.0,0.728192747506866,2026-11-20,95,observed,7,observed,16,observed,0,observed,observed
+BRD_20100100281,튼튼영어마스터클럽,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,17.0,0.5744494459336824,2026-11-20,268,observed,10,observed,43,observed,0,observed,observed
+BRD_20100100398,소마사고력수학,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,8.0,0.5157414494121675,2026-11-20,166,observed,13,observed,15,observed,2,observed,observed
+BRD_20100100482,본도시락,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,20.0,21.0,0.6464755229609641,2026-11-20,405,observed,11,observed,45,observed,0,observed,observed
+BRD_20100100511,G1230 수학학원,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.4127360432198702,2026-11-20,62,observed,8,observed,5,observed,3,observed,observed
+BRD_20100100580,토니모리,화장품,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,8.0,0.7185933489874283,2026-11-20,97,observed,1,observed,1,observed,14,observed,observed
+BRD_20100100603,펀비어킹,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.4153977997304012,2026-11-20,327,observed,29,observed,41,observed,0,observed,observed
+BRD_20100300025,일공공일안경콘택트,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,12.0,0.18401219099669844,2026-11-20,263,observed,2,observed,4,observed,1,observed,observed
+BRD_20100300026,씨채널(See Channel),안경,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,12.0,0.1754792363682962,2026-11-20,65,observed,7,observed,1,observed,0,observed,observed
+BRD_20100600029,주왕산삼계탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.2243577389470068,2026-11-20,16,observed,2,observed,0,observed,0,observed,observed
+BRD_20100600062,아지야과일가게,농수산물,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,15.0,0.6232368533269597,2026-11-20,15,observed,0,observed,0,observed,3,observed,observed
+BRD_20110100362,지지고(GGGO),분식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.3902791367647557,2026-11-20,65,observed,10,observed,4,observed,1,observed,observed
+BRD_20110100374,카페24창업센터,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.1969207331811982,2026-11-20,97,observed,2,observed,2,observed,0,observed,observed
+BRD_20110100535,홍익돈까스,서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.21192612310594067,2026-11-20,88,observed,3,observed,0,observed,3,observed,observed
+BRD_20110100613,윤선생영어숲,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,14.0,0.4373190582915818,2026-11-20,176,observed,3,observed,20,observed,10,observed,observed
+BRD_20110100614,알파,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.24583325662270658,2026-11-20,618,observed,12,observed,0,observed,35,observed,observed
+BRD_20110300059,고봉민김밥인,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,19.0,19.0,0.5746418293286024,2026-11-20,450,observed,11,observed,68,observed,0,observed,observed
+BRD_20110300060,원조의령소바,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.3797476185103932,2026-11-20,27,observed,4,observed,0,observed,3,observed,observed
+BRD_20110500014,안경매니져,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.20973903012031098,2026-11-20,161,observed,5,observed,4,observed,7,observed,observed
+BRD_20110500015,아이피아,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.36133636942604297,2026-11-20,80,observed,2,observed,4,observed,5,observed,observed
+BRD_20110600008,신전떡볶이,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,26.0,27.0,0.5909351398012056,2026-11-20,671,observed,9,observed,0,observed,39,observed,observed
+BRD_20110600010,VFC치킨파티,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.4151849820798083,2026-11-20,16,observed,0,observed,0,observed,3,observed,observed
+BRD_20110600016,달구지막창,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.3717193328824558,2026-11-20,20,observed,2,observed,4,observed,0,observed,observed
+BRD_20110600017,어린음악대,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,14.0,0.5646781625437098,2026-11-20,179,observed,8,observed,0,observed,32,observed,observed
+BRD_20110600030,신참떡볶이,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,32.0,33.0,0.5136161933986331,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20110600048,오레시피,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.5541918426860277,2026-11-20,94,observed,10,observed,34,observed,0,observed,observed
+BRD_20120100091,오렌즈,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,11.0,0.1615545349808461,2026-11-20,353,observed,19,observed,3,observed,0,observed,observed
+BRD_20120100160,또봉이통닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,7.0,0.43566446280424753,2026-11-20,462,observed,63,observed,62,observed,0,observed,observed
+BRD_20120100237,뮤직뮤직,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.36714468338265005,2026-11-20,78,observed,5,observed,11,observed,0,observed,observed
+BRD_20120100352,역전우동0410,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.3151463440934217,2026-11-20,218,observed,35,observed,9,observed,0,observed,observed
+BRD_20120100353,ITC영어,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,2.0,0.32699128338067507,2026-11-20,96,observed,31,observed,2,observed,13,observed,observed
+BRD_20120100362,북촌손만두,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.4036064273993543,2026-11-20,142,observed,7,observed,32,observed,3,observed,observed
+BRD_20120100475,렌즈미,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.16897529595516517,2026-11-20,230,observed,12,observed,6,observed,6,observed,observed
+BRD_20120100492,뮤엠영어,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,109.0,109.0,0.3563217665432223,2026-11-20,1849,observed,123,observed,181,observed,0,observed,observed
+BRD_20120100533,가장맛있는족발,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,17.0,17.0,0.31225709649958394,2026-11-20,384,observed,7,observed,10,observed,8,observed,observed
+BRD_20120100544,V-KOOL(브이쿨),자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,45.0,44.0,0.47284657223040794,2026-11-20,469,observed,15,observed,49,observed,0,observed,observed
+BRD_20120100604,코코호도,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.6448505596493679,2026-11-20,167,observed,5,observed,0,observed,20,observed,observed
+BRD_20120300004,월드크리닝,세탁,current_accounting_year_projection,2026,2025,2024,2026,2025,31.0,30.0,0.37941122678303135,2026-11-20,475,observed,51,observed,3,observed,31,observed,observed
+BRD_20120300082,압구정 봉구비어,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,9.0,0.7714083444226392,2026-11-20,182,observed,8,observed,0,observed,37,observed,observed
+BRD_20120500057,정가대박집,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,15.0,0.5381638301434508,2026-11-20,25,observed,4,observed,4,observed,0,observed,observed
+BRD_20120500062,씨채널,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,19.0,19.0,0.24305183470768074,2026-11-20,72,observed,1,observed,1,observed,3,observed,observed
+BRD_20120600009,피자스쿨,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,11.0,0.589540086411879,2026-11-20,324,observed,9,observed,8,observed,0,observed,observed
+BRD_20120600032,크린파트너,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,39.0,38.0,0.301843127221102,2026-11-20,70,observed,2,observed,0,observed,1,observed,observed
+BRD_20120600062,폴리파크,반려동물 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,22.0,22.0,0.5171121564344666,2026-11-20,75,observed,10,observed,1,observed,12,observed,observed
+BRD_20120600075,허대구 대구통닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.5349388942092952,2026-11-20,16,observed,0,observed,0,observed,4,observed,observed
+BRD_20130015,아마스빈,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.61843182052697,2026-11-20,106,observed,2,observed,36,observed,0,observed,observed
+BRD_20130043,차수학,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,15.0,0.7181705185295243,2026-11-20,189,observed,9,observed,29,observed,14,observed,observed
+BRD_20130100004,봉구스밥버거,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,15.0,0.5341727636991611,2026-11-20,473,observed,23,observed,39,observed,0,observed,observed
+BRD_20130100052,공차,음료 (커피 외),current_accounting_year_projection,2026,2025,2024,2026,2025,41.0,44.0,0.5781772700897561,2026-11-20,836,observed,61,observed,59,observed,0,observed,observed
+BRD_20130100119,예스셈,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.3485654480771379,2026-11-20,71,observed,2,observed,0,observed,16,observed,observed
+BRD_20130100128,대박통,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,0.0,0.3347816194633722,2026-11-20,20,observed,2,observed,2,observed,0,observed,observed
+BRD_20130100179,튼튼영어베이비리그,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.39380234655473234,2026-11-20,65,observed,0,observed,9,observed,0,observed,observed
+BRD_20130100180,뉴욕버거,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,11.0,0.6894388252078612,2026-11-20,161,observed,37,observed,27,observed,19,observed,observed
+BRD_20130100283,불닭발땡초동대문엽기떡볶이,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,27.0,25.0,0.22342583213151554,2026-11-20,650,observed,59,observed,1,observed,0,observed,observed
+BRD_20130100376,맛찬들왕소금구이,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.40970443138581075,2026-11-20,84,observed,4,observed,2,observed,9,observed,observed
+BRD_20130100434,일미리금계찜닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,7.0,0.4591889564528794,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20130100468,구피샵,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,34.0,32.0,0.22635315702859252,2026-11-20,176,observed,13,observed,4,observed,2,observed,observed
+BRD_20130123,쌀통닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.4123064473832644,2026-11-20,77,observed,14,observed,0,observed,11,observed,observed
+BRD_20130155,이화수전통육개장,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.40174336412387357,2026-11-20,157,observed,10,observed,11,observed,0,observed,observed
+BRD_20130176,노랑통닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,42.0,35.0,0.3514879738780033,2026-11-20,751,observed,171,observed,70,observed,0,observed,observed
+BRD_20130184,쿠우쿠우,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.32532798624329007,2026-11-20,89,observed,15,observed,6,observed,0,observed,observed
+BRD_20130249,설빙,아이스크림/빙수 ,current_accounting_year_projection,2026,2025,2024,2026,2025,34.0,32.0,0.226074110282845,2026-11-20,576,observed,28,observed,12,observed,0,observed,observed
+BRD_20130347,달인의찜닭,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,21.0,21.0,0.5555247229921056,2026-11-20,46,observed,7,observed,7,observed,0,observed,observed
+BRD_20130400,누리마을감자탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,16.0,17.0,0.5091851341698366,2026-11-20,57,observed,8,observed,3,observed,0,observed,observed
+BRD_20130452,유가네,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.6093870629368241,2026-11-20,201,observed,19,observed,2,observed,15,observed,observed
+BRD_20130505,오븐마루,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.4629674524340271,2026-11-20,149,observed,39,observed,4,observed,2,observed,observed
+BRD_20130507,3030영어,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,43.0,48.0,0.5980237721105669,2026-11-20,788,observed,87,observed,5,observed,52,observed,observed
+BRD_20130518,채다올김밥,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,18.0,18.0,0.5582368769743868,2026-11-20,22,observed,4,observed,0,observed,4,observed,observed
+BRD_20130538,썬더치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,8.0,0.5624304832114391,2026-11-20,132,observed,45,observed,18,observed,0,observed,observed
+BRD_20140058,바르다김선생,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4231921862797216,2026-11-20,104,observed,3,observed,17,observed,6,observed,observed
+BRD_20140100,신통치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,16.0,0.5630147416673813,2026-11-20,141,observed,5,observed,3,observed,0,observed,observed
+BRD_20140109,토리헤어,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.24118973591467022,2026-11-20,166,observed,5,observed,11,observed,0,observed,observed
+BRD_20140164,,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,21.0,22.0,0.600334619318798,2026-11-20,57,observed,11,observed,2,observed,1,observed,unavailable
+BRD_20140168,두남자찜닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.38333348766515146,2026-11-20,7,observed,0,observed,0,observed,2,observed,observed
+BRD_20140262,신불떡볶이,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.5386408485811786,2026-11-20,32,observed,1,observed,0,observed,12,observed,observed
+BRD_20140288,스트릿츄러스,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.4096160886465907,2026-11-20,68,observed,23,observed,1,observed,7,observed,observed
+BRD_20140292,큰맘할매순대국,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,5.0,0.5755702379199892,2026-11-20,336,observed,33,observed,0,observed,103,observed,observed
+BRD_20140306,롤링핀,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.5714531990447593,2026-11-20,38,observed,3,observed,9,observed,0,observed,observed
+BRD_20140371,아이젠트리(EYE GENTRY),안경,current_accounting_year_projection,2026,2025,2024,2026,2025,16.0,16.0,0.2501762653267607,2026-11-20,71,observed,2,observed,0,observed,1,observed,observed
+BRD_20140475,자담치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,27.0,30.0,0.69214247056317,2026-11-20,708,observed,98,observed,8,observed,68,observed,observed
+BRD_20140543,삼십구치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,17.0,18.0,0.5319192526956813,2026-11-20,18,observed,0,observed,0,observed,1,observed,observed
+BRD_20140599,마시그래이,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,29.0,34.0,0.7623424900051377,2026-11-20,48,observed,1,observed,10,observed,4,observed,observed
+BRD_20140726,리얼펍,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,3.0,0.4769876230415057,2026-11-20,82,observed,29,observed,20,observed,0,observed,observed
+BRD_20140747,빅스타피자(Bigstar Pizza),피자,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,5.0,0.5798269693205869,2026-11-20,114,observed,9,observed,9,observed,13,observed,observed
+BRD_20140870,바닷물만난콩이:두부야,농수산물,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,12.0,0.674579528144322,2026-11-20,88,observed,4,observed,0,observed,10,observed,observed
+BRD_20141019,반올림피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,23.0,23.0,0.41927628502466247,2026-11-20,365,observed,38,observed,26,observed,0,observed,observed
+BRD_20141063,생활맥주,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,6.0,0.5187149019956768,2026-11-20,179,observed,21,observed,29,observed,5,observed,observed
+BRD_20141088,만복한쭈꾸미낙지볶음,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.26103333645963295,2026-11-20,19,observed,1,observed,0,observed,0,observed,observed
+BRD_20141221,본죽&비빔밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,64.0,56.0,0.21502946463657002,2026-11-20,1150,observed,152,observed,5,observed,0,observed,observed
+BRD_20141237,와플대학,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,10.0,0.5954782282156331,2026-11-20,336,observed,19,observed,57,observed,4,observed,observed
+BRD_20141250,컴포즈커피(COMPOSE COFFEE),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,69.0,58.0,0.19440315355152568,2026-11-20,2649,observed,311,observed,27,observed,5,observed,observed
+BRD_20141252,복어잡는사람들,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.20970199364812434,2026-11-20,4,observed,0,observed,0,observed,0,observed,observed
+BRD_20141254,전원숯불,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,11.0,0.44363513360183593,2026-11-20,22,observed,1,observed,2,observed,0,observed,observed
+BRD_20150052,빵장수단팥빵,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,14.0,0.6234396435938848,2026-11-20,42,observed,4,observed,6,observed,0,observed,observed
+BRD_20150062,매스커피,음료 (커피 외),current_accounting_year_projection,2026,2025,2024,2026,2025,34.0,30.0,0.2500386293870849,2026-11-20,37,observed,2,observed,1,observed,1,observed,observed
+BRD_20150065,타코비,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.457622411697451,2026-11-20,84,observed,12,observed,17,observed,2,observed,observed
+BRD_20150098,곤지암할매소머리국밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,8.0,0.5560522109045412,2026-11-20,194,observed,35,observed,18,observed,1,observed,observed
+BRD_20150175,이씨엔교육,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.1992045222608167,2026-11-20,127,observed,0,observed,0,observed,0,observed,observed
+BRD_20150189,카페봄봄,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,132.0,140.0,0.6667106386286251,2026-11-20,414,observed,13,observed,23,observed,6,observed,observed
+BRD_20150253,카페게이트,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.39300099351508755,2026-11-20,146,observed,27,observed,7,observed,9,observed,observed
+BRD_20150297,오토앤(auto&),자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.39043750610527167,2026-11-20,34,observed,0,observed,3,observed,0,observed,observed
+BRD_20150303,더 스미스,자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,19.0,19.0,0.254645489841954,2026-11-20,310,observed,11,observed,2,observed,0,observed,observed
+BRD_20150434,푸르맘찬,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.32823223891734293,2026-11-20,7,observed,0,observed,0,observed,0,observed,observed
+BRD_20150460,루체테어학원,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.38261365689496013,2026-11-20,42,observed,1,observed,0,observed,12,observed,observed
+BRD_20150612,김성구 의성마늘치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.43127807132817175,2026-11-20,18,observed,5,observed,2,observed,1,observed,observed
+BRD_20150700,청년다방,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,10.0,0.7089371532809586,2026-11-20,352,observed,5,observed,44,observed,8,observed,observed
+BRD_20150737,이투스24/7,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.35878184300595134,2026-11-20,57,observed,0,observed,0,observed,5,observed,observed
+BRD_20150816,윤선생우리집앞영어교실,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,23.0,21.0,0.4725880911703884,2026-11-20,641,observed,58,observed,66,observed,39,observed,observed
+BRD_20150842,고굽남 고기굽는남자,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,13.0,0.5016642511653856,2026-11-20,24,observed,3,observed,0,observed,0,observed,observed
+BRD_20150901,다담뜰 한식뷔페,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.2556187533634414,2026-11-20,18,observed,3,observed,0,observed,0,observed,observed
+BRD_20150939,홍춘천,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.48043335155030575,2026-11-20,61,observed,10,observed,0,observed,15,observed,observed
+BRD_20151039,60계,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,33.0,34.0,0.5719140660083807,2026-11-20,665,observed,16,observed,11,observed,0,observed,observed
+BRD_20151052,더치앤빈,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.540695952783814,2026-11-20,67,observed,3,observed,23,observed,0,observed,observed
+BRD_20151067,스트라이크존(STRIKEZON),스포츠 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.4156431917170773,2026-11-20,95,observed,0,observed,6,observed,0,observed,observed
+BRD_20151198,염색이야기,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,6.0,0.4695530944754107,2026-11-20,66,observed,10,observed,5,observed,0,observed,observed
+BRD_20151202,THE LITER (더리터),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,71.0,74.0,0.512494856230546,2026-11-20,416,observed,27,observed,31,observed,0,observed,observed
+BRD_20151228,막창도둑,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,39.0,41.0,0.6280448456808142,2026-11-20,99,observed,5,observed,12,observed,0,observed,observed
+BRD_20151234,소녀폰중고폰,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,5.0,0.4232059548875674,2026-11-20,74,observed,8,observed,9,observed,0,observed,observed
+BRD_20160062,밤새우는 닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.2595870757592252,2026-11-20,4,observed,2,observed,0,observed,0,observed,observed
+BRD_20160124,설동궁찜닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,30.0,30.0,0.4593108235853106,2026-11-20,184,observed,9,observed,18,observed,0,observed,observed
+BRD_20160150,숯불에닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.40110626060138166,2026-11-20,66,observed,9,observed,6,observed,0,observed,observed
+BRD_20160161,황장군,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,10.0,0.6621663055136456,2026-11-20,16,observed,0,observed,0,observed,1,observed,observed
+BRD_20160174,로이드밤,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.5221856422154554,2026-11-20,192,observed,15,observed,29,observed,1,observed,observed
+BRD_20160196,아트모마,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.24142156223468766,2026-11-20,29,observed,0,observed,0,observed,2,observed,observed
+BRD_20160218,세컨페이스,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,7.0,0.18549067581796644,2026-11-20,53,observed,1,observed,0,observed,0,observed,observed
+BRD_20160352,리얼야구존,스포츠 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.20256566363264822,2026-11-20,64,observed,0,observed,0,observed,1,observed,observed
+BRD_20160418,펫마트,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.24305540851444352,2026-11-20,115,observed,9,observed,1,observed,3,observed,observed
+BRD_20160521,심봉사도로케,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4469431489433828,2026-11-20,50,observed,17,observed,2,observed,12,observed,observed
+BRD_20160611,ERC영어독서클럽,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.45788031347068875,2026-11-20,168,observed,41,observed,6,observed,18,observed,observed
+BRD_20160718,네오피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,8.0,0.5041125447460274,2026-11-20,48,observed,2,observed,10,observed,1,observed,observed
+BRD_20160722,푸드머스(KIDS),기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.2622236152020249,2026-11-20,89,observed,7,observed,6,observed,0,observed,observed
+BRD_20160768,풀무원(냉동),기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,8.0,0.4926573819622713,2026-11-20,242,observed,10,observed,13,observed,1,observed,observed
+BRD_20160798,가마치통닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,28.0,26.0,0.32405212172423375,2026-11-20,788,observed,121,observed,39,observed,0,observed,observed
+BRD_20160807,파스토보이(pastoboy),서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.47898992580724753,2026-11-20,37,observed,7,observed,0,observed,18,observed,observed
+BRD_20160835,얌샘김밥,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.552896146397868,2026-11-20,226,observed,30,observed,34,observed,0,observed,observed
+BRD_20160864,기탄사고력교실,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,67.0,64.0,0.4317202679291942,2026-11-20,1083,observed,139,observed,76,observed,0,observed,observed
+BRD_20160962,총각족발,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,7.0,0.4296199571375794,2026-11-20,8,observed,2,observed,2,observed,0,observed,observed
+BRD_20160973,카페051(cafe051),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.4876002422211631,2026-11-20,226,observed,17,observed,0,observed,10,observed,observed
+BRD_20161004,점핑하이,스포츠 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,12.0,0.33620434896252677,2026-11-20,403,observed,34,observed,20,observed,12,observed,observed
+BRD_20161022,뼈큰감자탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,10.0,0.5294096093308122,2026-11-20,22,observed,3,observed,4,observed,0,observed,observed
+BRD_20161129,뜨돈(DD'DON),서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,12.0,0.4976794719288063,2026-11-20,43,observed,23,observed,0,observed,3,observed,observed
+BRD_20161137,명랑시대쌀핫도그,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,30.0,30.0,0.5073027341478357,2026-11-20,480,observed,7,observed,44,observed,8,observed,observed
+BRD_20161144,세븐스타 코인노래연습장,오락,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.349399181029111,2026-11-20,245,observed,28,observed,8,observed,0,observed,observed
+BRD_20161159,매머드익스프레스(Mammoth Express),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,12.0,0.5728050177166178,2026-11-20,742,observed,147,observed,35,observed,0,observed,observed
+BRD_20161199,동근이숯불두마리치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,14.0,0.6263646456188418,2026-11-20,172,observed,40,observed,22,observed,13,observed,observed
+BRD_20161247,차이랑중국어,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.4424295372989281,2026-11-20,143,observed,5,observed,41,observed,0,observed,observed
+BRD_20161261,황금코다리,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.4839281455709064,2026-11-20,137,observed,28,observed,14,observed,0,observed,observed
+BRD_20161266,슈올즈 (ShoeallS),기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,10.0,0.35021813842369576,2026-11-20,155,observed,14,observed,5,observed,0,observed,observed
+BRD_20161290,엠베스트SE,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,18.0,17.0,0.5623926958317198,2026-11-20,420,observed,90,observed,71,observed,0,observed,observed
+BRD_20170126,미카도스시,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,2.0,0.3659184704664023,2026-11-20,78,observed,19,observed,10,observed,0,observed,observed
+BRD_20170145,그림아트스튜디오,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.4706910106755501,2026-11-20,88,observed,16,observed,3,observed,14,observed,observed
+BRD_20170326,박선생 창의역사지리교실,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.22935605417741783,2026-11-20,29,observed,0,observed,0,observed,2,observed,observed
+BRD_20170329,미래엔영어,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,80.0,73.0,0.267465453227119,2026-11-20,1355,observed,298,observed,87,observed,38,observed,observed
+BRD_20170358,33떡볶이,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,8.0,0.7265947623923615,2026-11-20,183,observed,41,observed,33,observed,0,observed,observed
+BRD_20170374,거송갈비찜,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.5891862701881393,2026-11-20,10,observed,2,observed,2,observed,0,observed,observed
+BRD_20170451,선비꼬마김밥,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,61.0,63.0,0.46584356273140726,2026-11-20,248,observed,39,observed,5,observed,7,observed,observed
+BRD_20170520,에이바우트커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,7.0,0.23430764934135917,2026-11-20,53,observed,6,observed,1,observed,3,observed,observed
+BRD_20170547,엑스오엑스오푸드카페,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.5281604081549487,2026-11-20,275,observed,0,observed,57,observed,0,observed,observed
+BRD_20170559,행컵,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.5280014643191646,2026-11-20,33,observed,6,observed,4,observed,0,observed,observed
+BRD_20170560,,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5510322289751602,2026-11-20,71,observed,15,observed,28,observed,0,observed,unavailable
+BRD_20170725,레이지모닝,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.25165657417689263,2026-11-20,5,observed,0,observed,0,observed,0,observed,observed
+BRD_20170746,커피랑도서관,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.47567406812466373,2026-11-20,31,observed,2,observed,8,observed,0,observed,observed
+BRD_20170752,눈사랑안경,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,7.0,0.17893993832846786,2026-11-20,51,observed,2,observed,0,observed,0,observed,observed
+BRD_20170764,마이카츠,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,19.0,23.0,0.6434904772828283,2026-11-20,26,observed,0,observed,1,observed,2,observed,observed
+BRD_20170813,해초과메기,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,5.0,0.5576541146277195,2026-11-20,24,observed,0,observed,0,observed,5,observed,observed
+BRD_20170818,고집센그집갈비탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,18.0,18.0,0.2909113761823837,2026-11-20,71,observed,5,observed,1,observed,0,observed,observed
+BRD_20170922,풍국면,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,17.0,0.6905064165000364,2026-11-20,43,observed,4,observed,6,observed,0,observed,observed
+BRD_20170925,브라더한정식도시락,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,7.0,0.4091172074659134,2026-11-20,65,observed,34,observed,6,observed,2,observed,observed
+BRD_20170932,땅스부대찌개,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,29.0,31.0,0.6473629409737551,2026-11-20,593,observed,17,observed,18,observed,0,observed,observed
+BRD_20171075,팔공티,음료 (커피 외),current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,12.0,0.6925967113623527,2026-11-20,89,observed,0,observed,53,observed,0,observed,observed
+BRD_20171137,카페인중독,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,13.0,0.6811705919763971,2026-11-20,183,observed,40,observed,13,observed,5,observed,observed
+BRD_20171168,커피왕,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,7.0,0.5620805226993194,2026-11-20,20,observed,1,observed,4,observed,0,observed,observed
+BRD_20171221,국제닭강정,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,0.0,0.3303437810036412,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20171226,최고당돈가스,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.5343324459029234,2026-11-20,137,observed,8,observed,11,observed,7,observed,observed
+BRD_20171244,크라운호프보리장인,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,26.0,27.0,0.5996990830546577,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20171254,명륜진사갈비,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,18.0,0.6084007686369097,2026-11-20,606,observed,73,observed,26,observed,0,observed,observed
+BRD_20171294,딩딩딩,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,8.0,0.38269545290550483,2026-11-20,51,observed,8,observed,0,observed,7,observed,observed
+BRD_20171298,꾸브라꼬숯불치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,9.0,0.7026343007412634,2026-11-20,250,observed,63,observed,0,observed,21,observed,observed
+BRD_20171304,현풍닭칼국수,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,26.0,25.0,0.6025278097229821,2026-11-20,74,observed,16,observed,14,observed,0,observed,observed
+BRD_20171308,교동면옥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,20.0,20.0,0.39100415579767767,2026-11-20,59,observed,9,observed,4,observed,0,observed,observed
+BRD_20171319,테트리스찜닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,13.0,0.7550877274543956,2026-11-20,49,observed,0,observed,6,observed,7,observed,observed
+BRD_20171356,아이비키즈스포츠,스포츠 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.4908192262496153,2026-11-20,5,observed,0,observed,6,observed,0,observed,observed
+BRD_20171464,레드버튼(RedButton),오락,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.26102099394054906,2026-11-20,99,observed,34,observed,0,observed,0,observed,observed
+BRD_20171470,THE달달,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.467495103675775,2026-11-20,260,observed,41,observed,0,observed,78,observed,observed
+BRD_20171544,분식이더치킨,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.3802212367693787,2026-11-20,12,observed,0,observed,0,observed,7,observed,observed
+BRD_20171552,윤선생IGSE아카데미,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,7.0,0.34286320874599496,2026-11-20,216,observed,15,observed,15,observed,10,observed,observed
+BRD_20180056,정성으로 빚은 만두고을,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.25057359810918506,2026-11-20,4,observed,1,observed,0,observed,0,observed,observed
+BRD_20180074,김충기꽃삼겹,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,5.0,0.6249706669270314,2026-11-20,51,observed,3,observed,18,observed,8,observed,observed
+BRD_20180086,찰만 생대패,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.22565637968979643,2026-11-20,6,observed,0,observed,0,observed,0,observed,observed
+BRD_20180123,WOO&#39;Z,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.2503228887196969,2026-11-20,13,observed,2,observed,0,observed,0,observed,observed
+BRD_20180139,에그드랍(EGGDROP),기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.5389212681881842,2026-11-20,99,observed,0,observed,27,observed,26,observed,observed
+BRD_20180209,연막창,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,26.0,1.0,0.40012723492539864,2026-11-20,2,observed,0,observed,2,observed,0,observed,observed
+BRD_20180229,캠토토스트,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.3550938294256993,2026-11-20,73,observed,4,observed,10,observed,0,observed,observed
+BRD_20180244,텐퍼센트스페셜티커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,43.0,41.0,0.2747198065298176,2026-11-20,814,observed,206,observed,0,observed,14,observed,observed
+BRD_20180249,청년피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,11.0,0.5356154306784305,2026-11-20,312,observed,9,observed,3,observed,28,observed,observed
+BRD_20180253,감성족발,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,6.0,0.4714597758690594,2026-11-20,23,observed,6,observed,0,observed,12,observed,observed
+BRD_20180319,황금쭈꾸미집,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.41704084314987844,2026-11-20,5,observed,2,observed,0,observed,2,observed,observed
+BRD_20180332,백금당,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.35674556495526166,2026-11-20,29,observed,1,observed,0,observed,2,observed,observed
+BRD_20180361,고돼지,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.5425495612600681,2026-11-20,88,observed,24,observed,21,observed,0,observed,observed
+BRD_20180410,일품양평해장국,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.46114993821117206,2026-11-20,394,observed,176,observed,42,observed,22,observed,observed
+BRD_20180474,아랑고고장구,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,10.0,0.27662267747734337,2026-11-20,99,observed,3,observed,1,observed,1,observed,observed
+BRD_20180512,홍루이젠,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.5293767225907847,2026-11-20,120,observed,7,observed,16,observed,17,observed,observed
+BRD_20180537,,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.5706330739321833,2026-11-20,7,observed,0,observed,0,observed,0,observed,unavailable
+BRD_20180547,으뜸50안경,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,10.0,0.17593309940929122,2026-11-20,305,observed,46,observed,3,observed,0,observed,observed
+BRD_20180554,대패가1900,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,6.0,0.6080651847809653,2026-11-20,71,observed,11,observed,7,observed,12,observed,observed
+BRD_20180559,밥통령,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,7.0,0.5308917251288959,2026-11-20,30,observed,0,observed,0,observed,15,observed,observed
+BRD_20180584,엘리펀트피자 (ELEPHANT PIZZA),피자,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.4379786734238958,2026-11-20,12,observed,0,observed,0,observed,5,observed,observed
+BRD_20180600,곱분이곱창,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5059728383452589,2026-11-20,113,observed,9,observed,22,observed,0,observed,observed
+BRD_20180612,샤브20,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,10.0,0.29436087235482056,2026-11-20,59,observed,28,observed,0,observed,0,observed,observed
+BRD_20180711,비스트로피자,패스트푸드,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.6488073429084615,2026-11-20,68,observed,3,observed,22,observed,0,observed,observed
+BRD_20180715,카페보스(CAFE BOSS),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,6.0,0.6261210852675126,2026-11-20,45,observed,22,observed,18,observed,1,observed,observed
+BRD_20180881,미분당,기타 외국식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,3.0,0.19041352653240626,2026-11-20,142,observed,32,observed,1,observed,0,observed,observed
+BRD_20180893,고기듬뿍 대왕비빔밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,7.0,0.6647083594607296,2026-11-20,101,observed,5,observed,0,observed,24,observed,observed
+BRD_20180936,스테이크존,서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,1.0,0.3985641151560069,2026-11-20,47,observed,22,observed,8,observed,23,observed,observed
+BRD_20180948,감동까스,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.6524723485399961,2026-11-20,82,observed,22,observed,37,observed,0,observed,observed
+BRD_20181008,김복남맥주,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,21.0,19.0,0.47414677141295053,2026-11-20,253,observed,57,observed,18,observed,0,observed,observed
+BRD_20181061,미태리,서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,2.0,0.266744240556557,2026-11-20,99,observed,22,observed,5,observed,5,observed,observed
+BRD_20181083,라하잉글리시,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4626574571071193,2026-11-20,75,observed,6,observed,15,observed,10,observed,observed
+BRD_20181128,삼초전 삼겹살 초벌전문점,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.4466702201464937,2026-11-20,15,observed,0,observed,0,observed,8,observed,observed
+BRD_20181195,CHOSIM(초심)	,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.5944773078732318,2026-11-20,163,observed,4,observed,0,observed,19,observed,observed
+BRD_20181212,이동규인왔따쪽갈비,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.6524723485399961,2026-11-20,69,observed,17,observed,36,observed,0,observed,observed
+BRD_20181324,치맥킹,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,12.0,0.527854712228291,2026-11-20,16,observed,2,observed,0,observed,0,observed,observed
+BRD_20181340,보배반점,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.2900840828146658,2026-11-20,198,observed,36,observed,7,observed,0,observed,observed
+BRD_20190001,LOOK STORE,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,15.0,0.25012667364928,2026-11-20,25,observed,2,observed,1,observed,0,observed,observed
+BRD_20190033,버텍스(VERTEX),서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4555842459915672,2026-11-20,41,observed,16,observed,6,observed,7,observed,observed
+BRD_20190071,공부인 스터디카페,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.33593968073337876,2026-11-20,78,observed,0,observed,2,observed,0,observed,observed
+BRD_20190195,그놈포차,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.6144470649156686,2026-11-20,82,observed,25,observed,17,observed,0,observed,observed
+BRD_20190293,냠냠숯불두마리치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.5267688272636075,2026-11-20,76,observed,10,observed,5,observed,9,observed,observed
+BRD_20190345,봉자막창,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,22.0,22.0,0.6156227425117936,2026-11-20,76,observed,33,observed,17,observed,0,observed,observed
+BRD_20190404,신떡순 신천할매떡볶이,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.6382269555045984,2026-11-20,56,observed,8,observed,6,observed,26,observed,observed
+BRD_20190434,와촌식육식당,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.39392906182944887,2026-11-20,18,observed,0,observed,0,observed,0,observed,observed
+BRD_20190438,화이트펜슬(white pencil),기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.29236061208678116,2026-11-20,130,observed,1,observed,2,observed,1,observed,observed
+BRD_20190497,정직유부,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,7.0,0.5958029551486371,2026-11-20,174,observed,25,observed,10,observed,7,observed,observed
+BRD_20190550,으뜸플러스안경,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,22.0,20.0,0.17927792044639893,2026-11-20,284,observed,42,observed,0,observed,2,observed,observed
+BRD_20190595,카카오T블루,운송,current_accounting_year_projection,2026,2025,2024,2026,2025,739.0,2935.0,0.6444084495495661,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20190599,애플꼬마김밥,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,11.0,0.6940454695701858,2026-11-20,105,observed,11,observed,0,observed,12,observed,observed
+BRD_20190623,숨쉬는 순두부,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,8.0,0.5311282441191646,2026-11-20,11,observed,2,observed,0,observed,0,observed,observed
+BRD_20190627,샵도쿄시장,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.47262333867284917,2026-11-20,25,observed,5,observed,0,observed,3,observed,observed
+BRD_20190628,김용덕의 소문난 부자국밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,12.0,0.5485085005450998,2026-11-20,28,observed,1,observed,3,observed,6,observed,observed
+BRD_20190630,배떡,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,18.0,0.7673135360096864,2026-11-20,325,observed,0,observed,93,observed,0,observed,observed
+BRD_20190659,갯벌의 조개,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.4938080255924286,2026-11-20,48,observed,47,observed,6,observed,0,observed,observed
+BRD_20190684,크라우드PC방,PC방,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,3.0,0.25112279279832495,2026-11-20,124,observed,16,observed,6,observed,0,observed,observed
+BRD_20190748,정글비,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.3299338717139863,2026-11-20,31,observed,11,observed,3,observed,0,observed,observed
+BRD_20190753,갓튀긴후라이드,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,14.0,0.45009156162747355,2026-11-20,105,observed,25,observed,5,observed,0,observed,observed
+BRD_20190768,세이프존,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,21.0,0.610704203668735,2026-11-20,332,observed,1,observed,0,observed,0,observed,observed
+BRD_20190812,신마녀떡볶이,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.5598185410340514,2026-11-20,8,observed,0,observed,6,observed,7,observed,observed
+BRD_20190879,나비콜,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,10.0,0.6450270954056799,2026-11-20,15,observed,0,observed,6,observed,0,observed,observed
+BRD_20190929,노브랜드 버거(No Brand Burger),패스트푸드,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,11.0,0.3930333845479576,2026-11-20,189,observed,32,observed,12,observed,0,observed,observed
+BRD_20190955,봉명동내커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,5.0,0.6062362825462202,2026-11-20,148,observed,22,observed,5,observed,4,observed,observed
+BRD_20190967,별난아재맥주,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,6.0,0.5425688522941244,2026-11-20,68,observed,22,observed,25,observed,0,observed,observed
+BRD_20190978,한끼한죽,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.538737691988753,2026-11-20,64,observed,11,observed,54,observed,0,observed,observed
+BRD_20191016,삼첩분식,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,15.0,0.7169318503467957,2026-11-20,232,observed,19,observed,29,observed,12,observed,observed
+BRD_20191031,그집마늘치킨&쪼닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.4566192140375309,2026-11-20,14,observed,6,observed,0,observed,1,observed,observed
+BRD_20191034,긴자료코,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.29064059653901514,2026-11-20,109,observed,21,observed,0,observed,2,observed,observed
+BRD_20191123,링키영어,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,48.0,52.0,0.6043445726048277,2026-11-20,851,observed,121,observed,30,observed,78,observed,observed
+BRD_20191188,오븐에 빠진 막창,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,13.0,0.7236966515919078,2026-11-20,56,observed,4,observed,3,observed,5,observed,observed
+BRD_20191191,몬스터HNM커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,80.0,72.0,0.25528744095586836,2026-11-20,99,observed,21,observed,1,observed,1,observed,observed
+BRD_20191199,윤검푸드 봉수아피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,9.0,0.7349322531337428,2026-11-20,53,observed,9,observed,8,observed,6,observed,observed
+BRD_20191260,프렌잉글리시,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,15.0,0.5304419971719675,2026-11-20,207,observed,39,observed,3,observed,0,observed,observed
+BRD_20191275,찐이야숯불치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,4.0,0.41502920194200943,2026-11-20,40,observed,14,observed,15,observed,0,observed,observed
+BRD_20191303,영커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.29620353647926,2026-11-20,65,observed,22,observed,3,observed,1,observed,observed
+BRD_20191316,스구식탁,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,7.0,0.44605628149147647,2026-11-20,10,observed,3,observed,0,observed,1,observed,observed
+BRD_20191342,우리할매 떡볶이,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,11.0,0.6998497721795446,2026-11-20,319,observed,9,observed,26,observed,0,observed,observed
+BRD_20191362,홈즈앤루팡보드게임카페,오락,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.38754779189053834,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20191403,와플칸,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,9.0,0.5233495393702433,2026-11-20,85,observed,8,observed,1,observed,37,observed,observed
+BRD_20191434,마선생얼큰국밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.21921191367858392,2026-11-20,11,observed,6,observed,0,observed,0,observed,observed
+BRD_20200007,멘토즈,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,16.0,0.5259844178043016,2026-11-20,181,observed,21,observed,0,observed,2,observed,observed
+BRD_20200017,채선당도시락&샐러드,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5288033467211551,2026-11-20,32,observed,0,observed,14,observed,0,observed,observed
+BRD_20200026,문진옥 숯불바베큐치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3186050265069649,2026-11-20,8,observed,1,observed,1,observed,0,observed,observed
+BRD_20200044,갓샐러드&갓요거트,기타 외국식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.4537942839259537,2026-11-20,9,observed,0,observed,8,observed,0,observed,observed
+BRD_20200099,장미맨숀,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4631924926673606,2026-11-20,28,observed,1,observed,0,observed,7,observed,observed
+BRD_20200125,킹스꼬마김밥,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,13.0,0.7316958673281138,2026-11-20,34,observed,6,observed,2,observed,6,observed,observed
+BRD_20200127,고기싸롱,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2920658169980125,2026-11-20,118,observed,29,observed,0,observed,5,observed,observed
+BRD_20200225,마라루,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,10.0,0.7325395040418977,2026-11-20,14,observed,2,observed,6,observed,0,observed,observed
+BRD_20200239,인쌩맥주,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.5079883642426947,2026-11-20,217,observed,27,observed,23,observed,0,observed,observed
+BRD_20200320,빵위에 치즈 피자앰플러,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,6.0,0.5944237866405445,2026-11-20,47,observed,9,observed,5,observed,7,observed,observed
+BRD_20200356,필즈더클래식,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2970789863680617,2026-11-20,30,observed,7,observed,1,observed,0,observed,observed
+BRD_20200365,맛있는 고기에 솜씨를 더하다,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,7.0,0.4941674423808021,2026-11-20,78,observed,4,observed,3,observed,2,observed,observed
+BRD_20200374,카페 꽃이피다,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.44896887002321867,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20200376,읍천리 382,음료 (커피 외),current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,15.0,0.30931042455709995,2026-11-20,188,observed,19,observed,0,observed,4,observed,observed
+BRD_20200393,욜로PC방,PC방,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,13.0,0.31439493716196065,2026-11-20,69,observed,19,observed,0,observed,0,observed,observed
+BRD_20200463,핵밥,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.60202208755715,2026-11-20,106,observed,30,observed,16,observed,23,observed,observed
+BRD_20200472,수오미엔(suomian),기타 외국식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,1.0,0.29646794139968385,2026-11-20,2,observed,2,observed,0,observed,0,observed,observed
+BRD_20200491,어부김호권의청년어부,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,5.0,0.6293995156093442,2026-11-20,41,observed,0,observed,11,observed,0,observed,observed
+BRD_20200496,코지하우스,서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,6.0,0.2774110619851165,2026-11-20,45,observed,14,observed,2,observed,0,observed,observed
+BRD_20200522,프레드피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,8.0,0.6537239870298036,2026-11-20,168,observed,61,observed,30,observed,0,observed,observed
+BRD_20200543,목구멍,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.35635067249835956,2026-11-20,169,observed,26,observed,6,observed,0,observed,observed
+BRD_20200565,출근길 생고기,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.469627324224209,2026-11-20,3,observed,0,observed,1,observed,0,observed,observed
+BRD_20200578,거북이동네,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.24661067160329533,2026-11-20,36,observed,13,observed,1,observed,1,observed,observed
+BRD_20200635,면장수,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,5.0,0.22842881338759133,2026-11-20,10,observed,4,observed,0,observed,0,observed,observed
+BRD_20200675,돈카춘,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.5665508381352449,2026-11-20,32,observed,12,observed,7,observed,0,observed,observed
+BRD_20200700,죽이요,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,6.0,0.5051984448649596,2026-11-20,108,observed,48,observed,88,observed,0,observed,observed
+BRD_20200704,홍콩할매닭발명가,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,3.0,0.4233569019142029,2026-11-20,86,observed,49,observed,44,observed,1,observed,observed
+BRD_20200724,팔각도,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,5.0,0.6208663775740173,2026-11-20,152,observed,17,observed,46,observed,0,observed,observed
+BRD_20200756,병천청년순대국,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3972657442349159,2026-11-20,27,observed,15,observed,6,observed,11,observed,observed
+BRD_20200781,루시드영어,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4299904045340766,2026-11-20,50,observed,6,observed,11,observed,0,observed,observed
+BRD_20200790,비끄아트,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2502260244066949,2026-11-20,86,observed,29,observed,1,observed,2,observed,observed
+BRD_20200802,Blu Shaak(블루샥),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,10.0,0.42340986609151054,2026-11-20,225,observed,29,observed,6,observed,16,observed,observed
+BRD_20200804,유온달포장,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.2780405979204409,2026-11-20,4,observed,0,observed,0,observed,0,observed,observed
+BRD_20200807,덮덮밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,12.0,0.7381654631454724,2026-11-20,188,observed,25,observed,26,observed,9,observed,observed
+BRD_20200808,달빛에 구운 고등어,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.21791390672789407,2026-11-20,32,observed,19,observed,0,observed,0,observed,observed
+BRD_20200830,인생아구찜,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.3115395731835654,2026-11-20,175,observed,64,observed,1,observed,0,observed,observed
+BRD_20200845,황해수육,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.25963446032661,2026-11-20,50,observed,14,observed,0,observed,1,observed,observed
+BRD_20200904,파이널나인,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,4.0,0.22987668801970176,2026-11-20,31,observed,25,observed,0,observed,1,observed,observed
+BRD_20200978,따르릉,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,17.0,18.0,0.5518285395964034,2026-11-20,74,observed,27,observed,0,observed,0,observed,observed
+BRD_20200991,씨네마얼음맥주,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,67.0,64.0,0.4870534333448551,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20201061,프린트카페(Print cafe),기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,20.0,17.0,0.269743584205072,2026-11-20,223,observed,68,observed,0,observed,3,observed,observed
+BRD_20201152,미미살롱,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,8.0,0.40432724609488235,2026-11-20,14,observed,3,observed,0,observed,4,observed,observed
+BRD_20201156,마실커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,36.0,35.0,0.3514950024229783,2026-11-20,53,observed,16,observed,0,observed,0,observed,observed
+BRD_20201191,박주억 장수오리,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.5326268935413915,2026-11-20,9,observed,1,observed,2,observed,0,observed,observed
+BRD_20201203,하삼동커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,55.0,47.0,0.20651364279235115,2026-11-20,644,observed,71,observed,14,observed,0,observed,observed
+BRD_20201227,오복 오봉집,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,12.0,0.6727224044677111,2026-11-20,232,observed,46,observed,0,observed,27,observed,observed
+BRD_20201243,피자는 치즈빨,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.5255955209219634,2026-11-20,55,observed,16,observed,8,observed,4,observed,observed
+BRD_20201249,,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5477844608070414,2026-11-20,91,observed,49,observed,58,observed,0,observed,unavailable
+BRD_20201342,남쑨이포차,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.529527428260706,2026-11-20,4,observed,3,observed,1,observed,0,observed,observed
+BRD_20201355,힐다임,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.3117699560017438,2026-11-20,11,observed,4,observed,1,observed,0,observed,observed
+BRD_20201357,청춘닭꼬치,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.5941093971604167,2026-11-20,38,observed,15,observed,17,observed,0,observed,observed
+BRD_20201402,강다짐,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.29900542810809644,2026-11-20,80,observed,9,observed,1,observed,2,observed,observed
+BRD_20201415,이을감자탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.4065361584388578,2026-11-20,5,observed,0,observed,0,observed,0,observed,observed
+BRD_20201417,몰타,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.5429668628815523,2026-11-20,8,observed,0,observed,2,observed,0,observed,observed
+BRD_20201425,쌍둥이밧데리,자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.22606688273697667,2026-11-20,12,observed,3,observed,0,observed,0,observed,observed
+BRD_20201485,감성낙곱새,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4357325731257571,2026-11-20,60,observed,1,observed,3,observed,47,observed,observed
+BRD_20201615,손찬,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,15.0,0.652138798754606,2026-11-20,34,observed,0,observed,0,observed,6,observed,observed
+BRD_20201675,에스엘비(SLB),서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.49232721276841446,2026-11-20,10,observed,2,observed,3,observed,0,observed,observed
+BRD_20201685,푸줏간 고기도시락,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,12.0,0.4692556919644405,2026-11-20,128,observed,47,observed,16,observed,0,observed,observed
+BRD_20201718,큰바우국밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.48054106784984646,2026-11-20,3,observed,1,observed,2,observed,0,observed,observed
+BRD_20201755,청춘사업,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2961898780650559,2026-11-20,6,observed,0,observed,0,observed,0,observed,observed
+BRD_20201793,,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5726359529241042,2026-11-20,54,observed,41,observed,35,observed,0,observed,unavailable
+BRD_20201873,아틀리에빈,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.5032688013069562,2026-11-20,15,observed,0,observed,3,observed,0,observed,observed
+BRD_20201898,무인다방,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,5.0,0.41263383129983616,2026-11-20,20,observed,1,observed,0,observed,0,observed,observed
+BRD_20201902,밀립,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.28905736687278166,2026-11-20,1,observed,1,observed,0,observed,0,observed,observed
+BRD_20201903,Today Tong Tong,서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,9.0,0.7534964319998999,2026-11-20,18,observed,6,observed,4,observed,0,observed,observed
+BRD_20201906,고망고,음료 (커피 외),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.33825312464322266,2026-11-20,68,observed,28,observed,6,observed,8,observed,observed
+BRD_20210157,오르다피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.2792418040000805,2026-11-20,1,observed,1,observed,0,observed,0,observed,observed
+BRD_20210167,참숯 삼인조,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,5.0,0.4087521354264547,2026-11-20,7,observed,0,observed,0,observed,0,observed,observed
+BRD_20210168,수찜닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.49338545254157273,2026-11-20,9,observed,0,observed,0,observed,3,observed,observed
+BRD_20210184,피자 피크(Pizza Peak),피자,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4373247660372722,2026-11-20,11,observed,0,observed,0,observed,3,observed,observed
+BRD_20210239,대천국밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.4580529903553713,2026-11-20,6,observed,1,observed,2,observed,0,observed,observed
+BRD_20210247,시골숯불치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4082012413018538,2026-11-20,13,observed,1,observed,5,observed,0,observed,observed
+BRD_20210300,필라테스365,스포츠 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,10.0,0.6057691435387064,2026-11-20,26,observed,0,observed,0,observed,12,observed,observed
+BRD_20210310,커넥츠 프랩 공시관,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.4193948254583114,2026-11-20,46,observed,0,observed,4,observed,0,observed,observed
+BRD_20210315,소림마라,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,10.0,0.7451748443284192,2026-11-20,137,observed,9,observed,53,observed,0,observed,observed
+BRD_20210352,프렌즈아카데미,스포츠 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,14.0,0.7336979955301377,2026-11-20,165,observed,22,observed,32,observed,0,observed,observed
+BRD_20210375,바른보쌈1990,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,6.0,0.5090535320097505,2026-11-20,166,observed,72,observed,39,observed,0,observed,observed
+BRD_20210428,,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5412884457931137,2026-11-20,34,observed,18,observed,33,observed,0,observed,unavailable
+BRD_20210460,청솔로9,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,36.0,45.0,0.691248524277062,2026-11-20,72,observed,7,observed,16,observed,0,observed,observed
+BRD_20210462,오늘도 한우,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,7.0,0.5269031976572216,2026-11-20,20,observed,4,observed,6,observed,1,observed,observed
+BRD_20210570,모리커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.294821301369073,2026-11-20,81,observed,18,observed,1,observed,0,observed,observed
+BRD_20210622,한라맥주,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.5988732270416112,2026-11-20,61,observed,6,observed,8,observed,1,observed,observed
+BRD_20210884,달떡볶이,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,0.0,0.2679567978626905,2026-11-20,64,observed,13,observed,2,observed,4,observed,observed
+BRD_20210912,1703 참한집,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.5702772255932603,2026-11-20,14,observed,3,observed,3,observed,0,observed,observed
+BRD_20210914,약선흑염소,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,1.0,0.35489385784062144,2026-11-20,6,observed,6,observed,0,observed,0,observed,observed
+BRD_20210931,기대만족,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.5696732267715994,2026-11-20,104,observed,37,observed,22,observed,9,observed,observed
+BRD_20210961,백돈,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.6875248439171767,2026-11-20,67,observed,21,observed,11,observed,1,observed,observed
+BRD_20210973,피자덕,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,3.0,0.25475148610917536,2026-11-20,44,observed,12,observed,1,observed,3,observed,observed
+BRD_20211005,하이오커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.3063387574358112,2026-11-20,277,observed,38,observed,1,observed,9,observed,observed
+BRD_20211037,1키로탕수육,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.49290978622000703,2026-11-20,124,observed,57,observed,7,observed,34,observed,observed
+BRD_20211155,인생냉면 ,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.5689938970344882,2026-11-20,101,observed,43,observed,82,observed,0,observed,observed
+BRD_20211160,을찌로국물떡볶이,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.4906187216548587,2026-11-20,55,observed,10,observed,38,observed,0,observed,observed
+BRD_20211164,빨간펜 수학의 달인,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,23.0,26.0,0.535803462958846,2026-11-20,786,observed,43,observed,69,observed,0,observed,observed
+BRD_20211233,갱스터피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.39467301508021513,2026-11-20,9,observed,3,observed,0,observed,2,observed,observed
+BRD_20211310,정성순대,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.4956556137068696,2026-11-20,48,observed,20,observed,5,observed,0,observed,observed
+BRD_20211367,삼송빵집,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,8.0,0.6100237540419621,2026-11-20,31,observed,9,observed,2,observed,0,observed,observed
+BRD_20211412,포토이즘박스,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,15.0,0.29249571679234115,2026-11-20,423,observed,59,observed,0,observed,5,observed,observed
+BRD_20211434,요거트월드,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,11.0,0.40923578825437396,2026-11-20,164,observed,86,observed,17,observed,0,observed,observed
+BRD_20211440,평화김해뒷고기,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,5.0,0.4634497987377055,2026-11-20,49,observed,9,observed,8,observed,3,observed,observed
+BRD_20211525,,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,3.0,0.3145480935210573,2026-11-20,3,observed,1,observed,0,observed,0,observed,unavailable
+BRD_20211526,세수대야,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.542974700048128,2026-11-20,10,observed,1,observed,2,observed,1,observed,observed
+BRD_20211562,와촌식당,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,3.0,0.3847172714735022,2026-11-20,7,observed,0,observed,0,observed,1,observed,observed
+BRD_20211622,해피꼬마김밥,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,7.0,0.4930499447641817,2026-11-20,9,observed,4,observed,1,observed,0,observed,observed
+BRD_20211626,여부초밥,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,10.0,0.7441616979420558,2026-11-20,23,observed,3,observed,3,observed,4,observed,observed
+BRD_20211628,신라식당,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.45979677194597857,2026-11-20,5,observed,3,observed,1,observed,0,observed,observed
+BRD_20211639,PLAN(플랜),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,12.0,0.6836830671225385,2026-11-20,13,observed,0,observed,0,observed,2,observed,observed
+BRD_20211698,헤즈업,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,10.0,0.3431812630656482,2026-11-20,62,observed,30,observed,0,observed,1,observed,observed
+BRD_20211711,동네커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.4289341048439993,2026-11-20,64,observed,2,observed,0,observed,3,observed,observed
+BRD_20211764,국물에빠진두루치기,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,9.0,0.6812874180972753,2026-11-20,105,observed,22,observed,50,observed,0,observed,observed
+BRD_20211774,육회바른연어,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,1.0,0.21923015463247206,2026-11-20,138,observed,65,observed,2,observed,0,observed,observed
+BRD_20211783,국밥생각,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.487705455829908,2026-11-20,75,observed,59,observed,6,observed,0,observed,observed
+BRD_20211841,어랏커피스탠드,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.27600087125189426,2026-11-20,21,observed,21,observed,0,observed,0,observed,observed
+BRD_20211853,백소정,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,6.0,0.5389109740644307,2026-11-20,199,observed,24,observed,5,observed,2,observed,observed
+BRD_20211897,데이스터디,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,28.0,28.0,0.2811240206031443,2026-11-20,41,observed,4,observed,0,observed,0,observed,observed
+BRD_20211903,제이델링,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2729011548122375,2026-11-20,43,observed,7,observed,0,observed,0,observed,observed
+BRD_20211907,포카드 홀덤펍,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.7114414240246805,2026-11-20,21,observed,6,observed,3,observed,2,observed,observed
+BRD_20211929,아이드블랑,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.3246545014573459,2026-11-20,44,observed,10,observed,0,observed,0,observed,observed
+BRD_20211941,커넥츠 프랩 수능관,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.334252805130679,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20211973,이라이타코야끼,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,5.0,0.46622498146769614,2026-11-20,49,observed,8,observed,2,observed,20,observed,observed
+BRD_20211998,연돈튀김덮밥,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5018546185876025,2026-11-20,31,observed,0,observed,18,observed,0,observed,observed
+BRD_20212010,복호두,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,6.0,0.2661214641020134,2026-11-20,131,observed,24,observed,2,observed,0,observed,observed
+BRD_20212140,스텔라떡볶이&꼬마김밥,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.5891384090008147,2026-11-20,179,observed,85,observed,4,observed,0,observed,observed
+BRD_20212154,부뚜막김치찜,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.6001043329600982,2026-11-20,58,observed,14,observed,20,observed,12,observed,observed
+BRD_20212163,다이클로,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,0.0,0.3181605730514488,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20212168,병아리김밥,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4461626090309227,2026-11-20,78,observed,24,observed,7,observed,0,observed,observed
+BRD_20212197,달콤푸릇,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.4418148462592224,2026-11-20,4,observed,0,observed,1,observed,1,observed,observed
+BRD_20212233,고운라멘 (Louely Cloud),일식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.5660431700347637,2026-11-20,8,observed,1,observed,0,observed,2,observed,observed
+BRD_20212242,응응스크르,편의점,current_accounting_year_projection,2026,2025,2024,2026,2025,23.0,27.0,0.6100127044610312,2026-11-20,326,observed,2,observed,23,observed,0,observed,observed
+BRD_20212273,디노플레이스(DINOPLACE),기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2426211766207726,2026-11-20,4,observed,0,observed,0,observed,0,observed,observed
+BRD_20212314,시즌글라스(SEASONGLASS),(건강)식품,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.2927708289167638,2026-11-20,47,observed,9,observed,1,observed,0,observed,observed
+BRD_20212359,아라치,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,11.0,0.4233176121639627,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20212371,빵빵한 슈퍼삼겹살,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.36036265796039435,2026-11-20,3,observed,3,observed,0,observed,0,observed,observed
+BRD_20212416,하노이맥주밤거리,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5789856174560138,2026-11-20,50,observed,14,observed,10,observed,0,observed,observed
+BRD_20212439,피자먹다,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.40774208150497804,2026-11-20,102,observed,27,observed,17,observed,0,observed,observed
+BRD_20212464,피자와썹,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.515778163628477,2026-11-20,59,observed,15,observed,5,observed,0,observed,observed
+BRD_20212467,TOP LITER,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,12.0,0.6196948652135447,2026-11-20,12,observed,1,observed,0,observed,0,observed,observed
+BRD_20212488,피카커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.2851197254297777,2026-11-20,5,observed,1,observed,0,observed,0,observed,observed
+BRD_20212506,불난볶음밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3276343039819028,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20212508,구름계란덮밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,7.0,0.6990111728333821,2026-11-20,94,observed,27,observed,18,observed,0,observed,observed
+BRD_20212514,에이드영어,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2888701446949273,2026-11-20,65,observed,40,observed,4,observed,2,observed,observed
+BRD_20212569,꾸석지,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,0.0,0.4548470733803829,2026-11-20,17,observed,17,observed,7,observed,0,observed,observed
+BRD_20212763,포토시그니처,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,11.0,0.6017440928183198,2026-11-20,174,observed,16,observed,11,observed,37,observed,observed
+BRD_20212767,제육의 법칙,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.4924981703130031,2026-11-20,78,observed,33,observed,0,observed,38,observed,observed
+BRD_20212817,참토스트,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.2569833801560119,2026-11-20,40,observed,13,observed,0,observed,1,observed,observed
+BRD_20213018,인생김치찌개 ,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.45528568834388533,2026-11-20,32,observed,13,observed,105,observed,0,observed,observed
+BRD_20213021,32커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.28567917862158204,2026-11-20,4,observed,1,observed,0,observed,0,observed,observed
+BRD_20213040,오토스테이,자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,1.0,0.2170625267505256,2026-11-20,16,observed,8,observed,0,observed,0,observed,observed
+BRD_20213106,엘리프어학원,교육 (외국어),current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,9.0,0.49572986733166857,2026-11-20,40,observed,13,observed,4,observed,0,observed,observed
+BRD_20213267,기영이숯불두마리치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,15.0,0.6679189146162744,2026-11-20,248,observed,106,observed,27,observed,6,observed,observed
+BRD_20213303,춘리마라탕,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,6.0,0.24646090338631038,2026-11-20,202,observed,30,observed,2,observed,6,observed,observed
+BRD_20213360,파스타예요,서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.4199113259877395,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20213524,쪽신치왕 쪽갈비,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,7.0,0.4776073098255933,2026-11-20,10,observed,3,observed,0,observed,0,observed,observed
+BRD_20213817,샐요뜨,서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.5400943387686948,2026-11-20,10,observed,1,observed,1,observed,1,observed,observed
+BRD_20213843,삼계꿀치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,3.0,0.24079207941119252,2026-11-20,3,observed,0,observed,0,observed,0,observed,observed
+BRD_20213969,헬리빈커피(HELIBEAN COFFEE),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.38978250533965947,2026-11-20,9,observed,0,observed,1,observed,2,observed,observed
+BRD_20213978,샤브향,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,18.0,0.7103158562323975,2026-11-20,119,observed,6,observed,22,observed,0,observed,observed
+BRD_20213991,최강곱도리,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.49930237715451575,2026-11-20,98,observed,36,observed,37,observed,0,observed,observed
+BRD_20214114,빵아빵아,(건강)식품,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.34611792952651194,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20214151,빙수를품은달인(빙품달),아이스크림/빙수 ,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,3.0,0.3176098872194079,2026-11-20,43,observed,11,observed,1,observed,3,observed,observed
+BRD_20214166,마라민족,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.47413129318362884,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20214201,동성로왕찹쌀꽈배기,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.44225654961667515,2026-11-20,5,observed,0,observed,0,observed,1,observed,observed
+BRD_20214241,하루필름,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,6.0,0.4494489130676564,2026-11-20,118,observed,8,observed,2,observed,4,observed,observed
+BRD_20214246,뽁당,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.22643447364939778,2026-11-20,52,observed,44,observed,1,observed,0,observed,observed
+BRD_20214278,만타스시31,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.5880153133302828,2026-11-20,68,observed,0,observed,20,observed,0,observed,observed
+BRD_20214343,화락바베큐치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,6.0,0.5804905926748078,2026-11-20,159,observed,51,observed,18,observed,0,observed,observed
+BRD_20214428,무궁김치찜,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3171416901295049,2026-11-20,1,observed,1,observed,0,observed,0,observed,observed
+BRD_20214454,우규,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,0.0,0.21527459062021573,2026-11-20,35,observed,21,observed,1,observed,0,observed,observed
+BRD_20214501,왓더버거,패스트푸드,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,2.0,0.329563124421646,2026-11-20,71,observed,38,observed,7,observed,0,observed,observed
+BRD_20214614,마녀김밥,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.40684100079623686,2026-11-20,46,observed,5,observed,0,observed,3,observed,observed
+BRD_20214635,NAN갈비장터,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.5154308504668227,2026-11-20,42,observed,12,observed,19,observed,0,observed,observed
+BRD_20214653,효자동솥뚜껑삼겹살감자탕순대국,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.438435499868671,2026-11-20,70,observed,41,observed,6,observed,8,observed,observed
+BRD_20214774,킹치찌개찜,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,5.0,0.6193816258890136,2026-11-20,62,observed,20,observed,14,observed,7,observed,observed
+BRD_20214777,Every Coffee(에브리커피),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.4392748833839229,2026-11-20,18,observed,6,observed,0,observed,2,observed,observed
+BRD_20214794,미미관마라탕,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,19.0,19.0,0.568717502749276,2026-11-20,40,observed,5,observed,5,observed,0,observed,observed
+BRD_20214795,2피자1치킨상회,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,9.0,0.5078935669506134,2026-11-20,51,observed,4,observed,0,observed,7,observed,observed
+BRD_20214801,제로스토어(ZERO STORE),기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.3062955420283026,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20214917,봉명가닭도리탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.42818332664906417,2026-11-20,85,observed,75,observed,5,observed,4,observed,observed
+BRD_20214931,탕참탕수육참잘하는집,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.5941354487882665,2026-11-20,164,observed,36,observed,95,observed,0,observed,observed
+BRD_20214971,규카츠정,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2780806285592059,2026-11-20,41,observed,15,observed,0,observed,0,observed,observed
+BRD_20215019,빽보이피자,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,17.0,17.0,0.4075951463591767,2026-11-20,243,observed,49,observed,8,observed,0,observed,observed
+BRD_20215506,DALSI(달시),기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.4180953759565362,2026-11-20,154,observed,16,observed,0,observed,12,observed,observed
+BRD_20215588,이고플러스,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,4.0,0.22369926649036054,2026-11-20,57,observed,15,observed,0,observed,0,observed,observed
+BRD_20215716,,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,12.0,0.6756706878956451,2026-11-20,14,observed,9,observed,0,observed,0,observed,unavailable
+BRD_20215857,마일로(MILO),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2780806285592059,2026-11-20,48,observed,22,observed,0,observed,0,observed,observed
+BRD_20220012,보백관,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,3.0,0.21339433961149784,2026-11-20,7,observed,2,observed,0,observed,0,observed,observed
+BRD_20220024,이우철한방누룽지삼계탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,4.0,0.2344570449966642,2026-11-20,48,observed,17,observed,0,observed,2,observed,observed
+BRD_20220057,철길부산집,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.3504199780886084,2026-11-20,280,observed,82,observed,3,observed,0,observed,observed
+BRD_20220132,도리신닭도리탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,11.0,0.5623991219046833,2026-11-20,27,observed,4,observed,2,observed,0,observed,observed
+BRD_20220147,샐러리아 SALARIA,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,8.0,0.3277657699425587,2026-11-20,81,observed,40,observed,4,observed,0,observed,observed
+BRD_20220206,일품대패,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,5.0,0.23251449196778246,2026-11-20,85,observed,32,observed,0,observed,0,observed,observed
+BRD_20220217,인생네컷,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,11.0,0.44595670073399,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20220296,국민매운찜갈비,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,7.0,0.6170913260726837,2026-11-20,18,observed,7,observed,2,observed,0,observed,observed
+BRD_20220322,한식밥상,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.39813945891536684,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20220334,정성카츠,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.4331409293462281,2026-11-20,66,observed,29,observed,6,observed,9,observed,observed
+BRD_20220338,카츠by현,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.620055429333167,2026-11-20,13,observed,0,observed,4,observed,0,observed,observed
+BRD_20220372,휴대폰성지 옆커폰,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,46.0,51.0,0.5518487421796782,2026-11-20,270,observed,131,observed,6,observed,11,observed,observed
+BRD_20220383,사운즈커피(SOUNDS COFFEE),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,7.0,0.22599773074185445,2026-11-20,7,observed,3,observed,0,observed,0,observed,observed
+BRD_20220409,찐궁물김치찌개전문점,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,8.0,0.44177468186943547,2026-11-20,17,observed,3,observed,0,observed,0,observed,observed
+BRD_20220420,만재네,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,13.0,13.0,0.3337566185342256,2026-11-20,26,observed,11,observed,0,observed,0,observed,observed
+BRD_20220430,1L 커피특별시,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.47222505570649537,2026-11-20,9,observed,3,observed,1,observed,0,observed,observed
+BRD_20220549,휴베이스약국,약국,current_accounting_year_projection,2026,2025,2024,2026,2025,32.0,28.0,0.2974053211575925,2026-11-20,690,observed,107,observed,36,observed,1,observed,observed
+BRD_20220664,전국3대춘천닭갈비,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5167067828567413,2026-11-20,41,observed,9,observed,25,observed,2,observed,observed
+BRD_20220713,또또꽃게장,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,7.0,0.6305288921974379,2026-11-20,12,observed,0,observed,3,observed,0,observed,observed
+BRD_20220753,뉴코뮤직타운,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4478163754351367,2026-11-20,27,observed,1,observed,2,observed,0,observed,observed
+BRD_20220779,신마라,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,10.0,0.7421435479251018,2026-11-20,13,observed,0,observed,4,observed,0,observed,observed
+BRD_20220867,김치찜은 못참지,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,8.0,0.4614425039949585,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20220938,써클짐필라테스,스포츠 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.2012390300288996,2026-11-20,3,observed,1,observed,0,observed,0,observed,observed
+BRD_20220969,포토이즘컬러드,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.29822337671355637,2026-11-20,74,observed,13,observed,0,observed,1,observed,observed
+BRD_20221036,뚜선장 쭈꾸미호,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.3915499711145785,2026-11-20,114,observed,84,observed,5,observed,2,observed,observed
+BRD_20221037,김사부의곱창명가,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,3.0,0.3654787506750265,2026-11-20,127,observed,62,observed,17,observed,2,observed,observed
+BRD_20221077,엠투피(M2P),스포츠 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.24928691855732663,2026-11-20,3,observed,0,observed,0,observed,0,observed,observed
+BRD_20221147,쏘시지요,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,2.0,0.43770246753939396,2026-11-20,117,observed,125,observed,9,observed,0,observed,observed
+BRD_20221177,타코로,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.32682381695849344,2026-11-20,26,observed,19,observed,2,observed,0,observed,observed
+BRD_20221216,카레세끼 매운숙성카레,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5114370662916538,2026-11-20,41,observed,13,observed,15,observed,0,observed,observed
+BRD_20221233,우리말해 ,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,3.0,0.2925824463766987,2026-11-20,37,observed,19,observed,3,observed,0,observed,observed
+BRD_20221246,열정국밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,10.0,0.6530563250487477,2026-11-20,234,observed,51,observed,0,observed,51,observed,observed
+BRD_20221292,도케비커피(DoKKeB Coffee),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.22088859604759692,2026-11-20,4,observed,1,observed,0,observed,0,observed,observed
+BRD_20221307,카페 콘크리트,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,3.0,0.3198259068010923,2026-11-20,4,observed,4,observed,0,observed,0,observed,observed
+BRD_20221330,대담히,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.2761184602587891,2026-11-20,5,observed,0,observed,0,observed,0,observed,observed
+BRD_20221344,짜글이주의보,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3276343039819028,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20221354,기프트버거,패스트푸드,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.4829986222083941,2026-11-20,4,observed,3,observed,1,observed,0,observed,observed
+BRD_20221393,,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.45309659941589986,2026-11-20,29,observed,11,observed,50,observed,0,observed,unavailable
+BRD_20221407,닭동가리,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,16.0,14.0,0.3291672909940497,2026-11-20,27,observed,24,observed,0,observed,0,observed,observed
+BRD_20221409,어물전,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.2402402431568835,2026-11-20,3,observed,2,observed,0,observed,0,observed,observed
+BRD_20221456,국밥관,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,9.0,0.6436656860408867,2026-11-20,14,observed,3,observed,0,observed,4,observed,observed
+BRD_20221460,스시마시토,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.30693184290704756,2026-11-20,7,observed,1,observed,0,observed,0,observed,observed
+BRD_20230021,스모프치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.36647102384951596,2026-11-20,58,observed,47,observed,0,observed,0,observed,observed
+BRD_20230051,모노맨션,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.25207336871223196,2026-11-20,69,observed,3,observed,1,observed,1,observed,observed
+BRD_20230145,참맛죽,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.575448870203954,2026-11-20,54,observed,31,observed,30,observed,0,observed,observed
+BRD_20230146,국밥은이거지,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5452226449095614,2026-11-20,52,observed,41,observed,31,observed,0,observed,observed
+BRD_20230178,카페만월경,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.267609495494836,2026-11-20,340,observed,154,observed,14,observed,2,observed,observed
+BRD_20230211,책나무,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,93.0,94.0,0.28148385784568397,2026-11-20,417,observed,198,observed,3,observed,0,observed,observed
+BRD_20230216,,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,0.0,0.38116035589466774,2026-11-20,18,observed,18,observed,0,observed,0,observed,unavailable
+BRD_20230229,밥튜브,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.5807910543481056,2026-11-20,128,observed,11,observed,33,observed,0,observed,observed
+BRD_20230271,본좌김밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,5.0,0.3850844075199954,2026-11-20,12,observed,6,observed,1,observed,0,observed,observed
+BRD_20230311,영재들의미술상자,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.38806588031741396,2026-11-20,67,observed,19,observed,22,observed,0,observed,observed
+BRD_20230325,달인대보칼국수,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.3549278448124012,2026-11-20,13,observed,8,observed,2,observed,0,observed,observed
+BRD_20230334,유키니언,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,27.0,23.0,0.3481825640637898,2026-11-20,26,observed,11,observed,1,observed,0,observed,observed
+BRD_20230381,바다와,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,2.0,0.21891119291215286,2026-11-20,2,observed,0,observed,0,observed,0,observed,observed
+BRD_20230460,토핑폭탄김치찜&김치찌개,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.46273059448605947,2026-11-20,45,observed,14,observed,9,observed,0,observed,observed
+BRD_20230465,미조리해물찜,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.4341038199903662,2026-11-20,9,observed,5,observed,1,observed,0,observed,observed
+BRD_20230498,띵미윗미,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.5188168047512518,2026-11-20,9,observed,9,observed,0,observed,0,observed,observed
+BRD_20230499,구들 마라탕,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.5987106074658793,2026-11-20,18,observed,5,observed,10,observed,0,observed,observed
+BRD_20230506,피자플렉스,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,7.0,0.5833609187578831,2026-11-20,8,observed,3,observed,0,observed,0,observed,observed
+BRD_20230507,에코폰,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.37829578697574606,2026-11-20,65,observed,16,observed,3,observed,0,observed,observed
+BRD_20230571,아트스타,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,4.0,0.20714166822553315,2026-11-20,34,observed,23,observed,0,observed,0,observed,observed
+BRD_20230613,강씨목삼,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.4877351588069956,2026-11-20,8,observed,4,observed,0,observed,0,observed,observed
+BRD_20230633,스트릿캔,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,2.0,0.3552357838524959,2026-11-20,7,observed,5,observed,2,observed,0,observed,observed
+BRD_20230711,준삼겹프리미엄돈육,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,6.0,0.48173157049169624,2026-11-20,11,observed,6,observed,1,observed,0,observed,observed
+BRD_20230769,맘스피자(MOM'S PIZZA),패스트푸드,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,3.0,0.2841942685784472,2026-11-20,104,observed,72,observed,7,observed,0,observed,observed
+BRD_20230774,비상 딱풀리는수학,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,27.0,20.0,0.46214926201884,2026-11-20,376,observed,201,observed,7,observed,40,observed,observed
+BRD_20230812,달롱도르요거트아이스크림,아이스크림/빙수 ,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,3.0,0.3503354210639055,2026-11-20,84,observed,81,observed,2,observed,0,observed,observed
+BRD_20230829,수라섬 장칼국수,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.5444068544918752,2026-11-20,19,observed,13,observed,31,observed,0,observed,observed
+BRD_20230843,,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,3.0,0.2695948808390291,2026-11-20,5,observed,3,observed,0,observed,0,observed,unavailable
+BRD_20230845,이루팜,음료 (커피 외),current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,7.0,0.5772997815049511,2026-11-20,9,observed,1,observed,0,observed,0,observed,observed
+BRD_20230863,진교동찜닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,1.0,0.2228307948367954,2026-11-20,53,observed,30,observed,0,observed,0,observed,observed
+BRD_20230899,라이첸,기타 외국식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.2461724547934911,2026-11-20,3,observed,2,observed,0,observed,0,observed,observed
+BRD_20230900,피자팜비어,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.28062272396195154,2026-11-20,5,observed,2,observed,0,observed,0,observed,observed
+BRD_20230924,고기듬뿍국물두루치기,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,5.0,0.37971845853319947,2026-11-20,159,observed,138,observed,11,observed,0,observed,observed
+BRD_20230962,면식당,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.21708048491993706,2026-11-20,35,observed,22,observed,0,observed,0,observed,observed
+BRD_20231090,앞산큰골집,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.253954084942551,2026-11-20,5,observed,1,observed,0,observed,0,observed,observed
+BRD_20231101,돈까스에 빠지다,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,8.0,0.2905781053581242,2026-11-20,8,observed,3,observed,0,observed,0,observed,observed
+BRD_20231117,범물본가국수,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,6.0,0.229682407538282,2026-11-20,8,observed,4,observed,0,observed,0,observed,observed
+BRD_20231220,모모한우진갈비,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.28062272396195154,2026-11-20,5,observed,2,observed,0,observed,0,observed,observed
+BRD_20231244,일행,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.2545371488302385,2026-11-20,10,observed,4,observed,0,observed,0,observed,observed
+BRD_20231291,맛찜랭킹,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,2.0,0.3607167597491039,2026-11-20,39,observed,35,observed,5,observed,0,observed,observed
+BRD_20231296,빔빔 ,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.24837554084934682,2026-11-20,4,observed,3,observed,0,observed,0,observed,observed
+BRD_20231360,구스켓 인 더 크로플,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,4.0,0.45767463435528527,2026-11-20,5,observed,3,observed,4,observed,0,observed,observed
+BRD_20231439,눈을담다 앤 요거트를담다,아이스크림/빙수 ,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,8.0,0.5375411689756049,2026-11-20,8,observed,5,observed,0,observed,0,observed,observed
+BRD_20231474,똥집대통령,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,8.0,0.2535537166949946,2026-11-20,8,observed,4,observed,0,observed,0,observed,observed
+BRD_20231481,집밥밥을공부하다,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.3379543434593152,2026-11-20,3,observed,3,observed,0,observed,0,observed,observed
+BRD_20231515,삼삼마라,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,4.0,0.3230170983233075,2026-11-20,5,observed,5,observed,0,observed,0,observed,observed
+BRD_20231552,사운즈커피미니(SOUNDSCOFFEE mini),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,8.0,0.35644347983430397,2026-11-20,10,observed,9,observed,0,observed,0,observed,observed
+BRD_20231693,청년양고기,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,7.0,0.5073839113068065,2026-11-20,13,observed,4,observed,1,observed,0,observed,observed
+BRD_20231719,마장동 고기집,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,11.0,13.0,0.673134508231249,2026-11-20,194,observed,149,observed,12,observed,0,observed,observed
+BRD_20231723,다다하다,기타 외국식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.4565519233619436,2026-11-20,35,observed,35,observed,0,observed,0,observed,observed
+BRD_20231726,메가혼밥 ,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,4.0,0.35770518488884184,2026-11-20,58,observed,58,observed,0,observed,0,observed,observed
+BRD_20231741,리터킹,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,19.0,5.0,0.3409961146418724,2026-11-20,6,observed,6,observed,0,observed,0,observed,observed
+BRD_20231796,뽁떡떡볶이,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.2943168390596808,2026-11-20,52,observed,52,observed,0,observed,0,observed,observed
+BRD_20231835,전담GATE,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,1.0,0.3062955420283026,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20231842,마라섬,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.24502617444809832,2026-11-20,16,observed,7,observed,0,observed,0,observed,observed
+BRD_20231896,원조국물닭발,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.3109183234501478,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20231909,남영댁 커피24,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.4207018554078461,2026-11-20,16,observed,8,observed,0,observed,0,observed,observed
+BRD_20231922,이쁘다헤어,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,4.0,0.2709232520115884,2026-11-20,20,observed,0,observed,0,observed,0,observed,observed
+BRD_20240089,장여사 나뭇잎형 만두,분식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,2.0,0.3541553036538786,2026-11-20,2,observed,2,observed,0,observed,0,observed,observed
+BRD_20240100,제로전자담배,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,1.0,0.3033579342402549,2026-11-20,15,observed,15,observed,0,observed,0,observed,observed
+BRD_20240179,나날이일품돼지국밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,36.0,35.0,0.29552547181657624,2026-11-20,40,observed,10,observed,0,observed,0,observed,observed
+BRD_20240240,호두가 ,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.4875944957637293,2026-11-20,13,observed,4,observed,0,observed,0,observed,observed
+BRD_20240249,꽃뚜껑,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,5.0,0.28204131903955554,2026-11-20,6,observed,4,observed,0,observed,0,observed,observed
+BRD_20240257,뽐온뷰티,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,2.0,0.30005555270532985,2026-11-20,2,observed,2,observed,0,observed,0,observed,observed
+BRD_20240290,한솔노피곰,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.30983911784258633,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20240299,박대박 왕소금구이,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.4413640077556683,2026-11-20,10,observed,10,observed,0,observed,0,observed,observed
+BRD_20240427,만수통닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.22280215785982294,2026-11-20,3,observed,1,observed,0,observed,0,observed,observed
+BRD_20240463,프린트잇,기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3171416901295049,2026-11-20,1,observed,1,observed,0,observed,0,observed,observed
+BRD_20240476,하프커피(HALFF COFFEE),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.24118817737558174,2026-11-20,4,observed,4,observed,0,observed,0,observed,observed
+BRD_20240478,화이트리에,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,10.0,0.3652861989395323,2026-11-20,62,observed,42,observed,1,observed,0,observed,observed
+BRD_20240492,돈집돈치찜,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.28652578673307727,2026-11-20,3,observed,2,observed,0,observed,0,observed,observed
+BRD_20240595,동양맥주 ,주점,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,6.0,0.3388839300989086,2026-11-20,24,observed,10,observed,1,observed,0,observed,observed
+BRD_20240601,わびさび(와비사비),일식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,2.0,0.3136610256043326,2026-11-20,7,observed,7,observed,0,observed,0,observed,observed
+BRD_20240624,돈미품 프리미엄숙성삼겹,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,6.0,0.5281063575480863,2026-11-20,24,observed,24,observed,0,observed,0,observed,observed
+BRD_20240650,단골간식가게,편의점,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,1.0,0.3003169759293367,2026-11-20,7,observed,7,observed,0,observed,0,observed,observed
+BRD_20240693,밥꼬콩불,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,2.0,0.268700181661409,2026-11-20,106,observed,64,observed,7,observed,0,observed,observed
+BRD_20240738,김사부 본가 갈비찜,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,3.0,0.35547230703099597,2026-11-20,106,observed,106,observed,0,observed,0,observed,observed
+BRD_20240741,짱탁구장,스포츠 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,5.0,0.3054555294476839,2026-11-20,107,observed,62,observed,1,observed,2,observed,observed
+BRD_20240799,미국버거201,서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,9.0,0.32871645536997085,2026-11-20,9,observed,3,observed,0,observed,0,observed,observed
+BRD_20240801,더꾸닭꾸두마리치킨  ,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.44460115187886656,2026-11-20,10,observed,10,observed,0,observed,0,observed,observed
+BRD_20240803,샤부마스터 ,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.27297994889416666,2026-11-20,1,observed,1,observed,0,observed,0,observed,observed
+BRD_20240813,세큐T (SECUT),기타 서비스,current_accounting_year_projection,2026,2025,2024,2026,2025,3841.0,517.0,0.30987878921601525,2026-11-20,679,observed,679,observed,0,observed,0,observed,observed
+BRD_20240891,덤브치킨,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,2.0,0.32495478209308987,2026-11-20,6,observed,6,observed,0,observed,0,observed,observed
+BRD_20240982,으뜸육회,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,5.0,0.4349549250562743,2026-11-20,6,observed,3,observed,1,observed,0,observed,observed
+BRD_20241027,산더미미성돼지국밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,19.0,0.0,0.384177501182954,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20241062,막창덕후,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.24837554084934682,2026-11-20,4,observed,3,observed,0,observed,0,observed,observed
+BRD_20241065,루미노셀,화장품,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.3541035729409408,2026-11-20,20,observed,20,observed,0,observed,0,observed,observed
+BRD_20241101,우리동네 국민상회,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.28852947549027663,2026-11-20,38,observed,38,observed,0,observed,0,observed,observed
+BRD_20241109,리프버거,패스트푸드,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,1.0,0.3541553036538786,2026-11-20,1,observed,1,observed,0,observed,0,observed,observed
+BRD_20241111,팔공 큰 돼지찌개,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,3.0,0.3380929969010761,2026-11-20,4,observed,4,observed,0,observed,0,observed,observed
+BRD_20241120,꼼꼼안경,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,0.0,0.29771393402471474,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20241158,만계화,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.26400109086536355,2026-11-20,3,observed,2,observed,0,observed,0,observed,observed
+BRD_20241181,라쿵푸마라탕,중식,current_accounting_year_projection,2026,2025,2024,2026,2025,17.0,21.0,0.7007169986066955,2026-11-20,101,observed,101,observed,0,observed,0,observed,observed
+BRD_20241182,착한막창,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,7.0,0.28001940448442436,2026-11-20,24,observed,1,observed,0,observed,0,observed,observed
+BRD_20241200,태닝플레이스,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,11.0,0.4391414791003117,2026-11-20,15,observed,15,observed,0,observed,0,observed,observed
+BRD_20241287,또이스치킨찜닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,3.0,0.21968589964322768,2026-11-20,4,observed,0,observed,0,observed,0,observed,observed
+BRD_20241339,해피니언,이미용,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,0.0,0.37901504351947446,2026-11-20,1,observed,1,observed,0,observed,0,observed,observed
+BRD_20241347,메가폭탄김치찜,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,2.0,0.312773589108164,2026-11-20,32,observed,32,observed,0,observed,0,observed,observed
+BRD_20241348,폼미쳤닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,2.0,0.312773589108164,2026-11-20,30,observed,30,observed,0,observed,0,observed,observed
+BRD_20241358,윤훈식농가쌈밥,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.39159515945062084,2026-11-20,9,observed,9,observed,0,observed,0,observed,observed
+BRD_20241400,혼자와썹,피자,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3227981246236949,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20241425,큐미르,기타 교육,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,0.0,0.3288280005900007,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20241432,워크업,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,1.0,0.3294510165520141,2026-11-20,52,observed,52,observed,0,observed,0,observed,observed
+BRD_20241435,휴대폰성지최싸폰,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,4.0,0.3598260730947572,2026-11-20,12,observed,13,observed,1,observed,0,observed,observed
+BRD_20241440,오늘은 오므라이스,기타 외식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.30742272172274326,2026-11-20,9,observed,9,observed,0,observed,0,observed,observed
+BRD_20241448,카페동이,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,3.0,0.38455057369215784,2026-11-20,4,observed,4,observed,0,observed,0,observed,observed
+BRD_20241531,카트리스(cartris),자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,12.0,0.0,0.3737814449176709,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20241545,옛추억갈비탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3511223382098205,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20241574,봉봉스테이션(bongbong station),오락,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.28852947549027663,2026-11-20,14,observed,14,observed,0,observed,0,observed,observed
+BRD_20241602,김사부 닭도리탕&찜닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,5.0,0.0,0.3643230693956689,2026-11-20,2,observed,2,observed,0,observed,0,observed,observed
+BRD_20241626,우군닭발,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.3637244822031552,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20241649,옆구리,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,2.0,0.3894661323546301,2026-11-20,2,observed,2,observed,0,observed,0,observed,observed
+BRD_20241687,수밭골김치찜,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.3637244822031552,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20241722,지글대패삼겹살,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.3088620279266951,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20241723,완뚝순두부,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,15.0,4.0,0.33471868804961324,2026-11-20,6,observed,6,observed,0,observed,0,observed,observed
+BRD_20250018,태경청진동해장국,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,2.0,0.39157186635897917,2026-11-20,2,observed,2,observed,0,observed,0,observed,observed
+BRD_20250037,무극,안경,current_accounting_year_projection,2026,2025,2024,2026,2025,10.0,18.0,0.526299613101209,2026-11-20,23,observed,0,observed,0,observed,0,observed,observed
+BRD_20250039,1키로공룡닭강정,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.3585316026666797,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250090,다미로찜닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,6.0,0.0,0.3894661323546301,2026-11-20,2,observed,2,observed,0,observed,0,observed,observed
+BRD_20250185,척척밥상,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.26660737934774953,2026-11-20,8,observed,8,observed,0,observed,0,observed,observed
+BRD_20250192,등촌샤브칼국수,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3276343039819028,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250196,화채한박스 ,아이스크림/빙수 ,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3227981246236949,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250228,밀콤빙수,아이스크림/빙수 ,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3227981246236949,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250467,워시존(WASHZONE),자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.35356413046203383,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250541,낙곱화,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.3088620279266951,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250560,그릭 앤 요왕,제과제빵,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,4.0,0.3937385511976339,2026-11-20,5,observed,5,observed,0,observed,0,observed,observed
+BRD_20250571,하이엠수학,교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,0.0,0.3737814449176709,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250677,진교동한우곱도리탕,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.3637244822031552,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250693,T클래스(티클래스),교육 (교과),current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.2963700951603921,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250734,파스타119,서양식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.2995128057405142,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250758,천냥빵떡대장,기타도소매,current_accounting_year_projection,2026,2025,2024,2026,2025,16.0,0.0,0.3737814449176709,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250797,기똥차게,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.2050367702855768,2026-11-20,1,observed,0,observed,0,observed,0,observed,observed
+BRD_20250935,제육왕 칠백도,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.38830559409925003,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20250937,쑤뿔갈비,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,7.0,6.0,0.3045121830765685,2026-11-20,6,observed,3,observed,0,observed,0,observed,observed
+BRD_20250973,투플러스원 커피,커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.24118817737558174,2026-11-20,1,observed,1,observed,0,observed,0,observed,observed
+BRD_20250992,컴인워시,자동차 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,9.0,7.0,0.2561194056296077,2026-11-20,149,observed,33,observed,3,observed,0,observed,observed
+BRD_20251023,포장이사 비교견적 아정당 이사짐센터,이사,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.3227981246236949,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20251053,쭈제닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.3637244822031552,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20251059,마이피자 (MY PIZZA),피자,current_accounting_year_projection,2026,2025,2024,2026,2025,8.0,0.0,0.3737814449176709,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20251072,물항구해물찜,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.27585543167351806,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20251073,양군통닭,치킨,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.2706193484318391,2026-11-20,1,observed,1,observed,0,observed,0,observed,observed
+BRD_20251074,따뜻한자리 Grocery,종합소매점,current_accounting_year_projection,2026,2025,2024,2026,2025,14.0,3.0,0.22348323547446375,2026-11-20,4,observed,1,observed,0,observed,0,observed,observed
+BRD_20251205,심지,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.29732013625566883,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20251225,씨티씨커피(CTC COFFEE),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,0.0,0.2944288735013984,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20251337,짐플릭스,스포츠 관련,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,0.0,0.35356413046203383,2026-11-20,0,observed,0,observed,0,observed,0,observed,observed
+BRD_20251369,참윤슬갈비,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,1.0,0.3219334112069087,2026-11-20,1,observed,1,observed,0,observed,0,observed,observed
+BRD_20251389,참약사약국,약국,current_accounting_year_projection,2026,2025,2024,2026,2025,16.0,15.0,0.35323821820308343,2026-11-20,432,observed,100,observed,21,observed,0,observed,observed
+BRD_20251538,우복금 생갈비,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,1.0,0.31576104729285626,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20251541,빅웨이브(BIG WAVE),커피,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,5.0,0.41611459077708707,2026-11-20,5,observed,4,observed,0,observed,0,observed,observed
+BRD_20260032,방어진,일식,current_accounting_year_projection,2026,2025,2024,2026,2025,3.0,2.0,0.3315258103957564,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed
+BRD_20260066,도도情찜닭,한식,current_accounting_year_projection,2026,2025,2024,2026,2025,4.0,3.0,0.3406740772541349,2026-11-20,,unavailable,,unavailable,,unavailable,,unavailable,observed

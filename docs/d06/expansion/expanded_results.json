@@ -1,0 +1,10 @@
+{
+  "matched_permit_rows": 19798,
+  "matched_brands": 3249,
+  "panel_brands": 3106,
+  "excluded_short_aliases": 4175,
+  "excluded_shared_aliases": 506,
+  "entry_candidates": 1830,
+  "entry_brands": 1093,
+  "scope": "unverified literal-name matching; observed permit buildings, not verified franchise stores; zero means no linked records, not confirmed absence; Gunwi excluded for fixed geography"
+}

@@ -1,0 +1,1109 @@
+brand_id,brand_name,year,gu,reentry,stable_alias_count,new_substring_matches,new_prefix_matches,review_status
+BRD_20080100020,씨유(CU),2020,서구,False,1,1,1,stable_name_new_prefix
+BRD_20080100032,지에스25(GS25),2019,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20080100032,지에스25(GS25),2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20080100051,아트박스,2023,북구,False,1,1,0,stable_name_new_nonprefix
+BRD_20080100077,맛깔참죽,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20080100133,초록마을,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20080100133,초록마을,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20080100208,새마을식당,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20080100210,홍콩반점0410,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20080100240,봉추찜닭,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20080100324,북창동순두부,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20080100324,북창동순두부,2018,중구,False,1,1,1,stable_name_new_prefix
+BRD_20080100482,토프레소,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20080100496,피자나라치킨공주,2018,남구,False,1,1,1,stable_name_new_prefix
+BRD_20080100496,피자나라치킨공주,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20080100496,피자나라치킨공주,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20080100542,블루클럽,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20080100545,치킨매니아,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20080100646,앤티앤스,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20080100739,피자마루,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20080100739,피자마루,2025,동구,True,1,1,1,stable_name_new_prefix
+BRD_20080200055,명인만두,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20080200106,처갓집양념치킨,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20080200106,처갓집양념치킨,2025,중구,True,1,1,1,stable_name_new_prefix
+BRD_20080200110,르뽀미에,2020,달성군,True,1,1,0,stable_name_new_nonprefix
+BRD_20080200209,진이찬방,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20080200209,진이찬방,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20080200306,망향비빔국수,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20080300019,티바두마리치킨,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20080300020,치킨신드롬,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20080300030,이노티안경,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20080300030,이노티안경,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20080500019,원할머니,2020,동구,False,1,2,2,stable_name_new_prefix
+BRD_20080500020,박가부대,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20080500031,이삭토스트,2019,서구,False,1,1,1,stable_name_new_prefix
+BRD_20080500031,이삭토스트,2018,중구,False,1,1,1,stable_name_new_prefix
+BRD_20080600010,땅땅치킨,2022,중구,True,1,1,1,stable_name_new_prefix
+BRD_20080600013,종국이두마리치킨,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20090100126,스쿨푸드,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20090100151,림스치킨,2018,달성군,False,1,1,0,stable_name_new_nonprefix
+BRD_20090100151,림스치킨,2019,북구,True,1,1,1,stable_name_new_prefix
+BRD_20090100355,아이러브피자,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20090100355,아이러브피자,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20090100498,한신포차,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20090100498,한신포차,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20090100499,미정국수0410,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20090100499,미정국수0410,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20090100577,한앤둘치킨,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20090100577,한앤둘치킨,2025,동구,False,1,1,1,stable_name_new_prefix
+BRD_20090100577,한앤둘치킨,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20090300004,7번가피자,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20090300004,7번가피자,2023,달서구,False,1,1,0,stable_name_new_nonprefix
+BRD_20090500007,경아두마리치킨,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20090600019,커피명가,2021,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20100100030,강정구의 피자생각,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20100100136,피자알볼로,2020,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20100100136,피자알볼로,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20100100165,토마토도시락,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20100100165,토마토도시락,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20100100460,피자헤븐,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20100100460,피자헤븐,2020,북구,False,1,1,1,stable_name_new_prefix
+BRD_20100100482,본도시락,2021,달성군,True,1,2,2,stable_name_new_prefix
+BRD_20100100482,본도시락,2024,서구,False,1,1,1,stable_name_new_prefix
+BRD_20100100603,펀비어킹,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20100100603,펀비어킹,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20100500045,벤자롱스파,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20100500056,청주본가,2020,북구,False,1,1,0,stable_name_new_nonprefix
+BRD_20100600021,닥엔돈스,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20100600021,닥엔돈스,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20100600021,닥엔돈스,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20100600048,하늘보리피자,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20110100070,맥스피드PC,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20110100070,맥스피드PC,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20110100070,맥스피드PC,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20110100228,아리가또맘마,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20110100237,커피베이,2024,달서구,True,1,2,1,stable_name_new_prefix
+BRD_20110100237,커피베이,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20110100237,커피베이,2024,동구,False,1,1,0,stable_name_new_nonprefix
+BRD_20110100237,커피베이,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20110100587,얌(YAM),2024,달성군,False,1,1,0,stable_name_new_nonprefix
+BRD_20110100587,얌(YAM),2019,동구,False,1,1,0,stable_name_new_nonprefix
+BRD_20110100603,누나홀닭,2020,달서구,False,0,0,0,no_stable_alias
+BRD_20110100603,누나홀닭,2020,북구,False,0,0,0,no_stable_alias
+BRD_20110100603,누구나홀딱반한닭,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20110500014,안경매니져,2018,서구,False,1,1,1,stable_name_new_prefix
+BRD_20110500053,이비가짬뽕,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20110600016,달구지막창,2024,달성군,False,1,1,0,stable_name_new_nonprefix
+BRD_20110600016,달구지막창,2020,북구,False,1,1,1,stable_name_new_prefix
+BRD_20110600016,달구지막창,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20110600048,오레시피,2025,남구,False,1,1,1,stable_name_new_prefix
+BRD_20110600048,오레시피,2024,중구,True,1,1,1,stable_name_new_prefix
+BRD_20120100160,또봉이통닭,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20120100160,또봉이통닭,2023,달성군,True,1,1,1,stable_name_new_prefix
+BRD_20120100160,또봉이통닭,2024,동구,True,1,1,1,stable_name_new_prefix
+BRD_20120100251,킹콩부대찌개,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20120100251,킹콩부대찌개,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20120100352,역전우동0410,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20120100362,북촌손만두,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20120100414,카페드림,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20120100504,셀렉토커피,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20120100533,가장맛있는족발,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20120500057,정가대박집,2024,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20120500057,정가대박집,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20120600032,크린파트너,2021,북구,True,1,1,1,stable_name_new_prefix
+BRD_20120600062,폴리파크,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20130094,이마트에브리데이,2022,달서구,True,1,3,0,stable_name_new_nonprefix
+BRD_20130100004,봉구스밥버거,2023,달서구,True,1,1,1,stable_name_new_prefix
+BRD_20130100004,봉구스밥버거,2025,중구,True,1,1,1,stable_name_new_prefix
+BRD_20130100136,바라보다,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20130100180,뉴욕버거,2018,남구,False,1,1,1,stable_name_new_prefix
+BRD_20130100180,뉴욕버거,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20130100180,뉴욕버거,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20130100180,뉴욕버거,2022,동구,False,1,3,3,stable_name_new_prefix
+BRD_20130100180,뉴욕버거,2025,동구,True,1,1,1,stable_name_new_prefix
+BRD_20130100180,뉴욕버거,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20130100180,뉴욕버거,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20130100283,불닭발땡초동대문엽기떡볶이,2019,서구,False,1,1,1,stable_name_new_prefix
+BRD_20130100283,불닭발땡초동대문엽기떡볶이,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20130100320,쿡1015,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20130100320,쿡1015,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20130100320,쿡1015,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20130100343,부산아지매국밥,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20130100418,커피나무,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20130100418,커피나무,2023,수성구,False,1,1,0,stable_name_new_nonprefix
+BRD_20130100434,일미리금계찜닭,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20130100434,일미리금계찜닭,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20130100434,일미리금계찜닭,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20130100434,일미리금계찜닭,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20130155,이화수전통육개장,2019,서구,False,1,1,1,stable_name_new_prefix
+BRD_20130184,쿠우쿠우,2022,서구,False,1,1,1,stable_name_new_prefix
+BRD_20130184,쿠우쿠우,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20130187,반월당고로케,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20130227,청담동말자싸롱,2019,달성군,True,1,1,1,stable_name_new_prefix
+BRD_20130247,이웃집소녀떡볶이,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20130347,달인의찜닭,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20130400,누리마을감자탕,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20130505,오븐마루,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20130505,오븐마루,2018,중구,False,1,1,1,stable_name_new_prefix
+BRD_20130518,채다올김밥,2021,달성군,True,1,1,1,stable_name_new_prefix
+BRD_20130518,채다올김밥,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20130518,채다올김밥,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20130538,썬더치킨,2018,남구,False,1,1,1,stable_name_new_prefix
+BRD_20140058,바르다김선생,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20140109,토리헤어,2019,달서구,False,1,2,1,stable_name_new_prefix
+BRD_20140109,토리헤어,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20140109,토리헤어,2018,중구,False,1,1,1,stable_name_new_prefix
+BRD_20140168,두남자찜닭,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20140226,포쉬네일,2021,북구,True,1,1,1,stable_name_new_prefix
+BRD_20140226,포쉬네일,2019,수성구,True,1,1,1,stable_name_new_prefix
+BRD_20140262,신불떡볶이,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20140288,스트릿츄러스,2020,북구,False,1,1,1,stable_name_new_prefix
+BRD_20140292,큰맘할매순대국,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20140292,큰맘할매순대국,2023,달성군,True,1,1,1,stable_name_new_prefix
+BRD_20140535,아이데코,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20140535,아이데코,2022,서구,False,1,1,1,stable_name_new_prefix
+BRD_20140565,조가네갑오징어,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20140706,코리엔탈깻잎두마리치킨,2020,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20140706,코리엔탈깻잎두마리치킨,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20140706,코리엔탈깻잎두마리치킨,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20140752,대구우야지막창,2023,수성구,False,1,1,0,stable_name_new_nonprefix
+BRD_20140778,크리스피크림 ,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20140998,고마담치킨,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20141019,반올림피자샵,2020,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20141019,반올림피자샵,2022,동구,False,0,0,0,no_stable_alias
+BRD_20141019,반올림피자샵,2021,서구,False,1,1,1,stable_name_new_prefix
+BRD_20141063,생활맥주,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20141237,와플대학,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20141237,와플대학,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20141237,와플대학,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20141250,컴포즈커피(COMPOSE COFFEE),2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20141254,전원숯불,2022,남구,False,1,1,1,stable_name_new_prefix
+BRD_20150052,빵장수단팥빵,2023,남구,False,1,2,2,stable_name_new_prefix
+BRD_20150052,빵장수단팥빵,2022,북구,False,1,2,1,stable_name_new_prefix
+BRD_20150085,못난이꽈배기,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20150085,못난이꽈배기,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20150085,못난이꽈배기,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20150098,곤지암할매소머리국밥,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20150164,응급실국물떡볶이,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20150164,응급실국물떡볶이,2019,달성군,False,1,3,3,stable_name_new_prefix
+BRD_20150164,응급실국물떡볶이,2019,동구,False,1,2,2,stable_name_new_prefix
+BRD_20150164,응급실국물떡볶이,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20150164,응급실국물떡볶이,2018,중구,False,1,1,1,stable_name_new_prefix
+BRD_20150449,유가네한우곰탕,2023,남구,False,1,1,1,stable_name_new_prefix
+BRD_20150473,밥맛나는세상,2019,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20150612,김성구의성마늘치킨,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20150612,김성구의성마늘치킨,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20150612,김성구의성마늘치킨,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20150700,청년다방,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20150785,본설렁탕,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20150811,디저트39,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20150811,디저트39,2021,달서구,True,1,1,1,stable_name_new_prefix
+BRD_20150811,디저트 39,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20150836,빨간모자피자,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20150888,비어드파파,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20150901,다담뜰 한식뷔페,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20150930,바른치킨,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20151013,룰루랄라,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20151021,대구근대골목단팥빵,2022,서구,False,1,1,1,stable_name_new_prefix
+BRD_20151040,큰정할매순대국,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20151159,육감만족,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20151198,염색이야기,2022,남구,False,1,1,1,stable_name_new_prefix
+BRD_20151198,염색이야기,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20151198,염색이야기,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20151202,더리터(THE LITER),2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20151217,싸움의고수,2018,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20151228,막창도둑,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20151243,봉대박찜닭,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20160027,정항우케익,2018,달서구,False,1,1,0,stable_name_new_nonprefix
+BRD_20160116,만랩커피,2019,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20160116,만랩커피,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20160124,설동궁찜닭,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20160174,로이드밤,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20160174,로이드밤,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20160174,로이드밤,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20160174,로이드밤,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20160218,세컨페이스,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20160218,세컨페이스,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20160218,세컨페이스,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20160312,순수치킨,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20160345,헤어망고,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20160395,배부장찌개,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20160417,핵스테이크,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20160466,짱큰대구대가리,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20160511,네이처컬렉션,2020,남구,False,1,2,2,stable_name_new_prefix
+BRD_20160511,네이처컬렉션,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20160511,네이처컬렉션,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20160511,네이처컬렉션,2020,북구,False,1,1,1,stable_name_new_prefix
+BRD_20160511,네이처컬렉션,2019,서구,False,1,1,1,stable_name_new_prefix
+BRD_20160511,네이처컬렉션,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20160521,심봉사도로케,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20160521,심봉사도로케,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20160521,심봉사도로케,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20160521,심봉사도로케,2024,수성구,True,1,1,1,stable_name_new_prefix
+BRD_20160542,스타덤PC,2019,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20160542,스타덤PC,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20160542,스타덤PC,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20160621,홍대개미,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20160621,홍대개미,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20160690,김밥일번지,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20160713,79대포,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20160729,피에스타PC방,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20160798,가마치통닭,2021,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20160798,가마치통닭,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20160798,가마치통닭,2023,수성구,True,1,2,2,stable_name_new_prefix
+BRD_20160811,베러먼데이,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20160813,더오니기리플러스,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20160832,한끼맛있다,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20160832,한끼맛있다,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20160835,얌샘김밥,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20160835,얌샘김밥,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20160835,얌샘김밥,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20160882,슈슈봉봉,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20160882,슈슈봉봉,2019,중구,False,1,2,2,stable_name_new_prefix
+BRD_20160884,마왕족발,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20160884,마왕족발,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20160884,마왕족발,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20160962,명덕총각족발,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20160962,명덕총각족발,2025,달성군,True,0,0,0,no_stable_alias
+BRD_20160962,명덕총각족발,2025,동구,False,0,0,0,no_stable_alias
+BRD_20160962,명덕총각족발,2022,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20160997,빵장수꽈배기,2020,중구,True,1,1,1,stable_name_new_prefix
+BRD_20161004,점핑하이,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20161030,노군꼬치,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20161062,텀브커피,2018,남구,False,1,1,1,stable_name_new_prefix
+BRD_20161137,명랑시대쌀핫도그,2024,중구,True,1,1,1,stable_name_new_prefix
+BRD_20161144,세븐스타코인노래연습장,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20161144,세븐스타코인노래연습장,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20161144,세븐스타코인노래연습장,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20161159,매머드익스프레스(Mammoth Express),2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20161160,수내닭꼬치,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20161160,수내닭꼬치,2019,북구,False,1,3,3,stable_name_new_prefix
+BRD_20161160,수내닭꼬치,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20161160,수내닭꼬치,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20161181,블럭제빵소,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20161199,동근이숯불두마리치킨,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20161199,동근이숯불두마리치킨,2020,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20161199,동근이숯불두마리치킨,2021,북구,False,1,2,2,stable_name_new_prefix
+BRD_20161207,커피온리,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20161231,토스트앤후르츠,2025,달서구,True,1,1,1,stable_name_new_prefix
+BRD_20161261,황금코다리,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20161275,한옥마을,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20170055,배달돼지,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20170126,미카도스시,2024,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20170126,미카도스시,2025,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20170126,미카도스시,2025,동구,False,1,1,1,stable_name_new_prefix
+BRD_20170127,치킨플러스,2020,서구,False,1,1,1,stable_name_new_prefix
+BRD_20170127,치킨플러스,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20170127,치킨플러스,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20170139,용호동낙지,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20170214,청춘감성쌀핫도그,2023,달서구,True,1,1,1,stable_name_new_prefix
+BRD_20170304,한잔하자,2018,북구,False,1,1,0,stable_name_new_nonprefix
+BRD_20170358,33떡볶이,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20170358,33떡볶이,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20170358,33떡볶이,2020,북구,False,1,1,1,stable_name_new_prefix
+BRD_20170374,거송갈비찜,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20170374,거송갈비찜,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20170374,거송갈비찜,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20170439,후라이드참잘하는집,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20170439,후라이드참잘하는집,2019,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20170451,선비꼬마김밥,2021,남구,False,1,3,3,stable_name_new_prefix
+BRD_20170451,선비꼬마김밥,2019,동구,False,1,3,3,stable_name_new_prefix
+BRD_20170451,선비꼬마김밥,2019,북구,False,1,4,4,stable_name_new_prefix
+BRD_20170451,선비꼬마김밥,2020,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20170468,쌀똑핫도그,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20170500,오닭꼬치,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20170519,국제통닭,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20170519,국제통닭,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20170519,국제통닭,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20170530,배터지는갈비,2018,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20170530,배터지는갈비,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20170650,엔젤스 코인노래연습장,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20170659,황금식당,2023,남구,False,1,1,0,stable_name_new_nonprefix
+BRD_20170725,레이지모닝,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20170725,레이지모닝,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20170746,커피랑도서관,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20170746,커피랑도서관,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20170746,커피랑도서관,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20170752,눈사랑안경,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20170752,눈사랑안경,2020,서구,False,1,1,1,stable_name_new_prefix
+BRD_20170764,마이카츠,2021,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20170764,마이카츠,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20170764,마이카츠,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20170801,부산어묵,2020,서구,False,1,1,1,stable_name_new_prefix
+BRD_20170813,해초과메기,2023,달성군,False,1,1,0,stable_name_new_nonprefix
+BRD_20170813,해초과메기,2018,북구,False,1,1,0,stable_name_new_nonprefix
+BRD_20170818,고집센그집갈비탕,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20170925,브라더한정식도시락,2019,달서구,True,1,1,1,stable_name_new_prefix
+BRD_20170925,브라더한정식도시락,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20170925,브라더한정식도시락,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20170925,브라더한정식도시락,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20170932,땅스부대찌개,2022,남구,False,1,2,2,stable_name_new_prefix
+BRD_20170932,땅스부대찌개,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20170960,신존떡볶이,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20170960,신존떡볶이,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20170960,신존떡볶이,2021,동구,True,1,1,1,stable_name_new_prefix
+BRD_20170960,신존떡볶이,2020,북구,False,1,1,1,stable_name_new_prefix
+BRD_20170999,중화가정,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20171072,코레아경양식,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20171072,코레아경양식,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20171098,홍대쌀국수,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20171137,카페인중독,2022,남구,False,1,1,1,stable_name_new_prefix
+BRD_20171137,카페인중독,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20171137,카페인중독,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20171137,카페인중독,2022,동구,False,1,2,2,stable_name_new_prefix
+BRD_20171137,카페인중독,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20171207,본가옛날통닭,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20171213,동수네통닭,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20171226,최고당 돈가스,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20171226,최고당 돈가스,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20171226,최고당 돈가스,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20171254,명륜진사갈비,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20171254,명륜진사갈비,2019,동구,False,1,2,2,stable_name_new_prefix
+BRD_20171254,명륜진사갈비,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20171279,일품장수미역,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20171296,동성로매콩돈까스와 냉면,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20171298,꾸브라꼬 숯불 두마리 치킨,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20171298,꾸브라꼬숯불두마리치킨,2024,달성군,False,0,0,0,no_stable_alias
+BRD_20171298,꾸브라꼬숯불두마리치킨,2024,북구,True,0,0,0,no_stable_alias
+BRD_20171304,현풍닭칼국수,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20171304,현풍닭칼국수,2018,북구,False,1,2,2,stable_name_new_prefix
+BRD_20171304,현풍닭칼국수,2020,서구,False,1,1,1,stable_name_new_prefix
+BRD_20171308,교동면옥,2018,남구,False,1,1,1,stable_name_new_prefix
+BRD_20171319,테트리스 찜닭,2018,남구,False,1,1,1,stable_name_new_prefix
+BRD_20171319,테트리스찜닭,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20171319,테트리스 찜닭,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20171319,테트리스 찜닭,2018,서구,False,1,1,1,stable_name_new_prefix
+BRD_20171319,테트리스찜닭,2023,수성구,True,1,1,1,stable_name_new_prefix
+BRD_20171376,도쿄라멘,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20171376,도쿄라멘,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20171414,아지야가꿉으께,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20171425,송사부수제쌀고로케,2020,달서구,False,1,1,0,stable_name_new_nonprefix
+BRD_20171425,송사부수제쌀고로케,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20171425,송사부수제쌀고로케,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20171465,꽃돼지식당,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20171495,열도분식,2018,달서구,False,1,1,0,stable_name_new_nonprefix
+BRD_20171503,샌드리아,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20171503,샌드리아,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20171508,만땅치킨,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20171508,만땅치킨,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180053,브로피자,2021,남구,True,1,1,0,stable_name_new_nonprefix
+BRD_20180053,브로피자,2021,달서구,True,1,1,0,stable_name_new_nonprefix
+BRD_20180053,브로피자,2018,동구,False,1,1,0,stable_name_new_nonprefix
+BRD_20180053,브로피자,2018,북구,False,1,1,1,stable_name_new_prefix
+BRD_20180070,감성커피,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180070,감성커피,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180074,김충기꽃삼겹,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20180074,김충기꽃삼겹,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180074,김충기꽃삼겹,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180074,김충기꽃삼겹,2021,동구,True,1,1,1,stable_name_new_prefix
+BRD_20180074,김충기꽃삼겹,2018,중구,False,1,1,1,stable_name_new_prefix
+BRD_20180101,아이디헤어,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20180123,WOO'Z,2022,중구,False,1,1,0,stable_name_new_nonprefix
+BRD_20180132,팔백국밥,2019,서구,False,1,1,1,stable_name_new_prefix
+BRD_20180139,에그드랍(EGG DROP),2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180139,에그드랍(EGG DROP),2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20180142,치킨연구소,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20180145,미식가의구이,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20180171,달리는커피,2021,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20180209,자박갈비,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20180210,심야오뎅,2018,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180229,캠토토스트,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20180234,철판떼기,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20180240,스푼필라프,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20180240,스푼필라프,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20180249,청년피자,2019,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20180249,청년피자,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180249,청년피자,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180249,청년피자,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20180249,청년피자,2019,서구,False,1,1,1,stable_name_new_prefix
+BRD_20180249,청년피자,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20180250,분식쌀롱,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180250,분식쌀롱,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20180250,분식쌀롱,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20180253,감성족발,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180253,감성족발,2022,북구,True,1,1,1,stable_name_new_prefix
+BRD_20180319,쭈꾸미집,2018,서구,False,1,1,1,stable_name_new_prefix
+BRD_20180350,엘아르카,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20180350,엘아르카,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180394,잇또라멘,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180410,일품양평해장국,2025,북구,True,1,1,1,stable_name_new_prefix
+BRD_20180420,치요남치킨,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180472,신국 떡볶이,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180512,홍루이젠,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20180547,으뜸50안경,2019,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20180547,으뜸50안경,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180547,으뜸50안경,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180547,으뜸50안경,2020,북구,True,1,2,2,stable_name_new_prefix
+BRD_20180554,대패가1900,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20180554,대패가1900,2021,달성군,False,1,1,0,stable_name_new_nonprefix
+BRD_20180554,대패가1900,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180554,대패가1900,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20180600,곱분이 곱창,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20180600,곱분이곱창,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180612,샤브20,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20180612,샤브20,2025,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20180612,샤브20 ,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180612,샤브20,2024,북구,False,1,2,2,stable_name_new_prefix
+BRD_20180612,샤브20 ,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20180624,투마리나,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20180624,투마리나,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180676,오산조은참치,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20180711,비스트로피자,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20180733,범프리카인생치킨,2018,서구,False,1,1,1,stable_name_new_prefix
+BRD_20180744,사천노마훠궈,2018,달서구,False,0,0,0,no_stable_alias
+BRD_20180759,토스트카페마리,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20180759,토스트카페마리,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180760,신대장 떡볶이,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20180760,신대장 떡볶이,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20180760,신대장 떡볶이,2019,중구,False,1,1,1,stable_name_new_prefix
+BRD_20180893,고기듬뿍 대왕비빔밥,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20180893,고기듬뿍 대왕비빔밥,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20180941,동명 카츠,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20180941,동명 카츠,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180990,몽키스비어,2020,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20180998,라오니피자,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20180998,라오니피자,2018,서구,False,1,1,1,stable_name_new_prefix
+BRD_20180998,라오니피자,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20180999,오호리준,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20181008,김복남맥주,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20181008,김복남맥주,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20181008,김복남맥주,2024,서구,False,1,1,1,stable_name_new_prefix
+BRD_20181008,김복남맥주,2024,중구,False,1,3,3,stable_name_new_prefix
+BRD_20181014,할매손충무김밥,2018,동구,False,1,1,1,stable_name_new_prefix
+BRD_20181052,송미미네집,2018,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20181053,장호덕손만두,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20181053,장호덕손만두,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20181268,치킨의민족,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20181268,치킨의민족,2020,북구,False,1,1,0,stable_name_new_nonprefix
+BRD_20181268,치킨의민족,2019,서구,False,1,1,1,stable_name_new_prefix
+BRD_20181279,로라방앗간,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20181320,노브랜드,2018,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20181320,노브랜드,2019,달성군,False,1,3,1,stable_name_new_prefix
+BRD_20181320,노브랜드,2019,북구,False,1,5,5,stable_name_new_prefix
+BRD_20181320,노브랜드,2021,수성구,False,1,3,3,stable_name_new_prefix
+BRD_20181320,노브랜드,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20181340,보배반점,2018,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20181340,보배반점,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20190163,크라상점,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20190163,크라상점,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20190163,크라상점,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20190177,스시카츠,2019,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20190177,스시카츠,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20190195,그놈포차,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20190195,그놈포차,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20190227,롤링파스타,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20190274,신열떡볶이,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20190293,냠냠숯불두마리치킨,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20190293,냠냠숯불두마리치킨,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20190293,냠냠숯불두마리치킨,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20190328,1943,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20190332,홍베이팡,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20190332,홍베이팡,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20190345,봉자막창,2024,서구,False,1,1,1,stable_name_new_prefix
+BRD_20190404,신떡순 신천할매떡볶이,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20190404,신떡순 신천할매떡볶이,2019,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20190404,신떡순 신천할매떡볶이,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20190404,신떡순 신천할매떡볶이,2021,서구,False,1,1,1,stable_name_new_prefix
+BRD_20190404,신떡순 신천할매떡볶이,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20190404,신떡순 신천할매떡볶이,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20190477,후라토식당,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20190497,정직유부,2020,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20190497,정직유부,2020,북구,False,1,1,1,stable_name_new_prefix
+BRD_20190497,정직유부,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20190521,서브마린,2023,남구,False,1,1,0,stable_name_new_nonprefix
+BRD_20190524,따띠삼겹,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20190526,샤브마니아,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20190526,샤브마니아,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20190550,으뜸플러스안경,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20190550,으뜸플러스안경,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20190550,으뜸플러스안경,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20190550,으뜸플러스안경,2021,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20190567,금화왕돈까스,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20190599,애플꼬마김밥,2022,북구,True,1,1,1,stable_name_new_prefix
+BRD_20190623,숨쉬는 순두부,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20190623,숨쉬는 순두부,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20190659,갯벌의 조개,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20190675,국민마늘치킨,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20190753,갓튀긴후라이드,2025,수성구,True,1,1,1,stable_name_new_prefix
+BRD_20190755,바른푸드,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20190768,세이프존,2024,서구,False,1,1,1,stable_name_new_prefix
+BRD_20190812,신마녀떡볶이,2022,남구,False,1,1,1,stable_name_new_prefix
+BRD_20190812,신마녀떡볶이,2021,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20190812,신마녀떡볶이,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20190812,신마녀떡볶이,2022,북구,True,1,1,1,stable_name_new_prefix
+BRD_20190835,에그셀런트,2021,북구,True,1,1,1,stable_name_new_prefix
+BRD_20190835,에그셀런트,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20190835,에그셀런트,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20190838,원래는 치킨집을 할려고 했었다,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20190838,원래는 치킨집을 할려고 했었다,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20190861,달토끼의 떡볶이 흡입구역,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20190910,요달의 찜닭,2020,남구,False,1,2,2,stable_name_new_prefix
+BRD_20190910,요달의찜닭,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20190955,봉명동내커피,2023,남구,False,1,1,1,stable_name_new_prefix
+BRD_20190955,봉명동내커피,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20190967,별난아재맥주,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20190967,별난아재맥주,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20190967,별난아재맥주,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20190967,별난아재맥주,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20190978,한끼한죽,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20190982,족발슈퍼,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20190995,세겹뚱이,2019,남구,False,1,1,1,stable_name_new_prefix
+BRD_20190995,세겹뚱이,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20191016,삼첩분식,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20191016,삼첩분식,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20191016,삼첩분식,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20191034,긴자료코,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20191034,긴자료코,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20191034,긴자료코,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20191034,긴자료코,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20191036,궁 잔기지떡,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20191041,수페부엌,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20191049,탕화쿵푸마라탕,2025,동구,False,1,1,1,stable_name_new_prefix
+BRD_20191049,탕화쿵푸마라탕,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20191049,탕화쿵푸마라탕,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20191073,정코다리,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20191104,혼밥대왕,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20191104,혼밥대왕,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20191105,반할커피,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20191105,반할커피,2020,서구,False,1,1,1,stable_name_new_prefix
+BRD_20191106,미친돈까스,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20191167,이백장 돈가스,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20191191,몬스터커피,2020,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20191192,프랭크버거,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20191192,프랭크버거,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20191192,프랭크버거,2022,중구,False,1,2,2,stable_name_new_prefix
+BRD_20191245,카페코지,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20191275,찐이야숯불두마리치킨,2024,달서구,False,0,0,0,no_stable_alias
+BRD_20191275,찐이야숯불두마리치킨,2024,북구,False,0,0,0,no_stable_alias
+BRD_20191302,옛날그시절 화덕찜닭,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20191316,스구식탁,2025,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20191316,스구식탁,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20191316,스구식탁,2020,북구,False,1,1,1,stable_name_new_prefix
+BRD_20191316,스구식탁,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20191342,우리할매 떡볶이,2019,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20191342,우리할매 떡볶이,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20191366,구백냥 곱창,2019,서구,False,1,1,1,stable_name_new_prefix
+BRD_20191432,마선생마약국밥,2023,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20191434,마선생얼큰국밥,2025,동구,False,1,1,1,stable_name_new_prefix
+BRD_20200004,저스트마라관,2019,북구,False,1,1,1,stable_name_new_prefix
+BRD_20200006,1974 종로호랑이 맥주,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20200012,돈카츠마켙,2023,달서구,False,0,0,0,no_stable_alias
+BRD_20200012,돈카츠마켙,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20200012,돈카츠마켙,2023,서구,False,0,0,0,no_stable_alias
+BRD_20200016,홍익마늘치킨,2019,동구,False,1,1,1,stable_name_new_prefix
+BRD_20200017,채선당도시락&샐러드,2022,남구,False,1,1,1,stable_name_new_prefix
+BRD_20200032,명랑부대찌개,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20200044,갓샐러드,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20200044,갓샐러드,2020,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200044,갓샐러드,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20200044,갓샐러드,2020,북구,False,1,2,2,stable_name_new_prefix
+BRD_20200044,갓샐러드,2020,서구,False,1,1,1,stable_name_new_prefix
+BRD_20200044,갓샐러드,2019,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20200044,갓샐러드,2020,중구,False,1,2,2,stable_name_new_prefix
+BRD_20200107,미진축산,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200125,킹스꼬마김밥,2020,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200125,킹스꼬마김밥,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20200125,킹스꼬마김밥,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20200127,고기싸롱,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20200136,상무초밥,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20200236,참 좋은 김밥천국,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20200239,인쌩맥주,2025,남구,False,1,1,1,stable_name_new_prefix
+BRD_20200239,인쌩맥주,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200239,인쌩맥주,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20200289,김준호의 대단한갈비,2021,달성군,False,1,6,6,stable_name_new_prefix
+BRD_20200289,김준호의 대단한갈비,2021,동구,False,1,3,3,stable_name_new_prefix
+BRD_20200289,김준호의 대단한갈비,2021,북구,False,1,2,2,stable_name_new_prefix
+BRD_20200289,김준호의 대단한갈비,2021,서구,False,1,1,1,stable_name_new_prefix
+BRD_20200289,김준호의 대단한갈비,2021,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20200316,한고집 김치찌개,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20200341,청년치킨,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20200341,청년치킨,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20200365,맛있는 고기에 솜씨를 더하다,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200365,맛있는 고기에 솜씨를 더하다,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20200374,카페 꽃이피다,2021,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20200374,카페 꽃이피다,2020,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20200374,카페 꽃이피다,2020,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20200376,읍천리 382,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200376,읍천리 382,2020,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20200393,욜로PC방,2020,달성군,False,1,3,3,stable_name_new_prefix
+BRD_20200393,욜로PC방,2024,서구,False,1,1,1,stable_name_new_prefix
+BRD_20200393,욜로PC방,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20200404,반달커피,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20200441,해쉬커피,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200496,코지하우스,2025,남구,False,1,1,1,stable_name_new_prefix
+BRD_20200496,코지하우스,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20200496,코지하우스,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200496,코지하우스,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20200506,두근돼지김치찜,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20200516,연남물갈비,2020,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200522,프레드피자,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20200522,프레드피자,2023,남구,True,1,1,1,stable_name_new_prefix
+BRD_20200522,프레드피자,2021,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20200522,프레드피자,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20200522,프레드피자,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20200522,프레드피자,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20200565,출근길생고기,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20200565,출근길 생고기,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20200578,거북이동네,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20200578,거북이동네,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20200586,오유미당,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20200632,유미카츠,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20200638,천씨씨커피,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200638,천씨씨커피,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20200638,천씨씨커피,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20200651,더베스트,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200673,저스트텐동,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20200676,대부대왕유부초밥,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20200676,대부대왕유부초밥,2020,달서구,False,1,3,3,stable_name_new_prefix
+BRD_20200704,홍콩할매불닭발,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20200704,홍콩할매불닭발,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20200763,사우나 떡볶이,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200804,유온달포장,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20200808,달빛에 구운 고등어,2025,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200830,인생아구찜,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20200830,인생아구찜,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20200836,뉴욕쟁이디저트,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20200864,파스타입니다,2021,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20200909,결이고은 에스테틱,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20200931,달리는 려석들,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20200991,씨네마얼음맥주,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20200994,트리플에이커피,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20200998,공룡닭발,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20201014,고기극찬,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20201063,찐도리도리닭도리,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201063,찐도리도리닭도리,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20201063,찐도리도리닭도리,2020,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20201063,찐도리도리닭도리,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20201063,찐도리도리닭도리,2020,북구,False,1,1,1,stable_name_new_prefix
+BRD_20201063,찐도리도리닭도리,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20201102,동양족발,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201102,동양족발,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20201102,동양족발,2020,서구,False,1,1,1,stable_name_new_prefix
+BRD_20201107,킹프레소,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20201155,커피매거진,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201155,커피매거진,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20201156,마실커피,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20201156,마실커피,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20201156,마실커피,2022,서구,False,1,1,1,stable_name_new_prefix
+BRD_20201203,하삼동커피,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201203,하삼동커피,2022,동구,False,1,2,2,stable_name_new_prefix
+BRD_20201203,하삼동커피,2020,북구,False,1,1,1,stable_name_new_prefix
+BRD_20201203,하삼동커피,2022,서구,False,1,2,2,stable_name_new_prefix
+BRD_20201203,하삼동커피,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20201210,마이고기,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20201243,피자는 치즈빨,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20201249,수유리혼밥왕,2020,동구,False,1,1,0,stable_name_new_nonprefix
+BRD_20201249,수유리혼밥왕,2021,서구,False,1,1,1,stable_name_new_prefix
+BRD_20201249,수유리혼밥왕,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20201327,무모한 초밥,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20201342,남쑨이포차,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20201342,남쑨이포차,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20201348,"떡볶이 참 잘하는 집, 떡참",2022,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201348,"떡볶이 참 잘하는 집, 떡참",2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20201348,"떡볶이 참 잘하는 집, 떡참",2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20201360,아이엠(i.M),2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201368,싸가지고가게,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20201368,싸가지고가게,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20201368,싸가지고가게,2021,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20201382,브라이트스타,2021,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20201443,라홍방 마라탕,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20201462,김진오 김실장왕족발,2023,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201482,돼지게티,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20201485,감성낙곱새,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20201504,청년찌개,2021,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20201504,청년찌개,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20201504,청년찌개,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20201537,구도로통닭,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20201540,디저트부티크엠,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201540,디저트부티크엠,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20201540,야야할매김치찜,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20201556,리 에스테틱,2021,수성구,True,1,1,0,stable_name_new_nonprefix
+BRD_20201556,리 에스테틱,2023,중구,False,1,1,0,stable_name_new_nonprefix
+BRD_20201575,코봉이 해물찜,2020,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201575,코봉이 해물찜,2021,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20201595,"쉼, 어묵 그리고 한잔 술",2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20201685,푸줏간 고기도시락,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201685,푸줏간삼겹돼지고기배달,2023,동구,True,0,0,0,no_stable_alias
+BRD_20201685,푸줏간 고기도시락,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20201685,푸줏간 고기도시락,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20201685,푸줏간 고기도시락,2025,수성구,True,1,2,2,stable_name_new_prefix
+BRD_20201718,큰바우국밥,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20201718,큰바우국밥,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20201752,라우스터프,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20201882,식사준비,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20201882,식사준비,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20201886,청춘식당,2020,서구,False,1,1,1,stable_name_new_prefix
+BRD_20201900,핑퐁커피,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20210097,치밥대장숯불양념92치킨,2025,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20210119,돈기부여,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20210148,잭슨피자,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20210157,오르다피자,2025,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20210157,오르다피자,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20210157,오르다피자,2025,수성구,True,1,1,1,stable_name_new_prefix
+BRD_20210167,참숯 삼인조,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20210167,참숯 삼인조,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20210211,제육대가,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20210211,제육대가,2020,동구,False,1,1,1,stable_name_new_prefix
+BRD_20210211,제육대가,2020,서구,False,1,1,1,stable_name_new_prefix
+BRD_20210239,대천국밥,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20210239,대천국밥,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20210243,신신모모,2020,중구,False,1,1,1,stable_name_new_prefix
+BRD_20210285,밥풀릭스,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20210285,밥풀릭스,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20210315,소림마라,2020,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20210315,소림마라,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20210315,소림마라,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20210315,소림마라,2022,서구,False,1,1,1,stable_name_new_prefix
+BRD_20210315,소림마라,2020,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20210375,바른보쌈1990,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20210378,분식창고,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20210412,도시곳간,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20210418,트루바이,2022,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20210462,오늘도 한우,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20210482,츄러스1500,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20210482,츄러스1500,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20210482,츄러스1500,2021,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20210515,오리지날,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20210534,삼산회관,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20210534,삼산회관,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20210554,모아모찜닭,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20210570,모리커피,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20210570,모리커피,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20210599,홈쿡 24 ,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20210782,혁계치킨,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20210782,혁계치킨,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20210816,막창사냥꾼,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20210826,요거트아이스크림의정석,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20210826,요거트아이스크림의정석,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20210826,요거트아이스크림의정석,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20210826,요거트아이스크림의정석,2024,서구,True,1,1,1,stable_name_new_prefix
+BRD_20210826,요거트아이스크림의정석,2024,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20210826,요거트아이스크림의정석,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20210852,청춘국물닭발,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20210859,달콤한아재,2024,수성구,True,1,1,1,stable_name_new_prefix
+BRD_20210862,샤오당쟈,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20210862,샤오당쟈,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20210878,만찬분식탁,2021,중구,False,1,2,2,stable_name_new_prefix
+BRD_20210914,약선흑염소,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20210931,기대만족,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20210931,기대만족,2024,서구,False,1,1,1,stable_name_new_prefix
+BRD_20210984,앵떡볶이,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20210991,카페16온스,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20211005,하이오커피,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20211005,하이오커피,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20211017,용용선생,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20211037,1키로탕수육,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20211068,부산빨간어묵포차,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20211100,유캔두잇,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20211100,유캔두잇,2021,서구,False,1,1,1,stable_name_new_prefix
+BRD_20211178,메가후르츠,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20211178,메가후르츠,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20211203,젓가락질 잘해야만 밥을 먹나요,2021,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20211203,젓가락질 잘해야만 밥을 먹나요,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20211203,젓가락질 잘해야만 밥을 먹나요,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20211203,젓가락질 잘해야만 밥을 먹나요,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20211203,젓가락질 잘해야만 밥을 먹나요,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20211217,당신은지금치킨이땡긴다,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20211222,담따프레시,2022,남구,False,1,2,2,stable_name_new_prefix
+BRD_20211233,갱스터피자,2021,북구,False,1,2,2,stable_name_new_prefix
+BRD_20211233,갱스터피자,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20211278,광안천지식당,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20211278,광안천지식당,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20211310,정성순대,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20211349,길섶한우,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20211349,길섶한우,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20211363,퍼스트커피,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20211404,안경상회,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20211434,요거트월드,2022,남구,False,1,1,1,stable_name_new_prefix
+BRD_20211434,요거트월드,2022,서구,False,1,1,1,stable_name_new_prefix
+BRD_20211434,요거트월드,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20211435,소매점양꼬치,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20211440,평화김해뒷고기,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20211525,뚱채김밥,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20211562,와촌식당,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20211562,와촌식당,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20211570,커피스토아,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20211595,노가리타운,2022,서구,False,1,1,1,stable_name_new_prefix
+BRD_20211622,해피꼬마김밥,2021,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20211622,해피꼬마김밥,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20211626,여부초밥,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20211626,여부초밥,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20211626,여부초밥,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20211626,여부초밥,2022,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20211628,신라식당,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20211628,신라식당,2024,수성구,True,1,2,2,stable_name_new_prefix
+BRD_20211629,피자1991,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20211629,피자1991,2021,서구,False,1,1,1,stable_name_new_prefix
+BRD_20211703,프랑킨 바베큐치킨,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20211707,순살만공격,2022,동구,False,1,3,3,stable_name_new_prefix
+BRD_20211707,순살만공격,2022,북구,False,1,2,2,stable_name_new_prefix
+BRD_20211711,동네커피,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20211711,동네커피,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20211711,동네커피,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20211774,육회바른연어,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20211774,육회바른연어,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20211903,제이델링,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20211907,포카드 홀덤펍,2021,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20211907,포카드 홀덤펍,2021,동구,False,1,2,2,stable_name_new_prefix
+BRD_20211929,아이드블랑,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20211929,아이드블랑,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20211929,아이드블랑,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20211929,아이드블랑,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20211982,더노벰버 라운지,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20211998,연돈볼카츠,2024,달서구,False,0,0,0,no_stable_alias
+BRD_20211998,연돈볼카츠,2024,달성군,False,0,0,0,no_stable_alias
+BRD_20211998,연돈볼카츠,2024,북구,True,0,0,0,no_stable_alias
+BRD_20212045,국밥참맛있는집,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20212058,니가아는식당,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20212071,오늘은새우회,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20212074,도로시파스타,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20212106,캐롤커피,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20212140,스텔라떡볶이,2022,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20212140,스텔라떡볶이,2023,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20212140,스텔라떡볶이,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20212140,스텔라떡볶이,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20212140,스텔라떡볶이,2023,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20212147,찌웅이네숯불두마리치킨,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20212168,병아리김밥,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20212219,1L 맥스커피,2022,동구,False,1,1,0,stable_name_new_nonprefix
+BRD_20212219,1L 맥스커피,2023,북구,False,0,0,0,no_stable_alias
+BRD_20212219,1L 맥스커피,2023,수성구,False,0,0,0,no_stable_alias
+BRD_20212229,삼동소바,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20212256,믹스토랑,2025,남구,False,1,1,1,stable_name_new_prefix
+BRD_20212341,바나타이거,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20212341,바나타이거,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20212372,레프트뱅크,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20212372,레프트뱅크,2021,북구,False,1,2,2,stable_name_new_prefix
+BRD_20212439,피자먹다,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20212464,피자와썹,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20212477,아시안상회 논라,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20212488,피카커피,2021,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20212488,피카커피,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20212508,구름계란덮밥,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20212508,구름계란덮밥,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20212522,고기미담,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20212607,샐러디아,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20212617,베이프큐,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20212810,박영재의 마포찜갈비,2021,달서구,False,0,0,0,no_stable_alias
+BRD_20212817,참토스트,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20212817,참토스트,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20212991,기막힌밥상,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20213021,32커피,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20213056,태리피자,2021,동구,False,1,2,0,stable_name_new_nonprefix
+BRD_20213187,삼부식당,2021,남구,False,1,1,1,stable_name_new_prefix
+BRD_20213267,기영이 숯불 두마리 치킨,2023,동구,False,1,2,2,stable_name_new_prefix
+BRD_20213267,기영이 숯불 두마리 치킨,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20213267,기영이 숯불 두마리 치킨,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20213303,춘리마라탕,2025,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20213303,춘리마라탕,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20213411,백억커피,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20213411,백억커피,2024,동구,False,1,2,2,stable_name_new_prefix
+BRD_20213415,호랑이 떡볶이,2021,북구,False,1,1,1,stable_name_new_prefix
+BRD_20213415,호랑이 떡볶이,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20213559,정칼국수,2023,북구,False,1,1,0,stable_name_new_nonprefix
+BRD_20213586,주유별장,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20213816,완미족발,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20213843,계꿀치킨,2021,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20213898,그릭하다,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20213986,맛나분식,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20214093,큰손1치킨2피자,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20214093,큰손1치킨2피자,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20214166,마라민족,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20214166,마라민족,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20214201,동성로왕찹쌀꽈배기,2021,서구,False,1,1,1,stable_name_new_prefix
+BRD_20214273,하이커피,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20214326,대한국밥만세,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20214430,해머스미스커피,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20214471,마음을 담다,2022,달성군,False,1,1,0,stable_name_new_nonprefix
+BRD_20214501,왓더버거,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20214501,왓더버거,2025,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20214501,왓더버거,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20214501,왓더버거,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20214583,통큰솥뚜껑닭볶음탕,2025,동구,False,1,1,1,stable_name_new_prefix
+BRD_20214614,마녀김밥,2021,달서구,False,1,1,0,stable_name_new_nonprefix
+BRD_20214614,마녀김밥,2024,동구,False,1,1,0,stable_name_new_nonprefix
+BRD_20214614,마녀김밥,2022,북구,False,1,1,0,stable_name_new_nonprefix
+BRD_20214794,미미관마라탕,2021,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20214795,2피자1치킨상회,2022,서구,False,1,1,1,stable_name_new_prefix
+BRD_20214862,백세라이프,2021,동구,False,1,1,1,stable_name_new_prefix
+BRD_20214862,백세라이프,2022,북구,False,1,1,1,stable_name_new_prefix
+BRD_20214862,백세라이프,2022,중구,False,1,1,1,stable_name_new_prefix
+BRD_20214971,규카츠정,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20214971,규카츠정,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20215019,빽보이피자,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20215019,빽보이피자,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20215019,빽보이피자,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20215019,빽보이피자,2022,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20215019,빽보이피자,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20215704,버거스올마이티,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20215704,버거스올마이티,2021,중구,False,1,1,1,stable_name_new_prefix
+BRD_20215716,커피슈타인,2023,북구,False,0,0,0,no_stable_alias
+BRD_20215716,커피슈타인,2023,수성구,False,0,0,0,no_stable_alias
+BRD_20215716,포차인북성로,2024,중구,True,1,1,0,stable_name_new_nonprefix
+BRD_20215826,충무김밥,2022,서구,False,1,1,0,stable_name_new_nonprefix
+BRD_20215851,물오른피부,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20220017,감프커피,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20220017,감프커피,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20220024,이우철한방누룽지삼계탕,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20220057,철길부산집,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20220057,철길부산집,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20220096,경아식당,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20220132,도리신닭도리탕,2022,남구,False,1,1,1,stable_name_new_prefix
+BRD_20220132,도리신닭도리탕,2022,동구,False,1,1,1,stable_name_new_prefix
+BRD_20220132,도리신닭도리탕,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20220132,도리신닭도리탕,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20220132,도리신닭도리탕,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20220206,일품대패,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20220206,일품대패,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20220206,일품대패,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20220206,일품대패,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20220206,일품대패,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20220296,국민매운찜갈비,2023,남구,False,1,1,1,stable_name_new_prefix
+BRD_20220296,국민매운찜갈비,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20220296,국민매운찜갈비,2025,북구,True,1,1,1,stable_name_new_prefix
+BRD_20220296,국민매운찜갈비,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20220332,고래맥주창고,2022,북구,False,1,2,2,stable_name_new_prefix
+BRD_20220332,고래맥주창고,2022,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20220334,정성카츠,2025,동구,False,1,1,1,stable_name_new_prefix
+BRD_20220334,정성카츠,2024,서구,False,1,1,1,stable_name_new_prefix
+BRD_20220334,정성카츠,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20220335,애리스커피스탠드,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20220395,쌍둥이숯불두마리치킨,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20220395,쌍둥이숯불두마리치킨,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20220429,별컵맥주,2023,남구,False,1,1,1,stable_name_new_prefix
+BRD_20220429,별컵맥주,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20220431,더밀데이,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20220476,상구네돼지구이,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20220485,낭만낙곱새,2023,남구,False,1,1,1,stable_name_new_prefix
+BRD_20220500,팔조령김치찜,2022,서구,False,1,1,1,stable_name_new_prefix
+BRD_20220500,팔조령김치찜,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20220523,배달의카페,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20220528,맘스터치 피자앤치킨,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20220572,카페요아정,2024,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20220572,카페요아정,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20220572,카페요아정,2024,서구,False,1,1,1,stable_name_new_prefix
+BRD_20220572,카페요아정,2024,수성구,False,1,3,3,stable_name_new_prefix
+BRD_20220572,카페요아정,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20220661,막내딸집건어물,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20220661,막내딸집건어물,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20220713,동애원신기한꽃게장,2024,달서구,False,0,0,0,no_stable_alias
+BRD_20220713,동애원신기한꽃게장,2024,달성군,False,0,0,0,no_stable_alias
+BRD_20220713,동애원신기한꽃게장,2024,북구,False,0,0,0,no_stable_alias
+BRD_20220713,동애원신기한꽃게장,2024,서구,False,0,0,0,no_stable_alias
+BRD_20220756,쑈진즈마라탕,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20220756,쑈진즈마라탕,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20220768,대한콩국,2022,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20220768,대한콩국,2022,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20220831,노모어피자,2024,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20220831,노모어피자,2024,북구,False,1,2,2,stable_name_new_prefix
+BRD_20220867,김치찜은못참지,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20220925,판타스틱 코인 노래연습장,2024,수성구,False,1,2,2,stable_name_new_prefix
+BRD_20221283,이게볶음밥,2025,달서구,True,1,1,1,stable_name_new_prefix
+BRD_20221307,카페 콘크리트,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20221307,카페 콘크리트,2024,서구,False,1,1,1,stable_name_new_prefix
+BRD_20221354,기프트버거,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20230118,찐하오 마라탕,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20230187,황남쫀드기,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20230202,슈퍼키친,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20230206,스시이안앤,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20230206,스시이안앤,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20230244,타코야미,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20230244,타코야미,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20230261,샤브올데이,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20230261,샤브올데이,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20230271,본좌김밥,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20230271,본좌김밥,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20230334,유키니언,2023,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20230334,유키니언,2025,동구,False,1,1,1,stable_name_new_prefix
+BRD_20230334,유키니언,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20230334,유키니언,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20230460,토핑폭탄김치찜&김치찌개,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20230499,구들 마라탕,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20230500,칠링아웃샵,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20230613,강씨목삼,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20230613,강씨목삼,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20230613,강씨목삼,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20230633,스트릿캔,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20230812,달롱도르요거트아이스크림,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20230843,이유있는감자탕,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20230843,이유있는감자탕,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20230945,상록회관 연탄구이,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20231101,돈까스에 빠지다,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20231101,돈까스에 빠지다,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20231117,범물본가국수,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20231117,범물본가국수,2025,서구,False,1,2,2,stable_name_new_prefix
+BRD_20231117,범물본가국수,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20231220,모모한우진갈비,2023,북구,False,1,1,1,stable_name_new_prefix
+BRD_20231360,구스켓 인 더 크로플,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20231360,구스켓 인 더 크로플,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20231439,눈을담다,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20231439,눈을담다,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20231474,똥집대통령,2023,남구,False,1,1,1,stable_name_new_prefix
+BRD_20231481,집밥밥을공부하다,2025,남구,False,1,1,1,stable_name_new_prefix
+BRD_20231481,집밥밥을공부하다,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20231515,삼삼마라,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20231632,멀티커피,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20231680,쌍도커피,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20231693,청년양고기,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20231716,이가네명인갈비살,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20231726,메가혼밥 ,2025,남구,False,1,1,1,stable_name_new_prefix
+BRD_20231726,메가혼밥 ,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20231726,메가혼밥 ,2025,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20231726,메가혼밥 ,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20231775,배달덮밥,2023,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20231775,배달덮밥,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20231922,이쁘다헤어,2023,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20231922,이쁘다헤어,2023,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20231922,이쁘다헤어,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20240089,장여사 나뭇잎형 만두,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20240089,장여사 나뭇잎형 만두,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20240118,전설낙곱새,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20240118,전설낙곱새,2023,서구,False,1,1,1,stable_name_new_prefix
+BRD_20240122,유아이유,2023,동구,False,1,1,1,stable_name_new_prefix
+BRD_20240122,유아이유,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20240165,하오하오 마라,2023,중구,False,1,1,1,stable_name_new_prefix
+BRD_20240257,뽐온뷰티,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20240391,썸타는치킨찜닭,2024,달서구,False,1,3,3,stable_name_new_prefix
+BRD_20240410,파머스포케,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20240478,화이트리에,2024,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20240478,화이트리에,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20240478,화이트리에,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20240492,돈집돈치찜,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20240594,인대구빙수 ,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20240594,인대구빙수 ,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20240595,동양맥주 ,2025,남구,False,1,2,2,stable_name_new_prefix
+BRD_20240595,동양맥주 ,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20240702,윤호네 노포갈비,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20240710,샤브연리지,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20240803,샤부마스터 ,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20240832,큰집닭강정,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20240871,우야꼬닭강정,2024,남구,False,1,1,1,stable_name_new_prefix
+BRD_20240891,덤브치킨,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20240891,덤브치킨,2024,서구,False,1,1,1,stable_name_new_prefix
+BRD_20240891,덤브치킨,2024,중구,False,1,1,1,stable_name_new_prefix
+BRD_20241109,리프버거,2025,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20241111,팔공 큰 돼지찌개,2024,동구,False,1,1,1,stable_name_new_prefix
+BRD_20241120,꼼꼼안경,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20241284,오복누룽지삼계탕,2024,달성군,False,1,1,1,stable_name_new_prefix
+BRD_20241334,박수암 덕산뒷고기,2024,동구,False,0,0,0,no_stable_alias
+BRD_20241360,몽블랑드파리,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20241360,몽블랑드파리,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20241448,카페동이,2025,남구,False,1,1,1,stable_name_new_prefix
+BRD_20241479,함바소갈비,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20241479,함바소갈비,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20241626,우군닭발,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20241626,우군닭발,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20241676,서대문김치찜&김치찌개,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20241685,영천얼큰돼지국밥,2024,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20241722,지글대패삼겹살,2024,북구,False,1,1,1,stable_name_new_prefix
+BRD_20241723,완뚝순두부,2025,남구,False,1,1,1,stable_name_new_prefix
+BRD_20241723,완뚝순두부,2025,달성군,False,1,2,2,stable_name_new_prefix
+BRD_20241723,완뚝순두부,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20250084,봉팔상점,2024,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20250125,테이블스,2025,서구,False,1,1,1,stable_name_new_prefix
+BRD_20250205,모노폴리키친,2025,동구,False,1,1,1,stable_name_new_prefix
+BRD_20250210,피틀리(fitly),2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20250484,서문빙수,2025,북구,False,1,1,1,stable_name_new_prefix
+BRD_20250634,眞심해돈까스,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20250634,眞심해돈까스,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20250700,백양숯불갈비,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20250797,기똥차게,2025,달서구,False,1,2,2,stable_name_new_prefix
+BRD_20250881,상상막창,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20251005,곱창119,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20251017,하바네로,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20251017,하바네로,2025,중구,False,1,1,1,stable_name_new_prefix
+BRD_20251073,양군통닭,2025,달서구,False,1,1,1,stable_name_new_prefix
+BRD_20251369,참윤슬갈비,2025,수성구,False,1,1,1,stable_name_new_prefix
+BRD_20260066,도도情찜닭,2025,남구,False,1,1,1,stable_name_new_prefix

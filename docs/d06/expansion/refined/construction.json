@@ -1,0 +1,50 @@
+{
+  "rows": 90528,
+  "brands": 2675,
+  "eligible": 32885,
+  "entries": 779,
+  "rule": "longest globally unique >=4 char prefix, same alias both prior/current reports; observed empty to positive plus target-year new permit; same original panel universe; zero still means no linked records",
+  "annual": [
+    {
+      "year": 2018,
+      "size": 3101,
+      "sum": 85
+    },
+    {
+      "year": 2019,
+      "size": 3492,
+      "sum": 105
+    },
+    {
+      "year": 2020,
+      "size": 3740,
+      "sum": 71
+    },
+    {
+      "year": 2021,
+      "size": 4200,
+      "sum": 113
+    },
+    {
+      "year": 2022,
+      "size": 4703,
+      "sum": 113
+    },
+    {
+      "year": 2023,
+      "size": 4450,
+      "sum": 86
+    },
+    {
+      "year": 2024,
+      "size": 4807,
+      "sum": 115
+    },
+    {
+      "year": 2025,
+      "size": 4392,
+      "sum": 91
+    }
+  ],
+  "unavailable_alias_handling": "exclude brand/year with no stable unique alias, never convert to zero"
+}

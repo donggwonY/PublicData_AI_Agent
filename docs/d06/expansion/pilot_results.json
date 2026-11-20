@@ -1,0 +1,37 @@
+{
+  "scope": "provisional name-matched primary permit building counts, not verified franchise counts; excludes Gunwi and invalid district strings",
+  "cells": 216,
+  "observed_zero_to_positive_events": [
+    {
+      "brand": "선비꼬마김밥",
+      "gu": "남구",
+      "year": 2021
+    },
+    {
+      "brand": "선비꼬마김밥",
+      "gu": "달성군",
+      "year": 2018
+    },
+    {
+      "brand": "선비꼬마김밥",
+      "gu": "동구",
+      "year": 2019
+    },
+    {
+      "brand": "선비꼬마김밥",
+      "gu": "북구",
+      "year": 2019
+    },
+    {
+      "brand": "선비꼬마김밥",
+      "gu": "수성구",
+      "year": 2020
+    },
+    {
+      "brand": "선비꼬마김밥",
+      "gu": "중구",
+      "year": 2018
+    }
+  ],
+  "matching": "literal brand substring; related Momstouch pizza/chicken-specialty labels excluded; branch validity not manually verified"
+}

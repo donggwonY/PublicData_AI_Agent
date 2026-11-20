@@ -1,0 +1,90 @@
+{
+  "panel_brands": 3106,
+  "original_entries": 1830,
+  "entries_with_prior_city_presence": 1108,
+  "reentries_with_prior_city_presence": 54,
+  "prior_city_exact_match_entries": 231,
+  "unverified_name_matches": true,
+  "annual": [
+    {
+      "year": 2018,
+      "original_cells": 6217,
+      "original_entries": 201,
+      "present_elsewhere_cells": 3769,
+      "present_elsewhere_entries": 112,
+      "reentries": 0,
+      "previous_city_count_exact_cells": 1122,
+      "previous_city_count_exact_entries": 19
+    },
+    {
+      "year": 2019,
+      "original_cells": 6642,
+      "original_entries": 213,
+      "present_elsewhere_cells": 4194,
+      "present_elsewhere_entries": 140,
+      "reentries": 4,
+      "previous_city_count_exact_cells": 1149,
+      "previous_city_count_exact_entries": 24
+    },
+    {
+      "year": 2020,
+      "original_cells": 7328,
+      "original_entries": 226,
+      "present_elsewhere_cells": 4592,
+      "present_elsewhere_entries": 117,
+      "reentries": 3,
+      "previous_city_count_exact_cells": 1276,
+      "previous_city_count_exact_entries": 20
+    },
+    {
+      "year": 2021,
+      "original_cells": 9467,
+      "original_entries": 307,
+      "present_elsewhere_cells": 5795,
+      "present_elsewhere_entries": 175,
+      "reentries": 11,
+      "previous_city_count_exact_cells": 1416,
+      "previous_city_count_exact_entries": 22
+    },
+    {
+      "year": 2022,
+      "original_cells": 8845,
+      "original_entries": 233,
+      "present_elsewhere_cells": 5485,
+      "present_elsewhere_entries": 135,
+      "reentries": 5,
+      "previous_city_count_exact_cells": 1432,
+      "previous_city_count_exact_entries": 30
+    },
+    {
+      "year": 2023,
+      "original_cells": 8604,
+      "original_entries": 212,
+      "present_elsewhere_cells": 5444,
+      "present_elsewhere_entries": 139,
+      "reentries": 8,
+      "previous_city_count_exact_cells": 1726,
+      "previous_city_count_exact_entries": 31
+    },
+    {
+      "year": 2024,
+      "original_cells": 9016,
+      "original_entries": 229,
+      "present_elsewhere_cells": 5880,
+      "present_elsewhere_entries": 167,
+      "reentries": 11,
+      "previous_city_count_exact_cells": 2140,
+      "previous_city_count_exact_entries": 44
+    },
+    {
+      "year": 2025,
+      "original_cells": 9298,
+      "original_entries": 209,
+      "present_elsewhere_cells": 5834,
+      "present_elsewhere_entries": 123,
+      "reentries": 12,
+      "previous_city_count_exact_cells": 2190,
+      "previous_city_count_exact_entries": 41
+    }
+  ]
+}
