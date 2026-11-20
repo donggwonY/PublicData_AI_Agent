@@ -1,0 +1,587 @@
+{
+ "parquet_reference_date": "2026-11-06",
+ "db_version": 13,
+ "summary": {
+  "OK": 94,
+  "WARN": 2,
+  "FAIL": 0
+ },
+ "checks": [
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "표 존재",
+   "detail": "18/18개 · stores 286,896, units 92,279, transitions 24,218, area_cycle 345, area_year 6,942, survival 885, vacancy_area 326, poi 116,628, area_context 150, legal_admin_map 212, station_traffic 94, parking 1,086, market 106, vacancy_scores 4,316, competition_forecast 777, population_forecast 1,824, similar_areas 16,790, next_tenant_scores 4,316"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "stores 키 org_code+service+mgmt_no",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "units 키 uid",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "area_year 키 level+gu+dong+year",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "area_cycle 키 level+gu+dong",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "survival 키 level+gu+dong+service+category",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "vacancy_area 키 level+gu+dong",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "area_context 키 gu+admin_dong",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "legal_admin_map 키 gu+legal_dong",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "station_traffic 키 station",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "vacancy_scores 키 uid",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "competition_forecast 키 gu+category",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "population_forecast 키 admin_code+age_band",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "similar_areas 키 admin_code+option+rank",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "next_tenant_scores 키 uid",
+   "detail": "중복 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "stores → units (uid)",
+   "detail": "연결 실패 0 / 286,896 · 번지 가림(자리 없음) 11,337"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "transitions → units (uid)",
+   "detail": "연결 실패 0 / 24,218"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "vacancy_scores → units (uid)",
+   "detail": "연결 실패 0 / 4,316"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "next_tenant_scores → units (uid)",
+   "detail": "연결 실패 0 / 4,316"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "units 가려진 번지 자리 키 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "stores 가려진 번지 자리 키 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "transitions 가려진 번지 자리 키 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "vacancy_scores 가려진 번지 자리 키 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "next_tenant_scores 가려진 번지 자리 키 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "stores 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "area_cycle 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "area_year 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "survival 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "vacancy_area 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "units 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "행정동 미연결 비율",
+   "detail": "2,978 / 286,896 (1.04%, 경고 기준 2.5%)"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "vacancy_scores 확률 0~1",
+   "detail": "범위 밖 0 · 결측 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "next_tenant_scores 확률 0~1",
+   "detail": "범위 밖 0 · 결측 0"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "next_tenant_scores 확률 합 = 1",
+   "detail": "최대 오차 2.0e-05"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "vacancy_scores 기준일",
+   "detail": "['2026-11-06'] vs 인허가 2026-11-06"
+  },
+  {
+   "where": "parquet",
+   "level": "OK",
+   "name": "next_tenant_scores 기준일",
+   "detail": "['2026-11-06'] vs 인허가 2026-11-06"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "current_version 상태",
+   "detail": "v11 = 유일한 'current'"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "기준일이 이전 버전보다 앞섬",
+   "detail": "v11 2026-11-06 vs v10 2026-11-06"
+  },
+  {
+   "where": "db",
+   "level": "WARN",
+   "name": "현재보다 새 버전",
+   "detail": "전환 안 된 버전 [12]"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "v13 기준일이 현재 버전보다 앞섬",
+   "detail": "v13 2026-11-06 vs 현재 v11 2026-11-06"
+  },
+  {
+   "where": "db",
+   "level": "WARN",
+   "name": "DB 크기",
+   "detail": "2,770MB (경고 기준 2,500MB) · retired 버전 [3, 5, 6, 7, 8, 9, 10]"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "표 존재",
+   "detail": "18/18개 · stores 286,896, units 92,279, transitions 24,218, area_cycle 345, area_year 6,942, survival 885, vacancy_area 326, poi 116,628, area_context 150, legal_admin_map 212, station_traffic 94, parking 1,086, market 106, vacancy_scores 4,316, competition_forecast 777, population_forecast 1,824, similar_areas 16,790, next_tenant_scores 4,316"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "stores 키 org_code+service+mgmt_no",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "units 키 uid",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "area_year 키 level+gu+dong+year",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "area_cycle 키 level+gu+dong",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "survival 키 level+gu+dong+service+category",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "vacancy_area 키 level+gu+dong",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "area_context 키 gu+admin_dong",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "legal_admin_map 키 gu+legal_dong",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "station_traffic 키 station",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "vacancy_scores 키 uid",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "competition_forecast 키 gu+category",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "population_forecast 키 admin_code+age_band",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "similar_areas 키 admin_code+option+rank",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "next_tenant_scores 키 uid",
+   "detail": "중복 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "stores → units (uid)",
+   "detail": "연결 실패 0 / 286,896 · 번지 가림(자리 없음) 11,337"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "transitions → units (uid)",
+   "detail": "연결 실패 0 / 24,218"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "vacancy_scores → units (uid)",
+   "detail": "연결 실패 0 / 4,316"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "next_tenant_scores → units (uid)",
+   "detail": "연결 실패 0 / 4,316"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "units 가려진 번지 자리 키 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "stores 가려진 번지 자리 키 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "transitions 가려진 번지 자리 키 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "vacancy_scores 가려진 번지 자리 키 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "next_tenant_scores 가려진 번지 자리 키 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "stores 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "area_cycle 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "area_year 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "survival 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "vacancy_area 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "units 동 이름에 가려진 숫자 없음",
+   "detail": "0행"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "행정동 미연결 비율",
+   "detail": "2,978 / 286,896 (1.04%, 경고 기준 2.5%)"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "vacancy_scores 확률 0~1",
+   "detail": "범위 밖 0 · 결측 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "next_tenant_scores 확률 0~1",
+   "detail": "범위 밖 0 · 결측 0"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "next_tenant_scores 확률 합 = 1",
+   "detail": "최대 오차 2.0e-05"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "vacancy_scores 기준일",
+   "detail": "['2026-11-06'] vs 인허가 2026-11-06"
+  },
+  {
+   "where": "db",
+   "level": "OK",
+   "name": "next_tenant_scores 기준일",
+   "detail": "['2026-11-06'] vs 인허가 2026-11-06"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "인허가 기준일 parquet = DB",
+   "detail": "2026-11-06 vs 2026-11-06"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "stores 행 수",
+   "detail": "286,896"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "units 행 수",
+   "detail": "92,279"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "transitions 행 수",
+   "detail": "24,218"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "area_cycle 행 수",
+   "detail": "345"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "area_year 행 수",
+   "detail": "6,942"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "survival 행 수",
+   "detail": "885"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "vacancy_area 행 수",
+   "detail": "326"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "poi 행 수",
+   "detail": "116,628"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "area_context 행 수",
+   "detail": "150"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "legal_admin_map 행 수",
+   "detail": "212"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "station_traffic 행 수",
+   "detail": "94"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "parking 행 수",
+   "detail": "1,086"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "market 행 수",
+   "detail": "106"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "vacancy_scores 행 수",
+   "detail": "4,316"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "competition_forecast 행 수",
+   "detail": "777"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "population_forecast 행 수",
+   "detail": "1,824"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "similar_areas 행 수",
+   "detail": "16,790"
+  },
+  {
+   "where": "비교",
+   "level": "OK",
+   "name": "next_tenant_scores 행 수",
+   "detail": "4,316"
+  }
+ ]
+}
