@@ -131,6 +131,18 @@ def parse_masked(addr: str | None) -> dict | None:
     return None
 
 
+_ADMIN_DONG_NAME = re.compile(r"^(?P<base>\S+?)\d[\d.,]*동$")
+
+
+def admin_to_legal_dong(dong: str | None) -> str | None:
+    """행정동식 이름 → 같은 이름의 법정동 후보. '대명10동'→'대명동', '내당2.3동'→'내당동'. 아니면 None.
+
+    후보일 뿐이다(성내1동처럼 같은 이름의 법정동이 없는 경우도 있다). 배치는 실제로 있는 법정동일 때만 쓴다.
+    """
+    m = _ADMIN_DONG_NAME.match(dong or "")
+    return m["base"] + "동" if m else None
+
+
 def parse_area_loose(addr: str | None, known: dict[str, set[str]], area_gu: dict[str, str]) -> dict | None:
     """정규 형식으로 못 읽은 주소에서 구·동만 느슨하게 읽는다(자리 키는 만들지 않음, E-12 후속).
 

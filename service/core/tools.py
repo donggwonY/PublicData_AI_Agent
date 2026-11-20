@@ -318,6 +318,10 @@ def _find_units(q: str) -> tuple[pd.DataFrame, str | None]:
     jb = A.parse_jibun(q if q.startswith("대구") else f"{A.SIDO} {q}")
     if jb:
         hits, method = u.index[u["building_key"] == jb["key"]], "지번 기본주소 일치"
+        legal = A.admin_to_legal_dong(jb["dong"])
+        if hits.empty and legal and not jb["eup"]:  # '대명10동 1225'처럼 행정동 이름으로 쓴 지번(E-12)
+            key = jb["key"].replace(f" {jb['dong']} ", f" {legal} ", 1)
+            hits, method = u.index[u["building_key"] == key], "지번 기본주소 일치(행정동 이름 → 법정동)"
     if hits.empty:
         rd = A.parse_road(q if q.startswith("대구") else f"{A.SIDO} {q}")
         if rd:

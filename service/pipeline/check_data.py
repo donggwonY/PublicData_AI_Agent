@@ -151,6 +151,20 @@ def check_frames(frames: dict[str, pd.DataFrame | None], meta: dict, where: str,
         bad = int(df["dong"].dropna().astype(str).str.contains("*", regex=False).sum())
         (rep.fail if bad else rep.ok)(where, f"{t} 동 이름에 가려진 숫자 없음", f"{bad:,}행")
 
+    # 3-3. 행정동 이름으로 적힌 지번 키와 법정동 키로 같은 건물이 둘로 나뉘었는지(E-12 8절 A)
+    units = present.get("units")
+    if units is not None and "building_key" in units.columns:
+        from core import address as A
+        keys = set(units["building_key"].dropna())
+        split = 0
+        for k in keys:
+            parts = k.split(" ")
+            if len(parts) >= 4:
+                legal = A.admin_to_legal_dong(parts[2])
+                if legal and " ".join(parts[:2] + [legal] + parts[3:]) in keys:
+                    split += 1
+        (rep.fail if split else rep.ok)(where, "units 행정동식·법정동 키로 나뉜 건물 없음", f"{split:,}곳")
+
     # 4. 행정동 미연결 비율 (stores → legal_admin_map → area_context)
     stores, lam, ac = present.get("stores"), present.get("legal_admin_map"), present.get("area_context")
     if stores is not None and lam is not None and ac is not None:

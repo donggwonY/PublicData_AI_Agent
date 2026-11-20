@@ -175,13 +175,38 @@ def assign_floor_units(df: pd.DataFrame) -> pd.Series:
     return np.where(floor.notna(), df["building_key"] + " " + floor.fillna(""), df["building_key"])
 
 
+def normalize_admin_jibun(jb: pd.Series, quality: dict) -> pd.Series:
+    """지번에 법정동 대신 행정동 이름이 적힌 경우(예: '대명10동 1225', '내당2.3동') → 법정동('대명동 1225').
+
+    같은 건물이 행정동식 키와 법정동 키로 나뉘어 이력이 갈라지고, 영업 중인 자리가 빈 자리로 보이던 문제(E-12 8절 A).
+    번호를 뗀 이름이 그 구에서 정상 지번으로 20건 이상 확인된 법정동일 때만 바꾼다(예: 성내1동처럼
+    같은 이름의 법정동이 없으면 그대로 둔다). 군 지역(읍·면 아래 리)은 해당 없다.
+    """
+    ok = [x for x in jb if x and not x["eup"]]
+    cnt = pd.Series([(x["gu"], x["dong"]) for x in ok]).value_counts() if ok else pd.Series(dtype=int)
+    known = {k for k, n in cnt.items() if n >= 20 and A.admin_to_legal_dong(k[1]) is None}
+
+    def fix(x):
+        if not x or x["eup"]:
+            return x
+        legal = A.admin_to_legal_dong(x["dong"])
+        if not legal or (x["gu"], legal) not in known:
+            return x
+        return {**x, "dong": legal, "key": x["key"].replace(f" {x['dong']} ", f" {legal} ", 1)}
+
+    out = jb.map(fix)
+    changed = int(sum(a is not b for a, b in zip(jb, out)))
+    quality["address_admin_dong_to_legal"] = changed
+    return out
+
+
 def build_address(df: pd.DataFrame, quality: dict) -> pd.DataFrame:
     """주소 문자열 → 자리 키(uid) · 구 · 동 · 층 · 위경도.
 
     이 함수가 만드는 uid 가 프로젝트 전체의 분석 단위다. 같은 자리의 레코드가 같은 uid 를 받아야
     "이 자리에서 몇 개가 망했는지"를 셀 수 있다.
     """
-    jb = df["지번주소"].map(A.parse_jibun)
+    jb = normalize_admin_jibun(df["지번주소"].map(A.parse_jibun), quality)
     rd = df["도로명주소"].map(A.parse_road)
     df["jibun_key"] = jb.map(lambda x: x["key"] if x else None)
     df["road_key"] = rd.map(lambda x: x["key"] if x else None)
@@ -189,9 +214,11 @@ def build_address(df: pd.DataFrame, quality: dict) -> pd.DataFrame:
     # 도로명 → 지번 매핑 학습 (둘 다 있는 레코드에서 최빈값).
     # 오래된 레코드에는 도로명이 없으므로 지번을 기준 키로 삼고,
     # 도로명만 있는 최근 레코드를 이 매핑으로 같은 지번 키에 합류시킨다 → 같은 자리의 과거와 현재가 이어진다.
+    # 건수가 같으면 지번 키 이름 순으로 정한다(2026-11-20 E-12). 예전에는 정렬이 안정적이지 않아 입력 행이
+    # 조금만 바뀌어도 동률인 도로명의 자리 키가 바뀌었다.
     both = df.dropna(subset=["jibun_key", "road_key"])
     road2jibun = (both.groupby(["road_key", "jibun_key"]).size().reset_index(name="n")
-                  .sort_values("n").drop_duplicates("road_key", keep="last")
+                  .sort_values(["n", "jibun_key"], kind="mergesort").drop_duplicates("road_key", keep="last")
                   .set_index("road_key")["jibun_key"])
     fallback_raw = df["지번주소"].fillna(df["도로명주소"]).fillna("").str.strip()
     # 키 우선순위: 지번 → (도로명을 지번으로 번역) → 도로명 그대로 → 원본 문자열

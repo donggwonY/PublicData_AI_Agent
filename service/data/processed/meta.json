@@ -1,6 +1,6 @@
 {
   "reference_date": "2026-11-06",
-  "built_at": "2026-11-20 18:36:05",
+  "built_at": "2026-11-20 19:33:06",
   "quality": {
     "raw_rows": 299362,
     "duplicates_removed": 0,
@@ -24,6 +24,7 @@
     "non_storefront_excluded": {
       "건강기능식품일반판매업": 11278
     },
+    "address_admin_dong_to_legal": 2799,
     "address_masked": 11337,
     "address_road_as_dong_fixed": 10,
     "address_area_loose": 279,
@@ -77,26 +78,26 @@
       "resolved_by_coords": 1015
     },
     "licenses": 286896,
-    "occupants": 272128,
-    "merged_multi_license_occupants": 11016,
+    "occupants": 271988,
+    "merged_multi_license_occupants": 11121,
     "short_event_excluded_from_stats": {
-      "occupants": 17023,
-      "licenses": 17761,
+      "occupants": 17043,
+      "licenses": 17781,
       "by_service": {
-        "즉석판매제조가공업": 11770,
-        "일반음식점": 2294,
-        "휴게음식점": 1861,
+        "즉석판매제조가공업": 11771,
+        "일반음식점": 2295,
+        "휴게음식점": 1863,
         "제과점영업": 502,
-        "담배소매업": 261,
-        "축산판매업": 133,
+        "담배소매업": 274,
+        "축산판매업": 135,
         "미용업": 102,
         "이용업": 24,
         "인터넷컴퓨터게임시설제공업": 17,
-        "약국": 13
+        "약국": 12
       }
     },
-    "vacancy_scores_dropped_missing_units": 0,
-    "next_tenant_scores_dropped_missing_units": 0
+    "vacancy_scores_dropped_missing_units": 62,
+    "next_tenant_scores_dropped_missing_units": 62
   },
   "records": {
     "건강기능식품일반판매업": {
@@ -151,7 +152,7 @@
       "total": 33790,
       "closed": 27370,
       "active": 6420,
-      "unique_units": 16758,
+      "unique_units": 15900,
       "date_min": "1961-10-15",
       "date_max": "2026-11-06"
     },
@@ -231,7 +232,7 @@
       "total": 24991,
       "closed": 14190,
       "active": 10801,
-      "unique_units": 15853,
+      "unique_units": 15854,
       "date_min": "1963-08-17",
       "date_max": "2026-11-06"
     },
@@ -287,7 +288,7 @@
       "total": 3585,
       "closed": 2634,
       "active": 951,
-      "unique_units": 3120,
+      "unique_units": 3121,
       "date_min": "1971-03-01",
       "date_max": "2026-11-03"
     },
@@ -303,7 +304,7 @@
       "total": 965,
       "closed": 303,
       "active": 662,
-      "unique_units": 853,
+      "unique_units": 839,
       "date_min": "1970-08-12",
       "date_max": "2026-11-04"
     },
@@ -311,7 +312,7 @@
       "total": 3043,
       "closed": 1641,
       "active": 1402,
-      "unique_units": 2374,
+      "unique_units": 2279,
       "date_min": "1961-08-18",
       "date_max": "2026-11-05"
     },
@@ -335,7 +336,7 @@
       "total": 121,
       "closed": 68,
       "active": 53,
-      "unique_units": 117,
+      "unique_units": 116,
       "date_min": "1985-01-19",
       "date_max": "2026-07-30"
     },
@@ -343,7 +344,7 @@
       "total": 5789,
       "closed": 1645,
       "active": 4144,
-      "unique_units": 4517,
+      "unique_units": 4430,
       "date_min": "1960-03-29",
       "date_max": "2026-11-05"
     },
@@ -375,7 +376,7 @@
       "total": 97697,
       "closed": 68474,
       "active": 29223,
-      "unique_units": 49697,
+      "unique_units": 49701,
       "date_min": "1963-10-10",
       "date_max": "2026-11-06"
     },
@@ -431,7 +432,7 @@
       "total": 31257,
       "closed": 22146,
       "active": 9111,
-      "unique_units": 18440,
+      "unique_units": 18442,
       "date_min": "1965-10-09",
       "date_max": "2026-11-06"
     },
@@ -439,7 +440,7 @@
       "total": 286896,
       "closed": 202452,
       "active": 84444,
-      "unique_units": 92279
+      "unique_units": 90723
     }
   },
   "records_by_gu": {
@@ -455,14 +456,14 @@
     "님구": 1
   },
   "vacancy_buckets_all_vacant_units": {
-    "10년 이상": 22186,
-    "3~10년": 11897,
-    "1~3년": 4032,
-    "3개월~1년": 1907,
-    "3개월 미만": 615
+    "10년 이상": 21228,
+    "3~10년": 11610,
+    "1~3년": 4000,
+    "3개월~1년": 1896,
+    "3개월 미만": 614
   },
-  "recent_vacancy_units": 5939,
-  "single_unit_ratio_pct": 65.5,
+  "recent_vacancy_units": 5896,
+  "single_unit_ratio_pct": 65.0,
   "max_closures_all_units_top5": [
     {
       "addr": "대구광역시 중구 달구벌대로 2077 지하1층",
@@ -486,7 +487,7 @@
     },
     {
       "addr": "대구광역시 중구 명덕로 333",
-      "n_closed": 816,
+      "n_closed": 817,
       "max_concurrent": 52
     }
   ],
@@ -502,26 +503,26 @@
       "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업"
     },
     {
-      "addr": "대구광역시 남구 명덕로 228-17",
-      "n_closed": 12,
-      "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
-    },
-    {
       "addr": "대구광역시 달서구 달구벌대로 1467 3층",
       "n_closed": 12,
       "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 기타 휴게음식점"
     },
     {
-      "addr": "대구광역시 수성구 달구벌대로650길 47 1층",
-      "n_closed": 11,
+      "addr": "대구광역시 남구 명덕로 228-17",
+      "n_closed": 12,
       "category_path": "담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업 → 담배소매업"
+    },
+    {
+      "addr": "대구광역시 달성군 현풍읍 현풍중앙로 40 1층",
+      "n_closed": 11,
+      "category_path": "즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업 → 즉석판매제조가공업"
     }
   ],
-  "service_switch_units": 3975,
+  "service_switch_units": 3969,
   "survival_by_decade_1y": [
     {
       "decade": "1980년대",
-      "n": 6230,
+      "n": 6228,
       "survival_1y_pct": 100.0
     },
     {
@@ -531,18 +532,18 @@
     },
     {
       "decade": "2000년대",
-      "n": 91452,
+      "n": 91426,
       "survival_1y_pct": 89.8
     },
     {
       "decade": "2010년대",
-      "n": 76981,
+      "n": 76862,
       "survival_1y_pct": 88.6
     },
     {
       "decade": "2020년대",
-      "n": 48613,
-      "survival_1y_pct": 89.4
+      "n": 48600,
+      "survival_1y_pct": 89.3
     }
   ],
   "params": {
