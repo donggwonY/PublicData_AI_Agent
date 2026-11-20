@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | 1 | [데이터 계약](../e02/data_contract.md) 5절의 수동 검사를 읽기 전용 점검 스크립트로 만들고, 현재 parquet·공유 DB v10에 실행 | 완료 2026-11-20 |
 | 2 | 적재 스크립트(`load_supabase`)가 적재 전에 같은 점검을 돌려 FAIL이면 적재하지 않기. 2026-11-13 보류 안건(전환 시 권한 재생성 제거·잠금 대기 제한·용량 상한 기본값·retired 버전 삭제) 반영 | 완료 2026-11-20 (DB 실행 없음, 옛 버전은 보존) |
-| 3 | 배포 확인 자동화: `deploy` 올리기 전후 점검·공개 앱 기준일 확인, 실패 알림 | 대기 |
+| 3 | 배포 확인 자동화: `deploy` 올리기 전후 점검·공개 앱 응답·화면 버전 확인 | 완료 2026-11-20 (실패 알림·CI는 후속 후보) |
 
 ## 1단계: 데이터 점검 스크립트
 
@@ -81,8 +81,44 @@ python -m pipeline.check_data --db               # + 공유 DB 현재 버전, pa
 
 **새 순서(데이터 갱신)**: `pipeline.build` → `check_data` → 테스트 → `main` → `load_supabase`(사전 점검 포함, 전환 없이) → `check_data --db --version <새 버전>` → `load_supabase --activate-version <새 버전>` → `check_data --db` → 공개 앱 Reboot·확인.
 
+## 3단계: 배포 전후 점검
+
+코드: [`scripts/deploy_check.py`](../../scripts/deploy_check.py). 저장소 루트에서 실행하고, 푸시는 하지 않는다.
+
+```powershell
+python3 scripts/deploy_check.py pre    # deploy 로 올리기 전
+python3 scripts/deploy_check.py post   # deploy 푸시·Reboot 뒤
+```
+
+| 단계 | 검사 | FAIL 조건 |
+| --- | --- | --- |
+| pre | `main` 브랜치·작업 폴더 깨끗함·로컬 `main` = `origin/main` | 하나라도 아니면 |
+| pre | `origin/deploy` → `origin/main` fast-forward 가능 | `deploy`에 `main`에 없는 커밋(Codespaces 커밋 등) |
+| pre | 바뀌는 파일 수, `service/` 변경 여부, 배포 환경 파일(`requirements.txt` 등)·가공 데이터 변경 | WARN만(배포 로그·데이터 점검 확인 안내) |
+| pre | service 테스트 전체·smoke 테스트(서비스 가상환경, parquet) | 실패하면 |
+| pre·post | `check_data --db` | FAIL이 있으면 |
+| post | `origin/deploy` = `origin/main` | 다르면 |
+| post | 공개 앱 응답 `/~/+/_stcore/health` = ok (20초 간격 최대 6회) | 끝까지 응답 없으면 |
+
+**첫 실행 (2026-11-20, 배포하지 않은 상태)**
+- pre: Git 상태 외 모두 통과. deploy 014fd63 → main 6f79bf9 fast-forward 가능(10개 커밋, service/ 5개 파일), 테스트·smoke 통과, 데이터 점검 OK 72. 작업 폴더 FAIL은 이 스크립트 자체가 커밋 전이었기 때문이다.
+- post: 공개 앱 응답 ok, 데이터 점검 통과. `deploy` ≠ `main` FAIL은 아직 배포하지 않았으니 맞는 결과다.
+- 처음에는 공개 앱 응답이 인증서 오류(`CERTIFICATE_VERIFY_FAILED`)로 실패했다. 저장소 스크립트를 돌리는 MSYS Python이 Windows 인증서 저장소를 읽지 못해서다. curl이 있으면 curl로 확인하도록 고쳤다.
+
+**화면 확인은 브라우저로 한다**
+- 응답 확인(health)은 서버가 떠 있는지만 본다. 앱 코드가 오류를 내거나 이전 데이터 버전을 보여 주는지는 화면을 봐야 안다.
+- 에이전트 브라우저로 확인할 수 있다. Streamlit Cloud 바깥 틀을 피해 `https://pubdai.streamlit.app/~/+/`를 열고, 사이드바 "수록 데이터 자세히"를 펼쳐 "데이터 db v<번호>"를 읽는다.
+- 2026-11-20 확인: 기준일 2026년 11월 6일, 현재 영업 중 84,444건, "배치 2026-11-09 22:50:11 · 데이터 db v10". 데이터 점검의 현재 버전(v10)과 같다.
+- 브라우저 없이 스크립트로 화면을 읽으려면 헤드리스 브라우저 설치가 필요해 이번 범위에서 뺐다.
+
+**이번 범위에서 뺀 것(후속 후보)**
+- 실패 알림: 지금은 정기 배치가 없어 사람이 실행할 때만 점검이 돈다. 정기 실행이 생기면 그때 알림을 붙인다.
+- GitHub Actions로 `main` 푸시마다 테스트 자동 실행: 팀 전체 푸시에 영향을 주고 토큰 권한(`workflow`)이 필요해 팀과 정한 뒤 진행한다.
+- 의존성 고정(전이 의존성 포함), 원본 갱신 API(D-01 실험) 연결.
+
 ## 사용 규칙
 
 - 데이터 갱신(`pipeline.build`) 뒤 `main`에 올리기 전: `python -m pipeline.check_data`
-- DB 버전 전환(`--activate`) 뒤, `deploy` 올리기 전·후: `python -m pipeline.check_data --db`
+- DB 버전 전환 뒤: `python -m pipeline.check_data --db`
+- `deploy` 올리기 전: `python3 scripts/deploy_check.py pre`, 푸시·Reboot 뒤: `python3 scripts/deploy_check.py post`와 화면의 "데이터 db v<번호>" 확인
 - FAIL이면 전환·배포하지 않고 원인을 고친다. WARN은 이유를 작업판 기록에 남긴다.
