@@ -12,6 +12,10 @@
 사용 예:
   python -m pipeline.load_supabase --processed data/processed --env-file ../.env --dry-run
   python -m pipeline.load_supabase --processed <폴더> --env-file ../.env --note "15업종 시험 적재"
+  python -m pipeline.load_supabase --drop-retired 3 5 --env-file ../.env --dry-run   # 지울 retired 버전 확인
+
+적재 전에 pipeline/check_data.py 의 계약 검사를 parquet 에 돌려 FAIL 이면 DB 에 접속하지 않는다(E-04 2단계).
+DDL·전환·삭제는 잠금을 LOCK_TIMEOUT 만큼만 기다린다. 앱의 읽기 연결이 표를 잡고 있으면 오래 매달리지 않고 실패한다.
 """
 
 from __future__ import annotations
@@ -26,6 +30,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from pipeline.check_data import Report, check_frames
+
 SCHEMA = "app"
 TABLES = ["stores", "units", "transitions", "area_year", "area_cycle", "survival", "vacancy_area",
           "poi", "area_context", "legal_admin_map", "station_traffic", "parking", "market",
@@ -38,6 +44,9 @@ PRIMARY_KEYS = {"stores": ["org_code", "service", "mgmt_no"], "units": ["uid"], 
                 "competition_forecast": ["gu", "category"], "population_forecast": ["admin_code", "age_band"],
                 "similar_areas": ["admin_code", "option", "rank"], "next_tenant_scores": ["uid"]}
 INDEXES = {"stores": [["uid"], ["gu", "dong"]], "units": [["gu", "dong"]], "transitions": [["uid"]]}
+LOCK_TIMEOUT = "15s"
+# 적재 중 DB 크기 상한(MB). Pro 플랜 디스크 8GB, v10 적재 뒤 1,914MB. check_data 경고선(2,500MB)보다 위에서 멈춘다.
+MAX_DB_MB = 3000
 
 
 def pg_type(s: pd.Series) -> str:
@@ -113,11 +122,51 @@ def reader_grants() -> list[str]:
   if not exists (select 1 from pg_roles where rolname = '{READER_ROLE}') then create role {READER_ROLE} nologin; end if;
 end $$""",
              f"grant usage on schema {SCHEMA} to {READER_ROLE}"]
+    # 정책은 없을 때만 만든다. 예전처럼 매번 지우고 다시 만들면 앱의 읽기 연결과 잠금이 부딪힌다(v6 첫 전환 시간 초과).
     for t in TABLES + ["dataset_versions", "current_version"]:
         stmts += [f'grant select on {SCHEMA}."{t}" to {READER_ROLE}',
-                  f'drop policy if exists {READER_ROLE}_select on {SCHEMA}."{t}"',
-                  f'create policy {READER_ROLE}_select on {SCHEMA}."{t}" for select to {READER_ROLE} using (true)']
+                  f"do $$ begin\n"
+                  f"  if not exists (select 1 from pg_policies where schemaname = '{SCHEMA}' and tablename = '{t}'\n"
+                  f"                 and policyname = '{READER_ROLE}_select') then\n"
+                  f'    create policy {READER_ROLE}_select on {SCHEMA}."{t}" for select to {READER_ROLE} using (true);\n'
+                  f"  end if;\nend $$"]
     return stmts
+
+
+def missing_reader_access(cur) -> list[str]:
+    """READER_ROLE 이 읽을 수 없는 표(권한 또는 정책 없음)."""
+    cur.execute("select tablename from pg_policies where schemaname = %s and policyname = %s",
+                (SCHEMA, f"{READER_ROLE}_select"))
+    with_policy = {r[0] for r in cur.fetchall()}
+    out = []
+    for t in TABLES + ["dataset_versions", "current_version"]:
+        cur.execute("select has_table_privilege(%s, %s, 'select')", (READER_ROLE, f'{SCHEMA}."{t}"'))
+        if not cur.fetchone()[0] or t not in with_policy:
+            out.append(t)
+    return out
+
+
+def precheck(frames: dict, meta: dict) -> Report:
+    """적재 전 parquet 계약 검사(check_data). FAIL 이면 적재하지 않는다."""
+    rep = Report()
+    check_frames(frames, meta, "parquet", rep)
+    return rep
+
+
+def deletable(statuses: dict[int, str], requested: list[int]) -> tuple[list[int], dict[int, str]]:
+    """지울 수 있는 retired·failed 버전과 거절 사유. 현재 버전과 가장 최근 retired(되돌릴 대상)는 요청해도 지우지 않는다."""
+    retired = sorted(v for v, st in statuses.items() if st == "retired")
+    keep = retired[-1] if retired else None
+    ok, refused = [], {}
+    for v in requested:
+        st = statuses.get(v)
+        if st not in ("retired", "failed"):
+            refused[v] = f"status={st}"
+        elif v == keep:
+            refused[v] = "가장 최근 retired(되돌릴 대상)라 보존"
+        else:
+            ok.append(v)
+    return ok, refused
 
 
 def read_url(env_file: Path | None) -> str:
@@ -153,6 +202,10 @@ def activate_existing(url: str, version_id: int) -> None:
     import psycopg
 
     with psycopg.connect(url, autocommit=False) as conn, conn.cursor() as cur:
+        cur.execute(f"set lock_timeout = '{LOCK_TIMEOUT}'")
+        missing = missing_reader_access(cur)
+        if missing:  # 권한은 적재 때 준다. 전환에서는 다시 만들지 않고 확인만 한다.
+            sys.exit(f"{READER_ROLE} 이 읽을 수 없는 표가 있어 전환하지 않습니다: {missing}")
         cur.execute(f"select status from {SCHEMA}.dataset_versions where version_id = %s", (version_id,))
         row = cur.fetchone()
         if not row or row[0] not in ("validated", "current"):
@@ -163,10 +216,33 @@ def activate_existing(url: str, version_id: int) -> None:
                         on conflict (singleton) do update set version_id = excluded.version_id, switched_at = now()""",
                     (version_id,))
         cur.execute(f"update {SCHEMA}.dataset_versions set status='current' where version_id = %s", (version_id,))
-        for s in reader_grants():
-            cur.execute(s)
         conn.commit()
-    print(f"현재 서비스 버전 = {version_id} · {READER_ROLE} 읽기 권한 적용")
+    print(f"현재 서비스 버전 = {version_id} · {READER_ROLE} 읽기 권한 확인")
+
+
+def drop_retired(url: str, requested: list[int], dry_run: bool) -> None:
+    """retired 버전을 지운다(모든 데이터 표에서 cascade). 디스크 공간은 vacuum 뒤 재사용된다(OS 로 바로 돌려주지 않음)."""
+    import psycopg
+
+    with psycopg.connect(url, autocommit=False) as conn, conn.cursor() as cur:
+        cur.execute(f"set lock_timeout = '{LOCK_TIMEOUT}'")
+        cur.execute(f"select version_id, status, row_counts from {SCHEMA}.dataset_versions")
+        rows = cur.fetchall()
+        statuses = {v: st for v, st, _ in rows}
+        counts = {v: rc for v, _, rc in rows}
+        ok, refused = deletable(statuses, requested)
+        for v, why in refused.items():
+            print(f"  v{v} 지우지 않음: {why}")
+        for v in ok:
+            n = sum(c["db"] for c in (counts[v] or {}).values())
+            print(f"  v{v} {'지울 예정' if dry_run else '삭제'}: {n:,}행")
+        if dry_run or not ok:
+            print("변경 없음" + (" (--dry-run)" if dry_run else ""))
+            return
+        cur.execute(f"delete from {SCHEMA}.dataset_versions where version_id = any(%s)", (ok,))
+        conn.commit()
+        cur.execute("select pg_size_pretty(pg_database_size(current_database()))")
+        print(f"삭제 완료 {ok} · DB 크기 {cur.fetchone()[0]} (공간은 vacuum 뒤 재사용)")
 
 
 def main() -> None:
@@ -182,10 +258,15 @@ def main() -> None:
                     help=f"적재 전에 {SCHEMA} 스키마를 통째로 지운다(기존 버전 전부 삭제). 무료 플랜은 행 삭제로 디스크가 줄지 않아 "
                          "한 버전만 유지할 때 쓴다. 되돌리기는 저장소의 parquet 로 다시 적재한다")
     ap.add_argument("--start-version", type=int, help="--fresh 와 함께: 새로 만든 버전 번호의 시작값")
-    ap.add_argument("--max-db-mb", type=float, default=450,
+    ap.add_argument("--drop-retired", type=int, nargs="+", metavar="VERSION",
+                    help="retired·failed 버전 삭제(현재·가장 최근 retired 는 보호). --dry-run 이면 확인만")
+    ap.add_argument("--max-db-mb", type=float, default=MAX_DB_MB,
                     help="표를 하나 넣을 때마다 DB 크기를 확인해 이 값을 넘으면 중단(무료 플랜 500MB 대비 여유)")
     args = ap.parse_args()
 
+    if args.drop_retired:
+        drop_retired(read_url(args.env_file), args.drop_retired, args.dry_run)
+        return
     if args.activate_version is not None:
         activate_existing(read_url(args.env_file), args.activate_version)
         return
@@ -194,6 +275,14 @@ def main() -> None:
 
     meta = json.loads((args.processed / "meta.json").read_text(encoding="utf-8"))
     frames = {t: pd.read_parquet(args.processed / f"{t}.parquet") for t in TABLES}
+    rep = precheck(frames, meta)
+    for _, lv, name, detail in rep.rows:
+        if lv != "OK":
+            print(f"  사전 점검 [{lv}] {name} — {detail}")
+    s = rep.summary()
+    if rep.failed:
+        sys.exit("사전 점검 FAIL: 적재하지 않습니다 (python -m pipeline.check_data 로 확인).")
+    print(f"사전 점검 통과 (OK {s['OK']} · WARN {s['WARN']})")
     stmts = BASE_DDL + [s for t in TABLES for s in ddl(t, frames[t])]
     if args.dry_run:
         print(";\n\n".join(stmts) + ";")
@@ -206,6 +295,7 @@ def main() -> None:
     t0 = time.time()
     with psycopg.connect(url, autocommit=False) as conn:
         with conn.cursor() as cur:
+            cur.execute(f"set lock_timeout = '{LOCK_TIMEOUT}'")
             if args.fresh:
                 cur.execute(f"drop schema if exists {SCHEMA} cascade")
                 print(f"{SCHEMA} 스키마를 비웠습니다(--fresh).")
@@ -266,6 +356,8 @@ def main() -> None:
           f" · DB 크기 {size} · {time.time() - t0:.0f}s")
     if not ok:
         sys.exit(1)
+    if not args.activate:
+        print(f"전환 전 점검: python -m pipeline.check_data --db --version {version_id}")
 
 
 if __name__ == "__main__":

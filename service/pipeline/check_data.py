@@ -185,8 +185,8 @@ def read_db_url(env_file: Path | None) -> tuple[str, str]:
 EXPECTED_PROJECT = "uoiamnbkzlvlskngataq"
 
 
-def check_db(url: str, rep: Report) -> tuple[ds.Loaded, dict]:
-    """버전 표 상태 확인 후 현재 버전을 읽는다."""
+def check_db(url: str, rep: Report, version: int | None = None) -> tuple[ds.Loaded, dict]:
+    """버전 표 상태 확인 후 현재 버전(또는 전환 전 확인할 version)을 읽는다."""
     import psycopg
 
     if EXPECTED_PROJECT not in url:
@@ -215,14 +215,23 @@ def check_db(url: str, rep: Report) -> tuple[ds.Loaded, dict]:
         p = max(prev)
         (rep.ok if refs[cur_v] >= refs[p] else rep.fail)(
             "db", "기준일이 이전 버전보다 앞섬", f"v{cur_v} {refs[cur_v]} vs v{p} {refs[p]}")
-    newer = [v for v in status if v > cur_v and status[v] in ("validated", "loading")]
+    newer = [v for v in status if v > cur_v and status[v] in ("validated", "loading") and v != version]
     if newer:
         rep.warn("db", "현재보다 새 버전", f"전환 안 된 버전 {newer}")
+    target = cur_v
+    if version is not None and version != cur_v:
+        st = status.get(version)
+        if st != "validated":
+            rep.fail("db", f"점검 대상 v{version} 상태", f"{st} (전환 전 점검은 'validated' 만)")
+            return None, {"version": version, "statuses": status}
+        (rep.ok if refs[version] >= refs[cur_v] else rep.fail)(
+            "db", f"v{version} 기준일이 현재 버전보다 앞섬", f"v{version} {refs[version]} vs 현재 v{cur_v} {refs[cur_v]}")
+        target = version
     retired = [v for v, s in status.items() if s == "retired"]
     (rep.warn if size_mb > DB_SIZE_WARN_MB else rep.ok)(
         "db", "DB 크기", f"{size_mb:,.0f}MB (경고 기준 {DB_SIZE_WARN_MB:,}MB) · retired 버전 {retired}")
-    loaded = ds.load_db(url, cur_v)
-    return loaded, {"version": cur_v, "statuses": status}
+    loaded = ds.load_db(url, target)
+    return loaded, {"version": target, "statuses": status}
 
 
 def compare(pq: ds.Loaded, db: ds.Loaded, rep: Report) -> None:
@@ -245,6 +254,7 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--processed", type=Path, default=SERVICE / "data/processed")
     ap.add_argument("--db", action="store_true", help="공유 DB 현재 버전도 점검하고 parquet 와 대조")
+    ap.add_argument("--version", type=int, help="--db 와 함께: 현재 버전 대신 전환 전(validated) 버전을 점검")
     ap.add_argument("--env-file", type=Path, default=SERVICE.parent / ".env")
     ap.add_argument("--json", type=Path, help="결과를 JSON 으로도 저장")
     args = ap.parse_args()
@@ -256,9 +266,10 @@ def main() -> None:
     if args.db:
         url, key = read_db_url(args.env_file)
         print(f"DB 접속 키: {key}")
-        db, info = check_db(url, rep)
-        check_frames(db.frames, db.meta, "db", rep)
-        compare(pq, db, rep)
+        db, info = check_db(url, rep, args.version)
+        if db is not None:
+            check_frames(db.frames, db.meta, "db", rep)
+            compare(pq, db, rep)
     rep.print()
     if args.json:
         args.json.parent.mkdir(parents=True, exist_ok=True)
