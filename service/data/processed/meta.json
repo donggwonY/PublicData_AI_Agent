@@ -1,6 +1,6 @@
 {
   "reference_date": "2026-11-06",
-  "built_at": "2026-11-20 17:35:22",
+  "built_at": "2026-11-20 18:36:05",
   "quality": {
     "raw_rows": 299362,
     "duplicates_removed": 0,
@@ -71,6 +71,10 @@
       "체육도장업": 98.0,
       "축산판매업": 94.6,
       "휴게음식점": 97.5
+    },
+    "address_masked_ga_resolved": {
+      "total": 1048,
+      "resolved_by_coords": 1015
     },
     "licenses": 286896,
     "occupants": 272128,

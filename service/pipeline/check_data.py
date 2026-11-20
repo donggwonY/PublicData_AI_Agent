@@ -143,6 +143,14 @@ def check_frames(frames: dict[str, pd.DataFrame | None], meta: dict, where: str,
         fake = int(df["uid"].dropna().astype(str).str.contains("*", regex=False).sum())
         (rep.fail if fake else rep.ok)(where, f"{t} 가려진 번지 자리 키 없음", f"{fake:,}행")
 
+    # 3-2. 가려진 숫자가 남은 동 이름(예: '수성동*가', E-12 후속): 동 단위 집계에 가짜 동이 생긴다
+    for t in ("stores", "area_cycle", "area_year", "survival", "vacancy_area", "units"):
+        df = present.get(t)
+        if df is None or "dong" not in df.columns:
+            continue
+        bad = int(df["dong"].dropna().astype(str).str.contains("*", regex=False).sum())
+        (rep.fail if bad else rep.ok)(where, f"{t} 동 이름에 가려진 숫자 없음", f"{bad:,}행")
+
     # 4. 행정동 미연결 비율 (stores → legal_admin_map → area_context)
     stores, lam, ac = present.get("stores"), present.get("legal_admin_map"), present.get("area_context")
     if stores is not None and lam is not None and ac is not None:

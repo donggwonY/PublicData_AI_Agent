@@ -58,6 +58,22 @@ class LooseAreaTest(unittest.TestCase):
         self.assertEqual((r["gu"], r["dong"]), ("중구", "남성로"))
 
 
+class MaskedGaTest(unittest.TestCase):
+    def test_masked_ga_takes_nearest_same_family_dong(self):
+        from pipeline.build import resolve_masked_ga
+        df = pd.DataFrame({
+            "gu": ["수성구"] * 5,
+            "dong": ["수성동1가", "수성동4가", "범어동", "수성동*가", "수성동*가"],
+            "lat": [35.860, 35.850, 35.8575, 35.8598, None],
+            "lon": [128.620, 128.620, 128.620, 128.620, None],
+        })
+        q = {}
+        out = resolve_masked_ga(df, q)
+        self.assertEqual(out.iloc[3], "수성동1가")   # 가장 가까운 가게는 범어동이지만 같은 '수성동N가'만 후보
+        self.assertTrue(pd.isna(out.iloc[4]))         # 좌표가 없으면 비운다
+        self.assertEqual(q["address_masked_ga_resolved"], {"total": 2, "resolved_by_coords": 1})
+
+
 class MaskedCheckTest(unittest.TestCase):
     def _run(self, frames):
         rep = Report()

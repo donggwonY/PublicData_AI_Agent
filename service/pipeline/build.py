@@ -22,6 +22,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -256,7 +257,38 @@ def build_address(df: pd.DataFrame, quality: dict) -> pd.DataFrame:
     quality["coord_fill_pct"] = {
         s: round(float(g["lat"].notna().mean() * 100), 1) for s, g in df.groupby("service")
     }
+    df["dong"] = resolve_masked_ga(df, quality)
     return df
+
+
+def resolve_masked_ga(df: pd.DataFrame, quality: dict) -> pd.Series:
+    """번지 가림 주소는 '수성동*가'처럼 '…가'의 숫자까지 가려져 있다(E-12 후속, 1,048건).
+
+    좌표는 가려지지 않았으므로, 같은 구에서 이름 앞뒤가 같은 법정동(수성동1가~4가 등)의 정상 주소 가게 중
+    가장 가까운 가게의 동을 쓴다. 좌표가 없거나 후보가 없으면 동을 비운다(가린 이름을 동으로 남기지 않는다).
+    """
+    dong = df["dong"].copy()
+    star = dong.str.contains("*", regex=False, na=False)
+    if not star.any():
+        return dong
+    ref = df[dong.notna() & ~star & df["lat"].notna()]
+    fixed = 0
+    for (gu, d), idx in df[star].groupby(["gu", "dong"]).groups.items():
+        head, tail = d.split("*")[0], d.split("*")[-1]
+        pool = ref[(ref["gu"] == gu) & ref["dong"].str.fullmatch(re.escape(head) + r"\d+" + re.escape(tail))]
+        rows = df.loc[idx]
+        has = rows["lat"].notna()
+        dong.loc[idx] = None
+        if pool.empty or not has.any():
+            continue
+        # 위도·경도 차이로 가장 가까운 가게(대구 범위에서는 경도 차이에 cos(위도)를 곱해 거리 근사)
+        k = np.cos(np.radians(35.87))
+        d2 = ((rows.loc[has, "lat"].to_numpy()[:, None] - pool["lat"].to_numpy()[None, :]) ** 2
+              + (k * (rows.loc[has, "lon"].to_numpy()[:, None] - pool["lon"].to_numpy()[None, :])) ** 2)
+        dong.loc[rows.index[has]] = pool["dong"].to_numpy()[d2.argmin(axis=1)]
+        fixed += int(has.sum())
+    quality["address_masked_ga_resolved"] = {"total": int(star.sum()), "resolved_by_coords": fixed}
+    return dong
 
 
 # ─────────────────────────── 3-1. 겸업 묶기 ───────────────────────────
