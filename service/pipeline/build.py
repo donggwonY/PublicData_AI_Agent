@@ -214,6 +214,31 @@ def build_address(df: pd.DataFrame, quality: dict) -> pd.DataFrame:
     df.loc[m, "gu"] = df.loc[m, "gu"].fillna(area[m].map(lambda x: x["gu"]))
     df.loc[m, "dong"] = df.loc[m, "dong"].fillna(area[m].map(lambda x: x["eup"] or x["dong"]))
     quality["address_masked"] = int(m.sum())
+    # 지번 칸에 도로명이 들어간 경우(예: "달서구 대명천로 12 (성당동)")는 동이 '…로'로 읽힌다. 괄호 안 법정동으로
+    # 동만 바꾼다. 자리 키는 바꾸지 않는다(바꾸면 도로명→지번 매핑의 동률 처리가 흔들려 다른 자리 키 205개가 바뀜).
+    ro = (df["dong"].str.endswith("로", na=False) & ~df["dong"].isin(A.LEGAL_DONGS_ENDING_RO)
+          & df["gu"].notna() & ~df["gu"].isin(["달성군", "군위군"]))
+    if ro.any():
+        paren = df.loc[ro, "지번주소"].fillna("").str.extract(A._PAREN_DONG.pattern)["dong"]
+        paren = paren.fillna(df.loc[ro, "도로명주소"].fillna("").str.extract(A._PAREN_DONG.pattern)["dong"]).str.strip()
+        df.loc[paren.dropna().index, "dong"] = paren.dropna()
+        quality["address_road_as_dong_fixed"] = int(paren.notna().sum())
+    # 그 밖에 정규 형식이 아닌 주소(번지와 붙여 씀, 행정동식 번호, 구 이름 누락 등): 이미 확인된 동 이름일 때만
+    # 구·동을 채운다(E-12 후속). 자리 키는 그대로 둔다.
+    need = df["dong"].isna() & ~m
+    if need.any():
+        # 기준 동 목록: 정규 형식 주소에서 20건 이상 나온 (구, 동)만 쓴다. 한두 건짜리 오기('상가' 등)는 기준으로 쓰지 않는다.
+        cnt = df[df["dong"].notna()].groupby(["gu", "dong"]).size()
+        ok = cnt[cnt >= 20].reset_index()[["gu", "dong"]]
+        known = ok.groupby("gu")["dong"].agg(set).to_dict()
+        gus = ok.groupby("dong")["gu"].agg(set)
+        area_gu = {d: next(iter(g)) for d, g in gus.items() if len(g) == 1}   # 한 구에만 있는 동 이름
+        loose = [A.parse_area_loose(j, known, area_gu) or A.parse_area_loose(r, known, area_gu)
+                 for j, r in zip(df.loc[need, "지번주소"], df.loc[need, "도로명주소"])]
+        loose = pd.Series(loose, index=df.index[need]).dropna()
+        df.loc[loose.index, "gu"] = df.loc[loose.index, "gu"].fillna(loose.map(lambda x: x["gu"]))
+        df.loc[loose.index, "dong"] = loose.map(lambda x: x["dong"])
+        quality["address_area_loose"] = int(len(loose))
     df["floor"] = [A.extract_floor(r, j) for r, j in zip(df["도로명주소"], df["지번주소"])]
     df["building_key"] = df["uid"]      # 층을 붙이기 전 = 건물 단위 키 (자리 이력의 '건물 전체 보기'에 쓴다)
     df["uid"] = assign_floor_units(df)  # 최종 자리 키 = 건물 + 층

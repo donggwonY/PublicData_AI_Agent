@@ -1,6 +1,6 @@
 {
   "reference_date": "2026-11-06",
-  "built_at": "2026-11-20 16:58:50",
+  "built_at": "2026-11-20 17:35:22",
   "quality": {
     "raw_rows": 299362,
     "duplicates_removed": 0,
@@ -25,6 +25,8 @@
       "건강기능식품일반판매업": 11278
     },
     "address_masked": 11337,
+    "address_road_as_dong_fixed": 10,
+    "address_area_loose": 279,
     "address_unparsed": 11640,
     "coord_fill_pct": {
       "건강기능식품일반판매업": 98.0,
@@ -89,8 +91,8 @@
         "약국": 13
       }
     },
-    "vacancy_scores_dropped_missing_units": 220,
-    "next_tenant_scores_dropped_missing_units": 220
+    "vacancy_scores_dropped_missing_units": 0,
+    "next_tenant_scores_dropped_missing_units": 0
   },
   "records": {
     "건강기능식품일반판매업": {
@@ -440,11 +442,11 @@
     "달서구": 58782,
     "북구": 47488,
     "수성구": 45747,
-    "동구": 39235,
+    "동구": 39264,
     "중구": 29060,
-    "서구": 23272,
+    "서구": 23274,
     "남구": 20599,
-    "달성군": 20156,
+    "달성군": 20159,
     "군위군": 2515,
     "님구": 1
   },

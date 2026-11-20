@@ -282,13 +282,28 @@ def normalize_address(query: str, limit: int = 10) -> dict:
         raise ToolError("주소 또는 상호를 입력하세요.")
     cand, method = _find_units(q)
     if cand.empty:
+        masked = _masked_name_note(q)
         return _py({"query": query, "matched": 0, "matches": [],
-                    "hint": "도로명(예: 동성로5길 83) 또는 지번(예: 삼덕동1가 28-6) 형식으로 다시 시도하세요."})
+                    "hint": masked or "도로명(예: 동성로5길 83) 또는 지번(예: 삼덕동1가 28-6) 형식으로 다시 시도하세요."})
     return _py({
         "query": query, "method": method, "matched": int(len(cand)),
         "matches": [_unit_brief(r) for _, r in cand.head(limit).iterrows()],
         "note": "자리(unit) = 건물 기본주소(지번) + 층. 층 기재가 없는 과거 레코드는 건물 내 주 사용 층으로 합산.",
     })
+
+
+def _masked_name_note(q: str) -> str | None:
+    """상호가 번지 가림 인허가에만 맞을 때 이유를 알려 주는 문장(E-12 후속). 아니면 None."""
+    st = store().stores
+    if len(q) < 2 or "addr_masked" not in st.columns:
+        return None
+    hit = st[st["addr_masked"].fillna(False).astype(bool) & st["name"].str.contains(q, regex=False, na=False)]
+    if hit.empty:
+        return None
+    areas = (hit["gu"].fillna("") + " " + hit["dong"].fillna("")).str.strip().value_counts().index[:3].tolist()
+    return (f"'{q}' 상호의 인허가 {len(hit):,}건은 공개 원본 주소의 번지가 가려져 있어(예: 대명동 ***-*) "
+            f"자리를 특정할 수 없습니다({', '.join(a for a in areas if a)}). 이런 가게는 자리 이력·빈 자리에는 없고 "
+            "동네의 가게 수·개폐업 집계에만 들어갑니다. 정확한 도로명이나 지번 주소를 알면 그 주소로 다시 찾아 주세요.")
 
 
 def _find_units(q: str) -> tuple[pd.DataFrame, str | None]:
@@ -382,8 +397,9 @@ def _pick_unit(address: str) -> tuple[pd.Series, dict]:
         raise ToolError("주소 또는 상호를 입력하세요.")
     cand, method = _find_units(q)
     if cand.empty:
-        raise ToolError(f"'{address}'에 해당하는 자리를 찾지 못했습니다. "
-                        "도로명(예: 동성로5길 83) 또는 지번(예: 삼덕동1가 28-6) 형식으로 다시 시도하세요.")
+        masked = _masked_name_note(q)
+        raise ToolError(f"'{address}'에 해당하는 자리를 찾지 못했습니다. " + (masked or
+                        "도로명(예: 동성로5길 83) 또는 지번(예: 삼덕동1가 28-6) 형식으로 다시 시도하세요."))
     cand = _exact_matches(q, cand)
     building = cand["addr"].map(lambda a: (A.parse_road(a) or {}).get("key")).fillna(cand["building_key"])
     if building.nunique() > 1:

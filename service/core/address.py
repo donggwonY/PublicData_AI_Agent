@@ -32,13 +32,18 @@ _ROAD = re.compile(
 _MASKED_JIBUN = re.compile(
     r"^대구광역시\s+(?P<gu>\S+?[구군])\s+"
     r"(?:(?P<eup>\S+?[읍면])\s+)?"
-    r"(?P<dong>\S+?(?:동|가|리))\s+(?:산\s*)?\*[\d*]*(?:\s*-\s*[\d*]+)?"  # '로'로 끝나면 도로명으로 본다
+    r"(?P<dong>\S+?(?:동|가|리)|남성로|시장북로)\s+(?:산\s*)?\*[\d*]*(?:\s*-\s*[\d*]+)?"  # 그 밖의 '…로'는 도로명
 )
 _MASKED_ROAD = re.compile(
     r"^대구광역시\s+(?P<gu>\S+?[구군])\s+"
     r"(?:(?P<eup>\S+?[읍면])\s+)?"
     r"(?P<road>\S+?(?:로|길))\s+(?:지하\s*)?\*[\d*]*(?:\s*-\s*[\d*]+)?"
 )
+# 이름이 '로'로 끝나는 대구 법정동(중구). 그 밖의 '…로'는 도로명이다(E-12 후속, 2026-11-20 확인).
+LEGAL_DONGS_ENDING_RO = frozenset({"남성로", "시장북로"})
+GU_NAMES = ("중구", "동구", "서구", "남구", "북구", "수성구", "달서구", "달성군", "군위군")
+_GU_ANY = re.compile(r"^대구광역시\s*(?P<gu>" + "|".join(GU_NAMES) + r")")
+_AREA_TOKEN = re.compile(r"[가-힣]+(?:\s*[\d.·]+\s*)?(?:동\d*가|동|가|리|읍|면)")
 _PAREN_DONG = re.compile(r"\((?P<dong>[^,()]+?(?:동|가|리))(?:,|\))")
 _FLOOR = re.compile(r"(지하\s*\d+\s*층|\d+\s*층)")
 
@@ -123,6 +128,31 @@ def parse_masked(addr: str | None) -> dict | None:
     if m:
         pd_ = _PAREN_DONG.search(s)
         return {"gu": m["gu"], "eup": m["eup"], "dong": pd_["dong"].strip() if pd_ else None}
+    return None
+
+
+def parse_area_loose(addr: str | None, known: dict[str, set[str]], area_gu: dict[str, str]) -> dict | None:
+    """정규 형식으로 못 읽은 주소에서 구·동만 느슨하게 읽는다(자리 키는 만들지 않음, E-12 후속).
+
+    예) "대구광역시 북구 태전동496-12"(번지와 붙여 씀) → 북구·태전동
+        "대구광역시 남구 대명06동1052-1"(행정동식 번호) → 남구·대명동
+        "대구광역시 동구신서동 543"(구와 동을 붙여 씀) → 동구·신서동
+        "대구광역시 다사읍 세천로 80"(구 없음) → 달성군·다사읍 (area_gu: 한 구에만 있는 동·읍면 → 그 구)
+    잘못 읽지 않도록, 결과는 정규 형식 주소에서 이미 확인된 그 구의 동(known[구])일 때만 받는다.
+    군 지역은 배치와 같게 읍·면을 동 자리에 쓴다.
+    """
+    s = _clean(addr)
+    if not s.startswith(SIDO):
+        return None
+    m = _GU_ANY.match(s)
+    gu, rest = (m["gu"], s[m.end():]) if m else (None, s[len(SIDO):])
+    for tok in _AREA_TOKEN.findall(rest):
+        tok = re.sub(r"\s+", "", tok)
+        cands = [re.sub(r"[\d.·]+동$", "동", tok), tok]   # 법정동 우선: 대명06동·내당2.3동 → 대명동·내당동
+        for c in cands:
+            g = gu or area_gu.get(c)
+            if g and c in known.get(g, ()):
+                return {"gu": g, "dong": c}
     return None
 
 

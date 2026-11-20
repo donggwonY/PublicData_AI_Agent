@@ -27,6 +27,37 @@ class MaskedAddressTest(unittest.TestCase):
         self.assertIsNone(A.parse_masked("대구광역시 중구 동성로5길 83, 2층 (삼덕동1가)"))
 
 
+class LooseAreaTest(unittest.TestCase):
+    """정규 형식이 아닌 주소에서 구·동만 읽기 (E-12 후속). 이미 확인된 동 이름일 때만 받는다."""
+    KNOWN = {"북구": {"태전동", "칠성동1가"}, "남구": {"대명동"}, "동구": {"신서동", "신암동"}, "달성군": {"다사읍"},
+             "서구": {"내당동"}}
+    AREA_GU = {"신서동": "동구", "다사읍": "달성군", "태전동": "북구"}
+
+    def _p(self, addr):
+        r = A.parse_area_loose(addr, self.KNOWN, self.AREA_GU)
+        return (r["gu"], r["dong"]) if r else None
+
+    def test_glued_lot_number(self):
+        self.assertEqual(self._p("대구광역시 북구 태전동496-12"), ("북구", "태전동"))
+
+    def test_admin_style_number_maps_to_legal(self):
+        self.assertEqual(self._p("대구광역시 남구 대명06동1052-1"), ("남구", "대명동"))
+        self.assertEqual(self._p("대구광역시 서구 내당 2.3동 1035-33"), ("서구", "내당동"))
+
+    def test_glued_gu_and_missing_gu(self):
+        self.assertEqual(self._p("대구광역시 동구신암1동 603-128"), ("동구", "신암동"))
+        self.assertEqual(self._p("대구광역시 신서동 535-9"), ("동구", "신서동"))
+        self.assertEqual(self._p("대구광역시  다사읍 대실역북로5길 6"), ("달성군", "다사읍"))
+
+    def test_unknown_names_are_rejected(self):
+        self.assertIsNone(self._p("대구광역시 팔공로53길 10 (이시아폴리스더샵1차 상가101호)"))
+        self.assertIsNone(self._p("대구광역시 국채보상로159길 41, 107동 101호"))
+
+    def test_masked_legal_dong_ending_ro(self):
+        r = A.parse_masked("대구광역시 중구 남성로 **** *층")
+        self.assertEqual((r["gu"], r["dong"]), ("중구", "남성로"))
+
+
 class MaskedCheckTest(unittest.TestCase):
     def _run(self, frames):
         rep = Report()
