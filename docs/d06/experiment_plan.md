@@ -59,3 +59,11 @@
 - 최신 전망 scripts/build_d06_current_scores.py
 - 전달 자료 delivery/README.md,최신 자료 delivery/current/README.md
 - 갱신 기준 update_policy.md
+
+## 2026-11-21 누락 처리 수정
+
+[수정된 전달 자료](delivery/revised/README.md)를 사용함. 과거3개 이상1,912브랜드 중 현재전망753개,최신미확인748개,3개미만395개,비교연도부족16개로 구분함. 기존738개 전용 전망 파일은 대체됨. 수정후2024 Brier0.21998·2025잠정0.22847로 기존과 비슷함.
+
+## 최신 누락 브랜드의 별도 2년 전망
+
+2026-11-21에 2024년 말 관측 브랜드를 위한 2년 모델을 별도로 검증함. 개발2022~2023, 평가2024·잠정2025. 최신2026 목표의 학습 정답은2024까지 사용함. 174개를 추가해1년753개·2년174개 총927개 전망을 구성함. [연결 자료](delivery/revised/README.md)와 two_year/protocol.json·selection.json·results.json 참조.

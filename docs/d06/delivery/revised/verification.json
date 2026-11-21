@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-11-21",
+  "checks": {
+    "source_counts_match_raw": true,
+    "last_year_and_full_history_match_raw": true,
+    "missing_never_has_current_forecast": true,
+    "saved_evaluation_metrics_recalculated": true
+  },
+  "status_counts": {
+    "current_projection": 753,
+    "latest_count_unavailable": 748,
+    "below_three_stores": 395,
+    "prior_year_unavailable": 16
+  },
+  "live_api_checked_brands": 4,
+  "scope": "One-year rebuild/source checks before two-year fallback. Current lookup checks and file versions are in service_bundle_manifest.json."
+}

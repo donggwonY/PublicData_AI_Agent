@@ -1,0 +1,48 @@
+{
+  "historical_threeplus_brands": 1912,
+  "status_counts": {
+    "current_projection": 753,
+    "latest_count_unavailable": 748,
+    "below_three_stores": 395,
+    "prior_year_unavailable": 16
+  },
+  "conflicting_brand_years": 2,
+  "training_rows": 5463,
+  "validation": [
+    {
+      "year": 2022,
+      "n": 725,
+      "brier": 0.21532670610652394,
+      "auc": 0.6640456857757777,
+      "precision": 0.5481927710843374,
+      "recall": 0.3382899628252788
+    },
+    {
+      "year": 2023,
+      "n": 747,
+      "brier": 0.22316503728449802,
+      "auc": 0.6748089359200471,
+      "precision": 0.6179775280898876,
+      "recall": 0.3492063492063492
+    },
+    {
+      "year": 2024,
+      "n": 814,
+      "brier": 0.21998498278060183,
+      "auc": 0.6784085748589416,
+      "precision": 0.6274509803921569,
+      "recall": 0.3798219584569733
+    },
+    {
+      "year": 2025,
+      "n": 682,
+      "brier": 0.228474896978296,
+      "auc": 0.6601832460732985,
+      "precision": 0.6086956521739131,
+      "recall": 0.42
+    }
+  ],
+  "source_policy": "valid region count first; valid sales API fallback same accounting year; conflicting values unknown; missing never0; not permit counts",
+  "target": 2026,
+  "baseline": 2025
+}

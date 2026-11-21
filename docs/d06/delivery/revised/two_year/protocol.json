@@ -1,0 +1,18 @@
+{
+  "horizon": 2,
+  "target": "count[Y]<count[Y-2]",
+  "population": "base count>=3 and prior-year observation",
+  "train_labels": "<=Y-2 including current target2026 train<=2024",
+  "development": [
+    2022,
+    2023
+  ],
+  "evaluation": [
+    2024
+  ],
+  "provisional": [
+    2025
+  ],
+  "selection": "development Brier, compare fixed additional HGB versus industry-rate baseline",
+  "publication_limit": "retrospective latest snapshot, actual vintage release dates unverified"
+}

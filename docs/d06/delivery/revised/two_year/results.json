@@ -1,0 +1,85 @@
+{
+  "selected": "two_year_hgb",
+  "forecast_count": 174,
+  "status_counts": {
+    "current_projection": 753,
+    "latest_count_unavailable": 574,
+    "below_three_stores": 395,
+    "two_year_projection": 174,
+    "prior_year_unavailable": 16
+  },
+  "validation": [
+    {
+      "year": 2022,
+      "model": "two_year_hgb",
+      "n": 652,
+      "brier": 0.22022084262867578,
+      "auc": 0.6971789846606113,
+      "precision": 0.6309148264984227,
+      "recall": 0.6369426751592356
+    },
+    {
+      "year": 2022,
+      "model": "two_year_industry",
+      "n": 652,
+      "brier": 0.24474435936569774,
+      "auc": 0.5713592507443561,
+      "precision": 0.5093333333333333,
+      "recall": 0.60828025477707
+    },
+    {
+      "year": 2023,
+      "model": "two_year_hgb",
+      "n": 682,
+      "brier": 0.22366469889243168,
+      "auc": 0.6847265221878225,
+      "precision": 0.6597938144329897,
+      "recall": 0.5614035087719298
+    },
+    {
+      "year": 2023,
+      "model": "two_year_industry",
+      "n": 682,
+      "brier": 0.24818171135244924,
+      "auc": 0.5548460612315101,
+      "precision": 0.5488505747126436,
+      "recall": 0.5584795321637427
+    },
+    {
+      "year": 2024,
+      "model": "two_year_hgb",
+      "n": 736,
+      "brier": 0.23243093279953056,
+      "auc": 0.6613934915659052,
+      "precision": 0.7032258064516129,
+      "recall": 0.5369458128078818
+    },
+    {
+      "year": 2024,
+      "model": "two_year_industry",
+      "n": 736,
+      "brier": 0.24674274333114166,
+      "auc": 0.5904799223764743,
+      "precision": 0.61003861003861,
+      "recall": 0.3891625615763547
+    },
+    {
+      "year": 2025,
+      "model": "two_year_hgb",
+      "n": 644,
+      "brier": 0.2299359650261884,
+      "auc": 0.6575784357048167,
+      "precision": 0.6708860759493671,
+      "recall": 0.5808219178082191
+    },
+    {
+      "year": 2025,
+      "model": "two_year_industry",
+      "n": 644,
+      "brier": 0.24393858988849756,
+      "auc": 0.5879363676535572,
+      "precision": 0.6236263736263736,
+      "recall": 0.6219178082191781
+    }
+  ]
+}

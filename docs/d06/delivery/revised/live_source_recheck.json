@@ -1,0 +1,51 @@
+{
+  "checked_date": "2026-11-21",
+  "checks": [
+    {
+      "name": "맘스터치",
+      "brand": "BRD_20080100157",
+      "cached_count": "nan",
+      "status": "00",
+      "total": 18,
+      "daegu": [
+        {
+          "jngBizCrtraYr": "2026",
+          "acntgYr": "2025",
+          "frcsCnt": null,
+          "dmsCnt": null
+        }
+      ]
+    },
+    {
+      "name": "씨유(CU)",
+      "brand": "BRD_20080100020",
+      "cached_count": "nan",
+      "status": "00",
+      "total": 18,
+      "daegu": [
+        {
+          "jngBizCrtraYr": "2026",
+          "acntgYr": "2025",
+          "frcsCnt": null,
+          "dmsCnt": null
+        }
+      ]
+    },
+    {
+      "name": "비비큐(BBQ)",
+      "brand": "BRD_20161241",
+      "cached_count": null,
+      "status": "00",
+      "total": 0,
+      "daegu": []
+    },
+    {
+      "name": "세븐일레븐",
+      "brand": "BRD_20080100064",
+      "cached_count": null,
+      "status": "00",
+      "total": 0,
+      "daegu": []
+    }
+  ]
+}

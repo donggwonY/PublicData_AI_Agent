@@ -19,10 +19,11 @@
     "unknown and empty query",
     "correct2026 vs2025 period"
   ],
-  "app_connection": "prepared; app integration and deployment not performed",
+  "app_connection": "superseded: use delivery/revised/brand_registry.json and updated lookup",
   "files": {
     "consultation_current.json": "decf69e825e2a3e12bc3f4358334c1424714d6c47e6ff06622bef91f345d272c",
     "consultation_current.csv": "0008c476488cbeb4a1d214c31363307e49d6fd77bdf00cbfd8b00b1a20a1af0d",
     "lookup_examples.json": "1a08a3eef0090c7ea73f5789062f66247a266d8b166079c7938293cdb3f99ba0"
-  }
+  },
+  "successor": "docs/d06/delivery/revised"
 }

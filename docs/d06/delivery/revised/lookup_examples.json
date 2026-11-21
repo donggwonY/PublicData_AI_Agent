@@ -1,0 +1,796 @@
+[
+  {
+    "status": "ok",
+    "data_status": "below_three_stores",
+    "brand_id": "BRD_20080100071",
+    "brand_name": "카페베네",
+    "generated_date": "2026-11-21",
+    "observed": {
+      "last_observed_accounting_year": 2025,
+      "last_observed_daegu_stores": 2,
+      "count_source": "region_api",
+      "industry": "커피",
+      "history": [
+        {
+          "year": 2016,
+          "count": 26.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2017,
+          "count": 21.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2018,
+          "count": 12.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2019,
+          "count": 11.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2020,
+          "count": 7.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2021,
+          "count": 0.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2022,
+          "count": 2.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2023,
+          "count": 2.0,
+          "count_source": "sales_api"
+        },
+        {
+          "year": 2024,
+          "count": 2.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2025,
+          "count": 2.0,
+          "count_source": "region_api"
+        }
+      ],
+      "national_report_year": null,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_ctrtEndCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": null,
+          "status": "unavailable"
+        }
+      }
+    },
+    "forecast": null,
+    "message": "2025년 말 대구 가맹점은 2개예요. 이번 모델은3개 이상 브랜드를 대상으로 해서 예측 대신 확인된 매장 수를 안내해요.",
+    "dataset": "d06_revised_missing_counts_20261121"
+  },
+  {
+    "status": "ok",
+    "data_status": "current_projection",
+    "brand_id": "BRD_20080100023",
+    "brand_name": "락휴노래연습장",
+    "generated_date": "2026-11-21",
+    "observed": {
+      "last_observed_accounting_year": 2025,
+      "last_observed_daegu_stores": 4,
+      "count_source": "region_api",
+      "industry": "오락",
+      "history": [
+        {
+          "year": 2016,
+          "count": 1.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2017,
+          "count": 2.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2018,
+          "count": 2.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2019,
+          "count": 3.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2020,
+          "count": 3.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2021,
+          "count": 3.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2022,
+          "count": 3.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2023,
+          "count": 4.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2024,
+          "count": 4.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2025,
+          "count": 4.0,
+          "count_source": "region_api"
+        }
+      ],
+      "national_report_year": 2025,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": 124,
+          "status": "observed"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": 6,
+          "status": "observed"
+        },
+        "national_ctrtEndCnt": {
+          "value": 0,
+          "status": "observed"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": 5,
+          "status": "observed"
+        }
+      }
+    },
+    "forecast": {
+      "target_accounting_year": 2026,
+      "baseline_accounting_year": 2025,
+      "horizon_years": 1,
+      "model_kind": "one_year_hgb",
+      "decline_probability": 0.2168913341,
+      "period_text": "2025년 말 대비2026년 말 감소 여부"
+    },
+    "message": "2025년 말 대구 가맹점은 4개로 확인돼요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 22%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "dataset": "d06_revised_missing_counts_20261121"
+  },
+  {
+    "status": "ok",
+    "data_status": "latest_count_unavailable",
+    "brand_id": "BRD_20080100006",
+    "brand_name": "잉글리쉬무무",
+    "generated_date": "2026-11-21",
+    "observed": {
+      "last_observed_accounting_year": 2024,
+      "last_observed_daegu_stores": 1,
+      "count_source": "region_api",
+      "industry": "교육 (외국어)",
+      "history": [
+        {
+          "year": 2016,
+          "count": 4.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2017,
+          "count": 3.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2018,
+          "count": 2.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2019,
+          "count": 2.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2020,
+          "count": 1.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2021,
+          "count": 1.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2022,
+          "count": 1.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2023,
+          "count": 1.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2024,
+          "count": 1.0,
+          "count_source": "region_api"
+        }
+      ],
+      "national_report_year": null,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_ctrtEndCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": null,
+          "status": "unavailable"
+        }
+      }
+    },
+    "forecast": null,
+    "message": "마지막으로 확인된 2024년 말 대구 가맹점은 1개예요. 최신 연도 매장 수가 확인되지 않아 현재 전망은 제공하지 않아요.",
+    "dataset": "d06_revised_missing_counts_20261121"
+  },
+  {
+    "status": "ok",
+    "data_status": "prior_year_unavailable",
+    "brand_id": "BRD_20080200064",
+    "brand_name": "파리바게뜨",
+    "generated_date": "2026-11-21",
+    "observed": {
+      "last_observed_accounting_year": 2025,
+      "last_observed_daegu_stores": 156,
+      "count_source": "region_api",
+      "industry": "제과제빵",
+      "history": [
+        {
+          "year": 2016,
+          "count": 159.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2017,
+          "count": 162.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2018,
+          "count": 163.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2019,
+          "count": 162.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2020,
+          "count": 163.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2021,
+          "count": 162.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2022,
+          "count": 163.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2023,
+          "count": 164.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2025,
+          "count": 156.0,
+          "count_source": "region_api"
+        }
+      ],
+      "national_report_year": null,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_ctrtEndCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": null,
+          "status": "unavailable"
+        }
+      }
+    },
+    "forecast": null,
+    "message": "2025년 말 대구 가맹점은 156개예요. 비교할 전년도 기록이 부족해 현재 전망은 확인하기 어려워요.",
+    "dataset": "d06_revised_missing_counts_20261121"
+  },
+  {
+    "status": "ok",
+    "data_status": "two_year_projection",
+    "brand_id": "BRD_20080100014",
+    "brand_name": "이디야커피",
+    "generated_date": "2026-11-21",
+    "observed": {
+      "last_observed_accounting_year": 2024,
+      "last_observed_daegu_stores": 105,
+      "count_source": "region_api",
+      "industry": "커피",
+      "history": [
+        {
+          "year": 2016,
+          "count": 40.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2017,
+          "count": 42.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2018,
+          "count": 47.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2019,
+          "count": 65.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2020,
+          "count": 76.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2021,
+          "count": 88.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2022,
+          "count": 102.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2023,
+          "count": 105.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2024,
+          "count": 105.0,
+          "count_source": "region_api"
+        }
+      ],
+      "national_report_year": 2024,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": 2805,
+          "status": "observed"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": 143,
+          "status": "observed"
+        },
+        "national_ctrtEndCnt": {
+          "value": 343,
+          "status": "observed"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": 0,
+          "status": "observed"
+        }
+      }
+    },
+    "forecast": {
+      "target_accounting_year": 2026,
+      "baseline_accounting_year": 2024,
+      "horizon_years": 2,
+      "model_kind": "two_year_hgb",
+      "decline_probability": 0.42520327210618003,
+      "period_text": "2024년 말 대비2026년 말 감소 여부"
+    },
+    "message": "2024년 말 대구 가맹점은 105개로 확인돼요. 2025년 말 수치는 아직 확인되지 않아, 2024년 말 자료에서 2년 뒤를 예측하는 별도 모델을 사용했어요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 43%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "dataset": "d06_revised_missing_counts_20261121"
+  },
+  {
+    "status": "ok",
+    "data_status": "two_year_projection",
+    "brand_id": "BRD_20080100157",
+    "brand_name": "맘스터치",
+    "generated_date": "2026-11-21",
+    "observed": {
+      "last_observed_accounting_year": 2024,
+      "last_observed_daegu_stores": 70,
+      "count_source": "region_api",
+      "industry": "패스트푸드",
+      "history": [
+        {
+          "year": 2016,
+          "count": 58.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2017,
+          "count": 63.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2018,
+          "count": 62.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2019,
+          "count": 63.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2020,
+          "count": 64.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2021,
+          "count": 66.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2022,
+          "count": 66.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2023,
+          "count": 69.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2024,
+          "count": 70.0,
+          "count_source": "region_api"
+        }
+      ],
+      "national_report_year": 2024,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": 1409,
+          "status": "observed"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": 58,
+          "status": "observed"
+        },
+        "national_ctrtEndCnt": {
+          "value": 41,
+          "status": "observed"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": 0,
+          "status": "observed"
+        }
+      }
+    },
+    "forecast": {
+      "target_accounting_year": 2026,
+      "baseline_accounting_year": 2024,
+      "horizon_years": 2,
+      "model_kind": "two_year_hgb",
+      "decline_probability": 0.22645723997827805,
+      "period_text": "2024년 말 대비2026년 말 감소 여부"
+    },
+    "message": "2024년 말 대구 가맹점은 70개로 확인돼요. 2025년 말 수치는 아직 확인되지 않아, 2024년 말 자료에서 2년 뒤를 예측하는 별도 모델을 사용했어요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 23%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "dataset": "d06_revised_missing_counts_20261121"
+  },
+  {
+    "status": "ok",
+    "data_status": "two_year_projection",
+    "brand_id": "BRD_20080100020",
+    "brand_name": "씨유(CU)",
+    "generated_date": "2026-11-21",
+    "observed": {
+      "last_observed_accounting_year": 2024,
+      "last_observed_daegu_stores": 630,
+      "count_source": "region_api",
+      "industry": "편의점",
+      "history": [
+        {
+          "year": 2016,
+          "count": 260.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2017,
+          "count": 339.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2018,
+          "count": 372.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2019,
+          "count": 414.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2020,
+          "count": 464.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2021,
+          "count": 495.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2022,
+          "count": 545.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2023,
+          "count": 591.0,
+          "count_source": "sales_api"
+        },
+        {
+          "year": 2024,
+          "count": 630.0,
+          "count_source": "region_api"
+        }
+      ],
+      "national_report_year": 2024,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_ctrtEndCnt": {
+          "value": null,
+          "status": "unavailable"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": null,
+          "status": "unavailable"
+        }
+      }
+    },
+    "forecast": {
+      "target_accounting_year": 2026,
+      "baseline_accounting_year": 2024,
+      "horizon_years": 2,
+      "model_kind": "two_year_hgb",
+      "decline_probability": 0.3821724412316316,
+      "period_text": "2024년 말 대비2026년 말 감소 여부"
+    },
+    "message": "2024년 말 대구 가맹점은 630개로 확인돼요. 2025년 말 수치는 아직 확인되지 않아, 2024년 말 자료에서 2년 뒤를 예측하는 별도 모델을 사용했어요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 38%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "dataset": "d06_revised_missing_counts_20261121"
+  },
+  {
+    "status": "ok",
+    "data_status": "two_year_projection",
+    "brand_id": "BRD_20161241",
+    "brand_name": "비비큐(BBQ)",
+    "generated_date": "2026-11-21",
+    "observed": {
+      "last_observed_accounting_year": 2024,
+      "last_observed_daegu_stores": 117,
+      "count_source": "region_api",
+      "industry": "치킨",
+      "history": [
+        {
+          "year": 2017,
+          "count": 74.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2018,
+          "count": 83.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2019,
+          "count": 86.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2020,
+          "count": 84.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2021,
+          "count": 94.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2022,
+          "count": 108.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2023,
+          "count": 117.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2024,
+          "count": 117.0,
+          "count_source": "region_api"
+        }
+      ],
+      "national_report_year": 2024,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": 2238,
+          "status": "observed"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": 182,
+          "status": "observed"
+        },
+        "national_ctrtEndCnt": {
+          "value": 0,
+          "status": "observed"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": 71,
+          "status": "observed"
+        }
+      }
+    },
+    "forecast": {
+      "target_accounting_year": 2026,
+      "baseline_accounting_year": 2024,
+      "horizon_years": 2,
+      "model_kind": "two_year_hgb",
+      "decline_probability": 0.18906610208550972,
+      "period_text": "2024년 말 대비2026년 말 감소 여부"
+    },
+    "message": "2024년 말 대구 가맹점은 117개로 확인돼요. 2025년 말 수치는 아직 확인되지 않아, 2024년 말 자료에서 2년 뒤를 예측하는 별도 모델을 사용했어요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 19%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "dataset": "d06_revised_missing_counts_20261121"
+  },
+  {
+    "status": "ok",
+    "data_status": "two_year_projection",
+    "brand_id": "BRD_20080100064",
+    "brand_name": "세븐일레븐",
+    "generated_date": "2026-11-21",
+    "observed": {
+      "last_observed_accounting_year": 2024,
+      "last_observed_daegu_stores": 553,
+      "count_source": "region_api",
+      "industry": "편의점",
+      "history": [
+        {
+          "year": 2016,
+          "count": 367.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2017,
+          "count": 397.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2018,
+          "count": 407.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2019,
+          "count": 454.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2020,
+          "count": 482.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2021,
+          "count": 523.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2022,
+          "count": 590.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2023,
+          "count": 579.0,
+          "count_source": "region_api"
+        },
+        {
+          "year": 2024,
+          "count": 553.0,
+          "count_source": "region_api"
+        }
+      ],
+      "national_report_year": 2024,
+      "national_scope": "전국",
+      "national": {
+        "national_frcsCnt": {
+          "value": 12783,
+          "status": "observed"
+        },
+        "national_newFrcsRgsCnt": {
+          "value": 1607,
+          "status": "observed"
+        },
+        "national_ctrtEndCnt": {
+          "value": 707,
+          "status": "observed"
+        },
+        "national_ctrtCncltnCnt": {
+          "value": 670,
+          "status": "observed"
+        }
+      }
+    },
+    "forecast": {
+      "target_accounting_year": 2026,
+      "baseline_accounting_year": 2024,
+      "horizon_years": 2,
+      "model_kind": "two_year_hgb",
+      "decline_probability": 0.5677582653713095,
+      "period_text": "2024년 말 대비2026년 말 감소 여부"
+    },
+    "message": "2024년 말 대구 가맹점은 553개로 확인돼요. 2025년 말 수치는 아직 확인되지 않아, 2024년 말 자료에서 2년 뒤를 예측하는 별도 모델을 사용했어요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 57%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "dataset": "d06_revised_missing_counts_20261121"
+  }
+]
