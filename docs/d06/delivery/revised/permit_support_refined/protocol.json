@@ -1,0 +1,21 @@
+{
+  "scope": "exploratory permit auxiliary features on same fixed FTC-label sample; current name snapshot, exact historical name availability unverified; zero linked permits is not zero franchises",
+  "models": "fixed HGB100 leaves7 min30 l2=10 lr=.05; basic versus additional",
+  "national_time": "report year one earlier than feature report year; exact historical availability still unverified",
+  "features": [
+    "brand_age",
+    "log_direct",
+    "log_national_count",
+    "newFrcsRgsCnt_rate",
+    "ctrtEndCnt_rate",
+    "ctrtCncltnCnt_rate",
+    "nmChgCnt_rate",
+    "permit_active",
+    "permit_open",
+    "permit_closed",
+    "permit_name_linked"
+  ],
+  "permit_rules": "longest unique name prefix; explicit CU/BBQ aliases; exclude Mom pizza variants; distinct known building keys for active/open/closed; historical presence indicator",
+  "missing": "median imputation trained on training only plus indicators, no row removal",
+  "threshold": 0.5
+}

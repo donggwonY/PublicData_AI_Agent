@@ -1,0 +1,7 @@
+{
+  "target": "count[Y]<count[Y-2]",
+  "masked": "count[Y-1] never used; permits through Y-1 allowed",
+  "train_labels": "<=Y-2",
+  "comparison": "same rows fixed HGB with and without permit auxiliary features",
+  "limitation": "historical current-name snapshot; permit feature missing imputed with indicator; retrospective reused periods"
+}

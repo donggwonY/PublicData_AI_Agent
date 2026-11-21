@@ -74,11 +74,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "이디야커피",
-    "decline_probability": 0.42520327210618003,
+    "decline_probability": 0.1854741156177409,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -132,8 +132,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 80,
+      "linked_opened_buildings": 7,
+      "linked_closed_buildings": 9,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100020",
@@ -142,11 +149,11 @@
     "industry": "편의점",
     "count_source": "region_api",
     "brand_name": "씨유(CU)",
-    "decline_probability": 0.3821724412316316,
+    "decline_probability": 0.1601635460668277,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -200,8 +207,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 763,
+      "linked_opened_buildings": 75,
+      "linked_closed_buildings": 85,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100023",
@@ -424,11 +438,11 @@
     "industry": "피자",
     "count_source": "region_api",
     "brand_name": "피자에땅",
-    "decline_probability": 0.5562840700892814,
+    "decline_probability": 0.7200478690169939,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -482,8 +496,15 @@
     "national_ctrtCncltnCnt": 13,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 16,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100037",
@@ -565,11 +586,11 @@
     "industry": "제과제빵",
     "count_source": "region_api",
     "brand_name": "뚜레쥬르",
-    "decline_probability": 0.4390355889514242,
+    "decline_probability": 0.538356495714482,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -623,8 +644,15 @@
     "national_ctrtCncltnCnt": 68,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 56,
+      "linked_opened_buildings": 3,
+      "linked_closed_buildings": 4,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100044",
@@ -706,11 +734,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "놀부보쌈족발",
-    "decline_probability": 0.664196652528456,
+    "decline_probability": 0.6950728606152207,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -764,8 +792,15 @@
     "national_ctrtCncltnCnt": 37,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 2,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 2,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100048",
@@ -774,11 +809,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "놀부부대찌개",
-    "decline_probability": 0.6815925473384892,
+    "decline_probability": 0.7138686884830242,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -832,8 +867,15 @@
     "national_ctrtCncltnCnt": 54,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 2,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100052",
@@ -983,11 +1025,11 @@
     "industry": "화장품",
     "count_source": "region_api",
     "brand_name": "아리따움",
-    "decline_probability": 0.8596798851656285,
+    "decline_probability": 0.6627266476293626,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -1041,8 +1083,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100058",
@@ -1182,11 +1231,11 @@
     "industry": "편의점",
     "count_source": "region_api",
     "brand_name": "세븐일레븐",
-    "decline_probability": 0.5677582653713095,
+    "decline_probability": 0.3125710716560672,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -1240,8 +1289,15 @@
     "national_ctrtCncltnCnt": 670,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 530,
+      "linked_opened_buildings": 24,
+      "linked_closed_buildings": 81,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100066",
@@ -1507,11 +1563,11 @@
     "industry": "피자",
     "count_source": "region_api",
     "brand_name": "파파존스피자",
-    "decline_probability": 0.2803583291538697,
+    "decline_probability": 0.344849993962344,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -1565,8 +1621,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100077",
@@ -2003,11 +2066,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "한우리독서토론논술",
-    "decline_probability": 0.2397004940719486,
+    "decline_probability": 0.2872802543987217,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -2061,8 +2124,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100109",
@@ -2212,11 +2282,11 @@
     "industry": "기타도소매",
     "count_source": "region_api",
     "brand_name": "다이소",
-    "decline_probability": 0.2778968374116215,
+    "decline_probability": 0.3163122416662435,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -2270,8 +2340,15 @@
     "national_ctrtCncltnCnt": 15,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100120",
@@ -2688,11 +2765,11 @@
     "industry": "안경",
     "count_source": "region_api",
     "brand_name": "다비치안경체인",
-    "decline_probability": 0.34581710630807466,
+    "decline_probability": 0.2038663815777618,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -2746,8 +2823,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 14,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100149",
@@ -2829,11 +2913,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "엔제리너스",
-    "decline_probability": 0.6369209685307364,
+    "decline_probability": 0.6449882540185962,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -2887,8 +2971,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 7,
+      "linked_opened_buildings": 2,
+      "linked_closed_buildings": 3,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100155",
@@ -2897,11 +2988,11 @@
     "industry": "패스트푸드",
     "count_source": "region_api",
     "brand_name": "롯데리아",
-    "decline_probability": 0.48345119884204263,
+    "decline_probability": 0.3475649071108802,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -2955,8 +3046,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 61,
+      "linked_opened_buildings": 2,
+      "linked_closed_buildings": 2,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100157",
@@ -2965,11 +3063,11 @@
     "industry": "패스트푸드",
     "count_source": "region_api",
     "brand_name": "맘스터치",
-    "decline_probability": 0.22645723997827805,
+    "decline_probability": 0.124708507117745,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -3023,8 +3121,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 71,
+      "linked_opened_buildings": 3,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100159",
@@ -3033,11 +3138,11 @@
     "industry": "피자",
     "count_source": "region_api",
     "brand_name": "도미노피자",
-    "decline_probability": 0.25905584071862053,
+    "decline_probability": 0.3136668775901953,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -3091,8 +3196,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 19,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100161",
@@ -3887,11 +3999,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "YBM잉글루",
-    "decline_probability": 0.3152213399715315,
+    "decline_probability": 0.3591319560281214,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -3945,8 +4057,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100240",
@@ -4096,11 +4215,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "더카페",
-    "decline_probability": 0.5919265251689927,
+    "decline_probability": 0.6211138673087205,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -4154,8 +4273,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100258",
@@ -4451,11 +4577,11 @@
     "industry": "기타도소매",
     "count_source": "region_api",
     "brand_name": "Office Way(오피스웨이)",
-    "decline_probability": 0.43426686622287736,
+    "decline_probability": 0.3952580236787595,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -4509,8 +4635,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100280",
@@ -4519,11 +4652,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "스마트해법영어",
-    "decline_probability": 0.559934573541593,
+    "decline_probability": 0.5413205143448112,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -4577,8 +4710,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100282",
@@ -4587,11 +4727,11 @@
     "industry": "교육 (교과)",
     "count_source": "region_api",
     "brand_name": "스마트해법수학",
-    "decline_probability": 0.6105975500093074,
+    "decline_probability": 0.6071824112194688,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -4645,8 +4785,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100285",
@@ -4655,11 +4802,11 @@
     "industry": "기타 서비스",
     "count_source": "region_api",
     "brand_name": "비지팅엔젤스",
-    "decline_probability": 0.3851608554145942,
+    "decline_probability": 0.4105441216068408,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -4713,8 +4860,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100288",
@@ -4723,11 +4877,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "사고력수학 시매쓰",
-    "decline_probability": 0.560765978196985,
+    "decline_probability": 0.5491080950398485,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -4781,8 +4935,15 @@
     "national_ctrtCncltnCnt": 6,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100289",
@@ -5436,11 +5597,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "GnB어학원",
-    "decline_probability": 0.3590936788443304,
+    "decline_probability": 0.3824726319697392,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -5494,8 +5655,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100373",
@@ -5504,11 +5672,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "탐앤탐스커피(TOMNTOMS COFFEE)",
-    "decline_probability": 0.38153296845335527,
+    "decline_probability": 0.4232832524654091,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -5562,8 +5730,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100375",
@@ -5645,11 +5820,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "에듀플렉스",
-    "decline_probability": 0.29061356232961844,
+    "decline_probability": 0.3185522421849305,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -5703,8 +5878,15 @@
     "national_ctrtCncltnCnt": 7,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100394",
@@ -5859,11 +6041,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "청담어학원",
-    "decline_probability": 0.2566070624083092,
+    "decline_probability": 0.2734734563248918,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -5917,8 +6099,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100419",
@@ -6063,11 +6252,11 @@
     "industry": "약국",
     "count_source": "region_api",
     "brand_name": "메디팜",
-    "decline_probability": 0.2825702759554228,
+    "decline_probability": 0.3573907115355748,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -6116,8 +6305,15 @@
     "national_ctrtCncltnCnt": 4,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100427",
@@ -6912,11 +7108,11 @@
     "industry": "서양식",
     "count_source": "region_api",
     "brand_name": "피나치공",
-    "decline_probability": 0.42770482318520253,
+    "decline_probability": 0.7139163604614327,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -6970,8 +7166,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 26,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 5,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100499",
@@ -7325,11 +7528,11 @@
     "industry": "(건강)식품",
     "count_source": "region_api",
     "brand_name": "옵티마",
-    "decline_probability": 0.4332670684590581,
+    "decline_probability": 0.4478794604972548,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -7383,8 +7586,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100561",
@@ -7431,11 +7641,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "우쿠야",
-    "decline_probability": 0.5165371305158099,
+    "decline_probability": 0.5508402190830354,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -7489,8 +7699,15 @@
     "national_ctrtCncltnCnt": 9,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100594",
@@ -7499,11 +7716,11 @@
     "industry": "자동차 관련",
     "count_source": "region_api",
     "brand_name": "오토큐(Auto Q)",
-    "decline_probability": 0.44255079488986393,
+    "decline_probability": 0.4478794604972548,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -7557,8 +7774,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100595",
@@ -7567,11 +7791,11 @@
     "industry": "자동차 관련",
     "count_source": "region_api",
     "brand_name": "블루핸즈(bluehands)",
-    "decline_probability": 0.317569069781555,
+    "decline_probability": 0.3765272614649664,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -7625,8 +7849,15 @@
     "national_ctrtCncltnCnt": 30,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100604",
@@ -7761,11 +7992,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "투썸플레이스",
-    "decline_probability": 0.19764269725837608,
+    "decline_probability": 0.304917527910311,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -7819,8 +8050,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 91,
+      "linked_opened_buildings": 2,
+      "linked_closed_buildings": 3,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100632",
@@ -7975,11 +8213,11 @@
     "industry": "기타도소매",
     "count_source": "region_api",
     "brand_name": "오피스디포(Office DEPOT)",
-    "decline_probability": 0.3605187211744025,
+    "decline_probability": 0.3619451164224421,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -8033,8 +8271,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100643",
@@ -8043,11 +8288,11 @@
     "industry": "이미용",
     "count_source": "region_api",
     "brand_name": "이철헤어커커",
-    "decline_probability": 0.42264618686933675,
+    "decline_probability": 0.6593529741879695,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -8101,8 +8346,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100646",
@@ -8353,11 +8605,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "JLS정상어학원",
-    "decline_probability": 0.23103882078629956,
+    "decline_probability": 0.2734643451409685,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -8411,8 +8663,15 @@
     "national_ctrtCncltnCnt": 2,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100666",
@@ -8837,11 +9096,11 @@
     "industry": "편의점",
     "count_source": "region_api",
     "brand_name": "이마트24(emart24)",
-    "decline_probability": 0.6073588852896014,
+    "decline_probability": 0.6585814605164968,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -8895,8 +9154,15 @@
     "national_ctrtCncltnCnt": 295,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080100739",
@@ -9245,11 +9511,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "굽네치킨",
-    "decline_probability": 0.2658560187754908,
+    "decline_probability": 0.1009935154154934,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -9303,8 +9569,15 @@
     "national_ctrtCncltnCnt": 27,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 58,
+      "linked_opened_buildings": 4,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080200033",
@@ -11255,11 +11528,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "티바두마리치킨",
-    "decline_probability": 0.7514375185266362,
+    "decline_probability": 0.8547663799253773,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -11313,8 +11586,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 5,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 4,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080300020",
@@ -12038,11 +12318,11 @@
     "industry": "아이스크림/빙수 ",
     "count_source": "region_api",
     "brand_name": "배스킨라빈스",
-    "decline_probability": 0.2182513132777984,
+    "decline_probability": 0.1110697842148598,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -12096,8 +12376,15 @@
     "national_ctrtCncltnCnt": 3,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 66,
+      "linked_opened_buildings": 2,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080500016",
@@ -12106,11 +12393,11 @@
     "industry": "제과제빵",
     "count_source": "region_api",
     "brand_name": "던킨/던킨도너츠",
-    "decline_probability": 0.5058431405500396,
+    "decline_probability": 0.4879238254132382,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -12164,8 +12451,15 @@
     "national_ctrtCncltnCnt": 21,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 12,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080500019",
@@ -12393,11 +12687,11 @@
     "industry": "기타도소매",
     "count_source": "region_api",
     "brand_name": "자연드림",
-    "decline_probability": 0.4480458416122142,
+    "decline_probability": 0.4378829826802324,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -12451,8 +12745,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080500031",
@@ -13118,11 +13419,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "호식이두마리치킨",
-    "decline_probability": 0.4086372081750251,
+    "decline_probability": 0.1645036136934402,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -13176,8 +13477,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 94,
+      "linked_opened_buildings": 6,
+      "linked_closed_buildings": 6,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20080600029",
@@ -14217,11 +14525,11 @@
     "industry": "교육 (교과)",
     "count_source": "region_api",
     "brand_name": "생각하는 수학 페르마",
-    "decline_probability": 0.5344910795046924,
+    "decline_probability": 0.5371548553848898,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -14275,8 +14583,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20090100174",
@@ -14318,11 +14633,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "씨엠에스(CMS)",
-    "decline_probability": 0.29463448765928907,
+    "decline_probability": 0.3234753630974459,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -14376,8 +14691,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20090100195",
@@ -14590,11 +14912,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "아트&하트",
-    "decline_probability": 0.37736591491607974,
+    "decline_probability": 0.3947340795296307,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -14648,8 +14970,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20090100244",
@@ -14794,11 +15123,11 @@
     "industry": "화장품",
     "count_source": "region_api",
     "brand_name": "네이처리퍼블릭(NATUREREPUBLIC)",
-    "decline_probability": 0.695258052573732,
+    "decline_probability": 0.6538843049852302,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -14852,8 +15181,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20090100307",
@@ -15434,11 +15770,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "이아이이(EiE) 고려대학교 영어교육 프로그램",
-    "decline_probability": 0.6147906564083966,
+    "decline_probability": 0.6213895109320086,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -15492,8 +15828,15 @@
     "national_ctrtCncltnCnt": 2,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20090100397",
@@ -16797,11 +17140,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "오븐에 꾸운 닭",
-    "decline_probability": 0.6122183849097708,
+    "decline_probability": 0.4411701633987175,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -16855,8 +17198,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 9,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20090400025",
@@ -17857,11 +18207,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "잉글리시에그(Englishegg)",
-    "decline_probability": 0.4623923833504253,
+    "decline_probability": 0.4972057974967201,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -17915,8 +18265,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20100100068",
@@ -18122,11 +18479,11 @@
     "industry": "피자",
     "count_source": "region_api",
     "brand_name": "피자알볼로",
-    "decline_probability": 0.720427830881512,
+    "decline_probability": 0.8391353254998809,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -18180,8 +18537,15 @@
     "national_ctrtCncltnCnt": 1,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 6,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 3,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20100100142",
@@ -18646,11 +19010,11 @@
     "industry": "화장품",
     "count_source": "region_api",
     "brand_name": "더샘",
-    "decline_probability": 0.8427187545875401,
+    "decline_probability": 0.7728877396706089,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -18704,8 +19068,15 @@
     "national_ctrtCncltnCnt": 8,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20100100369",
@@ -19190,11 +19561,11 @@
     "industry": "종합소매점",
     "count_source": "region_api",
     "brand_name": "Olive Young(올리브영)",
-    "decline_probability": 0.34192170676987393,
+    "decline_probability": 0.4171758544398803,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -19248,8 +19619,15 @@
     "national_ctrtCncltnCnt": 3,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20100100532",
@@ -20833,11 +21211,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "남다른감자탕",
-    "decline_probability": 0.7075138322877519,
+    "decline_probability": 0.5682338101171992,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -20891,8 +21269,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 9,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20100600077",
@@ -21249,11 +21634,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "커피스미스",
-    "decline_probability": 0.6552677643283206,
+    "decline_probability": 0.3738926721003639,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -21307,8 +21692,15 @@
     "national_ctrtCncltnCnt": 6,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 5,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20110100129",
@@ -21463,11 +21855,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "드롭탑(DROPTOP)",
-    "decline_probability": 0.7578065431160631,
+    "decline_probability": 0.7694527759813586,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -21516,8 +21908,15 @@
     "national_ctrtCncltnCnt": 23,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20110100158",
@@ -21526,11 +21925,11 @@
     "industry": "기타 서비스",
     "count_source": "region_api",
     "brand_name": "어드벤처피아노",
-    "decline_probability": 0.4935671495724237,
+    "decline_probability": 0.5157773144947125,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -21584,8 +21983,15 @@
     "national_ctrtCncltnCnt": 10,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20110100164",
@@ -22189,11 +22595,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "와이키즈",
-    "decline_probability": 0.3086077852742119,
+    "decline_probability": 0.3221819786714428,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -22247,8 +22653,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20110100450",
@@ -22257,11 +22670,11 @@
     "industry": "교육 (교과)",
     "count_source": "region_api",
     "brand_name": "셀파우등생교실",
-    "decline_probability": 0.71031326539553,
+    "decline_probability": 0.649580621403305,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -22315,8 +22728,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20110100495",
@@ -22426,11 +22846,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "에듀코치",
-    "decline_probability": 0.32441908020671684,
+    "decline_probability": 0.3366515577181621,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -22484,8 +22904,15 @@
     "national_ctrtCncltnCnt": 6,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20110100603",
@@ -24409,11 +24836,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "달.콤(dal.komm)",
-    "decline_probability": 0.421705100193366,
+    "decline_probability": 0.4786646833821983,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -24462,8 +24889,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20120100131",
@@ -25250,11 +25684,11 @@
     "industry": "아이스크림/빙수 ",
     "count_source": "region_api",
     "brand_name": "빨라쪼 델 프레도",
-    "decline_probability": 0.5676770405728787,
+    "decline_probability": 0.6159119990561426,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -25308,8 +25742,15 @@
     "national_ctrtCncltnCnt": 3,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20120100433",
@@ -25391,11 +25832,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "클루빌러닝센터",
-    "decline_probability": 0.33562462931900255,
+    "decline_probability": 0.3402858621381687,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -25449,8 +25890,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20120100475",
@@ -27514,11 +27962,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "빨봉분식",
-    "decline_probability": 0.7551269623714231,
+    "decline_probability": 0.7378768440763979,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -27572,8 +28020,15 @@
     "national_ctrtCncltnCnt": 3,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 6,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20120600032",
@@ -28034,11 +28489,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "라라코스트(raracost)",
-    "decline_probability": 0.48912765136839215,
+    "decline_probability": 0.5656701536588744,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -28092,8 +28547,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20130015",
@@ -29907,11 +30369,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "부산아지매국밥",
-    "decline_probability": 0.6362088077578683,
+    "decline_probability": 0.7754084253219957,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -29960,8 +30422,15 @@
     "national_ctrtCncltnCnt": 13,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20130100358",
@@ -29970,11 +30439,11 @@
     "industry": "패스트푸드",
     "count_source": "region_api",
     "brand_name": "버거킹(Burger King)",
-    "decline_probability": 0.3611068372480764,
+    "decline_probability": 0.4338973663706285,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -30028,8 +30497,15 @@
     "national_ctrtCncltnCnt": 2,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20130100376",
@@ -30975,11 +31451,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "아소비",
-    "decline_probability": 0.3555346689589082,
+    "decline_probability": 0.4551867633391879,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -31033,8 +31509,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20130232",
@@ -31116,11 +31599,11 @@
     "industry": "분식",
     "count_source": "region_api",
     "brand_name": "이웃집소녀떡볶이",
-    "decline_probability": 0.7277114302783746,
+    "decline_probability": 0.843300115199898,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -31174,8 +31657,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 6,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 3,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20130249",
@@ -31549,11 +32039,11 @@
     "industry": "자동차 관련",
     "count_source": "region_api",
     "brand_name": "티스테이션(T'station)",
-    "decline_probability": 0.6365634283841162,
+    "decline_probability": 0.6071824112194688,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -31607,8 +32097,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20130396",
@@ -31617,11 +32114,11 @@
     "industry": "교육 (교과)",
     "count_source": "region_api",
     "brand_name": "유투엠(U2M)",
-    "decline_probability": 0.559042161093837,
+    "decline_probability": 0.5157697423297337,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -31675,8 +32172,15 @@
     "national_ctrtCncltnCnt": 6,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20130400",
@@ -31932,11 +32436,11 @@
     "industry": "교육 (교과)",
     "count_source": "region_api",
     "brand_name": "강의하는아이들",
-    "decline_probability": 0.6291258055725911,
+    "decline_probability": 0.6143662183041138,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -31990,8 +32494,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20130481",
@@ -32897,11 +33408,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "루트원",
-    "decline_probability": 0.5989078826965551,
+    "decline_probability": 0.6009480335837446,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -32955,8 +33466,15 @@
     "national_ctrtCncltnCnt": 4,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20140100",
@@ -34591,11 +35109,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "씬씬중국어학원",
-    "decline_probability": 0.34818952812496534,
+    "decline_probability": 0.3920282811612992,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -34649,8 +35167,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20140475",
@@ -35531,11 +36056,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "코리엔탈깻잎두마리치킨",
-    "decline_probability": 0.6951867799630326,
+    "decline_probability": 0.7901303451026497,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -35584,8 +36109,15 @@
     "national_ctrtCncltnCnt": 63,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 2,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20140722",
@@ -35594,11 +36126,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "더벤티",
-    "decline_probability": 0.25608515526312475,
+    "decline_probability": 0.3940799943993751,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -35652,8 +36184,15 @@
     "national_ctrtCncltnCnt": 42,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20140726",
@@ -38314,11 +38853,11 @@
     "industry": "자동차 관련",
     "count_source": "region_api",
     "brand_name": "공임나라",
-    "decline_probability": 0.38160066357304595,
+    "decline_probability": 0.388380932377458,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -38372,8 +38911,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20150146",
@@ -38896,11 +39442,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "유니팝",
-    "decline_probability": 0.3830334047102028,
+    "decline_probability": 0.3762841188936414,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -38954,8 +39500,15 @@
     "national_ctrtCncltnCnt": 17,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20150218",
@@ -38964,11 +39517,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "푸라닭",
-    "decline_probability": 0.38872675238835136,
+    "decline_probability": 0.4508822328060395,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -39022,8 +39575,15 @@
     "national_ctrtCncltnCnt": 4,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20150247",
@@ -39549,11 +40109,11 @@
     "industry": "분식",
     "count_source": "region_api",
     "brand_name": "두끼",
-    "decline_probability": 0.4872445405613544,
+    "decline_probability": 0.5007767177550224,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -39607,8 +40167,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20150394",
@@ -40948,11 +41515,11 @@
     "industry": "안경",
     "count_source": "region_api",
     "brand_name": "아이디어(Eyedear)",
-    "decline_probability": 0.36919934156653245,
+    "decline_probability": 0.4152122977305085,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -41006,8 +41573,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20150699",
@@ -41493,11 +42067,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "디저트39",
-    "decline_probability": 0.7244677294860367,
+    "decline_probability": 0.7471044759075716,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -41551,8 +42125,15 @@
     "national_ctrtCncltnCnt": 19,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 11,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20150816",
@@ -41629,11 +42210,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "샐러디",
-    "decline_probability": 0.3438555082426006,
+    "decline_probability": 0.3812875986512918,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -41682,8 +42263,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20150841",
@@ -41692,11 +42280,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "청담아이가르텐",
-    "decline_probability": 0.33109662554819774,
+    "decline_probability": 0.3653677926518134,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -41750,8 +42338,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20150842",
@@ -42065,11 +42660,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "책나무",
-    "decline_probability": 0.5911511480376141,
+    "decline_probability": 0.6011550928552607,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -42123,8 +42718,15 @@
     "national_ctrtCncltnCnt": 142,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20150901",
@@ -45976,11 +46578,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "웰이스턴",
-    "decline_probability": 0.3756940065299985,
+    "decline_probability": 0.3802197416408606,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -46034,8 +46636,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20160275",
@@ -46082,11 +46691,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "바다양푼이동태탕찜",
-    "decline_probability": 0.7288930602442287,
+    "decline_probability": 0.6953691825736413,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -46135,8 +46744,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20160345",
@@ -46584,11 +47200,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "징기스",
-    "decline_probability": 0.6887995755200422,
+    "decline_probability": 0.6630186396916979,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -46642,8 +47258,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20160489",
@@ -46652,11 +47275,11 @@
     "industry": "스포츠 관련",
     "count_source": "region_api",
     "brand_name": "골프존파크(GOLFZON PARK)",
-    "decline_probability": 0.44431585583985994,
+    "decline_probability": 0.4832082819301959,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2017,
@@ -46705,8 +47328,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 8,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20160491",
@@ -47111,11 +47741,11 @@
     "industry": "기타 서비스",
     "count_source": "region_api",
     "brand_name": "만화카페 벌툰",
-    "decline_probability": 0.6641456375314594,
+    "decline_probability": 0.6397326686067312,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -47169,8 +47799,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20160571",
@@ -47567,11 +48204,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "메가엠지씨커피(MEGA MGC COFFEE)",
-    "decline_probability": 0.18310071594359847,
+    "decline_probability": 0.2892279716273649,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -47625,8 +48262,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20160656",
@@ -48514,11 +49158,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "두찜",
-    "decline_probability": 0.43279188118933626,
+    "decline_probability": 0.4565112317190949,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -48572,8 +49216,15 @@
     "national_ctrtCncltnCnt": 4,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20160864",
@@ -48688,11 +49339,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "마왕족발",
-    "decline_probability": 0.7461967675014313,
+    "decline_probability": 0.7983804178533085,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -48746,8 +49397,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 7,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20160907",
@@ -49754,11 +50412,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "어린화가들",
-    "decline_probability": 0.66398533394503,
+    "decline_probability": 0.6584452711596908,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -49812,8 +50470,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20161129",
@@ -50583,11 +51248,11 @@
     "industry": "주점",
     "count_source": "region_api",
     "brand_name": "역전할머니맥주1982",
-    "decline_probability": 0.3593746899660006,
+    "decline_probability": 0.4169774542831789,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -50641,8 +51306,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20161231",
@@ -50724,11 +51396,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "비비큐(BBQ)",
-    "decline_probability": 0.18906610208550972,
+    "decline_probability": 0.3406321019297245,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2017,
@@ -50777,8 +51449,15 @@
     "national_ctrtCncltnCnt": 71,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 101,
+      "linked_opened_buildings": 3,
+      "linked_closed_buildings": 7,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20161244",
@@ -51468,11 +52147,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "치킨플러스",
-    "decline_probability": 0.7186964359508431,
+    "decline_probability": 0.5081668761627739,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -51526,8 +52205,15 @@
     "national_ctrtCncltnCnt": 57,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 8,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20170132",
@@ -51672,11 +52358,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "제주은희네해장국",
-    "decline_probability": 0.4771669422772976,
+    "decline_probability": 0.5110611018717865,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -51730,8 +52416,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 3,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20170170",
@@ -52132,11 +52825,11 @@
     "industry": "교육 (교과)",
     "count_source": "region_api",
     "brand_name": "공터영어",
-    "decline_probability": 0.41891636180371283,
+    "decline_probability": 0.4561929291588649,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2016,
@@ -52190,8 +52883,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20170316",
@@ -52846,11 +53546,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "후라이드 참 잘하는집",
-    "decline_probability": 0.6374265082351691,
+    "decline_probability": 0.3758079813100156,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2017,
@@ -52899,8 +53599,15 @@
     "national_ctrtCncltnCnt": 28,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 12,
+      "linked_opened_buildings": 2,
+      "linked_closed_buildings": 2,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20170451",
@@ -55563,11 +56270,11 @@
     "industry": "PC방",
     "count_source": "region_api",
     "brand_name": "아이센스블랙라벨PC존",
-    "decline_probability": 0.4771669422772976,
+    "decline_probability": 0.4907026086278189,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2017,
@@ -55616,8 +56323,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20171100",
@@ -56707,11 +57421,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "YBM리더스",
-    "decline_probability": 0.3801615541447325,
+    "decline_probability": 0.4318624318565442,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2017,
@@ -56760,8 +57474,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20171317",
@@ -57012,11 +57733,11 @@
     "industry": "교육 (교과)",
     "count_source": "region_api",
     "brand_name": "필아트미술",
-    "decline_probability": 0.43900079843276996,
+    "decline_probability": 0.4619030788710416,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2017,
@@ -57065,8 +57786,15 @@
     "national_ctrtCncltnCnt": 6,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20171372",
@@ -57557,11 +58285,11 @@
     "industry": "제과제빵",
     "count_source": "region_api",
     "brand_name": "송사부고로케",
-    "decline_probability": 0.45263335364078094,
+    "decline_probability": 0.274089978867862,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2017,
@@ -57610,8 +58338,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 4,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20171441",
@@ -60903,11 +61638,11 @@
     "industry": "기타도소매",
     "count_source": "region_api",
     "brand_name": "픽미픽미아이스크림할인점",
-    "decline_probability": 0.639305175366841,
+    "decline_probability": 0.6189056807621562,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2018,
@@ -60951,8 +61686,15 @@
     "national_ctrtCncltnCnt": 145,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20180474",
@@ -62042,11 +62784,11 @@
     "industry": "기타 서비스",
     "count_source": "region_api",
     "brand_name": "어라운드스터디카페(A.round study cafe)",
-    "decline_probability": 0.5258344659811618,
+    "decline_probability": 0.4175527388021465,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2018,
@@ -62090,8 +62832,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20180656",
@@ -64045,11 +64794,11 @@
     "industry": "분식",
     "count_source": "region_api",
     "brand_name": "장호덕손만두",
-    "decline_probability": 0.656261201644008,
+    "decline_probability": 0.498790137207737,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2017,
@@ -64098,8 +64847,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 4,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20181061",
@@ -65225,11 +65981,11 @@
     "industry": "기타도소매",
     "count_source": "region_api",
     "brand_name": "노브랜드",
-    "decline_probability": 0.6134308708517822,
+    "decline_probability": 0.3819166545495187,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2017,
@@ -65278,8 +66034,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 17,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20181324",
@@ -65979,11 +66742,11 @@
     "industry": "기타 서비스",
     "count_source": "region_api",
     "brand_name": "하우스터디스터디카페",
-    "decline_probability": 0.7588600016143151,
+    "decline_probability": 0.746188348361571,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -66022,8 +66785,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20190124",
@@ -67998,11 +68768,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "따띠삼겹",
-    "decline_probability": 0.41788928685524224,
+    "decline_probability": 0.5170094513188991,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -68041,8 +68811,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20190526",
@@ -68051,11 +68828,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "샤브마니아",
-    "decline_probability": 0.3931812349868357,
+    "decline_probability": 0.4663668623765728,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2018,
@@ -68099,8 +68876,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 3,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20190543",
@@ -68886,11 +69670,11 @@
     "industry": "기타 서비스",
     "count_source": "region_api",
     "brand_name": "작심스터디카페",
-    "decline_probability": 0.5151165183558833,
+    "decline_probability": 0.5221530310805709,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2018,
@@ -68934,8 +69718,15 @@
     "national_ctrtCncltnCnt": 17,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20190659",
@@ -69252,11 +70043,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "귀한족발",
-    "decline_probability": 0.5834258956200037,
+    "decline_probability": 0.6068280428882794,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -69295,8 +70086,15 @@
     "national_ctrtCncltnCnt": 12,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20190748",
@@ -70918,11 +71716,11 @@
     "industry": "중식",
     "count_source": "region_api",
     "brand_name": "탕화쿵푸마라탕",
-    "decline_probability": 0.31953525855595083,
+    "decline_probability": 0.1689778912252058,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -70961,8 +71759,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 11,
+      "linked_opened_buildings": 2,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20191073",
@@ -71625,11 +72430,11 @@
     "industry": "패스트푸드",
     "count_source": "region_api",
     "brand_name": "프랭크버거",
-    "decline_probability": 0.4303298646131733,
+    "decline_probability": 0.1808043334899952,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -71668,8 +72473,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 24,
+      "linked_opened_buildings": 3,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20191199",
@@ -72198,11 +73010,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "패럴랙스학원",
-    "decline_probability": 0.3801615541447325,
+    "decline_probability": 0.4318624318565442,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -72241,8 +73053,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20191316",
@@ -72314,11 +73133,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "고래영어",
-    "decline_probability": 0.33453846818558963,
+    "decline_probability": 0.3780320546816663,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -72357,8 +73176,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20191342",
@@ -73995,11 +74821,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "청년치킨",
-    "decline_probability": 0.41646447707045603,
+    "decline_probability": 0.7084646560224755,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -74033,8 +74859,15 @@
     "national_ctrtCncltnCnt": 2,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 3,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20200352",
@@ -74467,11 +75300,11 @@
     "industry": "기타도소매",
     "count_source": "region_api",
     "brand_name": "까까주까",
-    "decline_probability": 0.39659931054771563,
+    "decline_probability": 0.4233402050861434,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -74510,8 +75343,15 @@
     "national_ctrtCncltnCnt": 5,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20200441",
@@ -75229,11 +76069,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "천씨씨커피",
-    "decline_probability": 0.41434269947826613,
+    "decline_probability": 0.3659112972277259,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -75272,8 +76112,15 @@
     "national_ctrtCncltnCnt": 6,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 5,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20200649",
@@ -76016,11 +76863,11 @@
     "industry": "유아관련",
     "count_source": "region_api",
     "brand_name": "노래하는크레용",
-    "decline_probability": 0.7298765995224118,
+    "decline_probability": 0.6852441437072324,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -76059,8 +76906,15 @@
     "national_ctrtCncltnCnt": 16,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20200775",
@@ -76796,11 +77650,11 @@
     "industry": "서양식",
     "count_source": "region_api",
     "brand_name": "파스타입니다",
-    "decline_probability": 0.7150670384587482,
+    "decline_probability": 0.4704056031917231,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -76839,8 +77693,15 @@
     "national_ctrtCncltnCnt": 9,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 11,
+      "linked_opened_buildings": 2,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20200904",
@@ -78136,11 +78997,11 @@
     "industry": "운송",
     "count_source": "region_api",
     "brand_name": "Uber Taxi (우버택시)",
-    "decline_probability": 0.44165714722089816,
+    "decline_probability": 0.4990434236434288,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -78174,8 +79035,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20201227",
@@ -78411,11 +79279,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "밥스토랑",
-    "decline_probability": 0.3202146364181684,
+    "decline_probability": 0.2392076268455134,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -78454,8 +79322,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20201295",
@@ -78464,11 +79339,11 @@
     "industry": "교육 (교과)",
     "count_source": "region_api",
     "brand_name": "기파랑문해원",
-    "decline_probability": 0.34407741908842565,
+    "decline_probability": 0.3830443176991994,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -78502,8 +79377,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20201327",
@@ -79446,11 +80328,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "청년찌개",
-    "decline_probability": 0.6808100175703732,
+    "decline_probability": 0.7428019326600881,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -79489,8 +80371,15 @@
     "national_ctrtCncltnCnt": 6,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 4,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20201541",
@@ -79537,11 +80426,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "코봉이 해물찜",
-    "decline_probability": 0.6980399522141796,
+    "decline_probability": 0.6708540307055123,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -79580,8 +80469,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 7,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20201592",
@@ -80034,11 +80930,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "아구듬뿍&알곤마니",
-    "decline_probability": 0.41788928685524224,
+    "decline_probability": 0.5170094513188991,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -80072,8 +80968,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 2,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20201751",
@@ -81246,11 +82149,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "제육대가",
-    "decline_probability": 0.7419361436274374,
+    "decline_probability": 0.6738236291790898,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -81289,8 +82192,15 @@
     "national_ctrtCncltnCnt": 17,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 11,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20210213",
@@ -82155,11 +83065,11 @@
     "industry": "기타 서비스",
     "count_source": "region_api",
     "brand_name": "시작스터디카페",
-    "decline_probability": 0.4771669422772976,
+    "decline_probability": 0.4907026086278189,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2019,
@@ -82198,8 +83108,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20210452",
@@ -82208,11 +83125,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "다짐(DAZIM)",
-    "decline_probability": 0.4069544052041253,
+    "decline_probability": 0.4385918765564112,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -82246,8 +83163,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20210460",
@@ -83205,11 +84129,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "난바우동",
-    "decline_probability": 0.7239973068250636,
+    "decline_probability": 0.7672919896402766,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -83243,8 +84167,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20210738",
@@ -83306,11 +84237,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "혁계치킨",
-    "decline_probability": 0.6537505458937891,
+    "decline_probability": 0.6437878521459862,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -83344,8 +84275,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 2,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20210788",
@@ -83483,11 +84421,11 @@
     "industry": "아이스크림/빙수 ",
     "count_source": "region_api",
     "brand_name": "요거트아이스크림의 정석",
-    "decline_probability": 0.4995482242613755,
+    "decline_probability": 0.4631755108785048,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -83516,8 +84454,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 9,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20210827",
@@ -84350,11 +85295,11 @@
     "industry": "주점",
     "count_source": "region_api",
     "brand_name": "용용선생",
-    "decline_probability": 0.5343851600408442,
+    "decline_probability": 0.5476899282275469,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -84388,8 +85333,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 3,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20211037",
@@ -85153,11 +86105,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "순수덮밥",
-    "decline_probability": 0.7363495660614292,
+    "decline_probability": 0.7288937076363468,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -85191,8 +86143,15 @@
     "national_ctrtCncltnCnt": 7,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20211343",
@@ -85201,11 +86160,11 @@
     "industry": "기타도소매",
     "count_source": "region_api",
     "brand_name": "아이스앤 스낵창고",
-    "decline_probability": 0.47289167455485936,
+    "decline_probability": 0.4841787431755047,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -85239,8 +86198,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20211349",
@@ -85249,11 +86215,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "길섶한우",
-    "decline_probability": 0.43591680026847085,
+    "decline_probability": 0.4510099922399154,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -85287,8 +86253,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 3,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20211359",
@@ -85297,11 +86270,11 @@
     "industry": "기타 교육",
     "count_source": "region_api",
     "brand_name": "넥스트 스파르타",
-    "decline_probability": 0.6592398052338548,
+    "decline_probability": 0.6464593597909786,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -85335,8 +86308,15 @@
     "national_ctrtCncltnCnt": 1,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20211367",
@@ -86042,11 +87022,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "용공장",
-    "decline_probability": 0.7259676704042939,
+    "decline_probability": 0.7391117018746383,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -86080,8 +87060,15 @@
     "national_ctrtCncltnCnt": 3,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20211525",
@@ -86330,11 +87317,11 @@
     "industry": "주점",
     "count_source": "region_api",
     "brand_name": "노가리타운",
-    "decline_probability": 0.692238754223165,
+    "decline_probability": 0.7367263454210743,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -86368,8 +87355,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 2,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20211621",
@@ -86719,11 +87713,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "순살만공격",
-    "decline_probability": 0.7703654929495855,
+    "decline_probability": 0.8464603570957576,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -86757,8 +87751,15 @@
     "national_ctrtCncltnCnt": 5,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 2,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 2,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20211709",
@@ -87290,11 +88291,11 @@
     "industry": "패스트푸드",
     "count_source": "region_api",
     "brand_name": "PC토랑",
-    "decline_probability": 0.5892388586287739,
+    "decline_probability": 0.596687310544666,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -87328,8 +88329,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20211897",
@@ -87757,11 +88765,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "제주옥탑",
-    "decline_probability": 0.48945906422528423,
+    "decline_probability": 0.5364721056611393,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -87795,8 +88803,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20212045",
@@ -87853,11 +88868,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "니가아는식당",
-    "decline_probability": 0.582714234027954,
+    "decline_probability": 0.7131762171147149,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -87891,8 +88906,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 2,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20212074",
@@ -88593,11 +89615,11 @@
     "industry": "기타도소매",
     "count_source": "region_api",
     "brand_name": "빵꾸똥꾸 문구야!",
-    "decline_probability": 0.5410649079725833,
+    "decline_probability": 0.4662186139900794,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -88631,8 +89653,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20212314",
@@ -88694,11 +89723,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "대박삼겹김치찜&초대박등갈비김치찜",
-    "decline_probability": 0.6833178120832151,
+    "decline_probability": 0.6824054729145291,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -88727,8 +89756,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20212331",
@@ -89616,11 +90652,11 @@
     "industry": "분식",
     "count_source": "region_api",
     "brand_name": "기떡찜",
-    "decline_probability": 0.43438608697471076,
+    "decline_probability": 0.441577355967004,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2022,
@@ -89644,8 +90680,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20212734",
@@ -90427,11 +91470,11 @@
     "industry": "안경",
     "count_source": "region_api",
     "brand_name": "위드렌즈(WID LENS)",
-    "decline_probability": 0.3582623873627626,
+    "decline_probability": 0.4076341820959944,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -90465,8 +91508,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20213360",
@@ -90518,11 +91568,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "백억커피",
-    "decline_probability": 0.2795892269710228,
+    "decline_probability": 0.1098298806653545,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -90556,8 +91606,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 7,
+      "linked_opened_buildings": 2,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20213524",
@@ -91995,11 +93052,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "순수타코",
-    "decline_probability": 0.6954554770288165,
+    "decline_probability": 0.6994560914779858,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -92028,8 +93085,15 @@
     "national_ctrtCncltnCnt": 1,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20214653",
@@ -92702,11 +93766,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "순살몬스터",
-    "decline_probability": 0.7205091859067343,
+    "decline_probability": 0.7463300318092884,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -92735,8 +93799,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20215034",
@@ -92745,11 +93816,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "칠봉통닭",
-    "decline_probability": 0.5373010440668426,
+    "decline_probability": 0.4789499324014378,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -92778,8 +93849,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20215173",
@@ -93369,11 +94447,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "도쿠도쿠",
-    "decline_probability": 0.6615250152256389,
+    "decline_probability": 0.7449716377033035,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2020,
@@ -93407,8 +94485,15 @@
     "national_ctrtCncltnCnt": 2,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 3,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20215857",
@@ -94099,11 +95184,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "더드림커피",
-    "decline_probability": 0.5226376961944668,
+    "decline_probability": 0.5225613057101135,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -94132,8 +95217,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 9,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20220294",
@@ -94519,11 +95611,11 @@
     "industry": "치킨",
     "count_source": "region_api",
     "brand_name": "쌍둥이숯불두마리치킨",
-    "decline_probability": 0.4413181504872192,
+    "decline_probability": 0.487834757968199,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -94552,8 +95644,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 3,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20220409",
@@ -94959,11 +96058,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "팔조령김치찜",
-    "decline_probability": 0.3526517683857527,
+    "decline_probability": 0.5811782496327332,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -94992,8 +96091,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 6,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20220549",
@@ -95078,11 +96184,11 @@
     "industry": "아이스크림/빙수 ",
     "count_source": "region_api",
     "brand_name": "카페요아정",
-    "decline_probability": 0.42254738735058706,
+    "decline_probability": 0.2579060756076483,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2023,
@@ -95101,8 +96207,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 12,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20220606",
@@ -95182,11 +96295,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "잉글리시브레인스튜디오",
-    "decline_probability": 0.3444310142921338,
+    "decline_probability": 0.3904305565769692,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2022,
@@ -95210,8 +96323,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20220661",
@@ -95316,11 +96436,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "배고픈덮밥이",
-    "decline_probability": 0.7157559930739145,
+    "decline_probability": 0.6415463404185532,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -95349,8 +96469,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 1,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20220713",
@@ -95612,11 +96739,11 @@
     "industry": "피자",
     "count_source": "region_api",
     "brand_name": "노모어피자",
-    "decline_probability": 0.4411529197382799,
+    "decline_probability": 0.1997624932920372,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -95645,8 +96772,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 7,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20220857",
@@ -95784,11 +96918,11 @@
     "industry": "오락",
     "count_source": "region_api",
     "brand_name": "판타스틱 코인 노래연습장",
-    "decline_probability": 0.4158742903804259,
+    "decline_probability": 0.4279013123776944,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2022,
@@ -95812,8 +96946,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 3,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20220930",
@@ -96113,11 +97254,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "김선생불닭발",
-    "decline_probability": 0.47862234081017285,
+    "decline_probability": 0.498810550912959,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -96146,8 +97287,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20221036",
@@ -97460,11 +98608,11 @@
     "industry": "기타도소매",
     "count_source": "region_api",
     "brand_name": "아이스헌터",
-    "decline_probability": 0.47361916529550313,
+    "decline_probability": 0.4926506175636646,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2022,
@@ -97488,8 +98636,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20230080",
@@ -97660,11 +98815,11 @@
     "industry": "커피",
     "count_source": "region_api",
     "brand_name": "달다구니(DALDAGUNI)",
-    "decline_probability": 0.5436092946139445,
+    "decline_probability": 0.6037100846641186,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2021,
@@ -97693,8 +98848,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20230178",
@@ -99204,11 +100366,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "마포냉면 숯불구이",
-    "decline_probability": 0.4484860803367857,
+    "decline_probability": 0.4720694716670287,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2023,
@@ -99227,8 +100389,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20230899",
@@ -100313,11 +101482,11 @@
     "industry": "기타 외국식",
     "count_source": "region_api",
     "brand_name": "더 포(THE PHO)",
-    "decline_probability": 0.49618698795070715,
+    "decline_probability": 0.5074036394065062,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2023,
@@ -100336,8 +101505,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20231558",
@@ -100384,11 +101560,11 @@
     "industry": "패스트푸드",
     "count_source": "region_api",
     "brand_name": "맥도날드",
-    "decline_probability": 0.5350518910427895,
+    "decline_probability": 0.5809719779912004,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2022,
@@ -100412,8 +101588,15 @@
     "national_ctrtCncltnCnt": null,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20231680",
@@ -100645,11 +101828,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "하양끝집",
-    "decline_probability": 0.3911199379444764,
+    "decline_probability": 0.7198590586832837,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2022,
@@ -100673,8 +101856,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 1,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 2,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20231775",
@@ -101453,11 +102643,11 @@
     "industry": "교육 (외국어)",
     "count_source": "region_api",
     "brand_name": "파머스영어",
-    "decline_probability": 0.5476395327271778,
+    "decline_probability": 0.5690584762617962,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2023,
@@ -101476,8 +102666,15 @@
     "national_ctrtCncltnCnt": 10,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20240365",
@@ -101486,11 +102683,11 @@
     "industry": "기타 외식",
     "count_source": "region_api",
     "brand_name": "짬뽕도감",
-    "decline_probability": 0.40461237346695567,
+    "decline_probability": 0.4758978069362852,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2023,
@@ -101509,8 +102706,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20240371",
@@ -102003,11 +103207,11 @@
     "industry": "한식",
     "count_source": "region_api",
     "brand_name": "김선돼지국밥",
-    "decline_probability": 0.4101809072150595,
+    "decline_probability": 0.1857253620447276,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2023,
@@ -102026,8 +103230,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 8,
+      "linked_opened_buildings": 1,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20240799",
@@ -102373,11 +103584,11 @@
     "industry": "자동차 관련",
     "count_source": "region_api",
     "brand_name": "내차에 반하다",
-    "decline_probability": 0.3791310052647138,
+    "decline_probability": 0.3929020958406301,
     "status": "two_year_projection",
     "target_accounting_year": 2026,
     "generated_date": "2026-11-21",
-    "message": "2025년 수치가 미확인이라 2024년 말 자료로 2026년 말의 감소 여부를 예측하는 별도 2년 전망임.",
+    "message": "2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 2026년 말 감소 전망. 최신 공식 가맹점 수를 복원한 값이 아님.",
     "count_history": [
       {
         "year": 2023,
@@ -102396,8 +103607,15 @@
     "national_ctrtCncltnCnt": 0,
     "forecast_horizon_years": 2,
     "baseline_accounting_year": 2024,
-    "model_kind": "two_year_hgb",
-    "national_report_year": 2024
+    "model_kind": "two_year_hgb_permit_support",
+    "national_report_year": 2024,
+    "permit_support": {
+      "year": 2025,
+      "linked_active_buildings": 0,
+      "linked_opened_buildings": 0,
+      "linked_closed_buildings": 0,
+      "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+    }
   },
   {
     "brand": "BRD_20241101",

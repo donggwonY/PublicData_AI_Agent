@@ -62,6 +62,7 @@
           "count_source": "region_api"
         }
       ],
+      "permit_support": null,
       "national_report_year": null,
       "national_scope": "전국",
       "national": {
@@ -150,6 +151,7 @@
           "count_source": "region_api"
         }
       ],
+      "permit_support": null,
       "national_report_year": 2025,
       "national_scope": "전국",
       "national": {
@@ -240,6 +242,7 @@
           "count_source": "region_api"
         }
       ],
+      "permit_support": null,
       "national_report_year": null,
       "national_scope": "전국",
       "national": {
@@ -323,6 +326,7 @@
           "count_source": "region_api"
         }
       ],
+      "permit_support": null,
       "national_report_year": null,
       "national_scope": "전국",
       "national": {
@@ -406,6 +410,13 @@
           "count_source": "region_api"
         }
       ],
+      "permit_support": {
+        "year": 2025,
+        "linked_active_buildings": 80,
+        "linked_opened_buildings": 7,
+        "linked_closed_buildings": 9,
+        "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+      },
       "national_report_year": 2024,
       "national_scope": "전국",
       "national": {
@@ -431,11 +442,11 @@
       "target_accounting_year": 2026,
       "baseline_accounting_year": 2024,
       "horizon_years": 2,
-      "model_kind": "two_year_hgb",
-      "decline_probability": 0.42520327210618003,
+      "model_kind": "two_year_hgb_permit_support",
+      "decline_probability": 0.1854741156177409,
       "period_text": "2024년 말 대비2026년 말 감소 여부"
     },
-    "message": "2024년 말 대구 가맹점은 105개로 확인돼요. 2025년 말 수치는 아직 확인되지 않아, 2024년 말 자료에서 2년 뒤를 예측하는 별도 모델을 사용했어요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 43%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "message": "2024년 말 대구 가맹점은 105개로 확인돼요. 2025년 공식 가맹점 수는 확인되지 않아, 2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 별도 2년 모델이에요. 인허가 활동은 공식 가맹점 수를 대신하는 값이 아니에요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 19%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
     "dataset": "d06_revised_missing_counts_20261121"
   },
   {
@@ -496,6 +507,13 @@
           "count_source": "region_api"
         }
       ],
+      "permit_support": {
+        "year": 2025,
+        "linked_active_buildings": 71,
+        "linked_opened_buildings": 3,
+        "linked_closed_buildings": 1,
+        "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+      },
       "national_report_year": 2024,
       "national_scope": "전국",
       "national": {
@@ -521,11 +539,11 @@
       "target_accounting_year": 2026,
       "baseline_accounting_year": 2024,
       "horizon_years": 2,
-      "model_kind": "two_year_hgb",
-      "decline_probability": 0.22645723997827805,
+      "model_kind": "two_year_hgb_permit_support",
+      "decline_probability": 0.124708507117745,
       "period_text": "2024년 말 대비2026년 말 감소 여부"
     },
-    "message": "2024년 말 대구 가맹점은 70개로 확인돼요. 2025년 말 수치는 아직 확인되지 않아, 2024년 말 자료에서 2년 뒤를 예측하는 별도 모델을 사용했어요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 23%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "message": "2024년 말 대구 가맹점은 70개로 확인돼요. 2025년 공식 가맹점 수는 확인되지 않아, 2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 별도 2년 모델이에요. 인허가 활동은 공식 가맹점 수를 대신하는 값이 아니에요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 12%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
     "dataset": "d06_revised_missing_counts_20261121"
   },
   {
@@ -586,6 +604,13 @@
           "count_source": "region_api"
         }
       ],
+      "permit_support": {
+        "year": 2025,
+        "linked_active_buildings": 763,
+        "linked_opened_buildings": 75,
+        "linked_closed_buildings": 85,
+        "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+      },
       "national_report_year": 2024,
       "national_scope": "전국",
       "national": {
@@ -611,11 +636,11 @@
       "target_accounting_year": 2026,
       "baseline_accounting_year": 2024,
       "horizon_years": 2,
-      "model_kind": "two_year_hgb",
-      "decline_probability": 0.3821724412316316,
+      "model_kind": "two_year_hgb_permit_support",
+      "decline_probability": 0.1601635460668277,
       "period_text": "2024년 말 대비2026년 말 감소 여부"
     },
-    "message": "2024년 말 대구 가맹점은 630개로 확인돼요. 2025년 말 수치는 아직 확인되지 않아, 2024년 말 자료에서 2년 뒤를 예측하는 별도 모델을 사용했어요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 38%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "message": "2024년 말 대구 가맹점은 630개로 확인돼요. 2025년 공식 가맹점 수는 확인되지 않아, 2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 별도 2년 모델이에요. 인허가 활동은 공식 가맹점 수를 대신하는 값이 아니에요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 16%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
     "dataset": "d06_revised_missing_counts_20261121"
   },
   {
@@ -671,6 +696,13 @@
           "count_source": "region_api"
         }
       ],
+      "permit_support": {
+        "year": 2025,
+        "linked_active_buildings": 101,
+        "linked_opened_buildings": 3,
+        "linked_closed_buildings": 7,
+        "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+      },
       "national_report_year": 2024,
       "national_scope": "전국",
       "national": {
@@ -696,11 +728,11 @@
       "target_accounting_year": 2026,
       "baseline_accounting_year": 2024,
       "horizon_years": 2,
-      "model_kind": "two_year_hgb",
-      "decline_probability": 0.18906610208550972,
+      "model_kind": "two_year_hgb_permit_support",
+      "decline_probability": 0.3406321019297245,
       "period_text": "2024년 말 대비2026년 말 감소 여부"
     },
-    "message": "2024년 말 대구 가맹점은 117개로 확인돼요. 2025년 말 수치는 아직 확인되지 않아, 2024년 말 자료에서 2년 뒤를 예측하는 별도 모델을 사용했어요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 19%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "message": "2024년 말 대구 가맹점은 117개로 확인돼요. 2025년 공식 가맹점 수는 확인되지 않아, 2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 별도 2년 모델이에요. 인허가 활동은 공식 가맹점 수를 대신하는 값이 아니에요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 34%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
     "dataset": "d06_revised_missing_counts_20261121"
   },
   {
@@ -761,6 +793,13 @@
           "count_source": "region_api"
         }
       ],
+      "permit_support": {
+        "year": 2025,
+        "linked_active_buildings": 530,
+        "linked_opened_buildings": 24,
+        "linked_closed_buildings": 81,
+        "meaning": "인허가에서 연결된 건물 기준 활동 지표이며 공식 가맹점 수가 아님"
+      },
       "national_report_year": 2024,
       "national_scope": "전국",
       "national": {
@@ -786,11 +825,11 @@
       "target_accounting_year": 2026,
       "baseline_accounting_year": 2024,
       "horizon_years": 2,
-      "model_kind": "two_year_hgb",
-      "decline_probability": 0.5677582653713095,
+      "model_kind": "two_year_hgb_permit_support",
+      "decline_probability": 0.3125710716560672,
       "period_text": "2024년 말 대비2026년 말 감소 여부"
     },
-    "message": "2024년 말 대구 가맹점은 553개로 확인돼요. 2025년 말 수치는 아직 확인되지 않아, 2024년 말 자료에서 2년 뒤를 예측하는 별도 모델을 사용했어요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 57%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
+    "message": "2024년 말 대구 가맹점은 553개로 확인돼요. 2025년 공식 가맹점 수는 확인되지 않아, 2024년 공식 수치와 2025년 인허가 활동을 함께 사용한 별도 2년 모델이에요. 인허가 활동은 공식 가맹점 수를 대신하는 값이 아니에요. 이 자료를 바탕으로 계산한 2026년 말 감소 가능성은 약 31%예요. 최신 매장 현황과 계약 조건도 함께 살펴보면 좋겠어요.",
     "dataset": "d06_revised_missing_counts_20261121"
   }
 ]

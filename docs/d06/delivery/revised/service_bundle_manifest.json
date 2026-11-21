@@ -14,8 +14,10 @@
     "four major brands queried"
   ],
   "files": {
-    "brand_registry.json": "01c2b1b12d86f7a8a407457cdd0b702f3e41ad7bca09810f9fb74f28bb819a1b",
-    "brand_registry.csv": "b696aaf6ca658e5419337d2e97c886a44c77e4d0112beb8bf5f2363cb07b9b39",
-    "lookup_examples.json": "f578a00ab1009071c9caab1205dfb4c3760989e5cff6f3c662ecf1a0ee6b18f4"
-  }
+    "brand_registry.json": "9db993295ed780aeb4fdc6faa9a425aec5ba287dca6e1cb33e43359c74da76ac",
+    "brand_registry.csv": "23727a71c5f80cc87444112e268c076a86cecd321a888f7b2ef87cdce892fb04",
+    "lookup_examples.json": "8176297ca41ecdfdd0c6d5a961bdbc89041b18fa1974ebb0affa567e6e6a6e34"
+  },
+  "two_year_model": "two_year_hgb_permit_support",
+  "validation_reference": "permit_missing_latest/results.json"
 }

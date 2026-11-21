@@ -1,0 +1,63 @@
+{
+  "metrics": [
+    {
+      "year": 2022,
+      "model": "stale_only",
+      "n": 652,
+      "brier": 0.22022084262867578,
+      "auc": 0.6971789846606113
+    },
+    {
+      "year": 2022,
+      "model": "stale_plus_permits",
+      "n": 652,
+      "brier": 0.20555249403378,
+      "auc": 0.741590660686692
+    },
+    {
+      "year": 2023,
+      "model": "stale_only",
+      "n": 682,
+      "brier": 0.22366469889243168,
+      "auc": 0.6847265221878225
+    },
+    {
+      "year": 2023,
+      "model": "stale_plus_permits",
+      "n": 682,
+      "brier": 0.20600390710060046,
+      "auc": 0.7391382868937049
+    },
+    {
+      "year": 2024,
+      "model": "stale_only",
+      "n": 736,
+      "brier": 0.23243093279953056,
+      "auc": 0.6613934915659052
+    },
+    {
+      "year": 2024,
+      "model": "stale_plus_permits",
+      "n": 736,
+      "brier": 0.21030081442932175,
+      "auc": 0.7353672189879086
+    },
+    {
+      "year": 2025,
+      "model": "stale_only",
+      "n": 644,
+      "brier": 0.2299359650261884,
+      "auc": 0.6575784357048167
+    },
+    {
+      "year": 2025,
+      "model": "stale_plus_permits",
+      "n": 644,
+      "brier": 0.20769039053757613,
+      "auc": 0.729145185839839
+    }
+  ],
+  "current_brands": 174,
+  "current_permit_features_available": 174,
+  "service_registry_modified": false
+}
