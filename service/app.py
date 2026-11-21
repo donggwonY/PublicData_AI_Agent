@@ -28,6 +28,7 @@ import streamlit as st
 import config as C
 from agent import API_KEY_ENV, create_agent
 from core import tools as T
+import ui_planner as P
 from ui_area_outlook import render_population_outlook, render_similar_areas
 from ui_permit_trends import industry_choices, render_permit_trends
 from ui_vacancy import (CANDIDATE_COLS, TIMELINE_COLS, korean_table, render_next_tenant, render_unit_summary, render_vacancy_outlook,
@@ -145,9 +146,10 @@ def get_agent(api_key: str):
 # ─────────────────────────── 사이드바 ───────────────────────────
 # 사이드바 개편(2026-11-15): 기준일·바로 가기·최근 본 자리·AI 상담 상태·용어 도움말을 접지 않고 보여 준다.
 # 탭은 key 로 상태를 추적해 사이드바 버튼(바로 가기·최근 본 자리·예시 질문)이 해당 탭으로 옮겨 준다.
-TAB_DASH, TAB_UNIT, TAB_CHAT = "📊 상권 둘러보기", "🔎 자리 이력", "💬 AI 상담"
+TAB_DASH, TAB_UNIT, TAB_PLAN, TAB_CHAT = "📊 상권 둘러보기", "🔎 자리 이력", "⭐ 내 후보지", "💬 AI 상담"
 NAV = [(TAB_DASH, ":material/storefront:", "동네·업종 비교"),
        (TAB_UNIT, ":material/history:", "한 자리의 이력"),
+       (TAB_PLAN, ":material/star:", "후보지 비교·손익 계산"),
        (TAB_CHAT, ":material/forum:", "AI에게 물어보기")]
 GLOSSARY = [
     ("인허가 기록", "지자체 영업 인허가 자료의 한 건. 한 점포가 업종을 바꾸면 기록이 여러 건일 수 있어요."),
@@ -260,6 +262,21 @@ with st.sidebar:
         st.button(desc, icon=icon, width="stretch", key=f"nav-{tab}",
                   type="primary" if tab == cur else "secondary", on_click=go_tab, args=(tab,))
 
+    st.markdown("**내 후보지**")
+    P.sync_browser_store()          # 브라우저에 저장해 둔 후보지 읽기·쓰기(화면에는 안 보임)
+    _missing = st.session_state.pop("saved_missing", None)
+    if _missing:
+        st.caption("자료 갱신으로 찾지 못한 후보지: " + ", ".join(m.replace("대구광역시 ", "") for m in _missing)
+                   + " — 자리 이력에서 다시 찾아 저장해 주세요.")
+    if P.saved():
+        for i, r in enumerate(P.saved()):
+            st.button(r["label"].replace("대구광역시 ", ""), icon=":material/star:", key=f"saved-{i}", type="tertiary",
+                      on_click=go_tab, args=(TAB_UNIT,), kwargs={"unit_addr": r["unit_id"], "unit_whole": r["whole"]})
+        st.button("후보지 비교·손익 계산", icon=":material/compare_arrows:", key="saved-compare", width="stretch",
+                  on_click=go_tab, args=(TAB_PLAN,))
+    else:
+        st.caption("자리 이력에서 ‘내 후보지에 저장’을 누르면 여기 모여요.")
+
     st.markdown("**최근 본 자리**")
     recent_slot = st.empty()
     render_recent_units()
@@ -287,7 +304,8 @@ with st.sidebar:
     with st.expander("용어 도움말", icon=":material/help:"):
         st.markdown("\n".join(f"- **{k}**: {v}" for k, v in GLOSSARY))
 
-tab_dash, tab_unit, tab_chat = st.tabs([TAB_DASH, TAB_UNIT, TAB_CHAT], key="main_tab", on_change="rerun")
+tab_dash, tab_unit, tab_plan, tab_chat = st.tabs([TAB_DASH, TAB_UNIT, TAB_PLAN, TAB_CHAT], key="main_tab",
+                                                 on_change="rerun")
 
 
 # ─────────────────────────── 1. AI 상담 ───────────────────────────
@@ -506,7 +524,7 @@ with tab_dash:
                 poi_bakery = int(S.poi["cat_s"].fillna("").str.contains("제과|베이커리|빵").sum())
                 st.markdown(safe_markdown(
                     f"- **출처별 수록 범위**: 인허가 자료의 전체 업종 영업 중 기록은 {rec['active']:,}건, "
-                    f"소상공인 상가정보 2026-06의 음식·제과·베이커리 점포는 {poi_food + poi_bakery:,}개입니다. "
+                    f"소상공인 상가정보 {C.POI_MONTH}의 음식·제과·베이커리 점포는 {poi_food + poi_bakery:,}개입니다. "
                     "업종 범위·집계 단위·수집 시점이 달라 두 수치의 일치 여부로 정확도를 판단할 수 없습니다.\n"
                     f"- **누적과 현재**: 누적 인허가 {rec['total']:,}건에는 과거 폐업 신고 {rec['closed']:,}건도 포함됩니다. "
                     "개업 시기별 관찰기간이 다르므로 단순 폐업 비율을 같은 조건의 위험도로 비교하지 않습니다."))
@@ -543,6 +561,7 @@ with tab_unit:
             remember_unit(u["address"] + (" (건물 전체)" if whole else ""), u["unit_id"], whole)
             st.markdown(f"### {u['address']}")
             st.caption(f"자리 ID: {u['unit_id']} · {u['status']}")
+            P.render_save_button(u["unit_id"], u["address"] + (" (건물 전체)" if whole else ""), whole)
             if h.get("floor_note"):
                 st.info(h["floor_note"] + " (아래 '다른 후보 자리' 참고)")
             if not u["is_single_unit"]:
@@ -551,6 +570,7 @@ with tab_unit:
             render_unit_summary(h, whole_building=whole)
             render_vacancy_outlook(h.get("vacancy_outlook"))
             render_next_tenant(h.get("next_tenant_outlook"))
+            P.render_nearby(h, key=f"{u['unit_id']}-{whole}")
             st.markdown("#### 이 자리의 과거")
             s = h["summary"]
             c = st.columns(4)
@@ -586,3 +606,17 @@ with tab_unit:
                 st.markdown("**다른 후보 자리**")
                 st.dataframe(korean_table(h["other_candidates"], CANDIDATE_COLS), hide_index=True)
 
+
+
+# ─────────────────────────── 4. 내 후보지 ───────────────────────────
+# 2026-11-21 추가: 저장한 후보지 비교 · 손익분기 계산기 (후보지는 브라우저에 저장)
+def _open_saved(r: dict) -> None:
+    go_tab(TAB_UNIT, unit_addr=r["unit_id"], unit_whole=r["whole"])
+
+
+with tab_plan:
+    st.title("내 후보지 비교와 손익 계산")
+    st.caption("저장한 자리를 나란히 비교하고, 월세·비용을 넣어 본전이 되는 판매량을 계산해 보세요.")
+    P.render_compare(_open_saved)
+    st.divider()
+    P.render_calculator()

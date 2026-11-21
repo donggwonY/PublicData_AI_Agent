@@ -48,7 +48,7 @@ def build_system_prompt() -> str:
     services = ", ".join(k for k in meta["records"] if k != "통합")
     extra = ""
     if s.area_context is not None:
-        extra = (f"\n보조 데이터: 소상공인 상가(상권)정보 {len(s.poi):,}개 점포(전 업종, 2026-06 현재 단면) · "
+        extra = (f"\n보조 데이터: 소상공인 상가(상권)정보 {len(s.poi):,}개 점포(전 업종, {C.POI_MONTH} 현재 단면) · "
                  f"행정동 {len(s.area_context)}곳의 주민등록 인구 · 도시철도 {0 if s.station is None else len(s.station)}개 역 승하차 · "
                  f"주차장·전통시장. 시간 추세는 인허가, 현재 단면·주변 경쟁·인구는 보조 데이터로 답합니다.")
     return f"""당신은 '대구 상권 생애주기 추론 에이전트'입니다. 대구에서 창업을 준비하는 사람에게 그 자리와 동네의 과거를 공공데이터로 확인시켜 줍니다.

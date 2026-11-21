@@ -1098,7 +1098,7 @@ def get_area_profile(gu: str | None = None, dong: str | None = None, top_n: int 
                 "note": "역 좌표가 없어 이름이 같은 역을 참고로 연결한 값 — 실제 인접 여부는 확인 필요",
             }
     return _py(profile | {"basis": _basis(
-        poi="소상공인시장진흥공단 상가(상권)정보 2026-06 현재 영업 점포",
+        poi=f"소상공인시장진흥공단 상가(상권)정보 {C.POI_MONTH} 현재 영업 점포",
         population=f"행정안전부 주민등록 인구 {r.get('pop_ref_month')}",
         definition="상권 유형은 업종 구성비를 대구 평균과 비교해 판정(절대 비중 기준 동시 충족)",
         caveat="상가정보는 현재 단면이라 과거 추이는 인허가 기반 지표(license_based)를 함께 보아야 함")})
@@ -1200,7 +1200,7 @@ def find_nearby(address: str, radius_m: int = C.NEARBY_RADIUS_M, category: str |
             {"name": r["name"], "dist_m": int(r["dist_m"]), "stores": None if pd.isna(r["stores"]) else int(r["stores"])}
             for _, r in mk.nsmallest(3, "dist_m").iterrows()]
     return _py(out | {"basis": _basis(
-        poi="소상공인시장진흥공단 상가(상권)정보 2026-06 현재 영업 점포(전 업종)",
+        poi=f"소상공인시장진흥공단 상가(상권)정보 {C.POI_MONTH} 현재 영업 점포(전 업종)",
         definition=f"중심 좌표에서 직선거리 {radius}m 이내",
         caveat="상가정보와 인허가는 출처가 달라 점포 수가 정확히 일치하지 않음. 직선거리라 실제 도보 거리와 다름")})
 

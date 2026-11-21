@@ -5,6 +5,7 @@
 기준을 바꿔 보고 싶을 때도 한 곳만 고치면 된다.
 아래 상수 대부분은 기획서 5장 '검증 중 발견·해결한 문제'의 결론이다.
 """
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -66,6 +67,10 @@ EXTERNAL_FILES = {
     "subway_hourly": "대구교통공사_역별일별시간별승하차인원현황_20260930.csv",
     "subway_monthly_in": "대구교통공사_월별승차인원_20260930.csv",
 }
+
+# 상가정보 기준월(화면·도구 출처 표시용). 파일 이름의 YYYYMM 에서 읽어 분기 갱신 때 따로 고치지 않게 한다.
+_poi_ym = re.search(r"_(\d{4})(\d{2})\.csv$", EXTERNAL_FILES["poi"])
+POI_MONTH = f"{_poi_ym[1]}-{_poi_ym[2]}" if _poi_ym else "기준월 미상"
 
 # 상가정보는 인허가와 업종 분류 체계가 다르다(인허가 '커피숍' ↔ 상가정보 '비알코올 음료점').
 # 반경 내 경쟁 점포를 셀 때 쓰는 상가정보 쪽 검색어.
