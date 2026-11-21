@@ -1,0 +1,103 @@
+{
+  "checked_date": "2026-11-21",
+  "scope": "Stored official 2026 brand-list compared with previously live-rechecked region API",
+  "brand_list_matches": [
+    {
+      "jngBizCrtraYr": "2026",
+      "brandMnno": "BRD_20241698",
+      "jnghdqrtrsMnno": "JNG_018546",
+      "brandNm": "로코스비비큐",
+      "indutyLclasNm": "외식",
+      "indutyMlsfcNm": "서양식",
+      "majrGdsNm": null,
+      "jngBizStrtDate": "20241217",
+      "corpNm": "(주)로코스인터내셔널"
+    },
+    {
+      "jngBizCrtraYr": "2026",
+      "brandMnno": "BRD_20231761",
+      "jnghdqrtrsMnno": "JNG_017183",
+      "brandNm": "엉터리생고기세번째이야기프리미엄코리안비비큐",
+      "indutyLclasNm": "외식",
+      "indutyMlsfcNm": "한식",
+      "majrGdsNm": null,
+      "jngBizStrtDate": null,
+      "corpNm": "(주)엉터리"
+    },
+    {
+      "jngBizCrtraYr": "2026",
+      "brandMnno": "BRD_20080100157",
+      "jnghdqrtrsMnno": "JNG_013229",
+      "brandNm": "맘스터치",
+      "indutyLclasNm": "외식",
+      "indutyMlsfcNm": "패스트푸드",
+      "majrGdsNm": "햄버거, 치킨",
+      "jngBizStrtDate": "20031009",
+      "corpNm": "(주)맘스터치앤컴퍼니"
+    },
+    {
+      "jngBizCrtraYr": "2026",
+      "brandMnno": "BRD_20220528",
+      "jnghdqrtrsMnno": "JNG_013229",
+      "brandNm": "맘스터치 피자앤치킨",
+      "indutyLclasNm": "외식",
+      "indutyMlsfcNm": "패스트푸드",
+      "majrGdsNm": "치킨, 피자",
+      "jngBizStrtDate": "20220802",
+      "corpNm": "(주)맘스터치앤컴퍼니"
+    },
+    {
+      "jngBizCrtraYr": "2026",
+      "brandMnno": "BRD_20230769",
+      "jnghdqrtrsMnno": "JNG_013229",
+      "brandNm": "맘스피자(MOM'S PIZZA)",
+      "indutyLclasNm": "외식",
+      "indutyMlsfcNm": "패스트푸드",
+      "majrGdsNm": "피자",
+      "jngBizStrtDate": "20230228",
+      "corpNm": "(주)맘스터치앤컴퍼니"
+    },
+    {
+      "jngBizCrtraYr": "2026",
+      "brandMnno": "BRD_20080100020",
+      "jnghdqrtrsMnno": "JNG_000004",
+      "brandNm": "씨유(CU)",
+      "indutyLclasNm": "도소매",
+      "indutyMlsfcNm": "편의점",
+      "majrGdsNm": null,
+      "jngBizStrtDate": "19901019",
+      "corpNm": "(주)비지에프리테일"
+    },
+    {
+      "jngBizCrtraYr": "2026",
+      "brandMnno": "BRD_20221066",
+      "jnghdqrtrsMnno": "JNG_013884",
+      "brandNm": "맛짱 마라탕",
+      "indutyLclasNm": "외식",
+      "indutyMlsfcNm": "중식",
+      "majrGdsNm": null,
+      "jngBizStrtDate": "20230101",
+      "corpNm": "알앤씨유통"
+    },
+    {
+      "jngBizCrtraYr": "2026",
+      "brandMnno": "BRD_20211965",
+      "jnghdqrtrsMnno": "JNG_011311",
+      "brandNm": "씨유펫",
+      "indutyLclasNm": "도소매",
+      "indutyMlsfcNm": "기타도소매",
+      "majrGdsNm": null,
+      "jngBizStrtDate": "20210921",
+      "corpNm": "굿펫샵컴퍼니"
+    }
+  ],
+  "findings": {
+    "BRD_20080100157": "2026 brand-list present; regional 2025 accounting count null",
+    "BRD_20080100020": "2026 brand-list present; regional 2025 accounting count null",
+    "BRD_20161241": "2026 brand-list absent under original ID; regional rows absent",
+    "BRD_20080100064": "2026 brand-list absent under original ID; regional rows absent"
+  },
+  "unresolved": "Registration delay, source publication omission or ID changes not established. Official disclosure site returned HTTP403. Do not interpret absent records as zero or closure.",
+  "official_api_documentation": "https://www.data.go.kr/data/15125490/openapi.do",
+  "provider_contact_from_official_portal": "044-589-3458"
+}
