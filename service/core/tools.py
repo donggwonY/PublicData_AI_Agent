@@ -32,7 +32,7 @@ import config as C
 from core import address as A
 from core import datasource
 from core.cycle import classify_stage
-from core.survival import YEAR, summarize
+from core.survival import YEAR, kaplan_meier, summarize, survival_at
 
 
 class ToolError(ValueError):
@@ -708,6 +708,27 @@ def get_survival_curve(category: str | None = None, gu: str | None = None, dong:
         "close_within_1y_pct": None if result["survival_1y_pct"] is None else round(100 - result["survival_1y_pct"], 1),
         "basis": basis,
     })
+
+
+def survival_share_at(months: float, category: str | None = None, gu: str | None = None,
+                      dong: str | None = None) -> dict:
+    """같은 업태 가게 중 months 개월 넘게 영업한 비율(Kaplan–Meier, 2010년 이후 개업). 손익 계산기 참고용(2026-11-21).
+
+    관찰 기간(가장 오래 관찰된 가게의 영업 기간)을 넘는 개월 수는 추정하지 않는다.
+    """
+    s = store()
+    service, cats, cat_label = _resolve_category(category)
+    g, d, area_label = _resolve_area(gu, dong)
+    base = s.stats_stores[s.stats_stores["ld"].dt.year >= C.SURVIVAL_START_YEAR]
+    frame = base[_area_mask(base, g, d) & _cat_mask(base, service, cats)]
+    if len(frame) < C.MIN_GROUP_N:
+        raise ToolError(f"표본이 {len(frame)}건으로 너무 적습니다(최소 {C.MIN_GROUP_N}).")
+    t_days = float(months) * YEAR / 12
+    times, surv = kaplan_meier(frame["dur_days"], frame["closed"].astype(int))
+    beyond = t_days > float(frame["dur_days"].max())
+    return _py({"months": months, "pct": None if beyond else round(survival_at(times, surv, t_days) * 100, 1),
+                "beyond_observation": beyond, "n": int(len(frame)), "area": area_label, "category": cat_label,
+                "basis": _basis(cohort=f"{C.SURVIVAL_START_YEAR}년 이후 인허가", method="Kaplan-Meier")})
 
 
 # ─────────────────────────── Tool 4. get_market_cycle ───────────────────────────

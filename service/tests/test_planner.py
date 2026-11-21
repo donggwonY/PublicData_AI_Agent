@@ -57,6 +57,24 @@ class BreakevenTest(unittest.TestCase):
                 B.calculate(base(**kw))
 
 
+class PaybackSurvivalTest(unittest.TestCase):
+    def test_matches_one_year_survival(self):
+        r = T.survival_share_at(12, category="카페")
+        self.assertEqual(r["pct"], T.get_survival_curve(category="카페")["survival_1y_pct"])
+        self.assertGreater(T.survival_share_at(6, category="카페")["pct"], r["pct"])   # 짧을수록 높다
+
+    def test_beyond_observation_not_estimated(self):
+        r = T.survival_share_at(12 * 60, category="카페")
+        self.assertTrue(r["beyond_observation"])
+        self.assertIsNone(r["pct"])
+
+    def test_payback_column(self):
+        col, note = P.payback_survival([11, 7, None], "카페")
+        self.assertEqual(len(col), 3)
+        self.assertEqual(col[2], "-")
+        self.assertIn("Kaplan", note)
+
+
 class SavedStoreTest(unittest.TestCase):
     def test_parse_keeps_known_and_reports_missing(self):
         uid = T.store().units["uid"].iloc[0]
@@ -141,7 +159,7 @@ class PlannerAppTest(unittest.TestCase):
 
         nums = app.number_input
         vals = {"결제 1건 평균 금액(원)": 7000, "원가율(%)": 35.0, "카드·배달 수수료율(%)": 3.0, "월세+관리비(만 원)": 150,
-                "기타 고정비(만 원)": 30}
+                "기타 고정비(만 원)": 30, "예상 하루 결제 건수": 80.0, "초기 투자비(만 원)": 3000}
         for n in nums:
             if n.label in vals:
                 n.set_value(vals[n.label])
@@ -149,6 +167,14 @@ class PlannerAppTest(unittest.TestCase):
         next(b for b in app.button if b.label == "계산하기").click().run(timeout=120)
         self.assertFalse(app.exception)
         self.assertTrue(any(m.label == "본전 하루 결제" and m.value == "16건" for m in app.metric))
+        # 비교표에서 고른 업종(카페)이 계산기 업종 기본값 → 회수 시점까지 영업한 비율 열
+        table = next(d.value for d in app.dataframe if "투자비 회수" in d.value.columns)
+        self.assertIn("회수 시점까지 영업한 비율", table.columns)
+        self.assertTrue(all(str(x).startswith("약 ") for x in table["회수 시점까지 영업한 비율"]))
+
+    def test_plan_tab_is_last(self):
+        app = AppTest.from_file(APP).run(timeout=120)
+        self.assertEqual([t.label for t in app.tabs][-1], "⭐ 내 후보지")
 
 
 if __name__ == "__main__":

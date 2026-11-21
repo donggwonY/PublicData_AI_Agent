@@ -282,6 +282,28 @@ def won(v: float | None) -> str:
     return f"{v / 10_000:,.0f}만 원" if abs(v) >= 10_000 else f"{v:,.0f}원"
 
 
+def payback_survival(months: list, category: str) -> tuple[list[str], str | None]:
+    """시나리오별 투자비 회수 개월 → 대구 같은 업종 가게 중 그 기간 넘게 영업한 비율(Kaplan–Meier)."""
+    col, info = [], None
+    for m in months:
+        if not m or pd.isna(m):
+            col.append("-")
+            continue
+        try:
+            r = T.survival_share_at(int(m), category=category)
+        except T.ToolError:
+            col.append("표본 부족")
+            continue
+        info = r
+        col.append("관찰 기간 밖" if r["beyond_observation"] else f"약 {r['pct']:g}%")
+    if info is None:
+        return col, None
+    return col, (f"대구 {info['category']} 가게({info['basis']['cohort']} {info['n']:,}곳) 중 그 기간 넘게 영업한 비율이에요"
+                 f"(Kaplan–Meier, 인허가 기준일 {info['basis']['reference_date']}). 폐업 신고 기준이라 양도·이전도 폐업에 "
+                 "포함되고, 내 가게의 생존 확률을 예측한 값이 아니에요. 회수 기간이 길수록 그 전에 문을 닫은 가게가 "
+                 "많아진다는 점을 함께 보세요.")
+
+
 def render_calculator() -> None:
     st.subheader("손익분기 계산기")
     st.caption("넣은 가정값으로 ‘본전이 되려면 하루 몇 건 팔아야 하는지’ 계산해요. 매출을 예측하지 않아요. "
@@ -308,6 +330,11 @@ def render_calculator() -> None:
         exp = c[0].number_input("예상 하루 결제 건수", min_value=0.0, step=5.0, value=None, placeholder="선택")
         inv = c[1].number_input("초기 투자비(만 원)", min_value=0, step=100, value=None,
                                 placeholder="보증금 제외", help="인테리어·설비·권리금 등. 돌려받는 보증금은 빼고 넣으세요")
+        choices = N.category_choices()
+        prev = st.session_state.get("plan_category")
+        calc_cat = c[2].selectbox("업종 (생존율 비교용)", choices, index=choices.index(prev) if prev in choices else None,
+                                  format_func=N.category_label, placeholder="선택",
+                                  help="고르면 투자비 회수 시점까지 대구 같은 업종 가게가 얼마나 영업했는지 함께 보여 줘요")
         go = st.form_submit_button("계산하기", type="primary")
     if not go:
         return
@@ -344,8 +371,16 @@ def render_calculator() -> None:
         })
         if r["target"]:
             show["목표 소득 뺀 뒤"] = [won(x) for x in df["after_owner_pay"]]
+        surv_note = None
         if inv:
             show["투자비 회수"] = [f"약 {x}개월" if x else "회수 안 됨" for x in df["payback_months"]]
+            if calc_cat:
+                col, surv_note = payback_survival(df["payback_months"].tolist(), calc_cat)
+                show["회수 시점까지 영업한 비율"] = col
         st.dataframe(show, hide_index=True, width="stretch")
+        if surv_note:
+            st.caption(surv_note)
+        elif inv and not calc_cat:
+            st.caption("업종을 고르면 회수 시점까지 대구 같은 업종 가게가 얼마나 영업했는지도 함께 보여 줘요.")
         st.caption("예상 하루 결제 건수는 직접 넣은 가정이에요. 이 앱은 자리별 매출·손님 수를 알 수 없어요. "
                    "위 ‘저장한 후보지 비교’의 주변 같은 업종 수와 생존율을 함께 보며 가정이 현실적인지 따져 보세요.")

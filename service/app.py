@@ -146,11 +146,11 @@ def get_agent(api_key: str):
 # ─────────────────────────── 사이드바 ───────────────────────────
 # 사이드바 개편(2026-11-15): 기준일·바로 가기·최근 본 자리·AI 상담 상태·용어 도움말을 접지 않고 보여 준다.
 # 탭은 key 로 상태를 추적해 사이드바 버튼(바로 가기·최근 본 자리·예시 질문)이 해당 탭으로 옮겨 준다.
-TAB_DASH, TAB_UNIT, TAB_PLAN, TAB_CHAT = "📊 상권 둘러보기", "🔎 자리 이력", "⭐ 내 후보지", "💬 AI 상담"
+TAB_DASH, TAB_UNIT, TAB_CHAT, TAB_PLAN = "📊 상권 둘러보기", "🔎 자리 이력", "💬 AI 상담", "⭐ 내 후보지"
 NAV = [(TAB_DASH, ":material/storefront:", "동네·업종 비교"),
        (TAB_UNIT, ":material/history:", "한 자리의 이력"),
-       (TAB_PLAN, ":material/star:", "후보지 비교·손익 계산"),
-       (TAB_CHAT, ":material/forum:", "AI에게 물어보기")]
+       (TAB_CHAT, ":material/forum:", "AI에게 물어보기"),
+       (TAB_PLAN, ":material/star:", "후보지 비교·손익 계산")]
 GLOSSARY = [
     ("인허가 기록", "지자체 영업 인허가 자료의 한 건. 한 점포가 업종을 바꾸면 기록이 여러 건일 수 있어요."),
     ("폐업 신고", "인허가가 폐업 처리된 것. 이전·양도도 포함되며 사업 실패를 뜻하지 않아요."),
@@ -304,7 +304,7 @@ with st.sidebar:
     with st.expander("용어 도움말", icon=":material/help:"):
         st.markdown("\n".join(f"- **{k}**: {v}" for k, v in GLOSSARY))
 
-tab_dash, tab_unit, tab_plan, tab_chat = st.tabs([TAB_DASH, TAB_UNIT, TAB_PLAN, TAB_CHAT], key="main_tab",
+tab_dash, tab_unit, tab_chat, tab_plan = st.tabs([TAB_DASH, TAB_UNIT, TAB_CHAT, TAB_PLAN], key="main_tab",
                                                  on_change="rerun")
 
 
