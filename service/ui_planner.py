@@ -1,7 +1,7 @@
 """내 후보지 저장·비교, 자리 주변 같은 업종, 손익분기 계산기 (2026-11-21 추가).
 
 - 후보지는 방문자 브라우저(localStorage)에 저장한다. 서버·DB에는 남기지 않는다. 저장소가 막힌 브라우저에서는 이 접속에만 남는다.
-- 주변 같은 업종 수는 상가정보 분류와 이름을 맞춘 업종(config.POI_CATEGORY_KEYWORDS)만 센다.
+- 주변 같은 업종은 인허가 기준(모든 업태)과 상가정보 기준(대응이 분명한 업태만)으로 센다(core.nearby).
 - 손익분기 계산은 입력한 가정값의 산수이며 매출 예측이 아니다(core.breakeven).
 """
 from __future__ import annotations
@@ -15,12 +15,11 @@ import streamlit as st
 
 import config as C
 from core import breakeven as B
+from core import nearby as N
 from core import tools as T
 
 MAX_SAVED = 10
 COMPARE_MAX = 3
-# 상가정보와 업종 이름을 맞춰 둔 업종만 '주변 같은 업종'으로 센다. 커피숍은 카페(커피숍·다방 등 묶음)에 포함
-NEARBY_CATEGORIES = [k for k in C.POI_CATEGORY_KEYWORDS if k != "커피숍"]
 
 
 # ─────────────────────────── 후보지 저장 ───────────────────────────
@@ -146,33 +145,19 @@ def clear_saved() -> None:
 
 # ─────────────────────────── 자리 주변 같은 업종 ───────────────────────────
 def default_category(h: dict) -> str | None:
-    """자리의 가장 최근 업태가 셀 수 있는 업종이면 그것, 아니면 None."""
+    """자리의 가장 최근 업태(카페 계열이면 '카페' 묶음). 지금 영업 중인 가게가 없는 업태면 None."""
+    choices = set(N.category_choices())
     for r in reversed(h.get("timeline") or []):
         c = r.get("category")
-        if c in NEARBY_CATEGORIES:
-            return c
         if c in C.CATEGORY_ALIASES.get("카페", []):
             return "카페"
+        if c in choices:
+            return c
     return None
 
 
-def nearby_summary(unit_id: str, category: str, radius: int = C.NEARBY_RADIUS_M) -> dict:
-    """화면용으로 줄인 find_nearby 결과. 같은 건물 안 기록은 '주변 경쟁'에서 뺀 수를 앞에 둔다."""
-    out = T.find_nearby(unit_id, radius_m=radius, category=category, limit=5)
-    same = out["same_category"] or {}
-    excl = same.get("excluding_same_address_deduplicated_count")
-    return {
-        "radius": out["radius_m"], "stores": out["stores_in_radius"],
-        # 중심 건물 도로명 주소를 못 읽으면 같은 건물을 뺄 수 없어 포함한 수를 쓰고 표시한다
-        "same": excl if excl is not None else same.get("exact_deduplicated_count"),
-        "same_includes_building": excl is None,
-        "same_in_building": same.get("same_address_deduplicated_count"),
-        "same_label": same.get("query", category),
-        "examples": same.get("examples", []),
-        "vacancies": out["recent_vacancy_count"],
-        "parking": out.get("parking"),
-        "poi_basis": out["basis"].get("poi"),
-    }
+def _count_text(n: int | None, includes_building: bool = False) -> str:
+    return "-" if n is None else f"{n}곳" + (" (같은 건물 포함)" if includes_building else "")
 
 
 def render_nearby(h: dict, key: str) -> None:
@@ -181,28 +166,30 @@ def render_nearby(h: dict, key: str) -> None:
     if u.get("lat") is None or pd.isna(u.get("lat")):
         st.caption("이 자리는 위치 정보가 없어 주변을 셀 수 없어요.")
         return
+    choices = N.category_choices()
     cat0 = default_category(h)
-    cat = st.selectbox("업종", NEARBY_CATEGORIES, index=NEARBY_CATEGORIES.index(cat0) if cat0 else None,
-                       placeholder="창업하려는 업종을 고르세요", key=f"near-cat-{key}")
+    cat = st.selectbox("업종", choices, index=choices.index(cat0) if cat0 in choices else None,
+                       format_func=N.category_label, placeholder="창업하려는 업종을 고르세요", key=f"near-cat-{key}")
     if not cat:
         st.caption("업종을 고르면 반경 안 같은 업종 가게 수를 보여 줘요.")
         return
     try:
-        n = nearby_summary(u["unit_id"], cat)
+        n = N.nearby_same_category(u["unit_id"], cat)
     except T.ToolError as e:
         st.warning(str(e))
         return
+    pm, po = n["permit"], n["poi"]
     c = st.columns(4)
-    c[0].metric(f"같은 업종 ({n['same_label'].split('(')[0]})" + (" · 같은 건물 포함" if n["same_includes_building"] else ""),
-                f"{n['same']}곳" if n["same"] is not None else "-", border=True)
-    c[1].metric("같은 건물 안 같은 업종", f"{n['same_in_building']}곳" if n["same_in_building"] is not None else "-",
-                border=True)
-    c[2].metric("반경 안 전체 가게", f"{n['stores']:,}곳", border=True)
+    c[0].metric("같은 업종 영업 중 (인허가)", _count_text(pm["count"]), border=True)
+    c[1].metric("같은 건물 안 (인허가)", _count_text(pm["in_building"]), border=True)
+    c[2].metric("같은 업종 (상가정보)", _count_text(po["count"], po["includes_building"]) if po else "대응 없음", border=True)
     c[3].metric("반경 안 인허가 공백 후보", f"{n['vacancies']}곳", border=True)
-    if n["examples"]:
-        st.caption("가까운 같은 업종: " + " · ".join(f"{e['name']}({int(e['dist_m'])}m)" for e in n["examples"]))
-    st.caption(f"출처: {n['poi_basis']} · 직선거리 기준 · 상가 기록 수라 실제 영업 여부와 다를 수 있어요. "
-               "같은 업종은 같은 건물 기록을 뺀 수예요. 상가정보와 분류 이름을 맞춘 업종만 고를 수 있어요.")
+    if pm["examples"]:
+        st.caption("가까운 같은 업종: " + " · ".join(f"{e['name']}({e['dist_m']}m)" for e in pm["examples"]))
+    st.caption(f"인허가: {pm['basis']} · 같은 건물 가게는 따로 셌어요. "
+               + (f"상가정보: {po['basis']} (이 업태와 상호가 이어진 가게의 {', '.join(map(str, po['share_pct']))}%가 이 분류). "
+                  if po else (n["poi_note"] + " "))
+               + "직선거리 기준이며, 두 출처는 수집 시점·분류가 달라 숫자가 다를 수 있어요.")
 
 
 # ─────────────────────────── 후보지 비교 ───────────────────────────
@@ -238,12 +225,12 @@ def compare_row(item: dict, category: str | None) -> dict:
     row["다음 업종 1위"] = f"{nt['top3'][0]['group']} {T.pct_text(nt['top3'][0]['p'])}" if nt else "-"
     if category:
         try:
-            n = nearby_summary(u["unit_id"], category)
-            row[f"주변 {C.NEARBY_RADIUS_M}m 같은 업종"] = (
-                f"{n['same']}곳" + (" (같은 건물 포함)" if n["same_includes_building"] else "")
-                if n["same"] is not None else "-")
+            n = N.nearby_same_category(u["unit_id"], category)
+            row[f"주변 {C.NEARBY_RADIUS_M}m 같은 업종 (인허가)"] = _count_text(n["permit"]["count"])
+            row[f"주변 {C.NEARBY_RADIUS_M}m 같은 업종 (상가정보)"] = (
+                _count_text(n["poi"]["count"], n["poi"]["includes_building"]) if n["poi"] else "대응 없음")
         except T.ToolError:
-            row[f"주변 {C.NEARBY_RADIUS_M}m 같은 업종"] = "-"
+            row[f"주변 {C.NEARBY_RADIUS_M}m 같은 업종 (인허가)"] = "-"
         where, sv = _survival_ref(u["gu"], u["dong"], category)
         if sv:
             row["같은 업종 1년·3년 생존율"] = f"{sv['survival_1y_pct']}% · {sv['survival_3y_pct']}% ({where}, n={sv['n']:,})"
@@ -261,8 +248,8 @@ def render_compare(go_unit) -> None:
     labels = {i: r["label"].replace("대구광역시 ", "") for i, r in enumerate(rows)}
     pick = st.multiselect(f"비교할 후보지 (최대 {COMPARE_MAX}곳)", list(labels), default=list(labels)[:COMPARE_MAX],
                           format_func=labels.get, max_selections=COMPARE_MAX, key="plan_pick")
-    cat = st.selectbox("창업하려는 업종 (주변 경쟁·생존율 비교용)", NEARBY_CATEGORIES, index=None,
-                       placeholder="고르면 주변 같은 업종 수와 생존율이 함께 나와요", key="plan_category")
+    cat = st.selectbox("창업하려는 업종 (주변 경쟁·생존율 비교용)", N.category_choices(), index=None,
+                       format_func=N.category_label, placeholder="고르면 주변 같은 업종 수와 생존율이 함께 나와요", key="plan_category")
     if pick:
         table = pd.DataFrame([compare_row(rows[i], cat) for i in pick]).set_index("후보지").T
         table.columns = [labels[i] for i in pick]

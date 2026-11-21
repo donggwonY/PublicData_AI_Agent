@@ -11,6 +11,7 @@ from streamlit.testing.v1 import AppTest  # noqa: E402
 import config as C  # noqa: E402
 import ui_planner as P  # noqa: E402
 from core import breakeven as B  # noqa: E402
+from core import nearby as N  # noqa: E402
 from core import tools as T  # noqa: E402
 
 APP = str(Path(__file__).resolve().parents[1] / "app.py")
@@ -75,21 +76,47 @@ class SavedStoreTest(unittest.TestCase):
 
 
 class NearbyTest(unittest.TestCase):
-    def test_categories_resolve(self):
-        for c in P.NEARBY_CATEGORIES:
-            T._resolve_category(c)          # ToolError 가 나지 않아야 한다
-        self.assertIn("카페", P.NEARBY_CATEGORIES)
-        self.assertNotIn("커피숍", P.NEARBY_CATEGORIES)
-
     def test_poi_month_from_file_name(self):
         self.assertRegex(C.POI_MONTH, r"^\d{4}-\d{2}$")
         self.assertIn(C.POI_MONTH.replace("-", ""), C.EXTERNAL_FILES["poi"])
 
-    def test_nearby_summary(self):
+    def test_poi_map_rules(self):
+        pm = N.poi_category_map()
+        use = pm[pm["usable"]]
+        self.assertGreaterEqual(len(use), 30)                       # 손으로 맞춘 17개보다 넓다
+        self.assertTrue((use["share"] >= N.POI_MAP_MIN_SHARE).all())
+        self.assertTrue((use["linked"] >= N.POI_MAP_MIN_LINKED).all())
+        mid = use[use["level"] == "cat_m"]
+        self.assertFalse(mid["poi_class"].duplicated().any())        # 중분류는 가장 큰 업태 하나에만
+        m = pm.set_index("category")
+        self.assertEqual(m.loc["약국", "poi_class"], "약국")
+        self.assertTrue(m.loc["한식", "usable"])
+        self.assertFalse(m.loc["식육(숯불구이)", "usable"] and m.loc["식육(숯불구이)", "level"] == "cat_m")
+
+    def test_choices_cover_all_active_categories(self):
+        ch = N.category_choices()
+        self.assertEqual(ch[0], "카페")
+        act = set(N.active_stores()["category"])
+        self.assertTrue(act <= set(ch) | {"카페"})
+        self.assertEqual(N.category_label("한식"), "한식 (일반음식점)")
+
+    def test_nearby_counts(self):
         uid = T.normalize_address(ADDR)["matches"][0]["unit_id"]
-        n = P.nearby_summary(uid, "카페")
-        self.assertGreaterEqual(n["stores"], n["same"] or 0)
-        self.assertIn(C.POI_MONTH, n["poi_basis"])
+        n = N.nearby_same_category(uid, "카페")
+        self.assertGreater(n["permit"]["count"], 0)
+        self.assertIn("카페", n["poi"]["poi_class"])
+        self.assertIn(C.POI_MONTH, n["poi"]["basis"])
+        d = [e["dist_m"] for e in n["permit"]["examples"]]
+        self.assertEqual(d, sorted(d))
+        self.assertTrue(all(x <= C.NEARBY_RADIUS_M for x in d))
+        # 상가정보 대응이 없는 업태는 인허가 기준만
+        n2 = N.nearby_same_category(uid, "기타")
+        self.assertIsNone(n2["poi"])
+        self.assertTrue(n2["poi_note"])
+
+    def test_unknown_unit(self):
+        with self.assertRaises(T.ToolError):
+            N.nearby_same_category("없는 자리", "한식")
 
 
 class PlannerAppTest(unittest.TestCase):
