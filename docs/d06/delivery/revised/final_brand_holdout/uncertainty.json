@@ -1,0 +1,10 @@
+{
+  "evaluation_rows": 289,
+  "brands": 183,
+  "paired_brier_difference": -0.01819199358445362,
+  "brand_bootstrap_95": [
+    -0.030273945898275843,
+    -0.006520565747317408
+  ],
+  "interpretation": "Additional cross-brand temporal robustness check, not an untouched prospective validation. Previously explored snapshots, name history and publication-time limitations remain. No model retuning or service threshold selection."
+}

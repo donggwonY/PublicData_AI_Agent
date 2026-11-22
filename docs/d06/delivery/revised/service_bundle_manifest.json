@@ -14,11 +14,12 @@
     "four major brands queried"
   ],
   "files": {
-    "brand_registry.json": "79546c353eca929ca3444d2e57e690588362e82877ac3b8a9664541ffa9213a0",
-    "brand_registry.csv": "efc4a77ad62efaecfb524c07cfac3842091ed40c7d576acb7abffcc5f6d738aa",
-    "lookup_examples.json": "a5ab3e254ae65efe7ea0589302d5d6b2e94e3a705a3adaee9cecbefc3da2d813"
+    "brand_registry.json": "febea43b6c21c81c138a48798889708ae01dac5903e5808d01da189c68bced38",
+    "brand_registry.csv": "f7e8d0952c2619ccaa08ca186f71b1db0a8c27d2828431f3fed4432422cfa34a",
+    "lookup_examples.json": "87b053543536fd76359bc2f8c2a3204d46bc187a6b9740c048168d08f46f9cf8"
   },
   "two_year_model": "two_year_hgb_permit_support",
   "validation_reference": "permit_missing_latest/results.json",
-  "industry_scope": "excludes transportation"
+  "industry_scope": "excludes transportation",
+  "hash_policy": "UTF-8 text normalized CRLF to LF"
 }

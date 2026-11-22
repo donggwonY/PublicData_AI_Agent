@@ -1,0 +1,19 @@
+{
+  "selection": "same brand name in baseline and preceding report; baseline-year permit buildings / official baseline count within fixed sensitivity bands",
+  "no_target_selection": "screen uses Y-2 counts and permits only, never target or hidden Y-1 official counts",
+  "purpose": "subgroup evaluation of already fitted models; not an independent untouched test; ratio agreement does not prove correct identity",
+  "bands": [
+    [
+      0.7,
+      1.3
+    ],
+    [
+      0.8,
+      1.2
+    ],
+    [
+      0.9,
+      1.1
+    ]
+  ]
+}

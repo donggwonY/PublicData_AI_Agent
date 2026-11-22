@@ -1,0 +1,35 @@
+{
+  "metrics": [
+    {
+      "year": 2024,
+      "model": "stale_only",
+      "n": 156,
+      "brier": 0.23752233233508108,
+      "auc": 0.6317567567567567
+    },
+    {
+      "year": 2024,
+      "model": "stale_plus_permits",
+      "n": 156,
+      "brier": 0.22108061818677235,
+      "auc": 0.6956163480553725
+    },
+    {
+      "year": 2025,
+      "model": "stale_only",
+      "n": 133,
+      "brier": 0.2297090201201105,
+      "auc": 0.6588443396226414
+    },
+    {
+      "year": 2025,
+      "model": "stale_plus_permits",
+      "n": 133,
+      "brier": 0.20946406719702076,
+      "auc": 0.7186320754716982
+    }
+  ],
+  "current_brands": 0,
+  "current_permit_features_available": 173,
+  "service_registry_modified": false
+}
