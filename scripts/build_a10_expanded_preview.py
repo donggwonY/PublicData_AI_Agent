@@ -1,17 +1,15 @@
 """Export all 83 qualified industry comparisons and rebuild the local preview."""
 
-import html
 import json
-import re
 
 import numpy as np
 import pandas as pd
 
 from export_a10_app_comparison import MONTH, ROOT
+from build_a10_area_comparison import build_preview
 
 
 DOCS = ROOT / "docs/a10"
-AREAS = ("대구광역시 중구 성내1동", "대구광역시 수성구 범어3동", "대구광역시 달서구 월성1동")
 
 
 def main():
@@ -53,66 +51,8 @@ def main():
         json.dumps(evidence, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
 
-    industries = {}
-    for _, row in validation.iterrows():
-        group = data.loc[data.industry_code.eq(row.industry_code)].set_index("admin_area")
-        cards = group.loc[list(AREAS)]
-        industries[row.industry_code] = {
-            "name": row.industry_name,
-            "uses_nearby": row.active_method != "poisson_context",
-            "counts": [[int(card.actual_shops), int(np.floor(card.estimated_shops + 0.5))]
-                       for _, card in cards.iterrows()],
-        }
-    priority = ["I21201", "S20701", "I20101", "P10501"]
-    order = priority + sorted(set(industries) - set(priority), key=lambda code: industries[code]["name"])
-    options = "\n".join(
-        f'      <option value="{code}">{html.escape(industries[code]["name"])}</option>'
-        for code in order
-    )
-    preview = DOCS / "cafe_comparison_preview.html"
-    content = preview.read_text(encoding="utf-8")
-    content, count = re.subn(r'(<select id="industry">).*?(</select>)',
-                           lambda match: match[1] + "\n" + options + "\n    " + match[2],
-                           content, flags=re.S)
-    if count != 1:
-        raise ValueError("Expected one industry selector")
-    payload = json.dumps(industries, ensure_ascii=False).replace("<", "\\u003c")
-    script = '''  <script id="a10-data" type="application/json">PAYLOAD</script>
-  <script>
-    const industries = JSON.parse(document.querySelector("#a10-data").textContent);
-    const industry = document.querySelector("#industry");
-    const cards = document.querySelectorAll(".cards article");
-    function updateCards() {
-      const selected = industries[industry.value];
-      const maximum = Math.max(...selected.counts.flat());
-      const scale = Math.max(50, Math.ceil(maximum / 50) * 50);
-      cards.forEach((card, index) => {
-        const [actual, estimate] = selected.counts[index];
-        const [actualValue, estimateValue] = card.querySelectorAll("dd:not(.track)");
-        const [actualBar, estimateBar] = card.querySelectorAll(".bar");
-        card.querySelector("dt").textContent = `실제 ${selected.name} 점포 수`;
-        actualValue.textContent = `${actual}곳`;
-        estimateValue.textContent = `약 ${estimate}곳`;
-        actualBar.style.width = `${actual / scale * 100}%`;
-        estimateBar.style.width = `${estimate / scale * 100}%`;
-      });
-      document.querySelector("#scale-note").textContent =
-        `막대는 세 후보지 모두 0~${scale}곳 기준이에요.`;
-      document.querySelector("#nearby-note").textContent = selected.uses_nearby
-        ? "이 업종은 가까운 동네의 여건도 반영했어요." : "";
-    }
-    industry.addEventListener("change", updateCards);
-    updateCards();
-  </script>'''.replace("PAYLOAD", payload)
-    content, count = re.subn(
-        r'  <script(?: id="a10-data"[^>]*)?>.*?</script>(?:\s*<script>.*?</script>)?',
-        lambda match: script, content, flags=re.S
-    )
-    if count != 1:
-        raise ValueError("Expected one preview script block")
-    preview.write_text(content, encoding="utf-8", newline="\n")
-    print(f"Exported {len(output)} rows, {len(industries)} selector options, "
-          f"{int(validation.confirmed_improvement.sum())} improved methods")
+    build_preview()
+    print(f"Exported {len(output)} rows for {len(validation)} industries")
 
 
 if __name__ == "__main__":

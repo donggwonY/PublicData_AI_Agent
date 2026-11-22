@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>창업 후보지 두 곳 비교</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f3f6f4; color: #172822; font: 16px/1.6 system-ui, sans-serif; }
+    main { max-width: 1120px; margin: auto; padding: clamp(20px, 4vw, 52px); }
+    h1 { margin: 0; font-size: clamp(26px, 4vw, 36px); line-height: 1.3; }
+    h2 { margin: 0 0 24px; font-size: 22px; }
+    p { margin: 10px 0 20px; }
+    .date, .notes, dt { color: #445951; }
+    .controls, .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    label { display: block; font-weight: 650; }
+    select { display: block; width: 100%; margin-top: 6px; padding: 10px; border: 1px solid #768d82; border-radius: 8px; background: white; color: inherit; font: inherit; }
+    .cards { margin-top: 24px; }
+    article { background: white; border: 1px solid #d4dfd9; border-radius: 16px; padding: clamp(18px, 3vw, 28px); }
+    dl, dd { margin: 0; }
+    .metric { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 7px 12px; align-items: baseline; }
+    .metric + .metric { margin-top: 18px; }
+    dt { font-size: 14px; }
+    dd { font-weight: 650; font-variant-numeric: tabular-nums; }
+    .count { font-size: 24px; white-space: nowrap; }
+    .track { grid-column: 1 / -1; height: 8px; background: #edf2ef; border-radius: 10px; overflow: hidden; }
+    .bar { display: block; height: 100%; background: #276953; border-radius: inherit; }
+    .reference { background: #7f9fa5; }
+    .profile { border-top: 1px solid #e2e9e5; padding-top: 20px; margin-top: 26px; }
+    .notes { font-size: 14px; }
+    .notes p { margin: 8px 0; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 14px; }
+    th, td { padding: 10px 8px; text-align: right; border-bottom: 1px solid #d4dfd9; }
+    th:first-child, td:first-child { text-align: left; }
+    details { margin: 26px 0 16px; }
+    summary { cursor: pointer; }
+    #selection-status { color: #903d1d; }
+    [hidden] { display: none !important; }
+    @media (max-width: 650px) { .controls, .cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>창업 후보지 두 곳 비교</h1>
+  <p>같은 업종의 점포 수와 주민 구성을 나란히 살펴보세요.</p>
+  <p class="date">대구 읍·면·동 · 2026년 9월 기준</p>
+  <div class="controls">
+    <label for="industry">창업하려는 업종<select id="industry"></select></label>
+    <label for="age">관심 연령대<select id="age"></select></label>
+    <label for="area-a">첫 번째 후보지<select id="area-a"></select></label>
+    <label for="area-b">두 번째 후보지<select id="area-b"></select></label>
+  </div>
+  <p id="selection-status" role="status" hidden></p>
+  <div class="cards" aria-live="polite">
+    <article>
+      <h2></h2>
+      <dl>
+        <div class="metric"><dt class="actual-label"></dt><dd class="count actual"></dd><dd class="track" aria-hidden="true"><span class="bar"></span></dd></div>
+        <div class="metric"><dt>동네 여건으로 추정한 점포 수</dt><dd class="count estimate"></dd><dd class="track" aria-hidden="true"><span class="bar reference"></span></dd></div>
+      </dl>
+      <p class="missing notes" hidden>이 기준월에는 비교 자료가 없어요.</p>
+      <dl class="profile">
+        <div class="metric"><dt>주민등록 거주자</dt><dd class="residents"></dd></div>
+        <div class="metric"><dt class="age-label"></dt><dd class="age-count"></dd></div>
+        <div class="metric"><dt>다른 업종 점포 수</dt><dd class="other-shops"></dd></div>
+      </dl>
+    </article>
+    <article>
+      <h2></h2>
+      <dl>
+        <div class="metric"><dt class="actual-label"></dt><dd class="count actual"></dd><dd class="track" aria-hidden="true"><span class="bar"></span></dd></div>
+        <div class="metric"><dt>동네 여건으로 추정한 점포 수</dt><dd class="count estimate"></dd><dd class="track" aria-hidden="true"><span class="bar reference"></span></dd></div>
+      </dl>
+      <p class="missing notes" hidden>이 기준월에는 비교 자료가 없어요.</p>
+      <dl class="profile">
+        <div class="metric"><dt>주민등록 거주자</dt><dd class="residents"></dd></div>
+        <div class="metric"><dt class="age-label"></dt><dd class="age-count"></dd></div>
+        <div class="metric"><dt>다른 업종 점포 수</dt><dd class="other-shops"></dd></div>
+      </dl>
+    </article>
+  </div>
+  <div class="notes">
+    <p id="scale-note"></p>
+    <p>추정치는 주민 수·연령 구성·다른 업종의 점포 구성으로 계산한 비교용 수치예요. <span id="nearby-note"></span> 차이가 큰 곳은 현장에서 유동인구와 경쟁 점포를 함께 살펴보세요.</p>
+    <p>주민 수와 관심 연령대 비중을 함께 보며 두 후보지의 차이를 확인해 보세요.</p>
+  </div>
+  <details>
+    <summary>연령별 주민 구성 모두 보기</summary>
+    <div class="table-wrap"><table><thead><tr><th scope="col">연령대</th><th scope="col" id="age-heading-a"></th><th scope="col" id="age-heading-b"></th></tr></thead><tbody id="age-rows"></tbody></table></div>
+  </details>
+</main>
+<script id="a10-data" type="application/json">__A10_DATA__</script>
+<script>
+  const data = JSON.parse(document.querySelector("#a10-data").textContent);
+  const industry = document.querySelector("#industry");
+  const age = document.querySelector("#age");
+  const areaA = document.querySelector("#area-a");
+  const areaB = document.querySelector("#area-b");
+  const cards = document.querySelectorAll(".cards article");
+  const ageNames = {
+    age_00_09: "0~9세", age_10_19: "10대", age_20_29: "20대",
+    age_30_39: "30대", age_40_49: "40대", age_50_59: "50대",
+    age_60_69: "60대", age_70_79: "70대", age_80_89: "80대",
+    age_90_99: "90대", age_100_plus: "100세 이상"
+  };
+  const number = value => value.toLocaleString("ko-KR");
+  function addOption(select, value, label) {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = label;
+    select.append(option);
+  }
+  const priority = ["I21201", "S20701", "I20101", "P10501"];
+  const industryOrder = [...priority, ...Object.keys(data.industries)
+    .filter(code => !priority.includes(code))
+    .sort((a, b) => data.industries[a].name.localeCompare(data.industries[b].name, "ko"))];
+  industryOrder.forEach(code => addOption(industry, code, data.industries[code].name));
+  Object.entries(ageNames).forEach(([key, label]) => addOption(age, key, label));
+  Object.keys(data.areas).sort((a, b) => data.areas[a].name.localeCompare(data.areas[b].name, "ko"))
+    .forEach(code => {
+      addOption(areaA, code, data.areas[code].name);
+      addOption(areaB, code, data.areas[code].name);
+    });
+  areaA.value = Object.keys(data.areas).find(code => data.areas[code].name === "중구 성내1동");
+  areaB.value = Object.keys(data.areas).find(code => data.areas[code].name === "수성구 범어3동");
+  age.value = "age_20_29";
+
+  function updateComparison() {
+    const selected = data.industries[industry.value];
+    const codes = [areaA.value, areaB.value];
+    const profiles = codes.map(code => data.areas[code]);
+    const counts = codes.map(code => selected.counts[code]);
+    const values = counts.filter(Boolean).flat().map(Math.round);
+    const scale = Math.max(50, Math.ceil(Math.max(0, ...values) / 50) * 50);
+    document.querySelector("#selection-status").hidden = codes[0] !== codes[1];
+    document.querySelector("#selection-status").textContent = "서로 다른 후보지를 선택해 주세요.";
+    for (const option of areaA.options) option.disabled = option.value === codes[1];
+    for (const option of areaB.options) option.disabled = option.value === codes[0];
+    cards.forEach((card, index) => {
+      const profile = profiles[index];
+      const count = counts[index];
+      card.querySelector("h2").textContent = profile.name;
+      card.querySelector(".actual-label").textContent = `실제 ${selected.name} 점포 수`;
+      card.querySelector(".actual").textContent = count ? `${number(count[0])}곳` : "—";
+      card.querySelector(".estimate").textContent = count ? `약 ${number(Math.round(count[1]))}곳` : "—";
+      card.querySelector(".missing").hidden = Boolean(count);
+      card.querySelector(".bar").style.width = count ? `${count[0] / scale * 100}%` : "0%";
+      card.querySelector(".reference").style.width = count ? `${Math.round(count[1]) / scale * 100}%` : "0%";
+      card.querySelector(".residents").textContent = `${number(profile.residents)}명`;
+      card.querySelector(".age-label").textContent = `${ageNames[age.value]} 주민`;
+      const ageCount = profile.ages[age.value];
+      card.querySelector(".age-count").textContent =
+        `${number(ageCount)}명 · ${(ageCount / profile.residents * 100).toFixed(1)}%`;
+      card.querySelector(".other-shops").textContent = count ? `${number(profile.shops - count[0])}곳` : "—";
+    });
+    document.querySelector("#scale-note").textContent = `막대는 두 후보지 모두 0~${number(scale)}곳 기준이에요.`;
+    document.querySelector("#nearby-note").textContent = selected.uses_nearby
+      ? "이 업종은 가까운 동네의 여건도 반영했어요." : "";
+    document.querySelector("#age-heading-a").textContent = profiles[0].name;
+    document.querySelector("#age-heading-b").textContent = profiles[1].name;
+    const body = document.querySelector("#age-rows");
+    body.replaceChildren();
+    Object.entries(ageNames).forEach(([key, label]) => {
+      const row = document.createElement("tr");
+      const heading = document.createElement("th");
+      heading.scope = "row";
+      heading.textContent = label;
+      row.append(heading);
+      profiles.forEach(profile => {
+        const cell = document.createElement("td");
+        cell.textContent = `${number(profile.ages[key])}명 · ${(profile.ages[key] / profile.residents * 100).toFixed(1)}%`;
+        row.append(cell);
+      });
+      body.append(row);
+    });
+  }
+  [industry, age, areaA, areaB].forEach(select => select.addEventListener("change", updateComparison));
+  updateComparison();
+</script>
+</body>
+</html>
