@@ -1,0 +1,300 @@
+{
+ "checked": "2026-11-22",
+ "source": "공공데이터포털 검색·데이터 페이지",
+ "apis": [
+  {
+   "service": "일반음식점",
+   "data_id": "15154916",
+   "title": "행정안전부_식품_일반음식점 조회서비스",
+   "page": "https://www.data.go.kr/data/15154916/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/general_restaurants"
+  },
+  {
+   "service": "휴게음식점",
+   "data_id": "15154921",
+   "title": "행정안전부_식품_휴게음식점 조회서비스",
+   "page": "https://www.data.go.kr/data/15154921/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/rest_cafes"
+  },
+  {
+   "service": "제과점영업",
+   "data_id": "15155252",
+   "title": "행정안전부_식품_제과점영업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155252/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/bakeries"
+  },
+  {
+   "service": "미용업",
+   "data_id": "15154918",
+   "title": "행정안전부_생활_미용업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154918/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/beauty_salons"
+  },
+  {
+   "service": "세탁업",
+   "data_id": "15154927",
+   "title": "행정안전부_생활_세탁업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154927/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/laundries"
+  },
+  {
+   "service": "노래연습장업",
+   "data_id": "15155135",
+   "title": "행정안전부_문화_노래연습장업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155135/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/karaoke_rooms"
+  },
+  {
+   "service": "담배소매업",
+   "data_id": "15155031",
+   "title": "행정안전부_기타_담배소매업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155031/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/tobacco_retailers"
+  },
+  {
+   "service": "의원",
+   "data_id": "15154874",
+   "title": "행정안전부_건강_의원 조회서비스",
+   "page": "https://www.data.go.kr/data/15154874/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/clinics"
+  },
+  {
+   "service": "병원",
+   "data_id": "15154458",
+   "title": "행정안전부_건강_병원 조회서비스",
+   "page": "https://www.data.go.kr/data/15154458/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/hospitals"
+  },
+  {
+   "service": "약국",
+   "data_id": "15154822",
+   "title": "행정안전부_건강_약국 조회서비스",
+   "page": "https://www.data.go.kr/data/15154822/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/pharmacies"
+  },
+  {
+   "service": "체력단련장업",
+   "data_id": "15155077",
+   "title": "행정안전부_생활_체력단련장업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155077/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/fitness_centers"
+  },
+  {
+   "service": "인터넷컴퓨터게임시설제공업",
+   "data_id": "15154951",
+   "title": "행정안전부_문화_인터넷컴퓨터게임시설제공업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154951/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/pc_bangs"
+  },
+  {
+   "service": "당구장업",
+   "data_id": "15155011",
+   "title": "행정안전부_생활_당구장업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155011/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/billiard_halls"
+  },
+  {
+   "service": "체육도장업",
+   "data_id": "15155085",
+   "title": "행정안전부_생활_체육도장업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155085/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/martial_arts_dojo"
+  },
+  {
+   "service": "골프연습장업",
+   "data_id": "15154975",
+   "title": "행정안전부_생활_골프연습장업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154975/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/golf_practice_ranges"
+  },
+  {
+   "service": "축산판매업",
+   "data_id": "15154871",
+   "title": "행정안전부_식품_축산판매업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154871/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/livestock_retail"
+  },
+  {
+   "service": "단란주점영업",
+   "data_id": "15154883",
+   "title": "행정안전부_식품_단란주점영업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154883/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/singing_bars"
+  },
+  {
+   "service": "유흥주점영업",
+   "data_id": "15154890",
+   "title": "행정안전부_식품_유흥주점영업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154890/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/entertainment_bars"
+  },
+  {
+   "service": "관광식당",
+   "data_id": "15154897",
+   "title": "행정안전부_식품_관광식당 조회서비스",
+   "page": "https://www.data.go.kr/data/15154897/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/tourist_restaurants"
+  },
+  {
+   "service": "관광유흥음식점업",
+   "data_id": "15154903",
+   "title": "행정안전부_식품_관광유흥음식점업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154903/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/tourist_entertainment_restaurants"
+  },
+  {
+   "service": "외국인전용유흥음식점업",
+   "data_id": "15154910",
+   "title": "행정안전부_식품_외국인전용유흥음식점업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154910/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/foreigners_entertainment_restaurants"
+  },
+  {
+   "service": "즉석판매제조가공업",
+   "data_id": "15155245",
+   "title": "행정안전부_식품_즉석판매제조가공업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155245/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/instant_food_processors"
+  },
+  {
+   "service": "식품판매업(기타)",
+   "data_id": "15155170",
+   "title": "행정안전부_식품_식품판매업(기타) 조회서비스",
+   "page": "https://www.data.go.kr/data/15155170/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/other_food_retailers"
+  },
+  {
+   "service": "건강기능식품일반판매업",
+   "data_id": "15155221",
+   "title": "행정안전부_식품_건강기능식품일반판매업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155221/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/health_functional_food_general_retailers"
+  },
+  {
+   "service": "안경업",
+   "data_id": "15154899",
+   "title": "행정안전부_건강_안경업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154899/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/optical_shops"
+  },
+  {
+   "service": "의료유사업",
+   "data_id": "15154864",
+   "title": "행정안전부_건강_의료유사업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154864/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/medical_related_businesses"
+  },
+  {
+   "service": "동물병원",
+   "data_id": "15154952",
+   "title": "행정안전부_동물_동물병원 조회서비스",
+   "page": "https://www.data.go.kr/data/15154952/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/animal_hospitals"
+  },
+  {
+   "service": "동물약국",
+   "data_id": "15155272",
+   "title": "행정안전부_동물_동물약국 조회서비스",
+   "page": "https://www.data.go.kr/data/15155272/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/animal_pharmacies"
+  },
+  {
+   "service": "동물미용업",
+   "data_id": "15154944",
+   "title": "행정안전부_동물_동물미용업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154944/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/pet_grooming"
+  },
+  {
+   "service": "동물판매업",
+   "data_id": "15155083",
+   "title": "행정안전부_동물_동물판매업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155083/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/animal_sales"
+  },
+  {
+   "service": "동물위탁관리업",
+   "data_id": "15155055",
+   "title": "행정안전부_동물_동물위탁관리업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155055/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/animal_boarding"
+  },
+  {
+   "service": "이용업",
+   "data_id": "15154922",
+   "title": "행정안전부_생활_이용업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154922/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/barber_shops"
+  },
+  {
+   "service": "목욕장업",
+   "data_id": "15155091",
+   "title": "행정안전부_생활_목욕장업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155091/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/public_baths"
+  },
+  {
+   "service": "무도학원업",
+   "data_id": "15155029",
+   "title": "행정안전부_생활_무도학원업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155029/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/dance_academies"
+  },
+  {
+   "service": "무도장업",
+   "data_id": "15155022",
+   "title": "행정안전부_생활_무도장업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155022/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/dance_halls"
+  },
+  {
+   "service": "청소년게임제공업",
+   "data_id": "15154958",
+   "title": "행정안전부_문화_청소년게임제공업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154958/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/youth_game_providers"
+  },
+  {
+   "service": "일반게임제공업",
+   "data_id": "15154955",
+   "title": "행정안전부_문화_일반게임제공업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154955/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/general_game_providers"
+  },
+  {
+   "service": "복합유통게임제공업",
+   "data_id": "15154945",
+   "title": "행정안전부_문화_복합유통게임제공업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154945/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/mixed_game_providers"
+  },
+  {
+   "service": "비디오물감상실업",
+   "data_id": "15155128",
+   "title": "행정안전부_문화_비디오물감상실업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155128/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/video_viewing_rooms"
+  },
+  {
+   "service": "비디오물소극장업",
+   "data_id": "15155043",
+   "title": "행정안전부_문화_비디오물소극장업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155043/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/video_mini_theaters"
+  },
+  {
+   "service": "복합영상물제공업",
+   "data_id": "15154937",
+   "title": "행정안전부_문화_복합영상물제공업 조회서비스",
+   "page": "https://www.data.go.kr/data/15154937/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/mixed_video_content_providers"
+  },
+  {
+   "service": "비디오물시청제공업",
+   "data_id": "15155059",
+   "title": "행정안전부_문화_비디오물시청제공업 조회서비스",
+   "page": "https://www.data.go.kr/data/15155059/openapi.do",
+   "endpoint": "https://apis.data.go.kr/1741000/video_streaming_providers"
+  }
+ ]
+}
