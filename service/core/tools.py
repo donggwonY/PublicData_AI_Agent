@@ -1653,3 +1653,7 @@ TOOL_FUNCTIONS = {
     "get_resident_outlook": get_resident_outlook,
     "find_similar_areas": find_similar_areas,
 }
+
+
+from core.franchise import get_franchise_outlook
+TOOL_FUNCTIONS["get_franchise_outlook"] = get_franchise_outlook

@@ -117,3 +117,8 @@ def startup_consult(question: str = "대구에서 카페 창업을 준비 중이
 if __name__ == "__main__":
     T.store()  # 시작 시 산출물 로드(없으면 즉시 오류)
     mcp.run()
+
+
+@mcp.tool(description=_DESC["get_franchise_outlook"])
+def get_franchise_outlook(brand: str) -> dict:
+    return T.get_franchise_outlook(brand)

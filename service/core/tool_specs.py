@@ -247,3 +247,10 @@ TOOL_SPECS = [
         },
     },
 ]
+
+
+TOOL_SPECS.append({
+    "name": "get_franchise_outlook",
+    "description": "대구 프랜차이즈 브랜드의 과거 가맹점 수와 2026년 말 감소 추정을 조회한다. 정확 이름·CU·BBQ·메가커피 별칭 지원. 후보가 여러 개면 선택을 묻는다. 기간·공식 수치 미확인·업종 과거 비교값을 함께 설명한다. 개별 가게 폐업확률이 아니며 확률순 추천·계약 판단을 하지 않는다. 2년 전망은 2024년 말 대비이며 2026년 한 해 변화로 말하지 않는다.",
+    "input_schema": {"type":"object","properties":{"brand":{"type":"string","description":"브랜드 이름 또는 관리번호"}},"required":["brand"]}
+})

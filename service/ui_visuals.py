@@ -206,6 +206,7 @@ def ai_markdown(text: str) -> str:
 
 # AI 상담 도구 기록을 사람이 읽는 말로(2026-11-15). 개발용 함수 이름·JSON 대신 '무엇을 · 어떤 조건으로'.
 TOOL_LABELS = {
+    "get_franchise_outlook": "프랜차이즈 가맹점 변화 조회",
     "get_survival_curve": "업종 생존 기간 조회", "get_market_cycle": "상권 흐름 조회",
     "find_vacant_units": "빈 자리 찾기", "get_unit_history": "자리 이력 조회",
     "find_risk_spots": "폐업이 잦은 자리 찾기", "compare_areas": "지역 비교",
