@@ -78,6 +78,8 @@ class FranchiseOutlookTest(unittest.TestCase):
         p = build_system_prompt()
         self.assertIn("get_franchise_outlook", p)
         self.assertIn("industry_reference", p)
+        self.assertIn("줄었을 가능성", p)                       # 감소만 예측: 낮은 확률을 증가·성장으로 말하지 않기
+        self.assertIn("늘어난다", p)
 
 
 if __name__ == "__main__":
