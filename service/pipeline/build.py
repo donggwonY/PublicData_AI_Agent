@@ -67,7 +67,9 @@ def load_raw() -> tuple[pd.DataFrame, dict]:
             continue
         # cp949 = 공공데이터포털 CSV 의 한글 인코딩. dtype=str 로 읽어 날짜·숫자 변환은 clean() 에서 한 번에 한다
         # (pandas 가 알아서 추측하게 두면 '0061-0003' 같은 번지가 숫자로 바뀌는 사고가 난다).
-        df = pd.read_csv(path, encoding="cp949", encoding_errors="replace", dtype=str,
+        # API로 받은 파일(pipeline.fetch_license, 이름 끝 '_api…')은 UTF-8 이다(2026-11-24).
+        enc = "utf-8-sig" if "_api" in path.stem else "cp949"
+        df = pd.read_csv(path, encoding=enc, encoding_errors="replace", dtype=str,
                          usecols=lambda c: c in USECOLS)  # 39개 열 중 쓰는 16개만
         for col in USECOLS:  # 이 업종 파일에 없는 열은 빈 값으로 만들어 이후 처리를 단순화한다
             if col not in df.columns:

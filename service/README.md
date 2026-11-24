@@ -97,7 +97,8 @@ Claude Desktop 앱이 claude.ai 계정으로 대화를 처리하고, 이 프로�
 ## 구조
 
 ```
-data/raw/                 인허가 원본 CSV (CP949, Git 제외). 파일 이름 `분류_업종명[_지역].csv`. 증분 파일도 여기에 → 고유키 기준 최신 행 채택
+data/raw/                 인허가 원본 CSV (Git 제외). 파일 이름 `분류_업종명[_…].csv`. 파일 사이트 CSV 는 CP949, API로 받은 `…_api…` 는 UTF-8. 증분 파일도 여기에 → 고유키 기준 최신 행 채택
+data/raw_api/             API 수집 결과(Git 제외). `pipeline.refresh_license weekly|monthly` 가 여기서 data/raw 로 옮긴다. 교체된 이전 원본은 data/raw_archive/
 data/external/            보조 데이터 CSV (Git 제외: 상가정보·주민등록인구·도시철도·주차장·전통시장)
 data/processed/           배치 산출물 (parquet 13개 + meta.json, 약 38MB). 앱·Tool 이 읽는 표
 data/snapshots/           확장 이전(2026-09-23, 7업종) 산출물 원본 보존. D-01·D-02 검증 재현용, 수정 금지
@@ -134,6 +135,7 @@ Tool 14종:
 
 2026-10-15 팀 회의 결정으로 기존 7종에 8개 업종을 더했다. `config.SERVICES`에는 원천 업종명 16개가 있으며 서비스 조회는 의원·병원을 각각 유지한다. 분석 보고서에서는 두 업종을 합쳐 15그룹으로 집계한다.
 원본은 행정안전부 인허가 대구광역시 압축 파일(2026-10-13까지)에서 해당 16개 CSV 를 `data/raw` 에 둔다.
+(2026-11-24부터 42개 업종 원본은 공공데이터포털 API로 받는다: 매주 `python -m pipeline.refresh_license weekly`, 월 1회 `monthly`. `../docs/e04/README.md` 4단계.)
 업종은 파일 이름의 두 번째 칸이 `SERVICES` 와 **정확히 같을 때만** 읽는다(부분 일치면 "병원"이 "동물병원"에도 걸린다).
 
 | 업종 | 레코드 | 폐업 | 영업 중 | 중앙생존(2010~) | 좌표 채움률 |

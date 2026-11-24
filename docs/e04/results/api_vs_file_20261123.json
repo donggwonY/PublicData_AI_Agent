@@ -1,0 +1,1033 @@
+{
+ "api_dir": "full_20261123",
+ "total": {
+  "file_rows": 299362,
+  "api_rows": 299684,
+  "only_file": 4,
+  "only_api": 326,
+  "newer_in_api": 1156,
+  "value_diff_not_explained": 0,
+  "missing": []
+ },
+ "services": {
+  "일반음식점": {
+   "file_rows": 97701,
+   "api_rows": 97792,
+   "both": 97701,
+   "only_file": 0,
+   "only_api": 91,
+   "newer_in_api": 450,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 152,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 152,
+     "diff_not_newer": 0
+    },
+    "소재지면적": {
+     "diff": 57,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 108,
+     "diff_not_newer": 0
+    },
+    "업태구분명": {
+     "diff": 13,
+     "diff_not_newer": 0
+    },
+    "위생업태명": {
+     "diff": 13,
+     "diff_not_newer": 0
+    },
+    "도로명주소": {
+     "diff": 21,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 14,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 58,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 58,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "휴게음식점": {
+   "file_rows": 31258,
+   "api_rows": 31318,
+   "both": 31258,
+   "only_file": 0,
+   "only_api": 60,
+   "newer_in_api": 187,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 109,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 109,
+     "diff_not_newer": 0
+    },
+    "소재지면적": {
+     "diff": 24,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 15,
+     "diff_not_newer": 0
+    },
+    "업태구분명": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "위생업태명": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "도로명주소": {
+     "diff": 6,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 4,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 15,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 15,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "제과점영업": {
+   "file_rows": 4063,
+   "api_rows": 4083,
+   "both": 4063,
+   "only_file": 0,
+   "only_api": 20,
+   "newer_in_api": 23,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 12,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 12,
+     "diff_not_newer": 0
+    },
+    "소재지면적": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "도로명주소": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 5,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 5,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "미용업": {
+   "file_rows": 25010,
+   "api_rows": 25038,
+   "both": 25006,
+   "only_file": 4,
+   "only_api": 32,
+   "newer_in_api": 102,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 35,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 35,
+     "diff_not_newer": 0
+    },
+    "소재지면적": {
+     "diff": 47,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 11,
+     "diff_not_newer": 0
+    },
+    "도로명주소": {
+     "diff": 10,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 10,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 13,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 13,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": [
+    {
+     "관리번호": "3450000-211-2020-00010",
+     "사업장명_f": "릴리헤어샵",
+     "영업상태명_f": "영업/정상"
+    },
+    {
+     "관리번호": "3460000-211-2016-00014",
+     "사업장명_f": "두남자헤어",
+     "영업상태명_f": "영업/정상"
+    },
+    {
+     "관리번호": "3460000-211-2023-00034",
+     "사업장명_f": "또,뷰티",
+     "영업상태명_f": "영업/정상"
+    }
+   ]
+  },
+  "세탁업": {
+   "file_rows": 3585,
+   "api_rows": 3585,
+   "both": 3585,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 2,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "소재지면적": {
+     "diff": 1,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "노래연습장업": {
+   "file_rows": 3059,
+   "api_rows": 3059,
+   "both": 3059,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 20,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 3,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "담배소매업": {
+   "file_rows": 34368,
+   "api_rows": 34379,
+   "both": 34368,
+   "only_file": 0,
+   "only_api": 11,
+   "newer_in_api": 25,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 16,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 14,
+     "diff_not_newer": 0
+    },
+    "인허가취소일자": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 2,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "의원": {
+   "file_rows": 5905,
+   "api_rows": 5910,
+   "both": 5905,
+   "only_file": 0,
+   "only_api": 5,
+   "newer_in_api": 35,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 5,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "도로명주소": {
+     "diff": 5,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 9,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 10,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 10,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "병원": {
+   "file_rows": 372,
+   "api_rows": 372,
+   "both": 372,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 40,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 3,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "약국": {
+   "file_rows": 3046,
+   "api_rows": 3048,
+   "both": 3046,
+   "only_file": 0,
+   "only_api": 2,
+   "newer_in_api": 3,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "사업장명": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "도로명주소": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 2,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "체력단련장업": {
+   "file_rows": 1333,
+   "api_rows": 1334,
+   "both": 1333,
+   "only_file": 0,
+   "only_api": 1,
+   "newer_in_api": 7,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "사업장명": {
+     "diff": 4,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 2,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "인터넷컴퓨터게임시설제공업": {
+   "file_rows": 3013,
+   "api_rows": 3019,
+   "both": 3013,
+   "only_file": 0,
+   "only_api": 6,
+   "newer_in_api": 21,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 4,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "인허가취소일자": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 4,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 3,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "당구장업": {
+   "file_rows": 1918,
+   "api_rows": 1918,
+   "both": 1918,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 3,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 1,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "체육도장업": {
+   "file_rows": 1713,
+   "api_rows": 1713,
+   "both": 1713,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 3,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "사업장명": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "도로명주소": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 2,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "골프연습장업": {
+   "file_rows": 828,
+   "api_rows": 828,
+   "both": 828,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 2,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "축산판매업": {
+   "file_rows": 10293,
+   "api_rows": 10304,
+   "both": 10293,
+   "only_file": 0,
+   "only_api": 11,
+   "newer_in_api": 24,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 12,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 12,
+     "diff_not_newer": 0
+    },
+    "소재지면적": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 4,
+     "diff_not_newer": 0
+    },
+    "도로명주소": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 8,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 8,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "단란주점영업": {
+   "file_rows": 921,
+   "api_rows": 921,
+   "both": 921,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 3,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "유흥주점영업": {
+   "file_rows": 2136,
+   "api_rows": 2136,
+   "both": 2136,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 10,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 3,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "관광식당": {
+   "file_rows": 1,
+   "api_rows": 1,
+   "both": 1,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "관광유흥음식점업": {
+   "file_rows": 2,
+   "api_rows": 2,
+   "both": 2,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "외국인전용유흥음식점업": {
+   "file_rows": 67,
+   "api_rows": 67,
+   "both": 67,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "즉석판매제조가공업": {
+   "file_rows": 34389,
+   "api_rows": 34434,
+   "both": 34389,
+   "only_file": 0,
+   "only_api": 45,
+   "newer_in_api": 64,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 45,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 45,
+     "diff_not_newer": 0
+    },
+    "소재지면적": {
+     "diff": 12,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "도로명주소": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 5,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 5,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "식품판매업(기타)": {
+   "file_rows": 703,
+   "api_rows": 703,
+   "both": 703,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "건강기능식품일반판매업": {
+   "file_rows": 20860,
+   "api_rows": 20891,
+   "both": 20860,
+   "only_file": 0,
+   "only_api": 31,
+   "newer_in_api": 80,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 57,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 57,
+     "diff_not_newer": 0
+    },
+    "소재지면적": {
+     "diff": 11,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 6,
+     "diff_not_newer": 0
+    },
+    "위생업태명": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "도로명주소": {
+     "diff": 11,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 11,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 8,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 8,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "안경업": {
+   "file_rows": 984,
+   "api_rows": 984,
+   "both": 984,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 2,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "사업장명": {
+     "diff": 1,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "의료유사업": {
+   "file_rows": 121,
+   "api_rows": 121,
+   "both": 121,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 3,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "도로명주소": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "지번주소": {
+     "diff": 1,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "동물병원": {
+   "file_rows": 425,
+   "api_rows": 425,
+   "both": 425,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 1,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "동물약국": {
+   "file_rows": 964,
+   "api_rows": 966,
+   "both": 964,
+   "only_file": 0,
+   "only_api": 2,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "동물미용업": {
+   "file_rows": 838,
+   "api_rows": 841,
+   "both": 838,
+   "only_file": 0,
+   "only_api": 3,
+   "newer_in_api": 2,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "사업장명": {
+     "diff": 1,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "동물판매업": {
+   "file_rows": 427,
+   "api_rows": 427,
+   "both": 427,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "동물위탁관리업": {
+   "file_rows": 506,
+   "api_rows": 506,
+   "both": 506,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "이용업": {
+   "file_rows": 3421,
+   "api_rows": 3422,
+   "both": 3421,
+   "only_file": 0,
+   "only_api": 1,
+   "newer_in_api": 8,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "소재지면적": {
+     "diff": 3,
+     "diff_not_newer": 0
+    },
+    "사업장명": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 2,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "목욕장업": {
+   "file_rows": 846,
+   "api_rows": 846,
+   "both": 846,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 9,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "소재지면적": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 1,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "무도학원업": {
+   "file_rows": 269,
+   "api_rows": 269,
+   "both": 269,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "무도장업": {
+   "file_rows": 10,
+   "api_rows": 10,
+   "both": 10,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "청소년게임제공업": {
+   "file_rows": 1728,
+   "api_rows": 1733,
+   "both": 1728,
+   "only_file": 0,
+   "only_api": 5,
+   "newer_in_api": 19,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "좌표정보(X)": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 1,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "일반게임제공업": {
+   "file_rows": 1977,
+   "api_rows": 1977,
+   "both": 1977,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 7,
+   "value_diff_not_explained": 0,
+   "columns": {
+    "영업상태명": {
+     "diff": 2,
+     "diff_not_newer": 0
+    },
+    "폐업일자": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "인허가취소일자": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "좌표정보(X)": {
+     "diff": 1,
+     "diff_not_newer": 0
+    },
+    "좌표정보(Y)": {
+     "diff": 1,
+     "diff_not_newer": 0
+    }
+   },
+   "only_file_examples": []
+  },
+  "복합유통게임제공업": {
+   "file_rows": 91,
+   "api_rows": 91,
+   "both": 91,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 1,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "비디오물감상실업": {
+   "file_rows": 183,
+   "api_rows": 183,
+   "both": 183,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "비디오물소극장업": {
+   "file_rows": 7,
+   "api_rows": 7,
+   "both": 7,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "복합영상물제공업": {
+   "file_rows": 4,
+   "api_rows": 4,
+   "both": 4,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  },
+  "비디오물시청제공업": {
+   "file_rows": 17,
+   "api_rows": 17,
+   "both": 17,
+   "only_file": 0,
+   "only_api": 0,
+   "newer_in_api": 0,
+   "value_diff_not_explained": 0,
+   "columns": {},
+   "only_file_examples": []
+  }
+ }
+}
