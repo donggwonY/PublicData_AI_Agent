@@ -1,17 +1,18 @@
 {
  "decision": "docs/e06/service_backtest.md",
- "input_sha256": "e011e410c8779e2d5a37c1bce169e56d70efde292e943d92ec5f8338fab24091",
- "precheck_2026_mae": 2.7142,
- "model": "G1 포아송 회귀 λ=0.3, 학습 기간 연도 ≤ 2026 (11-06 기준 12개월)",
+ "backtest": "service_backtest_2026-11-22.json",
+ "input_sha256": "7719155d225942a9585c0d9c61dc44bcda0463393600942eeb787d837ae5e5de",
+ "precheck_2026_mae": 2.8098,
+ "model": "G1 포아송 회귀 λ=0.3, 학습 기간 연도 ≤ 2026 (11-22 기준 12개월)",
  "period": [
-  "2026-11-07",
-  "2027-11-06"
+  "2026-11-23",
+  "2027-11-22"
  ],
- "rows": 777,
+ "rows": 822,
  "gu": 9,
- "categories": 117,
+ "categories": 123,
  "dropped_gu_values": [],
- "closes_pred_sum": 6716.1,
- "last_period_actual_closes_sum": 7158,
- "parquet_sha256": "9faf0f5878a7d5351edd30ce3d2b1fdb121dda3decc3133dbcbde9342ac663e1"
+ "closes_pred_sum": 7128.1,
+ "last_period_actual_closes_sum": 7565,
+ "parquet_sha256": "c47aec0aa5fb2519dd94c6a0b4c8beb02088833ce38a822e26352eb1b24faa0c"
 }

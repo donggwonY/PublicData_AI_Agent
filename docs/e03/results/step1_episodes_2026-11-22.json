@@ -1,0 +1,234 @@
+{
+ "inputs": {
+  "frozen": {
+   "reference_date": "2026-11-06",
+   "built_at": "2026-11-09 22:04:16"
+  },
+  "v5": {
+   "dir": "service\\data\\processed",
+   "reference_date": "2026-11-22",
+   "built_at": "2026-11-24 13:06:57"
+  }
+ },
+ "frozen_vs_v5": {
+  "stores_rows": [
+   286896,
+   287203
+  ],
+  "units_rows": [
+   95861,
+   90711
+  ],
+  "stores_matched": 2483,
+  "units_matched": 90103,
+  "stores_only_in_v5": [
+   "addr_masked",
+   "short_event"
+  ],
+  "stores_cols_with_diff": {
+   "uid": 29,
+   "building_key": 24,
+   "name": 2,
+   "cd": 2,
+   "closed": 2,
+   "dur_days": 816,
+   "gu": 1,
+   "dong": 27,
+   "jibun_addr_raw": 2066,
+   "is_primary": 1
+  },
+  "units_cols_with_diff": {
+   "gu": 33,
+   "dong": 283,
+   "n_records": 1981,
+   "n_active": 1014,
+   "n_closed": 1739,
+   "closures_since_2010": 1152,
+   "first_open": 588,
+   "last_open": 815,
+   "last_close": 1028,
+   "lat": 399,
+   "lon": 395,
+   "n_services": 832,
+   "n_categories": 932,
+   "avg_life_closed_years": 1760,
+   "avg_life_since_2010_years": 1146,
+   "floor": 13,
+   "road_addr": 1102,
+   "addr": 1115,
+   "last_name": 801,
+   "last_category": 375,
+   "last_service": 318,
+   "last_life_years": 44894,
+   "category_path": 1910,
+   "current_stores": 1090,
+   "max_concurrent": 915,
+   "max_concurrent_naive": 904,
+   "is_single_unit": 397,
+   "vacant": 417,
+   "vacant_days": 39328,
+   "recent_vacancy": 233,
+   "vacancy_bucket": 897
+  },
+  "short_event_occupants": 17148
+ },
+ "episodes": {
+  "frozen_2012_2023": {
+   "episodes": 28570,
+   "events": 12687,
+   "landmark90": 21627,
+   "landmark90_events": 5746
+  },
+  "v5_2012_2023": {
+   "episodes": 26511,
+   "events": 12577,
+   "landmark90": 19578,
+   "landmark90_events": 5644
+  },
+  "v5_2012_2023_same_ids_as_frozen": false,
+  "v5_2012_2026": {
+   "episodes": 32907,
+   "events": 14642,
+   "landmark90": 24050,
+   "landmark90_events": 6242
+  },
+  "v5_by_close_year": {
+   "2012": {
+    "episodes": 2152,
+    "events": 1096,
+    "landmark90": 1673,
+    "landmark90_events": 617
+   },
+   "2013": {
+    "episodes": 2023,
+    "events": 1066,
+    "landmark90": 1534,
+    "landmark90_events": 577
+   },
+   "2014": {
+    "episodes": 2068,
+    "events": 1056,
+    "landmark90": 1555,
+    "landmark90_events": 543
+   },
+   "2015": {
+    "episodes": 2012,
+    "events": 1086,
+    "landmark90": 1456,
+    "landmark90_events": 530
+   },
+   "2016": {
+    "episodes": 2116,
+    "events": 1117,
+    "landmark90": 1484,
+    "landmark90_events": 485
+   },
+   "2017": {
+    "episodes": 2141,
+    "events": 1079,
+    "landmark90": 1524,
+    "landmark90_events": 462
+   },
+   "2018": {
+    "episodes": 2296,
+    "events": 1135,
+    "landmark90": 1691,
+    "landmark90_events": 530
+   },
+   "2019": {
+    "episodes": 2490,
+    "events": 1170,
+    "landmark90": 1801,
+    "landmark90_events": 481
+   },
+   "2020": {
+    "episodes": 2401,
+    "events": 991,
+    "landmark90": 1822,
+    "landmark90_events": 412
+   },
+   "2021": {
+    "episodes": 2123,
+    "events": 871,
+    "landmark90": 1596,
+    "landmark90_events": 344
+   },
+   "2022": {
+    "episodes": 2192,
+    "events": 940,
+    "landmark90": 1565,
+    "landmark90_events": 313
+   },
+   "2023": {
+    "episodes": 2497,
+    "events": 970,
+    "landmark90": 1877,
+    "landmark90_events": 350
+   },
+   "2024": {
+    "episodes": 2373,
+    "events": 909,
+    "landmark90": 1794,
+    "landmark90_events": 330
+   },
+   "2025": {
+    "episodes": 2228,
+    "events": 711,
+    "landmark90": 1735,
+    "landmark90_events": 218
+   },
+   "2026": {
+    "episodes": 1795,
+    "events": 445,
+    "landmark90": 943,
+    "landmark90_events": 50
+   }
+  }
+ },
+ "candidates": {
+  "n": 4266,
+  "definition": "vacant & 90<=vacant_days<=1095 & is_single_unit (find_vacant_units 기본값)",
+  "link": {
+   "ok": 4266
+  },
+  "linked": 4266,
+  "linked_pct": 100.0,
+  "by_band": {
+   "90~180일": {
+    "n": 328,
+    "linked": 328
+   },
+   "180일~1년": {
+    "n": 957,
+    "linked": 957
+   },
+   "1~2년": {
+    "n": 1495,
+    "linked": 1495
+   },
+   "2~3년": {
+    "n": 1486,
+    "linked": 1486
+   }
+  },
+  "close_year_of_linked": {
+   "2023": 387,
+   "2024": 1464,
+   "2025": 1517,
+   "2026": 898
+  },
+  "by_last_service_top": {
+   "일반음식점": 1820,
+   "휴게음식점": 668,
+   "미용업": 417,
+   "담배소매업": 414,
+   "즉석판매제조가공업": 321,
+   "축산판매업": 97,
+   "의원": 68,
+   "노래연습장업": 65,
+   "이용업": 43,
+   "세탁업": 43
+  }
+ },
+ "seconds": 11
+}

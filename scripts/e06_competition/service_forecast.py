@@ -22,14 +22,21 @@ build, rolling, ppf_counts, mae = (ns[k] for k in ('build', 'rolling', 'ppf_coun
 
 REF = pd.Timestamp(json.loads((ROOT / 'service/data/processed/meta.json').read_text(encoding='utf-8'))['reference_date'])
 SHIFT = pd.Timestamp('2026-12-31') - REF
-assert SHIFT == pd.Timedelta(days=55), '기준일이 2026-11-06 이 아니면 점검 결과를 그대로 쓸 수 없다'
+# 같은 기준일로 돌린 점검(service_backtest.py) 결과가 있어야 한다. 결정 당시 2026-11-06 은 service_backtest.json.
+BT = ROOT / ('docs/e06/results/service_backtest.json' if REF == pd.Timestamp('2026-11-06')
+             else f'docs/e06/results/service_backtest_{REF.date()}.json')
+assert BT.exists(), f'기준일 {REF.date()} 점검 결과가 없다: 먼저 service_backtest.py 실행'
+bt = json.loads(BT.read_text(encoding='utf-8'))
+assert bt['period_definition'].endswith(f'+{SHIFT.days}일 이동)'), '점검 결과의 기준일이 다르다'
+assert bt['input_sha256'] == ns['snapshot_sha256'](ns['SRC']), '점검 때와 입력(stores.parquet)이 다르다'
+assert bt['c1_all_years_better'] and bt['c2_ci_upper_below_0'], '점검에서 G1이 기준선보다 낫지 않다 → 반영 중단'
 s = ns['s']
 s['ld'] = s.ld + SHIFT
 s['cd'] = s.cd + SHIFT
 s['oy'] = s.ld.dt.year
 s['cy'] = np.where(s.closed, s.cd.dt.year, np.nan)
 
-LAM, TARGET, HIT = 0.3, 2027, 0.852
+LAM, TARGET, HIT = 0.3, 2027, bt['cov80_poisson']   # 결정 당시 0.852
 GUS = ['중구', '동구', '서구', '남구', '북구', '수성구', '달서구', '달성군', '군위군']
 T1 = build(['gu'])
 
@@ -37,7 +44,7 @@ T1 = build(['gu'])
 pre, _ = rolling(T1, 'closes', [2026], LAM)
 W = T1.year == 2026
 pre_mae = round(mae(T1.loc[W, 'closes'], pre[W]), 4)
-assert pre_mae == 2.7142, f'사전 점검 실패: {pre_mae}'
+assert pre_mae == bt['by_year']['2026']['G1'], f"사전 점검 실패: {pre_mae} ≠ {bt['by_year']['2026']['G1']}"  # 결정 당시 2.7142
 print('사전 점검 통과', pre_mae)
 
 pred, _ = rolling(T1, 'closes', [TARGET], LAM)
@@ -67,8 +74,8 @@ out = pd.DataFrame({
 PQ = ROOT / 'service/data/processed/competition_forecast.parquet'
 out.to_parquet(PQ, index=False)
 summary = {
-    'decision': 'docs/e06/service_backtest.md', 'input_sha256': ns['snapshot_sha256'](ns['SRC']),
-    'precheck_2026_mae': pre_mae, 'model': 'G1 포아송 회귀 λ=0.3, 학습 기간 연도 ≤ 2026 (11-06 기준 12개월)',
+    'decision': 'docs/e06/service_backtest.md', 'backtest': BT.name, 'input_sha256': ns['snapshot_sha256'](ns['SRC']),
+    'precheck_2026_mae': pre_mae, 'model': f'G1 포아송 회귀 λ=0.3, 학습 기간 연도 ≤ 2026 ({REF:%m-%d} 기준 12개월)',
     'period': [out.period_start[0], out.period_end[0]], 'rows': int(len(out)),
     'gu': int(out.gu.nunique()), 'categories': int(out.category.nunique()), 'dropped_gu_values': dropped,
     'closes_pred_sum': round(float(out.closes_pred.sum()), 1),

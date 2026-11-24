@@ -1,0 +1,199 @@
+{
+ "reference_date": "2026-11-22",
+ "years": [
+  2012,
+  2026
+ ],
+ "episodes": 32907,
+ "landmark90": 24050,
+ "aux_last_month": {
+  "subway": "2026-09",
+  "population": "2026-10",
+  "sangga_quarter": "2026-09-30"
+ },
+ "sangga_coord_fix": {
+  "quarter": "2025-03-31",
+  "rows": 115456,
+  "replaced_from_prev_quarter": 111335,
+  "left_missing_new_stores": 4121,
+  "qa_before": {
+   "2023-03-31": {
+    "matched": 105342,
+    "median_move_m": 1.8,
+    "lat_median": 35.8613
+   },
+   "2024-12-31": {
+    "matched": 101631,
+    "median_move_m": 1.7,
+    "lat_median": 35.8615
+   },
+   "2025-03-31": {
+    "matched": 111335,
+    "median_move_m": 147760.6,
+    "lat_median": 36.7276
+   },
+   "2025-06-30": {
+    "matched": 111255,
+    "median_move_m": 147760.5,
+    "lat_median": 35.8615
+   }
+  },
+  "qa_after_max_median_move_m": 1.8
+ },
+ "reproduce_2012_2023": {
+  "ids_equal": false,
+  "ids_ref": 28570,
+  "ids_compared": 4455,
+  "numeric_cols": 49,
+  "rows_numeric_mismatch": 4440,
+  "rows_category_mismatch": 3889,
+  "sangga_rows_mismatch": 3838
+ },
+ "T1_history_single_2024_2026": {
+  "n": 400,
+  "mismatch": 0
+ },
+ "T2_neighbor_dong_sub_pop": {
+  "2024-03": {
+   "n": 194,
+   "mismatch": 0
+  },
+  "2025-06": {
+   "n": 167,
+   "mismatch": 0
+  },
+  "2026-08": {
+   "n": 140,
+   "mismatch": 0
+  }
+ },
+ "T3_sangga": {
+  "2024-03-31": {
+   "n": 561,
+   "mismatch": 0
+  },
+  "2025-06-30": {
+   "n": 638,
+   "mismatch": 0
+  },
+  "2026-06-30": {
+   "n": 426,
+   "mismatch": 0
+  }
+ },
+ "T4_feature_names_clean": true,
+ "leakage_pass": true,
+ "current_candidates": {
+  "n": 4266,
+  "all_open_T_equals_vacant_days": true
+ },
+ "missing_pct_s2": {
+  "s2_nb_active": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_nb_active_same": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_nb_open_12m": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_nb_close_12m": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_nb_net_12m": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_nb_net_same_12m": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_nb_vacant": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_nb_vacancy_rate": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_dong_vacancy_rate": {
+   "train_2016_2023": 0.0,
+   "current": 0.0
+  },
+  "s2_dong_live_change_3y": {
+   "train_2016_2023": 0.0,
+   "current": 0.0
+  },
+  "s2_sub_dist_m": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_sub_board_12m": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_sub_board_yoy": {
+   "train_2016_2023": 4.4,
+   "current": 2.5
+  },
+  "s2_pop": {
+   "train_2016_2023": 1.1,
+   "current": 0.2
+  },
+  "s2_pop_2039_share": {
+   "train_2016_2023": 1.1,
+   "current": 0.2
+  },
+  "s2_pop_60plus_share": {
+   "train_2016_2023": 1.1,
+   "current": 0.2
+  },
+  "s2_pop_change_12m": {
+   "train_2016_2023": 1.1,
+   "current": 0.2
+  },
+  "s2_sg_floor_total": {
+   "train_2016_2023": 43.9,
+   "current": 29.1
+  },
+  "s2_sg_floor_other": {
+   "train_2016_2023": 43.9,
+   "current": 29.1
+  },
+  "s2_sg_floor_new_other": {
+   "train_2016_2023": 43.9,
+   "current": 29.1
+  },
+  "s2_sg_nb_total": {
+   "train_2016_2023": 3.6,
+   "current": 2.4
+  },
+  "s2_sg_nb_other_share": {
+   "train_2016_2023": 4.0,
+   "current": 2.8
+  },
+  "s2_sg_nb_change_1y": {
+   "train_2016_2023": 13.0,
+   "current": 2.8
+  }
+ },
+ "current_sangga_quarter_used": {
+  "2023-09-30": 48,
+  "2023-12-31": 537,
+  "2024-03-31": 335,
+  "2024-06-30": 268,
+  "2024-09-30": 340,
+  "2024-12-31": 509,
+  "2025-03-31": 313,
+  "2025-06-30": 414,
+  "2025-10-30": 257,
+  "2025-12-31": 615,
+  "2026-03-31": 319,
+  "2026-06-30": 311
+ },
+ "seconds": 902
+}

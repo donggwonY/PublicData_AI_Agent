@@ -38,20 +38,24 @@ res = {'inputs': {'frozen': {'reference_date': mf['reference_date'], 'built_at':
 # ── A. 고정 빌드 vs v5: 공통 열 값이 같은가 ──
 key = ['occupant_id', 'mgmt_no', 'org_code', 'service']
 common = [c for c in sf.columns if c in sv.columns]
-a = sf.sort_values(key).reset_index(drop=True)[common]; b = sv.sort_values(key).reset_index(drop=True)[common]
-diff = {c: int((~((a[c] == b[c]) | (a[c].isna() & b[c].isna()))).sum()) for c in common}
+# 키로 맞춰 둘 다 있는 행만 비교한다(2026-11-24: 새 원본으로 행 수가 달라져도 돌도록. 행 수가 같으면 결과는 이전과 같다)
+def _diff(x, y, k):
+    j = x.set_index(k).join(y.set_index(k), how='inner', lsuffix='_a', rsuffix='_b')
+    cols = [c for c in x.columns if c in y.columns and c not in k]
+    return {c: int((~((j[f'{c}_a'] == j[f'{c}_b']) | (j[f'{c}_a'].isna() & j[f'{c}_b'].isna()))).sum()) for c in cols}, len(j)
+diff, n_both = _diff(sf[common], sv[common], key)
 ucommon = [c for c in uf.columns if c in uv.columns]
-ua = uf.sort_values('uid').reset_index(drop=True)[ucommon]; ub = uv.sort_values('uid').reset_index(drop=True)[ucommon]
-udiff = {c: int((~((ua[c] == ub[c]) | (ua[c].isna() & ub[c].isna()))).sum()) for c in ucommon}
+udiff, u_both = _diff(uf[ucommon], uv[ucommon], ['uid'])
 res['frozen_vs_v5'] = {
-    'stores_rows': [len(sf), len(sv)], 'units_rows': [len(uf), len(uv)],
+    'stores_rows': [len(sf), len(sv)], 'units_rows': [len(uf), len(uv)], 'stores_matched': n_both, 'units_matched': u_both,
     'stores_only_in_v5': [c for c in sv.columns if c not in sf.columns],
     'stores_cols_with_diff': {c: n for c, n in diff.items() if n}, 'units_cols_with_diff': {c: n for c, n in udiff.items() if n},
     'short_event_occupants': int(sv.drop_duplicates('occupant_id').short_event.sum()) if 'short_event' in sv else None}
 log('frozen vs v5', res['frozen_vs_v5'])
 
 # ── B. v5로 사례 재생성: 실험 범위(2012–2023) + 서비스용 확장(2012–2026) ──
-occ = A.load_occupants(sv, uv[['uid', 'lat', 'lon']])
+# 번지 가림 인허가(E-12, 2026-11-20 이후 uid 없음)는 자리가 없어 공백 후보·사례가 될 수 없다
+occ = A.load_occupants(sv[sv.uid.notna()], uv[['uid', 'lat', 'lon']])
 ep = A.build_episodes(occ, ref, years=(2012, 2026))
 ep['T'] = ep['T'].astype(float)
 exp_rng = ep.close_year.between(2012, 2023)

@@ -29,7 +29,7 @@ log = lambda *a: print(f'[{time.time()-t00:6.0f}s]', *a, flush=True)
 REF = pd.Timestamp(json.load(open(os.path.join(V5, 'meta.json'), encoding='utf-8'))['reference_date'])
 stores = pd.read_parquet(os.path.join(V5, 'stores.parquet'))
 units = pd.read_parquet(os.path.join(V5, 'units.parquet'))
-occ = A.load_occupants(stores, units[['uid', 'lat', 'lon']])
+occ = A.load_occupants(stores[stores.uid.notna()], units[['uid', 'lat', 'lon']])  # 번지 가림(uid 없음) 제외, step1 과 같게
 ep = A.build_episodes(occ, REF, years=YEARS)
 log('episodes', len(ep))
 P = A.Panels(occ, REF)
@@ -93,15 +93,18 @@ def same(a: pd.DataFrame, b: pd.DataFrame):
 R = pd.read_parquet(os.path.join(REF_DIR, 'asof_episodes.parquet')).set_index('occupant_id')
 RF = pd.read_parquet(os.path.join(REF_DIR, 'sangga_features.parquet')).set_index('occupant_id')
 Xi = X.set_index('occupant_id'); Fi = F.set_index('occupant_id')
-ids = R.index
+# 원본이 바뀌면(2026-11-24 API 원본, 기준일 2026-11-22) 가게 ID가 일부 달라진다 → 둘 다 있는 ID만 비교하고 개수를 남긴다
+ids = R.index.intersection(Xi.index)
+rids = RF.index.intersection(Fi.index)
 num = [c for c in R.columns if c.startswith(('prev_life', 'prev_area', 'prev_n', 'h_', 's1_', 's2_', 'close_month', 'covid'))
        or c in ('T', 'event')]
 cat = ['prev_group', 'floor_class', 'f_gu', 'split']
 res['reproduce_2012_2023'] = {
-    'ids_equal': bool(set(ids) == set(X.loc[X.close_year <= 2023, 'occupant_id'])),
-    'numeric_cols': len(num), 'rows_numeric_mismatch': same(Xi.loc[ids, num], R[num]),
-    'rows_category_mismatch': int((Xi.loc[ids, cat].astype(str) != R[cat].astype(str)).any(axis=1).sum()),
-    'sangga_rows_mismatch': same(Fi.loc[RF.index, RF.columns], RF)}
+    'ids_equal': bool(set(R.index) == set(X.loc[X.close_year <= 2023, 'occupant_id'])),
+    'ids_ref': len(R), 'ids_compared': len(ids),
+    'numeric_cols': len(num), 'rows_numeric_mismatch': same(Xi.loc[ids, num], R.loc[ids, num]),
+    'rows_category_mismatch': int((Xi.loc[ids, cat].astype(str) != R.loc[ids, cat].astype(str)).any(axis=1).sum()),
+    'sangga_rows_mismatch': same(Fi.loc[rids, RF.columns], RF.loc[rids])}
 log('reproduce', res['reproduce_2012_2023'])
 
 

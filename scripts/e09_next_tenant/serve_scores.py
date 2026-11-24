@@ -11,7 +11,9 @@
 """
 import hashlib
 import json
+import os
 from datetime import date
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -21,6 +23,9 @@ import common as C
 import model as M
 
 E05 = BV.E05
+# 이웃·동네 변수와 기준일을 만드는 인허가 표. 기본은 실험 고정 빌드(기준일 2026-11-06).
+# 새 원본으로 점수를 다시 낼 때는 E09_INPUT=service/data/processed (2026-11-24, 기준일 2026-11-22)
+INPUT = Path(os.environ.get("E09_INPUT", E05 / "input"))
 SERVE_EP = E05 / "serve/asof_episodes_2026.parquet"
 CAND = E05 / "serve/step1_candidate_links.parquet"
 OUT = C.DATA / "serve"
@@ -40,19 +45,20 @@ def features(d, P, occ, sub, pop, lmap):
 
 def main():
     sel = json.loads((C.RES / "vacant_selection.json").read_text(encoding="utf-8"))
-    meta_in = json.loads((E05 / "input/meta.json").read_text(encoding="utf-8"))
+    meta_in = json.loads((INPUT / "meta.json").read_text(encoding="utf-8"))
     ref = pd.Timestamp(meta_in["reference_date"])
     ep = pd.read_parquet(SERVE_EP)
     ep = ep[~ep.censor_bulk_registration].reset_index(drop=True)
     ep = ep.drop(columns=[c for c in ep.columns if c.startswith(("s1_", "s2_"))])
 
-    stores = pd.read_parquet(E05 / "input/stores.parquet")
-    units = pd.read_parquet(E05 / "input/units.parquet", columns=["uid", "lat", "lon"])
+    stores = pd.read_parquet(INPUT / "stores.parquet")
+    stores = stores[stores.uid.notna()]                     # 번지 가림(E-12, uid 없음)은 자리가 없어 제외, E-03 step1 과 같게
+    units = pd.read_parquet(INPUT / "units.parquet", columns=["uid", "lat", "lon"])
     occ = BV.A.load_occupants(stores, units)
     P = BV.A.Panels(occ, ref)
     sub = BV.E.load_subway(str(BV.AUX / "subway/subway_monthly.csv"), str(BV.AUX / "station/daegu_station_location.xlsx"))
     pop = BV.E.load_population(str(BV.AUX / "population"))
-    lmap = pd.read_parquet(E05 / "input/legal_admin_map.parquet")
+    lmap = pd.read_parquet(E05 / "input/legal_admin_map.parquet")   # 인구 변수용 법정동 대응표는 학습 때와 같은 고정본(E-03 step2 와 같게)
 
     # 학습 표본: 2년 창이 기준일 안에 끝나는 랜드마크
     BV.LAST_LANDMARK = ref - pd.Timedelta(days=BV.WINDOW)
@@ -106,7 +112,8 @@ def main():
         "train_by_landmark": {int(k): int(v) for k, v in tr.L.value_counts().sort_index().items()},
         "train_class_share": {c: round(float((tr.yi == k).mean()), 4) for k, c in enumerate(C.CLASSES)},
         "inputs_sha256": {"asof_episodes_2026": sha(SERVE_EP), "candidate_links": sha(CAND),
-                          "stores": sha(E05 / "input/stores.parquet"), "units": sha(E05 / "input/units.parquet")},
+                          "stores": sha(INPUT / "stores.parquet"), "units": sha(INPUT / "units.parquet")},
+        "input_dir": str(INPUT), "data_reference_date": str(ref.date()),
         "score_mean": {c: round(float(p_new[:, k].mean()), 4) for k, c in enumerate(C.CLASSES)},
         "typical_mean": {c: round(float(p_b1[:, k].mean()), 4) for k, c in enumerate(C.CLASSES)},
         "top1_counts": {c: int((t1_new == k).sum()) for k, c in enumerate(C.CLASSES)},
@@ -119,7 +126,7 @@ def main():
         "missing_rate_candidates": {c: round(float(sc[c].isna().mean()), 4) for c in feat_cols if sc[c].isna().any()},
     }
     C.RES.mkdir(parents=True, exist_ok=True)
-    (C.RES / "serve_scores.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
+    (C.RES / "serve_scores.json").write_bytes(json.dumps(res, ensure_ascii=False, indent=1).encode("utf-8"))
     print(json.dumps({k: v for k, v in res.items() if k not in ("inputs_sha256",)}, ensure_ascii=False, indent=1))
 
 

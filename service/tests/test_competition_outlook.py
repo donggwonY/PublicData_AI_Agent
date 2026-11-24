@@ -48,7 +48,9 @@ class CompetitionOutlookTests(unittest.TestCase):
 
     def test_display_uses_period_and_no_decimals_or_80pct(self):
         d = T.get_competition_outlook("한식", gu="수성구")["items"][0]["display"]
-        self.assertIn("앞으로 1년(2026.11.07~2027.11.06)", d["forecast"])
+        r = self.cf.iloc[0]                                  # 기간은 표에서 읽는다(기준일이 바뀌면 같이 바뀜, 2026-11-24)
+        period = f"앞으로 1년({r.period_start.replace('-', '.')}~{r.period_end.replace('-', '.')})"
+        self.assertIn(period, d["forecast"])
         self.assertIsNone(re.search(r"\d+\.\d+곳", d["forecast"]))
         self.assertNotIn("80%", d["forecast"] + T.FORECAST_RANGE_NOTE)
 

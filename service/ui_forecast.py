@@ -91,7 +91,8 @@ def render_flow_with_forecast(sub: str, gu: str | None) -> bool:
     c2.metric("범위", "구·군별로 제공" if rng is None else f"{rng[0]:,}~{rng[1]:,}곳", border=True)
     c3.metric("직전 1년 실제 폐업", f"{closes[-1]:,}곳", border=True)
     _flow_chart(periods, opens, closes, pred, rng, key=f"dash-flow-{gu}-{sub}")
-    st.caption(_md(f"{out['period']} 예측 · 단위: 곳(겸업은 한 곳) · 기간은 11월 7일~다음 해 11월 6일. "
+    a, b = (pd.Timestamp(x) for x in out["basis"]["forecast_period"])   # 기준일이 바뀌면 같이 바뀐다(2026-11-24)
+    st.caption(_md(f"{out['period']} 예측 · 단위: 곳(겸업은 한 곳) · 기간은 {a.month}월 {a.day}일~다음 해 {b.month}월 {b.day}일. "
                "위의 인허가 건수와 세는 방식이 달라 조금 다를 수 있어요."))
     st.caption(f"범위: {out['range_note']}. 영업 중인 가게가 많은 곳은 폐업 수도 많으므로 폐업 수만으로 지역을 고르지 마세요.")
     # 구·군별 예측(2026-11-17): 특정 구를 골라도 다른 구·군과 견줄 수 있게 항상 둔다. 단위는 곳만 쓴다.

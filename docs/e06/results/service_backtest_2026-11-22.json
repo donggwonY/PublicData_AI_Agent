@@ -1,0 +1,90 @@
+{
+ "plan": "docs/e06/service_backtest_plan.md",
+ "input_sha256": "7719155d225942a9585c0d9c61dc44bcda0463393600942eeb787d837ae5e5de",
+ "reference_date": "2026-11-22",
+ "period_definition": "연도 y = (y-1)-11-23 ~ y-11-22 (날짜 +39일 이동)",
+ "lambda": 0.3,
+ "cells": 5649,
+ "mae": {
+  "G1": 2.5021,
+  "B1": 3.0182,
+  "B2": 2.9337,
+  "B3": 3.065
+ },
+ "best_baseline": "B2",
+ "improvement_pct_vs_best": -14.7,
+ "by_year": {
+  "2020": {
+   "G1": 2.8288,
+   "B1": 3.5375,
+   "B2": 3.1104,
+   "B3": 3.1835,
+   "cells": 800,
+   "actual_closes": 6965,
+   "cov80_poisson": 0.816
+  },
+  "2021": {
+   "G1": 2.2205,
+   "B1": 2.6526,
+   "B2": 2.8061,
+   "B3": 2.9945,
+   "cells": 803,
+   "actual_closes": 6833,
+   "cov80_poisson": 0.864
+  },
+  "2022": {
+   "G1": 2.3163,
+   "B1": 2.6275,
+   "B2": 2.7221,
+   "B3": 2.86,
+   "cells": 800,
+   "actual_closes": 6760,
+   "cov80_poisson": 0.849
+  },
+  "2023": {
+   "G1": 2.6954,
+   "B1": 3.0969,
+   "B2": 3.2493,
+   "B3": 3.568,
+   "cells": 805,
+   "actual_closes": 7764,
+   "cov80_poisson": 0.839
+  },
+  "2024": {
+   "G1": 2.495,
+   "B1": 3.2679,
+   "B2": 2.9119,
+   "B3": 3.0837,
+   "cells": 810,
+   "actual_closes": 7477,
+   "cov80_poisson": 0.846
+  },
+  "2025": {
+   "G1": 2.1488,
+   "B1": 2.7199,
+   "B2": 2.5147,
+   "B3": 2.6862,
+   "cells": 814,
+   "actual_closes": 7273,
+   "cov80_poisson": 0.87
+  },
+  "2026": {
+   "G1": 2.8098,
+   "B1": 3.224,
+   "B2": 3.2215,
+   "B3": 3.0823,
+   "cells": 817,
+   "actual_closes": 7568,
+   "cov80_poisson": 0.847
+  }
+ },
+ "c1_all_years_better": true,
+ "improvement_vs_best_ci95": [
+  -0.5726,
+  -0.2994
+ ],
+ "c2_ci_upper_below_0": true,
+ "cov80_poisson": 0.847,
+ "c3_cov_ok": true,
+ "pass": true
+}

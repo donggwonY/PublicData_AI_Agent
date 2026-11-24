@@ -18,15 +18,19 @@ ns = {'__file__': str(HERE / 'models.py'), '__name__': 'e06_models_prefix'}
 exec(compile(prefix, 'models.py(함수 정의 부분)', 'exec'), ns)
 build, rolling, ppf_counts, mae, boot = (ns[k] for k in ('build', 'rolling', 'ppf_counts', 'mae', 'boot'))
 
-SHIFT = pd.Timedelta(days=55)          # 2026-11-06 + 55일 = 2026-12-31
-assert pd.Timestamp('2026-11-06') + SHIFT == pd.Timestamp('2026-12-31')
+# 기준일을 연말로 옮기는 이동 일수. 결정 당시(2026-11-06) 55일. 2026-11-24부터 기준일에서 계산한다(2026-11-22 → 39일).
+REF = pd.Timestamp(json.loads((ROOT / 'service/data/processed/meta.json').read_text(encoding='utf-8'))['reference_date'])
+SHIFT = pd.Timestamp('2026-12-31') - REF
+assert REF.year == 2026 and pd.Timedelta(0) <= SHIFT < pd.Timedelta(days=366)
 s = ns['s']
 s['ld'] = s.ld + SHIFT
 s['cd'] = s.cd + SHIFT
 s['oy'] = s.ld.dt.year
 s['cy'] = np.where(s.closed, s.cd.dt.year, np.nan)
 
-OUT = ROOT / 'docs/e06/results/service_backtest.json'
+# 결정 당시 결과(service_backtest.json, 기준일 2026-11-06)는 그대로 두고 다른 기준일은 따로 쓴다
+OUT = ROOT / ('docs/e06/results/service_backtest.json' if REF == pd.Timestamp('2026-11-06')
+              else f'docs/e06/results/service_backtest_{REF.date()}.json')
 EVAL = list(range(2020, 2027))
 LAM = 0.3
 
@@ -51,7 +55,9 @@ cp = float(np.mean((y >= ppf_counts(0.1, g1[E].values)) & (y <= ppf_counts(0.9, 
 mae_all = {n: round(mae(y, p[E]), 4) for n, p in {'G1': g1, **bc}.items()}
 
 res = {'plan': 'docs/e06/service_backtest_plan.md', 'input_sha256': ns['snapshot_sha256'](ns['SRC']),
-       'period_definition': '연도 y = (y-1)-11-07 ~ y-11-06 (날짜 +55일 이동)', 'lambda': LAM,
+       'reference_date': REF.date().isoformat(),
+       'period_definition': f"연도 y = (y-1)-{(REF + pd.Timedelta(days=1)):%m-%d} ~ y-{REF:%m-%d} (날짜 +{SHIFT.days}일 이동)",
+       'lambda': LAM,
        'cells': int(E.sum()), 'mae': mae_all, 'best_baseline': best_b,
        'improvement_pct_vs_best': round(100 * (mae_all['G1'] / mae_all[best_b] - 1), 1),
        'by_year': by_year, 'c1_all_years_better': bool(c1),
