@@ -11,6 +11,12 @@ def lookup_franchise(query,data_path=DATA):
  hits=[r for r in records if r['brand']==query or (r.get('brand_name') and normalized(r['brand_name'])==key)]
  if not hits:
   hits=[r for r in records if r.get('brand_name') and key in [normalized(t) for t in re.findall(r'[A-Za-z0-9]+|[가-힣]+',r['brand_name'])]]
+  if len(key)<=2:
+   # 2글자 이하(예: GS, 파리)는 한 브랜드로 바로 정하지 않고 이름이 그 글자로 시작하는 브랜드까지 후보로 보여 준다(2026-11-24)
+   pre=[r for r in records if r.get('brand_name') and normalized(r['brand_name']).startswith(key) and r not in hits]
+   hits=hits+pre
+   if len(hits)!=1:
+    return {'status':'choose_brand' if hits else 'not_found','candidates':[{'brand_id':r['brand'],'brand_name':r.get('brand_name')} for r in hits],'message':'브랜드를 골라주세요.' if hits else '현재 자료에서 브랜드를 찾지 못했어요.'}
  if len(hits)!=1:
   candidates=hits or ([r for r in records if r.get('brand_name') and key in normalized(r['brand_name'])] if len(key)>=3 else [])
   if len(candidates)==1:hits=candidates
