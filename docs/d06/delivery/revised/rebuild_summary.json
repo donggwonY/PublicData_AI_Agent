@@ -1,13 +1,13 @@
 {
-  "historical_threeplus_brands": 1908,
+  "historical_threeplus_brands": 1907,
   "status_counts": {
-    "current_projection": 751,
+    "current_projection": 750,
     "latest_count_unavailable": 746,
     "below_three_stores": 395,
     "prior_year_unavailable": 16
   },
   "conflicting_brand_years": 2,
-  "training_rows": 5451,
+  "training_rows": 5450,
   "validation": [
     {
       "year": 2022,
@@ -35,9 +35,9 @@
     },
     {
       "year": 2025,
-      "n": 680,
-      "brier": 0.2289453522443969,
-      "auc": 0.6578586738817246,
+      "n": 679,
+      "brier": 0.229166215455469,
+      "auc": 0.6572072786203739,
       "precision": 0.6019417475728155,
       "recall": 0.4161073825503356
     }

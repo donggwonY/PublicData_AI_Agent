@@ -1,8 +1,8 @@
 {
-  "date": "2026-11-22",
-  "registry_rows": 1908,
-  "forecast_rows": 924,
-  "one_year": 751,
+  "date": "2026-11-24",
+  "registry_rows": 1907,
+  "forecast_rows": 923,
+  "one_year": 750,
   "two_year": 173,
   "unavailable_current_forecast": 984,
   "checked": [
@@ -14,12 +14,12 @@
     "four major brands queried"
   ],
   "files": {
-    "brand_registry.json": "febea43b6c21c81c138a48798889708ae01dac5903e5808d01da189c68bced38",
-    "brand_registry.csv": "f7e8d0952c2619ccaa08ca186f71b1db0a8c27d2828431f3fed4432422cfa34a",
-    "lookup_examples.json": "87b053543536fd76359bc2f8c2a3204d46bc187a6b9740c048168d08f46f9cf8"
+    "brand_registry.json": "ad669455ed249adcc9c850c29e390ccd3cab7b1d8bc4bcc5979653282f4b9928",
+    "brand_registry.csv": "acb4e6586af6a71de39eb109790e03b793c269ef6a34960848251fc40141a295",
+    "lookup_examples.json": "1d1b4aec18922195beaf85dd27025aac98cbf34a75029f317310a838b69299bc"
   },
   "two_year_model": "two_year_hgb_permit_support",
   "validation_reference": "permit_missing_latest/results.json",
-  "industry_scope": "excludes transportation",
+  "industry_scope": "transportation industry plus taxi-name matches and confirmed SECUT ID",
   "hash_policy": "UTF-8 text normalized CRLF to LF"
 }

@@ -1,0 +1,11 @@
+{
+  "search": {
+    "CU": "씨유(CU)",
+    "BBQ": "비비큐(BBQ)",
+    "메가커피": "메가엠지씨커피(MEGA MGC COFFEE)"
+  },
+  "taxi_exclusion": true,
+  "period": "baseline year explicitly retained; official2026 unconfirmed",
+  "industry_reference": "same horizon historical observed decrease rate",
+  "actual_app_test": false
+}

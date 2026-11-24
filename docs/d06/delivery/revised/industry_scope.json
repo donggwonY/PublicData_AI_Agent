@@ -2,9 +2,12 @@
   "excluded_industries": [
     "운송"
   ],
+  "additional_rule": "taxi names across all industries and confirmed SECUT BRD_20240813",
   "excluded_brand_ids": [
+    "BRD_20100500018",
     "BRD_20120100076",
     "BRD_20120100534",
+    "BRD_20171379",
     "BRD_20180861",
     "BRD_20181168",
     "BRD_20181329",
@@ -25,6 +28,7 @@
     "BRD_20211269",
     "BRD_20214459",
     "BRD_20215148",
+    "BRD_20220108",
     "BRD_20220356",
     "BRD_20220447",
     "BRD_20221267",
@@ -35,6 +39,7 @@
     "BRD_20240207",
     "BRD_20240419",
     "BRD_20240795",
+    "BRD_20240813",
     "BRD_20240849",
     "BRD_20240881",
     "BRD_20240948",
