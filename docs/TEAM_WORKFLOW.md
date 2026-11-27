@@ -30,7 +30,7 @@
 | 프로젝트 ID | `uoiamnbkzlvlskngataq` |
 | 리전 / Session pooler | 시드니 `ap-southeast-2` / `aws-0-ap-southeast-2.pooler.supabase.com:5432` |
 | 운영 데이터 | `app` 스키마. 작업 시 `app.current_version`을 조회해 버전 확인(이전 완료 시 v3) |
-| 이전 프로젝트 | `ihaypnmvrnvbjdbtgiaq`는 보존용. 새 데이터·실험 결과 적재 대상으로 사용하지 않음 |
+| 공개 앱 운영 데이터 (2026-11-27~) | `pubdai` 프로젝트 `ihaypnmvrnvbjdbtgiaq`(무료, 서울)의 `app_files` 스키마 — 버전별 parquet 파일(한 버전 약 34MB). 적재 `python -m pipeline.load_parquet_files`(접속 키 `PUBDAI_DATABASE_URL`, 공유 DB 주소는 거부), 앱 설정 `APP_DB_LAYOUT=files`. 분석·실험 결과는 쓰지 않음. 같은 프로젝트의 옛 `app` 스키마(v3)는 보존용 |
 | 접속 비밀값 | 각자 로컬 Git 제외 `.env`. 공개 앱의 읽기 전용 연결은 Streamlit Cloud Secrets |
 
 ### 에이전트의 작업 전 확인

@@ -50,7 +50,7 @@ h2,h3 {letter-spacing:-.025em;}
 
 # 데이터 출처(core/datasource.py)는 환경변수로 고른다. 배포에서는 Secrets 의 같은 이름을 서버 환경변수로 옮긴다.
 # 운영자가 정한 서버 설정이라 os.environ 에 둬도 된다(방문자 값은 여기에 넣지 않는다).
-for _name in ("APP_DATABASE_URL", "APP_DATA_SOURCE", "APP_DATA_VERSION"):
+for _name in ("APP_DATABASE_URL", "APP_DATA_SOURCE", "APP_DATA_VERSION", "APP_DB_LAYOUT"):
     try:
         if _name in st.secrets and not os.environ.get(_name):
             os.environ[_name] = str(st.secrets[_name])

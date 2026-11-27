@@ -31,6 +31,7 @@
 | 10-29 | 원본(서울) `pubdai` 프로젝트는 최종 발표 전까지 보존하고 발표 후 삭제한다 | 시드니 DB 장애 시 바로 돌아갈 예비 DB. 노출된 `app_reader`는 로그인 차단했고 무료 플랜이라 비용 없음. 삭제 후에도 저장소 parquet·로컬 SQL 백업으로 복구 가능 | 염동권 |
 | 11-08 | 서비스 대상을 **점포형 인허가 업종 42종**(기존 16 + 추가 26)으로 한정한다. 검토 대상 15종(겸업·사무실·건물 단위)과 무점포·제조·도매 업종은 넣지 않는다 | 16개 밖 가게로 채워진 자리가 공실로 잡히는 문제 축소. 겸업 등록이 단독 자리 판정을 흐리지 않게 점포형만 사용([확장 검토](service_expansion.md), [판정표](license_catalog_195.csv)) | 염동권 |
 | 11-09 | 42종 데이터 정제 규칙 추가: ① 건강기능식품일반판매업의 비점포 업태(전자상거래·방문판매 등) 11,278건 제외 ② 다점포 자리에서 30일 이내 폐업한 **단기 행사·팝업 등록**(17,161곳)은 생존·사이클·개폐업 통계에서 제외하고 자리 이력에는 표시 | ① 서비스 대상(점포형)과 맞지 않음 ② 즉석판매제조가공업 폐업의 52%가 30일 이내이고 백화점·마트 식품관에 몰려 대구 1년 폐업률이 13.8% → 22.7%로 왜곡됨. 제외 후 13.6%([data_contract](data_contract.md) v4 절) | 염동권 |
+| 11-27 | 공개 앱 운영 데이터를 무료 `pubdai` 프로젝트(`ihaypnmvrnvbjdbtgiaq`)로 옮기되, 행 단위 표 대신 **버전별 parquet 파일**(`app_files` 스키마)로 둔다. 공유 DB(Pro)는 그대로 둔다 | 무료 플랜 전환 필요(염동권). 공유 DB는 5개 버전 2,870MB, v16 한 버전도 행 단위로는 약 350~570MB·앱 시작마다 CSV 195MB·51초라 무료 한도(500MB·월 전송 5GB)에 빠듯함. 파일 방식은 한 버전 34.1MB·받기 3~5초. 앱은 원래 표 전체를 메모리에 올려 쓰므로 SQL 조회 기능을 잃지 않음 | 염동권 |
 
 ## 2. 현재 구성
 
@@ -159,6 +160,14 @@ python -m pipeline.load_supabase --processed data/processed --env-file ../.env -
 - **전송량**: 앱이 한 달에 약 33번 시작하면 무료 한도에 닿는다. 재시작은 방문이 없어 잠들었다 깰 때·배포·Reboot마다 생긴다(Streamlit Cloud의 재시작 빈도는 미확인). 넘더라도 `auto` 모드로 화면은 parquet로 유지된다(Supabase의 무료 한도 초과 시 제한 방식은 미확인).
 - **판단 기준**: Supabase 대시보드 Usage → Egress에서 **하루 평균 170MB 이하**면 무료 유지.
 - **넘을 때 선택지**: (a) Pro 전환 — 4차 회의대로 멘토 지원 요청, 실측값 첨부 / (b) 도구가 질문에 필요한 행만 SQL로 조회하도록 변경 — 비용 없이 해결되고 시작도 빨라지지만 도구 11개 재작성 / (c) 앱이 쓰지 않는 컬럼 제외 — 전송량 일부 감소.
+
+## 5-1. 무료 pubdai 프로젝트·parquet 파일 운영 (2026-11-27)
+
+- 구조: `app_files.versions`(버전·상태·meta), `app_files.files`(버전×표 이름·sha256·행 수·바이트·parquet 바이트), `app_files.current_version`. 버전 번호는 공유 DB와 맞춘다.
+- 적재: `python -m pipeline.load_parquet_files --processed data/processed --version <번호> --env-file ../.env` → 서버에서 sha256·크기 재계산 대조 → 앱과 같은 경로로 재조회해 저장소 parquet와 표 단위 `equals` 확인 → `--activate-version <번호>`. 접속 키 `PUBDAI_DATABASE_URL`, 주소에 pubdai ID가 없거나 공유 DB면 거부, 용량 상한 450MB.
+- 앱: Secrets `APP_DB_LAYOUT=files` + `APP_DATABASE_URL`(pubdai 읽기 전용). 실패 시 저장소 parquet로 대체(기존과 같음). 사이드바 표시 `데이터 db v<번호> (파일)`.
+- 첫 적재(2026-11-27): v16 = 저장소 `service/data/processed`(e1bec21, 기준일 2026-11-22, 배치 2026-11-24 13:06:57, 공유 DB v16과 18개 표 행 수 일치). 파일 18개 34.1MB, 해시 대조·재조회 일치, DB 크기 252MB → 287MB(옛 `app` v3 229MB 포함), 재조회 5.1초. current = v16, `app_reader`에 `app_files` 조회 권한. 로컬 앱(관리자 연결)으로 받기+읽기 3.1초, 첫 화면 예외 0, smoke 통과.
+- 남은 일: `app_reader` 로그인 재허용(새 비밀번호, 염동권) → 읽기 전용 연결 확인 → `main`·`deploy` 반영 → Streamlit Secrets 전환·Reboot → 공개 화면 확인. `check_data --db`는 아직 행 단위 표(`app`)만 점검한다.
 
 ## 6. 남은 일
 

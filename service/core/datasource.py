@@ -6,6 +6,10 @@
                       db   = DB 만 사용(실패하면 오류) — 검증용
     APP_DATABASE_URL  Supabase Postgres 접속 문자열(비밀값, 출력하지 않는다)
     APP_DATA_VERSION  읽을 버전 번호. 없으면 app.current_version 이 가리키는 버전
+    APP_DB_LAYOUT     tables(기본) | files
+                      tables = app 스키마의 행 단위 표를 CSV 로 받는다(공유 DB)
+                      files  = app_files 스키마에 버전별로 저장한 parquet 파일을 받아 바로 읽는다
+                               (무료 플랜 운영용, pipeline/load_parquet_files.py, 2026-11-27)
 
 DB 의 표는 pipeline/load_supabase.py 가 parquet 를 그대로 옮긴 것이다. 원래 행 순서는 _row 로 보존하고,
 자료형은 Postgres 형식에서 parquet 와 같은 pandas 형식으로 되돌린다.
@@ -26,6 +30,7 @@ import pandas as pd
 log = logging.getLogger(__name__)
 
 SCHEMA = "app"
+FILES_SCHEMA = "app_files"
 REQUIRED = ["stores", "units", "transitions", "area_cycle", "area_year", "survival", "vacancy_area"]
 OPTIONAL = ["poi", "area_context", "legal_admin_map", "station_traffic", "parking", "market",
             "vacancy_scores",  # E-03 공실 재입점 점수(오프라인 모델 결과, docs/e03). DB 에 없으면 None → 카드 숨김
@@ -112,6 +117,38 @@ def load_db(url: str, version: int | None = None) -> Loaded:
     return Loaded(frames, meta, f"db v{version}", time.time() - t0, total)
 
 
+def frames_from_files(rows: list[tuple[str, bytes]]) -> dict[str, pd.DataFrame | None]:
+    """(표 이름, parquet 바이트) 목록 → 표 사전. 필수 표가 없으면 LookupError, 선택 표는 None."""
+    got = {t: pd.read_parquet(io.BytesIO(bytes(b))) for t, b in rows}
+    missing = [t for t in REQUIRED if t not in got]
+    if missing:
+        raise LookupError(f"{FILES_SCHEMA} 에 필수 표가 없습니다: {missing}")
+    return {t: got.get(t) for t in TABLES}
+
+
+def load_db_files(url: str, version: int | None = None) -> Loaded:
+    """app_files 에 저장한 parquet 파일을 받아 읽는다. 버전을 안 주면 current_version 이 가리키는 버전."""
+    import psycopg
+
+    t0 = time.time()
+    with psycopg.connect(url, connect_timeout=10) as conn, conn.cursor() as cur:
+        if version is None:
+            cur.execute(f"select version_id from {FILES_SCHEMA}.current_version where singleton")
+            row = cur.fetchone()
+            if not row:
+                raise LookupError(f"{FILES_SCHEMA}.current_version 이 비어 있습니다.")
+            version = row[0]
+        cur.execute(f"select status, meta_text from {FILES_SCHEMA}.versions where version_id = %s", (version,))
+        row = cur.fetchone()
+        if not row or row[0] not in ("validated", "current"):   # load_db 와 같은 기준
+            raise LookupError(f"버전 {version} 이 없거나 사용할 수 없습니다 (status={row and row[0]}).")
+        meta = json.loads(row[1])
+        cur.execute(f"select table_name, data from {FILES_SCHEMA}.files where version_id = %s", (version,))
+        rows = cur.fetchall()
+    frames = frames_from_files(rows)
+    return Loaded(frames, meta, f"db v{version} (파일)", time.time() - t0, sum(len(b) for _, b in rows))
+
+
 def _restore_dtypes(df: pd.DataFrame, want: dict[str, str]) -> pd.DataFrame:
     """적재 때 기록한 pandas 자료형으로 맞춘다(예: 결측 허용 불리언 'boolean')."""
     for c, dt in want.items():
@@ -143,12 +180,14 @@ def load(processed_dir: Path) -> Loaded:
     mode = os.environ.get("APP_DATA_SOURCE", "auto").strip().lower()
     url = os.environ.get("APP_DATABASE_URL", "").strip()
     version = os.environ.get("APP_DATA_VERSION", "").strip()
+    layout = os.environ.get("APP_DB_LAYOUT", "tables").strip().lower()
     if mode == "parquet" or (mode == "auto" and not url):
         return load_parquet(processed_dir)
     if not url:
         raise RuntimeError("APP_DATA_SOURCE=db 인데 APP_DATABASE_URL 이 없습니다.")
+    reader = load_db_files if layout == "files" else load_db
     try:
-        return load_db(url, int(version) if version else None)
+        return reader(url, int(version) if version else None)
     except Exception as e:  # noqa: BLE001 — auto 모드는 어떤 실패든 parquet 로 대체해 서비스를 유지한다
         if mode == "db":
             raise

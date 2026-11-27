@@ -54,6 +54,7 @@ python -m pipeline.external       # 보조 데이터 배치 → 상가정보·�
 | `APP_DATABASE_URL` | Supabase Postgres 접속 문자열(Session pooler). 비밀값. 없으면 parquet 를 읽는다 |
 | `APP_DATA_SOURCE` | `auto`(기본, DB 실패 시 parquet 대체) · `db`(DB만, 검증용) · `parquet` |
 | `APP_DATA_VERSION` | 읽을 버전 번호. 없으면 `app.current_version` 이 가리키는 버전 |
+| `APP_DB_LAYOUT` | `tables`(기본, `app` 스키마 행 단위 표를 CSV 로 받음) · `files`(`app_files` 스키마의 버전별 parquet 파일을 받아 바로 읽음, 무료 플랜 운영용 2026-11-27) |
 
 - **로컬**: 접속 정보가 없으므로 `data/processed` 의 parquet 를 읽는다. 사이드바에 "데이터 parquet" 로 표시된다.
 - **공개 앱**: 2026-10-16부터 Supabase `app` 스키마에서 읽는다("데이터 db v3"). 접속 계정은 읽기 전용 `app_reader` 이고, 관리자 접속 정보는 Secrets 에 넣지 않는다.
