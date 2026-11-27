@@ -167,7 +167,7 @@ python -m pipeline.load_supabase --processed data/processed --env-file ../.env -
 - 적재: `python -m pipeline.load_parquet_files --processed data/processed --version <번호> --env-file ../.env` → 서버에서 sha256·크기 재계산 대조 → 앱과 같은 경로로 재조회해 저장소 parquet와 표 단위 `equals` 확인 → `--activate-version <번호>`. 접속 키 `PUBDAI_DATABASE_URL`, 주소에 pubdai ID가 없거나 공유 DB면 거부, 용량 상한 450MB.
 - 앱: Secrets `APP_DB_LAYOUT=files` + `APP_DATABASE_URL`(pubdai 읽기 전용). 실패 시 저장소 parquet로 대체(기존과 같음). 사이드바 표시 `데이터 db v<번호> (파일)`.
 - 첫 적재(2026-11-27): v16 = 저장소 `service/data/processed`(e1bec21, 기준일 2026-11-22, 배치 2026-11-24 13:06:57, 공유 DB v16과 18개 표 행 수 일치). 파일 18개 34.1MB, 해시 대조·재조회 일치, DB 크기 252MB → 287MB(옛 `app` v3 229MB 포함), 재조회 5.1초. current = v16, `app_reader`에 `app_files` 조회 권한. 로컬 앱(관리자 연결)으로 받기+읽기 3.1초, 첫 화면 예외 0, smoke 통과.
-- 남은 일: `app_reader` 로그인 재허용(새 비밀번호, 염동권) → 읽기 전용 연결 확인 → `main`·`deploy` 반영 → Streamlit Secrets 전환·Reboot → 공개 화면 확인. `check_data --db`는 아직 행 단위 표(`app`)만 점검한다.
+- 공개 앱 전환(2026-11-27): `app_reader` 로그인 재허용(새 비밀번호)·읽기 전용 확인 → `deploy` ed3be68 → Secrets `APP_DATABASE_URL`(pubdai 읽기 전용)·`APP_DB_LAYOUT=files` → Reboot. 화면 `데이터 db v16 (파일)`·기준일 2026-11-22·영업 중 84,275, `deploy_check post` 통과. 남은 일: `check_data --db`의 파일 방식 점검 추가, 옛 `app` 스키마(v3) 정리·`app_reader`의 `app` 조회 권한 회수 여부 결정, 다음 데이터 갱신부터 pubdai 적재를 갱신 절차에 포함.
 
 ## 6. 남은 일
 
