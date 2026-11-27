@@ -61,14 +61,14 @@ def run_service(c: Checks, name: str, args: list[str], timeout: int = 900) -> No
 def data_check(c: Checks) -> None:
     env = dict(os.environ, PYTHONIOENCODING="utf-8")
     env.pop("APP_DATA_SOURCE", None)
-    r = subprocess.run([str(venv_python()), "-m", "pipeline.check_data", "--db"], cwd=SERVICE, env=env,
+    r = subprocess.run([str(venv_python()), "-m", "pipeline.check_data", "--db", "--pubdai"], cwd=SERVICE, env=env,
                        capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=900)
     out = (r.stdout + r.stderr).strip().splitlines()
     for line in out:
         if line.startswith(("[WARN]", "[FAIL]")):
             print("       " + line)
     summary = next((l for l in reversed(out) if l.startswith("요약")), out[-1] if out else "")
-    c.add("OK" if r.returncode == 0 else "FAIL", "데이터 점검(check_data --db)", summary)
+    c.add("OK" if r.returncode == 0 else "FAIL", "데이터 점검(check_data --db --pubdai)", summary)
 
 
 def git_state(c: Checks, need_clean: bool = True) -> tuple[str, str]:

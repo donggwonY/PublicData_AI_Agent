@@ -4,6 +4,7 @@
 
   python -m pipeline.check_data                       # 저장소 parquet(data/processed) 점검
   python -m pipeline.check_data --db --env-file ../.env   # + 공유 DB 현재 버전 점검, parquet 와 대조
+  python -m pipeline.check_data --pubdai                  # + 공개 앱 운영 DB(pubdai, 파일 방식) 점검(2026-11-27)
 
 DB 접속은 APP_READER_DATABASE_URL(읽기 전용 계정)을 먼저 쓰고, 없으면 APP_DATABASE_URL 을 쓴다.
 환경변수가 .env 보다 우선한다. 접속 문자열은 출력하지 않는다.
@@ -268,6 +269,69 @@ def check_db(url: str, rep: Report, version: int | None = None) -> tuple[ds.Load
     return loaded, {"version": target, "statuses": status}
 
 
+PUBDAI_PROJECT = "ihaypnmvrnvbjdbtgiaq"
+PUBDAI_SIZE_WARN_MB = 450   # 무료 500MB 대비
+
+
+def read_pubdai_url(env_file: Path | None) -> tuple[str, str]:
+    """pubdai(공개 앱 운영, 무료) 접속 문자열. 읽기 전용 키 우선, 환경변수 → .env 순."""
+    file_vals = {}
+    if env_file and env_file.exists():
+        for line in env_file.read_text(encoding="utf-8").splitlines():
+            k, sep, v = line.partition("=")
+            if sep:
+                file_vals[k.strip()] = v.strip().strip("\"'")
+    for key in ("PUBDAI_READER_DATABASE_URL", "PUBDAI_DATABASE_URL"):
+        val = os.environ.get(key, "").strip() or file_vals.get(key, "")
+        if val:
+            return val, key
+    sys.exit("pubdai 접속 정보가 없습니다 (PUBDAI_READER_DATABASE_URL 또는 PUBDAI_DATABASE_URL).")
+
+
+def check_pubdai(url: str, processed: Path, rep: Report) -> tuple[ds.Loaded | None, dict]:
+    """pubdai app_files(파일 방식, 2026-11-27): 현재 버전 상태·용량·파일 해시가 저장소 parquet 와 같은지 본다."""
+    import hashlib
+
+    import psycopg
+
+    if PUBDAI_PROJECT not in url:
+        sys.exit("접속 대상이 pubdai(ihaypnmvrnvbjdbtgiaq)가 아닙니다. 점검을 멈춥니다.")
+    S = ds.FILES_SCHEMA
+    with psycopg.connect(url, connect_timeout=10) as conn, conn.cursor() as cur:
+        cur.execute(f"select version_id from {S}.current_version where singleton")
+        row = cur.fetchone()
+        cur.execute(f"select version_id, status, meta->>'reference_date' from {S}.versions order by version_id")
+        versions = cur.fetchall()
+        cur.execute("select pg_database_size(current_database())")
+        size_mb = cur.fetchone()[0] / 2**20
+        files = []
+        if row:
+            cur.execute(f"select table_name, sha256, encode(sha256(data), 'hex'), n_bytes, octet_length(data) "
+                        f"from {S}.files where version_id = %s", (row[0],))
+            files = cur.fetchall()
+    if not row:
+        rep.fail("pubdai", "current_version", "비어 있음")
+        return None, {}
+    cur_v = row[0]
+    status = {v: s for v, s, _ in versions}
+    currents = [v for v, s in status.items() if s == "current"]
+    (rep.ok if currents == [cur_v] else rep.fail)(
+        "pubdai", "current_version 상태", f"포인터 v{cur_v}, status='current' 버전 {currents}")
+    (rep.warn if size_mb > PUBDAI_SIZE_WARN_MB else rep.ok)(
+        "pubdai", "DB 크기", f"{size_mb:,.0f}MB (무료 500MB, 경고 기준 {PUBDAI_SIZE_WARN_MB}MB) · 버전 {status}")
+    # 저장된 바이트가 기록한 해시·크기와 같은지(손상), 그리고 저장소 parquet 와 같은 파일인지(배포 일치)
+    broken = [t for t, h, h2, n, n2 in files if h != h2 or n != n2]
+    (rep.fail if broken else rep.ok)("pubdai", "파일 무결성(서버 해시 재계산)", f"불일치 {broken}" if broken else f"{len(files)}개 일치")
+    local = {t: hashlib.sha256((processed / f"{t}.parquet").read_bytes()).hexdigest()
+             for t in ds.TABLES if (processed / f"{t}.parquet").exists()}
+    remote = {t: h for t, h, *_ in files}
+    diff = sorted(t for t in set(local) | set(remote) if local.get(t) != remote.get(t))
+    (rep.warn if diff else rep.ok)("pubdai", f"v{cur_v} 파일 = 저장소 parquet",
+                                  f"다른 표 {diff} (새 배치를 아직 올리지 않았으면 정상)" if diff else f"{len(local)}개 같음")
+    loaded = ds.load_db_files(url, cur_v)
+    return loaded, {"version": cur_v, "statuses": status}
+
+
 def compare(pq: ds.Loaded, db: ds.Loaded, rep: Report) -> None:
     """저장소 parquet(앱의 대체 출처)와 DB 현재 버전이 같은 배치인지."""
     a, b = str(pq.meta.get("reference_date")), str(db.meta.get("reference_date"))
@@ -289,6 +353,8 @@ def main() -> None:
     ap.add_argument("--processed", type=Path, default=SERVICE / "data/processed")
     ap.add_argument("--db", action="store_true", help="공유 DB 현재 버전도 점검하고 parquet 와 대조")
     ap.add_argument("--version", type=int, help="--db 와 함께: 현재 버전 대신 전환 전(validated) 버전을 점검")
+    ap.add_argument("--pubdai", action="store_true",
+                    help="공개 앱 운영 DB(pubdai, 파일 방식) 현재 버전도 점검하고 parquet 와 대조")
     ap.add_argument("--env-file", type=Path, default=SERVICE.parent / ".env")
     ap.add_argument("--json", type=Path, help="결과를 JSON 으로도 저장")
     args = ap.parse_args()
@@ -304,12 +370,21 @@ def main() -> None:
         if db is not None:
             check_frames(db.frames, db.meta, "db", rep)
             compare(pq, db, rep)
+    if args.pubdai:
+        url, key = read_pubdai_url(args.env_file)
+        print(f"pubdai 접속 키: {key}")
+        pdb, pinfo = check_pubdai(url, args.processed, rep)
+        info["pubdai_version"] = pinfo.get("version")
+        if pdb is not None:
+            check_frames(pdb.frames, pdb.meta, "pubdai", rep)
+            compare(pq, pdb, rep)
     rep.print()
     if args.json:
         args.json.parent.mkdir(parents=True, exist_ok=True)
         args.json.write_text(json.dumps({
             "parquet_reference_date": pq.meta.get("reference_date"),
             "db_version": info.get("version"),
+            "pubdai_version": info.get("pubdai_version"),
             "summary": rep.summary(),
             "checks": [dict(zip(("where", "level", "name", "detail"), r)) for r in rep.rows],
         }, ensure_ascii=False, indent=1), encoding="utf-8")

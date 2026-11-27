@@ -21,6 +21,7 @@
 ```powershell
 python -m pipeline.check_data                    # 저장소 parquet 만
 python -m pipeline.check_data --db               # + 공유 DB 현재 버전, parquet 와 대조
+python -m pipeline.check_data --pubdai           # + 공개 앱 운영 DB(pubdai, 파일 방식) 현재 버전·파일 해시 (2026-11-27)
 ```
 
 - 읽기만 한다. DB는 읽기 전용 `APP_READER_DATABASE_URL`을 먼저 쓰고, 없으면 `APP_DATABASE_URL`을 쓴다. 환경변수가 `.env`보다 우선하고, 접속 문자열은 출력하지 않는다.
@@ -82,7 +83,7 @@ python -m pipeline.check_data --db               # + 공유 DB 현재 버전, pa
 - 큰 표: `stores` 1,181MB, `units` 426MB, `poi` 191MB.
 - 삭제 규칙을 적용하면 v3·v4·v5·v6·v7·v8을 지울 수 있고 v9(되돌릴 대상)·v10(현재)은 남는다. **결정(2026-11-20, 염동권): 옛 버전은 일단 지우지 않고 둔다.** 디스크 여유가 충분하고, v3는 E-02 15업종 기록용 버전이다. 용량 경고(2,500MB)가 나면 다시 정한다. 지워도 공간은 vacuum 뒤 재사용될 뿐 DB 크기 숫자가 바로 줄지는 않는다.
 
-**새 순서(데이터 갱신)**: `pipeline.build` → `check_data` → 테스트 → `main` → `load_supabase`(사전 점검 포함, 전환 없이) → `check_data --db --version <새 버전>` → `load_supabase --activate-version <새 버전>` → `check_data --db` → 공개 앱 Reboot·확인.
+**새 순서(데이터 갱신)**: `pipeline.build` → `check_data` → 테스트 → `main` → `load_supabase`(사전 점검 포함, 전환 없이) → `check_data --db --version <새 버전>` → `load_supabase --activate-version <새 버전>` → `check_data --db` → (2026-11-27~) `load_parquet_files --version <새 버전>` → `load_parquet_files --activate-version <새 버전>` → `check_data --db --pubdai` → 공개 앱 Reboot·확인.
 
 ## 3단계: 배포 전후 점검
 
@@ -99,7 +100,7 @@ python3 scripts/deploy_check.py post   # deploy 푸시·Reboot 뒤
 | pre | `origin/deploy` → `origin/main` fast-forward 가능 | `deploy`에 `main`에 없는 커밋(Codespaces 커밋 등) |
 | pre | 바뀌는 파일 수, `service/` 변경 여부, 배포 환경 파일(`requirements.txt` 등)·가공 데이터 변경 | WARN만(배포 로그·데이터 점검 확인 안내) |
 | pre | service 테스트 전체·smoke 테스트(서비스 가상환경, parquet) | 실패하면 |
-| pre·post | `check_data --db` | FAIL이 있으면 |
+| pre·post | `check_data --db --pubdai`(2026-11-27, pubdai 추가) | FAIL이 있으면 |
 | post | `origin/deploy` = `origin/main` | 다르면 |
 | post | 공개 앱 응답 `/~/+/_stcore/health` = ok (20초 간격 최대 6회) | 끝까지 응답 없으면 |
 
